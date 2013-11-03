@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>aqplus-ru-web-07-home</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+
+<script language="JavaScript" type="text/javascript">
+/*<![CDATA[*/
+$(document).ready(function() {
+
+	//When page loads...
+	$(".tab_content").hide(); //Hide all content
+	$("ul.lk-tabs li:first").addClass("active").show(); //Activate first tab
+	$(".tab_content:first").show(); //Show first tab content
+
+	//On Click Event
+	$("ul.lk-tabs li").click(function() {
+
+		$("ul.lk-tabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".tab_content").hide(); //Hide all tab content
+
+		var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+		$(activeTab).fadeIn(); //Fade in the active ID content
+		return false;
+	});
+
+});
+/*]]>*/
+</script>
+
+</head>
+<body>
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+		<a href="#" title=""><img src="images/header-logo.png" alt="" class="logo" /></a>
+		
+		<div class="header-contacts">
+			<span class="title">Телефон в Санкт-Петербурге:</span>
+			+7 (812) <big>622-12-51</big>
+		</div>
+		
+		<div class="header-links">
+			<span class="map"><a href="#" title="">Схема проезда</a></span ><br />
+			<a href="" title="">Оптовым покупателям</a>
+		</div>
+		
+		<div class="header-user">
+			<a href="" title="" class="cabinet">Личный кабинет</a><br />
+			<a href="" title="">В корзине:</a> <big>0</big> товаров<br />
+			На сумму: <big>0</big> руб.
+		</div>
+	</div>
+	
+	<!-- top menu -->
+	<div class="mainmenu">
+		<ul>                                          
+			<li><a href="#" title="">Производство</a></li>
+			<li><a href="#" title="">Интернет-магазин</a></li>
+			<li><a href="#" title="">О компании</a>
+				<ul>
+					<li><a href="#" title="">Оптовая торговля</a></li>
+					<li><a href="#" title="">Салон «Акваландия»</a></li>
+					<li><a href="#" title="">Производство</a></li>
+					<li><a href="#" title="">Наши партнёры</a></li>
+					<li><a href="#" title="">Вакансии</a></li>
+					<li><a href="#" title="">Контакты и реквизиты</a></li>
+					<li class="last"></li>
+				</ul>
+			</li>
+			<li class="none"><a href="#" title="">Форум</a></li>
+			<li class="none"><a href="#" title="">Контакты</a></li>
+		</ul>
+		
+		<div class="search">
+			<form>
+				<input name="searchbar" id="searchbar" type="text" value="Поиск по сайту" tabindex="1" />
+				<input type="submit" name="find" id="find" value="" tabindex="2" />				
+			</form>
+		</div>
+	</div>
+
+	<!-- content -->
+	<div class="content">
+		
+		<!-- content small -->
+		<div class="content-small">
+			<div class="breadcrumbs">
+				<a href="#" title="">Главная</a> &rarr; <a href="#" title="">Личный кабинет</a> &rarr;
+			</div>
+
+			<ul class="lk-tabs">
+                <li><a href="#tab1">Личные данные</a></li>
+                <li><a href="#tab2">Оформленные заказы</a></li>
+                <li><a href="#tab3">Подписки</a></li>
+            </ul>
+
+            <div class="tab_container">
+                <div id="tab1" class="tab_content">
+                  <div class="formbox">
+                      <form>
+                          <label><strong>Адрес электронной почты:<span class="required">*</span></strong><br />
+                          <input name="yourmail" type="text" class="textbox" value="info@aqplus.ru" tabindex="" />
+                          </label>
+
+                          <label><strong>Пароль:<span class="required">*</span></strong><br />
+                          <input name="yourpass1" type="text" class="textbox" value="****************" tabindex="" />
+                          </label>
+
+                          <label><strong>Подтвердите пароль:<span class="required">*</span></strong><br />
+                          <input name="yourpass2" type="text" class="textbox" value="****************" tabindex="" />
+                          </label>
+
+                          <div class="hr"></div>
+
+                          <label><strong>Имя:<span class="required">*</span></strong><br />
+                          <input name="yourname" type="text" class="textbox" value="" tabindex="" />
+                          <div class="error">Необходимо указать фамилию</div>
+                          </label>
+
+                          <label><strong>Фамилия:<span class="required">*</span></strong><br />
+                          <input name="yoursurname" type="text" class="textbox" value="" tabindex="" />
+                          </label>
+
+                          <label><strong>Контактный телефон:<span class="required">*</span></strong><br />
+                          <input name="yourphone" type="text" class="textbox" value="(___) ___-__-__" tabindex="" />
+                          </label>
+
+                          <label><strong>Ваш город:</strong><br />
+                          <input name="yourtown" type="text" class="textbox" value="" tabindex="" />
+                          </label>
+
+                          <label><strong>Адрес:</strong><br />
+                          <input name="youraddress" type="text" class="textbox" value="" tabindex="" />
+                          </label>
+
+                          <input type="button" name="savechanges" class="button savechanges" value="Зарегистрироваться" tabindex="" />
+                      </form>
+                  </div>
+                </div>
+                <div id="tab2" class="tab_content">
+                   <div class="textcontent">
+                    <table>
+                        <col width="0%" />
+                        <col width="17%" />
+                        <col width="32%" />
+                        <col width="15%" />
+                        <col width="31%" />
+                        <col width="0%" />
+                          <thead>
+                          <tr class="top">
+                              <th colspan="6"></th>
+                          </tr>
+
+                          <tr>
+                              <td class="spacer"></td>
+                              <td>Номер заказа</td>
+                              <td>Список товаров</td>
+                              <td>Стоимость</td>
+                              <td>Статус заказа</td>
+                              <td class="spacer"></td>
+                          </tr>
+                          </thead>
+
+                          <tbody>
+                          <tr>
+                              <td class="spacer-left"></td>
+                              <td><a href="#" title="">№ 1234567</a><br /><a href="#" title="">от 21.07.2011</a></td>
+                              <td><a href="#" title="">Аквариум П- 60 + крышка STD, (500х300х400) пластик, ольха + оборудование</a><br /><br /><a href="#" title="">Аквариум П- 60 + крышка STD, (500х300х400) пластик, ольха + оборудование</a></td>
+                              <td class="cost"><big>5.622</big>руб</td>
+                              <td><strong class="d1">Принят в обработку</strong><br />
+                              <a href="#" title="" class="retry">Повторить</a>
+                              <a href="#" title="" class="removeitem">Отменить</a></td>
+                              <td class="spacer-right"></td>
+                          </tr>
+
+                          <tr>
+                              <td class="spacer-left"></td>
+                              <td><a href="#" title="">№ 1234567</a><br /><a href="#" title="">от 21.07.2011</a></td>
+                              <td><a href="#" title="">Аквариум П- 60 + крышка STD, (500х300х400) пластик, ольха + оборудование</a></td>
+                              <td class="cost"><big>5.622</big>руб</td>
+                              <td><strong class="d2">Формируется к отправке</strong><br />
+                              <a href="#" title="" class="retry">Повторить</a></td>
+                              <td class="spacer-right"></td>
+                          </tr>
+
+                          <tr>
+                              <td class="spacer-left"></td>
+                              <td><a href="#" title="">№ 1234567</a><br /><a href="#" title="">от 21.07.2011</a></td>
+                              <td><a href="#" title="">Аквариум П- 60 + крышка STD, (500х300х400) пластик, ольха + оборудование</a></td>
+                              <td class="cost"><big>5.622</big>руб</td>
+                              <td><strong class="d3">Заказ отправлен</strong><br />
+                              <a href="#" title="" class="retry">Повторить</a></td>
+                              <td class="spacer-right"></td>
+                          </tr>
+
+                          <tr>
+                              <td class="spacer-left"></td>
+                              <td><a href="#" title="">№ 1234567</a><br /><a href="#" title="">от 21.07.2011</a></td>
+                              <td><a href="#" title="">Аквариум П- 60 + крышка STD, (500х300х400) пластик, ольха + оборудование</a></td>
+                              <td class="cost"><big>5.622</big>руб</td>
+                              <td><strong class="d4">Заказ отменен</strong><br />
+                              <a href="#" title="" class="retry">Повторить</a></td>
+                              <td class="spacer-right"></td>
+                          </tr>
+
+                          <tr class="bottom">
+                              <td class="spacer-left"></td>
+                              <td><a href="#" title="">№ 1234567</a><br /><a href="#" title="">от 21.07.2011</a></td>
+                              <td><a href="#" title="">Аквариум П- 60 + крышка STD, (500х300х400) пластик, ольха + оборудование</a></td>
+                              <td class="cost"><big>5.622</big>руб</td>
+                              <td><strong class="d5">Заказ доставлен</strong><br />
+                              <a href="#" title="" class="retry">Повторить</a></td>
+                              <td class="spacer-right"></td>
+                          </tr>
+                          </tbody>
+
+                          <tfoot>
+                          <tr>
+                              <td colspan="8"></td>
+                          </tr>
+                          </tfoot>
+                      </table>
+                   </div>
+                </div>
+
+                <!-- tab 3 -->
+                <div id="tab3" class="tab_content">
+                  <div class="formbox">
+                      <form>
+                          <p><strong>Вы подписаны на следующие подписки:</strong><br />
+                          <label><input type="checkbox" name="v1" tabindex="" /> <span>Акции и скидки</span></label>
+                          <label><input type="checkbox" name="v1" tabindex="" checked="checked" /> <span>Новости</span></label>
+                          <label><input type="checkbox" name="v1" tabindex="" checked="checked" /> <span>Оптовым покупателям</span></label></p>
+
+                          <input type="button" name="savechanges" class="button savechanges" value="Сохранить изменения" tabindex="" />
+                      </form>
+                  </div>
+                </div>
+            </div>
+
+		</div>
+		
+		<!-- rightside -->
+		<div class="rightside">
+
+			<div class="banner">
+				<img src="images/tmp/tmp_1.jpg" alt="" />
+			</div>
+		</div>
+
+
+	</div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+	<div class="wrapper">
+		<div class="box">
+			<ul>
+				<li><a href="#" title="">Производство</a></li>
+				<li><a href="#" title="">Серия STANDART</a></li>
+				<li><a href="#" title="">Серия LUX</a></li>
+				<li><a href="#" title="">Серия PRO</a></li>
+				<li><a href="#" title="">Аквариумы на заказ</a></li>
+			</ul>
+		</div>
+
+		<div class="box">
+			<ul>
+				<li><a href="#" title="">Интернет-магазин</a></li>
+				<li><a href="#" title="">Каталог</a></li>
+				<li><a href="#" title="">Как сделать заказ</a></li>
+				<li><a href="#" title="">Доставка</a></li>
+				<li><a href="#" title="">Оплата</a></li>
+			</ul>
+		</div>
+
+		<div class="box">
+			<ul>
+				<li><a href="#" title="">О компании</a></li>
+				<li><a href="#" title="">Оптовая торговля</a></li>
+				<li><a href="#" title="">Салон «Акваландия»</a></li>
+				<li><a href="#" title="">Производство</a></li>
+				<li><a href="#" title="">Наши партнёры</a></li>
+				<li><a href="#" title="">Вакансии</a></li>
+				<li><a href="#" title="">Контакты и реквизиты</a></li>
+			</ul>
+		</div>
+		
+		<div class="paymentsystems">
+			<h4>Способы оплаты</h4>
+			<span>в Интернет-магазине</span><br />
+			
+			<img src="images/footer-payment.jpg" alt="" />
+		</div>
+		
+		<div class="subscribe">
+			<h4>Подписаться</h4>
+			
+			<ul>
+				<li class="s1"><a href="#" title="">по E-mail</a></li>
+				<li class="s2"><a href="#" title="">по RSS</a></li>
+				<li class="s3"><a href="#" title="">в Twitter</a></li>
+				<li class="s4"><a href="#" title="">ВКонтакте</a></li>
+			</ul>
+		</div>
+
+		<!-- copyright -->
+		<div class="footer-bottom">
+			<div class="copyright">&copy; 2004–2010, ООО Аква Плюс, Все права защищены. <br />
+			<small>Перепечатка любых материалов сайта без предварительного согласия запрещена.</small> </div>
+			
+			<div class="made">
+				<a href="#" title="">Разработка сайта</a> &mdash; <img src="images/footer-made.png" alt="" /> «Дело в сайте»
+			</div>
+			
+			<div class="counters">
+				<a href="#" title=""><img src="images/tmp_1.gif" alt="" /></a>
+				<a href="#" title=""><img src="images/tmp_2.gif" alt="" /></a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

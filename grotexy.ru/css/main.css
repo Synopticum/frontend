@@ -1,0 +1,156 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border: 0 none;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img { border:0 none; }
+table { border-collapse: collapse; border-spacing: 0; }
+ol, ul { list-style-image: none; list-style-position: outside; list-style-type: none; }
+q:before, q:after, blockquote:before, blockquote:after { content:""; }
+
+@font-face {
+    font-family: 'PTSerifRegular';
+    src: url('../fonts/ptf55f-webfont.eot');
+    src: url('../fonts/ptf55f-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ptf55f-webfont.woff') format('woff'),
+         url('../fonts/ptf55f-webfont.ttf') format('truetype'),
+         url('../fonts/ptf55f-webfont.svg#PTSerifRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* css begin */
+html, body { height:100%; }
+body {
+	font-family: 'PTSerifRegular', Times New Roman, serif;
+	font-size: 16px;
+	color: #000;
+	background: url(../images/body-bg.gif) repeat-x #fff;
+	width: 100%;
+	min-width: 1000px;
+}
+
+/* content */
+#wrap {
+	position: relative;
+	width: 910px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+a { color: #000 }
+a:hover { text-decoration: none }
+
+/* header */
+.header { position: relative; height: 154px; overflow: hidden; }
+    .header .logo { position: relative; float: left; margin: 20px 0 0 0; height: 114px; }
+        .header .logo .title { position: absolute; left: 5px; bottom: 3px; color: #fff; font-size: 17px; }
+
+    .smiles { position: absolute; right: 130px; top: 75px; width: 450px; height: 27px; }
+        .smiles span { cursor: pointer; display: block; float: left; height: 27px; background: url(../images/smiles.png) no-repeat }
+        .smiles #s1 { width: 34px; background-position: 0px 0px; }
+        .smiles #s2 { width: 45px; background-position: -34px 0px; }
+        .smiles #s3 { width: 39px; background-position: -79px 0px; }
+        .smiles #s4 { width: 46px; background-position: -118px 0px; }
+        .smiles #s5 { width: 59px; background-position: -164px 0px; }
+        .smiles #s6 { width: 79px; background-position: -223px 0px; }
+        .smiles #s7 { width: 41px; background-position: -302px 0px; }
+        .smiles #s8 { width: 40px; background-position: -343px 0px; }
+        .smiles #s9 { width: 33px; background-position: -383px 0px; }
+        .smiles #s10 { width: 34px; background-position: 416px 0px; }
+
+        .smiles #s1:hover { background-position: 0px 100%; }
+        .smiles #s2:hover { background-position: -34px 100%; }
+        .smiles #s3:hover { background-position: -79px 100%; }
+        .smiles #s4:hover { background-position: -118px 100%; }
+        .smiles #s5:hover { background-position: -164px 100%; }
+        .smiles #s6:hover { background-position: -223px 100%; }
+        .smiles #s7:hover { background-position: -302px 100%; }
+        .smiles #s8:hover { background-position: -343px 100%; }
+        .smiles #s9:hover { background-position: -383px 100%; }
+        .smiles #s10:hover { background-position: 416px 100%; }
+
+    #bigsmile { position: absolute; top: 17px; right: 0px; width: 158px; height: 140px; background: url(../images/smiles-big.png) no-repeat; }
+        .b1 { background-position: 0 0 !important; }
+        .b2 { background-position: 0 -140px !important; }
+        .b3 { background-position: 0 -280px !important; }
+        .b4 { background-position: 0 -420px !important; }
+        .b5 { background-position: 0 -560px !important; }
+        .b6 { background-position: 0 -700px !important; }
+        .b7 { background-position: 0 -840px !important; }
+        .b8 { background-position: 0 -980px !important; }
+        .b9 { background-position: 0 -1120px !important; }
+        .b10 { background-position: 0 -1260px !important; }
+
+    #resume { position: absolute; left: 645px; bottom: 25px; font-size: 16px; color: #a21b42 }
+
+/* content */
+.content { padding: 0px 0; }
+    .content h1 { margin: 30px 0; width: 660px; font-size: 32px; color: #a21b42; }
+    .content .date { float: right; margin: 5px 0 0 0; font-size: 24px; color: #bcbcbc; }
+
+.archive { overflow: hidden; width: 700px; }
+    .archive .item { overflow: hidden; margin-bottom: 15px; }
+        .archive .year { float: left; width: 85px; color: #bcbcbc; }
+        .archive .list { overflow: hidden; }
+        .archive p { margin: 0 0 5px 0 }
+
+.text { width: 580px; }
+    .text .avatar { float: left; margin: 0 15px 0 0; }
+    .text .description { overflow: hidden; font-size: 13px; }
+    .text p { margin: 0 0 10px 0 }
+    .text h4 { margin: 24px 0 10px 0; color: #a21b42 }
+
+.project { width: 575px; padding: 0 0 0 85px; font-size: 13px; }
+    .project p { margin: 25px 0 }
+
+.portfolio { overflow: hidden; }
+    .portfolio .item { width: 220px; min-height: 335px; padding: 0 40px; display: inline-block; vertical-align: top; }
+        .portfolio .item a { font-size: 16px; color: #999 }
+        .portfolio .item p { margin: 40px 0 }
+
+.col1 { float: left; width: 290px; font-size: 13px; padding: 0 0 0 45px; margin: 45px 0 0 -45px; background: url(../images/smile.png) no-repeat 0 35px; }
+    .col1 h3 { font-size: 17px; color: #a21b42; margin-bottom: 15px; }
+    .col1 a { color: #999 }
+    .col1 p { margin: 10px 0; }
+
+    .col1 .paginator { font-size: 19px; overflow: hidden; }
+        .col1 .paginator li { float: left; margin-right: 5px; padding: 2px; }
+        .col1 .paginator li.active { background: #999; }
+        .col1 .paginator li.active a { color: #fff; }
+        .col1 .paginator li.archives { float: right; font-size: 16px }
+
+    .col1 .about { margin: 40px 0 0 0; padding: 10px 15px; background: #e4e4e4; border-radius: 10px; }
+
+.col2 { float: left; width: 225px; margin: 45px 65px 0 65px; font-size: 16px; }
+.col3 { float: left; width: 185px; margin: 45px 0 0 65px; font-size: 16px; }
+    .col2 a, .col3 a { color: #999 }
+    .col2 .item, .col3 .item { min-height: 300px }
+        .col2 .item p, .col3 .item p { margin: 15px 0; }
+
+/* footer */
+#footer {
+    padding: 10px 30px;
+	position: relative;
+	margin: -65px auto 0 auto;
+	height: 44px;
+	width: 850px;
+    border-top: 1px solid #bcbcbc;
+    font-size: 13px;
+}
+
+#footer .copyright { float: right; }
+#footer a { color: #999 }
+
+.footer_blank {	clear: both; height: 150px; }

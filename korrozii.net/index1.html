@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+<script src="js/input-focus.js"></script>
+
+<!-- jQuery (required) -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
+	<!-- Anything Slider optional plugins -->
+	<script src="js/jquery.easing.1.2.js"></script>
+
+	<!-- AnythingSlider -->
+	<link rel="stylesheet" href="css/anythingslider.css">
+	<script src="js/jquery.anythingslider.js"></script>
+
+	<!-- Ideally, add the stylesheet(s) you are going to use here,
+	 otherwise they are loaded and appended to the <head> automatically and will over-ride the IE stylesheet below -->
+	<link rel="stylesheet" href="css/theme-construction.css">
+	<link rel="stylesheet" href="css/theme-cs-portfolio.css">
+	<link rel="stylesheet" href="css/theme-metallic.css">
+
+	<script>
+		// Set up Sliders
+		// **************
+		$(function(){
+			$('#slider1').anythingSlider({
+				theme           : 'metallic',
+				easing          : 'easeInOutBack'
+			});
+		});
+	</script>
+</head>
+<body>
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+        <div class="column">
+            <div class="logo">
+                <!--<a href="#"><img src="images/logo.png" width="180" height="98" border="0" alt="" /></a>-->
+                <object
+                type="application/x-shockwave-flash" data="images/logo.swf"
+                width="177" height="98">
+                <param name="movie" value="images/logo.swf" />
+                <param name="wmode" value="transparent" />
+                </object>
+            </div>
+
+            <div class="phone">
+                8-495-123-45-67
+            </div>
+
+            <div class="email">
+                E-mail: <a href=mailto:zakaz@korrozii.net">zakaz@korrozii.net</a>
+            </div>
+
+            <div class="time">
+                С 9:00 до 18:00
+            </div>
+
+            <!-- search -->
+            <div class="search">
+                <form>
+                    <input name="searchbar" type="text" value="Search here..." tabindex="1" class="textbox" />
+                    <input type="submit" name="find" value="" tabindex="2" class="find" />
+                </form>
+            </div>
+        </div>
+
+        <!-- slider -->
+        <div class="slider">
+			<ul id="slider1">
+				<li><img src="images/s1.jpg" width="766" height="271" border="0" alt="" /></li>
+				<li><img src="images/s1.jpg" width="766" height="271" border="0" alt="" /></li>
+				<li><img src="images/s1.jpg" width="766" height="271" border="0" alt="" /></li>
+				<li><img src="images/s1.jpg" width="766" height="271" border="0" alt="" /></li>
+				<li><img src="images/s1.jpg" width="766" height="271" border="0" alt="" /></li>
+			</ul>
+        </div>
+        <div id="underslider"></div>
+
+        <!-- top menu -->
+        <div class="topmenu">
+            <a href="#" title="Карта сайта" class="map">Карта сайта</a>
+
+            <ul>
+                <li><a href="#" title="">О компании</a></li>
+                <li><a href="#" title="">Каталог продукции</a></li>
+                <li class="active"><a href="#" title="">Статьи</a></li>
+                <li><a href="#" title="">Где купить</a></li>
+                <li><a href="#" title="">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- aside -->
+    <div class="aside">
+        <div class="menu">
+            <ul>
+                <li><a href="#">Индивидуальная защита от коррозии</a>
+                    <ul>
+                        <li><a href="#">PRIM BODY</a></li>
+                        <li class="active"><a href="#">PRIM BODY PLATINUM</a></li>
+                        <li><a href="#">PRIM ML</a></li>
+                        <li><a href="#">PRIM ML PLATINUM</a></li>
+                        <li><a href="#">PRIM АНТИГРАВИЙ</a></li>
+                        <li><a href="#">PRIM ЖИДКИЕ     ПОДКРЫЛКИ</a></li>
+                        <li><a href="#">PRIM АНТИБИТУМ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Профессиональная защита от коррозии</a>
+                    <ul>
+                        <li><a href="#">PRIM BODY 2000</a></li>
+                        <li><a href="#">PRIM BODY PLATINUM</a></li>
+                        <li><a href="#">PRIM ML 2000</a></li>
+                        <li><a href="#">PRIM ML PLATINUM</a></li>
+                        <li><a href="#">PRIM АНТИШУМ</a></li>
+                        <li><a href="#">PRIM-W ЖИДКИЕ ПОДКРЫЛКИ</a></li>
+                        <li><a href="#">PRIM-W АНТИГРАВИЙ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Сопутствующие товары</a>
+                    <ul>
+                        <li><a href="#">растворители</a></li>
+                        <li><a href="#">оборудование</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- benners -->
+        <div class="banners">
+            <div class="item">
+                <a href="#"><img src="images/b1.jpg" width="167" height="167" border="0" alt="" /></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="images/b2.jpg" width="169" height="169" border="0" alt="" /></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="images/b3.jpg" width="156" height="156" border="0" alt="" /></a>
+            </div>
+        </div>
+    </div>
+
+	<!-- content -->
+	<div class="content">
+        <!-- news -->
+        <div class="news">
+            <h3>Новости</h3>
+
+            <div class="item even">
+                <span class="date">31.12.2010 </span>
+                <div class="description">
+                    Препараты ПРИМ, это - защита от коррозии
+                    Вашего автомобиля. Антикор, жидкие подкрылки,
+                    антигравий  ... [ <a href="#">подробнее</a> ]
+                </div>
+            </div>
+
+            <div class="item odd">
+                <span class="date">31.12.2010 </span>
+                <div class="description">
+                    Препараты ПРИМ, это - защита от коррозии
+                    Вашего автомобиля. Антикор, жидкие подкрылки,
+                    антигравий  ... [ <a href="#">подробнее</a> ]
+                </div>
+            </div>
+
+            <a href="#" title="" class="allnews">Все новости</a>
+        </div>
+
+        <!-- text -->
+        <h1>Препараты ПРИМ</h1>
+
+        <p><big>Препараты ПРИМ, это - <a href="#">защита от коррозии Вашего автомобиля</a>. Антикор, жидкие подкрылки, антигравий, и
+        другие препараты, Антикорозийная обработка Вашего автомобиля производится надёжными препаратами марки ПРИМ. Немецкая
+        технология и высокотехнологичное производство, это надёжная антикоррозионная обработка автомобиля, дающая 100%
+        результат.</big></p>
+
+        <div class="image alignleft">
+            <img src="images/tmp/i1.jpg" width="282" height="128" border="0" alt="" />
+        </div>
+
+        <p>Каждому автомобилю, нужна защита от коррозии, или как говорят - требуется коррозионная защита. Тем более в
+        зимнее время, когда на дорогах соль, гравий и другие химические реагенты. Необходима основательная антикоррозионная
+        обработка, иногда употребляется термин - антикоррозийная обработка, но это не меняет сути. </p>
+
+        <div class="clean"></div>
+
+        <div class="image alignright">
+            <img src="images/tmp/i2.jpg" width="180" height="438" border="0" alt="" />
+        </div>
+
+        <p>Самым надежным средством защиты днища является антикор - Прим (Prim), Антикоррозийные покрытия Прим, давно
+        зарекомендовали себя с наилучшей стороны, а последнее новшество PRIM BODY 2000 - антикоррозийный состав для защиты
+        днища автомобиля. </p>
+
+        <p>Этот антикор отлично защищает днище автомобиля от коррозии, воздействия влаги, антиоблединительных реагентов,
+        абразивного износа. Обеспечивает антикоррозийную защиту вашего транспортного средства на долгие годы. Не воздействует
+        на лакокрасочное покрытие, пластик и резину. Коррозия отступит, если своевременно провести антикор сервис. В наших
+        специализированных антикор центрах, Вы сможете сделать антигравий, установить жидкие подкрылки, сделать защиту для
+        скрытых полостей, провести обработку антикором днища автомобиля, обработать кузов вашей машины, т.е. это полная
+        антикоррозийная обработка автомобиля, цена Вас приятно удивит. Обработка антикором начинается с тщательной мойки
+        машины, затем производится ее сушка и подготовительные работы, целью которых является качественный антикор автомобиля.
+        После этого наши специалисты просверлят отверстия для доступа в автомобильные скрытые полости, которые и будут тщательно
+        обработаны. На следующем этапе антикор подразумевает обработку всех соединений и швов, а на последней стадии будет
+        произведена антикоррозийная обработка колесных арок, антикор кузова и антикор днища авто. Можете не сомневаться, что
+        после такой грамотной антикоррозионной обработки ваша машина очень долго будет иметь великолепный внешний вид на зависть
+        всем автомобилистам, которые не произвели вовремя антикор автомобиля и теперь с унынием рассматривают кузов своей машины,
+        поеденный ржавчиной. В наших розничных центрах Вы можете приобрести следующую продукцию для антикоррозийной обработки
+        вашего автомобиля: PRIM 2000 BODY, PRIM 2000 ML, PRIM BODY, PRIM ML, PRIM АНТИГРАВИЙ, PRIM ЖИДКИЕ ПОДКРЫЛКИ, PRIM ЖИДКИЕ
+        ПОДКРЫЛКИ W. </p>
+
+
+        <!-- articles -->
+        <div class="articles">
+            <h3>Статьи</h3>
+
+            <div class="item even">
+                <span class="title"><a href="#">Название статьи</a> <img src="images/pen.png" width="17" height="16" border="0" alt="" /></span>
+                <div class="description">
+                    Препараты ПРИМ, это - защита от коррозии
+                    Вашего автомобиля. Антикор, жидкие подкрылки,
+                    антигравий  ... [ <a href="#">подробнее</a> ]
+                </div>
+            </div>
+
+            <div class="item odd">
+                <span class="title"><a href="#">Название статьи</a> <img src="images/pen.png" width="17" height="16" border="0" alt="" /></span>
+                <div class="description">
+                    Препараты ПРИМ, это - защита от коррозии
+                    Вашего автомобиля. Антикор, жидкие подкрылки,
+                    антигравий  ... [ <a href="#">подробнее</a> ]
+                </div>
+            </div>
+
+            <a href="#" title="" class="allnews">Все статьи</a>
+        </div>
+    </div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+    <div class="wrapper">
+        <a href="#" title=""><img src="images/logo2.png" width="142" height="77" border="0" alt="" class="logo" /></a>
+
+        <div class="copyright">
+            <p><span>(c) Copyright &copy; 2012 Примула, Все права защищены.</span><br />
+            Корпорация «Примула» - официальный дистрибьютер материалов „Прим” © 1998</p>
+
+            <!-- social -->
+            <div class="social">
+                <p>Давайте<br />общаться</p>
+
+                <a href="#"><img src="images/fb.png" width="27" height="27" border="0" alt="" /></a>
+                <a href="#"><img src="images/vk.png" width="27" height="27" border="0" alt="" /></a>
+            </div>
+
+            <div class="counters">
+                <img src="images/tmp/c.jpeg" width="31" height="31" border="0" alt="" />
+            </div>
+        </div>
+
+        <!-- made -->
+        <div class="made">
+            <a href="#">Создание, поддержка и продвижение сайтов</a><br />
+            web-more.ru
+        </div>
+
+        <!-- bottom menu -->
+        <div class="bottommenu">
+            <ul>
+                <li><a href="#" title="">Карта сайта</a></li>
+                <li><a href="#" title="">О компании</a></li>
+                <li><a href="#" title="">Каталог продукции</a></li>
+                <li><a href="#" title="">Новости</a></li>
+                <li><a href="#" title="">Статьи</a></li>
+                <li><a href="#" title="">Где купить</a></li>
+                <li><a href="#" title="">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

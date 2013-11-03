@@ -1,0 +1,235 @@
+html, body {
+	height:100%;
+}
+body {
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #595959;
+	width:100%;
+	min-width:1000px;
+}
+#wrap {
+	position: relative;
+	width: 980px;
+	margin: 0px auto;
+	min-height:100%;
+	height:auto !important;
+	height:100%;
+    border-left: 1px solid #a2b3be;
+    border-right: 1px solid #a2b3be;
+}
+
+#wrap .header {
+    width: 980px;
+    height: 102px;
+}
+
+#wrap .header img#logo { float: left; margin-left: 10px;}
+#wrap .header #brands { float: right; }
+
+#wrap .middle {
+    width: 980px;
+    height: 275px;
+    background: url(../images/header-bg.jpg) no-repeat;
+}
+
+#wrap .addressbar {
+    width: 980px;
+    height: 55px;
+    background: url(../images/addressbar.jpg) no-repeat;
+}
+
+h1 {
+    padding-left: 170px;
+    padding-top: 20px;
+    color: #595959;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+h2 {
+    padding-top: 20px;
+    color: #595959;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px;
+    padding-left: 0px;
+    font-weight: bold;
+}
+
+
+.content #leftmenu {
+    width: 143px;
+    height: 500px;
+    border-right: 1px solid #a2b3be;
+    background: url(../images/rightbg.gif) no-repeat right center;
+    float: left;
+    z-index: 5;
+    position: relative;
+}
+
+.content #leftmenu ul#main {
+    width: 143px;
+    padding-top: 24px;
+    background: url(../images/ab_end.gif) no-repeat left top;
+}
+
+
+.content #leftmenu ul#main li {
+    width: 124px;
+    height: 32px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    background: url(../images/li.gif) no-repeat;
+    text-align: center;
+}
+
+.content #leftmenu ul#main li.main {
+    background: url(../images/li.gif) no-repeat;
+    background-position: 0px -32px;
+}
+
+.content #leftmenu ul#main li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding-top: 7px;
+    font-size: 14px;
+    color: #595959;
+}
+
+.content #leftmenu ul#main li.main a {
+    color: white;
+}
+
+ul#sub {
+    width: 124px;
+    height: 156px;
+    background: url(../images/subul.gif) no-repeat;
+    margin: 0 auto;
+    margin-top: -13px;
+    display: block;
+    padding-top: 17px;
+}
+
+ul#sub li {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+ul#sub li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #595959;
+}
+
+ul#sub li a:hover {
+    color: #163673;
+}
+
+
+.content #text {
+    float: left;
+    width: 811px;
+    height: 500px;
+    padding-left: 25px;
+    z-index: 15;
+    position: relative;
+    background: url(../images/tbottom.gif) no-repeat left bottom;
+    background-color: #f4f4f4;
+}
+
+#text p {
+    clear: both;
+    padding: 10px;
+    padding-left: 0px;
+}
+
+
+#block1 {
+    background: url(../images/block1.jpg) no-repeat;
+    width: 196px;
+    height: 149px;
+    float: left;
+    margin-right: 2px;
+    position: relative;
+}
+
+#block2 {
+    background: url(../images/block2.jpg) no-repeat;
+    width: 196px;
+    height: 149px;
+    float: left;
+    margin-right: 2px;
+    position: relative;
+}
+
+#block3 {
+    background: url(../images/block3.jpg) no-repeat;
+    width: 196px;
+    height: 149px;
+    float: left;
+    margin-right: 2px;
+    position: relative;
+}
+
+#block4 {
+    background: url(../images/block4.jpg) no-repeat;
+    width: 196px;
+    height: 149px;
+    float: left;
+    position: relative;
+}
+
+a.next {
+    font-family: Arial;
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+#footer {
+	padding-top:25px;
+	position:relative;
+    margin: 0 auto;
+	margin-top:-70px;
+	height:115px;
+	width: 980px;;
+    background-color: #3e3e3c;
+    z-index: 10;
+    border-top: 1px solid #323230;
+    border-left: 1px solid #a2b3be;
+    border-right: 1px solid #a2b3be;
+}
+
+#footer img#phone {
+    float: left;
+    margin-left: 40px;
+}
+
+#footer address {
+    margin-top: 20px;
+    margin-left: 80px;
+    float: left;
+    color: white;
+    line-height: 20px;
+    font-style: normal;
+}
+
+#footer img#counter {
+    float: right;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+
+.footer_blank {
+	height:50px;
+    clear: both;
+}

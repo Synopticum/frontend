@@ -1,0 +1,493 @@
+<html><head><title>Preview</title>
+<style type="text/css"><!--
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border: 0 none;
+	font-size: 100.01%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img { border:0 none; }
+table { border-collapse: collapse; border-spacing: 0; }
+ol, ul { list-style-image: none; list-style-position: outside; list-style-type: none; }
+q:before, q:after, blockquote:before, blockquote:after { content:""; }
+
+/* css begin */
+html, body { height:100%; }
+body {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	color: #000;
+	background: #f7f7f2;
+	width: 100%;
+	min-width: 1250px;
+}
+
+a { color: #2e6aae; }
+a:hover { color: #f00; }
+
+
+/* content */
+#wrap {
+	position: relative;
+	width: 1250px;
+	margin: 0px auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	background: url(../images/body-bg.jpg) no-repeat 50% 0;
+}
+.wrap-inner { background: url(../images/inner-bg.jpg) no-repeat 50% 0 !important; }
+
+/* header */
+.header { overflow: hidden; height: 594px; }
+	.header .logo { float: left; display: inline-block; margin: 80px 0 0 55px; }
+
+	.header .contacts { float: left; display: block; width: 250px; margin: 70px 0 0 25px; font-family: Georgia, serif; }
+
+		.header .phone { padding: 0 0 0 48px; background: url(../images/header-phone.png) no-repeat 0 0; font-size: 36px; color: #49382a; }
+			.header .phone sup { font-size: 18px; display: inline-block; margin-top: 5px; }
+
+		.header .contacts ul { margin: 15px 7px 0 0; }
+			.header .contacts li { text-align: right; margin-bottom: 10px; padding: 0 22px 0 0; font-size: 18px; color: #2e6aae; background: url(../images/header-bullet.png) no-repeat 100% 6px; }
+
+
+.wrap-inner .header { height: 296px; }
+
+.wrap-inner .inner-img { float: right; }
+
+
+.content { overflow: hidden;  }
+.wrap-inner .content { margin-top: -30px;  }
+
+/* aside */
+.aside { float: left; margin: 0 58px 0 56px; width: 240px; display: inline;  }
+	.aside ul {
+		width: 188px;
+		padding: 35px 20px 35px 20px;
+		background: url(../images/leftmenu-bg.gif) repeat-x 0 100% #428eca;
+		border-radius: 13px;
+		-moz-border-radius: 13px;
+		-webkit-border-radius: 13px;
+	}
+		.aside li { padding: 8px 0; background: url(../images/leftmenu-spacer.png) repeat-x 0 0; }
+		.aside li:first-child { background: none; }
+		.aside li a { color: #fff; text-decoration: none; }
+		.aside li a:hover { text-decoration: underline; }
+
+	.aside h2 { margin: 15px 0 5px 0; }
+
+	.aside p { margin: 10px 0; line-height: 150%; color: #49382a; }
+		.aside p strong { color: #000; }
+
+	.aside .links { padding: 0; margin: 20px 0; background: none; }
+		.aside .links li { background: none; padding: 0 0 8px 20px; background: url(../images/bullet-4.gif) no-repeat 0 6px; }
+		.aside .links a { color: #000; border: 0; text-decoration: underline; line-height: 150%; }
+
+	.aside .button {
+		margin: 10px 0;
+		display: block;
+		width: 230px;
+		height: 26px;
+		background: url(../images/aside-button.png) no-repeat;
+		font-family: Georgia, serif;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-shadow: -1px -1px 0 #47913d;
+		padding: 11px 0 0 0;
+		color: #fff;
+	}
+	.aside .button:hover { background-position: 0 -37px; }
+
+
+/* text */
+.text { float: left; width: 870px; overflow: hidden; padding-bottom: 50px; }
+
+	h1, h2, h3, h4, h6 {
+		font-family: Georgia, serif; text-transform: uppercase; font-weight: normal;
+	}
+	h1, h2 { font-size: 18px; line-height: 150%; }
+	h3 { font-size: 12px; }
+	h5 { font-size: 14px; margin: 10px 0; color: #2e6aae; }
+
+
+	.text p { margin: 15px 0 7px 0; padding-bottom: 7px; color: #101d27; border-bottom: 1px dotted #101d27; line-height: 150%; }
+	.text .noline { border-bottom: 0; }
+	.text .pl { padding-left: 40px; }
+
+	.text big { font-size: 14px; font-weight: normal; color: #49382a; }
+
+	.categories { overflow: hidden; margin: 10px 0 40px 0; }
+		.categories .item { float: left; width: 215px; line-height: 140%; }
+			.categories .item a { display: inline-block; padding: 0 0 0 10px; }
+			.categories .item img { margin-left: -10px }
+
+	.readmore { padding: 0 0 0 20px; color: #000; background: url(../images/readmore.gif) no-repeat 0 3px; }
+	.readmore:hover { color: #f00; }
+
+	.text ul { margin: 10px 0 10px 0; }
+		.text ul li { margin-bottom: 5px; padding-left: 15px; }
+		.text ul.gray li { background: url(../images/bullet-1.gif) no-repeat 0 5px; }
+		.text ul.blue li { background: url(../images/bullet-3.gif) no-repeat 0 5px; }
+
+		.text ul ul { margin: 5px 0; }
+			.text ul.gray ul li { background: url(../images/bullet-2.gif) no-repeat 0 6px; }
+
+	.text .list {}
+		.text .list li { padding: 9px 0 5px 40px; background: url(../images/bullet-5.png) no-repeat 0 4px; line-height: 150%; }
+		.text .list a { font-weight: bold; }
+
+	.text .thumbnails { font-size: 11px; color: #9c938a; overflow: hidden; margin: 15px 0; }
+		.text .thumbnails img {	float: left; border: 2px solid #ebeae4; margin: 0 7px 7px 0; }
+
+.popup {
+	width: 400px;
+	overflow: auto;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	line-height: 140%;
+	padding: 20px 20px 80px 20px;
+}
+
+/* tables */
+table { width: 100%; }
+	table td { padding: 10px 0; }
+
+.ttx {}
+	.ttx thead th { vertical-align: middle; background: url(../images/ttx-th-bg.gif) repeat-x #e7e1d8; text-align: center; padding: 20px 0; border-bottom: 1px solid #49382a; }
+	.ttx td { text-align: center; }
+	.ttx .odd { background-color: #ebeae4 !important; padding: 10px 20px; }
+	.ttx tfoot td { background: url(../images/ttx-tf-bg.gif) repeat-x 0 100% !important; padding-bottom: 20px !important; }
+
+
+/* news */
+.news {
+	background: url(../images/news-bg.gif) repeat-x 0 100% #f1e9c5;
+	border-top: 1px solid #fff;
+	margin: 28px 0;
+	padding: 25px 50px 25px 55px;
+	overflow: hidden;
+	position: relative;
+	clear: both;
+}
+
+.news .wrapper { float: left; width: 770px; }
+	.news .item { float: left; width: 335px; margin: 15px 45px 0 0; }
+		.news .item p { margin: 10px 0 7px 0; padding-bottom: 7px; color: #101d27; border-bottom: 1px dotted #101d27; line-height: 150%; }
+		.news .item a { color: #49382a; }
+		.news .item a:hover { color: #f00; }
+		.news .item .readmore { color: #101d27; }
+
+.news .banner { position: relative; float: right; width: 364px; height: 160px; padding: 9px 0 0 9px; background: url(../images/banner-bg.png) no-repeat; }
+	.news .banner .ctr, .news .banner .cbl { position: absolute; width: 23px; height: 23px; background: url(../images/banner-corners.png) no-repeat; }
+		.news .banner .ctr { right: 32px; top: 9px; background-position: 100% 0; }
+		.news .banner .cbl { left: 9px; bottom: 35px; }
+/* footer */
+#footer {
+	position: relative;
+	margin: -97px auto 0 auto;
+	padding: 30px 0 0 0;
+	height: 133px;
+	width: 1250px;
+	font-size: 11px;
+	background: url(../images/footer-bg.jpg) no-repeat 100% 100%;
+}
+
+#footer .copyright {
+	float: left;
+	width: 170px;
+	font-family: Verdana, sans-serif;
+	color: #919191;
+	line-height: 180%;
+	margin: 0 117px 0 55px;
+	display: inline;
+}
+
+#footer .contacts {
+	float: left;
+	font-family: Verdana, sans-serif;
+	line-height: 200%;
+	color: #49382a;
+	margin: 0 105px 0 0;
+	display: inline;
+}
+#footer .contacts strong { display: inline-block; width: 75px; }
+
+#footer .navigation { float: left; width: 500px;  }
+
+	#footer .navigation .searchbar {
+		float: left;
+		width: 194px;
+		height: 11px;
+		border: 0;
+		background: url(../images/footer-search.png) no-repeat 0 0;
+		font-family: Arial, sans-serif;
+		font-size: 11px;
+		color: #919191;
+		padding: 10px 10px 12px 20px;
+		margin: 10px 0 10px -5px;
+	}
+	#footer .navigation #find {
+		float: left;
+		width: 40px;
+		height: 33px;
+		border: 0;
+		background: url(../images/footer-search.png) no-repeat 100% 0;
+		cursor: pointer;
+		margin: 10px 0;
+	}
+
+	#footer .navigation .cities {
+		clear: both;
+		overflow: hidden;
+		background: url(../images/footer-cities.png) no-repeat;
+		width: 438px;
+		height: 33px;
+		padding: 8px 0 0 0;
+		text-align: center;
+	}
+		#footer .navigation .cities a { font-size: 12px; color: #000; margin: 0 5px; }
+		#footer .navigation .cities a:hover { color: #f00; }
+
+.footer_blank {	clear: both; height: 70px; }
+
+--></style>
+</head>
+<body>
+<a name="0"></a><html>Element html</html><br>
+<a name="1"></a><body>Element body</body><br>
+<a name="2"></a><div>Element div</div><br>
+<a name="3"></a><span>Element span</span><br>
+<a name="4"></a><applet>Element applet</applet><br>
+<a name="5"></a><object>Element object</object><br>
+<a name="6"></a><iframe>Element iframe</iframe><br>
+<a name="7"></a><h1>Element h1</h1><br>
+<a name="8"></a><h2>Element h2</h2><br>
+<a name="9"></a><h3>Element h3</h3><br>
+<a name="10"></a><h4>Element h4</h4><br>
+<a name="11"></a><h5>Element h5</h5><br>
+<a name="12"></a><h6>Element h6</h6><br>
+<a name="13"></a><p>Element p</p><br>
+<a name="14"></a><blockquote>Element blockquote</blockquote><br>
+<a name="15"></a><pre>Element pre</pre><br>
+<a name="16"></a><a href="http://www.blumentals.net" target="_blank">Link</a><br>
+<a name="17"></a><abbr>Element abbr</abbr><br>
+<a name="18"></a><acronym>Element acronym</acronym><br>
+<a name="19"></a><address>Element address</address><br>
+<a name="20"></a><big>Element big</big><br>
+<a name="21"></a><cite>Element cite</cite><br>
+<a name="22"></a><code>Element code</code><br>
+<a name="23"></a><del>Element del</del><br>
+<a name="24"></a><dfn>Element dfn</dfn><br>
+<a name="25"></a><font>Element font</font><br>
+<a name="26"></a><img src="file://C:\Program Files (x86)\HTMLPad 2010\Image.gif"> Image<br>
+<a name="27"></a><ins>Element ins</ins><br>
+<a name="28"></a><kbd>Element kbd</kbd><br>
+<a name="29"></a><q>Element q</q><br>
+<a name="30"></a><s>Element s</s><br>
+<a name="31"></a><samp>Element samp</samp><br>
+<a name="32"></a><small>Element small</small><br>
+<a name="33"></a><strike>Element strike</strike><br>
+<a name="34"></a><sub>Element sub</sub><br>
+<a name="35"></a><tt>Element tt</tt><br>
+<a name="36"></a><var>Element var</var><br>
+<a name="37"></a><dd>Element dd</dd><br>
+<a name="38"></a><dl>Element dl</dl><br>
+<a name="39"></a><dt>Element dt</dt><br>
+<a name="40"></a><ul><li>List Item</li></ul><br>
+<a name="41"></a><ol><li>Ordered List</li></ol><br>
+<a name="42"></a><ul><li>Unordered List</li></ul><br>
+<a name="43"></a><fieldset>Element fieldset</fieldset><br>
+<a name="44"></a><form>Element form</form><br>
+<a name="45"></a><label>Element label</label><br>
+<a name="46"></a><legend>Element legend</legend><br>
+<a name="47"></a><table><tr><td>Table</td></tr></table><br>
+<a name="48"></a><caption>Element caption</caption><br>
+<a name="49"></a><tbody>Element tbody</tbody><br>
+<a name="50"></a><tfoot>Element tfoot</tfoot><br>
+<a name="51"></a><thead>Element thead</thead><br>
+<a name="52"></a><table><tr><td>Table Row</td></tr></table><br>
+<a name="53"></a><th>Element th</th><br>
+<a name="54"></a><table><tr><td>Table Cell</td></tr></table><br>
+<a name="55"></a><a img>Element a img</a img><br>
+<a name="56"></a><div>Class </div>
+<br>
+<a name="57"></a><div>Class </div>
+<br>
+<a name="58"></a><table><tr><td>Table</td></tr></table><br>
+<a name="59"></a><ol><li>Ordered List</li></ol><br>
+<a name="60"></a><ul><li>Unordered List</li></ul><br>
+<a name="61"></a><q>Element q</q><br>
+<a name="62"></a><q>Element q</q><br>
+<a name="63"></a><blockquote>Element blockquote</blockquote><br>
+<a name="64"></a><blockquote>Element blockquote</blockquote><br>
+<a name="65"></a><html>Element html</html><br>
+<a name="66"></a><body>Element body</body><br>
+<a name="67"></a><body>Element body</body><br>
+<a name="68"></a><a href="http://www.blumentals.net" target="_blank">Link</a><br>
+<a name="69"></a><a href="http://www.blumentals.net" target="_blank">Link</a><br>
+<a name="70"></a><div id="wrap">ID wrap</div>
+<a name="71"></a><div class="wrap-inner">Class wrap-inner</div>
+<br>
+<a name="72"></a><div class="header">Class header</div>
+<br>
+<a name="73"></a><div class="header .logo">Class header .logo</div>
+<br>
+<a name="74"></a><div class="header .contacts">Class header .contacts</div>
+<br>
+<a name="75"></a><div class="header .phone">Class header .phone</div>
+<br>
+<a name="76"></a><div class="header .phone sup">Class header .phone sup</div>
+<br>
+<a name="77"></a><div class="header .contacts ul">Class header .contacts ul</div>
+<br>
+<a name="78"></a><div class="header .contacts li">Class header .contacts li</div>
+<br>
+<a name="79"></a><div class="wrap-inner .header">Class wrap-inner .header</div>
+<br>
+<a name="80"></a><div class="wrap-inner .inner-img">Class wrap-inner .inner-img</div>
+<br>
+<a name="81"></a><div class="content">Class content</div>
+<br>
+<a name="82"></a><div class="wrap-inner .content">Class wrap-inner .content</div>
+<br>
+<a name="83"></a><div class="aside">Class aside</div>
+<br>
+<a name="84"></a><div class="aside ul">Class aside ul</div>
+<br>
+<a name="85"></a><div class="aside li">Class aside li</div>
+<br>
+<a name="86"></a><div class="aside li">Class aside li</div>
+<br>
+<a name="87"></a><div class="aside li a">Class aside li a</div>
+<br>
+<a name="88"></a><div class="aside li a">Class aside li a</div>
+<br>
+<a name="89"></a><div class="aside h2">Class aside h2</div>
+<br>
+<a name="90"></a><div class="aside p">Class aside p</div>
+<br>
+<a name="91"></a><div class="aside p strong">Class aside p strong</div>
+<br>
+<a name="92"></a><div class="aside .links">Class aside .links</div>
+<br>
+<a name="93"></a><div class="aside .links li">Class aside .links li</div>
+<br>
+<a name="94"></a><div class="aside .links a">Class aside .links a</div>
+<br>
+<a name="95"></a><div class="aside .button">Class aside .button</div>
+<br>
+<a name="96"></a><div class="aside .button">Class aside .button</div>
+<br>
+<a name="97"></a><div class="text">Class text</div>
+<br>
+<a name="98"></a><h1>Element h1</h1><br>
+<a name="99"></a><h2>Element h2</h2><br>
+<a name="100"></a><h3>Element h3</h3><br>
+<a name="101"></a><h4>Element h4</h4><br>
+<a name="102"></a><h6>Element h6</h6><br>
+<a name="103"></a><h1>Element h1</h1><br>
+<a name="104"></a><h2>Element h2</h2><br>
+<a name="105"></a><h3>Element h3</h3><br>
+<a name="106"></a><h5>Element h5</h5><br>
+<a name="107"></a><div class="text p">Class text p</div>
+<br>
+<a name="108"></a><div class="text .noline">Class text .noline</div>
+<br>
+<a name="109"></a><div class="text .pl">Class text .pl</div>
+<br>
+<a name="110"></a><div class="text big">Class text big</div>
+<br>
+<a name="111"></a><div class="categories">Class categories</div>
+<br>
+<a name="112"></a><div class="categories .item">Class categories .item</div>
+<br>
+<a name="113"></a><div class="categories .item a">Class categories .item a</div>
+<br>
+<a name="114"></a><div class="categories .item img">Class categories .item img</div>
+<br>
+<a name="115"></a><div class="readmore">Class readmore</div>
+<br>
+<a name="116"></a><div class="readmore">Class readmore</div>
+<br>
+<a name="117"></a><div class="text ul">Class text ul</div>
+<br>
+<a name="118"></a><div class="text ul li">Class text ul li</div>
+<br>
+<a name="119"></a><div class="text ul.gray li">Class text ul.gray li</div>
+<br>
+<a name="120"></a><div class="text ul.blue li">Class text ul.blue li</div>
+<br>
+<a name="121"></a><div class="text ul ul">Class text ul ul</div>
+<br>
+<a name="122"></a><div class="text ul.gray ul li">Class text ul.gray ul li</div>
+<br>
+<a name="123"></a><div class="text .list">Class text .list</div>
+<br>
+<a name="124"></a><div class="text .list li">Class text .list li</div>
+<br>
+<a name="125"></a><div class="text .list a">Class text .list a</div>
+<br>
+<a name="126"></a><div class="text .thumbnails">Class text .thumbnails</div>
+<br>
+<a name="127"></a><div class="text .thumbnails img">Class text .thumbnails img</div>
+<br>
+<a name="128"></a><div class="popup">Class popup</div>
+<br>
+<a name="129"></a><table><tr><td>Table</td></tr></table><br>
+<a name="130"></a><table td>Element table td</table td><br>
+<a name="131"></a><div class="ttx">Class ttx</div>
+<br>
+<a name="132"></a><div class="ttx thead th">Class ttx thead th</div>
+<br>
+<a name="133"></a><div class="ttx td">Class ttx td</div>
+<br>
+<a name="134"></a><div class="ttx .odd">Class ttx .odd</div>
+<br>
+<a name="135"></a><div class="ttx tfoot td">Class ttx tfoot td</div>
+<br>
+<a name="136"></a><div class="news">Class news</div>
+<br>
+<a name="137"></a><div class="news .wrapper">Class news .wrapper</div>
+<br>
+<a name="138"></a><div class="news .item">Class news .item</div>
+<br>
+<a name="139"></a><div class="news .item p">Class news .item p</div>
+<br>
+<a name="140"></a><div class="news .item a">Class news .item a</div>
+<br>
+<a name="141"></a><div class="news .item a">Class news .item a</div>
+<br>
+<a name="142"></a><div class="news .item .readmore">Class news .item .readmore</div>
+<br>
+<a name="143"></a><div class="news .banner">Class news .banner</div>
+<br>
+<a name="144"></a><div class="news .banner .ctr">Class news .banner .ctr</div>
+<br>
+<a name="145"></a><div class="news .banner .cbl">Class news .banner .cbl</div>
+<br>
+<a name="146"></a><div class="news .banner .ctr">Class news .banner .ctr</div>
+<br>
+<a name="147"></a><div class="news .banner .cbl">Class news .banner .cbl</div>
+<br>
+<a name="148"></a><div id="footer">ID footer</div>
+<a name="149"></a><div id="footer .copyright">ID footer .copyright</div>
+<a name="150"></a><div id="footer .contacts">ID footer .contacts</div>
+<a name="151"></a><div id="footer .contacts strong">ID footer .contacts strong</div>
+<a name="152"></a><div id="footer .navigation">ID footer .navigation</div>
+<a name="153"></a><div id="footer .navigation .searchbar">ID footer .navigation .searchbar</div>
+<a name="154"></a><div id="footer .navigation #find">ID footer .navigation #find</div>
+<a name="155"></a><div id="footer .navigation .cities">ID footer .navigation .cities</div>
+<a name="156"></a><div id="footer .navigation .cities a">ID footer .navigation .cities a</div>
+<a name="157"></a><div id="footer .navigation .cities a:hover">ID footer .navigation .cities a:hover</div>
+<a name="158"></a><div class="footer_blank">Class footer_blank</div>
+<br>
+
+</body></html>

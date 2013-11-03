@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+</head>
+<body>
+
+<a href="#" title="Онлайн-конкультант" class="consult"><!-- --></a>
+
+<div id="wrap">
+
+	<!-- header -->
+	<div class="header">
+        <a href="#" title="" class="logo"><img src="images/logo.png" alt="" /></a>
+
+        <div class="usercontrols">
+            <form>
+                <img src="images/key.png" width="10" height="18" alt="" class="enter" /> <a href="javascript:void(0);" title="" id="enter">Вход в кабинет</a>
+                &nbsp;&nbsp;&nbsp;
+
+                Валюта:
+                <select name="currency" size="1">
+                    <option value="Рубль" selected="selected">Рубль</option>
+                    <option value="US Dollar">US Dollar</option>
+                    <option value="Euro">Euro</option>
+                </select>
+
+                &nbsp;&nbsp;&nbsp;
+                <img src="images/lang-en.png" width="16" height="12" alt="" class="lang" /> <a href="#" title="">English</a>
+            </form>
+
+            <!-- contacts -->
+            <div class="contacts">
+                Служба поддержки<br />
+                <big>+7 (843) 245-23-55</big>
+            </div>
+
+            <div class="popup login">
+                <h3>Вход в личный кабинет</h3>
+
+                <div class="wrapper">
+                    <form>
+                        <input name="yourlogin" type="text" class="textbox" value="Логин (e-mail)" tabindex="1" />
+                        <input name="yourpassword" type="password" class="textbox" value="Пароль" tabindex="2" />
+
+                        <p><a href="#" title="">Забыли пароль?</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" title="">Зарегистрироваться</a></p>
+
+                        <input type="submit" name="remind" value="" class="loginnow" tabindex="3" />
+                    </form>
+                </div>
+            </div>
+            <script language="JavaScript" type="text/javascript">
+            /*<![CDATA[*/
+            $('#enter').click(function() {
+              $('.login').toggle('fast');
+            });
+            /*]]>*/
+            </script>
+        </div>
+    </div>
+
+    <!-- topmenu -->
+    <div class="topmenu">
+        <ul>
+            <li><a href="#" title="">Забронировать отель</a></li>
+            <li class="active"><a href="#" title="">Забронировать квартиру</a></li>
+            <li><a href="#" title="">О сервисе</a></li>
+        </ul>
+
+        <div class="tr"></div>
+
+        <div class="social">
+            <a href="#" title="" class="vkontakte"></a>
+            <a href="#" title="" class="facebook"></a>
+            <a href="#" title="" class="twitter"></a>
+            <a href="#" title="" class="skype"></a>
+        </div>
+    </div>
+
+	<!-- content -->
+	<div class="content">
+
+        <!-- sort box -->
+        <div class="sortbox">
+            <div class="wrap">
+
+            <!-- search -->
+            <div class="search">
+                <div class="wrapper">
+                <form>
+                    <!-- table2 -->
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="f">Город: <input name="yourcity" type="text" class="textbox yourcity" tabindex="1" /></div>
+                                <div class="f">Район города: <input name="yourarea" type="text" class="textbox yourarea" tabindex="2" /></div>
+                            </td>
+                            <td>
+                                <div class="f">Сколько гостей:
+                                    <select name="peoplecount" class="peoplecount" size="1">
+                                    <option selected="selected">-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="f">Период: <small>С <a href="#" title="">13 октября</a>  по  <a href="#" title="">20 октября</a> 2011</small></div>
+                            </td>
+                            <td>
+                                Сколько комнат:
+                                <label><input type="checkbox" name="c1" tabindex="4" /> одна</label>
+                                <label><input type="checkbox" name="c2" tabindex="5" /> две</label>
+                                <label><input type="checkbox" name="c3" tabindex="6" /> три и больше</label>
+                            </td>
+                            <td>
+                                Стоимость:
+                                <label><input type="checkbox" name="c4" tabindex="7" /> Эконом (до 1500 руб)</label>
+                                <label><input type="checkbox" name="c5" tabindex="8" /> Стандарт (от 1501 до 3000 руб)</label>
+                                <label><input type="checkbox" name="c6" tabindex="9" /> Элит (от 3001 руб)</label>
+
+                                <input type="submit" name="find" value="Найти" tabindex="10" class="find" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+        <!-- stages -->
+        <div class="stages">
+            <span class="stage1 active">Шаг 1. Выбор квартиры</span>
+            <span class="stage2">Шаг 2. Оформление и оплата</span>
+            <span class="stage3">Шаг 3. Забронированно!!!</span>
+        </div>
+
+        <!-- view apartament -->
+        <div class="view-apartament">
+          <!-- column -->
+          <div class="col1">
+            <div class="wrapper">
+              <h1>Адрес: г.Казань, ул.Фучика 20</h1>
+
+              <!-- view -->
+              <div class="view">
+                <img src="images/tmp/v1.jpg" width="425" height="320" alt="" />
+
+                <div class="thumbnails">
+                    <a href="#" title=""><img src="images/tmp/v2.jpg" width="59" height="59" alt="" /></a>
+                    <a href="#" title=""><img src="images/tmp/v3.jpg" width="59" height="59" alt="" /></a>
+                    <a href="#" title=""><img src="images/tmp/v4.jpg" width="59" height="59" alt="" /></a>
+                    <a href="#" title=""><img src="images/tmp/v5.jpg" width="59" height="59" alt="" /></a>
+                    <a href="#" title=""><img src="images/tmp/v6.jpg" width="59" height="59" alt="" /></a>
+                </div>
+              </div>
+
+              <!-- description -->
+              <div class="description">
+                <h3>Описание:</h3>
+
+                <p>Уютная 2х клмнатная квартира, в спальном районе. 5 минут до метро,
+                Евро-ремонт, вся техника в наличии, текс текст текст текст текст текст,
+                душевая кабинка, джакузи, бесплатный Wi-Fi, наличие всех удобств, новая бебель,
+                охраняемая парковка, текст, душевая кабинка, джакузи, бесплатный Wi-Fi, наличие
+                всех удобств, новая бебель, охраняемая парковка.</p>
+              </div>
+
+              <!-- description -->
+              <div class="feeds">
+                <h3>Отзывы:</h3>
+
+                <p><a href="#" title="">Дмитрий Медведев.</a>&nbsp; Квартира великонепная! Были с друзьями на новый год, очень
+                понравилось, особенно впечатлило наличие джакузи и бесплатного wi-fi. Всем
+                рекомендуем. Жили неделю, не хотелось уезжать, остались бы ещё но работа, пора
+                было ехсть ... <a href="#" title="">Читать полностью</a><br />
+                Оценка Очень хорошо 9 из 10  </p>
+
+                <p><a href="#" title="">Дмитрий Медведев.</a>&nbsp; Квартира великонепная! Были с друзьями на новый год, очень
+                понравилось, особенно впечатлило наличие джакузи и бесплатного wi-fi. Всем
+                рекомендуем. Жили неделю, не хотелось уезжать, остались бы ещё но работа, пора
+                было ехсть ... <a href="#" title="">Читать полностью</a><br />
+                Оценка Очень хорошо 9 из 10  </p>
+
+                <p><a href="#" title="">Читать все отзывы (20)</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- column -->
+          <div class="col2">
+            <div class="sa-box">
+                <h3>Данные о владельце квартиры:</h3>
+
+                <p>Имя: Александр Петров<br />
+                Среднее время ответа: 14 минут<br />
+                Колличество успешных пердложений: 45 квартир<br />
+                Отзывы о владельце: 14 +/- 1  <a href="#" title="">Читать отзывы</a></p>
+            </div>
+
+            <div class="sa-box">
+                <h3>Стоимость:</h3>
+
+                <p>Стоимость на период с 13 октября по 20 октября 2011: <span>18400 руб</span><br />
+                Стоимость за сутки: <span>2300 руб</span></p>
+            </div>
+
+            <div class="sa-box">
+                <h3>Стоимость:</h3>
+
+                <a href="#" title="" class="button bron">Забронировать</a>
+                <a href="#" title="" class="button check">Проверить</a>
+            </div>
+
+            <div class="sa-box">
+                <h3>Часто задаваемые вопросы:</h3>
+
+                <ul>
+                    <li><a href="#" title="">Как снять эту квартиру?</a></li>
+                    <li><a href="#" title="">Зачем уточнять наличие?</a></li>
+                    <li><a href="#" title="">Как связаться с хозяином?</a></li>
+                    <li><a href="#" title="">Какие гарантии даёт EDDU.RU ?</a></li>
+                    <li><a href="#" title="">Когда мне ждать ответа от хозяина?</a></li>
+                    <li><a href="#" title="">Как быстрее подобрать квартиру?</a></li>
+                </ul>
+            </div>
+
+            <div class="sa-box showonmap">
+                <h3>Смотреть квартиру на карте</h3>
+
+                <div class="map">
+                    <img src="images/tmp/map.jpg" width="436" height="301" alt="" />
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+    <div class="wrapper">
+        <!-- share link -->
+        <div class="share">
+            &lt;-- блок &laquo;Поделиться ссылкой с друзьями&raquo; --&gt;
+        </div>
+
+        <!-- footer content -->
+        <div class="footer-content">
+            <div class="counters">
+                <a href="#" title=""><img src="images/tmp_counter.gif" width="31" height="31" alt="" /></a>
+            </div>
+
+            <div class="copyright">
+                Online бронирование отелей, гостиниц и квартир. 2011 &copy; <a href="#" title="">www.eddu.ru</a><br />
+                Забронировать жильё для поездки, командировки, отдыха можете у нашем сайте.
+            </div>
+
+            <div class="paymentsystems">
+                <img src="images/footer-ps.png" width="184" height="42" alt="" class="ps" />
+                <img src="images/footer-ps-wm.png" width="90" height="33" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

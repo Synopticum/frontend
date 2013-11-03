@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+
+<link href="css/ui-lightness/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+<script src="js/jquery-ui-1.9.2.custom.js"></script>
+	<script>
+	$(function() {		
+		$( "#button" ).button();
+		$( "#radioset" ).buttonset();
+		
+		$( "#tabs" ).tabs();
+		
+		$( "#slider" ).slider({
+			range: true,
+			values: [ 17, 67 ]
+		});		
+	});
+	</script>
+
+<script type="text/javascript" src="js/pxgradient-1.0.2.jquery.js"></script>
+
+</head>
+<body>
+
+<!-- top navigation -->
+<div class="topnav">
+	<div class="wrapper">
+		<!-- welcome -->
+		<div class="topnav-welcome">
+			Мы вас не узнаем. <a href="javascript:void(0);" title="" class="nohref">Паркуйтесь</a> или <a href="" title="">регистрируйтесь</a>
+		</div>
+
+		<!-- top menu -->
+		<div class="topnav-menu">
+			<ul>
+				<li><a href="" title="">Наши покупатели</a></li>
+				<li><a href="" title="">Корпоративным клиентам</a></li>
+				<li><a href="" title="">Полезная информация</a></li>
+				<li><a href="" title="">Контакты</a></li>
+				<li><a href="" title="">О компании</a>
+					<ul>
+						<li><a href="" title="">Общие</a></li>
+						<li><a href="" title="">Наши награды</a></li>
+						<li><a href="" title="">Полезная информация</a></li>
+						<li><a href="" title="">Мы</a></li>
+						<li><a href="" title="">Каталог а/м</a></li>
+					</ul>
+				</li>				                                    
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+		<!-- search -->
+		<div class="header-search">
+			<form action="">
+			    <input name="textbox" type="text" value="Поиск по сайту" id="s" tabindex="1" />
+			    <input name="find" type="submit" value="" id="searchsubmit"tabindex="2" />
+			</form>
+		</div>
+
+		<!-- contacts -->
+		<div class="header-phone">
+			<big>(8 800) 345-34-45</big><br />
+			<a href="" title="">Задать вопрос on-line</a>
+		</div>
+
+		<!-- main menu -->
+		<div class="header-menu">
+			<table>
+				<tr>
+					<td class="r1 active"><a href="" title=""><span></span>Купить автомобиль</a></td>
+					<td class="r2"><a href="" title=""><span></span>Купить сервис</a></td>
+					<td class="r3"><a href="" title=""><span></span>Купить страховку</a></td>
+					<td class="r4"><a href="" title=""><span></span>Купить в кредит</a></td>
+					<td class="r5"><a href="" title=""><span></span>Продать старый автомобиль</a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<!-- content -->
+	<div class="content">
+		<div class="page">
+			<div class="double">
+				<!-- switcher -->
+				<div class="double-switcher">
+					<div class="item">
+						<a href="javascript:void(0);" title="" id="double-tab-1-link" class="title active">Обслужить</a><br />
+						<span class="subtitle">Сервисное обслуживание и ТО</span>
+					</div>
+
+					<div class="item">
+						<a href="javascript:void(0);" title="" id="double-tab-2-link" class="title">Починить</a><br />
+						<span class="subtitle">Кузовной ремонт</span>
+					</div>
+				</div>
+
+				<div id="double-tab-1">
+					<div class="double-nav">
+						<a href="" title="" class="r1"><span>ТО</span></a>
+						<a href="" title="" class="r2"><span>Шиномонтаж</span></a>
+						<a href="" title="" class="r3"><span>Шинный отель</span></a>
+					</div>
+
+					<!-- forms -->
+					<div class="forms">
+					<form action="">
+						<table>
+							<tr>
+								<td>ТО:
+									<select id="f-to">
+										<option>Пункт 1</option>
+										<option>Пункт 2</option>
+										<option>Пункт 3</option>
+									</select>
+								</td>
+								<td>Марка:
+									<select id="f-marka">
+										<option>Пункт 1</option>
+										<option>Пункт 2</option>
+										<option>Пункт 3</option>
+									</select>
+								</td>
+								<td>Модель:
+									<select id="f-model">
+										<option>Пункт 1</option>
+										<option>Пункт 2</option>
+										<option>Пункт 3</option>
+									</select>
+								</td>
+								<td>Двигатель:
+									<select id="f-engine">
+										<option>Пункт 1</option>
+										<option>Пункт 2</option>
+										<option>Пункт 3</option>
+									</select>
+								</td>
+								<td>Топливо:
+									<select id="f-gas">
+										<option>Пункт 1</option>
+										<option>Пункт 2</option>
+										<option>Пункт 3</option>
+									</select>
+								</td>
+								<td>КПП:
+									<select id="f-kpp">
+										<option>Пункт 1</option>
+										<option>Пункт 2</option>
+										<option>Пункт 3</option>
+									</select>
+								</td>
+							</tr>
+
+							<tr>
+								<td colspan="6">&nbsp;</td>
+							</tr>
+
+							<tr>
+								<td colspan="6"><span class="total">Итого:</span> <span id="count">7 279</span> <img src="images/rouble2.png" alt="" /></td>
+							</tr>
+
+							<tr>
+								<td colspan="6">&nbsp;</td>
+							</tr>
+
+							<tr>
+								<td colspan="6"><input type="text" id="" class="textbox" value="Иванов" /></td>
+							</tr>
+							<tr>
+								<td colspan="6"><input type="text" id="" class="textbox" value="Алексей" /></td>
+							</tr>
+							<tr>
+								<td colspan="6"><input type="text" id="" class="textbox" value="Карлович" /></td>
+							</tr>
+							<tr>
+								<td colspan="6"><input type="text" id="" class="textbox" value="Телефон *" /></td>
+							</tr>
+							<tr>
+								<td colspan="6"><input type="text" id="" class="textbox" value="E-mail *" /></td>
+							</tr>
+
+							<tr>
+								<td colspan="6">&nbsp;</td>
+							</tr>
+
+							<tr>
+								<td colspan="6"><input type="button" id="" class="submit" value="Записаться на ТО" /></td>
+							</tr>
+						</table>
+					</form>
+					</div>
+				</div>
+
+				<div id="double-tab-2">
+					<!-- forms -->
+					<div class="forms">
+					<form action="">
+						<div class="double-row">
+							Выберите марку автомобиля:
+							<select id="select1">
+								<option>Пункт 1</option>
+								<option>Пункт 2</option>
+								<option>Пункт 3</option>
+							</select>
+
+							Выберите модель:
+							<select id="select2">
+								<option>Пункт 1</option>
+								<option>Пункт 2</option>
+								<option>Пункт 3</option>
+							</select>
+						</div>
+
+						<div class="double-row">
+						<table>
+							<tr>
+								<td><label><input type="checkbox" id="" /> бампер</label></td>
+								<td><label><input type="checkbox" id="" /> переднее крыло</label></td>
+								<td><label><input type="checkbox" id="" /> капот</label></td>
+								<td><label><input type="checkbox" id="" /> крыша</label></td>
+								<td><label><input type="checkbox" id="" /> передняя дверь</label></td>
+							</tr>
+							<tr>
+								<td><label><input type="checkbox" id="" /> задняя дверь</label></td>
+								<td><label><input type="checkbox" id="" /> заднее крыло</label></td>
+								<td><label><input type="checkbox" id="" /> задний бампер</label></td>
+								<td><label><input type="checkbox" id="" /> крышка багажника</label></td>
+								<td>&nbsp;</td>
+							</tr>
+						</table>
+						</div>
+
+						<div class="double-calculator">
+							<div class="left">
+								<img src="images/tmp/auto2.jpg" alt="" />
+							</div>
+
+							<div class="right">
+								<h4>Рассчёт стоимости:</h4>
+
+								<table>
+									<tr>
+										<td class="tl"><a href=""><img src="images/remove.png" alt="" /></a></td>
+										<td class="tc">Крышка багажника</td>
+										<td class="tr">10 699 <img src="images/rouble3.png" alt="" /></td>
+									</tr>
+									<tr>
+										<td class="tl"><a href=""><img src="images/remove.png" alt="" /></a></td>
+										<td class="tc">Бампер задний</td>
+										<td class="tr">8 967 <img src="images/rouble3.png" alt="" /></td>
+									</tr>
+									<tr>
+										<td class="tl">&nbsp;</td>
+										<td class="" colspan="2">&nbsp;</td>
+									</tr>
+									<tr>
+										<td class="tl">&nbsp;</td>
+										<td class="tc">Итого:</td>
+										<td class="tr"><span class="total">19 769 <img src="images/rouble4.png" alt="" /></span></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+
+						<div class="double-calculate">
+							<input type="submit" id="calculate" class="button" value="Купить ремонт" />
+						</div>
+
+					</form>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+	<div class="wrapper">
+		<!-- text -->
+		<div class="footer-text">
+			<div class="footer-text-left">
+				<h6>Купить Mitsubishi</h6>
+
+				<p><a href="" title="">Mitsubishi Lancer</a> | 
+					<a href="" title="">Mitsubishi Lancer evolution</a> | 
+					<a href="" title="">Mitsubishi I-Miev</a> | 
+					<a href="" title="">Mitsubishi ASX</a> | 
+					<a href="" title="">Mitsubishi Outlander</a> | 
+					<a href="" title="">Mitsubishi Pajero Sport</a> | 
+					<a href="" title="">Mitsubishi Pajero</a> | 
+					<a href="" title="">Mitsubishi L200</a>
+				</p>
+
+			</div>
+
+			<div class="footer-text-right">
+				<h6>Купить Hyundai</h6>
+
+				<p><a href="" title="">Hyundai Solaris | 
+					<a href="" title="">Hyundai i30</a> | 
+					<a href="" title="">Hyundai i40</a> | 
+					<a href="" title="">Hyundai Elantra</a> | 
+					<a href="" title="">Hyundai Sonata</a> | 
+					<a href="" title="">Hyundai Veloster</a> | 
+					<a href="" title="">Hyundai Grandeur</a> | 
+					<a href="" title="">Hyundai Genesis</a> | 
+					<a href="" title="">Hyundai Genesis coupe</a> | 
+					<a href="" title="">Hyundai Equus</a> | 
+					<a href="" title="">Hyundai ix35</a> | 
+					<a href="" title="">Hyundai Santa Fe</a> | 
+					<a href="" title="">Hyundai ix55</a> | 
+					<a href="" title="">Hyundai H-1</a>
+				</p>
+			</div>
+
+			<div class="footer-text-center">
+				<h6>Услуги автосалона</h6>
+
+				<p><a href="" title="">Акции</a> | 
+					<a href="" title="">О компании</a> | 
+					<a href="" title="">Наша команда</a> | 
+					<a href="" title="">Автосервис</a> | 
+					<a href="" title="">Автострахование</a> | 
+					<a href="" title="">Отзывы</a> | 
+					<a href="" title="">Купить автомобиль в кредит</a> | 
+					<a href="" title="">Продать автомобиль</a> | 
+					<a href="" title="">Корпоративным клиентам</a> | 
+					<a href="" title="">Программа лояльности</a> | 
+					<a href="" title="">Шиномонтаж</a> | 
+					<a href="" title="">Шинный отель</a> | 
+					<a href="" title="">Техническое обслуживание</a> | 
+					<a href="" title="">Покраска автомобилей</a> | 
+					<a href="" title="">Контакты</a> |
+				</p>
+			</div>
+		</div>
+
+		<div class="footer-copyright">
+			© 2011—2012 “РОЛЬФ On-line”<br />
+			<a href="" title="">Контактная информация</a>
+
+			<div class="footer-social">
+				<a href="" title=""><img src="images/tw.png" alt="" /></a>
+				<a href="" title=""><img src="images/fb.png" alt="" /></a>
+				<a href="" title=""><img src="images/yt.png" alt="" /></a>
+			</div>
+		</div>
+
+		<!-- made by -->
+		<div class="footer-made">
+			Сварено &mdash; <a href="" title=""><img src="images/weway.png" alt="" /></a>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/call.js"></script>
+</body>
+</html>

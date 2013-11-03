@@ -1,0 +1,148 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border: 0 none;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img { border:0 none; }
+table { border-collapse: collapse; border-spacing: 0; }
+ol, ul { list-style-image: none; list-style-position: outside; list-style-type: none; }
+q:before, q:after, blockquote:before, blockquote:after { content:""; }
+
+@font-face {
+    font-family: 'RodchenkoCondCRegular';
+    src: url('../fonts/rodchecc-webfont.eot');
+    src: url('../fonts/rodchecc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rodchecc-webfont.woff') format('woff'),
+         url('../fonts/rodchecc-webfont.ttf') format('truetype'),
+         url('../fonts/rodchecc-webfont.svg#RodchenkoCondCRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* css begin */
+html, body { height:100%; }
+body {
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 12px;
+	color: #505050;
+	background: #fff;
+	width: 100%;
+}
+
+body.view-1 { background: url(../images/body-bg-1.png) no-repeat 50% 0; }
+body.view-2 { background: url(../images/body-bg-2.png) no-repeat 50% 0; }
+body.view-2-2 { background: url(../images/body-bg-2-2.png) no-repeat 50% 95px; }
+body.view-3a { background: url(../images/body-bg-3a.png) no-repeat 50% 0; }
+body.view-5 { background: url(../images/body-bg-5.png) no-repeat 50% 0; }
+body.view-6 { background: url(../images/body-bg-6.png) no-repeat 50% 0; }
+
+/* content */
+#wrap {
+	position: relative;
+	width: 910px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+/* header */
+.header { height: 120px; overflow: hidden; margin-bottom: 90px; }
+    .header .logo { float: left; margin: 40px 0 0 0; }
+
+    .topmenu { float: left; margin: 45px 0 0 35px; }
+        .topmenu li { float: left; font-size: 22px; color: #20409a; margin: 0 20px; padding: 42px 0 0 0; background: url(../images/topmenu-hover.png) no-repeat 50% -9999px; }
+        .topmenu li:hover, .topmenu li.active { background-position: 50% 0; }
+            .topmenu li a { color: #20409a; text-decoration: none; text-transform: uppercase; border-bottom: 4px solid #20409a; }
+            .topmenu li a:hover, .topmenu li.active a { color: #ed1c24; border-bottom: 4px solid #fff;  }
+
+/* left menu */
+.leftmenu { float: left; width: 183px; border-left: 10px solid #20409a; border-bottom: 10px solid #20409a; }
+    .leftmenu .wrapper { width: 193px; background: #fff; min-height: 440px; margin-top: -10px; padding: 0 0 10px 0; }
+
+    .leftmenu h3 { text-transform: uppercase; font-size: 60px; color: #20409a; padding: 0 10px; }
+
+    .leftmenu ul {}
+        .leftmenu li { padding: 4px 0 4px 10px; border-right: 10px solid #fff }
+        .leftmenu li:hover, .leftmenu li.active { border-right: 10px solid #ed1c24; background: #20409a; }
+            .leftmenu li a { color: #20409a; text-decoration: none; font-weight: bold; }
+            .leftmenu li:hover a, .leftmenu li.active a { color: #fff; }
+
+    .leftmenu .price { margin: 50px 0; background: #20409a; padding: 1px 0 0 0; color: #fff; border-right: 10px solid #c7c7c7; }
+        .leftmenu .price .textbox { border: 0; width: 50px; color: #a7a7a7; padding: 0 5px; margin: 0 3px; }
+        .leftmenu .price .small { width: 35px; }
+        #find { width: 17px; height: 17px; border: 0; background: url(../images/find.png) no-repeat; cursor: pointer; margin: 0 0 0 5px; }
+
+
+/* content */
+.content { float: left; width: 600px; margin: 0 0 0 25px; border-left: 10px solid #20409a; border-bottom: 10px solid #20409a; }
+/*.widecontent { width: 600px; } */
+    .content .wrapper { width: 570px; background: #fff; padding: 20px; margin-top: -10px; }
+    /*.widecontent .wrapper { width: 570px; } 118px */
+
+    .content p { margin: 0 0 40px 0; }
+
+    .feedback { }
+        .feedback p { margin: 0 0 20px 0; }
+        .feedback .textbox { border: 0; background: #20409a; color: #fff; padding: 2px 5px; width: 338px; font-family: Arial, sans-serif; font-size: 12px; }
+        .feedback textarea { border: 0; background: #20409a; color: #fff; padding: 2px 5px; width: 100%; height: 195px; font-family: Arial, sans-serif; font-size: 12px; }
+        #sendnow { border: 0; margin: 0 0 -20px 238px; cursor: pointer; width: 110px; height: 29px; background: url(../images/send.gif) no-repeat; }
+
+    .content .slider { float: left; width: 380px; margin: 0 0 0 25px; }
+
+/* gallery */
+.gallery { float: left; width: 600px; margin: 10px 0 0 45px; margin-bottom: 30px; }
+    .gallery .item { float: left; position: relative; width: 140px; height: 106px; margin: -20px 0 0 -20px; padding: 17px 0; text-align: center; }
+        .gallery .item a { display: block; position: absolute; top: 0; left: 0; z-index: 50; width: 140px; height: 140px; background: url(../images/gallery-item.png) no-repeat; }
+        .gallery .item a:hover { background-position: 0 100%; z-index: 100; }
+
+        .gallery .item .more { display: inline-block; margin: 40px 0 0 10px; text-decoration: none; position: static; width: auto; height: auto; background: none; border-bottom: 4px solid #ed1c24; font-family: 'RodchenkoCondCRegular', serif; color: #ed1c24; font-size: 22px; }
+
+.gallery-full { }
+    .gallery-full .item { display: none; width: auto; }
+    #fancybox-content .view { margin-bottom: 35px; width: auto; }
+
+    #fancybox-content .description p { margin: 20px 0;  }
+
+    #fancybox-content .info { float: left; width: 260px; }
+        #fancybox-content .info table { width: 100%; }
+            #fancybox-content .info td { padding: 3px 6px; color: #000; }
+
+    #fancybox-content .other { float: left; width: 190px; }
+        #fancybox-content .other img { margin: 0 0 4px 0; }
+
+    #fancybox-content .cost { float: right; text-align: right; font-family: 'RodchenkoCondCRegular', serif; color: #20409a; }
+    #fancybox-content .cost big { font-size: 56px; }
+    #fancybox-content .cost small { font-size: 30px; text-transform: uppercase; }
+
+    #fancybox-content .buy { position: absolute; right: 0; bottom: 0px; font-family: 'RodchenkoCondCRegular', serif; color: #ed1c24; text-decoration: underline;  font-size: 56px; }
+
+/* footer */
+#footer {
+	position: relative;
+	margin-top: -85px;
+	height: 85px;
+	width: 100%;
+    background: #20409a;
+    color: #fff;
+    font-weight: bold;
+}
+
+#footer .wrapper { width: 910px; margin: 0 auto; padding: 13px 0 0 0; }
+    #footer .logo { float: right; }
+    #footer .social { float: right; margin: 19px 40px 0 0; }
+        #footer .social a { display: inline-block; margin: 0 12px; width: 24px; height: 26px; text-indent: -9999px; overflow: hidden; }
+        #footer .social a:hover { background-position: 0 100%; }
+        #footer .social .fb { background: url(../images/facebook.png) no-repeat; }
+        #footer .social .vk { background: url(../images/vkontakte.png) no-repeat; }
+    #footer .copyright { float: right; font-size: 13px; margin: 22px 170px 0 0; }
+
+.footer_blank {	clear: both; height: 170px; }

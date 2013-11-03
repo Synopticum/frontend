@@ -1,0 +1,21 @@
+/* styles */
+body { }
+
+a { text-decoration: underline; }
+
+/* header */
+header { position: relative; padding: 3px 4px; background: #003564; overflow: hidden; }
+    .header-logo { float: left; }
+    .header-menu-toggle { position: absolute; top: 50%; right: 15px; margin: -10px 0 0 0; display: block; width: 32px; height: 20px; background: url(data:image/gif;base64,R0lGODlhIAAUAKIAAD1kiHuVrT5liXyVrbnF0brG0vf29gA1ZCH5BAAAAAAALAAAAAAgABQAAANTaLrc/qzISau99OjNu/+cAIxkaZ4oCa1sM7xwLM90DN54VxB87//AYK9FXOWOyGSyyGxgntCKcnoYBK7YrHbLxTa/BoF4TC6bz2Sqcidsu4dgZgIAOw==) no-repeat; }
+
+.content { padding: 10px 0; }
+
+address { }
+    address .lead { margin-bottom: 0; }
+
+footer { position: fixed; left: 0; bottom: 0; width: 100%; }
+    footer a, footer a:hover { display: block; padding: 5px 0; background: #003564; text-align: center; color: #fff; text-decoration: none; }
+
+.list-unstyled { padding: 10px 20px; background: #f7f5fa; border-radius: 7px; }
+    .list-unstyled li { margin: 5px 0; }
+    .list-unstyled a { text-decoration: none; color: #444; }

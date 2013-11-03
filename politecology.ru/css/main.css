@@ -1,0 +1,131 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border: 0 none;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img { border:0 none; }
+table { border-collapse: collapse; border-spacing: 0; }
+ol, ul { list-style-image: none; list-style-position: outside; list-style-type: none; }
+q:before, q:after, blockquote:before, blockquote:after { content:""; }
+
+/* css begin */
+html, body { height:100%; }
+body {
+	font-family: "Century Gothic", Arial, Tahoma, sans-serif;
+	font-size: 14px;
+	color: #fff;
+	background: url(../images/body-bg.jpg) repeat-y 50% 0 #747577;
+	width: 100%;
+	min-width: 1000px;
+}
+
+/* content */
+#wrap {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+/* header */
+.header { overflow: hidden; }
+    .header .logo { float: left; margin: 25px 0; border: 3px solid #515254; }
+
+    .header .lang { position: absolute; right: 0; top: 22px; }
+        .header .lang a { opacity: 0.2; }
+        .header .lang a.active, .header .lang a:hover { opacity: 1; }
+        .header .lang img { margin-left: 5px; }
+
+    .author { float: left; margin: 105px 0 0 20px; width: 638px; height: 122px; background: url(../images/about.png) no-repeat; }
+        /*.author-name { font-size: 50px; }
+        .author-date { font-size: 28px; }
+        .author-theme { font-size: 33px; text-align: center; }
+        .author-spacer { margin: 12px auto; width: 71px; height: 2px; background: url(../images/author-spacer.png) no-repeat; }*/
+
+    .topmenu { clear: both; position: relative; overflow: hidden; text-align: center; margin: 5px auto; background: #8c8c8c; border-top: 3px solid #515254; border-bottom-left-radius: 7px; border-bottom-right-radius: 7px; }
+	    .topmenu-container { position: relative; float: left; left: 50%; }
+	    .topmenu-wrapper { position: relative; left: -50%; float: left;	}
+
+	    .topmenu li { float: left; padding: 0 23px 0 27px; background: url(../images/topmenu-bullet.png) no-repeat 0 20px; }
+        .topmenu li:first-child { background: none; }
+	        .topmenu a { display: inline-block; padding: 11px 0; font-size: 18px; color: #000; text-decoration: none; background: url(../images/topmenu-hover.gif) no-repeat 50% -999px; zoom: 1; *display: inline; }
+	        .topmenu li.active a { color: #fff; }
+	        .topmenu li a:hover { background-position: 50% 100%; }
+
+/* content */
+.content { margin: 35px 0; }
+
+    .breadcrumbs { margin: -15px 0 10px 0; display: inline-block; color: #2e2e2e; background: #8c8c8c; padding: 0 15px; zoom: 1; *display: inline; }
+        .breadcrumbs a { display: inline-block; padding: 7px 0; color: #2e2e2e; text-decoration: none; background: url(../images/topmenu-hover.gif) no-repeat 50% -999px; }
+	    .breadcrumbs a:hover { background-position: 50% 100%; }
+        .breadcrumbs .current { font-size: 18px; color: #fff; }
+
+    .text { overflow: hidden; }
+        .text p { text-indent: 18px; }
+        .text .alignleft { float: left; margin: 10px 30px 10px 0; }
+        .text .alignright { float: right; margin: 10px 0 10px 30px; }
+
+    .catalog { margin-left: -39px; }
+        .catalog .item { display: inline-block; vertical-align: top; margin: 0 0 25px 39px; text-align: center; zoom: 1; *display: inline; }
+            .catalog .title { font-size: 20px; color: #2e2e2e; }
+            .catalog .title:hover { color: #fff; }
+            .catalog img { margin: 15px 0; }
+
+    .gallery { margin-left: -39px; }
+        .gallery .item { display: inline-block; vertical-align: bottom; margin: 0 0 25px 39px; text-align: right; zoom: 1; *display: inline; }
+            .gallery .title { font-size: 16px; color: #2e2e2e; }
+            .gallery .title:hover { color: #fff; }
+            .gallery img { margin: 15px 0; }
+
+    .paginator { clear: both; position: relative; overflow: hidden; text-align: center; margin: 5px auto; }
+	    .paginator-container { position: relative; float: left; left: 50%; }
+	    .paginator-wrapper { position: relative; left: -50%; float: left; padding: 0 4px; background: #8c8c8c; }
+
+	    .paginator li { float: left; padding: 0 5px 0 9px; background: url(../images/paginator-bullet.png) no-repeat 0 16px; }
+        .paginator li:first-child { background: none; }
+	        .paginator a { display: inline-block; padding: 5px 0; font-size: 16px; color: #000; text-decoration: none; background: url(../images/topmenu-hover.gif) no-repeat 50% -999px; zoom: 1; *display: inline; }
+	        .paginator li.active a { color: #fff; }
+	        .paginator li a:hover { background-position: 50% 100%; }
+
+    .home { overflow: hidden; }
+        .home .column-left p, .home .column-right p { margin-bottom: 15px; text-align: justify; }
+
+        .home .column-left { float: left; width: 200px; }
+            .home .column-left a { color: #2e2e2e; }
+
+        .home .column-right { float: right; width: 200px; }
+            .home .column-right a { color: #fff; }
+
+        .year-slider { float: left; width: 459px; margin-left: 50px; padding-bottom: 45px; }
+            .year-slider li { width: 459px }
+
+            .year-navigation { border-top: 1px solid #515254; text-align: center; }
+                .year-navigation a { display: inline-block; height: 14px; padding: 17px 10px 13px 10px; overflow: hidden; color: #515254; text-decoration: none; background: url(../images/year-a.png) no-repeat 50% 0; zoom: 1; *display: inline; }
+                .year-navigation a:hover, .year-navigation a.active { color: #fff; background-position: 50% 100%; }
+
+/* footer */
+#footer {
+	position: relative;
+	margin: -68px auto 0 auto;
+    width: 960px;
+	height: 52px;
+    padding: 15px 0 0 0;
+    border-top: 1px solid #515254;
+    font-size: 11px;
+}
+#footer a { color: #fff; text-decoration: none; }
+
+#footer .contacts { float: left; }
+#footer .copyright { float: right; text-align: right; }
+
+.footer_blank {	clear: both; height: 68px; }

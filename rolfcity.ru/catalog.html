@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+
+        <link href="js/jquery-ui/ui-lightness/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+        <script src="js/jquery-ui/jquery-ui-1.9.2.custom.js"></script>
+        <script>
+            $(function() {      
+                $( ".checkbutton" ).button();
+                $( "#radioset" ).buttonset();
+                
+                $( "#tabs" ).tabs();
+                
+                $( "#slider-range" ).slider({
+                        range: true,
+                        min: 100000,
+                        max: 3000000,
+                        values: [ 0, 3000000 ],
+                        slide: function( event, ui ) {
+                            $( "#amount" ).val( ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+                        }
+                });
+                
+                $( "#slider-range-year" ).slider({
+                        range: true,
+                        min: 2000,
+                        max: 2013,
+                        values: [ 2000, 2013 ],
+                        slide: function( event, ui ) {
+                            $( "#amount2" ).val( ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+                        }
+                });
+
+                $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) + " - " + $( "#slider-range" ).slider( "values", 1 ) );  
+                $( "#amount2" ).val( $( "#slider-range-year" ).slider( "values", 0 ) + " - " + $( "#slider-range-year" ).slider( "values", 1 ) );   
+            });
+        </script>
+
+
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <!-- header -->
+            <header>
+                <div class="header-wrapper">
+                    <div class="header-top">
+                        <div class="header-top-search">
+                            <form action="">
+                                <input type="text" id="" value="" class="textbox" placeholder="Я ищу новый Lancer" />
+                            </form>
+                        </div>
+
+                        <div class="header-top-menu">
+                            <ul>
+                                <li><a href="" title="">Корпоративным клиентам</a></li>
+                                <li><a href="" title="">Акции</a></li>
+                                <li><a href="" title="">Контакты</a></li>
+                                <li><a href="" title="">О компании</a>
+                                    <ul>
+                                        <li><a href="" title="">О нас</a></li>
+                                        <li><a href="" title="">Мы</a></li>
+                                        <li><a href="" title="">Отзывы покупателей</a></li>
+                                        <li><a href="" title="">Новости</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--  -->
+
+                    <div class="header-phone">
+                        <span>8 800 505-57-57</span><br />
+                        Москва, Ярославское шоссе, д. 31
+                    </div>
+
+                    <div class="header-time">
+                        <span>Время работы:</span><br />
+                        Автосалон: 8:00-23:00<br />
+                        Автосервис: круглосуточно
+                    </div>
+
+                    <a href=""><img src="images/header-logo.png" alt="" class="header-logo"></a>
+                </div>
+            </header>
+
+            <!-- main menu -->
+            <div class="mainmenu">
+                <div class="mainmenu-wrapper">
+                    <ul>
+                        <li class="m1 active"><a href="" title="">Купить автомобиль</a></li>
+                        <li class="m2"><a href="" title="">Купить сервис</a></li>
+                        <li class="m3"><a href="" title="">Купить страховку</a></li>
+                        <li class="m4"><a href="" title="">Купить в кредит</a></li>
+                        <li class="m5"><a href="" title="">Продать автомобиль</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- content -->
+            <div id="wrap">
+                <div class="clearfix">
+                    <div class="catalog-filter">
+                        <div class="catalog-filter-wrapper clearfix">
+                            <div class="tabs">
+                                <a href="javascript:void(0);" class="cf-params"><span>Параметры</span></a>
+                                <a href="javascript:void(0);" class="cf-mark"><span>Марка</span></a>
+                            </div>
+
+                            <!--  -->
+
+                            <div class="tab1">
+                                <form action="">
+
+                                <div class="csearch-box checkother">
+                                    <div class="wrapper">
+                                        <input type="checkbox" id="check4" class="checkbutton" /><label for="check4">Новые</label>
+                                        <input type="checkbox" id="check5" class="checkbutton" /><label for="check5">С пробегом</label>
+                                    </div>
+                                </div>
+
+                                <!-- -->
+
+                                <div class="csearch-box checkprice">                
+
+                                    <div class="wrapper">
+                                        <input type="text" id="" value="" class="textbox" /> <span>&mdash;</span>
+                                        <input type="text" id="" value="" class="textbox" />
+                                        <img src="images/r3.png" height="13" width="12" alt="">
+                                    </div>
+                                </div>
+
+                                <!-- -->
+
+                                <div class="csearch-box checkyear">                 
+
+                                    <div class="wrapper">
+                                        <p><span class="csearch-box-title">Год выпуска:</span> <input type="text" id="amount2" /></p>
+
+                                        <div id="slider-range-year"></div>
+
+                                    </div>
+                                </div>
+
+                                <!-- -->
+
+                                <div class="csearch-box checkother">
+                                    <div class="wrapper">
+                                        <input type="checkbox" id="check9" class="checkbutton" /><label for="check9">автомат</label>
+                                        <input type="checkbox" id="check10" class="checkbutton" /><label for="check10">механика</label>
+                                    </div>
+                                </div>
+
+                                <!-- -->
+
+                                <div class="csearch-box checktip">
+                                    <div class="wrapper">
+                                        <table width="100%">
+                                            <tr>
+                                                <td><input type="checkbox" id="check16" class="checkbutton" /><label for="check16" class="sedan">седан</label></td>
+                                                <td><input type="checkbox" id="check19" class="checkbutton" /><label for="check19" class="universal">универсал</label></td>
+                                                <td><input type="checkbox" id="check17" class="checkbutton" /><label for="check17" class="hatchback">хетчбек</label></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="check20" class="checkbutton" /><label for="check20" class="sav">джип</label></td>
+                                                <td><input type="checkbox" id="check24" class="checkbutton" /><label for="check24" class="crossover">кроссовер</label></td>
+                                                <td><input type="checkbox" id="check21" class="checkbutton" /><label for="check21" class="pickup">пикап</label></td>                                                
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="check18" class="checkbutton" /><label for="check18" class="coupe">купе</label></td>
+                                                <td><input type="checkbox" id="check22x" class="checkbutton" /><label for="check22x" class="mvan">минивэн</label></td>
+                                                <td><input type="checkbox" id="check23" class="checkbutton" /><label for="check23" class="van">фургон</label></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3"><input type="checkbox" id="check22" class="checkbutton" /><label for="check22" class="cabrio">кабриолет</label></td>
+                                            </tr>
+                                        </table>        
+                                    </div>
+                                </div>
+
+                                <!-- -->
+
+                                <div class="csearch-box checkother">
+                                    <div class="wrapper">
+                                        <input type="checkbox" id="check6" class="checkbutton" /><label for="check6">бензин</label>
+                                        <input type="checkbox" id="check7" class="checkbutton" /><label for="check7">дизель</label>
+                                        <input type="checkbox" id="check8" class="checkbutton" /><label for="check8">гибрид</label>
+                                    </div>
+                                </div>
+
+                                <!-- -->
+
+                                <div class="csearch-box checkcolor">
+                                    <span class="csearch-box-title">Цвет:</span>
+
+                                    <div class="wrapper">
+                                        <input type="checkbox" id="check11" class="checkbutton" /><label for="check11" style="background: white;"></label>
+                                        <input type="checkbox" id="check12" class="checkbutton" /><label for="check12" style="background: green;"></label>
+                                        <input type="checkbox" id="check13" class="checkbutton" /><label for="check13" style="background: red;"></label>
+                                        <input type="checkbox" id="check14" class="checkbutton" /><label for="check14" style="background: blue;"></label>
+                                        <input type="checkbox" id="check15" class="checkbutton" /><label for="check15" style="background: black;"></label>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+
+                            <div class="tab2">
+                                <div class="column-left">
+                                    <ul>
+                                        <li><a href="" title="">Audi</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li><a href="" title="">BMW</a></li>
+                                    </ul>
+                                    
+                                    <ul>
+                                        <li><a href="" title="">Chery</a></li>
+                                        <li><a href="" title="">Chevrolet</a></li>
+                                        <li><a href="" title="">Chrysler</a></li>
+                                        <li class="active"><a href="" title="">Citroen</a>
+                                            <ul>
+                                                <li><a href="" title="">Audi</a></li>
+                                                <li><a href="" title="">BMW</a></li>
+                                                <li><a href="" title="">Chery</a></li>
+                                                <li><a href="" title="">Chevrolet</a></li>
+                                                <li><a href="" title="">Chrysler</a></li>
+                                                <li><a href="" title="">Citroen</a></li>
+                                                <li><a href="" title="">Chrysler</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    <ul>
+                                        <li><a href="" title="">Daewoo</a></li>
+                                        <li><a href="" title="">Dodge</a></li>
+                                    </ul>
+                                    
+                                    <ul>
+                                        <li><a href="" title="">Fiat</a></li>
+                                        <li><a href="" title="">Ford</a></li>
+                                    </ul>
+                                    
+                                    <ul>
+                                        <li><a href="" title="">Geely</a></li>
+                                        <li><a href="" title="">Great Wall</a></li>
+                                    </ul>
+                                    
+                                    <ul>
+                                        <li><a href="" title="">Honda</a></li>
+                                        <li><a href="" title="">Hyundai</a></li>
+                                    </ul>
+                                    
+                                    <ul>
+                                        <li><a href="" title="">Infiniti</a></li>
+                                    </ul>
+                                    
+                                    <ul>
+                                        <li><a href="" title="">Jeep</a></li>
+                                    </ul>
+                                    
+                                    <ul>
+                                        <li><a href="" title="">Kia</a></li>
+                                    </ul>
+                                </div>
+
+                                <!--  -->
+
+                                <div class="column-right">
+                                    <ul>
+                                        <li><a href="" title="">LADA (ВАЗ)</a></li>
+                                        <li><a href="" title="">Land Rover</a></li>
+                                        <li><a href="" title="">Lexus</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li><a href="" title="">Mazda</a></li>
+                                        <li><a href="" title="">Mercedes-Benz</a></li>
+                                        <li><a href="" title="">Mitsubishi</a></li>
+                                    </ul>
+                                    
+                                    <ul>
+                                        <li><a href="" title="">Nissan</a></li>
+                                    </ul>
+                                    
+                                    <ul>
+                                        <li><a href="" title="">Opel</a></li>
+                                    </ul>
+                                    
+                                    <ul>
+                                        <li><a href="" title="">Peugeot</a></li>
+                                        <li><a href="" title="">Porsche</a></li>
+                                    </ul>
+                                    
+                                    <ul>
+                                        <li><a href="" title="">Renault</a></li>
+                                    </ul>
+                                    
+                                    <ul>
+                                        <li><a href="" title="">Skoda</a></li>
+                                        <li><a href="" title="">SsangYong</a></li>
+                                        <li><a href="" title="">Subaru</a></li>
+                                        <li><a href="" title="">Suzuki</a></li>
+                                    </ul>
+                                    
+                                    <ul>
+                                        <li><a href="" title="">Toyota</a></li>
+                                    </ul>
+                                    
+                                    <ul>
+                                        <li><a href="" title="">Volkswagen</a></li>
+                                        <li><a href="" title="">Volvo</a></li>
+                                    </ul>
+                                    
+                                    <ul>
+                                        <li><a href="" title="">ZAZ</a></li>
+                                    </ul>
+                                    
+                                    <ul>
+                                        <li><a href="" title="">ГАЗ</a></li>
+                                    </ul>
+                                    
+                                    <ul>
+                                        <li><a href="" title="">ИЖ</a></li>
+                                    </ul>
+                                    
+                                    <ul>
+                                        <li><a href="" title="">Москвич</a></li>
+                                    </ul>
+                                    
+                                    <ul>
+                                        <li><a href="" title="">УАЗ</a></li>
+                                    </ul>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="catalog-filter-bottom"></div>
+                    </div>
+
+                    <!--  -->
+
+                    <div class="catalog-results">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="color"><a href="">Цвет</a></th>
+                                    <th><a href="">Изображение</a></th>
+                                    <th><a href="">Состояние</a></th>
+                                    <th><a href="">Цена</a> <img src="images/r2.png" alt=""></th>
+                                    <th class="model"><a href="">Модель</a></th>
+                                    <th><a href="">Кузов</a></th>
+                                    <th><a href="">Год</a></th>
+                                    <th><a href="">Двигатель</a></th>
+                                    <th class="last"><a href="">КПП</th>                                                                
+                                </tr>
+                            </thead>
+
+                            <tbody>                            
+                                <tr>
+                                    <td class="color"><img src="images/colors/black.png" height="16" width="16" alt=""></td>
+                                    <td><a href=""><img src="images/tmp/r1.jpg" height="71" width="94" alt=""></a></td>
+                                    <td class="status">Б/У</td>
+                                    <td class="cost"><strong>721 000</strong></td>
+                                    <td class="model"><a href="">Mitsubishi ASX<br />1.8 CVT</a></td>
+                                    <td><img src="images/variants/v1.png" height="17" width="37" alt=""></td>
+                                    <td>2010</td>
+                                    <td class="engine">Бензин</td>
+                                    <td>CVT</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="color"><img src="images/colors/yellow.png" height="16" width="16" alt=""></td>
+                                    <td><a href=""><img src="images/tmp/r2.jpg" height="71" width="94" alt=""></a></td>
+                                    <td class="status">Б/У</td>
+                                    <td class="cost"><strong>721 000</strong></td>
+                                    <td class="model"><a href="">Mitsubishi Lancer<br />1.8 CVT</a></td>
+                                    <td><img src="images/variants/v1.png" height="17" width="37" alt=""></td>
+                                    <td>2010</td>
+                                    <td class="engine">Бензин</td>
+                                    <td>CVT</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="color"><img src="images/colors/red.png" height="16" width="16" alt=""></td>
+                                    <td><a href=""><img src="images/tmp/r3.jpg" height="71" width="94" alt=""></a></td>
+                                    <td class="status">Б/У</td>
+                                    <td class="cost"><strong>721 000</strong></td>
+                                    <td class="model"><a href="">Mitsubishi ASX<br />1.8 CVT</a></td>
+                                    <td><img src="images/variants/v1.png" height="17" width="37" alt=""></td>
+                                    <td>2010</td>
+                                    <td class="engine">Бензин</td>
+                                    <td>CVT</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td class="color"><img src="images/colors/black.png" height="16" width="16" alt=""></td>
+                                    <td><a href=""><img src="images/tmp/r1.jpg" height="71" width="94" alt=""></a></td>
+                                    <td class="status">Б/У</td>
+                                    <td class="cost"><strong>721 000</strong></td>
+                                    <td class="model"><a href="">Mitsubishi ASX<br />1.8 CVT</a></td>
+                                    <td><img src="images/variants/v1.png" height="17" width="37" alt=""></td>
+                                    <td>2010</td>
+                                    <td class="engine">Бензин</td>
+                                    <td>CVT</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="color"><img src="images/colors/yellow.png" height="16" width="16" alt=""></td>
+                                    <td><a href=""><img src="images/tmp/r2.jpg" height="71" width="94" alt=""></a></td>
+                                    <td class="status">Б/У</td>
+                                    <td class="cost"><strong>721 000</strong></td>
+                                    <td class="model"><a href="">Mitsubishi Lancer<br />1.8 CVT</a></td>
+                                    <td><img src="images/variants/v1.png" height="17" width="37" alt=""></td>
+                                    <td>2010</td>
+                                    <td class="engine">Бензин</td>
+                                    <td>CVT</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="color"><img src="images/colors/red.png" height="16" width="16" alt=""></td>
+                                    <td><a href=""><img src="images/tmp/r3.jpg" height="71" width="94" alt=""></a></td>
+                                    <td class="status">Б/У</td>
+                                    <td class="cost"><strong>721 000</strong></td>
+                                    <td class="model"><a href="">Mitsubishi ASX<br />1.8 CVT</a></td>
+                                    <td><img src="images/variants/v1.png" height="17" width="37" alt=""></td>
+                                    <td>2010</td>
+                                    <td class="engine">Бензин</td>
+                                    <td>CVT</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td class="color"><img src="images/colors/black.png" height="16" width="16" alt=""></td>
+                                    <td><a href=""><img src="images/tmp/r1.jpg" height="71" width="94" alt=""></a></td>
+                                    <td class="status">Б/У</td>
+                                    <td class="cost"><strong>721 000</strong></td>
+                                    <td class="model"><a href="">Mitsubishi ASX<br />1.8 CVT</a></td>
+                                    <td><img src="images/variants/v1.png" height="17" width="37" alt=""></td>
+                                    <td>2010</td>
+                                    <td class="engine">Бензин</td>
+                                    <td>CVT</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="color"><img src="images/colors/yellow.png" height="16" width="16" alt=""></td>
+                                    <td><a href=""><img src="images/tmp/r2.jpg" height="71" width="94" alt=""></a></td>
+                                    <td class="status">Б/У</td>
+                                    <td class="cost"><strong>721 000</strong></td>
+                                    <td class="model"><a href="">Mitsubishi Lancer<br />1.8 CVT</a></td>
+                                    <td><img src="images/variants/v1.png" height="17" width="37" alt=""></td>
+                                    <td>2010</td>
+                                    <td class="engine">Бензин</td>
+                                    <td>CVT</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="color"><img src="images/colors/red.png" height="16" width="16" alt=""></td>
+                                    <td><a href=""><img src="images/tmp/r3.jpg" height="71" width="94" alt=""></a></td>
+                                    <td class="status">Б/У</td>
+                                    <td class="cost"><strong>721 000</strong></td>
+                                    <td class="model"><a href="">Mitsubishi ASX<br />1.8 CVT</a></td>
+                                    <td><img src="images/variants/v1.png" height="17" width="37" alt=""></td>
+                                    <td>2010</td>
+                                    <td class="engine">Бензин</td>
+                                    <td>CVT</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <footer>
+                <div class="footer-wrapper">
+                    <div class="footer-copyright">
+                        <p>© 2013 Рольф Сити.</p>
+                        <p><a href=""><img src="images/footer-logo.png" height="18" width="113" alt=""></a></p>
+                    </div>
+
+                    <div class="footer-made">
+                        Выпущено в <a href=""><img src="images/weway.png" height="30" width="101" alt=""></a>
+                    </div>
+
+                    <a href="">Москва, Ярославское шоссе, д. 31</a>
+                </div>
+            </footer>
+        </div>
+
+        <script src="js/call.js"></script>
+    </body>
+</html>

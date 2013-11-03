@@ -1,0 +1,668 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.superSimpleTabs.js"></script>
+
+<script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
+<script type="text/javascript">
+		$(document).ready(function() {
+			$("#various1").fancybox({
+				'titlePosition'		: 'inside',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+		});
+	</script>
+</head>
+<body>
+<!-- popup -->
+<div style="display: none;">
+	<div class="popup" id="loginform">
+		<h2>Вход в личный кабинет</h2>
+
+		<div class="authorization">
+		<form>
+			<label for="">Электронная почта:</label>
+			<input name="yourlogin" type="text" id="yourlogin" class="textbox" tabindex="1" />
+
+			<label for="">Пароль:</label>
+			<input name="yourpassword" type="password" id="yourpassword" class="textbox" tabindex="2" />
+			<a href="#" title="">Забыли пароль?</a>
+
+			<input type="submit" name="entersite" id="entersite" value="Войти" tabindex="3" />
+		</form>
+		</div>
+	</div>
+</div>
+
+<!-- map -->
+<div id="map">
+	<div class="wrapper">
+
+		<div class="list">
+			<h2>Россия</h2>
+			<h2>Какой-то там округ</h2>
+			<ul>
+				<li><a href="#" title="">Челябинск</a></li>
+				<li><a href="#" title="">Екатеринбург</a></li>
+				<li><a href="#" title="">Магнитогорск</a></li>
+				<li><a href="#" title="">Барнаул</a></li>
+				<li><a href="#" title="">Москва</a></li>
+				<li><a href="#" title="">Пермь</a></li>
+			</ul>
+		</div>
+
+		<div class="list">
+			<h2>Какой-то там округ</h2>
+			<ul>
+				<li><a href="#" title="">Омск</a></li>
+				<li><a href="#" title="">Саратов</a></li>
+				<li><a href="#" title="">Красноярск</a></li>
+				<li><a href="#" title="">Миасс</a></li>
+				<li><a href="#" title="">Новокузнецк</a></li>
+				<li><a href="#" title="">Оренбург</a></li>
+				<li><a href="#" title="">Санкт-Петербург</a></li>
+				<li><a href="#" title="">Ульяновск</a></li>
+				<li><a href="#" title="">Новосибирск</a></li>
+				<li><a href="#" title="">Уфа</a></li>
+			</ul>
+		</div>
+
+		<div class="list">
+			<h2>Какой-то там округ</h2>
+			<ul>
+				<li><a href="#" title="">Нижний Новгород</a></li>
+				<li><a href="#" title="">Казань</a></li>
+				<li><a href="#" title="">Кемерово</a></li>
+				<li><a href="#" title="">Тольятти</a></li>
+				<li><a href="#" title="">Владивосток</a></li>
+				<li><a href="#" title="">Самара</a></li>
+				<li><a href="#" title="">Ижевск</a></li>
+				<li><a href="#" title="">Ярославль</a></li>
+				<li><a href="#" title="">Краснодар</a></li>
+				<li><a href="#" title="">Тюмень</a></li>
+			</ul>
+		</div>
+		<div id="russia"></div>
+	</div>
+
+</div>
+
+<div id="wrap">
+<a href="#" title="" id="hide-show"></a>
+
+	<!-- rightside -->
+	<div class="rightside">
+		<div class="login">
+			<a id="various1" href="#loginform" title="">Вход в личный кабинет</a>
+			<a href="#" title="" id="addcompany">Добавить компанию</a>
+		</div>
+
+		<div class="banner">
+			<a href="#" title=""><img src="images/banner_1.gif" width="200" height="350" alt="" /></a>
+		</div>
+
+		<!-- news -->
+		<div class="news">
+			<h3>Наши новости</h3>
+
+			<ul>
+				<li><a href="#" title="">Изменения</a></li>
+				<li><a href="#" title="">Обновления</a></li>
+				<li><a href="#" title="">Новые возможности</a></li>
+				<li><a href="#" title="">Технические работы</a></li>
+			</ul>
+
+			<div class="more">
+				<a href="#" title="RSS"><img src="images/rss.gif" width="18" height="18" alt="" /></a>
+				<a href="#" title="">прочее..</a>
+			</div>
+
+			<img src="images/rightside-news-bg.gif" width="52" height="37" id="rnbg" alt="" />
+		</div>
+	</div>
+
+	<!-- content -->
+	<div class="content">
+		<!-- header -->
+		<div class="header">
+			<!-- status -->
+			<div class="header-status">
+				<div class="item">
+					<img src="images/header-online.gif" width="9" height="9" alt="" /><br />
+					<span class="online">Online:</span><br />
+					52
+				</div>
+
+				<div class="item">
+					<img src="images/header-home.gif" width="9" height="9" alt="" /><br />
+					<span class="home">Компаний:</span><br />
+					152000
+				</div>
+
+				<div class="item">
+					<img src="images/header-cart.gif" width="9" height="9" alt="" /><br />
+					<span class="cart">Товаров:</span><br />
+					63174175
+				</div>
+			</div>
+
+			<!-- header news -->
+			<div class="today-news">
+				<a href="#" title="" class="today">Сегодня в новостях:</a> <small>18 мая 2011 г.</small> <a href="#" title="" class="more">читать все</a> <span>&gt;&gt;</span>
+				<ul>
+					<li><a href="#" title="">Компания “МирЦен” откусила большой кусок от рынка у “ТиУ” и “Пульсцен”</a> <a href="#" title="" class="category">Экономика</a></li>
+					<li><a href="#" title="">Дети США стали поедать своих родителей</a> <a href="#" title="" class="category">Дети</a></li>
+					<li><a href="#" title="">Американцы съели всех собак и кошек. Кто следующий?</a> <a href="#" title="" class="category">Здоровье</a></li>
+				</ul>
+			</div>
+
+			<!-- header search -->
+			<div class="header-search">
+				<div class="header-searchbar">
+					<ul>
+						<li class="r1 active"><a href="#" title="">Товары и услуги</a><span></span></li>
+						<li class="r2"><a href="#" title="">Компании</a><span></span></li>
+						<li class="r3"><a href="#" title="">Новости</a><span></span></li>
+						<li class="r4"><a href="#" title="">Вакансии</a><span></span></li>
+						<li class="r5"><a href="#" title="">Спрос</a><span></span></li>
+					</ul>
+
+					<div class="wrapper">
+					<form>
+						<input name="searchbar" id="searchbar" type="text" tabindex="1" />
+
+						<select id="town" name="" size="1">
+							<option value="Челябинск" selected="selected">Челябинск</option>
+							<option value="Москва">Москва</option>
+							<option value="Казань">Казань</option>
+							<option value="Нижний Новгород">Нижний Новгород</option>
+						</select>
+
+						<input type="submit" name="find" id="find" value="Поиск" tabindex="3" />
+					</form>
+					</div>
+
+					<div class="header-search-example">Например:   <a href="#" title="">упаковочное оборудование</a></div>
+				</div>
+			</div>
+
+			<a href="#" title=""><img src="images/logo.gif" width="170" height="63" class="logo" alt="" /></a>
+		</div>
+
+		<!-- breadcrumbs -->
+		<div class="home-navigation">
+			<a href="#" title="">Каталог</a>
+			<a href="#" title="" class="active">Рубрикатор</a>
+		</div>
+
+		<!-- home rubricator -->
+		<div class="home-rubricator">
+
+			<div class="category">
+				<h2>Металлопрокат</h2>
+				<div class="item">
+					<a href="#" title="" class="title">Черный металлопрокат</a><br />
+					<a href="#" title="">Трубный прокат</a>
+					<a href="#" title="">Сортовой прокат</a>
+					<a href="#" title="">Листовой прокат</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Промышленные материалы, РТИ, сырье</a><br />
+					<a href="#" title="">Нефтепродукты</a>
+					<a href="#" title="">Топливо</a>
+					<a href="#" title="">ГСН</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Метизы, изделия из металла</a><br />
+					<a href="#" title="">Метизы</a>
+					<a href="#" title="">Крепеж</a>
+					<a href="#" title="">Проволока</a>
+					<a href="#" title="">Крепежные изделия</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Черный металлопрокат</a><br />
+					<a href="#" title="">Трубный прокат</a>
+					<a href="#" title="">Сортовой прокат</a>
+					<a href="#" title="">Листовой прокат</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Черный металлопрокат</a><br />
+					<a href="#" title="">Трубный прокат</a>
+					<a href="#" title="">Сортовой прокат</a>
+					<a href="#" title="">Листовой прокат</a>
+					<a href="#" title="">...</a>
+				</div>
+			</div>
+			<!-- -->
+			<div class="category">
+				<h2>Оборудование</h2>
+				<div class="item">
+					<a href="#" title="" class="title">Черный металлопрокат</a><br />
+					<a href="#" title="">Трубный прокат</a>
+					<a href="#" title="">Сортовой прокат</a>
+					<a href="#" title="">Листовой прокат</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Промышленные материалы, РТИ, сырье</a><br />
+					<a href="#" title="">Нефтепродукты</a>
+					<a href="#" title="">Топливо</a>
+					<a href="#" title="">ГСН</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Метизы, изделия из металла</a><br />
+					<a href="#" title="">Метизы</a>
+					<a href="#" title="">Крепеж</a>
+					<a href="#" title="">Проволока</a>
+					<a href="#" title="">Крепежные изделия</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Черный металлопрокат</a><br />
+					<a href="#" title="">Трубный прокат</a>
+					<a href="#" title="">Сортовой прокат</a>
+					<a href="#" title="">Листовой прокат</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Черный металлопрокат</a><br />
+					<a href="#" title="">Трубный прокат</a>
+					<a href="#" title="">Сортовой прокат</a>
+					<a href="#" title="">Листовой прокат</a>
+					<a href="#" title="">...</a>
+				</div>
+			</div>
+			<!-- -->
+			<div class="category">
+				<h2>Бытовые товары</h2>
+				<div class="item">
+					<a href="#" title="" class="title">Черный металлопрокат</a><br />
+					<a href="#" title="">Трубный прокат</a>
+					<a href="#" title="">Сортовой прокат</a>
+					<a href="#" title="">Листовой прокат</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Промышленные материалы, РТИ, сырье</a><br />
+					<a href="#" title="">Нефтепродукты</a>
+					<a href="#" title="">Топливо</a>
+					<a href="#" title="">ГСН</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Метизы, изделия из металла</a><br />
+					<a href="#" title="">Метизы</a>
+					<a href="#" title="">Крепеж</a>
+					<a href="#" title="">Проволока</a>
+					<a href="#" title="">Крепежные изделия</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Черный металлопрокат</a><br />
+					<a href="#" title="">Трубный прокат</a>
+					<a href="#" title="">Сортовой прокат</a>
+					<a href="#" title="">Листовой прокат</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Метизы, изделия из металла</a><br />
+					<a href="#" title="">Метизы</a>
+					<a href="#" title="">Крепеж</a>
+					<a href="#" title="">Проволока</a>
+					<a href="#" title="">Крепежные изделия</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Черный металлопрокат</a><br />
+					<a href="#" title="">Трубный прокат</a>
+					<a href="#" title="">Сортовой прокат</a>
+					<a href="#" title="">Листовой прокат</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Черный металлопрокат</a><br />
+					<a href="#" title="">Трубный прокат</a>
+					<a href="#" title="">Сортовой прокат</a>
+					<a href="#" title="">Листовой прокат</a>
+					<a href="#" title="">...</a>
+				</div>
+			</div>
+			<!-- -->
+			<div class="category">
+				<h2>Строительство и ремонт</h2>
+				<div class="item">
+					<a href="#" title="" class="title">Черный металлопрокат</a><br />
+					<a href="#" title="">Трубный прокат</a>
+					<a href="#" title="">Сортовой прокат</a>
+					<a href="#" title="">Листовой прокат</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Промышленные материалы, РТИ, сырье</a><br />
+					<a href="#" title="">Нефтепродукты</a>
+					<a href="#" title="">Топливо</a>
+					<a href="#" title="">ГСН</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Метизы, изделия из металла</a><br />
+					<a href="#" title="">Метизы</a>
+					<a href="#" title="">Крепеж</a>
+					<a href="#" title="">Проволока</a>
+					<a href="#" title="">Крепежные изделия</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Черный металлопрокат</a><br />
+					<a href="#" title="">Трубный прокат</a>
+					<a href="#" title="">Сортовой прокат</a>
+					<a href="#" title="">Листовой прокат</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Черный металлопрокат</a><br />
+					<a href="#" title="">Трубный прокат</a>
+					<a href="#" title="">Сортовой прокат</a>
+					<a href="#" title="">Листовой прокат</a>
+					<a href="#" title="">...</a>
+				</div>
+			</div>
+			<!-- -->
+			<div class="category">
+				<h2>Транспорт</h2>
+				<div class="item">
+					<a href="#" title="" class="title">Черный металлопрокат</a><br />
+					<a href="#" title="">Трубный прокат</a>
+					<a href="#" title="">Сортовой прокат</a>
+					<a href="#" title="">Листовой прокат</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Промышленные материалы, РТИ, сырье</a><br />
+					<a href="#" title="">Нефтепродукты</a>
+					<a href="#" title="">Топливо</a>
+					<a href="#" title="">ГСН</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Метизы, изделия из металла</a><br />
+					<a href="#" title="">Метизы</a>
+					<a href="#" title="">Крепеж</a>
+					<a href="#" title="">Проволока</a>
+					<a href="#" title="">Крепежные изделия</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Черный металлопрокат</a><br />
+					<a href="#" title="">Трубный прокат</a>
+					<a href="#" title="">Сортовой прокат</a>
+					<a href="#" title="">Листовой прокат</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Черный металлопрокат</a><br />
+					<a href="#" title="">Трубный прокат</a>
+					<a href="#" title="">Сортовой прокат</a>
+					<a href="#" title="">Листовой прокат</a>
+					<a href="#" title="">...</a>
+				</div>
+			</div>
+			<!-- -->
+			<div class="category">
+				<h2>Компьютеры</h2>
+				<div class="item">
+					<a href="#" title="" class="title">Черный металлопрокат</a><br />
+					<a href="#" title="">Трубный прокат</a>
+					<a href="#" title="">Сортовой прокат</a>
+					<a href="#" title="">Листовой прокат</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Промышленные материалы, РТИ, сырье</a><br />
+					<a href="#" title="">Нефтепродукты</a>
+					<a href="#" title="">Топливо</a>
+					<a href="#" title="">ГСН</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Метизы, изделия из металла</a><br />
+					<a href="#" title="">Метизы</a>
+					<a href="#" title="">Крепеж</a>
+					<a href="#" title="">Проволока</a>
+					<a href="#" title="">Крепежные изделия</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Черный металлопрокат</a><br />
+					<a href="#" title="">Трубный прокат</a>
+					<a href="#" title="">Сортовой прокат</a>
+					<a href="#" title="">Листовой прокат</a>
+					<a href="#" title="">...</a>
+				</div>
+
+				<div class="item">
+					<a href="#" title="" class="title">Черный металлопрокат</a><br />
+					<a href="#" title="">Трубный прокат</a>
+					<a href="#" title="">Сортовой прокат</a>
+					<a href="#" title="">Листовой прокат</a>
+					<a href="#" title="">...</a>
+				</div>
+			</div>
+		</div>
+
+
+			<!-- company index-->
+			<div class="catalog-tabs int-tabs company-index">
+				<ul>
+				    <li class="tab1 active"><a href="#ci1">Новые Компании</a><span></span></li>
+				    <li class="tab2"><a href="#ci2">Новые товары</a><span></span></li>
+				    <li class="tab3"><a href="#ci3">Спрос</a><span></span></li>
+				</ul>
+
+				<div id="ci1">
+					<div class="item">
+						<div class="preview">
+							<div class="thumbnail">
+								<a href="#" title=""><img src="images/tmp/l1.gif" width="100" height="100" alt="" /></a>
+							</div>
+							<div class="rating">
+								<img src="images/company-index-star.gif" width="17" height="16" alt="" />
+								<img src="images/company-index-star.gif" width="17" height="16" alt="" />
+								<img src="images/company-index-star.gif" width="17" height="16" alt="" />
+								<img src="images/company-index-star.gif" width="17" height="16" alt="" />
+							</div>
+						</div>
+
+						<div class="description">
+							<a href="#" title="" class="title">ПО “Штробер Полистирол”</a>
+							<p>
+								<a href="#" title="">Черная металлургия</a><br />
+								<a href="#" title="">Деревообрабатывающие материалы</a><br />
+								<a href="#" title="">Цветные металлы и сплавы</a>
+							</p>
+							<p>
+								<strong>Телефон:</strong> 351-791-84-09<br />
+								<strong>Город:</strong> Челябинск
+							</p>
+						</div>
+
+						<div class="products">
+							<span class="title">Товары компании</span>
+							<p>
+								<a href="#" title="">Глина</a><br />
+								<a href="#" title="">Керамзит</a><br />
+								<a href="#" title="">Полиэтиленовые пакеты</a><br />
+								<a href="#" title="">Каски с подсветкой</a><br />
+								<a href="#" title="">Надувные матрацы с подогревом и крючками</a>
+							</p>
+						</div>
+					</div>
+					<!-- -->
+					<div class="item">
+						<div class="preview">
+							<div class="thumbnail">
+								<a href="#" title=""><img src="images/tmp/l1.gif" width="100" height="100" alt="" /></a>
+							</div>
+							<div class="rating">
+								<img src="images/company-index-star.gif" width="17" height="16" alt="" />
+								<img src="images/company-index-star.gif" width="17" height="16" alt="" />
+								<img src="images/company-index-star.gif" width="17" height="16" alt="" />
+								<img src="images/company-index-star.gif" width="17" height="16" alt="" />
+							</div>
+						</div>
+
+						<div class="description">
+							<a href="#" title="" class="title">ПО “Штробер Полистирол”</a>
+							<p>
+								<a href="#" title="">Черная металлургия</a><br />
+								<a href="#" title="">Деревообрабатывающие материалы</a><br />
+								<a href="#" title="">Цветные металлы и сплавы</a>
+							</p>
+							<p>
+								<strong>Телефон:</strong> 351-791-84-09<br />
+								<strong>Город:</strong> Челябинск
+							</p>
+						</div>
+
+						<div class="products">
+							<span class="title">Товары компании</span>
+							<p>
+								<a href="#" title="">Глина</a><br />
+								<a href="#" title="">Керамзит</a><br />
+								<a href="#" title="">Полиэтиленовые пакеты</a><br />
+								<a href="#" title="">Каски с подсветкой</a><br />
+								<a href="#" title="">Надувные матрацы с подогревом и крючками</a>
+							</p>
+						</div>
+					</div>
+					<!-- -->
+					<div class="item">
+						<div class="preview">
+							<div class="thumbnail">
+								<a href="#" title=""><img src="images/tmp/l1.gif" width="100" height="100" alt="" /></a>
+							</div>
+							<div class="rating">
+								<img src="images/company-index-star.gif" width="17" height="16" alt="" />
+								<img src="images/company-index-star.gif" width="17" height="16" alt="" />
+								<img src="images/company-index-star.gif" width="17" height="16" alt="" />
+								<img src="images/company-index-star.gif" width="17" height="16" alt="" />
+							</div>
+						</div>
+
+						<div class="description">
+							<a href="#" title="" class="title">ПО “Штробер Полистирол”</a>
+							<p>
+								<a href="#" title="">Черная металлургия</a><br />
+								<a href="#" title="">Деревообрабатывающие материалы</a><br />
+								<a href="#" title="">Цветные металлы и сплавы</a>
+							</p>
+							<p>
+								<strong>Телефон:</strong> 351-791-84-09<br />
+								<strong>Город:</strong> Челябинск
+							</p>
+						</div>
+
+						<div class="products">
+							<span class="title">Товары компании</span>
+							<p>
+								<a href="#" title="">Глина</a><br />
+								<a href="#" title="">Керамзит</a><br />
+								<a href="#" title="">Полиэтиленовые пакеты</a><br />
+								<a href="#" title="">Каски с подсветкой</a><br />
+								<a href="#" title="">Надувные матрацы с подогревом и крючками</a>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- -->
+				<div id="ci2">Новые товары</div>
+
+				<!-- -->
+				<div id="ci3">Спрос</div>
+
+			</div>
+		</div>
+
+
+
+		<script language="JavaScript" type="text/javascript">
+		/*<![CDATA[*/
+		jQuery('.catalog-tabs ul, .company-index ul').superSimpleTabs();
+		$('.tab1,.tab2,.tab3').click(function() {
+			$(this).siblings("li").removeClass("active");
+			$(this).addClass("active");
+		});
+		/*]]>*/
+		</script>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+	<div class="wrapper">
+		<div class="counters">
+			<a href="#" title=""><img src="images/tmp_1.gif" width="88" height="31" alt="" /></a>
+			<a href="#" title=""><img src="images/tmp_2.gif" width="88" height="31" alt="" /></a>
+		</div>
+
+		<ul>
+			<li><a href="#" title="">Добавить компанию</a></li>
+			<li><a href="#" title="">Разместить рекламу</a></li>
+			<li><a href="#" title="">О проекте</a></li>
+		</ul>
+
+		<div class="copyright">
+			&copy; 2011 <a href="#" title="">mircen.su</a>
+		</div>
+	</div>
+</div>
+
+<script language="JavaScript" type="text/javascript">
+/*<![CDATA[*/
+$('#hide-show').click(function() {
+	$('#map').toggleClass('active', 'unactive');
+});
+/*]]>*/
+</script>
+
+</body>
+</html>

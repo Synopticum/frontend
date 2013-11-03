@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/input-focus.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+        <a href="#"><img src="images/logo.png" width="277" height="64" border="0" alt="" class="logo"/></a>
+
+        <!-- work time -->
+        <div class="worktime">
+            <span class="title">Время работы</span>
+
+            <div class="from">
+                с 9:00 до 19:00 <span>вых</span>
+            </div>
+
+            <div class="days">
+                <span class="green">Пн</span>
+                <span class="green">Вт</span>
+                <span class="green">Ср</span>
+                <span class="green">Чт</span>
+                <span class="green">Пт</span>
+                <span class="red">Сб</span>
+                <span class="red">Вс</span>
+            </div>
+        </div>
+
+        <!-- map -->
+        <div class="map">
+            <a href="#"><img src="images/header-map.png" width="97" height="59" border="0" alt="" /></a>
+        </div>
+
+        <!-- contacts -->
+        <div class="contacts">
+            <span class="phone"><span>8 (495)</span> 649-89-37</span>
+            <p>Ленинский проспект, дом 87,<br />
+            стр.1, офис 367</p>
+            <p><a href="javascript:void(0);" id="ordercall">Заказать обратный звонок</a></p>
+
+            <div id="call">
+                <label>Ваше имя:<br />
+                <input name="c1" type="text" value="Введите ваше имя" class="textbox" /></label>
+
+                <label>Ваше телефон:<br />
+                <input name="c2" type="text" value="Введите ваш телефон" class="textbox" /></label>
+
+                <input type="button" name="c3" value="" class="callnow" />
+            </div>
+            <script language="JavaScript" type="text/javascript">
+            /*<![CDATA[*/
+            $("#ordercall").click(function() {
+              $("#call").toggle();
+            });
+            /*]]>*/
+            </script>
+        </div>
+
+        <!-- search&catalog -->
+        <div class="search">
+            <a href="#" class="select-category">Выберите раздел каталога</a>
+
+            <div id="catalog-expand">
+                <ul>
+                    <li><a href="#">Отопление и обогрев</a>
+                        <ul>
+                            <li><a href="#">Тепловые завесы</a></li>
+                            <li><a href="#">Тепловые пушки</a></li>
+                            <li><a href="#">Дизельные и газовые Обогреватели</a></li>
+                            <li><a href="#">Инфракрасные обогреватели</a></li>
+                            <li><a href="#">Конвекторы</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Сантехника и подогрев воды</a></li>
+                    <li><a href="#">Кондиционеры</a></li>
+                    <li><a href="#">Вентиляция и обработка воздуха</a></li>
+                    <li><a href="#">Различное оборудование</a></li>
+                    <li><a href="#">Товары для дачи</a></li>
+                </ul>
+            </div>
+            <script language="JavaScript" type="text/javascript">
+            /*<![CDATA[*/
+            $(".search .select-category").click(function() {
+              $("#catalog-expand").toggle();
+            });
+            /*]]>*/
+            </script>
+
+            <div class="searchform">
+                <form>
+                    <input name="searchbar" type="text" value="Поиск по сайту" tabindex="1" class="textbox" />
+                    <input type="submit" name="find" value="" tabindex="2" class="find" />
+                </form>
+            </div>
+        </div>
+
+        <!-- navigation -->
+        <div class="nav">
+            <a href="#" class="home" title="Главная">Главная</a>
+            <a href="#" class="sitemap" title="Карта сайта">Карта сайта</a>
+            <a href="#" class="mail" title="Связаться с нами">Связаться с нами</a>
+        </div>
+
+        <!-- top menu -->
+        <div class="topmenu">
+            <ul>
+                <li class="active"><a href="#">Новости и акции</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Оплата и доставка</a></li>
+                <li><a href="#">Книга отзывов</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- breadcrumbs -->
+    <div class="breadcrumbs">
+        <img src="images/bcl.gif" width="2" height="9" border="0" alt="" class="border" />
+
+        <a href="#">Главная</a>
+        <img src="images/bc.gif" width="7" height="3" border="0" alt="" class="spacer" />
+        <span>Отопление и обогрев</span>
+    </div>
+
+	<!-- content -->
+	<div class="content">
+        <h1 class="highlight">Отопление и обогрев</h1>
+
+        <div class="catalog catalog-list">
+            <div class="box even">
+                <h2><img src="images/x1.png" width="77" height="45" border="0" alt="" /> <a href="#">Тепловые завесы</a></h2>
+            </div>
+
+            <div class="box odd">
+                <h2><img src="images/x2.png" width="67" height="45" border="0" alt="" /> <a href="#">Тепловые пушки</a></h2>
+            </div>
+
+            <div class="box even">
+                <h2><img src="images/x3.png" width="63" height="45" border="0" alt="" /> <a href="#">Дизельные и газовые обогреватели</a></h2>
+            </div>
+
+            <div class="box odd">
+                <h2><img src="images/x4.png" width="49" height="45" border="0" alt="" /> <a href="#">Инфракрасные обогреватели</a></h2>
+            </div>
+
+            <div class="box even">
+                <h2><img src="images/x5.png" width="37" height="45" border="0" alt="" /> <a href="#">Тепловентиляторы</a></h2>
+            </div>
+
+            <div class="box odd">
+                <h2><img src="images/x6.png" width="47" height="45" border="0" alt="" /> <a href="#">Масляные обогреватели</a></h2>
+            </div>
+
+            <div class="box even">
+                <h2><img src="images/x7.png" width="63" height="45" border="0" alt="" /> <a href="#">Конвекторы электрические</a></h2>
+            </div>
+
+            <div class="box odd">
+                <h2><img src="images/x8.png" width="39" height="45" border="0" alt="" /> <a href="#">Электрокамины</a></h2>
+            </div>
+        </div>
+
+        <!-- text -->
+        <div class="text">
+          <h2>Отопление и обогрев</h2>
+
+          <p>Огромный ассортимент обогревателей на российском рынке уже давно никого не удивляет. Что же выбрать покупателю из
+          множества отопительных приборов, чтобы и цена доступная, и качество отличное. Чтобы сделать правильный выбор, как
+          минимум, необходимо знать из чего выбирать.</p>
+
+          <p>Самый доступный вид обогрева это – тепловентиляторы. <strong>Большинство моделей</strong> летом могут охлаждать воздух. В среднем,
+          мощность тепловентилятора 2 кВт, что позволяет обогреть комнату до 20 кв.м. Имеют возможность включения на половину
+          мощности, также имеют термостат. Их преимущество - быстрота нагревания воздуха, недостаток - значительное сжигание
+          кислорода. Существуют модели класса «люкс» с максимальным набором функций, у которых есть керамический нагревательный
+          элемент, электронное управление, пульт дистанционного управления, жидкокристаллический дисплей, вращающийся корпус
+          (90 градусов), таймер.</p>
+
+          <p>Масляные обогреватели нагревают комнату медленнее, но качественнее. Чтобы не платить лишние деньги, нужно выбирать их
+          по мощности в соответствии с размером помещения. Для увлажнения воздуха в некоторых моделях предусмотрены пластиковые
+          контейнеры. Контейнер с водой устанавливается на масляный обогреватель, и вода медленно испаряется, увлажняя воздух. Модели
+          различаются температурными режимами, количеством секций, мощностью. <strong>В некоторых моделях есть защита</strong> от замерзания и перегрева
+          и встроенный вентилятор.</p>
+
+          <p>Самый продвинутый вариант из современных обогревателей - конвекторы. Конвектор можно повесить на стену вместо
+          батареи или установить на пол (напольный вариант). Даже самый обычный и недорогой конвектор не сушит воздух. Конвекторы
+          используют в ванных комнатах и застекленных лоджиях, так как они не боятся влаги. Имеют широкий температурный режим и
+          электронный термостат.  Различаются размерами и мощностью.</p>
+
+          <p>Выбирайте нужный вам обогреватель, с ним в ваш дом придут тепло и уют.</p>
+        </div>
+    </div>
+
+    <!-- aside -->
+    <div class="aside">
+        <!-- news -->
+        <div class="news">
+            <h3>Новости и Акции</h3>
+
+            <div class="item">
+                <img src="images/tmp/n1.jpg" width="83" height="56" border="0" alt="" />
+                <div class="description">
+                    <span class="date">20 марта 2012</span>
+                    <p><a href="#">Торговый Дом "Северный Ветер"нтернет.</a></p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/tmp/n2.jpg" width="83" height="56" border="0" alt="" />
+                <div class="description">
+                    <span class="date">18 марта 2012</span>
+                    <p><a href="#">Северный Ветер"Интернет гипермаркет климат и бытовой</a></p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/tmp/n3.jpg" width="83" height="56" border="0" alt="" />
+                <div class="description">
+                    <span class="date">15 марта 2012</span>
+                    <p><a href="#">АКЦИЯ!! <span>Климатической и бытовой техники.</span></a></p>
+                </div>
+            </div>
+
+            <p class="more">
+                <a href="#">Все новости и акции</a>
+            </p>
+        </div>
+
+
+        <!-- best -->
+        <div class="best">
+            <h3>Лучшее товарное предложение</h3>
+
+            <div class="item">
+                <div class="view"><img src="images/tmp/b1.jpg" width="76" height="76" border="0" alt="" /></div>
+                <div class="description">
+                    <a href="#" class="title">Мобильный кондиционер Electrolux EACM-14 EZ/N3</a>
+                    <p>Цена: <span class="cost">20970</span> <span class="valute">Руб.</span></p>
+                    <a href="#" class="addtocart">В корзину</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="view"><img src="images/tmp/b2.jpg" width="76" height="76" border="0" alt="" /></div>
+                <div class="description">
+                    <a href="#" class="title">Робот пылесос iRobot Scooba 385</a>
+                    <p>Цена: <span class="cost">21970</span> <span class="valute">Руб.</span></p>
+                    <a href="#" class="addtocart">В корзину</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="view"><img src="images/tmp/b3.jpg" width="76" height="76" border="0" alt="" /></div>
+                <div class="description">
+                    <a href="#" class="title">Тепловая завеса Тропик К-6</a>
+                    <p>Цена: <span class="cost">21970</span> <span class="valute">Руб.</span></p>
+                    <a href="#" class="addtocart">В корзину</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- information -->
+        <div class="information">
+            <h4>Знаете ли Вы что?</h4>
+
+            <div class="item">
+                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает?
+            </div>
+
+            <div class="item">
+                Оценке дизайна и композиции читаемый текст мешает сосредоточиться?
+            </div>
+
+            <div class="item">
+                Читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот?
+            </div>
+
+            <div class="item">
+                Обеспечивает более или менее стандартное заполнение шаблона?
+            </div>
+        </div>
+
+        <!-- last feeds -->
+        <div class="lastfeeds">
+            <h4>Книга отзывов и вопросов</h4>
+
+            <div class="item">
+                <div class="author">
+                    <strong>Поляруш Роман</strong>
+                    12 марта 2012 г. 15:55
+                </div>
+
+                <div class="q">
+                    <strong>В: </strong>Давно выяснено, что при оценке дизайна и композиции читаемый
+                    текст мешает Используют потому, что тот обеспечивает более.
+                    <div class="c"></div>
+                </div>
+                <div class="a">
+                    <strong>O: </strong>Композиции читаемый текст мешает потому, что тот обеспечивает
+                    или менее стандартное.
+                    <div class="c"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- delivery -->
+    <div class="delivery">
+        <a href="#"><img src="images/d1.gif" width="220" height="86" border="0" alt="" /></a>
+        <a href="#"><img src="images/d2.gif" width="220" height="86" border="0" alt="" /></a>
+        <a href="#"><img src="images/d3.gif" width="220" height="86" border="0" alt="" /></a>
+        <a href="#"><img src="images/d4.gif" width="220" height="86" border="0" alt="" /></a>
+    </div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+    <div class="wrapper">
+        <div class="copyright">
+            &copy; 2012 Торговый Дом  Северный Ветер<br />
+            Все права защищены.
+        </div>
+
+        <div class="contacts">
+            <span class="title">Контактный телефон</span>
+            <span class="phone"><span>8 (495)</span> 649-89-37</span>
+            <p>Ленинский проспект, дом 87, стр.1, офис 367</p>
+        </div>
+
+        <div class="counters">
+            <a href="#"><img src="images/tmp/c1.gif" width="88" height="31" border="0" alt="" /></a>
+            <a href="#"><img src="images/tmp/c2.gif" width="88" height="31" border="0" alt="" /></a>
+        </div>
+    </div>
+
+    <!-- bottom menu -->
+    <div class="bottommenu">
+        <ul>
+            <li class="active"><a href="#">Новости и акции</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Оплата и доставка</a></li>
+            <li><a href="#">Книга отзывов</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,606 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/input-focus.js"></script>
+	<script type="text/javascript" src="js/easySlider1.7.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#slider").easySlider({
+				auto: true,
+				continuous: true,
+				numeric: true
+			});
+		});
+	</script>
+</head>
+<body>
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+        <a href="#" title=""><img src="images/logo.png" width="100" height="78" alt="" class="logo" /></a>
+
+        <div class="title">
+            Панель управления сайта  <a href="#" title="">www.aircentr.ru</a>
+        </div>
+
+        <div class="upload">
+          <a href="#" title="" class="now">Загрузить файл</a>
+          <div id="upload">
+              <p><a href="#" title="">Выбрать файл</a></p>
+              <p class="line"><a href="#">Скопировать</a></p>
+          </div>
+        </div>
+        <script language="JavaScript" type="text/javascript">
+        /*<![CDATA[*/
+        		$('.upload').hover(function() {
+        			$("#upload").toggle();
+        		});
+        /*]]>*/
+        </script>
+
+        <!-- top menu -->
+        <div class="topmenu">
+            <ul>
+                <li class="active"><a href="#" title="">Магазин</a></li>
+                <li><a href="#" title="">Разделы</a></li>
+                <li><a href="#" title="">Контакты</a></li>
+                <li class="dropdown"><a href="#" title="">Яндекс</a>
+                    <ul>
+                        <li><a href="#" title=""><img src="images/fb.png" width="12" height="12" alt="" /> Проиндексированных страниц</a></li>
+                        <li><a href="#" title=""><img src="images/jj.png" width="12" height="12" alt="" /> Я.Каталог</a></li>
+                        <li class="last"><a href="#" title=""><img src="images/tw.png" width="12" height="12" alt="" /> партнер Я.Маркет</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="">Ссылка</a></li>
+
+                <li class="aright logout"><a href="#" title="">Выход</a></li>
+                <li class="aright"><a href="#" title="">Пользователи</a></li>
+            </ul>
+              <script language="JavaScript" type="text/javascript">
+              /*<![CDATA[*/
+        		$('.topmenu .dropdown').hover(function() {
+        			$(".dropdown ul").toggle();
+        		});
+              /*]]>*/
+              </script>
+        </div>
+    </div>
+
+    <!-- main menu -->
+    <div class="mainmenu">
+        <div class="wrapper">
+          <ul>
+              <li class="active"><a href="#" title="">Заказы</a></li>
+              <li><a href="#" title="">Рубрики</a></li>
+              <li><a href="#" title="">Фирмы</a></li>
+              <li><a href="#" title="">Товары</a></li>
+              <li><a href="#" title="">Фотогалерея</a></li>
+              <li><a href="#" title="">Отзывы</a></li>
+              <li><a href="#" title="">Настройки</a></li>
+          </ul>
+
+          <div class="search">
+              <form>
+                  <input name="searchbar" id="searchbar" type="text" value="Поиск" tabindex="1" />
+              </form>
+
+              <div class="dropdown">
+                <ul>
+                    <li><a href="#" title="">Подсказка номер 1</a></li>
+                    <li><a href="#" title="">Подсказка 2, возможно с переносом</a></li>
+                    <li><a href="#" title="">Подсказка номер 3</a></li>
+                </ul>
+              </div>
+              <script language="JavaScript" type="text/javascript">
+              /*<![CDATA[*/
+        		$('#searchbar').keypress(function() {
+        			$(".dropdown").show('fast');
+        		});
+              /*]]>*/
+              </script>
+          </div>
+        </div>
+    </div>
+
+	<!-- content -->
+	<div class="content">
+
+        <h1>Классификатор товаров <span>Небольшое пояснение к заголовку</span></h1>
+
+        <table>
+        <col width="43%" />
+        <col width="43%" />
+        <col width="14%" />
+
+            <thead>
+            <tr>
+                <td>Фирма и наименование товара</td>
+                <td>Рубрика (UML и Каталог магазина)</td>
+                <td>Действие</td>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr class="even">
+                <td>
+                    <div class="name">
+                        <div class="manufacter">Harmonic Technology</div>
+                        <div class="title">MONSTER  MP HTS 1000 DE SUPER PUPER DRUPER 80</div>
+                    </div>
+
+                    <div class="analog">
+                        <form>
+                            <label>Аналог <select name="analog" size="1">
+                            <option value="HDM" selected="selected">HDM</option>
+                            <option value="HDM">HDM</option>
+                            <option value="HDM">HDM</option>
+                            <option value="HDM">HDM</option>
+                            </select></label>
+
+                            <input type="button" name="ok" value="OK" class="ok" />
+                        </form>
+                    </div>
+                </td>
+
+                <td>
+                  <div class="categories">
+                      <div class="cat">
+                          <div class="name">UML:</div>
+                          <div class="item">Кабелиразьемы , стабилизаторы и сетевые фильтры</div>
+                      </div>
+
+                      <div class="cat">
+                          <div class="name">Каталог:</div>
+                          <div class="item">Кабели разьемы , стабилизаторы и сетевые фильтры Кабель Компонентный 3х3 RCA</div>
+                      </div>
+                  </div>
+                </td>
+
+                <td>
+                    <a href="#" title="" class="new">Новый товар</a><br />
+                    <a href="#" title="" class="blacklist">BLACK LIST</a>
+                </td>
+            </tr>
+            <!-- -->
+            <tr class="odd">
+                <td>
+                    <div class="name">
+                        <div class="manufacter">Harmonic Technology</div>
+                        <div class="title">MONSTER  MP HTS 1000 DE SUPER PUPER DRUPER 80</div>
+                    </div>
+
+                    <div class="analog">
+                        <form>
+                            <label>Аналог <select name="analog" size="1">
+                            <option value="HDM" selected="selected">HDM</option>
+                            <option value="HDM">HDM</option>
+                            <option value="HDM">HDM</option>
+                            <option value="HDM">HDM</option>
+                            </select></label>
+
+                            <input type="button" name="ok" value="OK" class="ok" />
+                        </form>
+                    </div>
+                </td>
+
+                <td>
+                  <div class="categories">
+                      <div class="cat">
+                          <div class="name">UML:</div>
+                          <div class="item">Кабелиразьемы , стабилизаторы и сетевые фильтры</div>
+                      </div>
+
+                      <div class="cat">
+                          <div class="name">Каталог:</div>
+                          <div class="item">Кабели разьемы , стабилизаторы и сетевые фильтры Кабель Компонентный 3х3 RCA</div>
+                      </div>
+                  </div>
+                </td>
+
+                <td>
+                    <a href="#" title="" class="new">Новый товар</a><br />
+                    <a href="#" title="" class="blacklist">BLACK LIST</a>
+                </td>
+            </tr>
+            <!-- -->
+            <tr class="even">
+                <td>
+                    <div class="name">
+                        <div class="manufacter">Harmonic Technology</div>
+                        <div class="title">MONSTER  MP HTS 1000 DE SUPER PUPER DRUPER 80</div>
+                    </div>
+
+                    <div class="analog">
+                        <form>
+                            <label>Аналог <select name="analog" size="1">
+                            <option value="HDM" selected="selected">HDM</option>
+                            <option value="HDM">HDM</option>
+                            <option value="HDM">HDM</option>
+                            <option value="HDM">HDM</option>
+                            </select></label>
+
+                            <input type="button" name="ok" value="OK" class="ok" />
+                        </form>
+                    </div>
+                </td>
+
+                <td>
+                  <div class="categories">
+                      <div class="cat">
+                          <div class="name">UML:</div>
+                          <div class="item">Кабелиразьемы , стабилизаторы и сетевые фильтры</div>
+                      </div>
+
+                      <div class="cat">
+                          <div class="name">Каталог:</div>
+                          <div class="item">Кабели разьемы , стабилизаторы и сетевые фильтры Кабель Компонентный 3х3 RCA</div>
+                      </div>
+                  </div>
+                </td>
+
+                <td>
+                    <a href="#" title="" class="new">Новый товар</a><br />
+                    <a href="#" title="" class="blacklist">BLACK LIST</a>
+                </td>
+            </tr>
+            <!-- -->
+            <tr class="odd">
+                <td>
+                    <div class="name">
+                        <div class="manufacter">Harmonic Technology</div>
+                        <div class="title">MONSTER  MP HTS 1000 DE SUPER PUPER DRUPER 80</div>
+                    </div>
+
+                    <div class="analog">
+                        <form>
+                            <label>Аналог <select name="analog" size="1">
+                            <option value="HDM" selected="selected">HDM</option>
+                            <option value="HDM">HDM</option>
+                            <option value="HDM">HDM</option>
+                            <option value="HDM">HDM</option>
+                            </select></label>
+
+                            <input type="button" name="ok" value="OK" class="ok" />
+                        </form>
+                    </div>
+                </td>
+
+                <td>
+                  <div class="categories">
+                      <div class="cat">
+                          <div class="name">UML:</div>
+                          <div class="item">Кабелиразьемы , стабилизаторы и сетевые фильтры</div>
+                      </div>
+
+                      <div class="cat">
+                          <div class="name">Каталог:</div>
+                          <div class="item">Кабели разьемы , стабилизаторы и сетевые фильтры Кабель Компонентный 3х3 RCA</div>
+                      </div>
+                  </div>
+                </td>
+
+                <td>
+                    <a href="#" title="" class="new">Новый товар</a><br />
+                    <a href="#" title="" class="blacklist">BLACK LIST</a>
+                </td>
+            </tr>
+            <!-- -->
+            <tr class="even">
+                <td>
+                    <div class="name">
+                        <div class="manufacter">Harmonic Technology</div>
+                        <div class="title">MONSTER  MP HTS 1000 DE SUPER PUPER DRUPER 80</div>
+                    </div>
+
+                    <div class="analog">
+                        <form>
+                            <label>Аналог <select name="analog" size="1">
+                            <option value="HDM" selected="selected">HDM</option>
+                            <option value="HDM">HDM</option>
+                            <option value="HDM">HDM</option>
+                            <option value="HDM">HDM</option>
+                            </select></label>
+
+                            <input type="button" name="ok" value="OK" class="ok" />
+                        </form>
+                    </div>
+                </td>
+
+                <td>
+                  <div class="categories">
+                      <div class="cat">
+                          <div class="name">UML:</div>
+                          <div class="item">Кабелиразьемы , стабилизаторы и сетевые фильтры</div>
+                      </div>
+
+                      <div class="cat">
+                          <div class="name">Каталог:</div>
+                          <div class="item">Кабели разьемы , стабилизаторы и сетевые фильтры Кабель Компонентный 3х3 RCA</div>
+                      </div>
+                  </div>
+                </td>
+
+                <td>
+                    <a href="#" title="" class="new">Новый товар</a><br />
+                    <a href="#" title="" class="blacklist">BLACK LIST</a>
+                </td>
+            </tr>
+            <!-- -->
+            <tr class="odd">
+                <td>
+                    <div class="name">
+                        <div class="manufacter">Harmonic Technology</div>
+                        <div class="title">MONSTER  MP HTS 1000 DE SUPER PUPER DRUPER 80</div>
+                    </div>
+
+                    <div class="analog">
+                        <form>
+                            <label>Аналог <select name="analog" size="1">
+                            <option value="HDM" selected="selected">HDM</option>
+                            <option value="HDM">HDM</option>
+                            <option value="HDM">HDM</option>
+                            <option value="HDM">HDM</option>
+                            </select></label>
+
+                            <input type="button" name="ok" value="OK" class="ok" />
+                        </form>
+                    </div>
+                </td>
+
+                <td>
+                  <div class="categories">
+                      <div class="cat">
+                          <div class="name">UML:</div>
+                          <div class="item">Кабелиразьемы , стабилизаторы и сетевые фильтры</div>
+                      </div>
+
+                      <div class="cat">
+                          <div class="name">Каталог:</div>
+                          <div class="item">Кабели разьемы , стабилизаторы и сетевые фильтры Кабель Компонентный 3х3 RCA</div>
+                      </div>
+                  </div>
+                </td>
+
+                <td>
+                    <a href="#" title="" class="new">Новый товар</a><br />
+                    <a href="#" title="" class="blacklist">BLACK LIST</a>
+                </td>
+            </tr>
+            <!-- -->
+            <tr class="even">
+                <td>
+                    <div class="name">
+                        <div class="manufacter">Harmonic Technology</div>
+                        <div class="title">MONSTER  MP HTS 1000 DE SUPER PUPER DRUPER 80</div>
+                    </div>
+
+                    <div class="analog">
+                        <form>
+                            <label>Аналог <select name="analog" size="1">
+                            <option value="HDM" selected="selected">HDM</option>
+                            <option value="HDM">HDM</option>
+                            <option value="HDM">HDM</option>
+                            <option value="HDM">HDM</option>
+                            </select></label>
+
+                            <input type="button" name="ok" value="OK" class="ok" />
+                        </form>
+                    </div>
+                </td>
+
+                <td>
+                  <div class="categories">
+                      <div class="cat">
+                          <div class="name">UML:</div>
+                          <div class="item">Кабелиразьемы , стабилизаторы и сетевые фильтры</div>
+                      </div>
+
+                      <div class="cat">
+                          <div class="name">Каталог:</div>
+                          <div class="item">Кабели разьемы , стабилизаторы и сетевые фильтры Кабель Компонентный 3х3 RCA</div>
+                      </div>
+                  </div>
+                </td>
+
+                <td>
+                    <a href="#" title="" class="new">Новый товар</a><br />
+                    <a href="#" title="" class="blacklist">BLACK LIST</a>
+                </td>
+            </tr>
+            <!-- -->
+            <tr class="odd">
+                <td>
+                    <div class="name">
+                        <div class="manufacter">Harmonic Technology</div>
+                        <div class="title">MONSTER  MP HTS 1000 DE SUPER PUPER DRUPER 80</div>
+                    </div>
+
+                    <div class="analog">
+                        <form>
+                            <label>Аналог <select name="analog" size="1">
+                            <option value="HDM" selected="selected">HDM</option>
+                            <option value="HDM">HDM</option>
+                            <option value="HDM">HDM</option>
+                            <option value="HDM">HDM</option>
+                            </select></label>
+
+                            <input type="button" name="ok" value="OK" class="ok" />
+                        </form>
+                    </div>
+                </td>
+
+                <td>
+                  <div class="categories">
+                      <div class="cat">
+                          <div class="name">UML:</div>
+                          <div class="item">Кабелиразьемы , стабилизаторы и сетевые фильтры</div>
+                      </div>
+
+                      <div class="cat">
+                          <div class="name">Каталог:</div>
+                          <div class="item">Кабели разьемы , стабилизаторы и сетевые фильтры Кабель Компонентный 3х3 RCA</div>
+                      </div>
+                  </div>
+                </td>
+
+                <td>
+                    <a href="#" title="" class="new">Новый товар</a><br />
+                    <a href="#" title="" class="blacklist">BLACK LIST</a>
+                </td>
+            </tr>
+            <!-- -->
+            <tr class="even">
+                <td>
+                    <div class="name">
+                        <div class="manufacter">Harmonic Technology</div>
+                        <div class="title">MONSTER  MP HTS 1000 DE SUPER PUPER DRUPER 80</div>
+                    </div>
+
+                    <div class="analog">
+                        <form>
+                            <label>Аналог <select name="analog" size="1">
+                            <option value="HDM" selected="selected">HDM</option>
+                            <option value="HDM">HDM</option>
+                            <option value="HDM">HDM</option>
+                            <option value="HDM">HDM</option>
+                            </select></label>
+
+                            <input type="button" name="ok" value="OK" class="ok" />
+                        </form>
+                    </div>
+                </td>
+
+                <td>
+                  <div class="categories">
+                      <div class="cat">
+                          <div class="name">UML:</div>
+                          <div class="item">Кабелиразьемы , стабилизаторы и сетевые фильтры</div>
+                      </div>
+
+                      <div class="cat">
+                          <div class="name">Каталог:</div>
+                          <div class="item">Кабели разьемы , стабилизаторы и сетевые фильтры Кабель Компонентный 3х3 RCA</div>
+                      </div>
+                  </div>
+                </td>
+
+                <td>
+                    <a href="#" title="" class="new">Новый товар</a><br />
+                    <a href="#" title="" class="blacklist">BLACK LIST</a>
+                </td>
+            </tr>
+            <!-- -->
+            <tr class="odd">
+                <td>
+                    <div class="name">
+                        <div class="manufacter">Harmonic Technology</div>
+                        <div class="title">MONSTER  MP HTS 1000 DE SUPER PUPER DRUPER 80</div>
+                    </div>
+
+                    <div class="analog">
+                        <form>
+                            <label>Аналог <select name="analog" size="1">
+                            <option value="HDM" selected="selected">HDM</option>
+                            <option value="HDM">HDM</option>
+                            <option value="HDM">HDM</option>
+                            <option value="HDM">HDM</option>
+                            </select></label>
+
+                            <input type="button" name="ok" value="OK" class="ok" />
+                        </form>
+                    </div>
+                </td>
+
+                <td>
+                  <div class="categories">
+                      <div class="cat">
+                          <div class="name">UML:</div>
+                          <div class="item">Кабелиразьемы , стабилизаторы и сетевые фильтры</div>
+                      </div>
+
+                      <div class="cat">
+                          <div class="name">Каталог:</div>
+                          <div class="item">Кабели разьемы , стабилизаторы и сетевые фильтры Кабель Компонентный 3х3 RCA</div>
+                      </div>
+                  </div>
+                </td>
+
+                <td>
+                    <a href="#" title="" class="new">Новый товар</a><br />
+                    <a href="#" title="" class="blacklist">BLACK LIST</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!-- paginator -->
+        <div class="paginator">
+            <ul>
+                <li class="active"><a href="#" title="">1</a></li>
+                <li><a href="#" title="">2</a></li>
+                <li><a href="#" title="">3</a></li>
+                <li><a href="#" title="">4</a></li>
+                <li><a href="#" title="">5</a></li>
+                <li><a href="#" title="">6</a></li>
+                <li><a href="#" title="">7</a></li>
+                <li><a href="#" title="">8</a></li>
+                <li><a href="#" title="">9</a></li>
+                <li><a href="#" title="">10</a></li>
+                <li><a href="#" title="">...</a></li>
+                <li><a href="#" title="">20</a></li>
+                <li><a href="#" title="">30</a></li>
+                <li><a href="#" title="">40</a></li>
+            </ul>
+        </div>
+    </div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+    <div class="wrapper">
+        <div class="copyright">
+            <p><span>Рекламное айгенство Майтек</span></p>
+
+            <p>Телефон: +7 (495) 792-66-09<br />
+            Адрес: Москва, Каширский проезд, д.5 (м. Варшавская)</p>
+        </div>
+
+        <div id="slider">
+			<ul>
+				<li>
+                    <h6>Продвижение сайта в поисковиках! </h6>
+                    <p>Продвижение сайта - мы знаем как продвигать!<br /> Качественно и доступно!</p>
+                </li>
+				<li>
+                    <h6>Продвижение сайта в поисковиках! </h6>
+                    <p>Продвижение сайта - мы знаем как продвигать!<br /> Качественно и доступно!</p>
+                </li>
+				<li>
+                    <h6>Продвижение сайта в поисковиках! </h6>
+                    <p>Продвижение сайта - мы знаем как продвигать!<br /> Качественно и доступно!</p>
+                </li>
+				<li>
+                    <h6>Продвижение сайта в поисковиках! </h6>
+                    <p>Продвижение сайта - мы знаем как продвигать!<br /> Качественно и доступно!</p>
+                </li>
+				<li>
+                    <h6>Продвижение сайта в поисковиках! </h6>
+                    <p>Продвижение сайта - мы знаем как продвигать!<br /> Качественно и доступно!</p>
+                </li>
+				<li>
+                    <h6>Продвижение сайта в поисковиках! </h6>
+                    <p>Продвижение сайта - мы знаем как продвигать!<br /> Качественно и доступно!</p>
+                </li>
+			</ul>
+		</div>
+
+        <a href="#" title=""><img src="images/logo2.png" width="83" height="62" alt="" class="logo" /></a>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,633 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" ></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.5.3/jquery-ui.min.js" ></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);
+	});
+</script>
+
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+<link rel="stylesheet" type="text/css" href="js/tango/skin.css" />
+
+<script type="text/javascript">
+
+function mycarousel_initCallback(carousel)
+{
+    // Disable autoscrolling if the user clicks the prev or next button.
+    carousel.buttonNext.bind('click', function() {
+        carousel.startAuto(0);
+    });
+
+    carousel.buttonPrev.bind('click', function() {
+        carousel.startAuto(0);
+    });
+
+    // Pause autoscrolling if the user moves with the cursor over the clip.
+    carousel.clip.hover(function() {
+        carousel.stopAuto();
+    }, function() {
+        carousel.startAuto();
+    });
+};
+
+jQuery(document).ready(function() {
+    jQuery('#mycarousel').jcarousel({
+        auto: 3,
+        scroll: 3,
+        wrap: 'last',
+        initCallback: mycarousel_initCallback
+    });
+});
+
+</script>
+</head>
+<body>
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+		<a href="#" title=""><img src="images/header-logo.png" alt="" class="logo" /></a>
+
+		<a href="#" title="Play" class="play">Play</a>
+
+		<div class="phone">+7 (495) 643-47-95</div>
+	</div>
+
+	<!-- leftside -->
+	<div class="leftside">
+		<div class="box catalog">
+			<h3 class="title"><img src="images/leftside-catalog-ico.png" width="28" height="28" alt="" /> Каталог</h3>
+
+			<ul>
+				<li><a href="#" title="">Игры</a>
+					<ul>
+						<li><a href="#" title="">Компьютерные</a></li>
+						<li><a href="#" title="">Xbox 360</a></li>
+						<li><a href="#" title="">Playstation 3</a></li>
+						<li><a href="#" title="">Playstation 2</a></li>
+						<li><a href="#" title="">PSP</a></li>
+					</ul>
+				</li>
+				<li><a href="#" title="">Музыка</a>
+					<ul>
+						<li><a href="#" title="">Компьютерные</a></li>
+						<li><a href="#" title="">Джаз / Блюз</a></li>
+						<li><a href="#" title="">Инструментальная / Нью</a></li>
+						<li><a href="#" title="">Эйдж</a></li>
+						<li><a href="#" title="">Караоке</a></li>
+						<li><a href="#" title="">Классическая</a></li>
+						<li><a href="#" title="">Поп</a></li>
+						<li><a href="#" title="">Рок</a></li>
+						<li><a href="#" title="">Российская</a></li>
+						<li><a href="#" title="">Рэп</a></li>
+						<li><a href="#" title="">Саундтреки</a></li>
+						<li><a href="#" title="">Электронная</a></li>
+						<li><a href="#" title="">Этническая</a></li>
+						<li><a href="#" title="">Музыкальное видео</a></li>
+						<li><a href="#" title="">Винил</a></li>
+						<li><a href="#" title="">Распродажа</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<div class="box">
+			<h3 class="title">Лучшие продажи!</h3>
+
+			<div class="small-catalog-items">
+				<div class="item">
+					<a href="#" title="" class="thumbnail"><img src="images/tmp_1.jpg" width="107" height="151" alt="" /></a>
+
+					<div class="cost">
+						<small>Цена:</small>  <span>450</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="">CALL OF DUTY 4: MODERN WAREFIRE</a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+				</div>
+				<!-- -->
+				<div class="item">
+					<a href="#" title="" class="thumbnail"><img src="images/tmp_2.jpg" width="107" height="151" alt="" /></a>
+
+					<div class="cost">
+						<small>Цена:</small>  <span>450</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="">CALL OF DUTY 4: MODERN WAREFIRE</a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- content -->
+	<div class="content">
+		<!-- main menu -->
+		<div class="mainmenu">
+			<ul>
+				<li class="m1 active"><a href="" title="Главная">Главная</a></li>
+				<li class="m2"><a href="" title="Каталог игр">Каталог игр</a></li>
+				<li class="m3"><a href="" title="Отзывы">Отзывы</a></li>
+				<li class="m4"><a href="" title="Доставка и оплата">Доставка и оплата</a></li>
+				<li class="m5"><a href="" title="Контакты">Контакты</a></li>
+			</ul>
+		</div>
+
+		<!-- latest news -->
+		<div class="latest-news">
+			<strong class="title">Последние новости: </strong>
+			Первый в мире <a href="" title="">сайт обзор уникльных товаров</a>, с возможностью заказа товара напрямую от производителя, заполните форму
+		</div>
+
+		<!-- home big slider -->
+		<div class="home-slider">
+		<div id="featured" >
+		  <ul class="ui-tabs-nav">
+	        <li class="ui-tabs-nav-item ui-tabs-selected" id="nav-fragment-1"><a href="#fragment-1">
+	        	<span class="title">BATTLEFIELD 3</span>
+	        	<img src="images/tmp_s1.jpg" alt="" />
+	        	<span class="fin"><small>Вывод:</small> Легендарная игра которая превзойдёт любые ожидания! </span>
+	        	<p>Оот нетбуков, которые обладают схожими размерами и весом, но все-таки не способны справится с </p>
+	        </a></li>
+
+	        <li class="ui-tabs-nav-item" id="nav-fragment-2"><a href="#fragment-2">
+	        	<span class="title">DLK NIGHT</span>
+	        	<img src="images/tmp_s2.jpg" alt="" />
+	        	<span class="fin"><small>Вывод:</small> ЛОптимальный вариант светодиодной оптики для бюджетных решений</span>
+	        	<p>Что: от нетбуков, которые обладают схожими </p>
+	        </a></li>
+
+	        <li class="ui-tabs-nav-item" id="nav-fragment-3"><a href="#fragment-3">
+	        	<span class="title">T- BOSS allroad</span>
+	        	<img src="images/tmp_s3.jpg" alt="" />
+	        	<span class="fin"><small>Вывод:</small> Оптимальный вариант светодиодной оптики для бюджетных решений</span>
+	        	<p>Что: от нетбуков, которые обладают схожими </p>
+	        </a></li>
+	      </ul>
+
+	    <!-- First Content -->
+	    <div id="fragment-1" class="ui-tabs-panel" style="">
+	    	<div class="best"></div>
+			<img src="images/tmp_h1.jpg" alt="" />
+			 <div class="info" >
+				<a href="#" title="" class="addtocart">В корзину</a>
+
+				<!-- game rating -->
+				<div class="rating">
+					<p>Оценка: <br /><big>4,45<span>/5</span></big></p>
+
+					<div class="gradation">
+						<div class="wrapper" style="width: 93%"></div>
+					</div>
+				</div>
+			 </div>
+	    </div>
+
+	    <!-- Second Content -->
+	    <div id="fragment-2" class="ui-tabs-panel ui-tabs-hide" style="">
+	    	<div class="best"></div>
+			<img src="images/tmp_h2.jpg" alt="" />
+			 <div class="info" >
+				<a href="#" title="" class="addtocart">В корзину</a>
+
+				<!-- game rating -->
+				<div class="rating">
+					<p>Оценка: <br /><big>4,45<span>/5</span></big></p>
+
+					<div class="gradation">
+						<div class="wrapper" style="width: 93%"></div>
+					</div>
+				</div>
+			 </div>
+	    </div>
+
+	    <!-- Third Content -->
+	    <div id="fragment-3" class="ui-tabs-panel ui-tabs-hide" style="">
+	    	<div class="best"></div>
+			<img src="images/tmp_h3.jpg" alt="" />
+			 <div class="info" >
+				<a href="#" title="" class="addtocart">В корзину</a>
+
+				<!-- game rating -->
+				<div class="rating">
+					<p>Оценка: <br /><big>4,45<span>/5</span></big></p>
+
+					<div class="gradation">
+						<div class="wrapper" style="width: 93%"></div>
+					</div>
+				</div>
+			 </div>
+	    </div>
+
+		</div>
+		</div>
+		
+		<!-- parthners&search -->
+		<div class="parthnersandsearch">
+			<div class="parthners">
+				<!-- -->
+			</div>
+			
+			<div class="search">
+				<input name="searchbar" type="text" id="searchbar" value="Поиск Игры по названию" />
+			</div>
+		</div>
+
+		<!-- horizontal slider -->
+		<div class="horizontal-slider">
+			  <ul id="mycarousel" class="jcarousel-skin-tango">
+			    <li>
+					<a href="#" title="" class="thumbnail"><img src="images/tmp_xxx.jpg" width="111" height="158" alt="" /></a>
+
+					<div class="cost">
+						<small>Цена:</small>  <span>450</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="">CALL OF DUTY 4: MODERN WsdfsfsdfsAREFIRE</a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+				</li>
+				<!-- -->
+			    <li>
+					<a href="#" title="" class="thumbnail"><img src="images/tmp_xxx.jpg" width="111" height="158" alt="" /></a>
+
+					<div class="cost">
+						<small>Цена:</small>  <span>450</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="">CALL OF DUTY 4: MODERN WAREFIRE</a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+				</li>
+				<!-- -->
+			    <li>
+					<a href="#" title="" class="thumbnail"><img src="images/tmp_xxx.jpg" width="111" height="158" alt="" /></a>
+
+					<div class="cost">
+						<small>Цена:</small>  <span>450</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="">CALL OF DUTY 4: MODERN WAREFIRE</a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+				</li>
+				<!-- -->
+			    <li>
+					<a href="#" title="" class="thumbnail"><img src="images/tmp_xxx.jpg" width="111" height="158" alt="" /></a>
+
+					<div class="cost">
+						<small>Цена:</small>  <span>450</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="">CALL OF DUTY 4: MODERN WAREFIRE</a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+				</li>
+				<!-- -->
+			    <li>
+					<a href="#" title="" class="thumbnail"><img src="images/tmp_xxx.jpg" width="111" height="158" alt="" /></a>
+
+					<div class="cost">
+						<small>Цена:</small>  <span>450</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="">CALL OF DUTY 4: MODERN WAREFIRE</a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+				</li>
+				<!-- -->
+			    <li>
+					<a href="#" title="" class="thumbnail"><img src="images/tmp_xxx.jpg" width="111" height="158" alt="" /></a>
+
+					<div class="cost">
+						<small>Цена:</small>  <span>450</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="">CALL OF DUTY 4: MODERN WAREFIRE</a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+				</li>
+				<!-- -->
+			    <li>
+					<a href="#" title="" class="thumbnail"><img src="images/tmp_xxx.jpg" width="111" height="158" alt="" /></a>
+
+					<div class="cost">
+						<small>Цена:</small>  <span>450</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="">CALL OF DUTY 4: MODERN WAREFIRE</a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+				</li>
+				<!-- -->
+			    <li>
+					<a href="#" title="" class="thumbnail"><img src="images/tmp_xxx.jpg" width="111" height="158" alt="" /></a>
+
+					<div class="cost">
+						<small>Цена:</small>  <span>450</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="">CALL OF DUTY 4: MODERN WAREFIRE</a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+				</li>
+				<!-- -->
+			    <li>
+					<a href="#" title="" class="thumbnail"><img src="images/tmp_xxx.jpg" width="111" height="158" alt="" /></a>
+
+					<div class="cost">
+						<small>Цена:</small>  <span>450</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="">CALL OF DUTY 4: MODERN WAREFIRE</a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+				</li>
+				<!-- -->
+			    <li>
+					<a href="#" title="" class="thumbnail"><img src="images/tmp_xxx.jpg" width="111" height="158" alt="" /></a>
+
+					<div class="cost">
+						<small>Цена:</small>  <span>450</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="">CALL OF DUTY 4: MODERN WAREFIRE</a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+				</li>
+				<!-- -->
+			    <li>
+					<a href="#" title="" class="thumbnail"><img src="images/tmp_xxx.jpg" width="111" height="158" alt="" /></a>
+
+					<div class="cost">
+						<small>Цена:</small>  <span>450</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="">CALL OF DUTY 4: MODERN WAREFIRE</a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+				</li>
+				<!-- -->
+			    <li>
+					<a href="#" title="" class="thumbnail"><img src="images/tmp_xxx.jpg" width="111" height="158" alt="" /></a>
+
+					<div class="cost">
+						<small>Цена:</small>  <span>450</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="">CALL OF DUTY 4: MODERN WAREFIRE</a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+				</li>
+				<!-- -->
+			    <li>
+					<a href="#" title="" class="thumbnail"><img src="images/tmp_xxx.jpg" width="111" height="158" alt="" /></a>
+
+					<div class="cost">
+						<small>Цена:</small>  <span>450</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="">CALL OF DUTY 4: MODERN WAREFIRE</a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+				</li>
+				<!-- -->
+			    <li>
+					<a href="#" title="" class="thumbnail"><img src="images/tmp_xxx.jpg" width="111" height="158" alt="" /></a>
+
+					<div class="cost">
+						<small>Цена:</small>  <span>450</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="">CALL OF DUTY 4: MODERN WAREFIRE</a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+				</li>
+				<!-- -->
+			    <li>
+					<a href="#" title="" class="thumbnail"><img src="images/tmp_xxx.jpg" width="111" height="158" alt="" /></a>
+
+					<div class="cost">
+						<small>Цена:</small>  <span>450</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="">CALL OF DUTY 4: MODERN WAREFIRE</a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+				</li>
+
+
+			  </ul>
+		</div>
+
+		<!-- new items -->
+		<div class="new-items">
+			<h2 class="title">Новинки</h2>
+
+			<div class="item">
+				<div class="description">
+
+					<div class="cost">
+						<small>Цена:</small>  <span>450</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="" class="view">From <strong>Dust</strong></a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+					<a href="#" title="" class="full">Обзор</a>
+				</div>
+				<img src="images/tmp_n1.jpg" width="213" height="415" alt="" />
+			</div>
+
+			<!-- -->
+
+			<div class="item">
+				<div class="description">
+
+					<div class="cost">
+						<small>Цена:</small>  <span>540</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="" class="view">Star-Wars <strong>The Old Republic</strong></a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+					<a href="#" title="" class="full">Обзор</a>
+				</div>
+				<img src="images/tmp_n2.jpg" width="213" height="415" alt="" />
+			</div>
+
+			<!-- -->
+
+			<div class="item">
+				<div class="description">
+
+					<div class="cost">
+						<small>Цена:</small>  <span>540</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="" class="view">THE <strong>CRYSIS</strong></a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+					<a href="#" title="" class="full">Обзор</a>
+				</div>
+				<img src="images/tmp_n3.jpg" width="213" height="415" alt="" />
+			</div>
+
+			<!-- -->
+
+			<div class="item">
+				<div class="description">
+
+					<div class="cost">
+						<small>Цена:</small>  <span>560</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="" class="view">Call of Duty Modern warefire</a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+					<a href="#" title="" class="full">Обзор</a>
+				</div>
+				<img src="images/tmp_n4.jpg" width="213" height="415" alt="" />
+			</div>
+
+			<!-- -->
+
+			<div class="item">
+				<div class="description">
+
+					<div class="cost">
+						<small>Цена:</small>  <span>450</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="" class="view">From <strong>Dust</strong></a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+					<a href="#" title="" class="full">Обзор</a>
+				</div>
+				<img src="images/tmp_n1.jpg" width="213" height="415" alt="" />
+			</div>
+
+			<!-- -->
+
+			<div class="item">
+				<div class="description">
+
+					<div class="cost">
+						<small>Цена:</small>  <span>540</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="" class="view">Star-Wars <strong>The Old Republic</strong></a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+					<a href="#" title="" class="full">Обзор</a>
+				</div>
+				<img src="images/tmp_n2.jpg" width="213" height="415" alt="" />
+			</div>
+
+			<!-- -->
+
+			<div class="item">
+				<div class="description">
+
+					<div class="cost">
+						<small>Цена:</small>  <span>540</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="" class="view">THE <strong>CRYSIS</strong></a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+					<a href="#" title="" class="full">Обзор</a>
+				</div>
+				<img src="images/tmp_n3.jpg" width="213" height="415" alt="" />
+			</div>
+
+			<!-- -->
+
+			<div class="item">
+				<div class="description">
+
+					<div class="cost">
+						<small>Цена:</small>  <span>560</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="" class="view">Call of Duty Modern warefire</a>
+
+					<a href="#" title="" class="addtocart">В корзину</a>
+					<a href="#" title="" class="full">Обзор</a>
+				</div>
+				<img src="images/tmp_n4.jpg" width="213" height="415" alt="" />
+			</div>
+		</div>
+
+		<!-- footer -->
+		<div class="footer">
+			<div class="box">
+				<h6>Разделы:</h6>
+				<ul>
+					<li><a href="#" title="">Главная</a></li>
+					<li><a href="#" title="">Каталог</a></li>
+					<li><a href="#" title="">Обзоры и статьи</a></li>
+				</ul>
+			</div>
+			<!-- -->
+			<div class="box">
+				<h6>Помощь:</h6>
+				<ul>
+					<li><a href="#" title="">Как купить</a></li>
+					<li><a href="#" title="">Доставка и полата</a></li>
+					<li><a href="#" title="">Контакты</a></li>
+				</ul>
+			</div>
+			<!-- -->
+			<div class="phone">
+				<h6>Звони нам:</h6>
+
+				<span class="code">8 (495)</span>
+				<span class="number">643-47-95</span>
+				<span class="city">Москва (Многоканальный)</span>
+			</div>
+			<!-- copyright -->
+			<div class="copyright">
+				Правовая информация . Все права фотографии описание принадлежат компании ООО
+				G-BOSS Перепечатка тольбко с письменного разрешения авторов
+			</div>
+
+			<!-- [counterspayment systems -->
+			<div class="ps">
+				<a href="#" title=""><img src="images/ps-mc.gif" width="43" height="28" alt="" /></a>
+				<a href="#" title=""><img src="images/ps-union.gif" width="43" height="28" alt="" /></a>
+				<a href="#" title=""><img src="images/ps-visa.gif" width="43" height="28" alt="" /></a>
+				<a href="#" title=""><img src="images/ps-x.gif" width="43" height="28" alt="" /></a>
+				<a href="#" title=""><img src="images/ps-amex.gif" width="43" height="28" alt="" /></a>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- rightsode -->
+	<div class="rightside">
+		<div class="box cart">
+			<h3 class="title"><img src="images/rightside-cart-title.png" width="67" height="11" alt="Корзина" /></h3>
+
+			<div class="wrapper">
+				<span class="smalltitle">В вашей корзине:</span>
+				<label>
+					<input name="cart-count" type="text" id="cart-count" value="0" /> товаров
+				</label>
+
+				<label>
+					<span>на сумму</span><br />
+					<input name="price-count" type="text" id="price-count" value="450" /> товаров
+				</label>
+
+				<a href="#" title="" id="gotocart">перейти в корзину</a>
+			</div>
+		</div>
+
+		<!-- banner -->
+		<div class="box">
+			<a href="#" title=""><img src="images/banner-1.jpg" alt="" /></a>
+		</div>
+
+		<!-- g-boss is -->
+		<div class="box g-boss-is">
+			<img src="images/g-boss-is.png" alt="" />
+
+			<div class="item gbi-1"><img src="images/gbi-1.png" alt="" /><p><strong>Лицензионные ИГРЫ</strong> напрямую от производителя!</p></div>
+			<div class="item gbi-2"><img src="images/gbi-2.png" alt="" /><p><strong>Доставка сегодня!</strong></p></div>
+			<div class="item gbi-3"><img src="images/gbi-3.png" alt="" /><p><strong>Обзоры игр от посетителей</strong></p></div>
+			<div class="item gbi-4"><img src="images/gbi-4.png" alt="" /><p><strong>Самые низкие цены!</strong></p></div>
+
+			<a href="#" title="" class="your">Свой обзор</a>
+
+			<small>* Напишите ваш обзор игры и получить до 2 000 рублей за один обзор!</small>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>

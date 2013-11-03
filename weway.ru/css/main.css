@@ -1,0 +1,141 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border: 0 none;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img { border:0 none; }
+table { border-collapse: collapse; border-spacing: 0; }
+ol, ul { list-style-image: none; list-style-position: outside; list-style-type: none; }
+q:before, q:after, blockquote:before, blockquote:after { content:""; }
+
+@font-face {
+    font-family: 'PT Sans Regular';
+    src: url('../fonts/pt_sans_regular-webfont.eot');
+    src: url('../fonts/pt_sans_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pt_sans_regular-webfont.woff') format('woff'),
+         url('../fonts/pt_sans_regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'PT Sans Bold';
+    src: url('../fonts/pt_sans_bold-webfont.eot');
+    src: url('../fonts/pt_sans_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pt_sans_bold-webfont.woff') format('woff'),
+         url('../fonts/pt_sans_bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'PT Sans Italic';
+    src: url('../fonts/pt_sans_italic-webfont.eot');
+    src: url('../fonts/pt_sans_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pt_sans_italic-webfont.woff') format('woff'),
+         url('../fonts/pt_sans_italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* css begin */
+html, body { height:100%; }
+body {
+	font-family: 'PT Sans Regular', Arial, Tahoma, sans-serif;
+	font-size: 14px;
+	color: #000;
+	background: #fff;
+	width: 100%;
+	min-width: 1260px;
+}
+
+#wrap {
+	position: relative;
+	width: 1200px;
+	padding: 0 30px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+a { color: #000; }
+.content b, .content strong { font-weight: normal; font-family: 'PT Sans Bold'; }
+.content i, .content em { font-weight: normal; font-family: 'PT Sans Italic'; }
+
+/* header */
+
+.header { overflow: hidden; margin-bottom: 45px; }
+	.topmenu { float: left; margin: 65px 115px 0 0; }
+		.topmenu li { margin: 0 0 2px 0; }
+		.topmenu a { padding: 0 2px; color: #797979; text-decoration: none; }
+		.topmenu a:hover { color: #ba7e65; }
+		.topmenu .active a { background: #ba7e65; color: #fff; }
+
+	.header .logo { float: left; margin: 60px 0 0 0; }
+
+	.header-address { float: right; margin: 61px 0 0 0; }
+		.header-address p { text-align: right; font-size: 13px; margin-bottom: 5px; }
+		.header .phone { font-size: 24px; }
+
+	.header-lang { float: right; clear: right; margin: 10px 0 0 0; font-size: 13px; }
+		.header-lang a { color: #797979; }
+		.header-lang a:hover { color: #ba7e65; }
+
+/* content */
+.content {  }
+
+/* aside */
+.aside { float: left; width: 190px; margin: 60px 0 0 0; padding: 0 20px 0 0; }
+
+	.leftmenu { margin-bottom: 20px; }
+		.leftmenu li { margin: 0 0 2px 0; }
+		.leftmenu li a { text-decoration: none; }
+		.leftmenu li a:hover, .leftmenu li.active a { color: #ba7e65; }
+
+		.leftmenu li ul { padding: 2px 0 0 10px; font-size: 13px; }
+			.leftmenu li li a { color: #7f7f7f !important; }
+			.leftmenu li li a:hover, .leftmenu li li.active a { color: #000 !important; }
+
+	.text { overflow: hidden; color: #666; }
+		.text h1 { font-size: 28px; color: #666; margin-bottom: 7px; }
+		.text h2 { font-size: 22px; color: #666; margin: 7px 0; }
+		.text h3 { font-size: 18px; color: #666; margin: 7px 0; }
+
+		h1.page-title { font-size: 28px; color: #666; margin-bottom: 7px; }
+		h2.page-subtitle { font-family: Georgia, serif; font-style: italic; font-size: 14px; color: #000; }
+
+		.text p { margin: 15px 0; }
+
+		.text a { color: #669; }
+
+		.text .highlight { background: #669; color: #fff; }
+
+		.text .year { margin: 35px 0 20px 0; text-align: center; font-size: 29px; color: #000; }
+
+		.text .likeit { margin: 15px 0; font-size: 18px; }
+
+/* footer */
+#footer {
+	position: relative;
+	margin: -70px auto 0 auto;
+	height: 80px;
+	width: 1200px;
+	padding: 0 30px;
+}
+
+#footer a { color: #ba7e65; }
+
+#footer .copyright { float: left; }
+
+#footer .feedback { float: right; }
+
+.footer_blank {	clear: both; height: 120px; }

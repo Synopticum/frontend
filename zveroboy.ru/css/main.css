@@ -1,0 +1,154 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border: 0 none;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img { border:0 none; }
+table { border-collapse: collapse; border-spacing: 0; }
+ol, ul { list-style-image: none; list-style-position: outside; list-style-type: none; }
+q:before, q:after, blockquote:before, blockquote:after { content:""; }
+
+/* css begin */
+html, body { height:100%; }
+body {
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 12px;
+	color: #000;
+	background: #eadead;
+	width: 100%;
+	min-width: 1000px;
+}
+
+/* content */
+#wrap {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+/* header */
+.header { position: relative; height: 222px; background: url(../images/header-bg.jpg) no-repeat 100% 0; }
+
+	.header .logo { float: left; margin-left: 16px; width: 312px; height: 222px; background: url(../images/logo.jpg) no-repeat; }
+
+	.topmenu { position: absolute; right: 0; bottom: -20px; }
+		.topmenu ul { height: 38px; padding-right: 15px; background: url(../images/topmenu-li-bg.gif) repeat-x; }
+		.topmenu li { float: left; position: relative; height: 38px; background: url(../images/topmenu-li-bg.gif) repeat-x; }
+		.topmenu li a {
+			display: inline-block;
+			padding: 10px 2px 0 16px;
+			height: 28px;
+			background: url(../images/topmenu-separator.png) no-repeat 0 -1px;
+			color: #fff;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-size: 14px;
+		}
+		.topmenu li a:hover { text-decoration: underline; }
+		.topmenu li:first-child {
+			-webkit-border-top-left-radius: 5px;
+			-moz-border-radius-topleft: 5px;
+			border-top-left-radius: 5px;
+			-webkit-border-bottom-left-radius: 5px;
+			-moz-border-radius-bottomleft: 5px;
+			border-bottom-left-radius: 5px;
+			behavior: url(css/PIE.htc);
+		}
+		.topmenu li:first-child a { background: none; padding-left: 8px; }
+
+		.topmenu li ul { display: none; position: absolute; top: 36px; left: 0; z-index: 999; width: 150px; background: none; padding: 0; }
+		.topmenu li:hover ul { display: block; }
+			.topmenu li li { float: none; height: auto; background: #331e00; border-top: 1px solid #000; }
+			.topmenu li li:first-child { -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; behavior: none; }
+			.topmenu li li:hover { background: #836800; }
+			.topmenu li li a { float: none; height: auto; background: none; padding: 5px 15px; }
+			.topmenu li li:first-child a { background: none; padding: 5px 15px; }
+
+/* content */
+.content { min-height: 500px; padding: 30px 17px 30px 20px; background: url(../images/content-bg.gif) repeat-x #1d0002; overflow: hidden; }
+	.content a { color: #a45830; }
+
+	.aside { float: left; width: 247px; margin-right: 18px; }
+		.aside .leftmenu { -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; behavior: url(css/PIE.htc); background: #eadead; padding: 0 0 60px 0; position: relative; }
+			#leftmenu-title { margin: 1px 0 12px -3px; }
+			.aside .leftmenu li {  }
+			.aside .leftmenu li a { display: block; width: 247px; height: 109px; text-indent: -9999px; overflow: hidden; background: url(../images/leftmenu-bg.jpg) no-repeat; }
+				.aside .leftmenu .r1 a { background-position: 0 0; }
+				.aside .leftmenu .r2 a { background-position: 0 -109px; }
+				.aside .leftmenu .r3 a { background-position: 0 -218px; }
+				.aside .leftmenu .r4 a { background-position: 0 -327px; }
+
+	.text { min-width: 698px; overflow: hidden }
+		.text .box { -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; behavior: url(css/PIE.htc); background: #eadead; margin-bottom: 13px; padding: 5px 35px; position: relative; overflow: hidden; }
+			.text .box h1 { font-weight: bold; color: #a45830; text-transform: uppercase; font-size: 20px; }
+			.text .box h2 { font-weight: bold; color: #a45830; text-transform: uppercase; font-size: 16px; }
+			.text .box h3 { font-weight: bold; color: #a45830; text-transform: uppercase; font-size: 13px; }
+			.text .box small { font-size: 11px; }
+
+		.lastnews .item, .lastarticles .item { margin: 4px 0; overflow: hidden; }
+		.lastarticles .item { margin-bottom: 10px; }
+		.lastnews .date, .lastarticles .date { float: left; width: 40px; padding: 7px 0; }
+		.lastnews .thumbnail { float: left; width: 205px; margin-right: 15px; }
+		.lastarticles .thumbnail { float: left; width: 113px; margin-right: 15px; }
+		.lastnews .description, .lastarticles .description { }
+		.lastarticles .description { margin-left: 7px; }
+			.lastnews .description a, .lastarticles .description a { color: #a45830; text-decoration: none; text-transform: uppercase; }
+			.lastnews .description a:hover, .lastarticles .description a:hover { text-decoration: underline; }
+			.lastnews .description p, .lastarticles .description p { margin: 4px 0; text-align: justify; }
+
+		.lastproducts .wrapper { width: 650px; margin: 0 auto; padding-left: 45px; }
+		.lastproducts .item { display: inline-block; display: -moz-inline-stack; vertical-align: top; zoom: 1; *display: inline; width: 166px; margin: 10px 45px 10px 0; text-align: center; }
+			.lastproducts .item img { border: 4px solid #585446; }
+			.lastproducts .item a { color: #000; font-size: 12px; text-decoration: none; color: #a45830; text-transform: uppercase; }
+			.lastproducts .item a:hover { text-decoration: underline; }
+
+		.brand {}
+			.brand p { margin: 5px 0; }
+			.brand p img { float: left; margin: 0 10px 5px 0; }
+
+			.brand-items { width: 650px; margin: 0 auto; overflow: hidden; clear: both; padding: 15px 0; }
+				.brand-items .item { float: left; width: 300px; margin: 0 20px 10px 0; font-weight: bold; text-align: center; display: inline-block; display: -moz-inline-stack; vertical-align: top; zoom: 1; *display: inline; }
+				.brand-items img { border: 1px solid #585446; }
+
+		.product { margin: 20px 0; }
+			.product .view { margin: 0 0 20px 0; }
+			.product .view img { border: 3px solid #585446; }
+			.product .zoom { display: inline-block; margin: 5px 0 0 0; padding-left: 15px; background: url(../images/zoom.gif) no-repeat 0 3px; }
+
+			.product table { margin: 20px 0; width: 300px; }
+			.product td { padding: 10px; border-top: 1px solid #585446; vertical-align: middle; }
+			.product thead td { border: 0; }
+
+		.catalog { margin: 20px 0; }
+			.catalog .items { margin: 20px auto; width: 650px; overflow: hidden; }
+				.catalog .items .item { float: left; margin: 0 25px 10px 0; width: 300px; text-align: center; text-transform: uppercase; }
+				.catalog .items .thumbnail { width: 297px; height: 153px; padding: 0 0 0 3px; background: url(../images/catalog-shadow.jpg) no-repeat; margin-bottom: 5px; }
+				.catalog .items .item a { text-decoration: none; }
+				.catalog .items .item a:hover { text-decoration: underline; }
+
+
+		.breadcrumbs { margin: 25px 0; font-size: 11px; }
+
+
+/* footer */
+#footer {
+	padding: 35px 25px 0 25px;
+	position: relative;
+	margin: -70px auto 0 auto;
+	height: 35px;
+	background: #1d0002;
+	color: #fff;
+}
+
+.footer_blank {	clear: both; height: 70px; }

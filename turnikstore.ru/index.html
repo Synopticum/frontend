@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+
+        <script type="text/javascript" src="js/fancybox/jquery.fancybox.js"></script>
+        <link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css" media="screen" />
+
+        <link rel="stylesheet" href="js/example_start_stop.css">
+        <script src="js/jquery.lwtCountdown-1.0.js"></script>
+
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+        <div id="main">
+
+            <!-- header -->
+            <header>
+                <div class="header-top">
+                    <div class="wrapper">
+                        Интернет-магазин #1 <span class="spacer">|</span>
+                        <a href="#assort">самый широкий ассортимент товаров</a> <span class="spacer">|</span>
+                        оплата <img src="images/header-top-pay.png" alt=""> <span class="spacer">|</span>
+                        Доставка по всей россии и снг <span class="spacer">|</span>
+                        <a href="#guarant">гарантия качества</a> <span class="spacer">|</span>
+                        связь 24/7
+                    </div>
+                </div>
+
+                <!-- -->
+
+                <div class="header-middle">
+                    <div class="wrapper">
+                        <a href=""><img src="images/header-logo.png" alt="" class="header-logo" /></a>
+
+                        <div class="header-slogan">
+                            3 ГОДА РАБОТЫ<br />
+                            Установлено - <span>795 турника</span><br />
+                            Отправлено в регионы РФ – <span>3750 турника</span>
+                        </div>
+
+                        <a href="" class="header-recall button">Закажите звонок</a>
+
+                        <div class="header-contacts">
+                            <span class="call">Просто позвоните:</span><br />
+                            <span class="phone-big">8 (499) 653-71-77,</span> <span class="phone-small">8 (926) 190-02-49</span><br />
+                            <span class="time">Время работы: пн-сб. с 10:00 до 20:00 | online-заказ 24ч</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- -->
+
+                <div class="header-main">
+                    <div class="wrapper">
+                        <h1>Интернет-магазин турников и брусьев</h1>
+                        <p>мы не просто продаем турники. Мы также дарим вам систему<br /> Высокоэффективных спортивных тренировок на турнике. Быстрый и<br /> гарантированный результат. Разработано профессионалами.</p>                        
+                    </div>
+                </div>
+            </header>
+
+            <div id="wrap">
+                <!-- showcase -->
+                <div class="showcase">
+                    <div class="wrapper">
+                        <aside>
+                            <div class="order">
+                                <form action="">
+                                    <h2>Закажите турник прямо сейчас</h2>
+                                    <p>+ в подарок программа <br />“5 высокоэффективных комплексов упражнений”</p>
+
+                                    <input type="text" id="" value="" class="textbox" placeholder="Введите ваше имя..." /><br />
+                                    <input type="text" id="" value="" class="textbox" placeholder="Введите Ваш телефон..." /><br />
+                                    <input type="submit" id="" value="Оформите заказ" class="submit button" /><br />
+                                </form>
+                            </div>
+
+                            <div class="countdown">
+                                <h4>До конца акции осталось:</h4>
+
+                                <div class="example_pane">      
+                                    <div id="countdown_dashboard">
+                                        <div class="dash days_dash">
+                                            <div class="digit">0</div>
+                                            <div class="digit">0</div>
+                                        </div>
+
+                                        <div class="dash hours_dash">
+                                            <div class="digit">0</div>
+                                            <div class="digit">0</div>
+                                        </div>
+
+                                        <div class="dash minutes_dash">
+                                            <div class="digit">0</div>
+                                            <div class="digit">0</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="dash_controls">
+                                        <span class="days">дней</span>
+                                        <span class="hours">часов</span>
+                                        <span class="minutes">минут</span>
+                                    </div>
+
+                                    <script language="javascript" type="text/javascript">
+                                        // Set the Countdown
+                                        jQuery(document).ready(function() {
+                                            $('#countdown_dashboard').countDown({
+                                                targetOffset: {
+                                                    'day':      1,
+                                                    'month':    1,
+                                                    'year':     0,
+                                                    'hour':     1,
+                                                    'min':      1,
+                                                    'sec':      1
+                                                }
+                                            });
+                                        });
+
+                                        // Stop countdown
+                                        function stop() {
+                                            $('#countdown_dashboard').stopCountDown();
+                                        }
+
+                                        // Start countdown
+                                        function start() {
+                                            $('#countdown_dashboard').startCountDown();
+                                        }
+
+                                        // reset and start
+                                        function reset() {
+                                            $('#countdown_dashboard').stopCountDown();
+                                            $('#countdown_dashboard').setCountDown({
+                                                targetOffset: {
+                                                    'day':      1,
+                                                    'month':    1,
+                                                    'year':     0,
+                                                    'hour':     1,
+                                                    'min':      1,
+                                                    'sec':      1
+                                                }
+                                            });             
+                                            $('#countdown_dashboard').startCountDown();
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+                        </aside>
+
+                        <div class="showcase-description">
+                            <h2>Тренажер 4 в 1: турник, брусья, пресс, узкий хват</h2>
+
+                            <p>это 10 базовых упражнений, прокачка 100% мышц торса.<br />
+                            сьемная конструкция</p>
+
+                            <div class="showcase-item">
+                                <div class="view">
+                                    <img src="images/tmp/s1.jpg" alt="">
+                                </div>
+
+                                <div class="description">
+                                    <span class="old">Старая цена: 5400 Рублей</span>
+                                    <div class="current">
+                                        Новая цена:<br />
+                                        <strong>3950Р</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- features -->
+                <div class="features">
+                    <span class="box-title"><span>НАШИ преимущества</span></span>
+
+                    <div class="wrapper">
+                        <div class="features-list">
+                            <div class="item first">
+                                <img src="images/f1.png" alt="">
+                                <p>Бесплатное фитнес сопровождение каждого клиента. 100% результат</p>
+                            </div>
+                            
+                            <div class="item">
+                                <img src="images/f4.png" alt="">
+                                <p>Быстрая доставка по России и СНГ. Доставка курьерской службой без задержек, точно в срок</p>
+                            </div>
+
+                            <div class="item">
+                                <img src="images/f6.png" alt="">
+                                <p>Установка турника. Турник устанавливается квалифицированным мастером</p>
+                            </div>
+                            
+                            <div class="item">
+                                <img src="images/f7.png" alt="">
+                                <p>Гарантия на турник 18 месяцев. Вы можете обменять товар по гарантийному талону</p>
+                            </div>
+                            
+                            <div class="item">
+                                <img src="images/f2.png" alt="">
+                                <p>Лучший ассортимент. У нас собраны самые лучшие и эффективные тренажеры. Вам не нужно тратить время на их поиск </p>
+                            </div>
+                        </div>
+
+                        <!-- -->
+                        <div class="order-now">
+                            <div class="order">
+                                <form action="">
+                                    <h2>Закажите турник прямо сейчас</h2>
+                                    <p>+ в подарок программа <br />“5 высокоэффективных<br /> комплексов упражнений”</p>
+
+                                    <input type="text" id="" value="" class="textbox" placeholder="Введите ваше имя..." /><br />
+                                    <input type="text" id="" value="" class="textbox" placeholder="Введите Ваш телефон..." /><br />
+                                    <input id="assort" type="submit" id="" value="Оформите заказ" class="submit button" /><br />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- assortment -->
+                <div class="assortment">
+                    <span class="box-title"><span>НАШ ассортимент</span></span>
+
+                    <div class="wrapper">
+                        <div class="assortment-list">                            
+                            <div class="item even">
+                                <span class="title">Турник 3 хвата: широкий + узкий + средний</span>
+
+                                <div class="view">
+                                    <a href="#aitem1" class="fancybox"><img src="images/t1.jpg" alt=""></a>
+                                    <div class="price">
+                                        цена<br />
+                                        <strong>3600Р</strong>
+                                    </div>
+                                </div>
+
+                                <a href="#aitem1" class="more fancybox">подробная информация</a>
+                                <a href="" class="buy button">Сделать заказ</a>
+                            </div>
+
+                            <div class="item odd">
+                                <span class="title">Турник 2 хвата: широкий + узкий </span>
+
+                                <div class="view">
+                                    <a href="#aitem2" class="fancybox"><img src="images/t2.jpg" alt=""></a>
+                                    <div class="price">
+                                        цена<br />
+                                        <strong>3600Р</strong>
+                                    </div>
+                                </div>
+
+                                <a href="#aitem2" class="more fancybox">подробная информация</a>
+                                <a href="" class="buy button">Сделать заказ</a>
+                            </div>
+                            
+                            <div class="item even">
+                                <span class="title">Тренажер 2 в 1: турник + Брусья<br />&nbsp;</span>
+
+                                <div class="view">
+                                    <a href="#aitem3" class="fancybox"><img src="images/t3.jpg" alt=""></a>
+                                    <div class="price">
+                                        цена<br />
+                                        <strong>3600Р</strong>
+                                    </div>
+                                </div>
+
+                                <a href="#aitem3" class="more fancybox">подробная информация</a>
+                                <a href="" class="buy button">Сделать заказ</a>
+                            </div>
+
+                            <div class="item odd">
+                                <span class="title">Тренажер 4 в 1 (разборный): турник + Брусья + пресс + Узкий хват</span>
+
+                                <div class="view">
+                                    <a href="#aitem4" class="fancybox"><img src="images/t4.jpg" alt=""></a>
+                                    <div class="price">
+                                        цена<br />
+                                        <strong>3600Р</strong>
+                                    </div>
+                                </div>
+
+                                <a href="#aitem4" class="more fancybox">подробная информация</a>
+                                <a href="" class="buy button">Сделать заказ</a>
+                            </div>
+                            
+                            <div class="item even">
+                                <span class="title">Тренажер 2 в 1: турник + Брусья<br />&nbsp;</span>
+
+                                <div class="view">
+                                    <a href="#aitem5" class="fancybox"><img src="images/t5.jpg" alt=""></a>
+                                    <div class="price">
+                                        цена<br />
+                                        <strong>3600Р</strong>
+                                    </div>
+                                </div>
+
+                                <a href="#aitem5" class="more fancybox">подробная информация</a>
+                                <a href="" class="buy button">Сделать заказ</a>
+                            </div>
+
+                            <div class="item odd">
+                                <span class="title">Тренажер 4 в 1 (разборный): турник + Брусья + пресс + Узкий хват</span>
+
+                                <div class="view">
+                                    <a href="#aitem6" class="fancybox"><img src="images/t6.jpg" alt=""></a>
+                                    <div class="price">
+                                        цена<br />
+                                        <strong>3600Р</strong>
+                                    </div>
+                                </div>
+
+                                <a href="#aitem6" class="more fancybox">подробная информация</a>
+                                <a href="" class="buy button">Сделать заказ</a>
+                            </div>
+                            
+                            <div class="item last">
+                                <span class="title">Тренажер 2 в 1: турник + Брусья</span>
+
+                                <div class="view">
+                                    <a href="#aitem7" class="fancybox"><img src="images/t7.jpg" alt=""></a>
+                                    <div class="price">
+                                        цена<br />
+                                        <strong>3600Р</strong>
+                                    </div>
+                                </div>
+
+                                <a href="#aitem7" class="more fancybox">подробная информация</a>
+                                <a href="" class="buy button">Сделать заказ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- facts -->
+                <div class="facts">
+                    <span class="box-title"><span>Почему турник? Факты</span></span>
+
+                    <div class="wrapper">
+                        <div class="features-list">
+                            <div class="item first">
+                                <img src="images/fa1.png" alt="">
+                                <h3>Фигура атлета</h3>
+                                <p>Базовые упражнения на турнике формирует атлетическое телосложение, рост мышечной массы спины, бицепса, развивает мышцы брюшного пресса. </p>
+                            </div>
+
+                            <div class="item">
+                                <img src="images/fa2.png" alt="">
+                                <h3>сила и выносливость</h3>
+                                <p>Силовая тренировка на турнике увеличивают мышечную силу и выносливость, что положительно сказывается на общем физиологическом состоянии человека. </p>
+                            </div>
+                            
+                            <div class="item">
+                                <img src="images/fa3.png" alt="">
+                                <h3>чувство счастья</h3>
+                                <p>Силовая тренировка повышает на 13% выработку гормона  BDNF стимулирующую развитие нейронов, которые вызывают чувство легкости, ясности, а в конечном итоге – счастья. </p>
+                            </div>
+                            
+                            <div class="item">
+                                <img src="images/fa4.png" alt="">
+                                <h3>развитие памяти и ума</h3>
+                                <p>Исследование директора Центра долголетия Калифорнийского университета, доктора Гери Смолла доказали, что силовые тренировки улучшают кратковременную/долговременную память, развивают способность к концентрации внимания.</p>
+                            </div>
+                            
+                            <div class="item">
+                                <img src="images/fa5.png" alt="">
+                                <h3>Здоровые кости</h3>
+                                <p>Регулярный вис на турнике растягивает и выпрямляет позвоночник, формирует красивую осанку. Министерство здравоохранения РФ рекомендует висеть на перекладине 3 раза в день по 1-3 мин.</p>
+                            </div>
+                        </div>   
+
+                        <!-- -->
+                        <div class="order-now">
+                            <div class="order">
+                                <form action="">
+                                    <h2>Закажите турник прямо сейчас</h2>
+                                    <p>+ в подарок программа <br />“5 высокоэффективных<br /> комплексов упражнений”</p>
+
+                                    <input type="text" id="" value="" class="textbox" placeholder="Введите ваше имя..." /><br />
+                                    <input type="text" id="" value="" class="textbox" placeholder="Введите Ваш телефон..." /><br />
+                                    <input type="submit" id="" value="Оформите заказ" class="submit button" /><br />
+                                </form>
+                            </div>
+                        </div>                     
+                    </div>
+                </div>
+
+                <!-- feeds -->
+                <div class="feeds">
+                    <span class="box-title"><span>Отзывы</span></span>
+
+                    <div class="wrapper">
+                        <div class="feeds-list">
+                            <div class="item even">
+                                <img src="images/tmp/a.png" alt="">
+
+                                <span class="title">Быстрая доставка</span>
+                                <span class="name"><strong>Маршалл Давыдов</strong> 22 года,</span>
+                                <span class="name">Москва, Тренер</span>
+
+                                <p>В связи с плотным рабочим графиком не имею возможности ходить по магазинам и выбирать турник, не говори уже о походе в спортзал. Дома бываю поздно вечером, поэтому возник вопрос с доставкой. Договорились на 23-00. Курьер привез без опозданий, приехал даже чуть раньше. Понравилось, что не нужно ждать доставку целый день, а получаешь ее точно в срок. Сказано – сделано!
+</p>
+                            </div>
+                            
+                            <div class="item odd">
+                                <img src="images/tmp/a.png" alt="">
+
+                                <span class="title">Установка или дыры в стенках</span>
+                                <span class="name"><strong>Маршалл Давыдов</strong> 22 года,</span>
+                                <span class="name">Москва, Тренер</span>
+
+                                <p>Захотел купить турник для домашних тренировок, но были опасения с установкой,  к тому же у меня не оказалось инструментов. Можно легло испортить стены, криво повестить или повесить так, что он будет болтаться. Так что в интернете искал компанию, чтобы сразу с установкой. Перебрал несколько сайтов, выбрал интуитивно понятный, появилось доверие. Позвонил, ребята подробно проконсультировали, посоветовали воспользоваться услугами мастера. <br />
+                                Мастер приехал быстро, в день доставки. Прошел (даже надел бахилы), посмотрел, где нужно установить - одобрил. Далее просверлил, повесил, установил комплектующие, проверил надежность. Все быстро и качественно. Турник хороший, сервис на высшем уровне. Ребятам спасибо!</p>
+                            </div>
+                            
+                            <div class="item even">
+                                <img src="images/tmp/a.png" alt="">
+
+                                <span class="title">Набрал массу</span>
+                                <span class="name"><strong>Маршалл Давыдов</strong> 22 года,</span>
+                                <span class="name">Москва, Тренер</span>
+
+                                <p>К лету хотелось привести свою форму в порядок, набрать пару килограммов и придать мышцам привлекательный вид. Поджимали сроки. До лета оставалось 2 месяца. Парни взялись за меня основательно. Разработали программу тренировок и дали необходимые рекомендации по питанию. Результаты превзошли мои ожидания! Теперь не стыдно выйти на пляж)))</p>
+                            </div>
+                            
+                            <div class="item odd">
+                                <img src="images/tmp/a.png" alt="">
+
+                                <span class="title">Крепкая конструкция</span>
+                                <span class="name"><strong>Маршалл Давыдов</strong> 22 года,</span>
+                                <span class="name">Москва, Тренер</span>
+
+                                <p>Я не самый маленький человек. Мой вес 92 кг. Были сомнения насчет конструкции, выдержит ли меня турник? Опасения были напрасны, так как допустимая нагрузка составляет 250 кг. Порадовала отличная надежность и качество конструкции, сразу приступил к тренировкам. Детям, кстати, он тоже очень понравился!</p>
+                            </div>
+                            
+                            <div class="item even last">
+                                <img src="images/tmp/a.png" alt="">
+
+                                <span class="title">Похудел с 84 до 78 кг.</span>
+                                <span class="name"><strong>Маршалл Давыдов</strong> 22 года,</span>
+                                <span class="name">Москва, Тренер</span>
+
+                                <p>Похудел с 84 до 78 за месяц тренировок! Минус 6 кг!<br />
+                                Обратился для того, чтобы купить турник и привести себя в порядок. В спорте я «чайник». На сайте подкупило то, что меня проконсультируют по тренировке, что для меня было необходимо.<br />
+                                Переживал за структуру и системность моих тренировок. Однако, ребята мне все рассказали, составили план тренировок, который подходит именно мне. В течение месяца БЕСПЛАТНО консультировали и корректировали программу тренировок. Результат отразился в цифрах)))<br />
+                                Отличная доброжелательная команда! </p>
+                            </div>
+                            
+                            <div class="item odd last">
+                                <img src="images/tmp/a.png" alt="">
+
+                                <span class="title">Маленькая квартира</span>
+                                <span class="name"><strong>Маршалл Давыдов</strong> 22 года,</span>
+                                <span class="name">Москва, Тренер</span>
+
+                                <p>Жилая площадь не позволяла установить громоздкое спортивное оборудование. Были сомнения и насчет турника. Но вопрос быстро решился. Приятно, что мне не просто хотят продать турник, но и еще установят его. Ребята порекомендовали в каком месте дома лучше всего поставить турник, какую модель лучше выбрать. При желании его легко снять с петель и поставить на балкон. Всем доволен! Всем спасибо!</p>
+                            </div>
+                        </div>
+
+                        <!-- -->
+                        <div class="order-now">
+                            <div class="order">
+                                <form action="">
+                                    <h2>Закажите турник прямо сейчас</h2>
+                                    <p>+ в подарок программа <br />“5 высокоэффективных<br /> комплексов упражнений”</p>
+
+                                    <input type="text" id="" value="" class="textbox" placeholder="Введите ваше имя..." /><br />
+                                    <input type="text" id="" value="" class="textbox" placeholder="Введите Ваш телефон..." /><br />
+                                    <input type="submit" id="" value="Оформите заказ" class="submit button" /><br />
+                                </form>
+                            </div>
+                        </div>      
+                    </div>
+                </div>
+
+                <!-- results -->
+                <div class="results">
+                    <span class="box-title"><span>Результаты наших успешных клиентов</span></span>
+
+                    <div class="wrapper">
+                        <div class="results-list">
+                            <div class="item">
+                                <img src="images/tmp/r.png" alt="">
+                                <div class="item-wrapper">
+                                    <span class="title">Иванов эдуард эполлитович</span>
+                                    <span class="stats">г. Москва, 12 недель тренировок</span>
+                                    <p>Базовые упражнения на турнике формирует атлетическое телосложение, рост мышечной массы спины, бицепса, развивает мышцы брюшного пресса</p>
+                                    <a href="#inline1" class="more fancybox">Подробная информация</a>
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+                                <img src="images/tmp/r.png" alt="">
+                                <div class="item-wrapper">
+                                    <span class="title">Иванов эдуард эполлитович</span>
+                                    <span class="stats">г. Москва, 12 недель тренировок</span>
+                                    <p>Базовые упражнения на турнике формирует атлетическое телосложение, рост мышечной массы спины, бицепса, развивает мышцы брюшного пресса</p>
+                                    <a href="#inline1" class="more fancybox">Подробная информация</a>
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+                                <img src="images/tmp/r.png" alt="">
+                                <div class="item-wrapper">
+                                    <span class="title">Иванов эдуард эполлитович</span>
+                                    <span class="stats">г. Москва, 12 недель тренировок</span>
+                                    <p>Базовые упражнения на турнике формирует атлетическое телосложение, рост мышечной массы спины, бицепса, развивает мышцы брюшного пресса</p>
+                                    <a href="#inline1" class="more fancybox">Подробная информация</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- help -->
+                <div class="help">
+                    <span class="box-title"><span>Поможем достичь результата. Как?</span></span>
+
+                    <div class="wrapper">
+                        <h3>Мы хотим, чтобы Вы занимались спортом максимально эффективно. Станьте нашим<br /> клиентом прямо сейчас! И вы абсолютно бесплатно получите инструменты для<br /> достижения ваших результатов:</h3>
+
+                        <div class="help-list">
+                            <div class="item">
+                                <div class="number">1</div>
+                                <div class="description">
+                                    Пошаговую инструкцию достижения спортивных целей, программу<br />«5-ть высокоэффективных комплексов упражнений»;
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="number">2</div>
+                                <div class="description">
+                                    Консультацию персонального фитнес инструктора, который поможет вам достичь<br /> результатов;
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+                                <div class="number">3</div>
+                                <div class="description">
+                                    Возможность получить консультацию диетолога и пошаговую инструкцию по питанию «5-ть секретов здорового питания» с 50% скидкой;
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+                                <div class="number">4</div>
+                                <div class="description">
+                                    Спортивную рассылку с информацией о самых новейших методиках спортивных тренировок и здорового питания;  
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+                                <div class="number">5</div>
+                                <div class="description">
+                                    Вы можете обращаться к нашим фитнес специалистам по всем вопросам спортивного<br /> развития.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- -->
+                        <div class="order-now">
+                            <div class="order">
+                                <form action="">
+                                    <h2>Закажите турник прямо сейчас</h2>
+                                    <p>+ в подарок программа <br />“5 высокоэффективных<br /> комплексов упражнений”</p>
+
+                                    <input type="text" id="" value="" class="textbox" placeholder="Введите ваше имя..." /><br />
+                                    <input type="text" id="" value="" class="textbox" placeholder="Введите Ваш телефон..." /><br />
+                                    <input type="submit" id="" value="Оформите заказ" class="submit button" /><br />
+                                </form>
+                            </div>
+                        </div>      
+                    </div>
+                </div>
+
+                <!-- reasons -->
+                <div class="reasons">
+                    <span class="box-title"><span>5-ть причин, почему мы лучше</span></span>
+
+                    <div class="wrapper">
+                        <div class="col leftcol">
+                            <h3>Как работают все:</h3>
+
+                            <div class="item">
+                                Продавцов не интересуют ваши желания. Следствие – вам просто пытаются впарить товар
+                                <img src="images/i1.png" alt="" class="icon" />
+                            </div>
+
+                            <div class="item">
+                                Не отвечают на ваши звонки и письма, продали товар и концы в воду. Следствие – никакого после продажного обслуживания.
+                                <img src="images/i2.png" alt="" class="icon" />
+                            </div>
+                            
+                            <div class="item">
+                                Неудобный сайт. Следствие – невозможно найти интересующий товар.
+                                <img src="images/i3.png" alt="" class="icon" />
+                            </div>
+
+                            <div class="item">
+                                Обещают привезти турник завтра уже несколько дней подряд. Срывают сроки. Следствие – потеря времени
+                                <img src="images/i1.png" alt="" class="icon" />
+                            </div>
+                        </div>
+
+                        <div class="col rightcol">
+                            <h3>Как работаем мы:</h3>
+                            
+                            <div class="item">
+                                Мы хотим, чтобы вы занимались спортом эффективно!<br />
+                                Это наша основная задача. Нас интересует долгосрочное сотрудничество с Вами. Поэтому мы подготовили для Вас спортивную программу. Вам ничего не нужно придумывать – бери и делай!
+                                <img src="images/i5.png" alt="" class="icon" />
+                            </div>
+                            
+                            <div class="item">
+                                У нас работают профессионалы<br />
+                                Мы сами активные спортсмены и хотим передать накопленный опыт своим клиентам.
+                                <img src="images/i6.png" alt="" class="icon" />
+                            </div>
+                            
+                            <div class="item">
+                                Мы всегда на связи<br />
+                                Вы получите ответы на все вопросы, на все звонки, на все письма.
+                                <img src="images/i7.png" alt="" class="icon" />
+                            </div>
+                            
+                            <div class="item">
+                                У нас лучший ассортимент<br />
+                                Для вас мы собрали в 1-м месте самые эффективные тренажеры. Вам не нужно тратить время на поиск лучшего.
+                                <img src="images/i8.png" alt="" class="icon" />
+                            </div>
+                            
+                            <div class="item">
+                                У нас всегда есть турники<br />
+                                Вам не придется ждать неделями доставки турника, турник привезут на следующий день после заказа.
+                                <img src="images/i9.png" alt="" class="icon" />
+                            </div>                            
+                        </div>
+
+                        <!-- -->
+                        <div class="order-now">
+                            <div class="order">
+                                <form action="">
+                                    <h2>Закажите турник прямо сейчас</h2>
+                                    <p>+ в подарок программа <br />“5 высокоэффективных<br /> комплексов упражнений”</p>
+
+                                    <input type="text" id="" value="" class="textbox" placeholder="Введите ваше имя..." /><br />
+                                    <input type="text" id="" value="" class="textbox" placeholder="Введите Ваш телефон..." /><br />
+                                    <input type="submit" id="" value="Оформите заказ" class="submit button" /><br />
+                                </form>
+                            </div>
+                        </div>      
+                    </div>
+                </div>
+
+                <!-- schema -->
+                <div class="schema">
+                    <span class="box-title"><span>Схема работы с нами</span></span>
+
+                    <div class="wrapper">
+                        <div class="schema-image">
+                            <img src="images/schema.png" alt="">
+                            <span id="guarant" style="color: #fff">x</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- guarantee -->
+                <div class="guarantee">
+                    <span class="box-title"><span>Наши гарантии</span></span>
+
+                    <div class="wrapper">
+                        <div class="guarantee-list">
+                            <div class="item">
+                                <img src="images/g1.png" alt="">
+                                <p>Гарантия на турник 18 месяцев. Если турник пришел в плохое состояние, мы без проблем обменяем его по гарантийному талону.</p>
+                            </div>
+
+                            <div class="item">
+                                <img src="images/g2.png" alt="">
+                                <p>Спортивный результат. При соблюдении нашей спортивной программы и рекомендациям инструктора вы 100% добьетесь результата.</p>
+                            </div>
+                            
+                            <div class="item">
+                                <img src="images/g3.png" alt="">
+                                <p>Самостоятельная установка. Вас подробно проконсультируют по вопросам установки и вышлют видео инструкцию.</p>
+                            </div>
+                            
+                            <div class="item">
+                                <img src="images/g4.png" alt="">
+                                <p>Лучший сервис и качество товара. Вы останетесь довольны качеством турника и уровнем обслуживания.</p>
+                            </div>
+                        </div>
+
+                        <!-- -->
+                        <div class="order-now">
+                            <div class="order">
+                                <form action="">
+                                    <h2>Закажите турник прямо сейчас</h2>
+                                    <p>+ в подарок программа <br />“5 высокоэффективных<br /> комплексов упражнений”</p>
+
+                                    <input type="text" id="" value="" class="textbox" placeholder="Введите ваше имя..." /><br />
+                                    <input type="text" id="" value="" class="textbox" placeholder="Введите Ваш телефон..." /><br />
+                                    <input type="submit" id="" value="Оформите заказ" class="submit button" /><br />
+                                </form>
+                            </div>
+                        </div>      
+                    </div>
+                </div>
+
+                <!-- team -->
+                <div class="team">
+                    <span class="box-title"><span>Наша команда</span></span>
+
+                    <div class="wrapper">
+                        <img src="images/tmp/t.jpg" alt="">
+
+                        <p>Компания turnik-store создана в 2010 году действующими спортсменами, участвующими в таких единоборствах, как боевое самбо, дзюдо, армейский рукопашный бой, бокс. Как профессиональные спортсмены мы знаем, что турник и брусья – это основные инструменты для построения сильного, красивого тела и улучшения физиологических способностей.</p>
+
+                        <p>Главной миссией нашей команды является активное развитие спорта в России. Мы стремимся донести спорт в каждую семью, ведь спорт – это путь к успеху!</p>
+
+                        <p>Занимайтесь спортом!</p>
+                    </div>
+                </div>
+
+                <!-- about -->
+                <div class="about">
+                    <span class="box-title"><span>Спортсмены о наших турниках</span></span>
+
+                    <div class="wrapper">
+                        <div class="about-list">
+                            <div class="item">
+                                <div class="view">
+                                    <img src="images/tmp/a1.jpg" alt="">
+                                </div>
+
+                                <div class="description">
+                                    <span class="title">Сергей "Хонда" Хандожко</span>
+
+                                    <p><span class="highlight">Звание:</span> Мастер спорта по армейскому рукопашному бою, универсальному бою, ашихара карате; кандидат в мастера спорта по кикбоксингу.</p>
+
+                                    <p><span class="highlight">Титулы:</span> Чемпион мира, Европы, России, Москвы по универсальному бою; чемпион России по ашихара карате; чемпион России по рукопашному бою. Профессиональный боец микс файт.<br />
+                                    Все свое время я провожу на тренировках, сборах и соревнованиях. Естественно, такие нагрузки дают о себе знать. Поэтому для утренней разминки я приобрел у ребят турник, очень эффективный и простой в обращении. Благодаря занятиям на турнике, мои мышцы и связки всегда в тонусе и готовы к работе. Спасибо ребятам.<br />
+                                    p.s. Занимайтесь спортом!</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="view">
+                                    <img src="images/tmp/a2.jpg" alt="">
+                                </div>
+
+                                <div class="description">
+                                    <span class="title">Маршалл Давыдов</span>
+
+                                    <p><span class="highlight">Звание:</span> Мастер спорта по боевому самбо, кандидат в мастера спорта по греко-римской борьбе.</p>
+
+                                    <p><span class="highlight">Титулы:</span> Победитель VII Олимпиады боевых искусств «Восток-Запад», обладатель Кубка Альянса по микс файт, вице-чемпион Москвы по боевому самбо, победитель Православного чемпионата России по боевому самбо, победитель и призёр всероссийских и международных турниров по боевому самбо. Чемпион Московской области по грэпплингу, победитель московских и областных турниров по греко-римской борьбе.<br />
+                                    Откровенно говоря, во всем, что касается "подкачки мышц", я человек привередливый. Не люблю заниматься железом. От него тупеешь и мышцы становятся деревянными. Обычно, либо набарываюсь в зале, что помогает сохранять мышцы в форме, либо использую вес своего тела и упражнения на турнике. Это помогает выработать хватку и повысить свои силовые возможности. 
+Во дворе у меня турника нет, да и тренироваться на виду у всех не всегда хочется, поэтому я обратился к ребятам и выбрал для себя подходящий турник, с удобными ручками и хорошим крепким каркасом. 
+Привезенный мне турник установил достаточно быстро. Процесс оказался несложный. Опробовал и теперь с удовольствием пользуюсь! Делаю по две коротких тренировки в день. С утра - для бодрости духа, и вечером - чтобы лучше спать. Результатами ожидаемо очень доволен. Хватка стала еще крепче и бороться, соответственно, стало много проще! хорошие крепкие мышцы в нашей работе - большое дело! (улыбка).</p>
+                                </div>
+                            
+                            <div class="item">
+                                <div class="view">
+                                    <img src="images/tmp/a3.jpg" alt="">
+                                </div>
+
+                                <div class="description">
+                                    <span class="title">Ирина Олиференко</span>
+
+                                    <p><span class="highlight">Звание:</span> Мастер спорта по художественной гимнастике</p>
+
+                                    <p><span class="highlight">Титулы:</span> Призер чемпионата России, чемпионка Москвы, неоднократный победитель чемпионата Московской области, многократный победитель межрегиональных турниров.<br />
+                                    Доброго времени суток, я Ирина Олифиренко. Мне, как профессиональному спортсмену, необходимо поддерживать физическую форму ежедневно. Строгое питание, режим и изнурительные тренировки. При выполнении упражнений колоссальная нагрузка идет на мой позвоночник и мне жизненно необходимо его разминать. Оптимальное упражнение - висеть на турниках по утрам и вечерам, такой совет мне дала мой тренер по физической подготовке. Действительно помогает, перед сном чувствую себя куда более расслаблено, всем спортсменам советую повесить дома турник для этой цели.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- -->
+                        <div class="order-now">
+                            <div class="order">
+                                <form action="">
+                                    <h2>Закажите турник прямо сейчас</h2>
+                                    <p>+ в подарок программа <br />“5 высокоэффективных<br /> комплексов упражнений”</p>
+
+                                    <input type="text" id="" value="" class="textbox" placeholder="Введите ваше имя..." /><br />
+                                    <input type="text" id="" value="" class="textbox" placeholder="Введите Ваш телефон..." /><br />
+                                    <input type="submit" id="" value="Оформите заказ" class="submit button" /><br />
+                                </form>
+                            </div>
+                        </div>      
+                    </div>                    
+                </div>
+            </div>            
+
+            <!-- footer -->
+            <footer>
+                <div class="wrapper">
+                    <div class="footer-contacts">
+                        <h6>Наши контакты:</h6>
+
+                        <div class="shadow"></div>
+
+                        <div class="footer-phone">
+                            8 (499) 653-71-77<br />
+                            8 (926) 190-02-49
+                        </div>
+
+                        <div class="footer-email"><a href="mailto:sale@turnik-store.ru">sale@turnik-store.ru</a></div>
+
+                        <div class="shadow"></div>
+
+                        <div class="footer-address">
+                            г. Москва, ул. Энергетическая 18. / Адрес пункта самовывоза: ул. Складочная 1, корп. 1.
+                        </div>
+                    </div>
+
+                    <!-- -->
+                    <div class="footer-recomended">
+                        <div class="social">
+                            <img src="images/tmp/bs1.jpg" alt="">
+                        </div>
+
+                        <div class="description">
+                            <h6>Нас рекомендует<br/ >группа</h6>
+
+                            <p>2010-2013 Интернет-магазин «turnik-store.ru».<br />
+                            Все цены указаны в рублях.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- popup -->
+        <div class="popup" id="inline1">
+            <div class="popup-wrapper">
+                <h5>Иванов эдуард эполлитович</h5>
+
+                <p><strong>г. Москва, 12 недель тренировок</strong></p>
+
+                <p><strong>Прибыль</strong> - 120 000 руб./мес.<br />
+                <strong>Срок бизнеса</strong> - 1,5 года</p>
+
+                <table>
+                    <tr>
+                        <td><img src="images/tmp/p1.jpg" alt=""></td>
+                        <td><img src="images/tmp/p2.jpg" alt=""></td>
+                    </tr>
+                </table>
+                
+                <p>Я начала где-то с ноября, на тот момент было 5 поставщиков мной выбранно. Сегодня я сотрудничаю только с Вами и другой компанией по стальным украшениям. Хочу добавить изделия из муранского стекла. Вот Вам и результат, т.е. Ваши украшения лучшие, и поверьте-мне очень сложно угодить))))Ассортимент на 80% Ваш (и в интернет магазине кстати тоже). После работы с вами стало увеличение в 2-3 раза. Но мне еще сложно отследить динамику, так как работаю первый год. И, конечно, май с декабрем никак не сравнить)</p>
+            </div>
+        </div>
+
+        <!-- popup 2 -->
+        <div class="popup popup-big" id="aitem1">
+            <div class="popup-wrapper">
+                <div class="view">
+                    <div class="big">
+                        <img src="images/t1.jpg" height="340" width="455" alt="">
+                    </div>
+
+                    <div class="thumbnails">
+                        <a href=""><img src="images/tmp/ts1.jpg" height="69" width="105" alt=""></a>
+                        <a href=""><img src="images/tmp/ts1.jpg" height="69" width="105" alt=""></a>
+                        <a href=""><img src="images/tmp/ts2.jpg" height="69" width="105" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="description">
+                    <h5>Турник 3 хвата: широкий + узкий + средний</h5>
+
+                    <div class="price">
+                        Цена: <span>3600Р</span>
+                    </div>
+
+                    <p><strong>Описание</strong><br />
+                        Ширина - 115 см<br />
+                        Вылет от стены - 40 см<br />
+                        Высота - 32 см<br />
+                        Вес - 5 кг<br />
+                    </p>
+
+                    <div class="popup-big-form">
+                        <form action="">
+                            <input type="text" id="" value="" class="textbox" placeholder="Введите ваше имя" /><br />
+                            <input type="text" id="" value="" class="textbox" placeholder="Введите ваш телефон" /><br />
+                            <input type="submit" id="" value="Сделать заказ" class="button submit" />
+                        </form>
+                    </div>
+                </div>
+
+                <div class="text">
+                    Простой в обращении. Не занимает много места. Позволяет выполнить все базовые упражнения для мышц спины. Оснащен двумя кольцами для подвешивания боксерского мешка, резиновых жгутов и блоков для выполнения кроссоверов.
+                </div>
+            </div>
+        </div>
+
+        <div class="popup popup-big" id="aitem2">
+            <div class="popup-wrapper">
+                <div class="view">
+                    <div class="big">
+                        <img src="images/t2.jpg" height="340" width="455" alt="">
+                    </div>
+
+                    <div class="thumbnails">
+                        <a href=""><img src="images/tmp/ts1.jpg" height="69" width="105" alt=""></a>
+                        <a href=""><img src="images/tmp/ts1.jpg" height="69" width="105" alt=""></a>
+                        <a href=""><img src="images/tmp/ts2.jpg" height="69" width="105" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="description">
+                    <h5>Турник 3 хвата: широкий + узкий + средний</h5>
+
+                    <div class="price">
+                        Цена: <span>3600Р</span>
+                    </div>
+
+                    <p><strong>Описание</strong><br />
+                        Ширина - 115 см<br />
+                        Вылет от стены - 40 см<br />
+                        Высота - 32 см<br />
+                        Вес - 5 кг<br />
+                    </p>
+
+                    <div class="popup-big-form">
+                        <form action="">
+                            <input type="text" id="" value="" class="textbox" placeholder="Введите ваше имя" /><br />
+                            <input type="text" id="" value="" class="textbox" placeholder="Введите ваш телефон" /><br />
+                            <input type="submit" id="" value="Сделать заказ" class="button submit" />
+                        </form>
+                    </div>
+                </div>
+
+                <div class="text">
+                    Простой в обращении. Не занимает много места. Позволяет выполнить все базовые упражнения для мышц спины. Мягкие неопреновые ручки исключают возможность соскальзывания. У Вас не будет необходимости использовать специальные перчатки
+                </div>
+            </div>
+        </div>
+        
+        <div class="popup popup-big" id="aitem3">
+            <div class="popup-wrapper">
+                <div class="view">
+                    <div class="big">
+                        <img src="images/t3.jpg" height="340" width="455" alt="">
+                    </div>
+
+                    <div class="thumbnails">
+                        <a href=""><img src="images/tmp/ts1.jpg" height="69" width="105" alt=""></a>
+                        <a href=""><img src="images/tmp/ts1.jpg" height="69" width="105" alt=""></a>
+                        <a href=""><img src="images/tmp/ts2.jpg" height="69" width="105" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="description">
+                    <h5>Турник 3 хвата: широкий + узкий + средний</h5>
+
+                    <div class="price">
+                        Цена: <span>3600Р</span>
+                    </div>
+
+                    <p><strong>Описание</strong><br />
+                        Ширина - 115 см<br />
+                        Вылет от стены - 40 см<br />
+                        Высота - 32 см<br />
+                        Вес - 5 кг<br />
+                    </p>
+
+                    <div class="popup-big-form">
+                        <form action="">
+                            <input type="text" id="" value="" class="textbox" placeholder="Введите ваше имя" /><br />
+                            <input type="text" id="" value="" class="textbox" placeholder="Введите ваш телефон" /><br />
+                            <input type="submit" id="" value="Сделать заказ" class="button submit" />
+                        </form>
+                    </div>
+                </div>
+
+                <div class="text">
+                    Отличный вариант для улучшения Вашей общей физической подготовки. Широкий хват + брусья – вот необходимый набор для укрепления Вашего тела! За несколько секунд Вы меняете положение из турника в брусья, просто перевернув тренажер
+                </div>
+            </div>
+        </div>
+        
+        <div class="popup popup-big" id="aitem4">
+            <div class="popup-wrapper">
+                <div class="view">
+                    <div class="big">
+                        <img src="images/t4.jpg" height="340" width="455" alt="">
+                    </div>
+
+                    <div class="thumbnails">
+                        <a href=""><img src="images/tmp/ts1.jpg" height="69" width="105" alt=""></a>
+                        <a href=""><img src="images/tmp/ts1.jpg" height="69" width="105" alt=""></a>
+                        <a href=""><img src="images/tmp/ts2.jpg" height="69" width="105" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="description">
+                    <h5>Турник 3 хвата: широкий + узкий + средний</h5>
+
+                    <div class="price">
+                        Цена: <span>3600Р</span>
+                    </div>
+
+                    <p><strong>Описание</strong><br />
+                        Ширина - 115 см<br />
+                        Вылет от стены - 40 см<br />
+                        Высота - 32 см<br />
+                        Вес - 5 кг<br />
+                    </p>
+
+                    <div class="popup-big-form">
+                        <form action="">
+                            <input type="text" id="" value="" class="textbox" placeholder="Введите ваше имя" /><br />
+                            <input type="text" id="" value="" class="textbox" placeholder="Введите ваш телефон" /><br />
+                            <input type="submit" id="" value="Сделать заказ" class="button submit" />
+                        </form>
+                    </div>
+                </div>
+
+                <div class="text">
+                    Предназначен для построения мощного и красивого тела. Мягкие кожаные подлокотники и спинка, неопреновые ручки. Все условия для комфортных и продуктивных тренировок! За несколько секунд Вы меняете положение из турника в брусья, просто перевернув тренажер.
+                </div>
+            </div>
+        </div>
+        
+        <div class="popup popup-big" id="aitem5">
+            <div class="popup-wrapper">
+                <div class="view">
+                    <div class="big">
+                        <img src="images/t5.jpg" height="340" width="455" alt="">
+                    </div>
+
+                    <div class="thumbnails">
+                        <a href=""><img src="images/tmp/ts1.jpg" height="69" width="105" alt=""></a>
+                        <a href=""><img src="images/tmp/ts1.jpg" height="69" width="105" alt=""></a>
+                        <a href=""><img src="images/tmp/ts2.jpg" height="69" width="105" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="description">
+                    <h5>Турник 3 хвата: широкий + узкий + средний</h5>
+
+                    <div class="price">
+                        Цена: <span>3600Р</span>
+                    </div>
+
+                    <p><strong>Описание</strong><br />
+                        Ширина - 115 см<br />
+                        Вылет от стены - 40 см<br />
+                        Высота - 32 см<br />
+                        Вес - 5 кг<br />
+                    </p>
+
+                    <div class="popup-big-form">
+                        <form action="">
+                            <input type="text" id="" value="" class="textbox" placeholder="Введите ваше имя" /><br />
+                            <input type="text" id="" value="" class="textbox" placeholder="Введите ваш телефон" /><br />
+                            <input type="submit" id="" value="Сделать заказ" class="button submit" />
+                        </form>
+                    </div>
+                </div>
+
+                <div class="text">
+                    Идеальный тренажер для регулярных и системных занятий. Позволяет выполнить максимально возможное количество упражнений и их вариаций для турника и брусьев. Мягкие кожаные подлокотники и спинка, неопреновые ручки. Все условия для комфортных и продуктивных тренировок!
+                </div>
+            </div>
+        </div>
+        
+        <div class="popup popup-big" id="aitem6">
+            <div class="popup-wrapper">
+                <div class="view">
+                    <div class="big">
+                        <img src="images/t6.jpg" height="340" width="455" alt="">
+                    </div>
+
+                    <div class="thumbnails">
+                        <a href=""><img src="images/tmp/ts1.jpg" height="69" width="105" alt=""></a>
+                        <a href=""><img src="images/tmp/ts1.jpg" height="69" width="105" alt=""></a>
+                        <a href=""><img src="images/tmp/ts2.jpg" height="69" width="105" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="description">
+                    <h5>Турник 3 хвата: широкий + узкий + средний</h5>
+
+                    <div class="price">
+                        Цена: <span>3600Р</span>
+                    </div>
+
+                    <p><strong>Описание</strong><br />
+                        Ширина - 115 см<br />
+                        Вылет от стены - 40 см<br />
+                        Высота - 32 см<br />
+                        Вес - 5 кг<br />
+                    </p>
+
+                    <div class="popup-big-form">
+                        <form action="">
+                            <input type="text" id="" value="" class="textbox" placeholder="Введите ваше имя" /><br />
+                            <input type="text" id="" value="" class="textbox" placeholder="Введите ваш телефон" /><br />
+                            <input type="submit" id="" value="Сделать заказ" class="button submit" />
+                        </form>
+                    </div>
+                </div>
+
+                <div class="text">
+                   Отлично подойдет спортсменам, занимающимся единоборствами. Тренажер позволяет выполнить все базовые упражнения на турнике и брусьях.  Оснащен двумя кольцами для подвешивания боксерского мешка, резиновых жгутов и блоков для выполнения кроссоверов.
+                </div>
+            </div>
+        </div>
+        
+        <div class="popup popup-big" id="aitem7">
+            <div class="popup-wrapper">
+                <div class="view">
+                    <div class="big">
+                        <img src="images/t7.jpg" height="340" width="455" alt="">
+                    </div>
+
+                    <div class="thumbnails">
+                        <a href=""><img src="images/tmp/ts1.jpg" height="69" width="105" alt=""></a>
+                        <a href=""><img src="images/tmp/ts1.jpg" height="69" width="105" alt=""></a>
+                        <a href=""><img src="images/tmp/ts2.jpg" height="69" width="105" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="description">
+                    <h5>Турник 3 хвата: широкий + узкий + средний</h5>
+
+                    <div class="price">
+                        Цена: <span>3600Р</span>
+                    </div>
+
+                    <p><strong>Описание</strong><br />
+                        Ширина - 115 см<br />
+                        Вылет от стены - 40 см<br />
+                        Высота - 32 см<br />
+                        Вес - 5 кг<br />
+                    </p>
+
+                    <div class="popup-big-form">
+                        <form action="">
+                            <input type="text" id="" value="" class="textbox" placeholder="Введите ваше имя" /><br />
+                            <input type="text" id="" value="" class="textbox" placeholder="Введите ваш телефон" /><br />
+                            <input type="submit" id="" value="Сделать заказ" class="button submit" />
+                        </form>
+                    </div>
+                </div>
+
+                <div class="text">
+                    Эргономичный тренажер для построения мощного торса.  Мягкие неопреновые ручки исключают возможность соскальзывания. У Вас не будет необходимости использовать специальные перчатки. За несколько секунд Вы меняете положение из турника в брусья, просто перевернув тренажер.
+                </div>
+            </div>
+        </div>
+
+        <script src="js/call.js"></script>
+    </body>
+</html>

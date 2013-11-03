@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+
+<link rel="stylesheet" href="js/anythingslider/anythingslider.css">
+<script src="js/anythingslider/jquery.anythingslider.js"></script>
+<script src="js/anythingslider/jquery.easing.1.2.js"></script>
+
+</head>
+<body>
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+        <a href="#" title=""><img src="images/logo.jpg" width="274" height="274" alt="" class="logo" /></a>
+
+        <div class="lang">
+            <a href="#" title="" class="active"><img src="images/ru.png" width="16" height="11" alt="" /></a>
+            <a href="#" title=""><img src="images/en.png" width="16" height="11" alt="" /></a>
+        </div>
+
+        <div class="author"></div>
+
+        <!-- top menu -->
+        <div class="topmenu">
+            <div class="topmenu-container">
+                <ul class="topmenu-wrapper">
+                    <li class="active"><a href="#">Главная</a></li>
+                    <li><a href="#">Биография</a></li>
+                    <li><a href="#">О творчестве</a></li>
+                    <li><a href="#">Выставки</a></li>
+                    <li><a href="#">Галерея</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+	<!-- content -->
+	<div class="content">
+        <div class="home">
+            <div class="column-left">
+                <p>Андрей Петрович Пашкевич родился в 1945 году, в г. Москве, в семье художника. Его отец, Петр Исидорович
+                Пашкевич, работал художником на киностудии им. Горького в Москве, и в детстве маленький Андрей проводил много
+                времени на съемочных площадках и мог экспериментировать с краской и кисточками.</p>
+
+                <p><a href="#" title="">Полная биография автора</a></p>
+            </div>
+
+            <!-- slider -->
+            <div class="year-slider">
+
+                <ul id="slider">
+                    <li class="panel1">
+                        <a href="#" title><img src="images/tmp/tmp_slider.jpg" width="459" height="586" alt="" /></a>
+                    </li>
+                    <li class="panel2">
+                        <a href="#" title><img src="images/tmp/tmp_slider.jpg" width="459" height="586" alt="" /></a>
+                    </li>
+                    <li class="panel3">
+                        <a href="#" title><img src="images/tmp/tmp_slider.jpg" width="459" height="586" alt="" /></a>
+                    </li>
+                    <li class="panel4">
+                        <a href="#" title><img src="images/tmp/tmp_slider.jpg" width="459" height="586" alt="" /></a>
+                    </li>
+                    <li class="panel5">
+                        <a href="#" title><img src="images/tmp/tmp_slider.jpg" width="459" height="586" alt="" /></a>
+                    </li>
+                    <li class="panel6">
+                        <a href="#" title><img src="images/tmp/tmp_slider.jpg" width="459" height="586" alt="" /></a>
+                    </li>
+                </ul>
+
+                <script language="JavaScript" type="text/javascript">
+                /*<![CDATA[*/
+                    $('#slider') // Demo 2 code, using FX base effects
+                    .anythingSlider({
+                     resizeContents      : false,
+                     navigationFormatter : function(i, panel){
+                      return ['1972', '1988', '1992', '1997', '2004', '2007'][i - 1];
+                     }
+                    })
+                    .anythingSliderFx({
+                      // base FX definitions
+                      // '.selector' : [ 'effect(s)', 'size', 'time', 'easing' ]
+                      // 'size', 'time' and 'easing' are optional parameters, but must be kept in order if added
+                      '.quoteSlide:first > *' : [ 'grow', '24px', '400', 'easeInOutCirc' ],
+                      '.quoteSlide:last'      : [ 'top', '500px', '400', 'easeOutElastic' ],
+                      '.expand'               : [ 'expand', '10%', '400', 'easeOutBounce' ],
+                      '.textSlide h3'         : [ 'top fade', '200px', '500', 'easeOutBounce' ],
+                      '.textSlide img,.fade'  : [ 'fade' ],
+                      '.textSlide li'         : [ 'listLR' ]
+                    });
+                /*]]>*/
+                </script>
+            </div>
+
+            <div class="column-right">
+                <p>Кроме картин серии «Политэкология» Андрей Пашкевич также известен созданием абстрактных композиций (например,
+                оформление офисного пространства концерна «Крост» в г.Москве).</p>
+
+                <p><a href="#" title="">Еще о творчестве</a></p>
+            </div>
+        </div>
+    </div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+    <div class="contacts">
+        Контакты<br />
+        Художник Пашкевич Андрей — <a href="mailto:gvhmos@gmail.com" title="">gvhmos@gmail.com</a>
+    </div>
+
+    <div class="copyright">
+        &copy; Все права защищены, 2012<br />
+        <a href="http://politekologiya.com/">politekologiya.com</a>
+    </div>
+</div>
+</body>
+</html>

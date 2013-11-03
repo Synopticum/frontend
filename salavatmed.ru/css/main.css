@@ -1,0 +1,107 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border: 0 none;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img { border:0 none; }
+table { border-collapse: collapse; border-spacing: 0; }
+ol, ul { list-style-image: none; list-style-position: outside; list-style-type: none; }
+q:before, q:after, blockquote:before, blockquote:after { content:""; }
+
+/* css begin */
+html, body { height:100%; }
+body {
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 12px;
+	color: #605c55;
+	background: url(../images/body-bg.png) #c4b4a1;
+	width: 100%;
+	min-width: 1000px;
+}
+
+#wrap {
+	position: relative;
+	width: 950px;
+	padding: 0 15px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	background: url(../images/wrap-bg.png) repeat-y;
+}
+
+a { color: #431914; }
+
+/* header */
+.header { position: relative; height: 651px; margin-bottom: -260px; background: url(../images/header-bg.jpg) no-repeat; }
+	.header .logo { float: left; claer: right; margin: 50px 0 0 50px; }
+
+	.header .slogan { float: left; margin: 27px 0 0 225px; font-size: 16px; color: #9f9f9e; }
+
+	.header .address { float: left; margin: 27px 0 0 18px; padding-left: 13px; border-left: 3px solid #451a16; font-size: 16px; color: #4e4e4e; }
+
+	.topmenu { clear: both; float: left; height: 25px; margin: 140px 0 0 0; padding: 4px 14px 19px 10px; background: url(../images/topmenu-bg.png) no-repeat 100% 0; }
+		.topmenu li { float: left; padding: 5px 0 0 0; margin: 0 14px; }
+		.topmenu li a { font-size: 14px; text-transform: uppercase; color: #431914; font-weight: bold; text-decoration: none; }
+		.topmenu li a:hover { color: #8c7c63; }
+
+/* content */
+.content { position: relative; z-index: 100; float: left; width: 550px; margin: 0 25px 20px 50px; }
+	.content p { font-size: 16px; margin-bottom: 22px; }
+
+/* aside */
+.aside { position: relative; z-index: 100; float: right; width: 285px; margin: 0 0 20px 0; padding: 0 10px 0 20px; border-left: 1px solid #c9bbac; }
+	.aside h3 { text-transform: uppercase; color: #000; font-size: 17px; }
+
+	.aside .news {  }
+		.aside .news .item { margin: 10px 0 20px 0; }
+			.aside .news .date { display: block; color: #af9f92; font-weight: bold; }
+			.aside .news .title { text-decoration: none; color: #6f5148; font-size: 14px; }
+			.aside .news .title:hover { text-decoration: underline; }
+
+.services { position: relative; z-index: 100; clear: both; overflow: hidden; }
+	.services .item { float: left; width: 238px; margin: 0 30px; padding: 6px 6px 0 6px; background: url(../images/services-bg.png) no-repeat; }
+		.services .item .wrapper { position: relative; background: #fff; height: 230px; }
+		.services .item .title { position: absolute; left: 8px; top: 8px; font-size: 18px; color: #970000; text-transform: uppercase; text-decoration: none; }
+		.services .item table { width: 100%; font-size: 11px; }
+			.services .item td { padding: 0 10px; }
+			.services .item td a { color: #797979; text-decoration: none }
+			.services .item td a:hover { text-decoration: underline; }
+
+/* footer */
+#footer {
+	position: relative;
+	z-index: 50;
+	margin: -65px auto 0 auto;
+	height: 65px;
+	width: 880px;
+	padding: 0 35px;
+	color: #8c7c63;
+}
+
+.bottommenu { position: relative; z-index: 100; float: left; }
+	.bottommenu li { float: left; margin-right: 20px; }
+	.bottommenu li a { font-weight: bold; color: #6d5e47; text-decoration: none; }
+	.bottommenu li a:hover { color: #8c7c63; }
+
+#footer .copyright { position: relative; z-index: 100; clear: left; float: left; margin: 20px 0 0 0; }
+
+#footer .made { position: relative; z-index: 100; float: right; margin: 20px 0 0 0; }
+	#footer .made a { color: #8c7c63; font-weight: bold; text-decoration: none; }
+	#footer .made a:hover { color: #6d5e47; }
+
+#rock { position: absolute; z-index: 50; right: 0; bottom: 0; width: 452px; height: 322px; background: url(../images/rock.jpg) no-repeat; }
+
+.footer_blank {	clear: both; height: 85px; }
+
+/* ie */
+-,.topmenu { float: none; }
+-,#rock { display: none; }

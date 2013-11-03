@@ -1,0 +1,189 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border: 0 none;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img { border:0 none; }
+table { border-collapse: collapse; border-spacing: 0; }
+ol, ul { list-style-image: none; list-style-position: outside; list-style-type: none; }
+q:before, q:after, blockquote:before, blockquote:after { content:""; }
+
+@font-face {
+    font-family: 'MyriadProCondensed';
+    src: url('../fonts/myriadpro-cond-webfont.eot');
+    src: url('../fonts/myriadpro-cond-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myriadpro-cond-webfont.woff') format('woff'),
+         url('../fonts/myriadpro-cond-webfont.ttf') format('truetype'),
+         url('../fonts/myriadpro-cond-webfont.svg#MyriadProCondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* css begin */
+html, body { height:100%; }
+body {
+	font-family: Tahoma, sans-serif;
+	font-size: 11px;
+	color: #000;
+	background: url(../images/body-bg.jpg) #eeeae2;
+	width: 100%;
+	min-width: 1000px;
+}
+
+a { color: #000; }
+a:hover { color: #e20a19; }
+
+/* content */
+#wrap {
+    border-top: 8px solid #000;
+	position: relative;
+	margin: 0 auto;
+	min-height: 99%;
+	height: auto !important;
+	height: 99%;
+    border-bottom: 8px solid #000;
+}
+
+/* header */
+.header { width: 930px; margin: 0 auto; height: 125px; overflow: hidden; }
+    .header .logo { float: left; margin: 55px 0 0 0; }
+
+    .mainmenu { float: left; overflow: hidden; margin: 65px 0 0 25px; }
+        .mainmenu li { float: left; padding: 6px 10px; margin: 0 3px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
+        .mainmenu li a { font-size: 14px; }
+        .mainmenu li.current_page_item { background: #000; }
+        .mainmenu li.current_page_item a { color: #fff; text-decoration: none; }
+
+    .header .phone { float: right; margin: 55px 0 0 0; padding: 8px 0 0 55px; height: 40px; font-family: 'MyriadProCondensed'; font-size: 32px; background: url(../images/header-phone.png) no-repeat; }
+        .header .phone span { color: #e20a19; }
+
+/* slider */
+.slider { width: 930px; margin: 0 auto; position: relative; height: 290px; }
+
+    .slider .description { float: left; width: 346px; height: 289px; background: url(../images/slider-left.jpg) no-repeat; }
+        .slider .description .title { color: #fff; margin: 15px 0 0 0; padding: 30px 0 0 35px; width: 319px; height: 78px; background: url(../images/slider-h.gif) no-repeat; }
+            .slider .description h3 { font-family: 'MyriadProCondensed'; font-size: 39px; }
+            .slider .description p { text-transform: uppercase; }
+
+        .slider .items { margin: 15px 20px; }
+            .slider .item { color: #fff; margin: 15px 0; font-size: 12px; padding-left: 15px; background: url(../images/slider-bullet.png) no-repeat 0 5px; }
+
+    .slider .view { position: relative; float: right; width: 584px; height: 289px; overflow: hidden; }
+        .slider .view .top, .slider .view .bottom { width: 15px; height: 15px; position: absolute; right: 0; background: url(../images/slider-corners.png) no-repeat; }
+        .slider .view .bottom { bottom: 0; background-position: 0 100%;  }
+        .slider .view .top { top: 0; background-position: 0 0;  }
+        .slider .more { display: block; position: absolute; right: 8px; bottom: 6px; width: 153px; height: 35px; text-indent: -9999px; overflow: hidden; background: url(../images/more.png) no-repeat; }
+        .slider .more:hover { background-position: 0 100%; }
+
+
+	#slider ul, #slider li,
+	#slider2 ul, #slider2 li{
+		margin:0;
+		list-style:none;
+		}
+	#slider li, #slider2 li{
+		width:930px;
+		height:290px;
+		overflow:hidden;
+		}
+	#prevBtn, #nextBtn,
+	#slider1next, #slider1prev{
+		display:block;
+		width:31px;
+		height:46px;
+		position:absolute;
+		left:-50px;
+		top:110px;
+		z-index:1000;
+		}
+	#nextBtn, #slider1next{
+		left:950px;
+		}
+	#prevBtn a, #nextBtn a,
+	#slider1next a, #slider1prev a{
+		display:block;
+		position:relative;
+        text-indent: -9999px;
+        overflow: hidden;
+		width:31px;
+		height:46px;
+		background:url(../images/slider-arrows.png) no-repeat 0 0;
+		}
+	#nextBtn a, #slider1next a{
+		background:url(../images/slider-arrows.png) no-repeat 100% 0;
+		}
+	#prevBtn a:hover, #slider1prev a:hover { background-position: 0 100%; }
+	#nextBtn a:hover, #slider1next a:hover { background-position: 100% 100%; }
+
+/* services */
+.services { width: 930px; margin: 10px auto; }
+    .services table { width: 100%; }
+    .services td { vertical-align: middle; }
+    .services a { display: block; text-align: center; padding: 15px 40px 10px 40px; background: url(../images/services-a.gif) repeat-x 0 -999px; border-radius: 10px; font-family: 'MyriadProCondensed'; font-size: 22px; color: #000; text-decoration: none; }
+    .services a:hover { color: #fff; background-position: 0 50%; background-color: #ae1a1a; }
+
+/* content */
+.content { background: #f6f5f2; padding: 25px 0; }
+    .content .wrapper { width: 930px; margin: 0 auto; overflow: hidden; }
+
+    .content h1, .content h2 { font-family: 'MyriadProCondensed'; font-size: 26px; line-height: 110%; }
+    .content p { margin: 20px 0; color: #949391; font-size: 14px; line-height: 160%; }
+    .content .more { display: block; width: 153px; height: 35px; text-indent: -9999px; overflow: hidden; background: url(../images/more.png) no-repeat; }
+    .content .more:hover { background-position: 0 100%; }
+
+    .content .about { float: left; width: 580px; padding: 0 15px 0 0; background: url(../images/home-spacer.gif) no-repeat 100% 28px; }
+
+    .content .latest-news { float: left; width: 315px; margin: 0 0 0 20px; }
+        .content .latest-news h2 { color: #7a7978; }
+        .content .latest-news .date { float: left; width: 50px; margin: 5px 10px 0 0; color: #ec6305; line-height: 230%; font-family: 'MyriadProCondensed'; }
+            .content .latest-news .day { display: block; font-size: 39px; text-align: center; }
+            .content .latest-news .month { display: block; font-size: 27px; text-align: center; }
+
+        .content .latest-news .description { margin: 20px 0; overflow: hidden; }
+            .content .latest-news h2 { margin-left: 10px; }
+            .content .latest-news .title { font-size: 16px; }
+            .content .latest-news p { margin-top: 10px; font-size: 12px; margin-bottom: 0; }
+
+.other { padding: 25px 0 15px 0; }
+    .other .wrapper { width: 930px; margin: 0 auto; overflow: hidden; }
+
+    .feedback { float: left; width: 500px; height: 165px; padding: 30px; background: url(../images/feedback-bg.png) no-repeat; }
+        .feedback textarea { float: right; width: 270px; height: 81px; overflow: hidden; padding: 10px; border: 1px solid #e0dfde; border-radius: 5px; font-family: Arial, sans-serif; font-size: 12px; }
+        .feedback .textbox { width: 170px; margin-bottom: 11px; padding: 5px 10px; border: 1px solid #e0dfde; border-radius: 5px; font-family: Arial, sans-serif; font-size: 12px;  }
+        #sendnow { display: block; border: 0; margin: 7px 0 0 0; width: 134px; height: 51px; background: url(../images/send.png) no-repeat; }
+        #sendnow:hover { background-position: 0 100%; }
+
+    .info { float: right; width: 325px; }
+        .info p { font-size: 14px; margin: 25px 0; line-height: 140%; }
+        .info a { color: #a11818; }
+        .info a:hover { color: #e20a19; }
+
+/* footer */
+#footer {
+	position: relative;
+	margin-top: -105px;
+	height: 105px;
+	width: 100%;
+}
+
+#footer .wrapper { width: 930px; margin: 0 auto; border-top: 1px solid #e0dfdc; }
+
+#footer .copyright { float: left; margin: 15px 0 0 10px; font-size: 14px; }
+    #footer .copyright span { color: #949391; }
+    #footer .copyright img { margin: 15px 0 0 0; }
+
+#footer .mainmenu { float: right; margin: 15px 0 0 0; }
+    #footer .mainmenu a { font-size: 13px; }
+
+.counters {  float: right; margin: 10px 10px 0 0; clear: both; }
+
+.footer_blank {	clear: both; height: 115px; }

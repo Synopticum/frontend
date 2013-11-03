@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<link rel="stylesheet" type="text/css" href="css/cusel.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/input-focus.js"></script>
+<!-- slider -->
+<script type="text/javascript" src="js/easySlider1.7.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+	    $("#slider").easySlider({
+		    auto: false,
+			continuous: true
+		});
+	});
+</script>
+
+<!-- custom select box-->
+<script type="text/javascript" src="js/cusel-min-2.5.js"></script>
+<script language="JavaScript" type="text/javascript">
+/*<![CDATA[*/
+jQuery(document).ready(function(){
+var params = {
+		changedEl: ".register select",
+		visRows: 5,
+		scrollArrows: true
+	}
+	cuSel(params);
+});
+/*]]>*/
+</script>
+</head>
+<body>
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+        <div class="wrapper">
+            <a href="#" title=""><img src="images/logo.png" width="189" height="65" alt="" class="logo" /></a>
+            <a href="#" title=""><img src="images/logo2.png" width="248" height="42" alt="" class="logo2" /></a>
+        </div>
+    </div>
+
+	<!-- content -->
+	<div class="content">
+        <div class="slogan">
+            Новый <strong>Ford Focus 3</strong> за <strong class="new">180 000</strong> рублей вместо  <strong class="old">600 000</strong>
+            <img src="images/arrow2.png" width="35" height="46" alt="" />
+        </div>
+
+        <div class="hr-line"></div>
+
+        <!-- slider -->
+        <div class="slider">
+            <div id="slider">
+			<ul>
+				<li><img src="images/s1.jpg" width="566" height="368" alt="" /></li>
+				<li><img src="images/s2.jpg" width="566" height="368" alt="" /></li>
+				<li><img src="images/s3.jpg" width="566" height="368" alt="" /></li>
+				<li><img src="images/s5.jpg" width="566" height="368" alt="" /></li>
+			</ul>
+            </div>
+        </div>
+
+        <!-- form -->
+        <div class="register">
+            <h1>Оставьте заявку на автомобиль прямо сейчас</h1>
+
+            <div class="wrapper">
+            <form action="">
+                <input name="t1" type="text" value="Ваше имя" tabindex="1" class="textbox" />
+                <input name="t2" type="text" value="Ваш E-mail" tabindex="2" class="textbox" />
+                <input name="t3" type="text" value="Телефон без знака +" tabindex="3" class="textbox" />
+
+                <select name="s1" size="1">
+                    <option value="Казань" selected="selected">Киров</option>
+                    <option value="Саратов">Саратов</option>
+                    <option value="Ульяновск">Ульяновск</option>
+                    <option value="Киров">Киров</option>
+                </select>
+
+                <div class="spacer"></div>
+
+                <p>Расскажите друзьям об акции в любой соц-сети чтобы<br />
+                дальше перейти к оформлению заявки:</p>
+
+                <div class="spacer"></div>
+
+                <p>
+                    <a href="#" title=""><img src="images/s1.png" width="32" height="32" alt="" /></a>
+                    <a href="#" title=""><img src="images/s2.png" width="32" height="32" alt="" /></a>
+                    <a href="#" title=""><img src="images/s3.png" width="32" height="32" alt="" /></a>
+                    <a href="#" title=""><img src="images/s4.png" width="32" height="32" alt="" /></a>
+                    <a href="#" title=""><img src="images/s5.png" width="32" height="32" alt="" /></a>
+                </p>
+
+                <a href="#" title="" class="send"></a>
+            </form>
+            </div>
+        </div>
+
+        <!-- text -->
+
+        <div class="hr-2"></div>
+
+        <!-- description -->
+        <div class="description">
+            <p>Автомобиль <strong>Ford Focus 3</strong> 2012 года выпуска.<br />Признан «<a href="#" title="">Ежегодной Национальной
+            Премией</a>» лучшим автомобилем 2012 года.</p>
+
+            <ul>
+                <li><span>Двигатель бензиновый 1,6 литра, МКПП.</span></li>
+                <li><span>Комплектация Trend.</span></li>
+                <li><span class="highlight">Стоимость автомобиля 180 000 руб. вместо 600 000 руб.</span></li>
+                <li><span>Количество автомобилей ограничено.</span></li>
+            </ul>
+
+            <div class="blink"></div>
+        </div>
+
+        <!-- parthners -->
+        <div class="parthners">
+            <h3>Партнёры акции:</h3>
+
+            <div class="wrapper">
+                <a href="#" title="Пейнтбольный клуб Солдат Удачи"><img src="images/p1.png" width="298" height="105" alt="" /></a>
+                <a href="#" title="Тюнинг & Сервис"><img src="images/p2.png" width="154" height="81" alt="" /></a>
+                <a href="#" title="Развлекательный центр Притяжение"><img src="images/p3.png" width="263" height="122" alt="" /></a>
+                <a href="#" title="Стоматология Evadent"><img src="images/p4.png" width="189" height="121" alt="" /></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

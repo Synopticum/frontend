@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" ></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.5.3/jquery-ui.min.js" ></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);
+	});
+</script>
+</head>
+<body>
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+		<a href="#" title=""><img src="images/header-logo.png" alt="" class="logo" /></a>		
+		
+		<a href="#" title="Play" class="play">Play</a>
+		
+		<div class="phone">+7 (495) 643-47-95</div>
+	</div>
+	
+	<!-- leftside -->
+	<div class="leftside">
+		<div class="box catalog">
+			<h3 class="title"><img src="images/leftside-catalog-ico.png" width="28" height="28" alt="" /> Каталог</h3>
+			
+			<ul>
+				<li><a href="#" title="">Игры</a>
+					<ul>
+						<li><a href="#" title="">Компьютерные</a></li>
+						<li><a href="#" title="">Xbox 360</a></li>
+						<li><a href="#" title="">Playstation 3</a></li>
+						<li><a href="#" title="">Playstation 2</a></li>
+						<li><a href="#" title="">PSP</a></li>
+					</ul>
+				</li>
+				<li><a href="#" title="">Музыка</a>
+					<ul>
+						<li><a href="#" title="">Компьютерные</a></li>
+						<li><a href="#" title="">Джаз / Блюз</a></li>
+						<li><a href="#" title="">Инструментальная / Нью</a></li>
+						<li><a href="#" title="">Эйдж</a></li>
+						<li><a href="#" title="">Караоке</a></li>
+						<li><a href="#" title="">Классическая</a></li>
+						<li><a href="#" title="">Поп</a></li>
+						<li><a href="#" title="">Рок</a></li>
+						<li><a href="#" title="">Российская</a></li>
+						<li><a href="#" title="">Рэп</a></li>
+						<li><a href="#" title="">Саундтреки</a></li>
+						<li><a href="#" title="">Электронная</a></li>
+						<li><a href="#" title="">Этническая</a></li>
+						<li><a href="#" title="">Музыкальное видео</a></li>
+						<li><a href="#" title="">Винил</a></li>
+						<li><a href="#" title="">Распродажа</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="box">
+			<h3 class="title">Лучшие продажи!</h3>
+			
+			<div class="small-catalog-items">
+				<div class="item">
+					<a href="#" title="" class="thumbnail"><img src="images/tmp_1.jpg" width="107" height="151" alt="" /></a>
+					
+					<div class="cost">
+						<small>Цена:</small>  <span>450</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="">CALL OF DUTY 4: MODERN WAREFIRE</a>
+					
+					<a href="#" title="" class="addtocart">В корзину</a>
+				</div>
+				<!-- -->
+				<div class="item">
+					<a href="#" title="" class="thumbnail"><img src="images/tmp_2.jpg" width="107" height="151" alt="" /></a>
+					
+					<div class="cost">
+						<small>Цена:</small>  <span>450</span> руб <span>00</span> коп
+					</div>
+					<a href="#" title="">CALL OF DUTY 4: MODERN WAREFIRE</a>
+					
+					<a href="#" title="" class="addtocart">В корзину</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- content -->
+	<div class="content">
+		<!-- main menu -->
+		<div class="mainmenu">
+			<ul>
+				<li class="m1 active"><a href="" title="Главная">Главная</a></li>
+				<li class="m2"><a href="" title="Каталог игр">Каталог игр</a></li>
+				<li class="m3"><a href="" title="Отзывы">Отзывы</a></li>
+				<li class="m4"><a href="" title="Доставка и оплата">Доставка и оплата</a></li>
+				<li class="m5"><a href="" title="Контакты">Контакты</a></li>
+			</ul>
+		</div>
+		
+		<!-- product slider -->
+		<div class="product-slider">
+		<div id="featured" >
+		  <ul class="ui-tabs-nav">
+	        <li class="ui-tabs-nav-item ui-tabs-selected" id="nav-fragment-1"><a href="#fragment-1">
+	        	<span class="number">1</span>
+	        	<img src="images/tmp_prs1.jpg" alt="" />
+	        </a></li>
+	        
+	        <li class="ui-tabs-nav-item" id="nav-fragment-2"><a href="#fragment-2">
+	        	<span class="number">2</span>
+	        	<img src="images/tmp_prs2.jpg" alt="" />
+	        </a></li>
+	        
+	        <li class="ui-tabs-nav-item" id="nav-fragment-3"><a href="#fragment-3">
+	        	<span class="number">3</span>
+	        	<img src="images/tmp_prs3.jpg" alt="" />
+	        </a></li>
+	      </ul>
+
+	    <!-- First Content -->
+	    <div id="fragment-1" class="ui-tabs-panel" style="">
+	    	<div class="best"></div>
+			<img src="images/tmp_pr1.jpg" alt="" />
+	    </div>
+
+	    <!-- Second Content -->
+	    <div id="fragment-2" class="ui-tabs-panel ui-tabs-hide" style="">
+	    	<div class="best"></div>
+			<img src="images/tmp_pr2.jpg" alt="" />
+	    </div>
+
+	    <!-- Third Content -->
+	    <div id="fragment-3" class="ui-tabs-panel ui-tabs-hide" style="">
+	    	<div class="best"></div>
+			<img src="images/tmp_pr3.jpg" alt="" />
+	    </div>
+
+		</div>
+		</div>
+		
+		<!-- text content -->
+		<div class="product-content">
+			
+			<!-- about game -->
+			<div class="about">
+				<div class="buy-game">
+					<h3>Купить игру</h3>
+					
+					<!-- game cost -->
+					<div class="cost">
+						<small>Цена:</small> <span>450</span> руб <span>00</span> коп
+					</div>
+					
+					<a href="#" title="" class="addtocart">В корзину</a>
+					
+					<!-- game rating -->
+					<div class="rating">
+						<p>Оценка: <big>4,45/5</big></p>
+						
+						<div class="gradation">
+							<div class="wrapper" style="width: 93%"></div>
+						</div>
+					</div>
+					
+					<!-- game statistic -->
+					<div class="statistic">
+						<div class="buyed">
+							Уже куплено:<br /><span>1 650 раз</span>
+						</div>
+						
+						<div class="last">
+							<span>Последний:</span> Сегодня в 20:53
+						</div>
+					</div>
+					
+					<!-- short -->
+					<div class="license">
+						<span class="highlight">Battlefield 3: Расширенная версия</span>
+						<span>Лицензия DVD версия</span>
+						<span>Доставка сегодня</span>
+						<span>Закажите по телефону: 8 (495) 726-11-39</span>
+					</div>
+				</div>
+				
+				<!-- boxes -->
+				<div class="box appearance">
+					<h4>Внешний вид</h4>
+					
+					<div class="thumbnail">
+						<img src="images/tmp_b1.jpg" alt="" />
+					</div>
+				</div>
+				
+				<div class="box plus">
+					<h4>Достоинства</h4>
+					
+					<p>Красивый геймплей</p>
+					<p>Хорошая клавиатура с защитой от пролитой жидкости;</p>					
+					<p>Интересный смешанный набор портов, включая HDMI;</p>					
+					<p>Интересный набор ПО, аналогичный мультимедийным моделям ASUS.</p>
+				</div>
+				
+				<div class="box minus">
+					<h4>Недостатки</h4>
+					
+					<p>Мало портов USB;</p>
+					<p>Набор ПО не совсем подходит для корпоративной модели;</p>					
+					<p>Среднее время работы от батарей.</p>					
+				</div>
+				
+				<div class="box compatibility">
+					<h4>Совместимость</h4>
+					
+					<p>Совместим со всеми моделями PS</p>			
+				</div>
+				
+				<div class="box complectation">
+					<h4>Комплектация</h4>
+					
+					<p>DVD Диск + Ключ + Фирменная упаковка “G-BOSS”</p>			
+				</div>
+				
+				<!-- vote -->
+				<div class="vote">
+					<h4>Голосование</h4>
+					
+					<div class="item up">
+						<a href="#" title=""><img src="images/vote-plus.png" alt="" /></a><br />
+						<span>Нравится</span>
+						<div class="count">578</div>
+					</div>
+					
+					<div class="item down">
+						<a href="#" title=""><img src="images/vote-minus.png" alt="" /></a><br />
+						<span>Не нравится</span>
+						<div class="count">15</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- text -->
+			<div class="review">
+				<h1>Battlefield 3: Расширенная версия</h1>
+				<h2><span>Вывод:</span> Хорошая производительность ультрапортативных ноутбуков выгодно отличает </h2>
+				
+				<p>Только стоило привыкнуть к шустрым и компактным "Тигуанам" от Volkswagen, покоряющим городские 
+				улицы и загородные шоссе, как их обновили. Фотографии рестайлинговой версии были доступны для 
+				изучения уже давно, но познакомиться поближе с этим паркетником удалось только в начале июня 
+				в Германии.размерами и весом, но все-таки не способны справится с требовательными</p>
+				
+				<p><img src="images/tmp_p1.jpg" alt="" /></p>
+				
+				<p>После скоротечной пресс-конференции, прошедшей в Kempinski Hotel Airport, неспешно дожевывая 
+				причудливые бублики с маслом и опустошая кофейные запасы, наша журналистская группа выбирала 
+				себе автомобили. Серое мюнхенское небо поливало дождем тестовые машины — все они оказались 
+				одной комплектации в силу простого алгоритма выбора: "самый мощный и со всеми опциями".
+				Как оказалось, с чаепитием стоило поторопиться. Более расторопные иностранные коллеги 
+				разобрали все версии с бензиновыми моторами, ровно как и с автоматическими коробками 
+				передач. Пришлось довольствоваться 180-ти сильным Tiguan с механической коробкой передач.</p>
+				
+				<p><img src="images/tmp_p2.jpg" alt="" /></p>
+				
+				<p>Хитрые взгляды представителей компании Volkswagen красноречиво намекали, что нам непременно 
+				понравится поездка, и я им сразу же поверил. Около 400 километров тестового маршрута Мюнхен 
+				(Германия) - Клагенфурт (Австрия) по описанию были такими разнообразными, что сулили 
+				опробовать автомобиль в самых различных условиях, а пейзажи за окнами, грозили окончательно 
+				и бесповоротно покорить разум и сердце. Автобаны, узкие улочки небольших городков, горные 
+				серпантины, тоннели, гравийные трассы — на преодоление всего пути не должно было уйти 
+				больше пяти часов. Но это только в теории.</p>
+				
+				<p>С удовольствием не за рулем</p>
+			</div>
+			
+			<!-- buyers feeds -->
+			<div class="buyers-feeds">
+				<h2>Отзывы покупателей:</h2>
+				
+				<div class="item">
+					<div class="avatar">
+						<img src="images/tmp_ava.jpg" alt="" />
+					</div>
+					
+					<div class="text">
+						<strong class="name">Димочка</strong>
+						<p>Чтобы закрыть эту нишу (которая потенциально может оказаться вполне объемной и доходной), 
+						большинство производителей имеют в номенклатуре линейки «для малого бизнеса». Однако почти 
+						всегда это недорогие домашние модели, немного адаптированные </p>
+					</div>
+				</div>
+				<!-- -->
+				<div class="item">
+					<div class="avatar">
+						<img src="images/tmp_ava.jpg" alt="" />
+					</div>
+					
+					<div class="text">
+						<strong class="name">Димочка</strong>
+						<p>Чтобы закрыть эту нишу (которая потенциально может оказаться вполне объемной и доходной), 
+						большинство производителей имеют в номенклатуре линейки «для малого бизнеса». Однако почти 
+						всегда это недорогие домашние модели, немного адаптированные </p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- your feed -->
+			<div class="your-feed">
+				<h2>Ваш отзыв:</h2>
+				
+				<div class="wrapper">
+				<form>
+					<div class="cr">
+						<label for="">Аватарка</label>
+						
+						<label>Защитный код <br />
+							<img src="images/tmp_code.gif" alt="" /> <br />
+							<input name="code" type="text" class="textbox-small" value="" /> 
+						</label>
+					</div>
+					
+					<label>Имя / Никнейм<br />
+						<input name="yourname" type="text" class="textbox" value="" /> 
+					</label>
+					
+					<label>Сообщение <br />
+						<textarea name="" class="textarea"></textarea>
+					</label>
+					
+					<input type="submit" name="sendnow" id="sendnow" value="Отправить" />  					
+				</form>
+					
+				</div>
+			</div>
+		</div>	
+		
+		<!-- footer -->
+		<div class="footer">
+			<div class="box">
+				<h6>Разделы:</h6>
+				<ul> 
+					<li><a href="#" title="">Главная</a></li>
+					<li><a href="#" title="">Каталог</a></li>
+					<li><a href="#" title="">Обзоры и статьи</a></li>
+				</ul>
+			</div>
+			<!-- -->
+			<div class="box">
+				<h6>Помощь:</h6>
+				<ul> 
+					<li><a href="#" title="">Как купить</a></li>
+					<li><a href="#" title="">Доставка и полата</a></li>
+					<li><a href="#" title="">Контакты</a></li>
+				</ul>
+			</div>
+			<!-- -->
+			<div class="phone">
+				<h6>Звони нам:</h6>
+				
+				<span class="code">8 (495)</span>
+				<span class="number">643-47-95</span>
+				<span class="city">Москва (Многоканальный)</span>
+			</div>			
+			<!-- copyright -->
+			<div class="copyright">
+				Правовая информация . Все права фотографии описание принадлежат компании ООО 
+				G-BOSS Перепечатка тольбко с письменного разрешения авторов
+			</div>
+			
+			<!-- [counterspayment systems -->
+			<div class="ps">
+				<a href="#" title=""><img src="images/ps-mc.gif" width="43" height="28" alt="" /></a>
+				<a href="#" title=""><img src="images/ps-union.gif" width="43" height="28" alt="" /></a>
+				<a href="#" title=""><img src="images/ps-visa.gif" width="43" height="28" alt="" /></a>
+				<a href="#" title=""><img src="images/ps-x.gif" width="43" height="28" alt="" /></a>
+				<a href="#" title=""><img src="images/ps-amex.gif" width="43" height="28" alt="" /></a>
+			</div>
+		</div>
+		
+	</div>
+	
+	<!-- rightsode -->
+	<div class="rightside">
+		<div class="box cart">
+			<h3 class="title"><img src="images/rightside-cart-title.png" width="67" height="11" alt="Корзина" /></h3>
+			
+			<div class="wrapper">
+				<span class="smalltitle">В вашей корзине:</span>
+				<label>
+					<input name="cart-count" type="text" id="cart-count" value="0" /> товаров
+				</label>
+				
+				<label>
+					<span>на сумму</span><br />
+					<input name="price-count" type="text" id="price-count" value="450" /> товаров
+				</label>
+				
+				<a href="#" title="" id="gotocart">перейти в корзину</a>
+			</div>
+		</div>
+		
+		<!-- banner -->
+		<div class="box">
+			<a href="#" title=""><img src="images/banner-1.jpg" alt="" /></a>
+		</div>
+		
+		<!-- g-boss is -->
+		<div class="box g-boss-is">
+			<img src="images/g-boss-is.png" alt="" />
+			
+			<div class="item gbi-1"><img src="images/gbi-1.png" alt="" /><p><strong>Лицензионные ИГРЫ</strong> напрямую от производителя!</p></div>
+			<div class="item gbi-2"><img src="images/gbi-2.png" alt="" /><p><strong>Доставка сегодня!</strong></p></div>
+			<div class="item gbi-3"><img src="images/gbi-3.png" alt="" /><p><strong>Обзоры игр от посетителей</strong></p></div>
+			<div class="item gbi-4"><img src="images/gbi-4.png" alt="" /><p><strong>Самые низкие цены!</strong></p></div>
+			
+			<a href="#" title="" class="your">Свой обзор</a>
+			
+			<small>* Напишите ваш обзор игры и получить до 2 000 рублей за один обзор!</small>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>

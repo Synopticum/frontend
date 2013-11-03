@@ -1,0 +1,478 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+p { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* fonts */
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/* global */
+@font-face {
+    font-family: 'Chevin Cyrillic Light';
+    src: url('../fonts/chevincyrillic-light-webfont.eot');
+    src: url('../fonts/chevincyrillic-light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/chevincyrillic-light-webfont.woff') format('woff'),
+        url('../fonts/chevincyrillic-light-webfont.ttf') format('truetype'),
+        url('../fonts/chevincyrillic-light-webfont.svg#ChevinCyrillicLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body { height: 100% }
+body { min-width: 1000px; margin: 0; background: url(../images/body-bg.jpg) no-repeat 50% 0 #000; font-family: Arial, sans-serif; font-size: 11px; color: #fff; }
+#main { position: relative; min-height: 100%; }
+#wrap { width: 844px; margin: 0 auto; padding: 212px 0 166px 0; }
+
+.languages { position: absolute; top: 22px; right: 75px; overflow: hidden; }
+    .languages a { float: left; display: block; margin: 0 0 0 4px; width: 25px; height: 26px; background: url(../images/header-flag.png) no-repeat; }
+    .languages .ru { background-position: 0 0; }
+    .languages .en { background-position: -50px 0; }
+    .languages .es { background-position: -25px 0; }
+    .languages .ru.active { background-position: 0 -26px; }
+    .languages .en.active { background-position: -50px -26px; }
+    .languages .es.active { background-position: -25px -26px; }
+
+.question { position: fixed; top: 165px; right: 0; display: block; width: 49px; height: 157px; opacity: 0.8; background: url(../images/q.png) no-repeat; }
+
+/* header */
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 212px;
+}
+.header-wrapper { width: 844px; margin: 0 auto; }
+
+.header-logo { padding: 50px 0 35px 0; text-align: center; }
+
+.header-menu { padding: 15px 0 0 0; background: url(../images/header-menu-bg.png) no-repeat 50% 0; position: relative; overflow: hidden; }
+    .header-menu-container { float: left; left: 50%; position: relative; }
+    .header-menu ul { position: relative; left: -50%; float: left; }
+    .header-menu li { float: left; margin: 0 26px; }
+    .header-menu li.first { margin-left: 0; }
+    .header-menu li.last { margin-right: 0; }
+    .header-menu li a { color: #fff; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; }
+    .header-menu li a:hover { color: #d80350; }
+
+header ul, header ol { list-style: none inside; margin: 0; padding: 0; }
+
+
+/* content */
+.main-events { position: relative; }
+    .main-events-normal-items { overflow: hidden; margin-left: -2px; width: 848px; }
+    .main-events-normal-items .border-wrapper { margin: 0 !important; }
+        .main-events-normal { position: relative; float: left; margin: 2px 2px 0 2px; margin-right: 0; }
+            .main-events-normal-title { position: absolute; left: 10px; bottom: 10px; z-index: 100; width: 199px; padding: 13px 30px; background: url(../images/main-events-h2.png) repeat-y; font-family: 'Chevin Cyrillic Light'; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; }
+            .main-events-normal-overlay, .main-events-normal-overlay-big { position: absolute; left: 1px; top: 1px; z-index: 50; width: 278px; height: 198px; background: url(../images/main-events-normal-overlay.png); }
+            /*.main-events-normal:hover .main-events-normal-overlay, .main-events-normal:hover .main-events-normal-overlay-big { display: none; }*/
+            .main-events-normal-overlay-big { height: 278px; }
+
+    .main-events-big { position: relative; }
+        .main-events-big-title { position: absolute; left: 10px; bottom: 10px; width: 751px; padding: 30px 35px; background: url(../images/main-events-h.png) repeat-y; font-family: 'Chevin Cyrillic Light'; font-size: 18px; letter-spacing: 1px; text-transform: uppercase; }
+            .main-events-big-title .left { float: left; }
+            .main-events-big-title .right { float: right; }
+
+        .main-events-logo { position: absolute; left: 50%; bottom: -60px; z-index: 150; margin-left: -107px; width: 215px; height: 213px; background: url(../images/main-events-logo.png) no-repeat; }
+
+    .main-events p { margin: 20px 0; text-transform: uppercase; letter-spacing: 1px; }
+
+/* photosets */
+.photosets { margin: 15px 0 0 0; overflow: hidden; }
+    .photosets h1 { font-family: 'Chevin Cyrillic Light'; font-size: 24px; letter-spacing: 1px; color: #e10353; text-transform: uppercase; }
+
+    .photosets .go { float: right; color: #fff; text-decoration: none; font-family: 'Chevin Cyrillic Light'; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; }
+
+    .photosets-item { overflow: hidden; }
+        .photosets-item-image { float: right; margin-left: 20px; }
+        .photosets-item-text { overflow: hidden; }
+            .photosets-item-text p { margin: 0 0 15px 0; text-transform: uppercase; letter-spacing: 1px; }
+
+/* gallery */
+.gallery { margin: 150px 0 0 -3px; overflow: hidden; }
+    .gallery .item { position: relative; float: left; margin: 0 3px 0 0; }
+        .gallery .border-wrapper { margin: 0 !important; }
+
+        .gallery .day { position: absolute; left: 50%; bottom: 1px; z-index: 150; display: inline-block; margin-left: 0; padding: 5px 10px 4px 10px; color: #fff; letter-spacing: 1px; background: #470e26; text-transform: uppercase; }
+            .gallery .tuesday { margin-left: -35px; }
+            .gallery .wednesday { margin-left: -25px; }
+            .gallery .thursday { margin-left: -30px; }
+
+.special .gallery { margin: 25px 0; width: 848px; }
+
+/* enter */
+.enter { min-height: 600px; background: url(../images/enter.png) no-repeat 50% 90px; }
+    .enter h1 { text-align: center; font-family: 'Chevin Cyrillic Light'; font-size: 18px; letter-spacing: 1px; text-transform: uppercase; }
+
+    .confirm { margin: 20px 0 0 0; text-align: center; }
+        .confirm a { display: inline-block; width: 88px; height: 56px; opacity: 0.8; background: url(../images/confirm.png) no-repeat; margin: 20px 15px 0 15px; padding: 32px 0 0 0; color: #fff; text-decoration: none; text-align: center; font-family: 'Chevin Cyrillic Light'; font-size: 18px; letter-spacing: 1px; text-transform: uppercase; }
+        .confirm a.hover { background-position: 0 -88px; }
+
+/* menu */
+.foodmenu { }
+    .foodmenu table { width: 70%; margin: 0; text-transform: uppercase; letter-spacing: 1px; }
+        .foodmenu td { padding: 8px 0px; vertical-align: top; }
+
+        .foodmenu-title { display: inline-block; min-width: 245px; padding: 3px 6px; background: #27161d; color: #d80350; }
+
+/* resume */
+.resume { float: right; margin-left: 25px; margin-right: 4px; margin-bottom: 20px; padding: 1px; background: url(../images/border.png); line-height: 100%; }
+    .resume-wrapper { width: 237px; padding: 30px 20px; background: url(../images/resume-bg.png) repeat-x; }
+    .resume-hover-preload { visibility: hidden; background: url(../images/resume-bg-hover.png) repeat-x #000; }
+    .resume-wrapper:hover { background: url(../images/resume-bg-hover.png) repeat-x #000; }
+        .resume h3 { margin: 0 0 25px 0; font-family: 'Chevin Cyrillic Light'; color: #e10353; text-transform: uppercase; font-size: 24px; }
+        .resume a { color: #d80350; text-decoration: none; }
+        .resume .button { display: block; width: 99%; margin-top: 40px; }
+
+/* booking */
+.booking { margin: 35px 0; width: 560px; padding: 1px; background: url(../images/border.png); }
+    .booking-wrapper { padding: 30px 25px; background: url(../images/resume-bg.png) repeat-x; }
+    .booking-hover-preload { visibility: hidden; background: url(../images/resume-bg-hover.png) repeat-x #000; }
+    .booking-wrapper:hover { background: url(../images/resume-bg-hover.png) repeat-x #000; }
+    .sent .booking-wrapper { padding: 140px 0 120px 0; }
+        .booking h3 { margin: 0 0 25px 0; font-family: 'Chevin Cyrillic Light'; color: #e10353; text-transform: uppercase; font-size: 24px; }
+        .sent h3 { margin: 0; text-align: center; }
+        .sent p { margin: 0; text-align: center; }
+        .booking .textbox { width: 468px; }
+        .booking .short { width: 211px; }
+        .booking .button { margin: 25px 0 0 0; padding: 9px 25px; }
+
+
+.booking-text { width: 560px; }
+
+/* page */
+.page { min-height: 660px; }
+.bg1 { background: url(../images/page-bg-1.jpg) no-repeat 50% 0; }
+    .page-title, .main-title { font-family: 'Chevin Cyrillic Light'; color: #e10353; text-transform: uppercase; font-size: 24px; }
+    .main-title { margin-top: -20px; }
+
+    .page p { margin: 15px 0; letter-spacing: 1px; text-transform: uppercase; }
+
+    .page .border-wrapper { margin: 0 5px 0 0; }
+
+/* universal */
+.border-wrapper { display: inline-block; padding: 1px; background: url(../images/border.png); }
+
+.breadcrumbs { display: inline-block; margin: 0 0 15px 0; padding: 5px 10px 4px 0px; color: #79002c; letter-spacing: 1px; text-transform: uppercase; }
+    .breadcrumbs a { color: #e10353; text-decoration: none; }
+
+.navigation { overflow: hidden; }
+.special .navigation { margin: -50px 0 0 0; }
+    .navigation-menu { float: left; overflow: hidden; margin-right: -10px; }
+    .special  .navigation .navigation-menu { float: right; }
+        .navigation-menu ul { list-style: none inside; margin: 0; padding: 0; }
+        .navigation-menu li { float: left; margin-right: 10px; }
+        .navigation-menu li a { display: block; padding: 5px 10px 4px 10px; color: #fff; letter-spacing: 1px; background: #470e26; text-transform: uppercase; text-decoration: none; }
+        .navigation-menu li.active a { background: #d80350 !important; }
+
+    .navigation .breadcrumbs { float: right; margin-bottom: 0; }
+
+.today { display: block; margin: -10px 0 15px 0; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+
+.textbox, textarea { margin: 4px 0; padding: 9px 18px; width: 196px; border: 1px solid #80787a; overflow: hidden; background: #000; color: #fff; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-family: Arial, sans-serif; }
+
+
+.button { display: inline-block; padding: 9px 10px; opacity: 0.8; background: #bb0544; color: #fff; border: 0; text-align: center; border-radius: 10px; font-family: 'Chevin Cyrillic Light'; text-transform: uppercase; font-size: 14px; letter-spacing: 1px; }
+
+.popup { display: none; width: 500px; padding: 0px 13px; }
+    .popup h3 { margin: 10px 0 15px 0; font-family: 'Chevin Cyrillic Light'; color: #e10353; text-transform: uppercase; font-size: 24px; }
+    .popup .textbox { width: 462px; }
+    .popup textarea { width: 462px; height: 60px; }
+    .popup .button { padding: 9px 50px; margin: 20px 0 15px 0; }
+
+.block {
+  background-color:#abc;
+  width:90px;
+  height:90px;
+}
+
+/* file */
+.type_file { 
+    margin-top: 15px;
+    position: relative;
+    height: 26px;
+}
+.inputFile { 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: 2; 
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); 
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+    width: 124px; 
+}
+.fonTypeFile { 
+    width: 124px; 
+    height: 8px;
+    background: url(../images/inputfile.png); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
+.inputFileVal { 
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    z-index: 2;
+    width: 175px;
+    background: none;
+    border: none;
+}
+
+
+/* footer */
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 126px;
+    background: url(../images/footer-bg.png) no-repeat 50% 0;
+    text-transform: uppercase;
+    padding: 30px 0 0 0;
+}
+.footer-wrapper { width: 844px; margin: 0 auto; }
+
+.footer-left { float: left; }
+.footer-right { float: right; }
+.footer-center { float: right; margin-right: 78px; }
+
+.footer-address { padding: 5px 0 5px 45px; background: url(../images/footer-address.png) no-repeat; }
+
+.footer-social { overflow: hidden; padding: 5px 0 5px 45px; }
+    .footer-social a { float: left; display: block; width: 19px; height: 20px; margin-right: 7px; background: url(../images/footer-social.png) no-repeat; }
+    .footer-social .facebook { background-position: 0 0; }
+    .footer-social .facebook { background-position: 0 -20px; }
+
+.footer-copyright { padding: 5px 0; font-size: 10px; }
+
+.footer-booking { margin: -30px 0 0 0; padding: 39px 0 0 0; display: block; opacity: 0.8; width: 232px; height: 61px; font-family: 'Chevin Cyrillic Light'; font-size: 14px; letter-spacing: 1px; text-align: center; color: #fff; text-decoration: none; overflow: hidden; background: url(../images/footer-booking.png) no-repeat 0 50%; }
+
+.footer-payment { margin: -10px 0 0 0; padding: 0 33px 10px 0; font-size: 10px; text-align: right; color: #79002c; background: url(../images/footer-pay.png) no-repeat 100% 2px; }
+
+.footer-phones { font-family: 'Chevin Cyrillic Light'; text-transform: none; font-size: 24px; color: #e10353; }
+
+.footer-vip { margin: -5px 0 5px 0; text-align: center; font-size: 10px; letter-spacing: 1px; }
+    .footer-vip img { margin-bottom: 5px; }
+

@@ -1,0 +1,171 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border: 0 none;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img { border:0 none; }
+table { border-collapse: collapse; border-spacing: 0; }
+ol, ul { list-style-image: none; list-style-position: outside; list-style-type: none; }
+q:before, q:after, blockquote:before, blockquote:after { content:""; }
+
+@font-face {
+    font-family: 'BookAntiquaBoldItalic';
+    src: url('../fonts/antquabi-webfont.eot');
+    src: url('../fonts/antquabi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/antquabi-webfont.woff') format('woff'),
+         url('../fonts/antquabi-webfont.ttf') format('truetype'),
+         url('../fonts/antquabi-webfont.svg#BookAntiquaBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* css begin */
+html, body { height:100%; }
+body {
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 13px;
+	color: #404040;
+	background: url(../images/body-bg.jpg) no-repeat 50% 0 #fffceb;
+	width: 100%;
+	min-width: 1000px;
+    border-top: 18px solid #8e0c0c;
+}
+
+/* content */
+#wrap {
+	position: relative;
+	width: 957px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+    background: url(../images/wrap-bg.png) repeat-y;
+    padding: 0 10px;
+}
+
+a { color: #9e1c1c }
+a:hover { text-decoration: none }
+
+/* header */
+.header { height: 120px; }
+    .header .logo { float: left; margin: 25px 0 0 40px; }
+
+    .header .parthners { float: left; margin: 32px 0 0 25px; }
+        .header .parthners img { margin: 0 10px; }
+
+    .header .phone { float: right; text-align: right; padding: 10px 50px 10px 0; margin: 30px 30px 0 0; background: url(../images/header-phone.png) no-repeat 100% 0; color: #000; font-size: 18px; }
+        .header .phone span { color: #9e1c1c; font-size: 14px; }
+        .header .phone strong { color: #9e1c1c; }
+
+/* aside */
+.aside { float: left; width: 181px; }
+    .leftmenu { position: relative; width: 229px; margin: 26px 0 26px -48px; background: url(../images/leftmenu-bg.png) repeat-y; }
+        .leftmenu .top, .leftmenu .bottom { position: absolute; left: 0; width: 229px; height: 26px; background: url(../images/leftmenu-tr.png) no-repeat; }
+        .leftmenu .top { top: -26px; }
+        .leftmenu .bottom { bottom: -26px; background-position: 0 100%; }
+
+        .leftmenu li a { display: block; padding: 8px 0 9px 34px; }
+        .leftmenu .current_page_item a { background: url(../images/leftmenu-active.gif) no-repeat; }
+            .leftmenu .current_page_item a { color: #fff; font-weight: bold; text-decoration: none; }
+            .leftmenu .current_page_item a:hover { color: #8e0c0c; }
+
+            .leftmenu li a { color: #000; }
+
+        .leftmenu li ul { display: none; }
+        .leftmenu li.current_page_item ul { display: block; width: 228px; margin: 0px 0 0px 0; padding: 10px 0 10px 0; background: #fff; }
+            .leftmenu li.current_page_item li { margin: 0px 0; padding: 0 0 0 15px; background: url(../images/bullet.gif) no-repeat 34px 13px; }
+            .leftmenu li.current_page_item li a { font-size: 11px; color: #000; font-weight: normal; text-decoration: underline; background: none; }
+            .leftmenu li.current_page_item li a:hover { color: #8e0c0c; }
+            .leftmenu li.current_page_item .current_page_item { }
+            .leftmenu li.current_page_item .current_page_item a { font-weight: bold; text-decoration: none; }
+
+    .news { margin: 35px 5px; width: 157px; margin: 0 0 0 18px; }
+        .news h3 { font-family: 'BookAntiquaBoldItalic'; font-size: 16px; text-align: right; }
+        .news .item { padding: 15px 0; border-bottom: 1px solid #e3e3e3; }
+            .news .item .title { font-size: 14px; font-weight: bold; }
+            .news .item p { margin: 13px 0; }
+
+
+/* Easy Slider */
+
+	#slider ul, #slider li,
+	#slider2 ul, #slider2 li{
+		margin:0;
+		padding:0;
+		list-style:none;
+		}
+	#slider2{margin-top:1em;}
+	#slider li, #slider2 li{
+		/*
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/
+		width:711px;
+		height:345px;
+		overflow:hidden;
+		}
+	#slider li img, #slider2 li img{
+        border: 3px solid #972020;}
+	#prevBtn, #nextBtn,
+	#slider1next, #slider1prev{
+		display:block;
+		width:30px;
+		height:77px;
+		position:absolute;
+		left:-30px;
+		top:71px;
+		z-index:1000;
+		}
+	#nextBtn, #slider1next{
+		left:705px;
+		}
+	#prevBtn a, #nextBtn a,
+	#slider1next a, #slider1prev a{
+
+		display:none;
+		position:relative;
+		width:30px;
+		height:77px;
+		background:url(../images/btn_prev.gif) no-repeat 0 0;
+		}
+	#nextBtn a, #slider1next a{
+		background:url(../images/btn_next.gif) no-repeat 0 0;
+		}
+
+/* content */
+.content { float: left; width: 711px; margin: 0 0 0 32px; }
+
+    .content h1 { font-family: 'BookAntiquaBoldItalic'; margin: 20px 10px; color: #000; font-size: 24px; }
+    .content h2 { font-family: 'BookAntiquaBoldItalic'; margin: 20px 10px; color: #000; font-size: 20px; }
+    .content p { margin: 20px 10px; font-size: 13px; text-indent: 20px; line-height: 180%; text-align: justify;  }
+    .content p:first-letter { font-weight: bold; color: #000 }
+
+    hr { display: block; margin: 20px 0; padding: 0; border: 0; background: #f0f0f0; height: 1px; }
+    hr.tort { display: block; margin: 10px 0; padding: 0; border: 0; background: url(../images/hr.png) no-repeat 50% 0; height: 32px; }
+
+/* footer */
+#footer {
+	position: relative;
+	margin: -70px auto 0 auto;
+	height: 157px;
+	width: 957px;
+}
+
+#footer .wrapper { width: 991px; height: 157px; margin: 0 0 0 -10px; background: url(../images/footer-bg.png) no-repeat; }
+
+#footer ul { margin: 0 0 0 30px; }
+#footer li { float: left; margin: 98px 5px 0 0; padding: 10px; border-top-left-radius: 5px; border-top-right-radius: 5px; }
+#footer li.current_page_item { background: #8e0c0c; }
+#footer li a { color: #000 }
+#footer li.current_page_item a { color: #fff; text-decoration: none; }
+
+.footer_blank {	clear: both; height: 160px; }

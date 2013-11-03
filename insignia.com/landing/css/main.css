@@ -1,0 +1,390 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1.2;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+input {
+    margin: 0;
+    outline: none;
+}
+
+input::-moz-focus-inner { 
+    border: 0;
+    padding: 0;
+}
+
+/* fonts */
+
+@font-face {
+    font-family: 'Josefin Sans Regular';
+    src: url('../fonts/josefinsans-regular-webfont.eot');
+    src: url('../fonts/josefinsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/josefinsans-regular-webfont.woff') format('woff'),
+         url('../fonts/josefinsans-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato Regular';
+    src: url('../fonts/lato-regular-webfont.eot');
+    src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-regular-webfont.woff') format('woff'),
+         url('../fonts/lato-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato Bold';
+    src: url('../fonts/lato-bold-webfont.eot');
+    src: url('../fonts/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-bold-webfont.woff') format('woff'),
+         url('../fonts/lato-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DidotLTStd Headline';
+    src: url('../fonts/didotltstd-headline-webfont.eot');
+    src: url('../fonts/didotltstd-headline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/didotltstd-headline-webfont.woff') format('woff'),
+         url('../fonts/didotltstd-headline-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ovo Regular';
+    src: url('../fonts/ovo-regular-webfont.eot');
+    src: url('../fonts/ovo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ovo-regular-webfont.woff') format('woff'),
+         url('../fonts/ovo-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* styles */
+html, body { height: 100% }
+
+body { 
+    min-width: 1000px; 
+    background: #000;
+    font-family: 'Lato Regular', sans-serif;
+    font-size: 15px;
+    color: #666;
+}
+
+#main { 
+    position: relative; 
+    min-height: 100%; 
+}
+
+#wrap { 
+    margin: 0 auto; 
+    padding: 0 0 100px 0; 
+}
+
+.ct {
+    text-align: center;
+}
+
+.cr {
+    text-align: right;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 100px;
+}
+.header-wrapper { width: 930px; margin: 0 auto; }
+
+/* content */
+.default-button { 
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    padding: 19px 55px;
+    font-family: 'Lato Bold';
+    font-size: 15px;
+    color: #696767;
+    text-decoration: none;
+    background: url(../images/button-bg.png) repeat-x;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    border: 0;
+}
+.default-button:hover { 
+    color: #fff;
+}
+
+.button-small {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #666;
+    text-transform: uppercase;
+    padding: 7px 18px;
+}
+
+.slide { }
+
+    .slide .wrapper { position: relative; width: 930px; margin: 0 auto; }
+
+    .slide-1 { padding: 90px 0 0 0; height: 610px; background: url(../images/bg-1.jpg) no-repeat 50% 0; }
+        .main-logo {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        h1.main-title { 
+            font-family: 'Josefin Sans Regular'; 
+            color: #b8b8b8; text-align: center; 
+            font-size: 40px; 
+            text-transform: uppercase; 
+            text-shadow: 1px 1px 2px #000; 
+            line-height: 100%;
+        }
+
+        h2.main-slogan {
+            margin: 30px 0 50px 0;
+            font-family: 'Ovo Regular';
+            font-size: 19px;
+            color: #ccc;
+            text-align: center;
+            text-shadow: 1px 1px 1px #000;
+        }
+
+    .slide-2 { padding: 90px 0 0 0; height: 610px; background: url(../images/bg-2.jpg) no-repeat 50% 0; }
+        .second-title {
+            font-family: 'DidotLTStd Headline';
+            color: #78797a;
+            font-size: 70px;
+            text-shadow: 1px 1px 1px #000;
+            line-height: 95%;
+            margin-bottom: 40px;
+        }
+
+        .slide-2 p {
+            margin: 16px 0;
+        }
+
+        .slide-2 .default-button {
+            margin-top: 100px;
+        }
+
+    .slide-3 { padding: 130px 0 0 0; height: 570px; background: url(../images/bg-3.jpg) no-repeat 50% 0; }
+        .slide-3 p {
+            color: #666;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .slide-3 .s1 { margin: 0 0 0 500px; }
+        .slide-3 .s2 { text-align: right; padding-right: 10px; }
+        .slide-3 .s3 { position: absolute; left: 540px; top: 55px; }
+        .slide-3 .s4 { position: absolute; left: 520px; top: 270px; }
+        .slide-3 .s5 { margin-top: -10px; text-align: right; }
+
+        .slide-3 .amount {
+            font-family: 'DidotLTStd Headline';
+            color: #999;
+            font-size: 70px;
+            text-align: right;
+            text-shadow: 1px 1px 1px #000;
+            font-weight: bold;
+        }
+
+        .slide-3 .subtitle {
+            margin-top: 20px;
+            font-family: 'DidotLTStd Headline';
+            color: #ccc;
+            font-size: 30px;
+            text-shadow: 1px 1px 1px #000;
+            text-align: right;            
+        }
+
+        .slide-3 .salary {
+            margin: 10px -20px 0 0;
+            font-family: 'DidotLTStd Headline';
+            color: #fff;
+            font-size: 70px;
+            text-align: right;
+            text-shadow: 1px 1px 1px #000;
+            font-weight: bold;
+        }
+
+        .slide-3 .cr {
+            margin: 100px 0 0 0;
+        }
+
+    .slide-4 { padding: 65px 0 0 0; height: 635px; background: url(../images/bg-4.jpg) no-repeat 50% 0; }
+        .slide-4 a {
+            color: #666;
+        }
+
+        .form-title { 
+            font-family: 'Josefin Sans Regular';
+            color: #ccc;
+            font-size: 40px;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 1px #000;
+        }
+
+        .slide-4 p {
+            margin: 20px 0;
+            color: #666;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .col-left { float: left; width: 480px; }
+
+        .col-right { float: left; margin-left: 15px; }
+
+        .form-wrapper { overflow: hidden; }
+        .form-wrapper p { margin: 3px 0; }
+        .form-wrapper .req { margin: 0 5px; color: #fe0000; }
+        .form-wrapper label { font-size: 11px; }
+
+        .form-wrapper .textbox, .form-wrapper textarea { margin-top: 3px; width: 460px; padding: 7px 10px; font-family: Arial, sans-serif; font-size: 13px; outline: none; background: #666; border: 0; }
+        .form-wrapper .textbox:focus, .form-wrapper textarea:focus { background: #fff; }
+
+        .form-wrapper textarea { width: 410px; height: 128px; resize: none; overflow: hidden; }
+
+        .form-nav { overflow: hidden; clear: both; padding: 2px 5px; }
+            .form-nav .default-button { float: right; }
+
+        .form-uploads { width: 290px; }
+            .form-uploads table { width: 100%; }
+                .form-uploads td { vertical-align: middle; color: #666; text-shadow: 1px 1px 2px #000; }
+                .form-uploads td img { margin-bottom: -2px; }
+                .form-uploads td img:hover { opacity: 0.5; }
+
+        .slide-4 .cr {
+            margin-top: 10px;
+        }
+
+    .slide-5 { padding: 115px 0 0 0; height: 585px; background: url(../images/bg-5.jpg) no-repeat 50% 0; }
+        .slide-5 .cover { float: left; width: 569px; height: 534px; background: url(../images/cover.png) no-repeat; }
+
+        .slide-5 .description { float: left; width: 290px; margin: 50px 0 0 20px; }
+            .slide-5 .title {                
+                font-family: 'Josefin Sans Regular';
+                color: #ccc;
+                font-size: 40px;
+                text-transform: uppercase;
+                text-shadow: 1px 1px 1px #000;
+                margin-bottom: -7px;
+            }
+
+            .slide-5 p { margin: 20px 0; color: #999; text-shadow: 1px 1px 2px #000; }
+
+            .slide-5 big {
+                font-size: 20px;
+                color: #ccc;
+            }
+
+            .slide-5 .default-button {
+                position: relative;
+                margin-top: 35px;
+                padding-left: 22px;
+                padding-right: 57px;
+            }
+            .slide-5 .default-button img { position: absolute; right: 22px; top: 18px; }
+
+
+
+/* footer */
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0 0 0;
+    height: 60px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    color: #505050;
+}
+.footer-wrapper { width: 930px; margin: 0 auto; }
+
+footer a { text-decoration: none; color: #505050; }
+footer a:hover { color: #fff; }
+
+#terms { 
+    display: none;
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 950px; 
+    height: 650px;
+    background: #fff; 
+    padding: 20px; 
+}
+
+#terms p { margin: 0 0 20px 0; color: #000; }
+
+#terms li { margin: 10px 0; list-style: disc inside; }
+
+#x { position: absolute; right: 10px; top: 10px; text-decoration: none; color: #000; }

@@ -1,0 +1,678 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/input-focus.js"></script>
+
+<!-- jcarousellite -->
+<script type="text/javascript" src="js/jcarousellite_1.0.1.js"></script>
+
+<!-- popup's -->
+<script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<script type="text/javascript">
+    $(document).ready(function() {
+	    $("a#a-login, a#a-recovery, a#a-addinfo, a#a-signup, a#a-signupcompany").fancybox();
+	});
+</script>
+
+<!-- jquery ui -->
+<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.21.custom.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#tabs').tabs();
+
+	$('#slider').slider({
+	    range: true,
+		values: [17, 67]
+	});
+
+	$('#dialog_link, ul#icons li').hover(
+	    function() { $(this).addClass('ui-state-hover'); },
+		function() { $(this).removeClass('ui-state-hover'); }
+	);
+});
+</script>
+</head>
+<body>
+
+<a href="" id="consult">задать вопрос консультанту online</a>
+
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+        <a href="#"><img src="images/logo.png" width="207" height="50" border="0" alt="" class="logo" /></a>
+
+        <div class="nav">
+            <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Техническая информация</a></li>
+                <li><a href="#">Работа в ЭЛТЕХ</a></li>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <strong>Корзина (0)</strong><br />
+            <a href="#login" id="a-login">Войти в личный кабинет</a>
+            <a href="#signup" id="a-signup">Зарегистрироваться</a><br />
+            <a href="#signupcompany" id="a-signupcompany">[1]</a>, <a href="#addinfo" id="a-addinfo">[2]</a>
+        </div>
+
+        <div class="contacts">
+            Телефон в <a href="javascript: void(0);" id="city"><span>Санкт-Петербурге</span></a>:
+            <big>(812) 635-50-60</big>
+            <a href="#">Контакты</a>
+
+            <div class="hbox">
+                <ul>
+                    <li><a href="javascript: void(0);">Санкт-Петербург</a></li>
+                    <li><a href="javascript: void(0);">Москва</a></li>
+                    <li><a href="javascript: void(0);">Екатеринбург</a></li>
+                    <li><a href="javascript: void(0);">Ростов-на-Дону</a></li>
+                    <li><a href="javascript: void(0);">Новосибирск</a></li>
+                    <li><a href="javascript: void(0);">Чебоксары</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="lang">
+            <a href="#" class="active">рус</a>
+            <a href="#">eng</a>
+        </div>
+
+        <!-- header control -->
+        <div class="control">
+            <div class="banner">
+                <a href="#"><img src="images/tmp/header-banner.gif" width="468" height="60" border="0" alt="" /></a>
+            </div>
+
+            <!-- news -->
+            <div class="news">
+                <div class="item">
+                    <strong>Вакансии:</strong> ЭЛТЕХ приглашает на работу менеджера по работе с персоналом.
+                </div>
+
+                <div class="arrows">
+                    <a href="#" class="left" title="Предыдущая"></a>
+                    <a href="#" class="right" title="Следующая"></a>
+                </div>
+            </div>
+
+            <!-- search -->
+            <div class="search">
+                <form>
+                    <input name="searchbar" type="text" value="Поиск" id="searchbar" tabindex="1" />
+
+                    <!-- results -->
+                    <div class="hbox">
+                        <h6>Каталог</h6>
+
+                        <ol>
+                            <li><a href="#">Преобразователь AD-CD</a></li>
+                            <li><a href="#">Компонент AD-CD</a></li>
+                            <li><a href="#">Блок AD-CD переменного значения на выходе</a></li>
+                            <li><a href="#">Преобразователь AD-CD</a></li>
+                            <li><a href="#">Компонент AD-CD</a></li>
+                        </ol>
+
+                        <h6>Новости</h6>
+
+                        <ol>
+                            <li><a href="#">Изобретен новый преобразователь AD-CD</a></li>
+                            <li><a href="#">Новинка на китайском AD-CD блок, работающий на солнечной ...</a></li>
+                            <li><a href="#">Блок AD-CD переменного напряжения представлен на ...</a></li>
+                        </ol>
+
+                        <a href="#" class="more">Все результаты</a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- subscribe -->
+            <div class="subscribe">
+                <a href="#" class="now">Подписка</a>
+                <a href="#" class="twitter"></a>
+                <a href="#" class="email"></a>
+            </div>
+
+            <!-- subscribe select -->
+            <div class="hbox subscribe-select">
+                <ul>
+                    <li><a href="#">На альманах</a></li>
+                    <li><a href="#">На новости</a></li>
+                </ul>
+            </div>
+            <script language="JavaScript" type="text/javascript">
+            /*<![CDATA[*/
+            $("#city").click(function() {
+                $(".header .contacts .hbox").toggle();
+            });
+            $(".header .contacts .hbox a").click(function() {
+                $(".header .contacts .hbox").hide();
+            });
+            $("#searchbar").click(function() {
+                $(".header .search .hbox").toggle();
+            });
+            $(".subscribe .now").click(function() {
+                $(".subscribe-select").toggle();
+            });
+            /*]]>*/
+            </script>
+        </div>
+    </div>
+
+	<!-- content -->
+	<div class="content">
+        <div class="breadcrumbs">
+            <a href="#">Техническая информация</a> <img src="images/spacer.png" width="7" height="20" border="0" alt="" />
+            <a href="#">Статьи и обзоры</a> <img src="images/spacer.png" width="7" height="20" border="0" alt="" />
+            <a href="#">Analog Devices</a> <img src="images/spacer.png" width="7" height="20" border="0" alt="" />
+        </div>
+
+        <!-- left side  -->
+        <div class="leftside">
+            <!-- catalog list -->
+            <div class="catalog-list">
+                <ul>
+                    <li><a href="#">Электронные компоненты</a>
+                        <ul>
+                            <li><a href="#">AC-DC преобразователи</a></li>
+                            <li><a href="#">DC-AC преобразователи (инверторы)</a></li>
+                            <li><a href="#">DC-DC преобразователи</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Cиловая электроника</a>
+                        <ul>
+                            <li><a href="#">AC-DC преобразователи</a></li>
+                            <li><a href="#">DC-AC преобразователи (инверторы)</a></li>
+                            <li><a href="#">DC-DC преобразователи</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Датчики промышленные</a>
+                        <ul>
+                            <li><a href="#">AC-DC преобразователи</a></li>
+                            <li><a href="#">DC-AC преобразователи (инверторы)</a></li>
+                            <li><a href="#">DC-DC преобразователи</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Дисплеи и модули индикации</a>
+                        <ul>
+                            <li><a href="#">AC-DC преобразователи</a></li>
+                            <li><a href="#">DC-AC преобразователи (инверторы)</a></li>
+                            <li><a href="#">DC-DC преобразователи</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Источники питания</a>
+                        <ul>
+                            <li><a href="#">AC-DC преобразователи</a></li>
+                            <li><a href="#">DC-AC преобразователи (инверторы)</a></li>
+                            <li><a href="#">DC-DC преобразователи</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Микросхемы и полупроводниковые компоненты</a>
+                        <ul>
+                            <li><a href="#">AC-DC преобразователи</a></li>
+                            <li><a href="#">DC-AC преобразователи (инверторы)</a></li>
+                            <li><a href="#">DC-DC преобразователи</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Модули беспроводной связи и позиционирования</a>
+                        <ul>
+                            <li><a href="#">AC-DC преобразователи</a></li>
+                            <li><a href="#">DC-AC преобразователи (инверторы)</a></li>
+                            <li><a href="#">DC-DC преобразователи</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Пассивные компоненты</a>
+                        <ul>
+                            <li><a href="#">AC-DC преобразователи</a></li>
+                            <li><a href="#">DC-AC преобразователи (инверторы)</a></li>
+                            <li><a href="#">DC-DC преобразователи</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Свет и освещение</a>
+                        <ul>
+                            <li><a href="#">AC-DC преобразователи</a></li>
+                            <li><a href="#">DC-AC преобразователи (инверторы)</a></li>
+                            <li><a href="#">DC-DC преобразователи</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Средства разработки и отладки</a>
+                        <ul>
+                            <li><a href="#">AC-DC преобразователи</a></li>
+                            <li><a href="#">DC-AC преобразователи (инверторы)</a></li>
+                            <li><a href="#">DC-DC преобразователи</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Электромеханические компоненты</a>
+                        <ul>
+                            <li><a href="#">AC-DC преобразователи</a></li>
+                            <li><a href="#">DC-AC преобразователи (инверторы)</a></li>
+                            <li><a href="#">DC-DC преобразователи</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <script language="JavaScript" type="text/javascript">
+                /*<![CDATA[*/
+                $(".catalog-list li").click(function() {
+                  $(this).toggleClass('active');
+                });
+                /*]]>*/
+                </script>
+            </div>
+        </div>
+
+        <!-- text content -->
+        <div class="cbox c-center">
+            <h1 class="title">Analog Devices <a href="#"><span>по производителям</span></a></h1>   
+
+            <!-- articles -->
+            <div class="articles">
+                <div class="item">
+                    <div class="download">
+                        <a href="#"><img src="images/pdf.png" width="60" height="60" border="0" alt="" /></a> <br />
+                        ~ 5,7 Mb
+                    </div>
+
+                    <div class="description">
+                        <a href="#" class="title">Analog Devices. Новинки DSP</a>
+
+                        <p>В данной брошюре представлена информация о новой серии семейства процессоров
+                        Blackfin BF50x/F и новых чипах семейства высокопроизводительных процессоров с плавающей точкой SHARK.</p>
+
+                        <p><small>Никитин Ю., Дмитриев С.</small></p>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="item">
+                    <div class="download">
+                        <a href="#"><img src="images/pdf.png" width="60" height="60" border="0" alt="" /></a> <br />
+                        ~ 1,2 Mb
+                    </div>
+
+                    <div class="description">
+                        <a href="#" class="title">Полный радиочастотный синтезатор с дробным коэффициентом деления ADF4350</a>
+
+                        <p>Статья была опубликована в журнале «Компоненты и технологии» №3 2010 г.</p>
+
+                        <p><small>Дмитриев С.</small></p>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="item">
+                    <div class="download">
+                        <a href="#"><img src="images/pdf.png" width="60" height="60" border="0" alt="" /></a> <br />
+                        ~ 2 Mb
+                    </div>
+
+                    <div class="description">
+                        <a href="#" class="title">Микросхемы для интерфейсов</a>
+
+                        <p>В буклете рассмотрены следующие модели приемопередатчиков производства компании Analog Devices:
+                        стандартные приемопередатчики, изолированные для интерфейса и т. д.</p>
+
+                        <p><small>Иванов П.</small></p>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="item">
+                    <div class="download">
+                        <a href="#"><img src="images/pdf.png" width="60" height="60" border="0" alt="" /></a> <br />
+                        ~ 100 Kb
+                    </div>
+
+                    <div class="description">
+                        <a href="#" class="title">Преимущества новых процессоров Blackfin 506F в индустриальных приложениях</a>
+
+                        <p>Статья была опубликована в журнале «Компоненты и технологии» №4 2010 г.</p>
+
+                        <p><small>Комаров А.</small></p>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="item">
+                    <div class="download">
+                        <a href="#"><img src="images/pdf.png" width="60" height="60" border="0" alt="" /></a> <br />
+                        ~ 560 Kb
+                    </div>
+
+                    <div class="description">
+                        <a href="#" class="title">Управление питанием. Стабилизаторы. Супервизоры. Изоляторы.</a>
+
+                        <p>В данной брошюре представлена краткая информация о компонентах Analog Devices для построения
+                        схем питания и приведены типовые схемы включения. </p>
+
+                        <p><small>Пукин В. А.</small></p>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="item">
+                    <div class="download">
+                        <a href="#"><img src="images/pdf.png" width="60" height="60" border="0" alt="" /></a> <br />
+                        ~ 5,7 Mb
+                    </div>
+
+                    <div class="description">
+                        <a href="#" class="title">Analog Devices. Новинки DSP</a>
+
+                        <p>В данной брошюре представлена информация о новой серии семейства процессоров
+                        Blackfin BF50x/F и новых чипах семейства высокопроизводительных процессоров с плавающей точкой SHARK.</p>
+
+                        <p><small>Никитин Ю., Дмитриев С.</small></p>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="item">
+                    <div class="download">
+                        <a href="#"><img src="images/pdf.png" width="60" height="60" border="0" alt="" /></a> <br />
+                        ~ 1,2 Mb
+                    </div>
+
+                    <div class="description">
+                        <a href="#" class="title">Полный радиочастотный синтезатор с дробным коэффициентом деления ADF4350</a>
+
+                        <p>В данной брошюре представлена информация о новой серии семейства процессоров
+                        Blackfin BF50x/F и новых чипах семейства высокопроизводительных процессоров с плавающей точкой SHARK.</p>
+
+                        <p><small>Никитин Ю., Дмитриев С.</small></p>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="item">
+                    <div class="download">
+                        <a href="#"><img src="images/pdf.png" width="60" height="60" border="0" alt="" /></a> <br />
+                        ~ 2 Mb
+                    </div>
+
+                    <div class="description">
+                        <a href="#" class="title">Микросхемы для интерфейсов</a>
+
+                        <p>В данной брошюре представлена информация о новой серии семейства процессоров
+                        Blackfin BF50x/F и новых чипах семейства высокопроизводительных процессоров с плавающей точкой SHARK.</p>
+
+                        <p><small>Никитин Ю., Дмитриев С.</small></p>
+                    </div>
+                </div>
+
+                <!-- paginator -->
+                <div class="paginator">
+                    <ul>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><span>...</span></li>
+                        <li><a href="#">159</a></li>
+                        <li><a href="#">Ctrl &rarr;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- right side -->
+        <div class="rightside">
+            <div class="box">
+                <img src="images/tmp/ad.png" width="81" height="24" border="0" alt="" />
+
+                <ul>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Новости от компании</a></li>
+                </ul>
+            </div>
+
+            <a href="#" class="acrobat"><img src="images/reader.png" width="180" height="38" border="0" alt="" /></a>
+
+        </div>
+
+    </div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+    <div class="bottommenu">
+        <ul>
+            <li>
+                <ul>
+                    <li><span class="title">О компании</span></li>
+                    <li><a href="#">Элтех сегодня</a></li>
+                    <li><a href="#">Сертификаты</a></li>
+                    <li><a href="#">Достижения</a></li>
+                    <li><a href="#">Обратная связь</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <ul>
+                    <li><span class="title">Новости</span></li>
+                    <li><a href="#">Все новости</a></li>
+                    <li><a href="#">Новости Элтех</a></li>
+                    <li><a href="#">Рассылка новостей</a></li>
+                    <li><a href="#">RSS</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <ul>
+                    <li><span class="title">Техническая информация</span></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Презентации</a></li>
+                    <li><a href="#">Каталоги</a></li>
+                    <li><a href="#">Примеры применений</a></li>
+                    <li><a href="#">Программное обеспечение</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <ul>
+                    <li><span class="title">Работа в ЭЛТЕХ</span></li>
+                    <li><a href="#">Менеджер по продажам</a></li>
+                    <li><a href="#">Инженер</a></li>
+                    <li><a href="#">Коммерческий директор</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="copyright">
+        2004 — 2012, ООО ЭЛТЕХ<br />
+        Все права защищены
+
+        <div class="counters">
+            <a href="#"><img src="images/tmp/c1.gif" width="88" height="31" border="0" alt="" /></a><br />
+            <a href="#"><img src="images/tmp/c2.gif" width="88" height="31" border="0" alt="" /></a><br />
+            <a href="#"><img src="images/tmp/c3.gif" width="88" height="31" border="0" alt="" /></a>
+        </div>
+    </div>
+</div>
+
+<!-- popup's -->
+<div class="popups">
+
+<!-- login -->
+<div class="popup" id="login">
+    <h4>Вход в личный кабинет</h4>
+
+    <form>
+        <label>E-mail<br />
+        <input name="t1" type="text" tabindex="1" class="textbox" />
+        </label>
+
+        <label>Пароль<br />
+        <input name="t2" type="text" tabindex="2" class="textbox" />
+        </label>
+
+        <label><input type="checkbox" name="t3" tabindex="3" /> Запомнить меня</label>
+        <a href="#passrecovery" class="recovery" id="a-recovery">Восстановить пароль</a>
+
+        <input type="button" name="t4" value="Войти на сайт" tabindex="4" class="button" />
+    </form>
+</div>
+
+<!-- password recovery -->
+<div class="popup" id="passrecovery">
+    <h4>Восстановление пароля</h4>
+
+    <form>
+        <label>E-mail<br />
+        <input name="t5" type="text" tabindex="1" class="textbox" />
+        </label>
+
+        <input type="button" name="t7" value="Восстановить пароль" tabindex="3" class="button" />
+    </form>
+</div>
+
+<!-- registration -->
+<div class="popup" id="signup">
+    <h4>Регистрация</h4>
+
+    <form>
+        <label>Фамилия<br />
+        <input name="t8" type="text" tabindex="1" class="textbox" />
+        </label>
+
+        <label>Имя<br />
+        <input name="t9" type="text" tabindex="2" class="textbox" />
+        </label>
+
+        <label>Отчество<br />
+        <input name="t10" type="text" tabindex="3" class="textbox" />
+        </label>
+
+        <label>E-mail<br />
+        <input name="t11" type="text" tabindex="4" class="textbox" />
+        </label>
+
+        <label>Пароль<br />
+        <input name="t12" type="text" tabindex="5" class="textbox" />
+        </label>
+
+        <label>Телефон<br />
+        <input name="t13" type="text" tabindex="6" class="textbox" />
+        </label>
+
+        <label><input type="checkbox" name="t14" tabindex="7" /> Юридическое лицо</label>
+        <label><input type="checkbox" name="t15" tabindex="8" /> <span>Резидент РФ</span></label>
+        <label><input type="checkbox" name="t16" tabindex="9" /> <span>Принимаю <a href="#">условия пользовательского <br />
+        соглашения</a></span></label>
+
+        <input type="button" name="t17" value="Зарегистрироваться" tabindex="10" class="button" />
+    </form>
+</div>
+
+<!-- additional information  -->
+<div class="popup" id="addinfo">
+    <h4>Пожалуйста, занесите<br /> недостающую информацию</h4>
+
+    <form>
+        <label>Отчество<br />
+        <input name="t18" type="text" tabindex="1" class="textbox" />
+        </label>
+
+        <label>Телефон<br />
+        <input name="t19" type="text" tabindex="1" class="textbox" />
+        </label>
+
+        <input type="button" name="t20" value="Сохранить" tabindex="3" class="button" />
+    </form>
+</div>
+
+<!-- additional information  -->
+<div class="popup" id="signupcompany">
+    <h4>Регистрация</h4>
+
+    <form>
+        <div class="column1">
+          <label>Фамилия<br />
+          <input name="t21" type="text" tabindex="1" class="textbox" />
+          </label>
+
+          <label>Имя<br />
+          <input name="t22" type="text" tabindex="2" class="textbox" />
+          </label>
+
+          <label>Отчество<br />
+          <input name="t23" type="text" tabindex="3" class="textbox" />
+          </label>
+
+          <label>E-mail<br />
+          <input name="t24" type="text" tabindex="4" class="textbox" />
+          </label>
+
+          <label>Пароль<br />
+          <input name="t25" type="text" tabindex="5" class="textbox" />
+          </label>
+
+          <label>Телефон<br />
+          <input name="t26" type="text" tabindex="6" class="textbox" />
+          </label>
+
+          <label><input type="checkbox" name="t27" tabindex="7" /> Юридическое лицо</label>
+          <label><input type="checkbox" name="t28" tabindex="8" /> <span>Резидент РФ</span></label>
+          <label><input type="checkbox" name="t29" tabindex="9" /> <span>Принимаю <a href="#">условия пользовательского <br />
+          соглашения</a></span></label>
+
+          <input type="button" name="t30" value="Зарегистрироваться" tabindex="20" class="button" />
+        </div>
+
+        <div class="column2">
+          <label>Название организации<br />
+          <input name="t31" type="text" tabindex="10" class="textbox" />
+          </label>
+
+          <label>Форма собственности<br />
+          <select name="t32" size="1" tabindex="11">
+            <option value="1" selected="selected">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          </label>
+
+          <label>Индекс<br />
+          <input name="t33" type="text" tabindex="12" class="textbox" />
+          </label>
+
+          <label>Юридический адрес<br />
+          <input name="t34" type="text" tabindex="13" class="textbox" />
+          </label>
+
+          <label>Расчетный счет<br />
+          <input name="t35" type="text" tabindex="14" class="textbox" />
+          </label>
+        </div>
+
+        <div class="column3">
+          <label>Наименование банка<br />
+          <input name="t36" type="text" tabindex="15" class="textbox" />
+          </label>
+
+          <label>Корр. счет<br />
+          <input name="t37" type="text" tabindex="16" class="textbox" />
+          </label>
+
+          <label>БИК<br />
+          <input name="t38" type="text" tabindex="17" class="textbox" />
+          </label>
+
+          <label>ИНН<br />
+          <input name="t39" type="text" tabindex="18" class="textbox" />
+          </label>
+
+          <label>КПП<br />
+          <input name="t40" type="text" tabindex="19" value="КПП" class="textbox error" />
+          <span class="error-message">Только цифры</span>
+          </label>
+        </div>
+    </form>
+</div>
+</div>
+</body>
+</html>

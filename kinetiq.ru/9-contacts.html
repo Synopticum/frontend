@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>9 - contacts</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/pngfix.js"></script>
+<script type="text/javascript">
+	DD_belatedPNG.fix('.png24');
+</script>
+<![endif]-->
+</head>
+<body>
+<div id="wrap">
+
+	<!-- header -->
+	<div class="header">
+		<a href="#" title="" class="logo"><img src="images/logo.gif" width="224" height="46" alt="" /></a>
+
+		<ul>
+			<!-- for IE6 support - <li class="first current"><a href="#" title="">Портфолио</a></li> -->
+			<li id="portfolio"><a href="#" title="">Портфолио</a>
+				<ul>
+					<li><a href="#" title="">Реклама</a></li>
+					<li><a href="#" title="">Брендинг</a></li>
+					<li><a href="#" title="">Иллюстрации</a></li>
+					<li><a href="#" title="">Пром. дизайн</a></li>
+					<li class="current"><a href="#" title="">Сайты</a></li>
+				</ul>
+			</li>
+			<li id="aboutus"><a href="#" title="">О студии</a>
+				<ul>
+					<li><a href="#" title="">Команда</a></li>
+					<li><a href="#" title="">Наши клиенты</a></li>
+					<li><a href="#" title="">Сарафан ФМ</a></li>
+					<li><a href="#" title="">Вакансии</a></li>
+				</ul>
+			</li>
+			<li><a href="#" title="">Услуги</a></li>
+			<li class="current"><a href="#" title="">Контакты</a></li>
+			<li><a href="#" title="">Новости</a></li>
+		</ul>
+	</div>
+
+	<div class="content">
+
+		<div class="breadcrumbs">
+			<a href="#" title="">Home</a> / <span class="current">Контакты</span>
+		</div>
+
+		<!-- left side -->
+		<div class="aside">
+			<h3>Добро пожаловать<br /> в наш офис:</h3>
+
+			<p>Московский проспект, 79 «А», офис 705
+			Адмиралтейский район, Санкт-Петербург, Россия,196084,</p>
+
+			<p>телефон: +7 (812) 332-06-16
+			e-mail: Hello@kinetiq.ru</p>
+		</div>
+
+		<!-- content -->
+		<div class="text">
+
+			<div class="map">
+				<img src="images/tmp/m1.jpg" width="454" height="269" alt="" />
+			</div>
+			
+			<img src="images/tmp/m2.jpg" width="454" height="269" alt="" />
+
+		</div>
+
+	</div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+
+	<div class="copyright">
+		&copy; KINETIQ, 2008-2010. Все права защищены<br />
+		e-mail: <a href="#">hello@kinetiq.ru</a><br />
+		<a href="#" title=""><img src="images/twitter.gif" width="26" height="26" alt="" /></a>
+		<a href="#" title=""><img src="images/facebook.gif" width="26" height="26" alt="" /></a>
+	</div>
+
+</div>
+
+<script language="JavaScript" type="text/javascript">
+/*<![CDATA[*/
+	$("#portfolio").hover(function () {
+		$("#aboutus ul").hide();
+		$("#portfolio ul").show();
+	});
+	$("#aboutus").hover(function () {
+		$("#portfolio ul").hide();
+		$("#aboutus ul").show();
+	});
+/*]]>*/
+</script>
+</body>
+</html>

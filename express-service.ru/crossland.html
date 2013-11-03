@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>On-line &mdash; Международная перевозка</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<div class="header">
+		<a href="#"><img src="images/logo.png" id="logo" alt="" /></a>
+		<p>
+			<span>Свяжитесь с нами:</span>
+			<img src="images/phone.png" alt="" />
+		</p>
+	</div>
+
+	<div class="aside">
+		<ul>
+			<li><img src="images/ico-home.png" alt="" /><a href="#">Главная</a></li>
+			<li><img src="images/ico-company.png" alt="" /><a href="#">О компании</a></li>
+			<li><img src="images/ico-license.png" alt="" /><a href="#">Лицензии и сертификаты</a></li>
+			<li><img src="images/ico-services.png" alt="" /><a href="#">Наши услуги</a></li>
+			<li><img src="images/ico-feedback.png" alt="" /><a href="#">Отзывы о нас</a></li>
+			<li class="last"><img src="images/ico-contacts.png" alt="" /><a href="#">Контакты</a></li>
+		</ul>
+	</div>
+
+	<div class="content">
+		<form method="post" action="send.php" id="mainForm" name="mainForm">
+
+		<fieldset>
+			<legend>On-line запрос</legend>
+
+			<div class="item">
+
+			<h1>Шаг 2. Заполните форму. Запрос на международную перевозку</h1>
+			<strong>Контактная информация</strong>
+
+			<table class="forms">
+				<tr id="var0">
+					<td>Контактное лицо:<span>*</span></td>
+					<th><input name="contactFace" type="text" class="inputtext" tabindex="1" /></th>
+				</tr>
+				<tr id="var1">
+					<td>Название компании:<span>*</span></td>
+					<th><input name="companyName" type="text" class="inputtext" tabindex="2" /></th>
+				</tr>
+				<tr id="var2">
+					<td>Телефон:<span>*</span></td>
+					<th><input name="companyNumber" type="text" class="inputtext" tabindex="3" /></th>
+				</tr>
+				<tr id="var3">
+					<td>E-mail:<span>*</span></td>
+					<th><input name="companyEmail" type="text" class="inputtext" tabindex="4" /></th>
+				</tr>
+			</table>
+			</div>
+
+			<div class="hr"></div>
+
+			<div class="item">
+
+			<strong>Информация о перевозке</strong>
+
+			<table class="forms">
+				<tr id="var4">
+					<td>Откуда: (адрес загрузки, заполняется на английском языке)<span>*</span></td>
+					<th><input name="deliveryFrom" type="text" class="inputtext" tabindex="5" /></th>
+				</tr>
+				<tr id="var5">
+					<td>Куда: (адрес разгрузки, заполняется на английском языке)<span>*</span></td>
+					<th><input name="deliveryTo" type="text" class="inputtext" tabindex="6" /></th>
+				</tr>
+				<tr>
+					<td>Предпочтительная дата отправки:</td>
+					<th><input name="deliverySendDate" type="text" class="inputtext" tabindex="7" /></th>
+				</tr>
+				<tr>
+					<td>Вид транспорта:</td>
+					<th>
+						<p><input type="radio" name="deliveryTransportType" value="Авиа" tabindex="8" /> Авиа</p>
+						<p><input type="radio" name="deliveryTransportType" value="Авто" tabindex="9" /> Авто</p>
+						<p><input type="radio" name="deliveryTransportType" value="Ж/Д" tabindex="10" /> Ж/Д</p>
+						<p><input type="radio" name="deliveryTransportType" value="Море" tabindex="11" /> Море</p><br />
+						<p><input type="radio" name="deliveryTransportType" value="Мультидальная перевозка" tabindex="12" /> Мультидальная перевозка</p>
+						<p><input type="radio" name="deliveryTransportType" value="Перевозка негабарита" tabindex="13" /> Перевозка негабарита</p>
+					</th>
+				</tr>
+				<tr>
+					<td>Контракт на поставку товара:</td>
+					<th>
+						<p><input type="radio" name="deliveryContract" value="Есть" tabindex="14" /> Есть</p>
+						<p><input type="radio" name="deliveryContract" value="Нет" tabindex="15" /> Нет</p>
+					</th>
+				</tr>
+				<tr>
+					<td>Условия поставки:(incoterms)</td>
+					<th><input name="deliveryConditions" type="text" class="inputtext" tabindex="16" /></th>
+				</tr>
+				<tr>
+					<td>Класс опасности:</td>
+					<th><input name="deliveryWarningClass" type="text" class="inputtext" tabindex="17" /></th>
+				</tr>
+			</table>
+			</div>
+
+			<div class="hr"></div>
+
+			<div class="item">
+
+			<strong>Информация о грузе</strong>
+
+			<table class="forms">
+				<tr>
+					<td>Код ТН ВЭД<br />(если известен): </td>
+					<th><input name="cargoCode" type="text" class="inputtext" tabindex="18" /></th>
+				</tr>
+				<tr id="var6">
+					<td>Описание товара<br />
+					(модели, артикулы, материалы, технические Характеристики, область применения):<span>*</span></td>
+					<th><textarea name="cargoDescription" tabindex="19"></textarea></th>
+				</tr>
+				<tr id="var7">
+					<td>Общее количество мест<br />(шт)<span>*</span></td>
+					<th><input name="cargoCapacity" type="text" class="inputtext" tabindex="20" /></th>
+				</tr>
+				<tr id="var8">
+					<td>Фирма производитель<br />и страна происх.:<span>*</span></td>
+					<th><input name="cargoManufacturer" type="text" class="inputtext" tabindex="21" /></th>
+				</tr>
+				<tr id="var9">
+					<td>Страна отправления:<span>*</span></td>
+					<th><input name="cargoCountryFrom" type="text" class="inputtext" tabindex="22" /></th>
+				</tr>
+				<tr id="var10">
+					<td>Вес брутто (кг):<span>*</span></td>
+					<th><input name="cargoWeightBrutto" type="text" class="inputtext" tabindex="23" /></th>
+				</tr>
+				<tr id="var11">
+					<td>Объем (м3):<span>*</span></td>
+					<th><input name="cargoWeight" type="text" class="inputtext" tabindex="24" /></th>
+				</tr>
+				<tr id="var12">
+					<td>Стоимость груза,<br />валюта:<span>*</span></td>
+					<th><input name="cargoCost" type="text" class="inputtext" tabindex="25" /></th>
+				</tr>
+				<tr>
+					<td>Примечания:</td>
+					<th><input name="cargoDescr" type="text" class="inputtext" tabindex="26" /></th>
+				</tr>
+				<tr>
+					<td>Укажите все, что считаете<br />Важным!</td>
+					<th><textarea name="advancedDescr" tabindex="27"></textarea></th>
+				</tr>
+			</table>
+
+			</div>
+
+			<div class="hr"></div>
+
+			<div class="item">
+			<table class="forms">
+				<tr>
+					<td><strong>Как вы о нас узнали?</strong></td>
+					<td>
+						<select name="test2" size="1" tabindex="28">
+							<option value="Выберите из списка" selected="selected">Выберите из списка</option>
+							<option value="апрвар">парвр</option>
+							<option value="рол">рврлроло</option>
+							<option value="ыава">кцукаыва</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td><input type="button" name="send" id="sendnow" value="" tabindex="29" onClick="javascript: checkMailForm();" /></td>
+				</tr>
+			</table>
+			</div>
+
+		</fieldset>
+
+		</form>
+
+	</div>
+
+	<div class="footer_blank"> </div>
+</div>
+<div id="footer">
+	<div class="copy">&copy; 2010 Экспрес-Сервис</div>
+
+	<address>
+		439801, г. Москва,<br />
+		ул. Степана Разина д. 24, офис 405<br />
+		<img src="images/ico-map.png" alt="" /><a href="#">Найти нас на карте</a>
+	</address>
+
+	<div class="madein">Разработано в <a href="#">Garipov Group</a></div>
+</div>
+</body>
+</html>

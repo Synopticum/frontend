@@ -1,0 +1,438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>aqplus-ru-web-07-home</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+
+
+<link rel="stylesheet" href="js/treeview/jquery.treeview.css" />
+<script src="js/treeview/jquery.cookie.js" type="text/javascript"></script>
+<script src="js/treeview/jquery.treeview.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#browser").treeview({
+			toggle: function() {
+				console.log("%s was toggled.", $(this).find(">span").text());
+			}
+		});
+
+		$("#add").click(function() {
+			var branches = $("<li><span class='folder'>New Sublist</span><ul>" +
+				"<li><span class='file'>Item1</span></li>" +
+				"<li><span class='file'>Item2</span></li></ul></li>").appendTo("#browser");
+			$("#browser").treeview({
+				add: branches
+			});
+		});
+	});
+	</script>
+</head>
+<body>
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+		<a href="#" title=""><img src="images/header-logo.png" alt="" class="logo" /></a>
+		
+		<div class="header-contacts">
+			<span class="title">Телефон в Санкт-Петербурге:</span>
+			+7 (812) <big>622-12-51</big>
+		</div>
+		
+		<div class="header-links">
+			<span class="map"><a href="#" title="">Схема проезда</a></span ><br />
+			<a href="" title="">Оптовым покупателям</a>
+		</div>
+		
+		<div class="header-user">
+			<a href="" title="" class="cabinet">Личный кабинет</a><br />
+			<a href="" title="">В корзине:</a> <big>0</big> товаров<br />
+			На сумму: <big>0</big> руб.
+		</div>
+	</div>
+	
+	<!-- top menu -->
+	<div class="mainmenu">
+		<ul>                                          
+			<li><a href="#" title="">Производство</a></li>
+			<li><a href="#" title="">Интернет-магазин</a></li>
+			<li><a href="#" title="">О компании</a>
+				<ul>
+					<li><a href="#" title="">Оптовая торговля</a></li>
+					<li><a href="#" title="">Салон «Акваландия»</a></li>
+					<li><a href="#" title="">Производство</a></li>
+					<li><a href="#" title="">Наши партнёры</a></li>
+					<li><a href="#" title="">Вакансии</a></li>
+					<li><a href="#" title="">Контакты и реквизиты</a></li>
+					<li class="last"></li>
+				</ul>
+			</li>
+			<li class="none"><a href="#" title="">Форум</a></li>
+			<li class="none"><a href="#" title="">Контакты</a></li>
+		</ul>
+		
+		<div class="search">
+			<form>
+				<input name="searchbar" id="searchbar" type="text" value="Поиск по сайту" tabindex="1" />
+				<input type="submit" name="find" id="find" value="" tabindex="2" />				
+			</form>
+		</div>
+	</div>
+
+	<!-- content -->
+	<div class="content">
+		
+		<!-- content small -->
+		<div class="content-small">
+			<div class="breadcrumbs">
+				<a href="#" title="">Главная</a> &rarr; <a href="#" title="">Интернет-магазин</a> &rarr;
+			</div>
+			
+			<h1>Корзина</h1>
+
+            <div class="cart">
+            <form>
+                <table>
+                <col width="0%" />
+                <col width="10%" />
+                <col width="30%" />
+                <col width="20%" />
+                <col width="15%" />
+                <col width="20%" />
+                <col width="5%" />
+                <col width="0%" />
+
+                    <thead>
+                    <tr class="top">
+                        <th colspan="8"></th>
+                    </tr>
+
+                    <tr>
+                        <td class="spacer"></td>
+                        <td>Фото</td>
+                        <td>Название</td>
+                        <td>Цена за шт.</td>
+                        <td>Кол-во</td>
+                        <td>Стоимость</td>
+                        <td>&nbsp;</td>
+                        <td class="spacer"></td>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td class="spacer-left"></td>
+                        <td class="view"><a href="#" title=""><img src="images/tmp/ca1.gif" width="58" height="58" alt="" /></a></td>
+                        <td class="name"><a href="#" title="">Аквариум П- 60 + крышка STD, (500х300х400) пластик, ольха + оборудование</a></td>
+                        <td class="cost"><big>2.811</big> руб</td>
+                        <td><div class="itemcount">
+                            <script type="text/javascript">
+                            function proverka(input) {
+                                var value = input.value;
+                                var rep = /[-\.;":'a-zA-Zа-яА-Я]/;
+                                if (rep.test(value)) {
+                                    value = value.replace(rep, '');
+                                    input.value = value;
+                                }
+                            }
+
+                            var itemcount;
+
+                            function myUp() {
+                                itemcount = document.getElementById("itemcount");
+                                itemcount.innerText = parseInt(itemcount.value) + 1;
+
+                            }
+
+                            function myDown() {
+                                var kol;
+                                itemcount = document.getElementById("itemcount");
+                                kol = parseInt(itemcount.value) - 1;
+                                if (kol < 0) kol = 0;
+                                itemcount.innerText = kol;
+                            }
+                            </script>
+                            <input id="itemcount" name="itemcount" type="text" onkeyup="return proverka(this);" value="1" />
+                            <span id="arrowup" onclick="myUp()"></span>
+                            <span id="arrowdown" onclick="myDown()"></span>
+                        </div></td>
+                        <td class="cost"><big>5.622</big> руб</td>
+                        <td><a href="#" title=""><img src="images/cart-remove.png" width="31" height="30" alt="" /></a></td>
+                        <td class="spacer-right"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="spacer-left"></td>
+                        <td class="view"><a href="#" title=""><img src="images/tmp/ca1.gif" width="58" height="58" alt="" /></a></td>
+                        <td class="name"><a href="#" title="">Аквариум П- 60 + крышка STD, (500х300х400) пластик, ольха + оборудование</a></td>
+                        <td class="cost"><big>2.811</big> руб</td>
+                        <td><div class="itemcount">
+                            <script type="text/javascript">
+                            function proverka(input) {
+                                var value = input.value;
+                                var rep = /[-\.;":'a-zA-Zа-яА-Я]/;
+                                if (rep.test(value)) {
+                                    value = value.replace(rep, '');
+                                    input.value = value;
+                                }
+                            }
+
+                            var itemcount;
+
+                            function myUp() {
+                                itemcount = document.getElementById("itemcount");
+                                itemcount.innerText = parseInt(itemcount.value) + 1;
+
+                            }
+
+                            function myDown() {
+                                var kol;
+                                itemcount = document.getElementById("itemcount");
+                                kol = parseInt(itemcount.value) - 1;
+                                if (kol < 0) kol = 0;
+                                itemcount.innerText = kol;
+                            }
+                            </script>
+                            <input id="itemcount" name="itemcount" type="text" onkeyup="return proverka(this);" value="1" />
+                            <span id="arrowup" onclick="myUp()"></span>
+                            <span id="arrowdown" onclick="myDown()"></span>
+                        </div></td>
+                        <td class="cost"><big>5.622</big> руб</td>
+                        <td><a href="#" title=""><img src="images/cart-remove.png" width="31" height="30" alt="" /></a></td>
+                        <td class="spacer-right"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="spacer-left"></td>
+                        <td class="view"><a href="#" title=""><img src="images/tmp/ca1.gif" width="58" height="58" alt="" /></a></td>
+                        <td class="name"><a href="#" title="">Аквариум П- 60 + крышка STD, (500х300х400) пластик, ольха + оборудование</a></td>
+                        <td class="cost"><big>2.811</big> руб</td>
+                        <td><div class="itemcount">
+                            <script type="text/javascript">
+                            function proverka(input) {
+                                var value = input.value;
+                                var rep = /[-\.;":'a-zA-Zа-яА-Я]/;
+                                if (rep.test(value)) {
+                                    value = value.replace(rep, '');
+                                    input.value = value;
+                                }
+                            }
+
+                            var itemcount;
+
+                            function myUp() {
+                                itemcount = document.getElementById("itemcount");
+                                itemcount.innerText = parseInt(itemcount.value) + 1;
+
+                            }
+
+                            function myDown() {
+                                var kol;
+                                itemcount = document.getElementById("itemcount");
+                                kol = parseInt(itemcount.value) - 1;
+                                if (kol < 0) kol = 0;
+                                itemcount.innerText = kol;
+                            }
+                            </script>
+                            <input id="itemcount" name="itemcount" type="text" onkeyup="return proverka(this);" value="1" />
+                            <span id="arrowup" onclick="myUp()"></span>
+                            <span id="arrowdown" onclick="myDown()"></span>
+                        </div></td>
+                        <td class="cost"><big>5.622</big> руб</td>
+                        <td><a href="#" title=""><img src="images/cart-remove.png" width="31" height="30" alt="" /></a></td>
+                        <td class="spacer-right"></td>
+                    </tr>
+
+                    <tr class="bottom">
+                        <td class="spacer-left"></td>
+                        <td class="view"><a href="#" title=""><img src="images/tmp/ca1.gif" width="58" height="58" alt="" /></a></td>
+                        <td class="name"><a href="#" title="">Аквариум П- 60 + крышка STD, (500х300х400) пластик, ольха + оборудование</a></td>
+                        <td class="cost"><big>2.811</big> руб</td>
+                        <td><div class="itemcount">
+                            <script type="text/javascript">
+                            function proverka(input) {
+                                var value = input.value;
+                                var rep = /[-\.;":'a-zA-Zа-яА-Я]/;
+                                if (rep.test(value)) {
+                                    value = value.replace(rep, '');
+                                    input.value = value;
+                                }
+                            }
+
+                            var itemcount;
+
+                            function myUp() {
+                                itemcount = document.getElementById("itemcount");
+                                itemcount.innerText = parseInt(itemcount.value) + 1;
+
+                            }
+
+                            function myDown() {
+                                var kol;
+                                itemcount = document.getElementById("itemcount");
+                                kol = parseInt(itemcount.value) - 1;
+                                if (kol < 0) kol = 0;
+                                itemcount.innerText = kol;
+                            }
+                            </script>
+                            <input id="itemcount" name="itemcount" type="text" onkeyup="return proverka(this);" value="1" />
+                            <span id="arrowup" onclick="myUp()"></span>
+                            <span id="arrowdown" onclick="myDown()"></span>
+                        </div></td>
+                        <td class="cost"><big>5.622</big> руб</td>
+                        <td><a href="#" title=""><img src="images/cart-remove.png" width="31" height="30" alt="" /></a></td>
+                        <td class="spacer-right"></td>
+                    </tr>
+                    </tbody>
+
+                    <tfoot>
+                    <tr>
+                        <td colspan="8"></td>
+                    </tr>
+                    </tfoot>
+                </table>
+
+                <div class="checkout">
+                    <label>Если у вас есть код купона для получения скидки, введите его здесь: <input name="couponcode" class="textbox" type="text" /></label>
+                    <span class="total"><strong>Итого:</strong> <big>5.622</big>руб</span>
+                    <input type="submit" name="checkout-now" id="checkout-now" value="Оформить заказ" />
+
+                </div>
+            </form>
+            </div>
+
+		</div>
+		
+		<!-- rightside -->
+		<div class="rightside">
+
+			<div class="banner">
+				<img src="images/tmp/tmp_1.jpg" alt="" />
+			</div>
+		</div>
+		
+		<!-- home boxes -->
+		<div class="home-boxes">
+			<h2><em>Будьте в курсе!</em> Мы всегда рады предложать Вам интересные новости и статьи</h2>
+			
+			<div class="box news">
+				<div class="title">
+					<img src="images/home-box-news.png" alt="" /> <big>Новости</big> (<a href="#" title="">все новости</a>)
+				</div>
+				
+				<p><a href="#" title="">Субаквальный гетит: основные моменты</a><br />
+				Важное наблюдение, касающееся вопроса происхождения пород, заключается в следующем: 
+				тальвег определяет исток, что в конце концов приведет к полному разрушению хребта 
+				под действием собственного веса.</p>
+			</div>
+			
+			<div class="box articles">
+				<div class="title">
+					<img src="images/home-box-news.png" alt="" /> <big>Статьи</big> (<a href="#" title="">все статьи</a>)
+				</div>
+				
+				<p><a href="#" title="">Молого-шекснинский термокарст: авгит<br /> или извержение?</a><br />
+				Процессы же, понимание которых имеет решающее значение для прогнозирования землетрясений, 
+				трещинноватость пород наклонно обогащает многолетнемерзлый лавовый поток, что, однако, не 
+				уничтожило доледниковую переуглубленную гидросеть древних долин.</p>
+			</div>
+			
+			<div class="box subscribe">
+				<div class="title">
+					<img src="images/home-box-subscribe.png" alt="" /> <big>Подписка</big> (<a href="#" title="">настройки подписки</a>)
+				</div>
+				
+				<p>Подпишитесь на рассылку нашего магазина и будьте всегда в курсе акций, свежих поступлений и специальных предложений!</p>
+				
+				<form>
+				<p>
+					<label><input type="checkbox" name="с1" /> Акции и скидки</label>
+					<label><input type="checkbox" name="с2" checked="checked" /> Новости</label><br />
+					<label><input type="checkbox" name="с3" checked="checked" /> Оптовым покупателям</label>
+				</p>
+				
+				<p>
+					<label><strong>Эл. почта:</strong> 
+					<input type="submit" name="subscribenow" id="subscribenow" value="" /></label>
+					<input name="subscribemail" id="subscribemail" type="text" value="info@aqplus.ru" />
+				</p>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+	<div class="wrapper">
+		<div class="box">
+			<ul>
+				<li><a href="#" title="">Производство</a></li>
+				<li><a href="#" title="">Серия STANDART</a></li>
+				<li><a href="#" title="">Серия LUX</a></li>
+				<li><a href="#" title="">Серия PRO</a></li>
+				<li><a href="#" title="">Аквариумы на заказ</a></li>
+			</ul>
+		</div>
+
+		<div class="box">
+			<ul>
+				<li><a href="#" title="">Интернет-магазин</a></li>
+				<li><a href="#" title="">Каталог</a></li>
+				<li><a href="#" title="">Как сделать заказ</a></li>
+				<li><a href="#" title="">Доставка</a></li>
+				<li><a href="#" title="">Оплата</a></li>
+			</ul>
+		</div>
+
+		<div class="box">
+			<ul>
+				<li><a href="#" title="">О компании</a></li>
+				<li><a href="#" title="">Оптовая торговля</a></li>
+				<li><a href="#" title="">Салон «Акваландия»</a></li>
+				<li><a href="#" title="">Производство</a></li>
+				<li><a href="#" title="">Наши партнёры</a></li>
+				<li><a href="#" title="">Вакансии</a></li>
+				<li><a href="#" title="">Контакты и реквизиты</a></li>
+			</ul>
+		</div>
+		
+		<div class="paymentsystems">
+			<h4>Способы оплаты</h4>
+			<span>в Интернет-магазине</span><br />
+			
+			<img src="images/footer-payment.jpg" alt="" />
+		</div>
+		
+		<div class="subscribe">
+			<h4>Подписаться</h4>
+			
+			<ul>
+				<li class="s1"><a href="#" title="">по E-mail</a></li>
+				<li class="s2"><a href="#" title="">по RSS</a></li>
+				<li class="s3"><a href="#" title="">в Twitter</a></li>
+				<li class="s4"><a href="#" title="">ВКонтакте</a></li>
+			</ul>
+		</div>
+
+		<!-- copyright -->
+		<div class="footer-bottom">
+			<div class="copyright">&copy; 2004–2010, ООО Аква Плюс, Все права защищены. <br />
+			<small>Перепечатка любых материалов сайта без предварительного согласия запрещена.</small> </div>
+			
+			<div class="made">
+				<a href="#" title="">Разработка сайта</a> &mdash; <img src="images/footer-made.png" alt="" /> «Дело в сайте»
+			</div>
+			
+			<div class="counters">
+				<a href="#" title=""><img src="images/tmp_1.gif" alt="" /></a>
+				<a href="#" title=""><img src="images/tmp_2.gif" alt="" /></a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

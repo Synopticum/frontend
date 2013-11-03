@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+
+<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".price .order").fancybox({
+				'titlePosition'		: 'inside',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+		});
+	</script>
+</head>
+<body>
+
+<div style="display: none;">
+    <div id="orderpopup" class="popup">
+        <form>
+            <h6>Введите свои контактные данные в форму:</h6>
+
+            <label for="t1">Ваше имя:</label> <input name="t1" id="t1" class="textbox" type="text" value="" tabindex="1" /><br />
+            <label for="t2">Телефон:</label> <input name="t2" id="t2" class="textbox" type="text" value="" tabindex="2" /><br />
+            <label for="t3">E-mail:</label> <input name="t3" id="t3" class="textbox" type="text" value="" tabindex="3" />
+
+            <input type="submit" name="ordernow" id="ordernowpopup" value="Заказать консультацию" tabindex="6" />
+
+            <img src="images/order-arrow.png" width="65" height="69" alt="" id="arrow2" />
+        </form>
+	</div>
+</div>
+
+<!-- header -->
+<div class="header">
+    <div class="wrapper">
+        <a href="#" title=""><img src="images/logo.png" width="295" height="40" alt="" class="logo" /></a>
+
+        <div class="phone">
+            <span>(495)</span> 226 81 44<br />
+            8 800 333 53 94
+        </div>
+
+        <div class="login">
+            <a href="#" title="" class="enter">Войти на сайт</a><br />
+            <a href="#" title="">Зарегистрироваться</a>
+        </div>
+    </div>
+</div>
+
+<!-- top menu -->
+<div class="topmenu">
+    <div class="wrapper">
+        <ul>
+            <li class="active"><a href="#" title="">Коучинг</a></li>
+            <li><a href="#" title="">База знаний</a></li>
+            <li><a href="#" title="">Социальная сеть</a></li>
+            <li><a href="#" title="">Форум</a></li>
+            <li><a href="#" title="">Магазин</a></li>
+        </ul>
+
+        <a href="#" title="" class="what">Что такое Бизнес-Молодость?</a>
+    </div>
+</div>
+
+<div id="wrap">
+	<!-- content -->
+	<div class="content">
+
+        <!-- menu -->
+        <div class="menu">
+            <ul>
+                <li><a href="#" title="">О проекте</a></li>
+                <li><a href="#" title="">Каталог франшиз</a></li>
+                <li><a href="#" title="">Контакты</a></li>
+            </ul>
+        </div>
+
+        <!-- intro -->
+        <div class="intro">
+            <big>Начать свой бизнес по франшизе “МореШоу” от Влады Чижевской.</big>
+
+            <div class="video">
+                <iframe width="810" height="442" src="http://www.youtube.com/embed/j_iy9FvHAUQ?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <h1>Варианты франшиз:</h1>
+
+        <!-- franchises -->
+        <div class="franchises">
+            <div class="item">
+                <div class="icon">
+                    <img src="images/f1.png" width="108" height="108" alt="" />
+                </div>
+
+                <div class="description">
+                    <h3>Франшиза “Старт”</h3>
+                    <p>Пакет идеально подходит для тех кто хочет начать свой в бизнес с минимальными вложениями.</p>
+                    <p><a href="#" title="" class="more">Подробнее...</a></p>
+                </div>
+
+                <div class="price">
+                    Цена <span class="date">до 30 декабря:</span>
+                    <span class="cost">19 000 руб.</span>
+                    <a href="#orderpopup" title="" class="order">Заказать консультацию</a>
+                </div>
+            </div>
+
+            <!-- -->
+
+            <div class="item">
+                <div class="icon">
+                    <img src="images/f2.png" width="108" height="108" alt="" />
+                </div>
+
+                <div class="description">
+                    <h3>Франшиза “Базовая”</h3>
+                    <p>Базовая франшиза “Морешоу”. Специально для тех, кто хочет запустить своё маленькое агентство детских
+                    праздников и вкратчайшие сроки заработать первые деньги.</p>
+                    <p><a href="#" title="" class="more">Подробнее...</a></p>
+                </div>
+
+                <div class="price">
+                    Цена <span class="date">до 30 декабря:</span>
+                    <span class="cost">89 000 руб.</span>
+                    <a href="#orderpopup" title="" class="order">Заказать консультацию</a>
+                </div>
+            </div>
+
+            <!-- -->
+
+            <div class="item">
+                <div class="icon">
+                    <img src="images/f3.png" width="108" height="108" alt="" />
+                </div>
+
+                <div class="description">
+                    <h3>Франшиза “Супер”</h3>
+                    <p>Супер франшиза даст все необходимые техники и технологии создания бизнеса. И даст больше возможностей
+                    для радости детей и их родителей. </p>
+                    <p><a href="#" title="" class="more">Подробнее...</a></p>
+                </div>
+
+                <div class="price">
+                    Цена <span class="date">до 30 декабря:</span>
+                    <span class="cost">229 000 руб.</span>
+                    <a href="#orderpopup" title="" class="order">Заказать консультацию</a>
+                </div>
+            </div>
+
+            <!-- -->
+
+            <div class="item">
+                <div class="icon">
+                    <img src="images/f4.png" width="108" height="108" alt="" />
+                </div>
+
+                <div class="description">
+                    <h3>Франшиза “Platinum”</h3>
+                    <p>Эта франшиза для самых серьезных! Создание бизнеса От и До. Создай настоящее агентство детских
+                    праздников! Стань эксклюзивным представителем “МореШоу” в своем городе!</p>
+                    <p><a href="#" title="" class="more">Подробнее...</a></p>
+                </div>
+
+                <div class="price">
+                    Цена <span class="date">до 30 декабря:</span>
+                    <span class="cost">590 000 руб.</span>
+                    <a href="#orderpopup" title="" class="order">Заказать консультацию</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- about us -->
+        <div class="about">
+          <h2>О компании МореШоу</h2>
+
+          <div class="short">
+            Компания МореШоу появилась в самом начале 2011 года в Москве.
+          </div>
+
+          <p>Сначала все было довольно просто. Заказы поступали с сайта, а исполняла их сама Влада. Вся прибыль уходила
+          на привлечение клиентов и шитье новых костюмов, поэтому бизнес рос как на дрожжах.<br />
+          Уже на второй месяц Влада перестала проводить праздники сама, а стала передавать работу наемным аниматорам.
+          На сегодняшний день постоянное количество аниматоров МореШоу уже перевалило за 30 человек.</p>
+
+          <p>На третий месяц работы в компании появились первые постоянные сотрудники, но далеко не всегда люди
+          сходятся во взглядах. Так Влада сменила 2-х своих помощниц. </p>
+
+          <p>Сейчас клиенты в компанию приходят не только из интернета, но и из офф-лайна. За это в  компании отвечает менеджер по продажам.<br />
+          Сейчас прибыль компании составляем 300 тысяч рублей в месяц.<br />
+          У компании большие планы. Это развитие в регионах России. Уже сегодня есть заявки на открытие представительств из
+          Санкт-Петербурга, Казани, Красноярска.</p>
+        </div>
+
+        <!-- order now -->
+        <div class="order">
+            <h2>Хотите купить франшизу МореШоу от Влады Чижеской?<br />Закажите консультацию с помощью формы ниже.</h2>
+
+            <div class="form">
+                <form>
+                    <h6>Введите свои контактные данные в форму:</h6>
+
+                    <label for="t1">Ваше имя:</label> <input name="t1" id="t1" class="textbox" type="text" value="" tabindex="1" /><br />
+                    <label for="t2">Телефон:</label> <input name="t2" id="t2" class="textbox" type="text" value="" tabindex="2" /><br />
+                    <label for="t3">E-mail:</label> <input name="t3" id="t3" class="textbox" type="text" value="" tabindex="3" /><br />
+
+                    <label for="t4" class="long">Вариант сотрудничества:</label>
+                    <select name="t5" size="1" tabindex="5">
+                        <option value="Пакет Базовый" selected="selected">Франшиза Старт</option>
+                        <option value="Пакет Базовый 2">Франшиза Базовая</option>
+                        <option value="Пакет Базовый 3">Франшиза Супер</option>
+                        <option value="Пакет Базовый 4">Франшиза Platinum</option>
+                    </select>
+
+                    <input type="submit" name="ordernow" id="ordernow" value="Заказать консультацию" tabindex="6" />
+
+                    <img src="images/order-arrow.png" width="65" height="69" alt="" id="arrow" />
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+    <div class="wrapper">
+
+    </div>
+</div>
+</body>
+</html>

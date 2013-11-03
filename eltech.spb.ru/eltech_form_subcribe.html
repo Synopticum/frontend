@@ -1,0 +1,646 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/input-focus.js"></script>
+
+<!-- jcarousellite -->
+<script type="text/javascript" src="js/jcarousellite_1.0.1.js"></script>
+
+<!-- popup's -->
+<script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<script type="text/javascript">
+    $(document).ready(function() {
+	    $("a#a-login, a#a-recovery, a#a-addinfo, a#a-signup, a#a-signupcompany").fancybox();
+	});
+</script>
+
+<!-- jquery ui -->
+<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.21.custom.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#userpanel').tabs();
+
+	$('#slider').slider({
+	    range: true,
+		values: [17, 67]
+	});
+
+	$('#dialog_link, ul#icons li').hover(
+	    function() { $(this).addClass('ui-state-hover'); },
+		function() { $(this).removeClass('ui-state-hover'); }
+	);
+});
+</script>
+</head>
+<body>
+
+<a href="" id="consult">задать вопрос консультанту online</a>
+
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+        <a href="#"><img src="images/logo.png" width="207" height="50" border="0" alt="" class="logo" /></a>
+
+        <div class="nav">
+            <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Техническая информация</a></li>
+                <li><a href="#">Работа в ЭЛТЕХ</a></li>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <strong>Корзина (0)</strong><br />
+            <a href="#login" id="a-login">Войти в личный кабинет</a>
+            <a href="#signup" id="a-signup">Зарегистрироваться</a><br />
+            <a href="#signupcompany" id="a-signupcompany">[1]</a>, <a href="#addinfo" id="a-addinfo">[2]</a>
+        </div>
+
+        <div class="contacts">
+            Телефон в <a href="javascript: void(0);" id="city"><span>Санкт-Петербурге</span></a>:
+            <big>(812) 635-50-60</big>
+            <a href="#">Контакты</a>
+
+            <div class="hbox">
+                <ul>
+                    <li><a href="javascript: void(0);">Санкт-Петербург</a></li>
+                    <li><a href="javascript: void(0);">Москва</a></li>
+                    <li><a href="javascript: void(0);">Екатеринбург</a></li>
+                    <li><a href="javascript: void(0);">Ростов-на-Дону</a></li>
+                    <li><a href="javascript: void(0);">Новосибирск</a></li>
+                    <li><a href="javascript: void(0);">Чебоксары</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="lang">
+            <a href="#" class="active">рус</a>
+            <a href="#">eng</a>
+        </div>
+
+        <!-- header control -->
+        <div class="control">
+            <div class="banner">
+                <a href="#"><img src="images/tmp/header-banner.gif" width="468" height="60" border="0" alt="" /></a>
+            </div>
+
+            <!-- news -->
+            <div class="news">
+                <div class="item">
+                    <strong>Вакансии:</strong> ЭЛТЕХ приглашает на работу менеджера по работе с персоналом.
+                </div>
+
+                <div class="arrows">
+                    <a href="#" class="left" title="Предыдущая"></a>
+                    <a href="#" class="right" title="Следующая"></a>
+                </div>
+            </div>
+
+            <!-- search -->
+            <div class="search">
+                <form>
+                    <input name="searchbar" type="text" value="Поиск" id="searchbar" tabindex="1" />
+
+                    <!-- results -->
+                    <div class="hbox">
+                        <h6>Каталог</h6>
+
+                        <ol>
+                            <li><a href="#">Преобразователь AD-CD</a></li>
+                            <li><a href="#">Компонент AD-CD</a></li>
+                            <li><a href="#">Блок AD-CD переменного значения на выходе</a></li>
+                            <li><a href="#">Преобразователь AD-CD</a></li>
+                            <li><a href="#">Компонент AD-CD</a></li>
+                        </ol>
+
+                        <h6>Новости</h6>
+
+                        <ol>
+                            <li><a href="#">Изобретен новый преобразователь AD-CD</a></li>
+                            <li><a href="#">Новинка на китайском AD-CD блок, работающий на солнечной ...</a></li>
+                            <li><a href="#">Блок AD-CD переменного напряжения представлен на ...</a></li>
+                        </ol>
+
+                        <a href="#" class="more">Все результаты</a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- subscribe -->
+            <div class="subscribe">
+                <a href="#" class="now">Подписка</a>
+                <a href="#" class="twitter"></a>
+                <a href="#" class="email"></a>
+            </div>
+
+            <!-- subscribe select -->
+            <div class="hbox subscribe-select">
+                <ul>
+                    <li><a href="#">На альманах</a></li>
+                    <li><a href="#">На новости</a></li>
+                </ul>
+            </div>
+            <script language="JavaScript" type="text/javascript">
+            /*<![CDATA[*/
+            $("#city").click(function() {
+                $(".header .contacts .hbox").toggle();
+            });
+            $(".header .contacts .hbox a").click(function() {
+                $(".header .contacts .hbox").hide();
+            });
+            $("#searchbar").click(function() {
+                $(".header .search .hbox").toggle();
+            });
+            $(".subscribe .now").click(function() {
+                $(".subscribe-select").toggle();
+            });
+            /*]]>*/
+            </script>
+        </div>
+    </div>
+
+	<!-- content -->
+	<div class="content">
+        <div class="breadcrumbs">
+            <a href="#">Техническая информация</a> <img src="images/spacer.png" width="7" height="20" border="0" alt="" />
+            <a href="#">Рассылка новостей компании Элтех</a> <img src="images/spacer.png" width="7" height="20" border="0" alt="" />
+        </div>
+
+        <!-- full size -->
+        <div class="cbox c-full">
+            <div class="orderform">
+            <h1 class="title">Рассылка новостей компании Элтех</h1>
+
+            <p>Самые интересные новости, которые публикуются на сайте, мы дублируем в рассылке компании ЭЛТЕХ. Вы можете
+            самостоятельно управлять подпиской и получать только те новости, которые Вас действительно интересуют.</p>
+
+            <p>Для того чтобы подписаться на новости, отметьте галочками интересные Вам темы в столбце «Подписаться». </p>
+
+            <ul>
+                <li>Темы раздела «Новости от производителей» предназначены для новостей о выпуске новой продукции,
+                об объявленном производителем снижении цен и т.д.</li>
+                <li>Обращаем Ваше внимание, что в темах «Новости для всех» и «Новости для жителей ...» публикуются разные новости.</li>
+                <li>В рамках темы «Новости для всех» публикуются новости от компании ЭЛТЕХ, которые одинаково интересны
+                жителям разных регионов (например, новости о подписании нового дистрибьюторского соглашения, о снижении цен и т.д.).</li>
+                <li>В «Новостях для жителей ...» публикуется информация, которая может заинтересовать лишь жителей данного
+                региона (например, проведение семинара ЭЛТЕХ в конкретном регионе). Обратите внимание: если Вы подпишитесь на
+                получение новостей по нескольким регионам, Вы можете получать несколько одинаковых сообщений, а также получать
+                сообщения, которые не относятся к Вашему региону. </li>
+            </ul>
+
+            <p>Если какие-то темы стали для Вас не актуальны, Вы можете отписаться от них, отметив их галочками в
+            столбце «Отписаться».</p>
+
+            <p>Если Вы не поставите галочку ни в столбце «Подписаться», ни в столбце «Отписаться», то состояние
+            подписки по данной теме не изменится.</p>
+
+            <p>Компания «Элтех» растет, расширяя свою линейку поставок. Это влечет за собой появление новой полезной для
+            разработчиков информации и новых тем для рассылок. Если Вы хотите быть в курсе всех новостей нашей компании, то
+            подпишитесь на рассылку «Информировать меня о появлении новых тем».</p>
+
+            <p>При появлении новой темы Вы автоматически получите первое сообщение из этой новой темы и, если захотите
+            получать эти новости дальше, то Вам необходимо подписаться на рассылку новостей по этой теме на нашем сайте.</p>
+
+            <form>
+            <div class="subscribe-header">
+                <table>
+                    <tr>
+                        <td>Укажите Ваш e-mail</td>
+                        <td><input name="x1" type="text" class="textbox" /></td>
+                        <td>Подписаться (<a href="#">Выбрать все</a>)</td>
+                        <td>Отписаться (<a href="#">Выбрать все</a>)</td>
+                        <td><input type="button" name="subscribenow" value="Отправить заявку" class="button" /></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="subscribe-body">
+                <table>
+                    <col width="52%" />
+                    <col width="18%" />
+                    <col width="30%" />
+
+                    <thead>
+                    <tr>
+                        <td colspan="3">Новые темы</td>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr class="odd">
+                        <td>Информировать меня о появлении новых тем</td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <!-- -->
+                <table>
+                    <col width="52%" />
+                    <col width="18%" />
+                    <col width="30%" />
+
+                    <thead>
+                    <tr>
+                        <td colspan="3">Новости от компании ЭЛТЕХ</td>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr class="even">
+                        <td>Новости для всех</td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                    </tr>
+                    <tr class="odd">
+                        <td>Новости для жителей Северо-Запада</td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                    </tr>
+                    <tr class="even">
+                        <td>Новости для жителей Центрального района России</td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                    </tr>
+                    <tr class="odd">
+                        <td>Новости для жителей Урала</td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                    </tr>
+                    <tr class="even">
+                        <td>Новости для жителей Южных регионов России</td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                    </tr>
+                    <tr class="odd">
+                        <td>Новости для жителей Поволжья</td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                    </tr>
+                    <tr class="even">
+                        <td>Новости для жителей Сибири и Дальнего Востока</td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                    </tr>
+                    </tbody>
+
+                    <tfoot>
+                    <tr class="odd">
+                        <td>Новости о проведении online-семинаров (вебинаров) </td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                    </tr>
+                    </tfoot>
+                </table>
+
+                <!-- -->
+                <table>
+                    <col width="52%" />
+                    <col width="18%" />
+                    <col width="30%" />
+
+                    <thead>
+                    <tr>
+                        <td colspan="3">Новости от производителей</td>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr class="even">
+                        <td>Новости от Analog Devices</td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                    </tr>
+                    <tr class="odd">
+                        <td>Новости от Renesas Electronics</td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                    </tr>
+                    <tr class="even">
+                        <td>Новости от Honeywell</td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                    </tr>
+                    <tr class="odd">
+                        <td>Новости от Ramtron</td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                    </tr>
+                    <tr class="even">
+                        <td>Новости от Micrel</td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                    </tr>
+                    <tr class="odd">
+                        <td>Новости от Fordata</td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                    </tr>
+                    <tr class="even">
+                        <td>Новости от NDK</td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                    </tr>
+                    <tr class="odd">
+                        <td>Новости от Semtech</td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                    </tr>
+                    <tr class="even">
+                        <td>Новости от Sierra Wireless</td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                    </tr>
+                    <tr class="odd">
+                        <td>Новости от IXYS</td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                    </tr>
+                    <tr class="even">
+                        <td>Новости от Exar</td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                    </tr>
+                    <tr class="odd">
+                        <td>Новости от Energy Micro</td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                    </tr>
+                    <tr class="even">
+                        <td>Новости от производителей источников питания (Power-One, Friwo,<br />Mean Well, Murata Power Solutions, Сhinfa, Peak electronics, Aimtec)</td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                    </tr>
+                    </tbody>
+
+                    <tfoot>
+                    <tr class="odd">
+                        <td>Новости от производителей встраиваемой компьютерной техники<br />(RadiSys, Avalue)</td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                        <td><input type="checkbox" name="" tabindex="" /></td>
+                    </tr>
+                    </tfoot>
+                </table>
+
+                <input type="submit" name="sendnow" value="Отправить заявку" tabindex="" class="button" />
+            </div>
+            </form>
+            </div>
+
+
+        </div>
+
+    </div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+    <div class="bottommenu">
+        <ul>
+            <li>
+                <ul>
+                    <li><span class="title">О компании</span></li>
+                    <li><a href="#">Элтех сегодня</a></li>
+                    <li><a href="#">Сертификаты</a></li>
+                    <li><a href="#">Достижения</a></li>
+                    <li><a href="#">Обратная связь</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <ul>
+                    <li><span class="title">Новости</span></li>
+                    <li><a href="#">Все новости</a></li>
+                    <li><a href="#">Новости Элтех</a></li>
+                    <li><a href="#">Рассылка новостей</a></li>
+                    <li><a href="#">RSS</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <ul>
+                    <li><span class="title">Техническая информация</span></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Презентации</a></li>
+                    <li><a href="#">Каталоги</a></li>
+                    <li><a href="#">Примеры применений</a></li>
+                    <li><a href="#">Программное обеспечение</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <ul>
+                    <li><span class="title">Работа в ЭЛТЕХ</span></li>
+                    <li><a href="#">Менеджер по продажам</a></li>
+                    <li><a href="#">Инженер</a></li>
+                    <li><a href="#">Коммерческий директор</a></li>
+                </ul>   
+            </li>
+        </ul>
+    </div>
+
+    <div class="copyright">
+        2004 — 2012, ООО ЭЛТЕХ<br />
+        Все права защищены
+
+        <div class="counters">
+            <a href="#"><img src="images/tmp/c1.gif" width="88" height="31" border="0" alt="" /></a><br />
+            <a href="#"><img src="images/tmp/c2.gif" width="88" height="31" border="0" alt="" /></a><br />
+            <a href="#"><img src="images/tmp/c3.gif" width="88" height="31" border="0" alt="" /></a>
+        </div>
+    </div>
+</div>
+
+<!-- popup's -->
+<div class="popups">
+
+<!-- login -->
+<div class="popup" id="login">
+    <h4>Вход в личный кабинет</h4>
+
+    <form>
+        <label>E-mail<br />
+        <input name="t1" type="text" tabindex="1" class="textbox" />
+        </label>
+
+        <label>Пароль<br />
+        <input name="t2" type="text" tabindex="2" class="textbox" />
+        </label>
+
+        <label><input type="checkbox" name="t3" tabindex="3" /> Запомнить меня</label>
+        <a href="#passrecovery" class="recovery" id="a-recovery">Восстановить пароль</a>
+
+        <input type="button" name="t4" value="Войти на сайт" tabindex="4" class="button" />
+    </form>
+</div>
+
+<!-- password recovery -->
+<div class="popup" id="passrecovery">
+    <h4>Восстановление пароля</h4>
+
+    <form>
+        <label>E-mail<br />
+        <input name="t5" type="text" tabindex="1" class="textbox" />
+        </label>
+
+        <input type="button" name="t7" value="Восстановить пароль" tabindex="3" class="button" />
+    </form>
+</div>
+
+<!-- registration -->
+<div class="popup" id="signup">
+    <h4>Регистрация</h4>
+
+    <form>
+        <label>Фамилия<br />
+        <input name="t8" type="text" tabindex="1" class="textbox" />
+        </label>
+
+        <label>Имя<br />
+        <input name="t9" type="text" tabindex="2" class="textbox" />
+        </label>
+
+        <label>Отчество<br />
+        <input name="t10" type="text" tabindex="3" class="textbox" />
+        </label>
+
+        <label>E-mail<br />
+        <input name="t11" type="text" tabindex="4" class="textbox" />
+        </label>
+
+        <label>Пароль<br />
+        <input name="t12" type="text" tabindex="5" class="textbox" />
+        </label>
+
+        <label>Телефон<br />
+        <input name="t13" type="text" tabindex="6" class="textbox" />
+        </label>
+
+        <label><input type="checkbox" name="t14" tabindex="7" /> Юридическое лицо</label>
+        <label><input type="checkbox" name="t15" tabindex="8" /> <span>Резидент РФ</span></label>
+        <label><input type="checkbox" name="t16" tabindex="9" /> <span>Принимаю <a href="#">условия пользовательского <br />
+        соглашения</a></span></label>
+
+        <input type="button" name="t17" value="Зарегистрироваться" tabindex="10" class="button" />
+    </form>
+</div>
+
+<!-- additional information  -->
+<div class="popup" id="addinfo">
+    <h4>Пожалуйста, занесите<br /> недостающую информацию</h4>
+
+    <form>
+        <label>Отчество<br />
+        <input name="t18" type="text" tabindex="1" class="textbox" />
+        </label>
+
+        <label>Телефон<br />
+        <input name="t19" type="text" tabindex="1" class="textbox" />
+        </label>
+
+        <input type="button" name="t20" value="Сохранить" tabindex="3" class="button" />
+    </form>
+</div>
+
+<!-- additional information  -->
+<div class="popup" id="signupcompany">
+    <h4>Регистрация</h4>
+
+    <form>
+        <div class="column1">
+          <label>Фамилия<br />
+          <input name="t21" type="text" tabindex="1" class="textbox" />
+          </label>
+
+          <label>Имя<br />
+          <input name="t22" type="text" tabindex="2" class="textbox" />
+          </label>
+
+          <label>Отчество<br />
+          <input name="t23" type="text" tabindex="3" class="textbox" />
+          </label>
+
+          <label>E-mail<br />
+          <input name="t24" type="text" tabindex="4" class="textbox" />
+          </label>
+
+          <label>Пароль<br />
+          <input name="t25" type="text" tabindex="5" class="textbox" />
+          </label>
+
+          <label>Телефон<br />
+          <input name="t26" type="text" tabindex="6" class="textbox" />
+          </label>
+
+          <label><input type="checkbox" name="t27" tabindex="7" /> Юридическое лицо</label>
+          <label><input type="checkbox" name="t28" tabindex="8" /> <span>Резидент РФ</span></label>
+          <label><input type="checkbox" name="t29" tabindex="9" /> <span>Принимаю <a href="#">условия пользовательского <br />
+          соглашения</a></span></label>
+
+          <input type="button" name="t30" value="Зарегистрироваться" tabindex="20" class="button" />
+        </div>
+
+        <div class="column2">
+          <label>Название организации<br />
+          <input name="t31" type="text" tabindex="10" class="textbox" />
+          </label>
+
+          <label>Форма собственности<br />
+          <select name="t32" size="1" tabindex="11">
+            <option value="1" selected="selected">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          </label>
+
+          <label>Индекс<br />
+          <input name="t33" type="text" tabindex="12" class="textbox" />
+          </label>
+
+          <label>Юридический адрес<br />
+          <input name="t34" type="text" tabindex="13" class="textbox" />
+          </label>
+
+          <label>Расчетный счет<br />
+          <input name="t35" type="text" tabindex="14" class="textbox" />
+          </label>
+        </div>
+
+        <div class="column3">
+          <label>Наименование банка<br />
+          <input name="t36" type="text" tabindex="15" class="textbox" />
+          </label>
+
+          <label>Корр. счет<br />
+          <input name="t37" type="text" tabindex="16" class="textbox" />
+          </label>
+
+          <label>БИК<br />
+          <input name="t38" type="text" tabindex="17" class="textbox" />
+          </label>
+
+          <label>ИНН<br />
+          <input name="t39" type="text" tabindex="18" class="textbox" />
+          </label>
+
+          <label>КПП<br />
+          <input name="t40" type="text" tabindex="19" value="КПП" class="textbox error" />
+          <span class="error-message">Только цифры</span>
+          </label>
+        </div>
+    </form>
+</div>
+</div>
+</body>
+</html>

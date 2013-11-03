@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+
+<script type="text/javascript" src="js/easySlider1.7.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+	    $("#gallery").easySlider({
+		    auto: false,
+			continuous: true,
+			prevId: 		'prevSlide',
+			nextId: 		'nextSlide'
+		});
+	});
+</script>
+
+<script type="text/javascript" src="js/jquery.jcarousel.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="js/jquery.jcarousel.css" />
+<link rel="stylesheet" type="text/css" href="js/skins.css" />
+<script type="text/javascript">
+function mycarousel_initCallback(carousel)
+{
+    // Disable autoscrolling if the user clicks the prev or next button.
+    carousel.buttonNext.bind('click', function() {
+        carousel.startAuto(0);
+    });
+
+    carousel.buttonPrev.bind('click', function() {
+        carousel.startAuto(0);
+    });
+
+    // Pause autoscrolling if the user moves with the cursor over the clip.
+    carousel.clip.hover(function() {
+        carousel.stopAuto();
+    }, function() {
+        carousel.startAuto();
+    });
+};
+
+jQuery(document).ready(function() {
+    jQuery('#mycarousel').jcarousel({
+        auto: 3,
+        wrap: 'last',
+		scroll: 1,
+		initCallback: mycarousel_initCallback
+    });
+});
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body>
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+        <div class="login">
+            <a href="#"><img src="images/translation.png" width="180" height="37" alt="" /></a><br />
+            <a href="#">Войти</a>  <span>|</span>  <a href="#">Регистрация</a>
+        </div>
+
+        <!-- top menu -->
+        <div class="topmenu">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О церкви</a></li>
+                <li><a href="#">Мы верим</a></li>
+                <li><a href="#">Служения</a></li>
+                <li><a href="#">События</a>
+                    <ul>
+                        <li><a href="#">Скоро</a></li>
+                        <li><a href="#">Недавно</a></li>
+                        <li><a href="#">Календарь</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Фото</a></li>
+                <li><a href="#">Ресурсы</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+
+            <!-- search -->
+            <div class="search">
+            <form name="">
+                <input name="s1" type="text" tabindex="1" class="textbox" />
+                <input type="submit" name="s2" value="" tabindex="2" class="find" />
+            </form>
+            </div>
+        </div>
+    </div>
+
+	<!-- content -->
+	<div class="content">
+
+        <!-- text -->
+        <div class="text">
+            <div class="title">
+                <h1>История церкви в Мытищах</h1>
+            </div>
+
+            <div class="photo">
+                <div class="wrapper">
+                    <img src="images/tmp_1.jpg" width="281" height="179" alt="" />
+                </div>
+
+                <div class="title">
+                    Здание Церкви ЕХБ г. Мытищи с 1988 г.
+                </div>
+            </div>
+
+            <p>Мытищинская церковь евангельских христиан-баптистов образовалась в 1882 году. Ее появление стало результатом
+            духовных поисков наиболее активной части христиан, изучающих Священное Писание, и их стремления вернуться к
+            принципам евангельской веры и церковного устройства времен апостолов Иисуса Христа.</p>
+
+            <p>Необходимыми условиями членства в Церкви являются осознанная вера и водное крещение: «Кто будет веровать и
+            креститься, спасен будет; а кто не будет веровать, осужден будет» (Евангелие от Марка, гл. 16, ст.16).</p>
+
+            <p>Единственным основанием вероучения и жизни баптисты считают Библию. Следствие этого – отсутствие деления
+            верующих на духовенство и мирян, всеобщее равенство пред Богом, а также независимость поместных церквей в
+            духовных и практических вопросах.</p>
+
+            <p>Баптистские общины требовательны к соблюдению верующими правил христианской морали и нравственности. Пьянство,
+            курение, наркомания, сквернословие и т.п. являются несовместимыми с членством в церкви Христовой. Вера
+            должна подтверждаться делами.</p>
+
+            <p>Пост и молитва считаются важными составляющими духовной жизни христианина. Все праздники, связанные с именем
+            Иисуса Христа, отмечаются в соответствии с Российскими христианскими традициями.<br />
+            С момента появления до наших дней мытищинские баптисты являются активной частью Всероссийского евангельского
+            движения и мирового христианского сообщества.</p>
+
+            <!-- gallery -->
+            <div class="gallery">
+                <!--<div id="gallery">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/tmp_2.jpg" width="159" height="102" alt="" /></a>
+                            <a href="#"><img src="images/tmp_2.jpg" width="159" height="102" alt="" /></a>
+                            <a href="#"><img src="images/tmp_2.jpg" width="159" height="102" alt="" /></a>
+                            <a href="#"><img src="images/tmp_2.jpg" width="159" height="102" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/tmp_2.jpg" width="159" height="102" alt="" /></a>
+                            <a href="#"><img src="images/tmp_2.jpg" width="159" height="102" alt="" /></a>
+                            <a href="#"><img src="images/tmp_2.jpg" width="159" height="102" alt="" /></a>
+                            <a href="#"><img src="images/tmp_2.jpg" width="159" height="102" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/tmp_2.jpg" width="159" height="102" alt="" /></a>
+                            <a href="#"><img src="images/tmp_2.jpg" width="159" height="102" alt="" /></a>
+                            <a href="#"><img src="images/tmp_2.jpg" width="159" height="102" alt="" /></a>
+                            <a href="#"><img src="images/tmp_2.jpg" width="159" height="102" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>-->
+                <ul id="mycarousel" class="jcarousel-skin-tango">
+    <li><a href="#" target="_blank"><img src="images/tmp_2.jpg" width="159" height="102" alt="" /></a></li>
+    <li><a href="#" target="_blank"><img src="images/tmp_2.jpg" width="159" height="102" alt="" /></a></li>
+    <li><a href="#" target="_blank"><img src="images/tmp_2.jpg" width="159" height="102" alt="" /></a></li>
+    <li><a href="#" target="_blank"><img src="images/tmp_2.jpg" width="159" height="102" alt="" /></a></li>
+    <li><a href="#" target="_blank"><img src="images/tmp_2.jpg" width="159" height="102" alt="" /></a></li>
+    <li><a href="#" target="_blank"><img src="images/tmp_2.jpg" width="159" height="102" alt="" /></a></li>
+    <li><a href="#" target="_blank"><img src="images/tmp_2.jpg" width="159" height="102" alt="" /></a></li>
+    <li><a href="#" target="_blank"><img src="images/tmp_2.jpg" width="159" height="102" alt="" /></a></li>
+    <li><a href="#" target="_blank"><img src="images/tmp_2.jpg" width="159" height="102" alt="" /></a></li>
+
+  </ul>
+            </div>
+
+            <!-- -->
+            <div class="cleaner"></div>
+
+            <div class="social">
+                <div class="links">
+                    <a href="#"><img src="images/vk.png" width="41" height="41" alt="" /> </a>
+                    <a href="#"><img src="images/facebook.png" width="41" height="41" alt="" /> </a>
+                    <a href="#"><img src="images/twitter.png" width="41" height="41" alt="" /> </a>
+                </div>
+
+                Присоединяйтесь к нам<br />в сообществах<br />социальных сетей:
+            </div>
+
+            <div class="subscribe">
+                <div class="subscribe-form">
+                <form>
+                    <input name="s1" type="text" tabindex="3" class="textbox" value="Ваш E-mail" />
+                    <input type="submit" name="s2" value="" tabindex="4" class="subscribe-now" />
+                </form>
+                </div>
+
+                Подпишитесь<br />на новости<br />и материалы сайта:
+            </div>
+            </div>
+
+        <!-- aside -->
+        <div class="aside">
+            <!-- newsletter -->
+            <div class="newsletter">
+                <h3>Новости церкви</h3>
+                <a href="#" class="archive">Архив</a>
+
+                <div class="item first">
+                    <h4>12 Июля 2012<br />Крещение. Праздник Церкви.</h4>
+
+                    <p>23 июля  в 10:00 состоится водное крещение новообращенных христиан московских церквей Евангельских
+                    христиан-баптистов. Крещение будет совершаться на открытом водоеме, в Строгинской пойме. </p>
+
+                    <a href="#" class="more">читать далее</a>
+                </div>
+
+                <div class="item">
+                    <h4>12 Июля 2012<br />Крещение. Праздник Церкви.</h4>
+
+                    <p>23 июля  в 10:00 состоится водное крещение новообращенных христиан московских церквей Евангельских
+                    христиан-баптистов. Крещение будет совершаться на открытом водоеме, в Строгинской пойме. </p>
+
+                    <a href="#" class="more">читать далее</a>
+                </div>
+
+                <div class="item">
+                    <h4>12 Июля 2012<br />Крещение. Праздник Церкви.</h4>
+
+                    <p>23 июля  в 10:00 состоится водное крещение новообращенных христиан московских церквей Евангельских
+                    христиан-баптистов. Крещение будет совершаться на открытом водоеме, в Строгинской пойме. </p>
+
+                    <a href="#" class="more">читать далее</a>
+                </div>
+            </div>
+
+            <div class="question">
+                <a href="#"><img src="images/question.png" width="285" height="141" alt="" /></a>
+            </div>
+
+        </div>
+
+    </div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+    <div class="wrapper">
+        <p>Мытищинская церковь евангельских христиан-баптистов &copy; 2012<br />
+        При перепечатке материалов, ссылка на сайт обязательна.</p>
+    </div>
+</div>
+</body>
+</html>

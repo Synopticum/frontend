@@ -1,0 +1,350 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border: 0 none;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img { border:0 none; }
+table { border-collapse: collapse; border-spacing: 0; }
+ol, ul { list-style-image: none; list-style-position: outside; list-style-type: none; }
+q:before, q:after, blockquote:before, blockquote:after { content:""; }
+
+/* css begin */
+html, body { height:100%; }
+body {
+	font-family: Times New Roman, serif;
+	font-size: 14px;
+	color: #000;
+	background: #fff;
+	width: 100%;
+	min-width: 1000px;
+}
+
+/* content */
+#wrap {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+/* header */
+.header { }
+    .header-top-navigation { position: relative; top: -10px; padding: 10px 15px 0 15px; font-family: Georgia, serif; background: #faf1db; -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+        .header-top-navigation .phone { display: inline-block; padding: 5px 0 11px 32px; color: #7d5101; font-size: 16px; font-weight: bold; background: url(../images/top-nav-icons.png) no-repeat 0 -8px; }
+            .header-top-navigation .phone small { font-size: 13px; font-weight: normal; }
+
+        .header-top-navigation .links { float: right; }
+            .header-top-navigation .links a { display: inline-block; padding: 6px 0 10px 0; background: url(../images/top-nav-icons.png) no-repeat; color: #000; }
+                .header-top-navigation a.tn1 { padding-left: 35px; background-position: 0 -60px; }
+                .header-top-navigation a.tn2 { padding-left: 47px; margin-left: 61px; background-position: 0 -110px; }
+                .header-top-navigation a.tn3 { padding-left: 32px; margin-left: 77px; background-position: 0 -155px; }
+                .header-top-navigation a.tn4 { padding-left: 33px; margin-left: 73px; background-position: 0 -210px; }
+
+    .header-user-navigation { }
+        .header-user-navigation .logo { float: left; margin-bottom: 15px; }
+
+        .header-user-navigation .slogan { float: left; width: 220px; margin: 28px 0 0 40px; color: #4a4a4a; }
+
+        .header-user-navigation .nav { float: right; margin: -3px 0 0 0; }
+            .header-user-navigation .nav .links { text-align: right; margin-right: 10px; font-family: Georgia, serif; }
+                .header-user-navigation .nav .links a { display: inline-block; padding: 5px 0 5px 20px; margin-left: 15px; color: #9b742a; background: url(../images/user-nav-icons.png) no-repeat; }
+                .header-user-navigation .nav .links .cabinet { background-position: 0 -2px; }
+                .header-user-navigation .nav .links .wishes { background-position: 0 -34px; }
+                .header-user-navigation .nav .links .logout { background-position: 0 -63px; }
+
+            .header-user-navigation .nav .phone { float: left; margin: 15px 0 0 0; font-family: Georgia, serif; font-size: 18px; }
+                .header-user-navigation .nav .number { display: block; margin: 2px 0; width: 164px; height: 25px; text-indent: -9999px; overflow: hidden; background: url(../images/user-nav-phone.png) no-repeat; }
+
+            .header-user-navigation .nav .cart { float: left; overflow: hidden; padding: 8px 14px 8px 55px; margin: 10px 0 0 35px; font-family: Georgia, serif; font-size: 14px; background: url(../images/header-cart.png) no-repeat 9px 10px; border: 1px solid #c0c0c0; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 0 10px 1px #ddd; -webkit-box-shadow: 0 0 10px 1px #ddd; box-shadow: 0 0 10px 1px #ddd; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+                .header-user-navigation .nav .big { font-size: 17px; color: #000; }
+                .header-user-navigation .nav .count { float: left; margin: 4px 0 0 0; }
+                .header-user-navigation .nav .cost { float: right; font-size: 20px; font-family: Times New Roman, serif; font-weight: bold; }
+
+    .header-top-menu { clear: both; padding: 15px 0 0 0; }
+        .header-top-menu ul { display: block; float: left; width: 867px; height: 52px; background: url(../images/top-menu-bg.png) no-repeat; }
+            .header-top-menu li { float: left; padding: 16px 34px 0 34px; background: url(../images/top-menu-bullet.gif) no-repeat 0 18px; }
+            .header-top-menu li:first-child { background: none; }
+            .header-top-menu li a { font-family: Georgia, serif; font-size: 16px; color: #7d5101; font-weight: bold; text-decoration: none; }
+            .header-top-menu li a:hover { color: #000; }
+
+        .header-top-menu .social { float: right; margin: 10px 0 0 0; }
+
+    .header-custom-menu { clear: both; padding: 3px 0 45px 5px; }
+        .header-custom-menu ul { float: left; }
+            .header-custom-menu li { float: left; }
+            .header-custom-menu li a { display: inline-block; padding: 8px 50px; margin-right: 8px; font-family: Georgia, serif; font-size: 16px; color: #7d5101; font-weight: bold; text-decoration: none; border: 1px solid #d8af5d; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 0 5px 1px #ddd; -webkit-box-shadow: 0 0 5px 1px #ddd; box-shadow: 0 0 5px 1px #ddd; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+            .header-custom-menu li a:hover { color: #000; }
+
+        .header-custom-menu .search { float: right; display: inline-block; padding: 3px 6px 3px 15px; margin-left: 8px; font-family: Georgia, serif; font-size: 16px; text-decoration: none; border: 1px solid #d8af5d; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 0 5px 1px #ddd; -webkit-box-shadow: 0 0 5px 1px #ddd; box-shadow: 0 0 5px 1px #ddd; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+            .header-custom-menu .search label { float: left; margin-top: 4px;}
+            .header-custom-menu .search #searchbar { float: left; display: block; border: 0; padding: 0 13px; margin: 0 6px 0 12px; width: 353px; height: 28px; font-family: Georgia, serif; font-style: italic; font-size: 13px; color: #976f26; background: url(../images/search-bg.png) no-repeat; }
+            .header-custom-menu .search #find { float: left; cursor: pointer; display: block; width: 28px; height: 28px; border: 0; background: url(../images/search-bg.png) no-repeat 100% 0; }
+
+/* header slider */
+.header-slider { clear: both; margin: 15px 0 0 5px; overflow: hidden; position: relative; border: 1px solid #c0c0c0; -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+
+#header-slider { padding: 0 25px; }
+
+#header-slider li { width: 968px; height:45px; overflow: hidden; }
+
+#prevBtn, #nextBtn {
+    display:block;
+	width:30px;
+	height:77px;
+	position:absolute;
+	left:10px;
+	top:1px;
+	z-index:1000;
+}
+#nextBtn { left:971px; }
+
+#prevBtn a, #nextBtn a {
+    display:block;
+	position:relative;
+	width:11px;
+	height:43px;
+    text-indent: -9999px;
+    overflow: hidden;
+	background:url(../images/top-slider-arrows.png) no-repeat 0 0;
+}
+#nextBtn a { background:url(../images/top-slider-arrows.png) no-repeat 100% 0; }
+
+#header-slider li a { margin-right: 3px; }
+
+/* numeric slider */
+.numeric-slider { float: left; width: 550px; margin: 0px 0 45px 5px; overflow: hidden; position: relative; border: 1px solid #c0c0c0; -webkit-box-shadow: 0 0 5px 1px #ddd; box-shadow: 0 0 5px 1px #ddd; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+
+#numeric-slider { padding: 0px; }
+
+#numeric-slider li { width: 549px; height:348px; overflow: hidden; }
+
+#controls { position: absolute; right: 23px; bottom: 12px; }
+    #controls li { float: left; }
+    #controls li a { display: inline-block; margin-left: 3px; font-family: Tahoma, sans-serif; font-size: 11px; color: #000; text-decoration: none; border: 1px solid #d8af5d; padding: 0 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; -moz-box-shadow: 0 0 10px 1px #ddd; -webkit-box-shadow: 0 0 10px 1px #ddd; box-shadow: 0 0 10px 1px #ddd; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc);   }
+    #controls .current a { background: url(../images/controls-active.gif) repeat-y 50% 0 #f1e1b7 !important; }
+
+/* product slider */
+.product-slider { clear: both; margin: 15px 0 0 5px; overflow: hidden; position: relative; }
+
+#product-slider { padding: 0 20px; }
+
+#product-slider li { width: 968px; height:250px; overflow: hidden; }
+
+#productprev, #productnext {
+    display:block;
+	width:30px;
+	height:77px;
+	position:absolute;
+	left:0px;
+	top:30px;
+	z-index:1000;
+}
+#productnext { left:760px; }
+
+#productprev a, #productnext a {
+    display:block;
+	position:relative;
+	width:23px;
+	height:96px;
+    text-indent: -9999px;
+    overflow: hidden;
+	background:url(../images/slider-arrows-x.png) no-repeat 0 0;
+}
+#productnext a { background:url(../images/slider-arrows-x.png) no-repeat 100% 0; }
+
+#product-slider .item { position: relative; float: left; width: 105px; font-family: Georgia, serif; }
+    #product-slider .name { display: block; color: #171516; font-size: 16px; text-decoration: none; }
+    #product-slider .old-cost { display: block; padding-left: 5px; margin: 5px 0 3px 0; font-family: Times New Roman, serif; font-size: 17px; color: #e5ad0d; font-weight: bold; text-decoration: line-through; }
+    #product-slider .new-cost { display: block; width: 79px; height: 24px; padding: 8px 0 0 0; margin: 0 0 0 -5px; overflow: hidden; text-align: center; font-family: Times New Roman, serif; font-size: 15px; color: #613f02; background: url(../images/slider-new-cost.png) no-repeat; }
+
+    #product-slider .item .new, #product-slider .item .sale { position: absolute; left: 0; top: 109px; display: block; width: 85px; height: 20px; color: #fff; font-family: Tahoma, sans-serif; font-size: 11px; text-align: center; overflow: hidden; white-space: nowrap; background: url(../images/slider-markers.png) no-repeat; }
+    #product-slider .item .sale { background-position: 0 -20px; }
+
+/* breadcrumbs */
+.breadcrumbs { padding: 5px 0 15px 5px; font-family: Georgia, serif; }
+    .breadcrumbs a { color: #000; }
+    .breadcrumbs img { margin: 0 4px; }
+
+/* leftside */
+.leftside { clear: left; float: left; width: 184px; margin: 0 0 30px 5px; padding: 0 1px; border: 1px solid #c0c0c0; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 0 10px 1px #ddd; -webkit-box-shadow: 0 0 10px 1px #ddd; box-shadow: 0 0 10px 1px #ddd; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+    .leftside ul { }
+        .leftside li { margin: 1px 0; }
+        .leftside li a { display: block; padding: 5px 10px; font-family: Georgia, serif; font-size: 14px; text-decoration: none; color: #7d5000; background: url(../images/leftmenu-li.gif) repeat-y; border: 1px solid #d8af5d; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+
+        .leftside li ul { margin: 7px 0 10px 12px; }
+            .leftside li li {}
+            .leftside li li a { display: inline; background: none; border: 0; padding-left: 12px; color: #000; background: url(../images/leftmenu-bullet.gif) no-repeat 0 10px; }
+            .leftside li li a:hover, .leftside li li.active a { font-weight: bold; color: #7d5101; }
+
+/* content */
+.content { float: left; width: 795px; margin: 0 0 20px 10px; }
+
+/* text */
+.text { padding: 0 0 0 18px; color: #292929; font-size: 16px; }
+    .text h1 { font-family: Georgia, serif; font-size: 20px; font-weight: bold; }
+    .text p { margin: 20px 0 0 0; line-height: 110%; }
+
+    .text img.alignright { float: right; margin: -20px 0 0 30px; border: 1px solid #c0c0c0; -moz-box-shadow: 0 0 10px 1px #ddd; -webkit-box-shadow: 0 0 10px 1px #ddd; box-shadow: 0 0 10px 1px #ddd; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+
+/* brands */
+.brands { color: #292929; padding: 0 5px; }
+
+    .brands h1 { font-family: Georgia, serif; font-size: 20px; font-weight: bold; }
+    .brands p { margin: 15px 0; font-size: 16px; }
+    .not-found p { width: 495px; }
+
+    .brands .search { display: inline-block; padding: 3px 6px 3px 15px; margin: 10px 0; font-family: Georgia, serif; font-size: 16px; text-decoration: none; border: 1px solid #d8af5d; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 0 5px 1px #ddd; -webkit-box-shadow: 0 0 5px 1px #ddd; box-shadow: 0 0 5px 1px #ddd; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+        .brands .search label { float: left; margin-top: 4px;}
+        .brands .search #searchbar { float: left; display: block; border: 0; padding: 0 13px; margin: 0 6px 0 12px; width: 353px; height: 28px; font-family: Georgia, serif; font-style: italic; font-size: 13px; color: #976f26; background: url(../images/search-bg.png) no-repeat; }
+        .brands .search #find { float: left; cursor: pointer; display: block; width: 28px; height: 28px; border: 0; background: url(../images/search-bg.png) no-repeat 100% 0; }
+
+    .brands .sort { margin: 15px 0; overflow: hidden; }
+        .brands .sort li { float: left; }
+        .brands .sort li a { display: inline-block; padding: 5px 19px 7px 19px; font-size: 15px; font-family: Georgia, serif; color: #7d5101; border: 1px solid #fff; }
+        .brands .sort li.active a { text-decoration: none; border: 1px solid #d8af5d; background: url(../images/brands-sort-a.gif) repeat-y 50% 0 #e7cf9d; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 0 10px 1px #ddd; -webkit-box-shadow: 0 0 10px 1px #ddd; box-shadow: 0 0 10px 1px #ddd; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+
+    .brands .categories { padding: 5px 0 0 0; }
+        .brands .col { float: left; margin: 0 20px 0 0; }
+        .brands .alphabet .col { width: 147px; }
+        .brands .last { margin-right: 0; }
+
+            .brands .col li { }
+            .brands .col li a { display: inline-block; padding: 2px 16px 4px 16px; font-size: 16px; font-family: Georgia, serif; color: #7d5101; text-decoration: none; border: 1px solid #d8af5d; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 0 10px 1px #ddd; -webkit-box-shadow: 0 0 10px 1px #ddd; box-shadow: 0 0 10px 1px #ddd; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+            .brands .alphabet li a { font-family: Times New Roman, serif; font-weight: bold; font-size: 18px; padding: 2px 30px 4px 30px; }
+
+            .brands .col li ul { padding: 15px 0; }
+            .brands .col li li { margin: 1px 0; padding: 0 0 0 16px; }
+            .brands .col li li a { display: inline; padding: 0; font-weight: normal; border: 0; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; color: #292929; font-size: 14px; text-decoration: none; }
+            .brands .col li li a:hover { text-decoration: underline; }
+
+    .brands .fast-search { margin-top: 5px !important }
+
+/* fast search */
+.fast-search { float: right; width: 185px; padding: 15px 15px 4px 15px; margin-bottom: 45px; background: url(../images/fastsearch-bg.gif) repeat-y #eedcb1; border: 1px solid #d8af5d; -webkit-box-shadow: 0 0 5px 1px #ddd; box-shadow: 0 0 5px 1px #ddd; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+    .fast-search h2 { font-size: 24px; font-style: italic; }
+    .fast-search p { font-size: 12px; color: #666; margin: 10px 0 12px 0; }
+
+    .fast-search label { display: block; margin-bottom: 12px; font-size: 14px; font-style: italic; }
+    .fast-search select { width: 185px; margin: 4px 0 0 0; }
+    #fast-search-submit { display: block; width: 185px; height: 34px; border: 0; cursor: pointer; background: url(../images/fastsearch-submit.png) no-repeat; }
+
+
+/* banner's */
+.banners { clear: both; padding: 40px 0; overflow: hidden; }
+    .banners .col-1 { float: left; }
+    .banners .col-2 { float: right; }
+    .banners img { border: 1px solid #a3a3a3; }
+
+/* subscribe */
+.subscribe { clear: both; padding: 15px; border: 1px solid #c0c0c0; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 0 7px 2px #ddd; -webkit-box-shadow: 0 0 7px 2px #ddd; box-shadow: 0 0 7px 2px #ddd; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+    .subscribe .title { font-family: Georgia, serif; font-size: 18px; font-style: italic; }
+    .subscribe .join { color: #000; margin: 0 26px 0 5px; font-family: Georgia, serif; font-size: 16px; font-style: italic; text-decoration: none; }
+        .subscribe .join img { margin: 0 5px -9px 0; }
+
+    .subscribe-form { float: right; overflow: hidden; }
+        .subscribe-form label { float: left; margin: 6px 10px 0 0; font-family: Georgia, serif; font-size: 14px; font-style: italic; }
+        .subscribe-form #subscribebar { float: left; display: block; border: 0; padding: 0 6px; margin: -4px 0 0 0; width: 134px; height: 35px; font-family: Georgia, serif; font-size: 13px; color: #9d9c9c; background: url(../images/subscribe-bg.png) no-repeat; }
+        .subscribe-form #subscribe { float: left; cursor: pointer; display: block; width: 35px; margin: -4px 0 0 5px; height: 35px; border: 0; background: url(../images/subscribe-bg.png) no-repeat 100% 0; }
+
+/* information */
+.information { width: 1016px; margin: 25px 0 25px -8px; background: url(../images/information-bg.jpg) repeat-y; }
+    .information .top { height: 28px; background: url(../images/information-tl.jpg) no-repeat; }
+    .information .bottom { height: 28px; background: url(../images/information-tl.jpg) no-repeat 0 100%; }
+
+    .information .wrapper { padding: 0 65px; color: #484848; background: url(../images/information-wrapper-bg.png) no-repeat 50% 50%; }
+        .information .wrapper h2, .information .wrapper h3, .information .wrapper h4 { font-weight: bold; margin-top: 10px;  }
+        .information .wrapper h2 { font-size: 24px; }
+        .information .wrapper h3 { font-size: 21px; }
+        .information .wrapper h4 { font-size: 18px; }
+
+        .information .wrapper p { margin: 10px 0 0 0; font-size: 16px; }
+
+/* inner forms */
+.form-inner { overflow: hidden; margin: 20px 0; }
+    .form-inner label { display: block; overflow: hidden; clear: both; margin-bottom: 12px; }
+        .form-inner label span { float: left; width: 140px; font-size: 15px; }
+            .form-inner label .small { font-size: 14px; }
+        .form-inner label input[type="text"] { width: 220px; font-family: Times New roman, serif; padding: 5px; border: 1px solid #c9c9c9; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+            .form-inner label .short { width: 112px !important; }
+            .form-inner label .veryshort { width: 68px !important; }
+        .form-inner label select { width: 235px; padding: 3px 5px; font-family: Times New roman, serif; }
+        .form-inner label textarea { width: 220px; height: 200px; padding: 5px; font-family: Times New roman, serif; border: 1px solid #c9c9c9; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+            .form-inner label .to { height: 52px !important; }
+        .form-inner label .checkbox { float: none; font-family: Times New roman, serif; font-size:12px; }
+        .form-inner label .button { float: right; display: block; width: 271px; height: 34px; border: 0; color: #5c3700; font-family: Times New roman, serif; font-size: 16px; background: url(../images/form-inner-submit.png) no-repeat;  }
+        .form-inner label .static { width: 240px; }
+        .form-inner label .middle { float: none; display: inline-block; padding-left: 10px; width: 52px; font-family: Tahoma, sans-serif; font-size: 12px; }
+
+        .form-inner h4 { font-weight: bold; font-family: Tahoma, sans-serif; font-size: 14px; margin: 10px 0; }
+
+/* user order */
+.user-order { }
+    .user-order table { width: 100%; margin: 10px 0; border-top: 1px solid #efdfbe; border-bottom: 1px solid #ceb27f; }
+        .user-order table thead td { padding: 10px 5px; color: #1e1e1e; font-family: Georgia, serif; font-size: 12px; font-weight: bold; border: 1px solid #e7d8bf; border-top: 1px solid #ceb27f; white-space: nowrap; text-align: center; }
+        .user-order table thead .left { text-align: left; }
+        .user-order table td { padding: 10px; border: 1px solid #e7d8bf; color: #515151; }
+            .user-order table a { color: #7d5101; }
+
+    .user-order .info, .user-order-status .info { margin: 20px 0; }
+        .user-order .info h5, .user-order-status h5  { font-size: 18px; font-weight: bold; }
+        .user-order .info .item, .user-order-status .item  { display: inline-block; min-width: 230px; margin-top: 15px; padding: 8px 0 8px 45px; font-family: Georgia, sans-serif; font-size: 13px; color: #7d5101; }
+        .user-order .info .phone, .user-order-status .phone  { padding-left: 40px; font-size: 13px; font-family: Times New roman, serif; background: url(../images/user-order-phone.png) no-repeat 0 4px; }
+        .user-order .info .mail, .user-order-status .mail  { padding-left: 40px; background: url(../images/user-order-mail.png) no-repeat 0 7px; }
+        .user-order .info .delivery, .user-order-status .delivery  { padding-left: 50px; background: url(../images/user-order-delivery.png) no-repeat 0 7px; }
+        .user-order .info .payment, .user-order-status .payment  { padding-left: 50px; background: url(../images/user-order-payment.png) no-repeat 4px 5px; }
+            .user-order .info .phone big, .user-order-status .phone big  { font-size: 16px; font-weight: bold; }
+            .user-order .info .item a, .user-order-status .item a  { color: #000; }
+
+    .user-order-status .details { font-family: Georgia, sans-serif; }
+        .user-order-status .remove-order { display: block; margin: 10px 0; width: 238px; height: 40px; border: 0; background: url(../images/user-order-remove.png) no-repeat; font-family: Georgia, sans-serif; font-size: 18px; color: #5c3700; }
+        .user-order-status p { margin: 5px 0; font-size: 15px; }
+
+        .user-order-status .hr { margin: 10px 0; height: 1px; background: #ceb27f; border-top: 1px solid #efdfbe; }
+        .user-order-status .hr-small { width: 390px; margin: 10px 0; height: 1px; border-top: 1px solid #f7efdf; background: #e7d8bf; }
+
+        .user-order-status h3 { font-size: 17px; font-weight: bold; }
+
+        .user-order-status table { width: 390px; margin: 5px 0 0 0; font-size: 15px; }
+            .user-order-status table td { color: #515151; padding: 12px 0 12px 0; }
+            .user-order-status table .t1 { margin: 0 50px 0 0; }
+/* footer */
+#footer {
+	position: relative;
+	margin-top: -345px;
+	height: 345px;
+	width: 100%;
+    background: url(../images/footer-bg.gif) repeat-x #e3e0cd;
+    color: #484848;
+    overflow: hidden;
+}
+
+#footer .wrapper { width: 1000px; margin: 0 auto; }
+#footer a { color: #484848; }
+
+#footer .box { float: left; margin: 25px 55px 20px 0; }
+    #footer .box h5 { font-size: 18px; }
+
+    #footer .box ul { margin: 10px 0 0 0; }
+    #footer .box li { padding: 2px 0 2px 12px; background: url(../images/footer-bullet.png) no-repeat 0 7px; }
+    #footer .box li a { font-size: 15px; text-decoration: none; }
+
+#footer .copyright { clear: both; border-top: 1px solid #e0cea2; font-size: 12px; }
+    #footer .copyright .wrapper { border-top: 1px solid #c4a66d; padding: 8px 0 0 0; }
+
+    #footer .copyright .left { float: left; margin: 0 0 0 17px; }
+         #footer .copyright .left img { margin: 0 10px -15px 0; }
+
+    #footer .copyright .right { float: right; margin: 7px 85px 0 0; }
+        #footer .copyright .right img { float: left; margin: 0 10px -10px 0; }
+
+.footer_blank {	clear: both; height: 375px; }

@@ -1,0 +1,648 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ru-climat_katalog_vnutr_end</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+
+<link rel="stylesheet" type="text/css" media="all" href="css/jquery.selectbox.css" />
+<script type="text/javascript" src="js/jquery.selectbox-0.6.1.js"></script>
+
+<script language="JavaScript" type="text/javascript">
+/*<![CDATA[*/
+(function($) {
+$(function() {
+
+  $('ul.tabs').each(function() {
+    $(this).find('li').each(function(i) {
+      $(this).click(function(){
+        $(this).addClass('current').siblings().removeClass('current')
+          .parents('div.section').find('div.box').hide().end().find('div.box:eq('+i+')').fadeIn(150);
+      });
+    });
+  });
+
+})
+})(jQuery)
+/*]]>*/
+</script>
+
+<!--[if IE 6]>
+<script type="text/javascript" src="js/pngfix.js"></script>
+<script type="text/javascript">
+	DD_belatedPNG.fix('.png24');
+</script>
+<![endif]-->
+</head>
+<body>
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+		<a href="#" title="" class="logo"></a>
+
+		<div class="phone">
+			Многоканальный телефон  <span>(495) <big>649-89-37</big></span>
+		</div>
+
+		<div class="search">
+			<label>
+				Поиск по названию: <input type="submit" name="find" value="Искать" class="search-submit" />
+				<input name="searchbar" type="text" class="search-input" />
+			</label>
+		</div>
+
+		<div class="menu">
+			<ul>
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Оказываемые услуги</a></li>
+				<li><a href="#">Товары</a></li>
+				<li><a href="#">Информация</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- mainmenu -->
+	<div class="mainmenu">
+		<ul>
+			<li class="howtobuy"><a href="#" title="">Как заказать товар <img src="images/arrow-m-right.gif" alt="" /></a></li>
+			<li class="paymethods"><a href="#" title="">Способы оплаты доставки <img src="images/arrow-m-right.gif" alt="" /></a></li>
+			<li class="price"><a href="#" title="">Сроки и стоимость доставки <img src="images/arrow-m-right.gif" alt="" /></a></li>
+			<li class="delivery"><a href="#" title="">Доставка по России <img src="images/arrow-m-right.gif" alt="" /></a></li>
+			<li class="assembly"><a href="#" title="">Монтаж и подключение <img src="images/arrow-m-right.gif" alt="" /></a></li>
+			<li class="equipment"><a href="#" title="">Оборудование для обогрева <img src="images/arrow-m-right.gif" alt="" /></a></li>
+		</ul>
+	</div>
+
+	<!-- left side -->
+	<div class="leftside">
+
+		<div class="menu">
+			<h3>Категории:</h3>
+			<ul>
+				<li><a href="#">Осушители</a></li>
+				<li><a href="#">Очистители воздуха</a></li>
+				<li><a href="#">Увлажнители</a></li>
+				<li class="active"><a href="#">Кондиционеры</a>
+					<ul>
+						<li><a href="#">Бытовые кондиционеры</a></li>
+						<li class="active"><a href="#">Канальные кондиционеры</a>
+							<ul>
+								<li><a href="#">Daikin высоконапорные</a></li>
+								<li><a href="#">Fujitsu General</a></li>
+								<li><a href="#">GC высоконапорные</a></li>
+								<li><a href="#">GC низконапорные</a></li>
+								<li><a href="#">Mitsubishi серии FDU-H</a></li>
+								<li><a href="#">Mitsubishi серии FDUR-C</a></li>
+								<li><a href="#">Mitsubishi серии FDUR-H</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Кассетные кондиционеры</a></li>
+						<li><a href="#">Мобильные кондиционеры</a></li>
+						<li><a href="#">Моноблочные кондиционеры</a></li>
+						<li><a href="#">Потолочные кондиционеры</a></li>
+						<li><a href="#">Бытовые мультисистемы</a></li>
+						<li><a href="#">Оконные кондиционеры</a></li>
+						<li><a href="#">Колонные кондиционеры</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Вентиляторы</a></li>
+				<li><a href="#">Озонаторы и ионизаторы</a></li>
+				<li><a href="#">Метеостанции</a></li>
+				<li><a href="#">Фильтры для воды</a></li>
+				<li><a href="#">Профессиональное оборудование</a></li>
+			</ul>
+		</div>
+
+		<div class="manufacturers">
+			<h3>Производители:</h3>
+
+			<div class="custom-selectbox">
+				<select id="default-usage-select">
+					<option value="--">AERIAL</option>
+					<option value="01">Red</option>
+					<option value="02">Orange</option>
+					<option value="03">Yellow</option>
+					<option value="04">Green</option>
+					<option value="05">Blue</option>
+					<option value="06">Magenta</option>
+					<option value="07">Violet</option>
+					<option value="08">Ultra-violet</option>
+				</select>
+				<div class="clr"></div>
+			</div>
+		<script type="text/javascript">
+		//<![CDATA[
+			$("#default-usage-select").selectbox().bind('change', function(){
+				$('').appendTo('.custom-selectbox').fadeOut(5000, function(){
+					$(this).remove();
+				});
+			});
+		//]]>
+		</script>
+
+			<div class="m">
+				<img src="images/m1.gif" alt="" />
+				<a href="#" title="">Panasonic</a>
+			</div>
+
+			<div class="m">
+				<img src="images/m2.gif" alt="" />
+				<a href="#" title="">Daikin</a>
+			</div>
+
+			<div class="m">
+				<img src="images/m3.gif" alt="" />
+				<a href="#" title="">Mitsubishi<br />Electric</a>
+			</div>
+
+			<div class="m">
+				<img src="images/m4.gif" alt="" />
+				<a href="#" title="">Ballu</a>
+			</div>
+
+			<div class="m">
+				<img src="images/m5.gif" alt="" />
+				<a href="#" title="">Midea</a>
+			</div>
+
+			<div class="m">
+				<img src="images/m6.gif" alt="" />
+				<a href="#" title="">LG</a>
+			</div>
+
+			<div class="m">
+				<img src="images/m7.gif" alt="" />
+				<a href="#" title="">AEG</a>
+			</div>
+
+			<div class="m">
+				<img src="images/m8.gif" alt="" />
+				<a href="#" title="">Fuji Electric</a>
+			</div>
+		</div>
+
+
+		<div class="textbox">
+			<h3>Эффективность работы</h3>
+
+			<p>Компания "Ру Климат" была создана в 1994 году группой высокопрофессиональных
+			специалистов - выпускников МГТУ им. Н.Э. Баумана  в области теплоэнергетики. С самого
+			начала в основу компании были положены принципы <a href="#">партнерства</a> и экспертного подхода. Мы
+			считаем, что эти принципы выдержали проверку временем и стали надежной базой развития
+			компании.</p>
+
+			<p>Сегодня компания "Ру Климат" - это <strong>промышленный холдинг</strong>, признанный эксперт в области
+			климатической техники с развитой инфраструктурой обслуживания и обширной клиентской базой.
+			Мы поставляем весь спектр климатического оборудования.</p>
+
+			<p>Наш лозунг: <strong>"Удобно покупать, легко обслуживать"</strong>. И мы стараемся, чтобы он работал для всех
+			категорий клиентов - от корпоративных и индивидуальных покупателей до государственных структур,
+			поставки которым осуществляются по результатам конкурсных торгов. За этим лозунгом стоят
+			развитая инфраструктура поставок и <a href="#">сервисы</a>.</p>
+
+			<p>Эффективность работы предприятия определяется технологией организации поставок, включая
+			логистику, гарантийное обслуживание, техническую подддержку. Не менее важно и качество предлагаемых
+			товаров и услуг. Наша компания ориентируется на продукцию только ведущих мировых производителей,
+			таких как: Boneco, Frico, Daikin, Mitsubishi.</p>
+		</div>
+	</div>
+
+	<!-- content -->
+	<div class="content">
+
+		<div class="breadcrumbs">
+			<a href="#">Категории</a> <img src="images/arrow-m-mag-right.gif" alt="" />
+			<a href="#">Кондиционеры</a> <img src="images/arrow-m-mag-right.gif" alt="" />
+			<a href="#">Канальные кондиционеры</a> <img src="images/arrow-m-mag-right.gif" alt="" />
+			<a href="#">Daikin высоконапорные</a>
+		</div>
+
+		<h1>Воздухоочиститель Daikin MC707VM-S</h1>
+
+		<div class="mini-description">
+			<div class="thumbnail">
+				<a href="#"><img src="images/tmp/x1.jpg" alt="" /></a>
+				<a href="#"><img src="images/tmp/x2.jpg" alt="" /></a>
+				<a href="#"><img src="images/tmp/x3.jpg" alt="" /></a>
+			</div>
+
+			<div class="description">
+				<p>
+					Мощность: <strong><em>55 Вт</em></strong><br />
+					Обслуживаемая площадь: <strong><em>48 м2</em></strong><br />
+					Производительность: <strong><em>420 м3/ч</em></strong><br />
+					Уровень шума: <strong><em>47 Дб</em></strong><br />
+					Габариты (ВхШхГ): <strong><em>53х43х21 см</em></strong>
+				</p>
+				<em class="cost"><strong>32 890</strong> руб.</em>
+				<a href="#" class="buy">Заказать</a>
+			</div>
+		</div>
+
+		<p class="rules"><a href="#">Ознакомиться с Сертификатами ГНЦ Института иммунологии ФМБА России на воздухоочистители Airkraft </a></p>
+
+		<!-- tabs -->
+		<div class="section">
+  			<ul class="tabs">
+    			<li class="current">Фильтрация</li>
+    			<li>Режимы работы</li>
+    			<li>Особенности</li>
+  			</ul>
+  			<div class="box visible">
+    			<p><strong>Предварительный витаминный фильтр.</strong> Новое поколение предварительных фильтров
+				BORK с витамином С.</p>
+
+				<p>Благодаря своей пропитке фильтр способен не только задерживать крупные частицы
+				пыли и шерсть животных, но эффективно бороться с вредными радикалами, большинство
+				из которых крайне негативно влияют на человека и могут приводить к легкостным,
+				онкологическим и другим заболеваниям.</p>
+
+				<p>Витамин С имеет сильные антибактериальные свойства и способен уничтожать бактерии –
+				возбудители дифтерии, тифа, туберкулеза и других болезней.</p>
+
+				<p><strong>Фильтр из нетканого материала.</strong> Установлен перед специальным фильтром, удаляет пыль и волосы,
+				защищая	и продлевая срок службы специального фильтра.</p>
+
+				<p>Отфильтровывает практически все частицы, аэрозоли и микроорганизмы размером до 2 микрон.</p>
+
+				<p><strong>Специальный фильтр.</strong> Компания BORK разработала систему специальных фильтров, которая максимально
+				эффективно борется с наиболее вредными загрязнителями воздуха. В комплекте с воздухоочистителем
+				BORK A 700 идет фильтр ANTIVIRUS.</p>
+
+				<p><strong>Специальный фильтр ANTIVIRUS</strong> - снижает инвазивностьсамых распространенных штаммов вируса гриппа
+				на 99.99 %, тем самым, препятствуя дальнейшему распространению болезни. Кроме того, фильтр
+				ANTIVIRUS способен бороться с самыми опасными штаммами вирусов птичьего гриппа H5N1 и H7N3
+				(одобрено Tottory University и Tsukuba University Япония).</p>
+
+				<p>Так же Вы можете отдельно приобрести и заменить специальный фильтр ANTIVIRUS, на любой из указанных
+				ниже специальных фильтров: PLATINUM CATALISIS (антиформальдегидный фильтр), G&D (GAS and DAST filter).</p>
+  			</div>
+  			<div class="box">
+    			<p><strong>Предварительный витаминный фильтр.</strong> Новое поколение предварительных фильтров
+				BORK с витамином С.</p>
+
+				<p>Благодаря своей пропитке фильтр способен не только задерживать крупные частицы
+				пыли и шерсть животных, но эффективно бороться с вредными радикалами, большинство
+				из которых крайне негативно влияют на человека и могут приводить к легкостным,
+				онкологическим и другим заболеваниям.</p>
+
+				<p>Витамин С имеет сильные антибактериальные свойства и способен уничтожать бактерии –
+				возбудители дифтерии, тифа, туберкулеза и других болезней.</p>
+
+				<p><strong>Фильтр из нетканого материала.</strong> Установлен перед специальным фильтром, удаляет пыль и волосы,
+				защищая	и продлевая срок службы специального фильтра.</p>
+  			</div>
+  			<div class="box">
+				<p><strong>Специальный фильтр.</strong> Компания BORK разработала систему специальных фильтров, которая максимально
+				эффективно борется с наиболее вредными загрязнителями воздуха. В комплекте с воздухоочистителем
+				BORK A 700 идет фильтр ANTIVIRUS.</p>
+
+				<p><strong>Специальный фильтр ANTIVIRUS</strong> - снижает инвазивностьсамых распространенных штаммов вируса гриппа
+				на 99.99 %, тем самым, препятствуя дальнейшему распространению болезни. Кроме того, фильтр
+				ANTIVIRUS способен бороться с самыми опасными штаммами вирусов птичьего гриппа H5N1 и H7N3
+				(одобрено Tottory University и Tsukuba University Япония).</p>
+
+				<p>Так же Вы можете отдельно приобрести и заменить специальный фильтр ANTIVIRUS, на любой из указанных
+				ниже специальных фильтров: PLATINUM CATALISIS (антиформальдегидный фильтр), G&D (GAS and DAST filter).</p>
+  			</div>
+		</div>
+
+		<!-- order form -->
+		<form>
+		<div class="order-form">
+			<h6>Сделать заказ</h6>
+			<label>
+				<span class="label-title">Ваше имя:</span>
+				<input name="yourname" type="text" class="input-text long" />
+			</label>
+
+			<label>
+				<span class="label-title">Телефон:</span>
+				(<input name="yourphonecode" type="text" class="input-text short" />)
+				<input name="yourphone" type="text" class="input-text middle" />
+			</label>
+
+			<label>
+				<span class="label-title">E-mail:</span>
+				<input name="yourmail" type="text" class="input-text long" />
+			</label>
+
+			<label>
+				<span class="label-title">Способ оплаты:</span>
+
+				<div class="custom-selectbox">
+				<select id="default-usage-select-2">
+					<option value="--">Наличными курьеру при получении</option>
+					<option value="01">Red</option>
+					<option value="02">Orange</option>
+					<option value="03">Yellow</option>
+					<option value="04">Green</option>
+					<option value="05">Blue</option>
+					<option value="06">Magenta</option>
+					<option value="07">Violet</option>
+					<option value="08">Ultra-violet</option>
+				</select>
+				<div class="clr"></div>
+				</div>
+				<script type="text/javascript">
+				//<![CDATA[
+				$("#default-usage-select-2").selectbox().bind('change', function(){
+					$('').appendTo('.custom-selectbox').fadeOut(5000, function(){
+						$(this).remove();
+					});
+				});
+				//]]>
+				</script>
+			</label>
+
+			<label>
+				<span class="label-title">Город доставки:</span>
+
+				<div class="custom-selectbox">
+				<select id="default-usage-select-3">
+					<option value="--">Москва</option>
+					<option value="01">Red</option>
+					<option value="02">Orange</option>
+					<option value="03">Yellow</option>
+					<option value="04">Green</option>
+					<option value="05">Blue</option>
+					<option value="06">Magenta</option>
+					<option value="07">Violet</option>
+					<option value="08">Ultra-violet</option>
+				</select>
+				<div class="clr"></div>
+				</div>
+				<script type="text/javascript">
+				//<![CDATA[
+				$("#default-usage-select-3").selectbox().bind('change', function(){
+					$('').appendTo('.custom-selectbox').fadeOut(5000, function(){
+						$(this).remove();
+					});
+				});
+				//]]>
+				</script>
+			</label>
+
+			<label>
+				<span class="label-title">Адрес доставки:</span>
+				<input name="yourmail" type="text" class="input-text long" />
+			</label>
+
+			<label>
+				<span class="label-title">Время доставки</span>
+
+				с
+				<div class="custom-selectbox-small">
+				<select id="default-usage-select-4">
+					<option value="--">10:00</option>
+					<option value="01">Red</option>
+					<option value="02">Orange</option>
+					<option value="03">Yellow</option>
+					<option value="04">Green</option>
+					<option value="05">Blue</option>
+					<option value="06">Magenta</option>
+					<option value="07">Violet</option>
+					<option value="08">Ultra-violet</option>
+				</select>
+				<div class="clr"></div>
+				</div>
+				<script type="text/javascript">
+				//<![CDATA[
+				$("#default-usage-select-4").selectbox().bind('change', function(){
+					$('').appendTo('.custom-selectbox-small').fadeOut(5000, function(){
+						$(this).remove();
+					});
+				});
+				//]]>
+				</script>
+
+				по
+				<div class="custom-selectbox-small">
+				<select id="default-usage-select-5">
+					<option value="--">17:00</option>
+					<option value="01">Red</option>
+					<option value="02">Orange</option>
+					<option value="03">Yellow</option>
+					<option value="04">Green</option>
+					<option value="05">Blue</option>
+					<option value="06">Magenta</option>
+					<option value="07">Violet</option>
+					<option value="08">Ultra-violet</option>
+				</select>
+				<div class="clr"></div>
+				</div>
+				<script type="text/javascript">
+				//<![CDATA[
+				$("#default-usage-select-5").selectbox().bind('change', function(){
+					$('').appendTo('.custom-selectbox-small').fadeOut(5000, function(){
+						$(this).remove();
+					});
+				});
+				//]]>
+				</script>
+			</label>
+
+			<label>
+				<input type="submit" name="buynow" class="buy" value="Заказать" />
+			</label>
+		</div>
+		</form>
+
+		<div class="catalog twocolumns">
+
+			<h2>Похожие товары:</h2>
+
+			<div class="item">
+				<div class="thumbnail"><img src="images/tmp/i1.jpg" alt="" /></div>
+
+				<div class="description">
+					<a href="#" class="title">Воздухоочиститель Daikin MC707VM-S</a>
+					<p>
+						Мощность: <strong><em>55 Вт</em></strong><br />
+						Обслуживаемая площадь: <strong><em>48 м2</em></strong><br />
+						Производительность: <strong><em>420 м3/ч</em></strong><br />
+						Уровень шума: <strong><em>47 Дб</em></strong><br />
+						Габариты (ВхШхГ): <strong><em>53х43х21 см</em></strong>
+					</p>
+					<em class="cost"><strong>32 890</strong> руб.</em>
+					<a href="#" class="buy">Заказать</a>
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="thumbnail"><img src="images/tmp/i2.jpg" alt="" /></div>
+
+				<div class="description">
+					<a href="#" class="title">Воздухоочиститель Daikin MC707VM-S</a>
+					<p>
+						Мощность: <strong><em>55 Вт</em></strong><br />
+						Обслуживаемая площадь: <strong><em>48 м2</em></strong><br />
+						Производительность: <strong><em>420 м3/ч</em></strong><br />
+						Уровень шума: <strong><em>47 Дб</em></strong><br />
+						Габариты (ВхШхГ): <strong><em>53х43х21 см</em></strong>
+					</p>
+					<em class="cost"><strong>32 890</strong> руб.</em>
+					<a href="#" class="buy">Заказать</a>
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="thumbnail"><img src="images/tmp/i3.jpg" alt="" /></div>
+
+				<div class="description">
+					<a href="#" class="title">Воздухоочиститель Daikin MC707VM-S</a>
+					<p>
+						Мощность: <strong><em>55 Вт</em></strong><br />
+						Обслуживаемая площадь: <strong><em>48 м2</em></strong><br />
+						Производительность: <strong><em>420 м3/ч</em></strong><br />
+						Уровень шума: <strong><em>47 Дб</em></strong><br />
+						Габариты (ВхШхГ): <strong><em>53х43х21 см</em></strong>
+					</p>
+					<em class="cost"><strong>32 890</strong> руб.</em>
+					<a href="#" class="buy">Заказать</a>
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="thumbnail"><img src="images/tmp/i1.jpg" alt="" /></div>
+
+				<div class="description">
+					<a href="#" class="title">Воздухоочиститель Daikin MC707VM-S</a>
+					<p>
+						Мощность: <strong><em>55 Вт</em></strong><br />
+						Обслуживаемая площадь: <strong><em>48 м2</em></strong><br />
+						Производительность: <strong><em>420 м3/ч</em></strong><br />
+						Уровень шума: <strong><em>47 Дб</em></strong><br />
+						Габариты (ВхШхГ): <strong><em>53х43х21 см</em></strong>
+					</p>
+					<em class="cost"><strong>32 890</strong> руб.</em>
+					<a href="#" class="buy">Заказать</a>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- right side -->
+	<div class="rightside">
+		<div class="gbox tips">
+			<a href="#" class="h">Полезные советы</a>
+
+			<p><a href="#">Как выбрать кондицтонер?</a><br />
+			<a href="#">Советы покупателю.</a></p>
+			<p>Внутренние блоки канальных кондиционеров, как правило, встраиваются в
+			систему вентиляции или располагаются за потолком, на чердаке, в производственном
+			помещении и комплектуются настенным или инфракрасным пультом.</p>
+
+			<div class="bottom"></div>
+		</div>
+
+		<div class="gbox questions">
+			<a href="#" class="h">Вопросы клиентов</a>
+
+			<p>Внутренние блоки канальных кондиционеров, как правило, встраиваются в систему?</p>
+			<p><em>Panasonic, Daikin, Mitsubishi Electric, Ballu, Midea, LG, AEG, Fuji Electric. Самым
+			популярным типом предлагаемого оборудования, конечно является сплит - система.</em></p>
+			<p><a href="#" class="more">подробнее</a></p>
+
+			<div class="bottom"></div>
+		</div>
+
+		<div class="gbox advanced">
+
+			<p><a href="#" class="big">Программы дополнительного сервиса</a></p>
+			<p>Внутренние блоки канальных кондиционеров, как правило, встраиваются в систему?
+			Panasonic, Daikin, Mitsubishi Electric, Ballu, Midea, LG, AEG, Fuji Electric. Самым
+			популярным типом предлагаемого.</p>
+			<p><a href="#" class="more">подробнее</a></p>
+
+			<div class="bottom"></div>
+		</div>
+
+		<!-- news -->
+		<div class="news">
+			<a href="#" class="h">Новости</a>
+
+			<div class="item">
+				<p>
+					<strong>[12.11.10]</strong>
+					<a href="#" class="more">Компания "Ру Климат" имеет многолетний опыт</a>
+				</p>
+				<p>Компания "Ру Климат" имеет многолетний опыт в продаже и установке кондиционеров. </p>
+			</div>
+
+			<div class="item">
+				<p>
+					<strong>[10.11.10]</strong>
+					<a href="#" class="more">Мы предлагаем все известные марки кондиционеров</a>
+				</p>
+				<p>Мы предлагаем все известные марки кондиционеров - Panasonic, Daikin, Mitsubishi Electric,
+				Ballu, Midea, LG, AEG, Fuji Electric. </p>
+			</div>
+
+			<div class="item">
+				<p>
+					<strong>[08.11.10]</strong>
+					<a href="#" class="more">Самым популярным типом предлагаемого оборудования</a>
+				</p>
+				<p>Самым популярным типом предлагаемого оборудования, конечно является сплит - система.</p>
+			</div>
+
+			<div class="item">
+				<p>
+					<strong>[07.11.10]</strong>
+					<a href="#" class="more">Так же, наша компания предлагает полупромышленное оборудование для больших залов</a>
+				</p>
+				<p>Так же, наша компания предлагает полупромышленное оборудование для больших залов, ресторанов,
+				частных жилых домов, как правило это канальные, кассетные или потолочные кондиционеры. </p>
+			</div>
+
+			<div class="item">
+				<p>
+					<strong>[01.11.10]</strong>
+					<a href="#" class="more">Наша компания осуществляет гарантийное и сервисное </a>
+				</p>
+				<p>Так же, наша компания предлагает полупромышленное оборудование для больших залов, ресторанов, частных жилых домов, как правило это канальные, кассетные или потолочные кондиционеры. </p>
+			</div>
+		</div>
+
+		<!-- payment systems -->
+		<div class="pay">
+			<a href="#" class="h">Платежные системы:</a>
+
+			<a href="#" class="more">подробнее</a>
+
+			<div class="bottom"></div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+	<div class="wrapper">
+
+		<div class="copy-2">
+			<a href="#">дизайн и создание сайтов<br />
+			web дизайн-студия</a>
+		</div>
+
+		<div class="copy-1">
+			&copy; 2010 &laquo;РУ-КЛИМАТ&raquo;
+		</div>
+
+		<div class="counters">
+			<img src="images/c3.gif" alt="" />
+			<img src="images/c2.gif" alt="" />
+			<img src="images/c1.gif" alt="" />
+		</div>
+
+		<a href="#" class="opinions">Читайте отзывы</a>
+
+	</div>
+</div>
+</body>
+</html>

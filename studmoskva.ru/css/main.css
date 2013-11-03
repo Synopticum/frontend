@@ -1,0 +1,227 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1.2;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* fonts */
+@font-face {
+    font-family: 'Noto Sans Regular';
+    src: url('../fonts/NotoSans-Regular-webfont.eot');
+    src: url('../fonts/NotoSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/NotoSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/NotoSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/NotoSans-Regular-webfont.svg#noto_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans Bold';
+    src: url('../fonts/NotoSans-Bold-webfont.eot');
+    src: url('../fonts/NotoSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/NotoSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/NotoSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/NotoSans-Bold-webfont.svg#noto_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* styles */
+html, body { height: 100% }
+
+body { 
+    min-width: 1000px; 
+    font-family: 'Noto Sans Regular';
+    font-size: 14px;
+    color: #333433;
+}
+
+a { color: #166c9c; }
+a:hover { color: #ee1d23; }
+
+#main { 
+    position: relative; 
+    min-height: 100%;
+    background: url(../images/t.jpg) no-repeat 50% 0 #fff;
+}
+
+#wrap { 
+    width: 960px;
+    margin: 0 auto; 
+    padding: 0 0 150px 0; 
+}
+
+b, strong { font-weight: normal; font-family: 'Noto Sans Bold'; }
+
+/* header */
+header {
+    width: 100%;
+    height: 260px;
+}
+.header-wrapper { position: relative; width: 960px; margin: 0 auto; padding: 40px 0 0 0; text-align: center; }
+
+#logo1 { position: absolute; left: 0; top: 35px; }
+#logo2 { position: absolute; left: 0; top: 95px; }
+#logo3 { position: absolute; left: 80px; top: 95px; }
+
+.header-register { position: absolute; right: 0; top: 35px; text-align: right; line-height: 140%; }
+    .header-register a { font-family: 'Noto Sans Bold'; font-size: 17px; }
+    .header-register p { color: #666; font-size: 12px; }
+
+.header-links { 
+    position: absolute; 
+    right: 0; 
+    top: 95px; 
+    padding: 13px 10px 10px 30px; 
+    font-size: 12px; 
+    background: #f8f6f5;
+    background: -moz-linear-gradient(top,  #f8f6f5 0%, #f8f6f5 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f6f5), color-stop(100%,#f8f6f5));
+    background: -webkit-linear-gradient(top,  #f8f6f5 0%,#f8f6f5 100%);
+    background: -o-linear-gradient(top,  #f8f6f5 0%,#f8f6f5 100%);
+    background: -ms-linear-gradient(top,  #f8f6f5 0%,#f8f6f5 100%);
+    background: linear-gradient(to bottom,  #f8f6f5 0%,#f8f6f5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f6f5', endColorstr='#f8f6f5',GradientType=0 );
+    box-shadow: 1px 1px 0 #ccc;
+    border-radius: 3px;
+}
+    .header-links li { text-align: right; margin-bottom: 3px; }
+        .header-links li a { position: relative; display: inline-block; vertical-align: top; padding: 5px 30px 5px 15px; border-radius: 3px; }
+        .header-links li a:hover {
+            color: #fff;
+            text-decoration: none;
+            background: #6aa0c0;
+            background: -moz-linear-gradient(top,  #6aa0c0 0%, #5693b7 16%, #2c77a4 40%, #196e9e 52%, #2c77a4 64%, #4f90b4 84%, #669ebe 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6aa0c0), color-stop(16%,#5693b7), color-stop(40%,#2c77a4), color-stop(52%,#196e9e), color-stop(64%,#2c77a4), color-stop(84%,#4f90b4), color-stop(100%,#669ebe));
+            background: -webkit-linear-gradient(top,  #6aa0c0 0%,#5693b7 16%,#2c77a4 40%,#196e9e 52%,#2c77a4 64%,#4f90b4 84%,#669ebe 100%);
+            background: -o-linear-gradient(top,  #6aa0c0 0%,#5693b7 16%,#2c77a4 40%,#196e9e 52%,#2c77a4 64%,#4f90b4 84%,#669ebe 100%);
+            background: -ms-linear-gradient(top,  #6aa0c0 0%,#5693b7 16%,#2c77a4 40%,#196e9e 52%,#2c77a4 64%,#4f90b4 84%,#669ebe 100%);
+            background: linear-gradient(to bottom,  #6aa0c0 0%,#5693b7 16%,#2c77a4 40%,#196e9e 52%,#2c77a4 64%,#4f90b4 84%,#669ebe 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6aa0c0', endColorstr='#669ebe',GradientType=0 );
+        }
+        .header-links li a img { position: absolute; right: 5px; top: 4px; }
+
+
+/* content */
+.content { padding: 50px 0; }
+    .content h1 { font-family: 'Noto Sans Bold'; font-size: 18px; text-align: center; }
+
+    .box { margin: 50px 0 20px 0; padding: 0 25px 5px 25px; border: 1px solid; border-radius: 7px; 
+            background: #ffffff;
+            background: -moz-linear-gradient(top,  #ffffff 0%, #f1f1f1 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f1f1f1));
+            background: -webkit-linear-gradient(top,  #ffffff 0%,#f1f1f1 100%);
+            background: -o-linear-gradient(top,  #ffffff 0%,#f1f1f1 100%);
+            background: -ms-linear-gradient(top,  #ffffff 0%,#f1f1f1 100%);
+            background: linear-gradient(to bottom,  #ffffff 0%,#f1f1f1 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f1f1f1',GradientType=0 );
+    }
+        .box-title { position: relative; top: -18px; text-align: center; }
+            .box-title h2 { display: inline-block; vertical-align: top; padding: 8px 15px; font-family: 'Noto Sans Bold'; color: #fff; border-radius: 3px; }
+
+        .box p { margin: 0 0 20px 0; text-align: justify; text-indent: 20px; line-height: 160%; }
+
+    .box-main { border-color: #636daf; }
+        .box-main h2 {
+            background: #999fcc;
+            background: -moz-linear-gradient(top,  #999fcc 0%, #9198c9 20%, #8a92c2 32%, #6873b3 84%, #626cae 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#999fcc), color-stop(20%,#9198c9), color-stop(32%,#8a92c2), color-stop(84%,#6873b3), color-stop(100%,#626cae));
+            background: -webkit-linear-gradient(top,  #999fcc 0%,#9198c9 20%,#8a92c2 32%,#6873b3 84%,#626cae 100%);
+            background: -o-linear-gradient(top,  #999fcc 0%,#9198c9 20%,#8a92c2 32%,#6873b3 84%,#626cae 100%);
+            background: -ms-linear-gradient(top,  #999fcc 0%,#9198c9 20%,#8a92c2 32%,#6873b3 84%,#626cae 100%);
+            background: linear-gradient(to bottom,  #999fcc 0%,#9198c9 20%,#8a92c2 32%,#6873b3 84%,#626cae 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999fcc', endColorstr='#626cae',GradientType=0 );
+        }
+
+    .box-default { border-color: #015295; }
+        .box-default h2 {
+            background: #77b9f7;
+            background: -moz-linear-gradient(top,  #77b9f7 0%, #6fb2f0 11%, #62a6e5 23%, #1e6bad 72%, #0c5c9e 87%, #025396 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#77b9f7), color-stop(11%,#6fb2f0), color-stop(23%,#62a6e5), color-stop(72%,#1e6bad), color-stop(87%,#0c5c9e), color-stop(100%,#025396));
+            background: -webkit-linear-gradient(top,  #77b9f7 0%,#6fb2f0 11%,#62a6e5 23%,#1e6bad 72%,#0c5c9e 87%,#025396 100%);
+            background: -o-linear-gradient(top,  #77b9f7 0%,#6fb2f0 11%,#62a6e5 23%,#1e6bad 72%,#0c5c9e 87%,#025396 100%);
+            background: -ms-linear-gradient(top,  #77b9f7 0%,#6fb2f0 11%,#62a6e5 23%,#1e6bad 72%,#0c5c9e 87%,#025396 100%);
+            background: linear-gradient(to bottom,  #77b9f7 0%,#6fb2f0 11%,#62a6e5 23%,#1e6bad 72%,#0c5c9e 87%,#025396 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77b9f7', endColorstr='#025396',GradientType=0 );
+        }
+
+    .register { text-align: center; }
+    .register a { margin: 0 auto; display: inline-block; vertical-align: top; background: #014e95; font-family: 'Noto Sans Bold'; color: #fff; text-transform: uppercase; text-decoration: none; font-size: 18px; min-width: 200px; padding: 12px 30px 10px 30px; border-radius: 10px; }
+    .register a:hover { background: #ee1d23; }
+
+/* footer */
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    padding: 40px 0 0 0;
+    font-size: 12px;
+    line-height: 140%;
+    border-top: 1px solid #ccc;
+}
+.footer-wrapper { width: 960px; margin: 0 auto; }
+
+footer .email { float: left; margin-top: 5px; }
+footer .phone { float: right; text-align: right; }
+
+footer span { color: #166c9c; }

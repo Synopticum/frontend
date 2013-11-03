@@ -1,0 +1,542 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/input-focus.js"></script>
+
+<!-- jcarousellite -->
+<script type="text/javascript" src="js/jcarousellite_1.0.1.js"></script>
+
+<!-- popup's -->
+<script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<script type="text/javascript">
+    $(document).ready(function() {
+	    $("a#a-login, a#a-recovery, a#a-addinfo, a#a-signup, a#a-signupcompany").fancybox();
+	});
+</script>
+</head>
+<body>
+
+<a href="" id="consult">задать вопрос консультанту online</a>
+
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+        <a href="#"><img src="images/logo.png" width="207" height="50" border="0" alt="" class="logo" /></a>
+
+        <div class="nav">
+            <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Техническая информация</a></li>
+                <li><a href="#">Работа в ЭЛТЕХ</a></li>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <strong>Корзина (0)</strong><br />
+            <a href="#login" id="a-login">Войти в личный кабинет</a>
+            <a href="#signup" id="a-signup">Зарегистрироваться</a><br />
+            <a href="#signupcompany" id="a-signupcompany">[1]</a>, <a href="#addinfo" id="a-addinfo">[2]</a>
+        </div>
+
+        <div class="contacts">
+            Телефон в <a href="javascript: void(0);" id="city"><span>Санкт-Петербурге</span></a>:
+            <big>(812) 635-50-60</big>
+            <a href="#">Контакты</a>
+
+            <div class="hbox">
+                <ul>
+                    <li><a href="javascript: void(0);">Санкт-Петербург</a></li>
+                    <li><a href="javascript: void(0);">Москва</a></li>
+                    <li><a href="javascript: void(0);">Екатеринбург</a></li>
+                    <li><a href="javascript: void(0);">Ростов-на-Дону</a></li>
+                    <li><a href="javascript: void(0);">Новосибирск</a></li>
+                    <li><a href="javascript: void(0);">Чебоксары</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="lang">
+            <a href="#" class="active">рус</a>
+            <a href="#">eng</a>
+        </div>
+
+        <!-- header control -->
+        <div class="control">
+            <div class="banner">
+                <a href="#"><img src="images/tmp/header-banner.gif" width="468" height="60" border="0" alt="" /></a>
+            </div>
+
+            <!-- news -->
+            <div class="news">
+                <div class="item">
+                    <strong>Вакансии:</strong> ЭЛТЕХ приглашает на работу менеджера по работе с персоналом.
+                </div>
+
+                <div class="arrows">
+                    <a href="#" class="left" title="Предыдущая"></a>
+                    <a href="#" class="right" title="Следующая"></a>
+                </div>
+            </div>
+
+            <!-- search -->
+            <div class="search">
+                <form>
+                    <input name="searchbar" type="text" value="Поиск" id="searchbar" tabindex="1" />
+
+                    <!-- results -->
+                    <div class="hbox">
+                        <h6>Каталог</h6>
+
+                        <ol>
+                            <li><a href="#">Преобразователь AD-CD</a></li>
+                            <li><a href="#">Компонент AD-CD</a></li>
+                            <li><a href="#">Блок AD-CD переменного значения на выходе</a></li>
+                            <li><a href="#">Преобразователь AD-CD</a></li>
+                            <li><a href="#">Компонент AD-CD</a></li>
+                        </ol>
+
+                        <h6>Новости</h6>
+
+                        <ol>
+                            <li><a href="#">Изобретен новый преобразователь AD-CD</a></li>
+                            <li><a href="#">Новинка на китайском AD-CD блок, работающий на солнечной ...</a></li>
+                            <li><a href="#">Блок AD-CD переменного напряжения представлен на ...</a></li>
+                        </ol>
+
+                        <a href="#" class="more">Все результаты</a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- subscribe -->
+            <div class="subscribe">
+                <a href="#" class="now">Подписка</a>
+                <a href="#" class="twitter"></a>
+                <a href="#" class="email"></a>
+            </div>
+
+            <!-- subscribe select -->
+            <div class="hbox subscribe-select">
+                <ul>
+                    <li><a href="#">На альманах</a></li>
+                    <li><a href="#">На новости</a></li>
+                </ul>
+            </div>
+            <script language="JavaScript" type="text/javascript">
+            /*<![CDATA[*/
+            $("#city").click(function() {
+                $(".header .contacts .hbox").toggle();
+            });
+            $(".header .contacts .hbox a").click(function() {
+                $(".header .contacts .hbox").hide();
+            });
+            $("#searchbar").click(function() {
+                $(".header .search .hbox").toggle();
+            });
+            $(".subscribe .now").click(function() {
+                $(".subscribe-select").toggle();
+            });
+            /*]]>*/
+            </script>
+        </div>
+    </div>
+
+	<!-- content -->
+	<div class="content">
+        <div class="breadcrumbs">
+            <a href="#">О компании</a> <img src="images/spacer.png" width="7" height="20" border="0" alt="" />
+            <a href="#">ЭЛТЕХ сегодня</a> <img src="images/spacer.png" width="7" height="20" border="0" alt="" />
+        </div>
+
+        <!-- left side  -->
+        <div class="leftside">
+            <div class="menu">
+                <ul>
+                    <li class="active"><a href="#">ЭЛТЕХ сегодня</a></li>
+                    <li><a href="#">Наши координаты</a></li>
+                    <li><a href="#">Наши сертификаты</a></li>
+                    <li><a href="#">Наши достижения</a></li>
+                    <li><a href="#">Работа в ЭЛТЕХ</a></li>
+                    <li><a href="#">Обратная связь</a></li>
+                    <li><a href="#">Служба качества</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- text content -->
+        <div class="cbox c-wide textcontent">
+            <h1 class="title">ЭЛТЕХ сегодня</h1>
+
+            <h3>Миссия компании</h3>
+
+            <p>«ЭЛТЕХ» — это успешность, надежность и комфорт для заказчиков, поставщиков и сотрудников.</p>
+
+            <h3>Миссия компании</h3>
+
+            <p>Базисные ценности компании</p>
+
+            <ul>
+                <li>Сотрудник — главная ценность компании</li>
+                <li>Честность и порядочность</li>
+                <li>Профессионализм и компетентность</li>
+                <li>Открытость и взаимоуважение</li>
+                <li>Работа в команде</li>
+                <li>Стремление побеждать</li>
+                <li>Постоянное совершенствование</li>
+            </ul>
+
+            <h3>О компании</h3>
+
+            <p>Компания ЭЛТЕХ — один из крупнейших поставщиков электронных компонентов на российском
+            рынке - была основана в 1992 году в Санкт-Петербурге.</p>
+
+            <p>Летом 2009 года компания ЭЛТЕХ сертифицировала свою систему менеджмента качества на
+            соответствие стандарту ISO9001:2008.</p>
+
+            <p>В настоящее время ЭЛТЕХ является официальным дистрибьютором компаний:</p>
+
+            <table>
+                <tr>
+                    <td>Analog Devices</td>
+                    <td>Radiocrafts</td>
+                    <td>Brightek Optoelectronics</td>
+                </tr>
+                <tr>
+                    <td>Renesas Electronics</td>
+                    <td>OriginGPS</td>
+                    <td>LED Engin</td>
+                </tr>
+                <tr>
+                    <td>NLT Technologies </td>
+                    <td>Honeywell</td>
+                    <td>Power-One</td>
+                </tr>
+                <tr>
+                    <td>Exar</td>
+                    <td>Micrel</td>
+                    <td>FRIWO</td>
+                </tr>
+                <tr>
+                    <td>Energy Micro</td>
+                    <td>Ramtron</td>
+                    <td>MeanWell</td>
+                </tr>
+                <tr>
+                    <td>RadiSys</td>
+                    <td>Radiotronix</td>
+                    <td>CHINFA</td>
+                </tr>
+                <tr>
+                    <td>Avalue</td>
+                    <td>Semtech</td>
+                    <td>Aimtec</td>
+                </tr>
+                <tr>
+                    <td>SECO</td>
+                    <td>FORDATA</td>
+                    <td>MaxLinear</td>
+                </tr>
+                <tr>
+                    <td>Innodisk</td>
+                    <td>NDK</td>
+                    <td>Connfly</td>
+                </tr>
+                <tr>
+                    <td>Sierra Wireless</td>
+                    <td>IXYS</td>
+                    <td>Hus-Tsan</td>
+                </tr>
+            </table>
+
+            <p>Благодаря успешной многолетней работе компания завоевала широкую известность и прочную репутацию как у зарубежных партнеров, так и у своих заказчиков в России.</p>
+
+            <p>Компании  Analog Devices,  Power-One и  Ramtron, отмечая достигнутые успехи, официально признали ЭЛТЕХ своим дистрибьютором №1 не только в России, но и в Восточной Европе.</p>
+
+            <p>Разветвленная сеть региональных офисов ЭЛТЕХ, расположенных в крупных промышленных центрах России — Москве, Екатеринбурге, Новосибирске, Ростове-на-Дону и Чебоксарах, а также грамотно выстроенная логистика помогают компании быть ближе к заказчику и предоставлять высококачественный сервис «из первых рук» в короткие сроки.</p>
+
+            <p>Наличие большого по объему и номенклатуре склада продукции позволяет обеспечивать многоплановые потребности наших заказчиков - крупных российских предприятий телекоммуникационной отрасли, энергетики, химической, нефтегазодобывающей и перерабатывающей промышленности, транспорта, ВПК и др.</p>
+
+            <p>Благодаря гибкой ценовой политике и максимально выгодным условиям сотрудничества была создана широкая дилерская сеть, насчитывающая десятки компаний, расположенных на территории России и стран СНГ.</p>
+
+            <p>Большое внимание ЭЛТЕХ уделяет своевременному информированию своих заказчиков о новых линиях поставок, изменении цен, состоянии склада.</p>
+
+            <p>Компания ежегодно участвует в тематических выставках, выпускает каталог продукции и информационно-технический альманах «Мир электронных компонентов», распространяет компакт-диски и технические брошюры по предлагаемой продукции.</p>
+
+            <p>Для разработчиков электронной техники регулярно проводятся семинары в разных городах России, оказываются технические консультации.</p>
+
+            <p>Мы всегда открыты для любого сотрудничества и рады новым контактам!</p>
+
+            <p><a href="#">Ссылка</a></p>
+
+            <h1>Заголовок 1</h1>
+            <h2>Заголовок 2</h2>
+            <h3>Заголовок 3</h3>
+            <h4>Заголовок 4</h4>
+            <h5>Заголовок 5</h5>
+            <h6>Заголовок 6</h6>
+
+            <h3>Базисные ценности компании</h3>
+
+            <ol>
+                <li><span>Сотрудник — главная ценность компании</span></li>
+                <li><span>Честность и порядочность</span></li>
+                <li><span>Профессионализм и компетентность</span></li>
+                <li><span>Открытость и взаимоуважение</span></li>
+                <li><span>Работа в команде</span></li>
+                <li><span>Стремление побеждать</span></li>
+                <li><span>Постоянное совершенствование</span></li>
+            </ol>
+        </div>
+
+    </div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+    <div class="bottommenu">
+        <ul>
+            <li>
+                <ul>
+                    <li><span class="title">О компании</span></li>
+                    <li><a href="#">Элтех сегодня</a></li>
+                    <li><a href="#">Сертификаты</a></li>
+                    <li><a href="#">Достижения</a></li>
+                    <li><a href="#">Обратная связь</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <ul>
+                    <li><span class="title">Новости</span></li>
+                    <li><a href="#">Все новости</a></li>
+                    <li><a href="#">Новости Элтех</a></li>
+                    <li><a href="#">Рассылка новостей</a></li>
+                    <li><a href="#">RSS</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <ul>
+                    <li><span class="title">Техническая информация</span></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Презентации</a></li>
+                    <li><a href="#">Каталоги</a></li>
+                    <li><a href="#">Примеры применений</a></li>
+                    <li><a href="#">Программное обеспечение</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <ul>
+                    <li><span class="title">Работа в ЭЛТЕХ</span></li>
+                    <li><a href="#">Менеджер по продажам</a></li>
+                    <li><a href="#">Инженер</a></li>
+                    <li><a href="#">Коммерческий директор</a></li>
+                </ul>   
+            </li>
+        </ul>
+    </div>
+
+    <div class="copyright">
+        2004 — 2012, ООО ЭЛТЕХ<br />
+        Все права защищены
+
+        <div class="counters">
+            <a href="#"><img src="images/tmp/c1.gif" width="88" height="31" border="0" alt="" /></a><br />
+            <a href="#"><img src="images/tmp/c2.gif" width="88" height="31" border="0" alt="" /></a><br />
+            <a href="#"><img src="images/tmp/c3.gif" width="88" height="31" border="0" alt="" /></a>
+        </div>
+    </div>
+</div>
+
+<!-- popup's -->
+<div class="popups">
+
+<!-- login -->
+<div class="popup" id="login">
+    <h4>Вход в личный кабинет</h4>
+
+    <form>
+        <label>E-mail<br />
+        <input name="t1" type="text" tabindex="1" class="textbox" />
+        </label>
+
+        <label>Пароль<br />
+        <input name="t2" type="text" tabindex="2" class="textbox" />
+        </label>
+
+        <label><input type="checkbox" name="t3" tabindex="3" /> Запомнить меня</label>
+        <a href="#passrecovery" class="recovery" id="a-recovery">Восстановить пароль</a>
+
+        <input type="button" name="t4" value="Войти на сайт" tabindex="4" class="button" />
+    </form>
+</div>
+
+<!-- password recovery -->
+<div class="popup" id="passrecovery">
+    <h4>Восстановление пароля</h4>
+
+    <form>
+        <label>E-mail<br />
+        <input name="t5" type="text" tabindex="1" class="textbox" />
+        </label>
+
+        <input type="button" name="t7" value="Восстановить пароль" tabindex="3" class="button" />
+    </form>
+</div>
+
+<!-- registration -->
+<div class="popup" id="signup">
+    <h4>Регистрация</h4>
+
+    <form>
+        <label>Фамилия<br />
+        <input name="t8" type="text" tabindex="1" class="textbox" />
+        </label>
+
+        <label>Имя<br />
+        <input name="t9" type="text" tabindex="2" class="textbox" />
+        </label>
+
+        <label>Отчество<br />
+        <input name="t10" type="text" tabindex="3" class="textbox" />
+        </label>
+
+        <label>E-mail<br />
+        <input name="t11" type="text" tabindex="4" class="textbox" />
+        </label>
+
+        <label>Пароль<br />
+        <input name="t12" type="text" tabindex="5" class="textbox" />
+        </label>
+
+        <label>Телефон<br />
+        <input name="t13" type="text" tabindex="6" class="textbox" />
+        </label>
+
+        <label><input type="checkbox" name="t14" tabindex="7" /> Юридическое лицо</label>
+        <label><input type="checkbox" name="t15" tabindex="8" /> <span>Резидент РФ</span></label>
+        <label><input type="checkbox" name="t16" tabindex="9" /> <span>Принимаю <a href="#">условия пользовательского <br />
+        соглашения</a></span></label>
+
+        <input type="button" name="t17" value="Зарегистрироваться" tabindex="10" class="button" />
+    </form>
+</div>
+
+<!-- additional information  -->
+<div class="popup" id="addinfo">
+    <h4>Пожалуйста, занесите<br /> недостающую информацию</h4>
+
+    <form>
+        <label>Отчество<br />
+        <input name="t18" type="text" tabindex="1" class="textbox" />
+        </label>
+
+        <label>Телефон<br />
+        <input name="t19" type="text" tabindex="1" class="textbox" />
+        </label>
+
+        <input type="button" name="t20" value="Сохранить" tabindex="3" class="button" />
+    </form>
+</div>
+
+<!-- additional information  -->
+<div class="popup" id="signupcompany">
+    <h4>Регистрация</h4>
+
+    <form>
+        <div class="column1">
+          <label>Фамилия<br />
+          <input name="t21" type="text" tabindex="1" class="textbox" />
+          </label>
+
+          <label>Имя<br />
+          <input name="t22" type="text" tabindex="2" class="textbox" />
+          </label>
+
+          <label>Отчество<br />
+          <input name="t23" type="text" tabindex="3" class="textbox" />
+          </label>
+
+          <label>E-mail<br />
+          <input name="t24" type="text" tabindex="4" class="textbox" />
+          </label>
+
+          <label>Пароль<br />
+          <input name="t25" type="text" tabindex="5" class="textbox" />
+          </label>
+
+          <label>Телефон<br />
+          <input name="t26" type="text" tabindex="6" class="textbox" />
+          </label>
+
+          <label><input type="checkbox" name="t27" tabindex="7" /> Юридическое лицо</label>
+          <label><input type="checkbox" name="t28" tabindex="8" /> <span>Резидент РФ</span></label>
+          <label><input type="checkbox" name="t29" tabindex="9" /> <span>Принимаю <a href="#">условия пользовательского <br />
+          соглашения</a></span></label>
+
+          <input type="button" name="t30" value="Зарегистрироваться" tabindex="20" class="button" />
+        </div>
+
+        <div class="column2">
+          <label>Название организации<br />
+          <input name="t31" type="text" tabindex="10" class="textbox" />
+          </label>
+
+          <label>Форма собственности<br />
+          <select name="t32" size="1" tabindex="11">
+            <option value="1" selected="selected">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          </label>
+
+          <label>Индекс<br />
+          <input name="t33" type="text" tabindex="12" class="textbox" />
+          </label>
+
+          <label>Юридический адрес<br />
+          <input name="t34" type="text" tabindex="13" class="textbox" />
+          </label>
+
+          <label>Расчетный счет<br />
+          <input name="t35" type="text" tabindex="14" class="textbox" />
+          </label>
+        </div>
+
+        <div class="column3">
+          <label>Наименование банка<br />
+          <input name="t36" type="text" tabindex="15" class="textbox" />
+          </label>
+
+          <label>Корр. счет<br />
+          <input name="t37" type="text" tabindex="16" class="textbox" />
+          </label>
+
+          <label>БИК<br />
+          <input name="t38" type="text" tabindex="17" class="textbox" />
+          </label>
+
+          <label>ИНН<br />
+          <input name="t39" type="text" tabindex="18" class="textbox" />
+          </label>
+
+          <label>КПП<br />
+          <input name="t40" type="text" tabindex="19" value="КПП" class="textbox error" />
+          <span class="error-message">Только цифры</span>
+          </label>
+        </div>
+    </form>
+</div>
+</div>
+</body>
+</html>

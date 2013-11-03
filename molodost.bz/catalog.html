@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+
+<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".feedbacknow").fancybox({
+				'titlePosition'		: 'inside',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+		});
+	</script>
+</head>
+<body>
+
+<div style="display: none;">
+    <div id="feedbackpopup" class="popup">
+        <form>
+            <h6>Введите свои контактные данные в форму:</h6>
+
+            <label for="t1">Ваше имя:</label> <input name="t1" id="t1" class="textbox" type="text" value="" tabindex="1" /><br />
+            <label for="t2">Телефон:</label> <input name="t2" id="t2" class="textbox" type="text" value="" tabindex="2" /><br />
+            <label for="t3">E-mail:</label> <input name="t3" id="t3" class="textbox" type="text" value="" tabindex="3" /><br />
+            <textarea name="t4" tabindex="4">Какой бизнес Вы хотите?</textarea>
+
+            <input type="submit" name="ordernow" id="ordernowpopup" value="Оставить заявку" tabindex="6" />
+
+            <img src="images/order-arrow.png" width="65" height="69" alt="" id="arrow3" />
+        </form>
+	</div>
+</div>
+
+<!-- header -->
+<div class="header">
+    <div class="wrapper">
+        <a href="#" title=""><img src="images/logo.png" width="295" height="40" alt="" class="logo" /></a>
+
+        <div class="phone">
+            <span>(495)</span> 226 81 44<br />
+            8 800 333 53 94
+        </div>
+
+        <div class="login">
+            <a href="#" title="" class="enter">Войти на сайт</a><br />
+            <a href="#" title="">Зарегистрироваться</a>
+        </div>
+    </div>
+</div>
+
+<!-- top menu -->
+<div class="topmenu">
+    <div class="wrapper">
+        <ul>
+            <li class="active"><a href="#" title="">Коучинг</a></li>
+            <li><a href="#" title="">База знаний</a></li>
+            <li><a href="#" title="">Социальная сеть</a></li>
+            <li><a href="#" title="">Форум</a></li>
+            <li><a href="#" title="">Магазин</a></li>
+        </ul>
+
+        <a href="#" title="" class="what">Что такое Бизнес-Молодость?</a>
+    </div>
+</div>
+
+<div id="wrap">
+	<!-- content -->
+	<div class="content">
+
+        <!-- menu -->
+        <div class="menu">
+            <ul>
+                <li><a href="#" title="">О проекте</a></li>
+                <li><a href="#" title="">Каталог франшиз</a></li>
+                <li><a href="#" title="">Контакты</a></li>
+            </ul>
+        </div>
+
+        <!-- text -->
+        <div class="catalog">
+            <h1>Каталог франшиз</h1>
+
+            <div class="item">
+                <div class="icon">
+                    <img src="images/tmp/l1.png" width="264" height="78" alt="" />
+                </div>
+
+                <div class="description">
+                    франшиза по организации детских праздников
+                </div>
+            </div>
+
+            <!-- -->
+
+            <div class="item">
+                <div class="icon">
+                    <img src="images/soon.png" width="264" height="78" alt="" />
+                </div>
+
+                <div class="description">
+
+                </div>
+            </div>
+
+            <!-- -->
+
+            <div class="item">
+                <div class="icon">
+                    <img src="images/soon.png" width="264" height="78" alt="" />
+                </div>
+
+                <div class="description">
+
+                </div>
+            </div>
+
+            <!-- -->
+
+            <div class="item">
+                <div class="icon">
+                    <img src="images/soon.png" width="264" height="78" alt="" />
+                </div>
+
+                <div class="description">
+
+                </div>
+            </div>
+
+            <h3>Не нашли бизнес по душе?</h3>
+
+            <p class="tc">
+                <img src="images/arrow.png" width="111" height="38" alt="" />
+            </p>
+
+            <h4>Оставьте заявку и вскоре мы свяжемся ввами и предложим несколько вариантов!</h4>
+
+            <a href="#feedbackpopup" title="" class="feedbacknow">Оставить заявку</a>
+
+        </div>
+
+    </div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+    <div class="wrapper">
+
+    </div>
+</div>
+</body>
+</html>

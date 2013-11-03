@@ -1,0 +1,662 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+
+<script type="text/javascript" src="js/easySlider1.7.js"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$("#slider").easySlider({
+				auto: true,
+				continuous: true,
+				numeric: true
+			});
+        	$("#tips").easySlider({
+        		numeric: false,
+                controlsShow:		true
+        	});
+		});
+</script>
+
+<script type="text/javascript" src="js/jquery.selectBox.min.js"></script>
+<script type="text/javascript">
+
+			$(document).ready( function() {
+
+				$("SELECT")
+					.selectBox()
+					.focus( function() {
+						$("#console").append('Focus on ' + $(this).attr('name') + '<br />');
+						$("#console")[0].scrollTop = $("#console")[0].scrollHeight;
+					})
+					.blur( function() {
+						$("#console").append('Blur on ' + $(this).attr('name') + '<br />');
+						$("#console")[0].scrollTop = $("#console")[0].scrollHeight;
+					})
+					.change( function() {
+						$("#console").append('Change on ' + $(this).attr('name') + ': ' + $(this).val() + '<br />');
+						$("#console")[0].scrollTop = $("#console")[0].scrollHeight;
+					});
+
+			});
+
+</script>
+
+</head>
+<body>
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+        <div class="wrapper">
+            <a href="#" title=""><img src="images/logo.png" width="131" height="83" alt="" class="logo" /></a>
+
+            <div class="contacts v2">
+                <span class="title">ТУРИСТСКАЯ КОМПАНИЯ  /  КУРОРТЫ ЮГА РОССИИ</span><br />
+                <span class="phone">+ 7 8622 694420</span>&nbsp;&nbsp; - многоканальный<br />
+                <span class="phone">+7 (495) 4118252</span>    - прямой московский телефон
+            </div>
+
+            <!-- search -->
+            <div class="search">
+            <form>
+                <input name="searchbar" class="searchbar" type="text" value="Введите текст..." />
+                <input type="submit" name="find" id="find" value="" />
+            </form>
+            </div>
+
+            <!-- language -->
+            <div class="language">
+                <a href="#" title=""><img src="images/lang-ru.png" width="21" height="21" alt="" /></a>
+                <a href="#" title=""><img src="images/lang-de.png" width="21" height="21" alt="" /></a>
+                <a href="#" title=""><img src="images/lang-en.png" width="21" height="21" alt="" /></a>
+                <a href="#" title=""><img src="images/lang-fr.png" width="21" height="21" alt="" /></a>
+            </div>
+
+            <!-- menu static -->
+            <div class="menu">
+                <a href="#" title="" class="r1">ДЛЯ АГЕНСТВ</a>
+                <a href="#" title="" class="r2">ДЛЯ ЧАСТНЫХ ЛИЦ</a>
+                <a href="#" title="" class="r3">ДЕЛОВОЙ ТУРИЗМ</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- mainmenu -->
+    <div class="mainmenu">
+        <ul>
+            <li class="active"><a href="#" title="">СПЕЦПРЕДЛОЖЕНИЕ<br /><span>Спешите успеть</span></a></li>
+            <li><a href="#" title="">КУРОРТЫ<br /><span>Где отдыхать?</span></a></li>
+            <li><a href="#" title="">КАТАЛОГ ОТЕЛЕЙ<br /><span>На любой вкус</span></a></li>
+            <li><a href="#" title="">ЦЕННОВОЙ КАТАЛОГ<br /><span>По карману</span></a></li>
+            <li><a href="#" title="">ОБСЛУЖИВАНИЕ<br /><span>Сервис на выбор</span></a></li>
+            <li><a href="#" title="">О КОМПАНИИ<br /><span>Узнай больше</span></a></li>
+            <li><a href="#" title="">КОНТАКТЫ<br /><span>Для связи</span></a></li>
+        </ul>
+
+        <a href="#" title="" class="bron">Бронирование</a>
+    </div>
+
+    <!-- middle -->
+    <div class="middle">
+
+        <!-- menu static -->
+        <div class="menu">
+            <a href="#" title="" class="r1">Сочи</a>
+            <a href="#" title="" class="r2">Красная Поляна</a>
+            <a href="#" title="" class="r3">Анапа</a>
+            <a href="#" title="" class="r4">Геленджик</a>
+        </div>
+
+        <!-- slider -->
+		<div id="slider">
+			<ul>
+                <li><a href="#" title=""><img src="images/slider-1.jpg" width="499" height="264" alt="" /></a></li>
+                <li><a href="#" title=""><img src="images/slider-1.jpg" width="499" height="264" alt="" /></a></li>
+                <li><a href="#" title=""><img src="images/slider-1.jpg" width="499" height="264" alt="" /></a></li>
+                <li><a href="#" title=""><img src="images/slider-1.jpg" width="499" height="264" alt="" /></a></li>
+                <li><a href="#" title=""><img src="images/slider-1.jpg" width="499" height="264" alt="" /></a></li>
+                <li><a href="#" title=""><img src="images/slider-1.jpg" width="499" height="264" alt="" /></a></li>
+			</ul>
+		</div>
+
+        <!-- announce box -->
+        <div id="announce">
+            <img src="images/tmp/a1.jpg" width="464" height="261" alt="" />
+
+        </div>
+    </div>
+
+<!-- content -->
+<div class="content-wrapper">
+
+	<div class="content">
+
+        <!-- announce -->
+        <div class="box announce">
+            <div class="head">
+                <div class="icon">
+                    <img src="images/box-icon-announce.png" width="33" height="34" alt="" />
+                </div>
+
+                <h2>АНОНС СПЕЦПРЕДЛОЖЕНИЙ</h2>
+            </div>
+
+            <div class="items">
+                <div class="item">
+                    <div class="ico">
+                        <img src="images/box-sun.png" width="43" height="41" alt="" />
+                    </div>
+
+                    <div class="description">
+                        <a href="#" title="" class="title">Победный май</a><br />
+                        <small>В санатории Надежда</small>
+
+                        <p>Суперцена <strong>1580 руб. с чел.</strong> в день на путевки в мае. Агентствам 5%</p>
+                    </div>
+
+                    <div class="view">
+                        <a href="#" title=""><img src="images/tmp/v1.jpg" width="102" height="74" alt="" /></a>
+                    </div>
+                </div>
+
+                <!-- -->
+
+                <div class="item">
+                    <div class="ico">
+                        <img src="images/box-sun.png" width="43" height="41" alt="" />
+                    </div>
+
+                    <div class="description">
+                        <a href="#" title="" class="title">Победный май</a><br />
+                        <small>В санатории Надежда</small>
+
+                        <p>Суперцена <strong>1580 руб. с чел.</strong> в день на путевки в мае. Агентствам 5%</p>
+                    </div>
+
+                    <div class="view">
+                        <a href="#" title=""><img src="images/tmp/v1.jpg" width="102" height="74" alt="" /></a>
+                    </div>
+                </div>
+
+                <!-- -->
+
+                <div class="item">
+                    <div class="ico">
+                        <img src="images/box-sun.png" width="43" height="41" alt="" />
+                    </div>
+
+                    <div class="description">
+                        <a href="#" title="" class="title">Победный май</a><br />
+                        <small>В санатории Надежда</small>
+
+                        <p>Суперцена <strong>1580 руб. с чел.</strong> в день на путевки в мае. Агентствам 5%</p>
+                    </div>
+
+                    <div class="view">
+                        <a href="#" title=""><img src="images/tmp/v1.jpg" width="102" height="74" alt="" /></a>
+                    </div>
+                </div>
+
+                <!-- -->
+
+                <div class="item">
+                    <div class="ico">
+                        <img src="images/box-sun.png" width="43" height="41" alt="" />
+                    </div>
+
+                    <div class="description">
+                        <a href="#" title="" class="title">Победный май</a><br />
+                        <small>В санатории Надежда</small>
+
+                        <p>Суперцена <strong>1580 руб. с чел.</strong> в день на путевки в мае. Агентствам 5%</p>
+                    </div>
+
+                    <div class="view">
+                        <a href="#" title=""><img src="images/tmp/v1.jpg" width="102" height="74" alt="" /></a>
+                    </div>
+                </div>
+
+                <!-- -->
+
+                <div class="item">
+                    <div class="ico">
+                        <img src="images/box-sun.png" width="43" height="41" alt="" />
+                    </div>
+
+                    <div class="description">
+                        <a href="#" title="" class="title">Победный май</a><br />
+                        <small>В санатории Надежда</small>
+
+                        <p>Суперцена <strong>1580 руб. с чел.</strong> в день на путевки в мае. Агентствам 5%</p>
+                    </div>
+
+                    <div class="view">
+                        <a href="#" title=""><img src="images/tmp/v1.jpg" width="102" height="74" alt="" /></a>
+                    </div>
+                </div>
+
+                <!-- -->
+
+                <div class="item">
+                    <div class="ico">
+                        <img src="images/box-sun.png" width="43" height="41" alt="" />
+                    </div>
+
+                    <div class="description">
+                        <a href="#" title="" class="title">Победный май</a><br />
+                        <small>В санатории Надежда</small>
+
+                        <p>Суперцена <strong>1580 руб. с чел.</strong> в день на путевки в мае. Агентствам 5%</p>
+                    </div>
+
+                    <div class="view">
+                        <a href="#" title=""><img src="images/tmp/v1.jpg" width="102" height="74" alt="" /></a>
+                    </div>
+                </div>
+
+                <!-- -->
+
+                <div class="item">
+                    <div class="ico">
+                        <img src="images/box-sun.png" width="43" height="41" alt="" />
+                    </div>
+
+                    <div class="description">
+                        <a href="#" title="" class="title">Победный май</a><br />
+                        <small>В санатории Надежда</small>
+
+                        <p>Суперцена <strong>1580 руб. с чел.</strong> в день на путевки в мае. Агентствам 5%</p>
+                    </div>
+
+                    <div class="view">
+                        <a href="#" title=""><img src="images/tmp/v1.jpg" width="102" height="74" alt="" /></a>
+                    </div>
+                </div>
+
+                <!-- -->
+
+                <div class="item">
+                    <div class="ico">
+                        <img src="images/box-sun.png" width="43" height="41" alt="" />
+                    </div>
+
+                    <div class="description">
+                        <a href="#" title="" class="title">Победный май</a><br />
+                        <small>В санатории Надежда</small>
+
+                        <p>Суперцена <strong>1580 руб. с чел.</strong> в день на путевки в мае. Агентствам 5%</p>
+                    </div>
+
+                    <div class="view">
+                        <a href="#" title=""><img src="images/tmp/v1.jpg" width="102" height="74" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- hotels of month -->
+        <div class="box month">
+            <div class="head">
+                <div class="icon">
+                    <img src="images/box-icon-month.png" alt="" />
+                </div>
+
+                <h2>ОТЕЛИ МЕСЯЦА <span>Популярные отели</span></h2>
+            </div>
+
+            <div class="items">
+                <div class="item">
+                    <div class="view">
+                        <a href="#" title=""><img src="images/tmp/v2.jpg" width="111" height="111" alt="" /></a>
+                    </div>
+
+                    <div class="description">
+                        <a href="#" title="" class="title">Пансионат Шексна</a><br />
+                        <div class="rating">
+                            <img src="images/rating-star.png" width="14" height="14" alt="" />
+                            <img src="images/rating-star.png" width="14" height="14" alt="" />
+                            <img src="images/rating-star.png" width="14" height="14" alt="" />
+                            <img src="images/rating-star.png" width="14" height="14" alt="" />
+                            <img src="images/rating-star.png" width="14" height="14" alt="" />
+                        </div>
+
+                        <p>Крткое описание объекта Крткое описание объектаКрткое описание</p>
+
+                        <a href="#" title="" class="more">Описание пансионата ШЕКСНА</a>
+                    </div>
+                </div>
+
+                <!-- -->
+
+                <div class="item">
+                    <div class="view">
+                        <a href="#" title=""><img src="images/tmp/v2.jpg" width="111" height="111" alt="" /></a>
+                    </div>
+
+                    <div class="description">
+                        <a href="#" title="" class="title">Пансионат Шексна</a><br />
+                        <div class="rating">
+                            <img src="images/rating-star.png" width="14" height="14" alt="" />
+                            <img src="images/rating-star.png" width="14" height="14" alt="" />
+                            <img src="images/rating-star.png" width="14" height="14" alt="" />
+                            <img src="images/rating-star.png" width="14" height="14" alt="" />
+                            <img src="images/rating-star.png" width="14" height="14" alt="" />
+                        </div>
+
+                        <p>Крткое описание объекта Крткое описание объектаКрткое описание</p>
+
+                        <a href="#" title="" class="more">Описание пансионата ШЕКСНА</a>
+                    </div>
+                </div>
+
+                <!-- -->
+
+                <div class="item">
+                    <div class="view">
+                        <a href="#" title=""><img src="images/tmp/v2.jpg" width="111" height="111" alt="" /></a>
+                    </div>
+
+                    <div class="description">
+                        <a href="#" title="" class="title">Пансионат Шексна</a><br />
+                        <div class="rating">
+                            <img src="images/rating-star.png" width="14" height="14" alt="" />
+                            <img src="images/rating-star.png" width="14" height="14" alt="" />
+                            <img src="images/rating-star.png" width="14" height="14" alt="" />
+                            <img src="images/rating-star.png" width="14" height="14" alt="" />
+                            <img src="images/rating-star.png" width="14" height="14" alt="" />
+                        </div>
+
+                        <p>Крткое описание объекта Крткое описание объектаКрткое описание</p>
+
+                        <a href="#" title="" class="more">Описание пансионата ШЕКСНА</a>
+                    </div>
+                </div>
+
+                <!-- -->
+
+                <div class="item">
+                    <div class="view">
+                        <a href="#" title=""><img src="images/tmp/v2.jpg" width="111" height="111" alt="" /></a>
+                    </div>
+
+                    <div class="description">
+                        <a href="#" title="" class="title">Пансионат Шексна</a><br />
+                        <div class="rating">
+                            <img src="images/rating-star.png" width="14" height="14" alt="" />
+                            <img src="images/rating-star.png" width="14" height="14" alt="" />
+                            <img src="images/rating-star.png" width="14" height="14" alt="" />
+                            <img src="images/rating-star.png" width="14" height="14" alt="" />
+                            <img src="images/rating-star.png" width="14" height="14" alt="" />
+                        </div>
+
+                        <p>Крткое описание объекта Крткое описание объектаКрткое описание</p>
+
+                        <a href="#" title="" class="more">Описание пансионата ШЕКСНА</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- sidebar -->
+    <div class="aside">
+        <div class="box catalog">
+            <div class="head">
+                <h2>КАТАЛОГ <span>На Ваш выбор</span></h2>
+            </div>
+
+            <div class="filter">
+                <form>
+            		<select name="standard-dropdown">
+		    		    <option>Сочи - Санатории</option>
+		    		    <option value="2">Сочи - Санатории</option>
+		    	    </select>
+
+            		<select name="standard-dropdown-2">
+		    		    <option>Сочи - Пансионаты</option>
+		    		    <option value="2">Сочи - Пансионаты</option>
+		    	    </select>
+
+            		<select name="standard-dropdown-3">
+		    		    <option>Сочи Центр - Гостиницы</option>
+		    		    <option value="2">Сочи Центр - Гостиницы</option>
+		    	    </select>
+
+            		<select name="standard-dropdown-4">
+		    		    <option>Адлер - Гостиницы</option>
+		    		    <option value="2">Адлер - Гостиницы</option>
+		    	    </select>
+
+            		<select name="standard-dropdown-5">
+		    		    <option>Хоста - Гостиницы</option>
+		    		    <option value="2">Хоста - Гостиницы</option>
+		    	    </select>
+
+            		<select name="standard-dropdown-6">
+		    		    <option>Лазаревская - Гостиницы</option>
+		    		    <option value="2">Лазаревская - Гостиницы</option>
+		    	    </select>
+
+            		<select name="standard-dropdown-7">
+		    		    <option>Красная поляна</option>
+		    		    <option value="2">Красная поляна</option>
+		    	    </select>
+
+            		<select name="standard-dropdown-8">
+		    		    <option>Анапа</option>
+		    		    <option value="2">Анапа</option>
+		    	    </select>
+
+            		<select name="standard-dropdown-9">
+		    		    <option>Геленджик</option>
+		    		    <option value="2">Геленджик</option>
+		    	    </select>
+
+            		<select name="standard-dropdown-10">
+		    		    <option>Туапсинский район</option>
+		    		    <option value="2">Туапсинский район</option>
+		    	    </select>
+
+            		<select name="standard-dropdown-11">
+		    		    <option>Горячий Ключ</option>
+		    		    <option value="2">Горячий Ключ</option>
+		    	    </select>
+
+            		<select name="standard-dropdown-12">
+		    		    <option>Ейск</option>
+		    		    <option value="2">Ейск</option>
+		    	    </select>
+                </form>
+            </div>
+        </div>
+
+        <!-- payment systems -->
+        <div class="box paymentsystems">
+            <h5>Системы оплаты</h5>
+
+            <a href="#" title=""><img src="images/mc.png" width="73" height="53" alt="" /></a>
+            <a href="#" title=""><img src="images/visa.png" width="69" height="53" alt="" /></a><br />
+            <a href="#" title=""><img src="images/diners.png" width="76" height="53" alt="" /></a>
+            <a href="#" title=""><img src="images/contakt.png" width="81" height="53" alt="" /></a><br />
+        </div>
+
+        <!-- adv -->
+        <div class="box adv">
+            <a href="#" title=""><img src="images/adv.png" width="210" height="231" alt="" /></a>
+            <a href="#" title=""><img src="images/adv.png" width="210" height="231" alt="" /></a>
+        </div>
+    </div>
+
+</div>
+
+<!-- fast navigation -->
+<div class="fastnav">
+    <div class="wrapper">
+
+        <div class="item r1">
+            <h5>Категории</h5>
+            <ul>
+                <li><a href="#" title="">Спец. предложения</a></li>
+                <li><a href="#" title="">Каталог отелй</a></li>
+                <li><a href="#" title="">Ценновой каталог</a></li>
+                <li><a href="#" title="">Обслуживание</a></li>
+            </ul>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="item r2">
+            <h5>Оформить запрос</h5>
+            <ul>
+                <li>Заполните форму для оформления заявки</li>
+                <li><br /></li>
+                <li><a href="#" title="">Смотреть дальше</a></li>
+            </ul>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="item r3">
+            <h5>Отзывы</h5>
+            <ul>
+                <li>Для нас важно Ваше мнение</li>
+                <li><br /></li>
+                <li><a href="#" title="">Смотреть дальше</a></li>
+            </ul>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="item r5">
+            <h5>Событийный календарь</h5>
+            <ul>
+                <li>Описание раздела, а то я не знаю</li>
+                <li><br /></li>
+                <li><a href="#" title="">Смотреть дальше</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<!-- feedback -->
+<div class="feedback">
+    <div class="questions">
+        <h3>Возникли вопросы?</h3>
+
+        <p>Наши сотрудники с 09.00 до 18.00 смогут оказать
+        поддержку в онлайн-чате или по телефону</p>
+
+        <a href="#" title="" class="button">Онлайн-чат</a>
+        <a href="#" title="" class="button"><img src="images/button-phone.png" width="8" height="12" alt="" /> + 7 8622 69 44 20</a>
+    </div>
+
+    <div class="subscribe">
+        <div class="text">
+          <h3>Новостная подписка</h3>
+
+          <p>Будьте в курсе! Получайте новости и информацию о скидках</p>
+          <p><small>*Проверьте свою спам-почту, если письма не доходят до Вас</small></p>
+        </div>
+
+        <div class="form">
+            <form>
+                <input name="yourmail" class="textbox" value="" type="text" />
+
+                <label>
+                    <input type="radio" name="Подписаться" value="Подписаться" checked="checked" /> Подписаться &nbsp;&nbsp;
+                    <input type="radio" name="Отказаться" value="Отказаться" /> Отказаться
+                </label>
+
+                <input type="submit" name="subscribenow" class="button" value="Подписаться" />
+                <input type="submit" name="unsubscribenow" class="button" value="Лента новостей" />
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- bottom box -->
+<div class="bottombox">
+    <div class="wrapper">
+
+      <!-- recent -->
+      <div class="box recent">
+          <h4>Недавнии сообщения в блоге</h4>
+          <h5>Наши  статьи</h5>
+
+          <div class="item">
+              <a href="#" title="" class="title">Изменен дизайн сайта</a>
+              <p>Мы постарались сделать максимально удобным интерфейс сайта. Надеимся, что это облегчит Вам выбор</p>
+
+              <div class="author">
+                  от <strong>Admin</strong> дата <strong>17.04.2011</strong>
+              </div>
+          </div>
+
+          <div class="item last">
+              <a href="#" title="" class="title">В победный май-здоровье укрепляй!</a>
+              <p>Суперцены в санатории НАДЕЖДА:<br />
+              1580 руб. с чел. в день с питанием,шведский стол и лечение</p>
+
+              <div class="author">
+                  от <strong>Admin</strong> дата <strong>17.04.2011</strong>
+              </div>
+          </div>
+      </div>
+
+      <!-- social -->
+      <div class="box social">
+          <h4>Ривьера Сочи в соц. сетях</h4>
+          <h5>Следуйте за нами</h5>
+
+          <div class="item">
+            <a href="#" title=""><img src="images/facebook.png" width="32" height="32" alt="" /></a>
+            <a href="#" title="">Facebook</a>
+          </div>
+
+          <div class="item">
+            <a href="#" title=""><img src="images/twitter.png" width="32" height="32" alt="" /></a>
+            <a href="#" title="">Twitter</a>
+          </div>
+
+          <div class="item">
+            <a href="#" title=""><img src="images/twitter.png" width="32" height="32" alt="" /></a>
+            <a href="#" title="">ВКонтакте</a>
+          </div>
+      </div>
+
+      <!-- other -->
+      <div class="box other">
+          <h4>Советуем посетить</h4>
+          <h5>Интересная информация</h5>
+
+          <a href="#" title=""><img src="images/tmp/v3.jpg" width="119" height="119" alt="" /></a>
+          <a href="#" title=""><img src="images/tmp/v3.jpg" width="119" height="119" alt="" /></a>
+          <a href="#" title=""><img src="images/tmp/v3.jpg" width="119" height="119" alt="" /></a>
+          <a href="#" title=""><img src="images/tmp/v3.jpg" width="119" height="119" alt="" /></a>
+      </div>
+
+
+    </div>
+</div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+    <div class="copyright">
+        Ривьера Сочи - Туристская компания. 2011. Все права защишены
+    </div>
+
+    <div class="made">
+        Design - A. Perelman
+    </div>
+</div>
+</body>
+</html>

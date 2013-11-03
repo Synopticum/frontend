@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+
+<link href="css/ui-lightness/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+<script src="js/jquery-ui-1.9.2.custom.js"></script>
+	<script>
+	$(function() {		
+		$( "#button" ).button();
+		$( "#radioset" ).buttonset();
+		
+		$( "#tabs" ).tabs();
+		
+		$( "#slider" ).slider({
+			range: true,
+			values: [ 17, 67 ]
+		});		
+	});
+	</script>
+
+<script type="text/javascript" src="js/pxgradient-1.0.2.jquery.js"></script>
+
+<link rel="stylesheet" href="js/flexslider.css" type="text/css" media="screen" />
+<script defer src="js/jquery.flexslider.js"></script>
+
+</head>
+<body>
+
+<!-- top navigation -->
+<div class="topnav">
+	<div class="wrapper">
+		<!-- welcome -->
+		<div class="topnav-welcome">
+			Мы вас не узнаем. <a href="javascript:void(0);" title="" class="nohref">Паркуйтесь</a> или <a href="" title="">регистрируйтесь</a>
+		</div>
+
+		<!-- top menu -->
+		<div class="topnav-menu">
+			<ul>
+				<li><a href="" title="">Наши покупатели</a></li>
+				<li><a href="" title="">Корпоративным клиентам</a></li>
+				<li><a href="" title="">Полезная информация</a></li>
+				<li><a href="" title="">Контакты</a></li>
+				<li><a href="" title="">О компании</a>
+					<ul>
+						<li><a href="" title="">Общие</a></li>
+						<li><a href="" title="">Наши награды</a></li>
+						<li><a href="" title="">Полезная информация</a></li>
+						<li><a href="" title="">Мы</a></li>
+						<li><a href="" title="">Каталог а/м</a></li>
+					</ul>
+				</li>				                                    
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+		<!-- search -->
+		<div class="header-search">
+			<form action="">
+			    <input name="textbox" type="text" value="Поиск по сайту" id="s" tabindex="1" />
+			    <input name="find" type="submit" value="" id="searchsubmit"tabindex="2" />
+			</form>
+		</div>
+
+		<!-- contacts -->
+		<div class="header-phone">
+			<big>(8 800) 345-34-45</big><br />
+			<a href="" title="">Задать вопрос on-line</a>
+		</div>
+
+		<!-- main menu -->
+		<div class="header-menu">
+			<table>
+				<tr>
+					<td class="r1 active"><a href="" title=""><span></span>Купить автомобиль</a></td>
+					<td class="r2"><a href="" title=""><span></span>Купить сервис</a></td>
+					<td class="r3"><a href="" title=""><span></span>Купить страховку</a></td>
+					<td class="r4"><a href="" title=""><span></span>Купить в кредит</a></td>
+					<td class="r5"><a href="" title=""><span></span>Продать старый автомобиль</a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<!-- content -->
+	<div class="content">
+		<div class="page">
+			<div class="banner">
+		        <div class="flexslider">
+		          <ul class="slides">
+		            <li><img src="images/tmp/banner.jpg" /></li>
+		            <li><img src="images/tmp/banner.jpg" /></li>
+		            <li><img src="images/tmp/banner.jpg" /></li>
+		            <li><img src="images/tmp/banner.jpg" /></li>
+		            <li><img src="images/tmp/banner.jpg" /></li>
+		          </ul>
+		        </div>	
+			</div>
+
+			<!-- news -->
+			<div class="news">
+				<div class="item">
+					<div class="view">
+						<img src="images/tmp/n1.jpg" alt="" />
+					</div>
+
+					<div class="description">
+						<span class="date">54 апреля 2012</span>
+						<span class="title">6 подушек на руле в Mitsubishi Lancer</span>
+
+						<p><a href="" title="">Выкупная цена вашего автомобиля и размер ее увеличения определяется после осмотра и 
+						оценки состояния автомобиля.</a></p>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="view">
+						<img src="images/tmp/n2.jpg" alt="" />
+					</div>
+
+					<div class="description">
+						<span class="date">54 апреля 2012</span>
+						<span class="title">Новые кресла для Toyota</span>
+
+						<p><a href="" title="">Выкупная цена вашего автомобиля и размер ее увеличения определяется после осмотра и 
+						оценки состояния автомобиля.</a></p>
+					</div>
+				</div>
+				
+				<div class="item">
+					<div class="view">
+						<img src="images/tmp/n3.jpg" alt="" />
+					</div>
+
+					<div class="description">
+						<span class="date">54 апреля 2012</span>
+						<span class="title">летняя распродажа</span>
+
+						<p><a href="" title="">Выкупная цена вашего автомобиля и размер ее увеличения определяется после осмотра и 
+						оценки состояния автомобиля.</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="news">
+				<div class="adv">
+					<a href="" title="">Почему покупают у нас?</a>
+				</div>
+
+				<div class="adv">
+					<a href="" title="">Почему продают нам?</a>
+				</div>
+
+				<div class="adv">
+					<a href="" title="">Как просто покупать on-line?</a>
+				</div>
+			</div>
+
+			<!-- catalog -->
+			<div class="catalog">
+				<!-- category -->
+				<div class="catalog-category">
+					<div class="catalog-brand">
+						<img src="images/brands/mitsu.png" alt="" />
+					</div>
+
+					<div class="catalog-model">
+						<span class="catalog-model-name">ASX</span>
+
+						<a href="" title=""><img src="images/models/mb-acx.png" alt="" /></a>
+
+						<span class="catalog-model-cost">от 700 000 руб.</span>
+					</div>
+
+					<div class="catalog-model">
+						<span class="catalog-model-name">i-MIEV</span>
+
+						<a href="" title=""><img src="images/models/mb-imiev.png" alt="" /></a>
+
+						<span class="catalog-model-cost">от 700 000 руб.</span>
+					</div>
+
+					<div class="catalog-model">
+						<span class="catalog-model-name">L200</span>
+
+						<a href="" title=""><img src="images/models/mb-l200.png" alt="" /></a>
+
+						<span class="catalog-model-cost">от 700 000 руб.</span>
+					</div>
+
+					<div class="catalog-model">
+						<span class="catalog-model-name">Lancer</span>
+
+						<a href="" title=""><img src="images/models/mb-lancer.png" alt="" /></a>
+
+						<span class="catalog-model-cost">от 700 000 руб.</span>
+					</div>
+
+					<div class="catalog-model">
+						<span class="catalog-model-name">LANCER EVOLUTION</span>
+
+						<a href="" title=""><img src="images/models/mb-acx.png" alt="" /></a>
+
+						<span class="catalog-model-cost">от 700 000 руб.</span>
+					</div>
+
+					<div class="catalog-model">
+						<span class="catalog-model-name">OUTLANDER</span>
+
+						<a href="" title=""><img src="images/models/mb-outlander.png" alt="" /></a>
+
+						<span class="catalog-model-cost">от 700 000 руб.</span>
+					</div>
+
+					<div class="catalog-model">
+						<span class="catalog-model-name">Pajero</span>
+
+						<a href="" title=""><img src="images/models/mb-pajero.png" alt="" /></a>
+
+						<span class="catalog-model-cost">от 700 000 руб.</span>
+					</div>
+
+					<div class="catalog-model">
+						<span class="catalog-model-name">PAJERO SPORT</span>
+
+						<a href="" title=""><img src="images/models/mb-pajerosport.png" alt="" /></a>
+
+						<span class="catalog-model-cost">от 700 000 руб.</span>
+					</div>
+				</div>
+
+				<!-- category -->
+				<div class="catalog-category">
+					<div class="catalog-brand">
+						<img src="images/brands/hyundai.png" alt="" />
+					</div>
+
+					<div class="catalog-model">
+						<span class="catalog-model-name">equus</span>
+
+						<a href="" title=""><img src="images/models/hy-equus.png" alt="" /></a>
+
+						<span class="catalog-model-cost">от 700 000 руб.</span>
+					</div>
+
+					<div class="catalog-model">
+						<span class="catalog-model-name">genesis</span>
+
+						<a href="" title=""><img src="images/models/hy-genesis.png" alt="" /></a>
+
+						<span class="catalog-model-cost">от 700 000 руб.</span>
+					</div>
+
+					<div class="catalog-model">
+						<span class="catalog-model-name">Genesis COUPE</span>
+
+						<a href="" title=""><img src="images/models/hy-genesiscoupe.png" alt="" /></a>
+
+						<span class="catalog-model-cost">от 700 000 руб.</span>
+					</div>
+
+					<div class="catalog-model">
+						<span class="catalog-model-name">sonata</span>
+
+						<a href="" title=""><img src="images/models/hy-sonata.png" alt="" /></a>
+
+						<span class="catalog-model-cost">от 700 000 руб.</span>
+					</div>
+
+					<div class="catalog-model">
+						<span class="catalog-model-name">elantra</span>
+
+						<a href="" title=""><img src="images/models/hy-elantra.png" alt="" /></a>
+
+						<span class="catalog-model-cost">от 700 000 руб.</span>
+					</div>
+
+					<div class="catalog-model">
+						<span class="catalog-model-name">i40</span>
+
+						<a href="" title=""><img src="images/models/hy-i40.png" alt="" /></a>
+
+						<span class="catalog-model-cost">от 700 000 руб.</span>
+					</div>
+
+					<div class="catalog-model">
+						<span class="catalog-model-name">i30</span>
+
+						<a href="" title=""><img src="images/models/hy-i30.png" alt="" /></a>
+
+						<span class="catalog-model-cost">от 700 000 руб.</span>
+					</div>
+
+					<div class="catalog-model">
+						<span class="catalog-model-name">solaris</span>
+
+						<a href="" title=""><img src="images/models/hy-solaris.png" alt="" /></a>
+
+						<span class="catalog-model-cost">от 700 000 руб.</span>
+					</div>
+
+					<div class="catalog-model">
+						<span class="catalog-model-name">veloster</span>
+
+						<a href="" title=""><img src="images/models/hy-veloster.png" alt="" /></a>
+
+						<span class="catalog-model-cost">от 700 000 руб.</span>
+					</div>
+
+					<div class="catalog-model">
+						<span class="catalog-model-name">santa fe</span>
+
+						<a href="" title=""><img src="images/models/hy-santafe.png" alt="" /></a>
+
+						<span class="catalog-model-cost">от 700 000 руб.</span>
+					</div>
+
+					<div class="catalog-model">
+						<span class="catalog-model-name">ix55</span>
+
+						<a href="" title=""><img src="images/models/hy-ix55.png" alt="" /></a>
+
+						<span class="catalog-model-cost">от 700 000 руб.</span>
+					</div>
+
+					<div class="catalog-model">
+						<span class="catalog-model-name">ix35</span>
+
+						<a href="" title=""><img src="images/models/hy-ix35.png" alt="" /></a>
+
+						<span class="catalog-model-cost">от 700 000 руб.</span>
+					</div>
+
+					<div class="catalog-model">
+						<span class="catalog-model-name">h-1</span>
+
+						<a href="" title=""><img src="images/models/hy-h1.png" alt="" /></a>
+
+						<span class="catalog-model-cost">от 700 000 руб.</span>
+					</div>
+
+					<div class="catalog-model">
+						<span class="catalog-model-name">santa fe new</span>
+
+						<a href="" title=""><img src="images/models/hy-santafenew.png" alt="" /></a>
+
+						<span class="catalog-model-cost">от 700 000 руб.</span>
+					</div>
+
+					<div class="catalog-model">
+						<span class="catalog-model-name">grandeur</span>
+
+						<a href="" title=""><img src="images/models/hy-grandeur.png" alt="" /></a>
+
+						<span class="catalog-model-cost">от 700 000 руб.</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- text -->
+			<div class="text">
+				<h2 class="text-title">Розничное подразделение «РОЛЬФ»</h2>
+
+				<p>«РОЛЬФ Юг» — официальный дилер Mitsubishi и Hyundai. Открытие дилерского центра <a href="" title="">состоялось</a> в октябре 1999 года. Сегодня «РОЛЬФ Юг» — один из крупнейших центров в Европе по продаже и обслуживанию автомобилей Mitsubishi и Hyundai, предоставляющий своим клиентам полный спектр услуг, связанных с покупкой автомобиля и его послепродажным обслуживанием.</p>
+
+				<p>Расположенный вблизи крупных транспортных магистралей (Ленинский проспект, Профсоюзная улица, МКАД) юго-запада Москвы и в 5 минутах ходьбы от метро, этот центр отличается удобными путями подъезда.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+	<div class="wrapper">
+		<!-- text -->
+		<div class="footer-text">
+			<div class="footer-text-left">
+				<h6>Купить Mitsubishi</h6>
+
+				<p><a href="" title="">Mitsubishi Lancer</a> | 
+					<a href="" title="">Mitsubishi Lancer evolution</a> | 
+					<a href="" title="">Mitsubishi I-Miev</a> | 
+					<a href="" title="">Mitsubishi ASX</a> | 
+					<a href="" title="">Mitsubishi Outlander</a> | 
+					<a href="" title="">Mitsubishi Pajero Sport</a> | 
+					<a href="" title="">Mitsubishi Pajero</a> | 
+					<a href="" title="">Mitsubishi L200</a>
+				</p>
+
+			</div>
+
+			<div class="footer-text-right">
+				<h6>Купить Hyundai</h6>
+
+				<p><a href="" title="">Hyundai Solaris | 
+					<a href="" title="">Hyundai i30</a> | 
+					<a href="" title="">Hyundai i40</a> | 
+					<a href="" title="">Hyundai Elantra</a> | 
+					<a href="" title="">Hyundai Sonata</a> | 
+					<a href="" title="">Hyundai Veloster</a> | 
+					<a href="" title="">Hyundai Grandeur</a> | 
+					<a href="" title="">Hyundai Genesis</a> | 
+					<a href="" title="">Hyundai Genesis coupe</a> | 
+					<a href="" title="">Hyundai Equus</a> | 
+					<a href="" title="">Hyundai ix35</a> | 
+					<a href="" title="">Hyundai Santa Fe</a> | 
+					<a href="" title="">Hyundai ix55</a> | 
+					<a href="" title="">Hyundai H-1</a>
+				</p>
+			</div>
+
+			<div class="footer-text-center">
+				<h6>Услуги автосалона</h6>
+
+				<p><a href="" title="">Акции</a> | 
+					<a href="" title="">О компании</a> | 
+					<a href="" title="">Наша команда</a> | 
+					<a href="" title="">Автосервис</a> | 
+					<a href="" title="">Автострахование</a> | 
+					<a href="" title="">Отзывы</a> | 
+					<a href="" title="">Купить автомобиль в кредит</a> | 
+					<a href="" title="">Продать автомобиль</a> | 
+					<a href="" title="">Корпоративным клиентам</a> | 
+					<a href="" title="">Программа лояльности</a> | 
+					<a href="" title="">Шиномонтаж</a> | 
+					<a href="" title="">Шинный отель</a> | 
+					<a href="" title="">Техническое обслуживание</a> | 
+					<a href="" title="">Покраска автомобилей</a> | 
+					<a href="" title="">Контакты</a> |
+				</p>
+			</div>
+		</div>
+
+		<div class="footer-copyright">
+			© 2011—2012 “РОЛЬФ On-line”<br />
+			<a href="" title="">Контактная информация</a>
+
+			<div class="footer-social">
+				<a href="" title=""><img src="images/tw.png" alt="" /></a>
+				<a href="" title=""><img src="images/fb.png" alt="" /></a>
+				<a href="" title=""><img src="images/yt.png" alt="" /></a>
+			</div>
+		</div>
+
+		<!-- made by -->
+		<div class="footer-made">
+			Сварено &mdash; <a href="" title=""><img src="images/weway.png" alt="" /></a>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/call.js"></script>
+</body>
+</html>

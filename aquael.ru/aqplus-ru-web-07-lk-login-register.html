@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>aqplus-ru-web-07-home</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+
+<script language="JavaScript" type="text/javascript">
+/*<![CDATA[*/
+$(document).ready(function() {
+
+	//When page loads...
+	$(".tab_content").hide(); //Hide all content
+	$("ul.lk-tabs li:first").addClass("active").show(); //Activate first tab
+	$(".tab_content:first").show(); //Show first tab content
+
+	//On Click Event
+	$("ul.lk-tabs li").click(function() {
+
+		$("ul.lk-tabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".tab_content").hide(); //Hide all tab content
+
+		var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+		$(activeTab).fadeIn(); //Fade in the active ID content
+		return false;
+	});
+
+});
+/*]]>*/
+</script>
+</head>
+<body>
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+		<a href="#" title=""><img src="images/header-logo.png" alt="" class="logo" /></a>
+		
+		<div class="header-contacts">
+			<span class="title">Телефон в Санкт-Петербурге:</span>
+			+7 (812) <big>622-12-51</big>
+		</div>
+		
+		<div class="header-links">
+			<span class="map"><a href="#" title="">Схема проезда</a></span ><br />
+			<a href="" title="">Оптовым покупателям</a>
+		</div>
+		
+		<div class="header-user">
+			<a href="" title="" class="cabinet">Личный кабинет</a><br />
+			<a href="" title="">В корзине:</a> <big>0</big> товаров<br />
+			На сумму: <big>0</big> руб.
+		</div>
+	</div>
+	
+	<!-- top menu -->
+	<div class="mainmenu">
+		<ul>                                          
+			<li><a href="#" title="">Производство</a></li>
+			<li><a href="#" title="">Интернет-магазин</a></li>
+			<li><a href="#" title="">О компании</a>
+				<ul>
+					<li><a href="#" title="">Оптовая торговля</a></li>
+					<li><a href="#" title="">Салон «Акваландия»</a></li>
+					<li><a href="#" title="">Производство</a></li>
+					<li><a href="#" title="">Наши партнёры</a></li>
+					<li><a href="#" title="">Вакансии</a></li>
+					<li><a href="#" title="">Контакты и реквизиты</a></li>
+					<li class="last"></li>
+				</ul>
+			</li>
+			<li class="none"><a href="#" title="">Форум</a></li>
+			<li class="none"><a href="#" title="">Контакты</a></li>
+		</ul>
+
+		<div class="search">
+			<form>
+				<input name="searchbar" id="searchbar" type="text" value="Поиск по сайту" tabindex="1" />
+				<input type="submit" name="find" id="find" value="" tabindex="2" />
+			</form>
+		</div>
+	</div>
+
+	<!-- content -->
+	<div class="content">
+		
+		<!-- content small -->
+		<div class="content-small">
+			<div class="breadcrumbs">
+				<a href="#" title="">Главная</a> &rarr; <a href="#" title="">Интернет-магазин</a> &rarr; <a href="#" title="">Корзина</a> &rarr;
+			</div>
+
+            <ul class="lk-tabs">
+                <li><a href="#tab1">Войти</a></li>
+                <li><a href="#tab2">Регистрация</a></li>
+            </ul>
+
+            <div class="tab_container">
+                <div id="tab1" class="tab_content">
+                    <div class="formbox">
+                        <form>
+                            <label><strong>Адрес электронной почты:</strong><br />
+                            <input name="yourmail" type="text" class="textbox" value="info@aqplus.ru" tabindex="" />
+                            </label>
+
+                            <label><strong>Пароль:</strong><br />
+                            <input name="yourpassword" type="password" class="textbox" value="****************" tabindex="" />
+                            </label>
+
+                            <label class="rememberme"><input type="checkbox" name="rememberme" tabindex="" checked="checked" /> Запомнить меня</label>
+
+                            <input type="submit" name="login" class="button" id="login" value="Войти" tabindex="" />
+                            <span class="passrecovery">
+                                <span class="link">Вспомнить пароль</span>
+                                <div id="passrecovery">
+                                    <a href="#" title="" id="passrecovery-close"></a>
+
+                                    <h3>Восстановление пароля</h3>
+                                    <h3 class="thanx">Спасибо</h3>
+
+                                    <p>Краткое описание процесса восстановления пароля, т.е. текст о том, что необходимо ввести адрес
+                                    электронной почты, который указывался при регистрации на сайте и т.д.</p>
+
+                                    <form>
+                                        <label><strong>Адрес электронной почты:</strong><br />
+                                        <input name="yourmail" type="text" value="info@aqplus.ru" class="textbox" tabindex="" /></label>
+
+                                        <input type="button" name="send" id="sendpassword" value="Выслать пароль" tabindex="0" />
+                                    </form>
+                                </div>
+                            </span>
+                            <script language="JavaScript" type="text/javascript">
+                            /*<![CDATA[*/
+                            $('.passrecovery .link').click(function() {
+                              $('#passrecovery').show();
+                            });
+
+                            $('#sendpassword').click(function() {
+                              $('#passrecovery p, #passrecovery label, #passrecovery #sendpassword, #passrecovery h3').hide();
+                              $('#passrecovery .thanx, #passrecovery-close').show();
+                            });
+
+                            $('#passrecovery-close').click(function() {
+                              $('#passrecovery').hide();
+                            });
+                            /*]]>*/
+                            </script>
+                        </form>
+                    </div>
+                </div>
+                <!-- tab 2 -->
+                <div id="tab2" class="tab_content">
+                  <div class="formbox">
+                        <form>
+                            <label><strong>Адрес электронной почты:<span class="required">*</span></strong><br />
+                            <input name="yourmail" type="text" class="textbox" value="info@aqplus.ru" tabindex="" />
+                            </label>
+
+                            <label><strong>Пароль:<span class="required">*</span></strong><br />
+                            <input name="yourpass1" type="text" class="textbox" value="****************" tabindex="" />
+                            </label>
+
+                            <label><strong>Подтвердите пароль:<span class="required">*</span></strong><br />
+                            <input name="yourpass2" type="text" class="textbox" value="****************" tabindex="" />
+                            </label>
+
+                            <div class="hr"></div>
+
+                            <label><strong>Имя:<span class="required">*</span></strong><br />
+                            <input name="yourname" type="text" class="textbox" value="" tabindex="" />
+                            </label>
+
+                            <label><strong>Фамилия:<span class="required">*</span></strong><br />
+                            <input name="yoursurname" type="text" class="textbox" value="" tabindex="" />
+                            <div class="error">Необходимо указать фамилию</div>
+                            </label>
+
+                            <label><strong>Контактный телефон:<span class="required">*</span></strong><br />
+                            <input name="yourphone" type="text" class="textbox" value="(___) ___-__-__" tabindex="" />
+                            <div class="error">Необходимо указать контактный телефон</div>
+                            </label>
+
+                            <label><strong>Ваш город:</strong><br />
+                            <input name="yourtown" type="text" class="textbox" value="" tabindex="" />
+                            </label>
+
+                            <label><strong>Адрес:</strong><br />
+                            <input name="youraddress" type="text" class="textbox" value="" tabindex="" />
+                            </label>
+
+                            <div class="hr"></div>
+
+                            <div class="captcha">
+                                <div class="img"><img src="images/tmp/captcha.gif" width="141" height="49" alt="" /></div>
+                                <label class="desc">
+                                    <strong>Повторите код:<span class="required">*</span></strong><br />
+                                    <input name="yourname" type="text" class="textbox" value="" tabindex="" />
+                                </label>
+                            </div>
+
+                            <label><input type="checkbox" name="vx" checked="checked" /> Я принимаю условия <a href="#" title="">Пользовательсткого соглашения</a></label>
+
+                            <input type="button" name="savechanges" class="button" value="Зарегистрироваться" tabindex="" />
+                            <span class="comment-required">* Обязательные поля</span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+		</div>
+		
+		<!-- rightside -->
+		<div class="rightside">
+
+			<div class="banner">
+				<img src="images/tmp/tmp_1.jpg" alt="" />
+			</div>
+		</div>
+
+
+	</div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+	<div class="wrapper">
+		<div class="box">
+			<ul>
+				<li><a href="#" title="">Производство</a></li>
+				<li><a href="#" title="">Серия STANDART</a></li>
+				<li><a href="#" title="">Серия LUX</a></li>
+				<li><a href="#" title="">Серия PRO</a></li>
+				<li><a href="#" title="">Аквариумы на заказ</a></li>
+			</ul>
+		</div>
+
+		<div class="box">
+			<ul>
+				<li><a href="#" title="">Интернет-магазин</a></li>
+				<li><a href="#" title="">Каталог</a></li>
+				<li><a href="#" title="">Как сделать заказ</a></li>
+				<li><a href="#" title="">Доставка</a></li>
+				<li><a href="#" title="">Оплата</a></li>
+			</ul>
+		</div>
+
+		<div class="box">
+			<ul>
+				<li><a href="#" title="">О компании</a></li>
+				<li><a href="#" title="">Оптовая торговля</a></li>
+				<li><a href="#" title="">Салон «Акваландия»</a></li>
+				<li><a href="#" title="">Производство</a></li>
+				<li><a href="#" title="">Наши партнёры</a></li>
+				<li><a href="#" title="">Вакансии</a></li>
+				<li><a href="#" title="">Контакты и реквизиты</a></li>
+			</ul>
+		</div>
+		
+		<div class="paymentsystems">
+			<h4>Способы оплаты</h4>
+			<span>в Интернет-магазине</span><br />
+			
+			<img src="images/footer-payment.jpg" alt="" />
+		</div>
+		
+		<div class="subscribe">
+			<h4>Подписаться</h4>
+			
+			<ul>
+				<li class="s1"><a href="#" title="">по E-mail</a></li>
+				<li class="s2"><a href="#" title="">по RSS</a></li>
+				<li class="s3"><a href="#" title="">в Twitter</a></li>
+				<li class="s4"><a href="#" title="">ВКонтакте</a></li>
+			</ul>
+		</div>
+
+		<!-- copyright -->
+		<div class="footer-bottom">
+			<div class="copyright">&copy; 2004–2010, ООО Аква Плюс, Все права защищены. <br />
+			<small>Перепечатка любых материалов сайта без предварительного согласия запрещена.</small> </div>
+			
+			<div class="made">
+				<a href="#" title="">Разработка сайта</a> &mdash; <img src="images/footer-made.png" alt="" /> «Дело в сайте»
+			</div>
+			
+			<div class="counters">
+				<a href="#" title=""><img src="images/tmp_1.gif" alt="" /></a>
+				<a href="#" title=""><img src="images/tmp_2.gif" alt="" /></a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

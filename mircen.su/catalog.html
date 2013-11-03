@@ -1,0 +1,765 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.superSimpleTabs.js"></script>
+
+<script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
+<script type="text/javascript">
+		$(document).ready(function() {
+			$("#various1").fancybox({
+				'titlePosition'		: 'inside',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+		});
+	</script>
+</head>
+<body>
+<!-- popup -->
+<div style="display: none;">
+	<div class="popup" id="loginform">
+		<h2>Вход в личный кабинет</h2>
+
+		<div class="authorization">
+		<form>
+			<label for="">Электронная почта:</label>
+			<input name="yourlogin" type="text" id="yourlogin" class="textbox" tabindex="1" />
+
+			<label for="">Пароль:</label>
+			<input name="yourpassword" type="password" id="yourpassword" class="textbox" tabindex="2" />
+			<a href="#" title="">Забыли пароль?</a>
+
+			<input type="submit" name="entersite" id="entersite" value="Войти" tabindex="3" />
+		</form>
+		</div>
+	</div>
+</div>
+
+<div id="select-region">
+	<div class="wrapper">
+		<div class="wrpr">
+		<div class="list">
+			<h1>Россия</h1>
+			<h2>Какой-то там округ</h2>
+			<ul class="first">
+				<li><a href="#" title="">Челябинск</a></li>
+				<li><a href="#" title="">Екатеринбург</a></li>
+				<li><a href="#" title="">Магнитогорск</a></li>
+				<li><a href="#" title="">Барнаул</a></li>
+				<li><a href="#" title="">Москва</a></li>
+				<li><a href="#" title="">Пермь</a></li>
+			</ul>
+		</div>
+
+		<div class="list">
+			<h1>&nbsp;</h1>
+			<h2>Какой-то там округ</h2>
+			<ul>
+				<li><a href="#" title="">Саратов</a></li>
+				<li><a href="#" title="">Красноярск</a></li>
+				<li><a href="#" title="">Миасс</a></li>
+				<li><a href="#" title="">Новокузнецк</a></li>
+				<li><a href="#" title="">Оренбург</a></li>
+				<li><a href="#" title="">Санкт-Петербург</a></li>
+				<li><a href="#" title="">Ульяновск</a></li>
+				<li><a href="#" title="">Новосибирск</a></li>
+			</ul>
+		</div>
+
+		<div class="list">
+			<h1>&nbsp;</h1>
+			<h2>Какой-то там округ</h2>
+			<ul>
+				<li><a href="#" title="">Нижний Новгород</a></li>
+				<li><a href="#" title="">Казань</a></li>
+				<li><a href="#" title="">Кемерово</a></li>
+				<li><a href="#" title="">Тольятти</a></li>
+				<li><a href="#" title="">Владивосток</a></li>
+				<li><a href="#" title="">Самара</a></li>
+				<li><a href="#" title="">Ижевск</a></li>
+				<li><a href="#" title="">Ярославль</a></li>
+				<li><a href="#" title="">Краснодар</a></li>
+				<li><a href="#" title="">Тюмень</a></li>
+			</ul>
+		</div>
+
+		<div class="list">
+			<h1>&nbsp;</h1>
+			<h2>Какой-то там округ</h2>
+			<ul>
+				<li><a href="#" title="">Воронеж</a></li>
+				<li><a href="#" title="">Волгоград</a></li>
+				<li><a href="#" title="">Ростов-на-Дону</a></li>
+				<li><a href="#" title="">Хабаровск</a></li>
+				<li><a href="#" title="">Орск</a></li>
+			</ul>
+		</div>
+
+		<a href="#" class="close" title="Закрыть"></a>
+		<a href="#" title="" class="show-all">показать все города</a>
+		</div>
+	</div>
+</div>
+
+<!-- map -->
+<div class="inner-head">
+
+</div>
+
+<div id="wrap">
+
+	<!-- rightside -->
+	<div class="rightside">
+		<div class="login">
+			<a id="various1" href="#loginform" title="">Вход в личный кабинет</a>
+			<a href="#" title="" id="addcompany">Добавить компанию</a>
+		</div>
+
+		<!-- free registration -->
+		<div class="free-registration">
+			<img src="images/q.jpg" width="62" height="41" alt="" />
+			Хотите, чтобы ваши товары выводились по запросу<br />
+			<strong>«Планшеты в Челябинске»?</strong><br />
+
+			<a href="#" title="">Бесплатная регистрация</a>
+		</div>
+
+		<!-- cities -->
+		<div class="cities">
+			<a href="#" title="" class="big">Россия</a>  16987<br />
+			<a href="#" title="">Екатеринбург</a>  1680
+			<a href="#" title="">Уфа</a>  1456<br />
+			<a href="#" title="" class="active">Челябинск</a>  1115
+			<a href="#" title="">Тюмень</a>  756<br />
+			<a href="#" title="">Омск</a>  444<br />
+			<a href="#" title="">Сургут ХМАО ЯАО</a>  555
+			<a href="#" title="">Ижевск</a>  333<br />
+			<a href="#" title="">Санкт-Петербург</a>  222
+			<a href="#" title="">Уфа</a>  1456<br />
+			<a href="#" title="">Екатеринбург</a>  1680<br />
+			<a href="#" title="">Челябинск</a>  1115
+			<a href="#" title="">Тюмень</a>  756<br />
+			<a href="#" title="">Сургут ХМАО ЯАО</a>  555
+			<a href="#" title="">Омск</a>  444<br />
+			<a href="#" title="">Уфа</a>  1456<br />
+			<a href="#" title="">Ижевск</a>  333
+			<a href="#" title="">Санкт-Петербург</a>  222<br />
+			<a href="#" title="">Екатеринбург</a>  1680
+			<a href="#" title="">Челябинск</a>  1115<br />
+			<a href="#" title="">Уфа</a>  1456
+
+			<a href="#" title="" class="show-all"></a>
+		</div>
+
+		<!-- banners -->
+		<div class="banners">
+			<a href="#" title=""><img src="images/tmp_4.gif" width="210" height="100" alt="" /></a><br />
+			<a href="#" title=""><img src="images/tmp_4.gif" width="210" height="100" alt="" /></a><br />
+			<a href="#" title=""><img src="images/tmp_4.gif" width="210" height="100" alt="" /></a>
+		</div>
+
+	</div>
+
+	<!-- content -->
+	<div class="content">
+		<!-- header -->
+		<div class="header header-inner">
+
+			<!-- header search -->
+			<div class="header-search">
+				<div class="header-searchbar">
+					<ul>
+						<li class="r1 active"><a href="#" title="">Товары и услуги</a><span></span></li>
+						<li class="r2"><a href="#" title="">Компании</a><span></span></li>
+						<li class="r3"><a href="#" title="">Новости</a><span></span></li>
+						<li class="r4"><a href="#" title="">Вакансии</a><span></span></li>
+						<li class="r5"><a href="#" title="">Спрос</a><span></span></li>
+					</ul>
+
+					<div class="wrapper">
+					<form>
+						<input name="searchbar" id="searchbar" type="text" tabindex="1" />
+
+						<select id="town" name="" size="1">
+							<option value="Челябинск" selected="selected">Челябинск</option>
+							<option value="Москва">Москва</option>
+							<option value="Казань">Казань</option>
+							<option value="Нижний Новгород">Нижний Новгород</option>
+						</select>
+
+						<input type="submit" name="find" id="find" value="Поиск" tabindex="3" />
+					</form>
+					</div>
+
+					<div class="header-search-example">Например:   <a href="#" title="">упаковочное оборудование</a></div>
+				</div>
+			</div>
+
+			<a href="#" title=""><img src="images/logo.gif" width="170" height="63" class="logo" alt="" /></a>
+
+			<div class="select-region-field">Выбор региона: <a href="#" title="">Челябинск</a></div>
+					<script language="JavaScript" type="text/javascript">
+					/*<![CDATA[*/
+						$('.select-region-field a').click(function() {
+							$('#select-region').show();
+						});
+						$('#select-region .close').click(function() {
+							$('#select-region').hide();
+						});
+					/*]]>*/
+					</script>
+
+			<!-- status -->
+			<div class="header-status">
+				<div class="item">
+					<img src="images/header-online.gif" width="9" height="9" alt="" /><br />
+					<span class="online">Online:</span><br />
+					52
+				</div>
+
+				<div class="item">
+					<img src="images/header-home.gif" width="9" height="9" alt="" /><br />
+					<span class="home">Компаний:</span><br />
+					152000
+				</div>
+
+				<div class="item">
+					<img src="images/header-cart.gif" width="9" height="9" alt="" /><br />
+					<span class="cart">Товаров:</span><br />
+					63174175
+				</div>
+			</div>
+		</div>
+
+		<!-- breadcrumbs -->
+		<div class="breadcrumbs">
+			<a href="#" title="">МирЦен</a> &gt;
+			<a href="#" title="">Компьютеры, IT</a> &gt;
+			<a href="#" title="">Компьютеры, комплектующие, ПО</a> &gt;
+			<a href="#" title="">Планшеты</a> &gt;
+		</div>
+
+		<div class="category-description">
+			<h2>Планшеты</h2>
+			<p>На портале «Мир цен» вы найдете стоимость Планшетов. Посмотрите предложения по продаже,
+			скачайте прайс-лист и узнайте, где купить Планшеты. Сравните цены, выберите лучшее и купите
+			дешевле!</p>
+
+			<div class="found">
+				<ins>Найдено в разделе:</ins>
+				<span class="itemscount">Товаров <a href="#" title="">16987</a></span>
+				<span class="companycount">Компаний <a href="#" title="">982</a></span>
+				Челябинска
+			</div>
+
+			<table>
+				<tr>
+					<td>Производитель:</td>
+					<td><a href="#" title="">Apple 35</a></td>
+					<td><a href="#" title="">Wacom 67</a></td>
+					<td><a href="#" title="">Genius 23</a></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><a href="#" title="">Apple 35</a></td>
+					<td><a href="#" title="">Wacom 67</a></td>
+					<td><a href="#" title="">Genius 23</a></td>
+				</tr>
+				<tr>
+					<td colspan="4" class="tfoot"><a href="#" title="">показать все</a></td>
+				</tr>
+			</table>
+
+			<!-- banners -->
+			<div class="banners">
+				<div class="item"><a href="#" title=""><img src="images/tmp_3.gif" width="250" height="100" alt="" /></a></div>
+				<div class="item"><a href="#" title=""><img src="images/tmp_3.gif" width="250" height="100" alt="" /></a></div>
+				<div class="item"><a href="#" title=""><img src="images/tmp_3.gif" width="250" height="100" alt="" /></a></div>
+			</div>
+		</div>
+
+			<!-- category tabs -->
+			<div class="catalog-tabs category-tabs">
+				<ul>
+				    <li class="tab1 active"><a href="#ct1">галереей</a></li>
+				    <li class="tab2"><a href="#ct2">списком</a></li>
+				    <li class="tab3"><a href="#ct3">кратко</a></li>
+				</ul>
+
+				<div class="sort">
+					Сортировать по:
+					<a href="#" title="" class="active">Компании</a>
+					<img src="images/sort-spacer.gif" width="1" height="14" alt="" />
+					<a href="#" title="">Цене</a>
+				</div>
+
+				<!-- gallery -->
+				<div id="ct1">
+					<div class="category-gallery">
+
+						<div class="item">
+							<a href="#" title=""><img src="images/tmp/pi1.jpg" width="135" height="135" alt="" /></a><br />
+							<a href="#" title="" class="title">Поковка нержавеющая</a>
+							<div class="cost">Цена 1500<br /> руб/шт</div>
+
+							<p><img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" />
+							<img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" />
+							<img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" /><br />
+							<a href="#" title="" class="name">ПО “Штробер Полистирол”</a><br />
+							<small>г.Челябинск</small></p>
+
+							<span class="phone">(351) 791-84-09</span>
+							<span class="contact">Анатолий Александрович</span>
+						</div>
+						<!-- -->
+						<div class="item">
+							<a href="#" title=""><img src="images/tmp/pi2.jpg" width="135" height="135" alt="" /></a><br />
+							<a href="#" title="" class="title">Квадрат металический</a>
+							<div class="cost">Цена 1500<br /> руб/шт</div>
+
+							<p><img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" />
+							<img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" />
+							<img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" /><br />
+							<a href="#" title="" class="name">ПО “Штробер Полистирол”</a><br />
+							<small>г.Челябинск</small></p>
+
+							<span class="phone">(351) 791-84-09</span>
+							<span class="contact">Анатолий Александрович</span>
+						</div>
+						<!-- -->
+						<div class="item">
+							<a href="#" title=""><img src="images/tmp/pi3.jpg" width="135" height="135" alt="" /></a><br />
+							<a href="#" title="" class="title">Швеллер</a>
+							<div class="cost">Цена 1500<br /> руб/шт</div>
+
+							<p><img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" />
+							<img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" />
+							<img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" /><br />
+							<a href="#" title="" class="name">ПО “Штробер Полистирол”</a><br />
+							<small>г.Челябинск</small></p>
+
+							<span class="phone">(351) 791-84-09</span>
+							<span class="contact">Анатолий Александрович</span>
+						</div>
+						<!-- -->
+						<div class="item">
+							<a href="#" title=""><img src="images/tmp/pi4.jpg" width="135" height="135" alt="" /></a><br />
+							<a href="#" title="" class="title">Балка 0.5</a>
+							<div class="cost">Цена 1500<br /> руб/шт</div>
+
+							<p><img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" />
+							<img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" />
+							<img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" /><br />
+							<a href="#" title="" class="name">ПО “Штробер Полистирол”</a><br />
+							<small>г.Челябинск</small></p>
+
+							<span class="phone">(351) 791-84-09</span>
+							<span class="contact">Анатолий Александрович</span>
+						</div>
+
+						<div class="hr"></div>
+
+						<div class="item">
+							<a href="#" title=""><img src="images/tmp/pi1.jpg" width="135" height="135" alt="" /></a><br />
+							<a href="#" title="" class="title">Поковка нержавеющая</a>
+							<div class="cost">Цена 1500<br /> руб/шт</div>
+
+							<p><img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" />
+							<img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" />
+							<img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" /><br />
+							<a href="#" title="" class="name">ПО “Штробер Полистирол”</a><br />
+							<small>г.Челябинск</small></p>
+
+							<span class="phone">(351) 791-84-09</span>
+							<span class="contact">Анатолий Александрович</span>
+						</div>
+						<!-- -->
+						<div class="item">
+							<a href="#" title=""><img src="images/tmp/pi2.jpg" width="135" height="135" alt="" /></a><br />
+							<a href="#" title="" class="title">Квадрат металический</a>
+							<div class="cost">Цена 1500<br /> руб/шт</div>
+
+							<p><img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" />
+							<img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" />
+							<img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" /><br />
+							<a href="#" title="" class="name">ПО “Штробер Полистирол”</a><br />
+							<small>г.Челябинск</small></p>
+
+							<span class="phone">(351) 791-84-09</span>
+							<span class="contact">Анатолий Александрович</span>
+						</div>
+						<!-- -->
+						<div class="item">
+							<a href="#" title=""><img src="images/tmp/pi3.jpg" width="135" height="135" alt="" /></a><br />
+							<a href="#" title="" class="title">Швеллер</a>
+							<div class="cost">Цена 1500<br /> руб/шт</div>
+
+							<p><img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" />
+							<img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" />
+							<img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" /><br />
+							<a href="#" title="" class="name">ПО “Штробер Полистирол”</a><br />
+							<small>г.Челябинск</small></p>
+
+							<span class="phone">(351) 791-84-09</span>
+							<span class="contact">Анатолий Александрович</span>
+						</div>
+						<!-- -->
+						<div class="item">
+							<a href="#" title=""><img src="images/tmp/pi4.jpg" width="135" height="135" alt="" /></a><br />
+							<a href="#" title="" class="title">Балка 0.5</a>
+							<div class="cost">Цена 1500<br /> руб/шт</div>
+
+							<p><img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" />
+							<img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" />
+							<img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" /><br />
+							<a href="#" title="" class="name">ПО “Штробер Полистирол”</a><br />
+							<small>г.Челябинск</small></p>
+
+							<span class="phone">(351) 791-84-09</span>
+							<span class="contact">Анатолий Александрович</span>
+						</div>
+
+						<!-- paginator -->
+						<div class="paginator">
+							<ul>
+								<li>Страницы:</li>
+								<li>1</li>
+								<li><a href="#" title="">2</a></li>
+								<li><a href="#" title="">3</a></li>
+								<li><a href="#" title="">4</a></li>
+								<li><a href="#" title="">5</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- list -->
+				<div id="ct2">
+					<div class="category-list">
+						<table>
+							<!-- -->
+							<tr>
+								<td class="thumbnail">
+									<a href="#" title=""><img src="images/tmp/ci1.jpg" width="89" height="89" alt="" /></a>
+								</td>
+
+								<td class="description">
+									<a href="#" title="">Поковка нержавеющая</a>
+									<p>Для изготовления поковок металл нагревают, после чего придают ему
+									определенную форму методом свободной либо штампованной ковки.</p>
+								</td>
+
+								<td class="cost">Цена 1500<br />руб/шт</td>
+
+								<td class="info">
+									<p><img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" />
+									<img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" />
+									<img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" /><br />
+									<a href="#" title="" class="name">ПО “Штробер Полистирол”</a><br />
+									<small>г.Челябинск</small></p>
+									<span class="phone">(351) 791-84-09</span>
+									<span class="contact">Анатолий Александрович</span>
+								</td>
+							</tr>
+							<!-- -->
+							<tr>
+								<td class="thumbnail">
+									<a href="#" title=""><img src="images/tmp/ci2.jpg" width="89" height="89" alt="" /></a>
+								</td>
+
+								<td class="description">
+									<a href="#" title="">Квадрат металический</a>
+									<p>Для изготовления поковок металл нагревают, после чего придают ему
+									определенную форму методом свободной либо штампованной ковки.</p>
+								</td>
+
+								<td class="cost">Цена 1500 до 150 000<br />руб/шт</td>
+
+								<td class="info">
+									<p><img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" />
+									<img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" />
+									<img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" /><br />
+									<a href="#" title="" class="name">ПО “Штробер Полистирол”</a><br />
+									<small>г.Челябинск</small></p>
+									<span class="phone">(351) 791-84-09</span>
+									<span class="contact">Анатолий Александрович</span>
+								</td>
+							</tr>
+							<!-- -->
+							<tr>
+								<td class="thumbnail">
+									<a href="#" title=""><img src="images/tmp/ci3.jpg" width="89" height="89" alt="" /></a>
+								</td>
+
+								<td class="description">
+									<a href="#" title="">Швеллер</a>
+									<p>Для изготовления поковок металл нагревают, после чего придают ему
+									определенную форму методом свободной либо штампованной ковки.</p>
+								</td>
+
+								<td class="cost">Цена 1500<br />руб/шт</td>
+
+								<td class="info">
+									<p><img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" />
+									<img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" />
+									<img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" /><br />
+									<a href="#" title="" class="name">ПО “Штробер Полистирол”</a><br />
+									<small>г.Челябинск</small></p>
+									<span class="phone">(351) 791-84-09</span>
+									<span class="contact">Анатолий Александрович</span>
+								</td>
+							</tr>
+							<!-- -->
+							<tr>
+								<td class="thumbnail">
+									<a href="#" title=""><img src="images/tmp/ci4.jpg" width="89" height="89" alt="" /></a>
+								</td>
+
+								<td class="description">
+									<a href="#" title="">Балка 0.5</a>
+									<p>Для изготовления поковок металл нагревают, после чего придают ему
+									определенную форму методом свободной либо штампованной ковки.</p>
+								</td>
+
+								<td class="cost">Цена 1500<br />руб/шт</td>
+
+								<td class="info">
+									<p><img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" />
+									<img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" />
+									<img src="images/company-index-star.gif" width="17" height="16" class="star" alt="" /><br />
+									<a href="#" title="" class="name">ПО “Штробер Полистирол”</a><br />
+									<small>г.Челябинск</small></p>
+									<span class="phone">(351) 791-84-09</span>
+									<span class="contact">Анатолий Александрович</span>
+								</td>
+							</tr>
+						</table>
+
+						<!-- paginator -->
+						<div class="paginator">
+							<ul>
+								<li>Страницы:</li>
+								<li>1</li>
+								<li><a href="#" title="">2</a></li>
+								<li><a href="#" title="">3</a></li>
+								<li><a href="#" title="">4</a></li>
+								<li><a href="#" title="">5</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- short -->
+				<div id="ct3">
+					<div class="category-short">
+						<table>
+							<thead>
+							<tr>
+								<td class="name">Товар</td>
+								<td class="cost">Цена</td>
+								<td class="rating"></td>
+								<td class="company">Компания</td>
+							</tr>
+							</thead>
+
+							<tbody>
+							<tr class="even">
+								<td class="name"><a href="#" title="">Планшет</a></td>
+								<td class="cost">1500 руб/шт</td>
+								<td class="rating"><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /></td>
+								<td class="company"><a href="#" title="">ПО “Штробер Полистирол”</a></td>
+							</tr>
+
+							<tr class="odd">
+								<td class="name"><a href="#" title="">Планшет</a></td>
+								<td class="cost">1500 руб/шт</td>
+								<td class="rating"><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /></td>
+								<td class="company"><a href="#" title="">ПО “Штробер Полистирол”</a></td>
+							</tr>
+
+							<tr class="even">
+								<td class="name"><a href="#" title="">Планшет</a></td>
+								<td class="cost">1500 руб/шт</td>
+								<td class="rating"><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /></td>
+								<td class="company"><a href="#" title="">ПО “Штробер Полистирол”</a></td>
+							</tr>
+
+							<tr class="odd">
+								<td class="name"><a href="#" title="">Планшет</a></td>
+								<td class="cost">1500 руб/шт</td>
+								<td class="rating"><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /></td>
+								<td class="company"><a href="#" title="">ПО “Штробер Полистирол”</a></td>
+							</tr>
+
+							<tr class="even">
+								<td class="name"><a href="#" title="">Планшет</a></td>
+								<td class="cost">1500 руб/шт</td>
+								<td class="rating"><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /></td>
+								<td class="company"><a href="#" title="">ПО “Штробер Полистирол”</a></td>
+							</tr>
+
+							<tr class="odd">
+								<td class="name"><a href="#" title="">Планшет</a></td>
+								<td class="cost">1500 руб/шт</td>
+								<td class="rating"><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /></td>
+								<td class="company"><a href="#" title="">ПО “Штробер Полистирол”</a></td>
+							</tr>
+
+							<tr class="even">
+								<td class="name"><a href="#" title="">Планшет</a></td>
+								<td class="cost">1500 руб/шт</td>
+								<td class="rating"><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /></td>
+								<td class="company"><a href="#" title="">ПО “Штробер Полистирол”</a></td>
+							</tr>
+
+							<tr class="odd">
+								<td class="name"><a href="#" title="">Планшет</a></td>
+								<td class="cost">1500 руб/шт</td>
+								<td class="rating"><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /></td>
+								<td class="company"><a href="#" title="">ПО “Штробер Полистирол”</a></td>
+							</tr>
+
+							<tr class="even">
+								<td class="name"><a href="#" title="">Планшет</a></td>
+								<td class="cost">1500 руб/шт</td>
+								<td class="rating"><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /></td>
+								<td class="company"><a href="#" title="">ПО “Штробер Полистирол”</a></td>
+							</tr>
+
+							<tr class="odd">
+								<td class="name"><a href="#" title="">Планшет</a></td>
+								<td class="cost">1500 руб/шт</td>
+								<td class="rating"><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /></td>
+								<td class="company"><a href="#" title="">ПО “Штробер Полистирол”</a></td>
+							</tr>
+
+							<tr class="even">
+								<td class="name"><a href="#" title="">Планшет</a></td>
+								<td class="cost">1500 руб/шт</td>
+								<td class="rating"><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /></td>
+								<td class="company"><a href="#" title="">ПО “Штробер Полистирол”</a></td>
+							</tr>
+
+							<tr class="odd">
+								<td class="name"><a href="#" title="">Планшет</a></td>
+								<td class="cost">1500 руб/шт</td>
+								<td class="rating"><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /></td>
+								<td class="company"><a href="#" title="">ПО “Штробер Полистирол”</a></td>
+							</tr>
+
+							<tr class="even">
+								<td class="name"><a href="#" title="">Планшет</a></td>
+								<td class="cost">1500 руб/шт</td>
+								<td class="rating"><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /></td>
+								<td class="company"><a href="#" title="">ПО “Штробер Полистирол”</a></td>
+							</tr>
+
+							<tr class="odd">
+								<td class="name"><a href="#" title="">Планшет</a></td>
+								<td class="cost">1500 руб/шт</td>
+								<td class="rating"><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /></td>
+								<td class="company"><a href="#" title="">ПО “Штробер Полистирол”</a></td>
+							</tr>
+
+							<tr class="even">
+								<td class="name"><a href="#" title="">Планшет</a></td>
+								<td class="cost">1500 руб/шт</td>
+								<td class="rating"><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /></td>
+								<td class="company"><a href="#" title="">ПО “Штробер Полистирол”</a></td>
+							</tr>
+
+							<tr class="odd">
+								<td class="name"><a href="#" title="">Планшет</a></td>
+								<td class="cost">1500 руб/шт</td>
+								<td class="rating"><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /></td>
+								<td class="company"><a href="#" title="">ПО “Штробер Полистирол”</a></td>
+							</tr>
+
+							<tr class="even">
+								<td class="name"><a href="#" title="">Планшет</a></td>
+								<td class="cost">1500 руб/шт</td>
+								<td class="rating"><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /></td>
+								<td class="company"><a href="#" title="">ПО “Штробер Полистирол”</a></td>
+							</tr>
+
+							<tr class="odd">
+								<td class="name"><a href="#" title="">Планшет</a></td>
+								<td class="cost">1500 руб/шт</td>
+								<td class="rating"><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /><img src="images/star.png" width="17" height="16" alt="" /></td>
+								<td class="company"><a href="#" title="">ПО “Штробер Полистирол”</a></td>
+							</tr>
+							</tbody>
+						</table>
+
+						<!-- paginator -->
+						<div class="paginator">
+							<ul>
+								<li>Страницы:</li>
+								<li>1</li>
+								<li><a href="#" title="">2</a></li>
+								<li><a href="#" title="">3</a></li>
+								<li><a href="#" title="">4</a></li>
+								<li><a href="#" title="">5</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+
+		<script language="JavaScript" type="text/javascript">
+		/*<![CDATA[*/
+		jQuery('.category-tabs ul').superSimpleTabs();
+		/*]]>*/
+		</script>
+		<script language="JavaScript" type="text/javascript">
+		/*<![CDATA[*/
+
+		$('.tab1,.tab2,.tab3').click(function() {
+			$(this).siblings("li").removeClass("active");
+			$(this).addClass("active");
+		});
+		/*]]>*/
+		</script>
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+	<div class="wrapper">
+		<div class="counters">
+			<a href="#" title=""><img src="images/tmp_1.gif" width="88" height="31" alt="" /></a>
+			<a href="#" title=""><img src="images/tmp_2.gif" width="88" height="31" alt="" /></a>
+		</div>
+
+		<ul>
+			<li><a href="#" title="">Добавить компанию</a></li>
+			<li><a href="#" title="">Разместить рекламу</a></li>
+			<li><a href="#" title="">О проекте</a></li>
+		</ul>
+
+		<div class="copyright">
+			&copy; 2011 <a href="#" title="">mircen.su</a>
+		</div>
+	</div>
+</div>
+
+<script language="JavaScript" type="text/javascript">
+/*<![CDATA[*/
+$('#hide-show').click(function() {
+	$('#map').toggleClass('active', 'unactive');
+});
+/*]]>*/
+</script>
+
+</body>
+</html>

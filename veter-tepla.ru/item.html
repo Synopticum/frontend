@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/input-focus.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+        <a href="#"><img src="images/logo.png" width="277" height="64" border="0" alt="" class="logo"/></a>
+
+        <!-- work time -->
+        <div class="worktime">
+            <span class="title">Время работы</span>
+
+            <div class="from">
+                с 9:00 до 19:00 <span>вых</span>
+            </div>
+
+            <div class="days">
+                <span class="green">Пн</span>
+                <span class="green">Вт</span>
+                <span class="green">Ср</span>
+                <span class="green">Чт</span>
+                <span class="green">Пт</span>
+                <span class="red">Сб</span>
+                <span class="red">Вс</span>
+            </div>
+        </div>
+
+        <!-- map -->
+        <div class="map">
+            <a href="#"><img src="images/header-map.png" width="97" height="59" border="0" alt="" /></a>
+        </div>
+
+        <!-- contacts -->
+        <div class="contacts">
+            <span class="phone"><span>8 (495)</span> 649-89-37</span>
+            <p>Ленинский проспект, дом 87,<br />
+            стр.1, офис 367</p>
+            <p><a href="javascript:void(0);" id="ordercall">Заказать обратный звонок</a></p>
+
+            <div id="call">
+                <label>Ваше имя:<br />
+                <input name="c1" type="text" value="Введите ваше имя" class="textbox" /></label>
+
+                <label>Ваше телефон:<br />
+                <input name="c2" type="text" value="Введите ваш телефон" class="textbox" /></label>
+
+                <input type="button" name="c3" value="" class="callnow" />
+            </div>
+            <script language="JavaScript" type="text/javascript">
+            /*<![CDATA[*/
+            $("#ordercall").click(function() {
+              $("#call").toggle();
+            });
+            /*]]>*/
+            </script>
+        </div>
+
+        <!-- search&catalog -->
+        <div class="search">
+            <a href="#" class="select-category">Выберите раздел каталога</a>
+
+            <div id="catalog-expand">
+                <ul>
+                    <li><a href="#">Отопление и обогрев</a>
+                        <ul>
+                            <li><a href="#">Тепловые завесы</a></li>
+                            <li><a href="#">Тепловые пушки</a></li>
+                            <li><a href="#">Дизельные и газовые Обогреватели</a></li>
+                            <li><a href="#">Инфракрасные обогреватели</a></li>
+                            <li><a href="#">Конвекторы</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Сантехника и подогрев воды</a></li>
+                    <li><a href="#">Кондиционеры</a></li>
+                    <li><a href="#">Вентиляция и обработка воздуха</a></li>
+                    <li><a href="#">Различное оборудование</a></li>
+                    <li><a href="#">Товары для дачи</a></li>
+                </ul>
+            </div>
+            <script language="JavaScript" type="text/javascript">
+            /*<![CDATA[*/
+            $(".search .select-category").click(function() {
+              $("#catalog-expand").toggle();
+            });
+            /*]]>*/
+            </script>
+
+            <div class="searchform">
+                <form>
+                    <input name="searchbar" type="text" value="Поиск по сайту" tabindex="1" class="textbox" />
+                    <input type="submit" name="find" value="" tabindex="2" class="find" />
+                </form>
+            </div>
+        </div>
+
+        <!-- navigation -->
+        <div class="nav">
+            <a href="#" class="home" title="Главная">Главная</a>
+            <a href="#" class="sitemap" title="Карта сайта">Карта сайта</a>
+            <a href="#" class="mail" title="Связаться с нами">Связаться с нами</a>
+        </div>
+
+        <!-- top menu -->
+        <div class="topmenu">
+            <ul>
+                <li class="active"><a href="#">Новости и акции</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Оплата и доставка</a></li>
+                <li><a href="#">Книга отзывов</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- breadcrumbs -->
+    <div class="breadcrumbs">
+        <img src="images/bcl.gif" width="2" height="9" border="0" alt="" class="border" />
+
+        <a href="#">Главная</a>
+        <img src="images/bc.gif" width="7" height="3" border="0" alt="" class="spacer" />
+        <a href="#">Отопление и обогрев</a>
+        <img src="images/bc.gif" width="7" height="3" border="0" alt="" class="spacer" />
+        <a href="#">Тепловые завесы</a>
+        <img src="images/bc.gif" width="7" height="3" border="0" alt="" class="spacer" />
+        <span>Тепловая завеса Тропик К-5 </span>
+    </div>
+
+	<!-- content -->
+	<div class="content">
+        <h1>Тепловая завеса Тропик К-5 </h1>
+
+        <!-- product -->
+        <div class="product">
+            <!-- short description -->
+            <div class="short">
+                <div class="view">
+                    <img src="images/tmp/p1.jpg" width="206" height="71" border="0" alt="" />
+                </div>
+
+                <div class="description">
+                    <span class="manufacter">Производитель: <strong>Тропик</strong> (Россия)</span>
+                    <span class="price">
+                        Цена: <span class="cost">20970</span> <span class="valute">Руб.</span>
+                    </span>
+
+                    <h5>Характеристики товара:</h5>
+
+                    <p>В 2008 году начат выпуск нового модельного ряда тепловых завес серии - "К". При разработке
+                    этих завес были поставлены и достигнуты следующие цели: универсальность применения, низкая стоимость
+                    и высокая надежность. Все модели изготавливаются из стали и алюминия, что устраняет возможность
+                    деформации корпуса и других деталей при длительной работе в режиме нагрева или при механическом
+                    воздействии.<br />
+                    Данные модели обеспечивают перепад температур свыше 70 градусов. Это означает, что даже в
+                    холодном помещении, </p>
+
+                </div>
+            </div>
+
+            <!-- long description -->
+            <h3>Оплата и доставка</h3>
+
+            <div class="payment">
+                <p>Доставка по Москве и Подмосковью - <strong>200 рублей.</strong>  <a href="#"><strong>Подробнее</strong></a></p>
+
+                <ul>
+                    <li><a href="#">Доставка в другие города</a></li>
+                    <li><a href="#">Установка и подключение</a></li>
+                    <li><a href="#">Как сделать заказ</a></li>
+                </ul>
+            </div>
+
+            <h3>Назначение:</h3>
+
+            <div class="for">
+                <ul>
+                    <li>Предназначены для использования в помещениях с небольшим потоком людей и невысокими дверными проемами.</li>
+                    <li>Возможность использовать в качестве тепловентилятора на стене или на полу.</li>
+                    <li>Использовать в окнах киосков, касс, уличных павильонов</li>
+                </ul>
+            </div>
+
+            <div class="tth">
+                <h3>Технические характеристики</h3>
+
+                <div class="wrapper">
+                    <table>
+                        <tr class="even">
+                            <td>Мощность, кВт</td>
+                        </tr>
+                        <tr class="odd">
+                            <td>Напряжение, В</td>
+                        </tr>
+                        <tr class="even">
+                            <td>Высота установки, м</td>
+                        </tr>
+                        <tr class="odd">
+                            <td>Размеры (ДхВхГ), мм</td>
+                        </tr>
+                        <tr class="even">
+                            <td>Производительность, м3/ч</td>
+                        </tr>
+                        <tr class="odd">
+                            <td>Сечение сетевого кабеля, мм2</td>
+                        </tr>
+                        <tr class="even">
+                            <td>Макс. ток по каждой фазе, А</td>
+                        </tr>
+                        <tr class="odd">
+                            <td>Автомат защиты, А </td>
+                        </tr>
+                        <tr class="even">
+                            <td>Скорость потока воздуха, м/с</td>
+                        </tr>
+                        <tr class="odd">
+                            <td>Уровень шума, Дб</td>
+                        </tr>
+                        <tr class="even">
+                            <td>Вес, кг</td>
+                        </tr>
+                        <tr class="odd">
+                            <td>Гарантия</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <h3>Возможности и особенности:</h3>
+
+            <div class="features">
+                <ul>
+                    <li>Установка как горизонтально, так и вертикально.</li>
+                    <li>Управление на самой завесе.</li>
+                    <li>В качестве опции можно подключить завесу к терморегулятору.</li>
+                </ul>
+            </div>
+
+            <!-- order -->
+            <div class="order">
+                <h2>Быстрый заказ</h2>
+
+                <div class="wrapper">
+                    <form>
+                        <div class="box">
+                            <label>Фамилия, имя, отчество:<br />
+                            <input name="t1" type="text" tabindex="1" /></label>
+                        </div>
+
+                        <div class="box">
+                            <label>Способ связи (телефон, e-mail) :<br />
+                            <input name="t2" type="text" tabindex="2" /></label>
+                        </div>
+
+                        <div class="box">
+                            <label>Адресс доставки:<br />
+                            <input name="t3" type="text" tabindex="3" /></label>
+                        </div>
+
+                        <div class="box">
+                            <label>Желаемое время доставки:<br />
+                            <input name="t4" type="text" tabindex="4" /></label>
+                        </div>
+
+                        <div class="box2">
+                            <label>Примечание:<br />
+                            <textarea name="ta1" tabindex="5"></textarea></label>
+                        </div>
+
+                        <input type="submit" name="submit" value="" class="order-submit" tabindex="6" />
+                    </form>
+                </div>
+            </div>
+
+            <!-- text -->
+            <div class="product-text">
+                <p><a href="#">Тепловая завеса Тропик К-6</a> может быть куплена Вами через интернет без посещения магазина. Для
+                заказа заполните эту форму. Наши менеджеры свяжутся с Вами для уточнения пожеланий по заказу в течение
+                15-20 минут после получения заявки. Также Вы можете сделать заказ позвонив нам по многоканальному телефону
+                8 <strong>(495) 649-89-37</strong>. Мы работаем как с частными лицами, так и с организациями. Юридические лица могут запросить
+                счет для оплаты товара <a href="#" class="gray">на этой странице</a>.</p>
+
+                <p><strong>ТЕПЛОВАЯ ЗАВЕСА ТРОПИК К-6</strong> может дополняться другим оборудованием, расходными материалами и аксессуарами.
+                Попросите менеджера рассказать Вам о дополнительных возможностях и особенностях прибора. Как и любое другое
+                климатическое оборудование, тепловая завеса тропик к-6 подлежит обязательной сертификации и имеет всю
+                необходимую разрешительную документацию.</p>
+
+                <p>Как и любые другие <a href="#">тепловые завесы</a>, <a href="#" class="gray">тепловая завеса</a> тропик к-6 имеет инструкцию по эксплуатации на русском
+                языке и гарантию производителя. Иногда климатическое оборудование требует проведения работ по установке и
+                подключению. Ввод в эксплуатацию такого оборудования должен осушествляться только специалистами, прошедшими
+                специальное обучение. Установка, выполненная кустарным способом может не только сократить срок службы
+                устройства, но и привести к гораздо более серьезным последствиям. Если тепловая завеса тропик к-6 нуждается в
+                установке и подключении наш менеджер </p>
+
+                <h3>Недорогие тепловые завесы на склад</h3>
+
+                <p><a href="#">Недорогие тепловые завесы</a> на склад требуются каждому арендодателю для обеспечения комфортных условий труда
+                при погрузки и выгрузки товара. <strong>Тепловые завесы</strong> помогут обеспечить максимальную защиту от сквозняков, возникающих
+                при открытых входных воротах склада или погрузочно-разгрузочной площадки, а также помимо всего прочего тепловые
+                завесы помогут сохранить тепло, выступая при этом в роли энергосберегающего оборудования, которое помогает
+                максимально эффективно снизить издержки на коммунальные услуги, выделяемые не посредственно из кармана
+                арендодателя склада. Цены на тепловые завесы колеблются от недорогих отечественных российских брендов до
+                высокобюджетных импортных моделей, преимущественно изготовленных в странах Евросоюза, таких как Швеция, Греция,
+                Великобритания и другие. Установка <strong>недорогих тепловых завес</strong> на склад полностью себя оправдывает с позиции цена
+                качество изготовленные на российских отечественных.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- aside -->
+    <div class="aside">
+        <!-- news -->
+        <div class="news">
+            <h3>Новости и Акции</h3>
+
+            <div class="item">
+                <img src="images/tmp/n1.jpg" width="83" height="56" border="0" alt="" />
+                <div class="description">
+                    <span class="date">20 марта 2012</span>
+                    <p><a href="#">Торговый Дом "Северный Ветер"нтернет.</a></p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/tmp/n2.jpg" width="83" height="56" border="0" alt="" />
+                <div class="description">
+                    <span class="date">18 марта 2012</span>
+                    <p><a href="#">Северный Ветер"Интернет гипермаркет климат и бытовой</a></p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/tmp/n3.jpg" width="83" height="56" border="0" alt="" />
+                <div class="description">
+                    <span class="date">15 марта 2012</span>
+                    <p><a href="#">АКЦИЯ!! <span>Климатической и бытовой техники.</span></a></p>
+                </div>
+            </div>
+
+            <p class="more">
+                <a href="#">Все новости и акции</a>
+            </p>
+        </div>
+
+
+        <!-- best -->
+        <div class="best">
+            <h3>Лучшее товарное предложение</h3>
+
+            <div class="item">
+                <div class="view"><img src="images/tmp/b1.jpg" width="76" height="76" border="0" alt="" /></div>
+                <div class="description">
+                    <a href="#" class="title">Мобильный кондиционер Electrolux EACM-14 EZ/N3</a>
+                    <p>Цена: <span class="cost">20970</span> <span class="valute">Руб.</span></p>
+                    <a href="#" class="addtocart">В корзину</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="view"><img src="images/tmp/b2.jpg" width="76" height="76" border="0" alt="" /></div>
+                <div class="description">
+                    <a href="#" class="title">Робот пылесос iRobot Scooba 385</a>
+                    <p>Цена: <span class="cost">21970</span> <span class="valute">Руб.</span></p>
+                    <a href="#" class="addtocart">В корзину</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="view"><img src="images/tmp/b3.jpg" width="76" height="76" border="0" alt="" /></div>
+                <div class="description">
+                    <a href="#" class="title">Тепловая завеса Тропик К-6</a>
+                    <p>Цена: <span class="cost">21970</span> <span class="valute">Руб.</span></p>
+                    <a href="#" class="addtocart">В корзину</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- information -->
+        <div class="information">
+            <h4>Знаете ли Вы что?</h4>
+
+            <div class="item">
+                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает?
+            </div>
+
+            <div class="item">
+                Оценке дизайна и композиции читаемый текст мешает сосредоточиться?
+            </div>
+
+            <div class="item">
+                Читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот?
+            </div>
+
+            <div class="item">
+                Обеспечивает более или менее стандартное заполнение шаблона?
+            </div>
+        </div>
+
+        <!-- last feeds -->
+        <div class="lastfeeds">
+            <h4>Книга отзывов и вопросов</h4>
+
+            <div class="item">
+                <div class="author">
+                    <strong>Поляруш Роман</strong>
+                    12 марта 2012 г. 15:55
+                </div>
+
+                <div class="q">
+                    <strong>В: </strong>Давно выяснено, что при оценке дизайна и композиции читаемый
+                    текст мешает Используют потому, что тот обеспечивает более.
+                    <div class="c"></div>
+                </div>
+                <div class="a">
+                    <strong>O: </strong>Композиции читаемый текст мешает потому, что тот обеспечивает
+                    или менее стандартное.
+                    <div class="c"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- delivery -->
+    <div class="delivery">
+        <a href="#"><img src="images/d1.gif" width="220" height="86" border="0" alt="" /></a>
+        <a href="#"><img src="images/d2.gif" width="220" height="86" border="0" alt="" /></a>
+        <a href="#"><img src="images/d3.gif" width="220" height="86" border="0" alt="" /></a>
+        <a href="#"><img src="images/d4.gif" width="220" height="86" border="0" alt="" /></a>
+    </div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+    <div class="wrapper">
+        <div class="copyright">
+            &copy; 2012 Торговый Дом  Северный Ветер<br />
+            Все права защищены.
+        </div>
+
+        <div class="contacts">
+            <span class="title">Контактный телефон</span>
+            <span class="phone"><span>8 (495)</span> 649-89-37</span>
+            <p>Ленинский проспект, дом 87, стр.1, офис 367</p>
+        </div>
+
+        <div class="counters">
+            <a href="#"><img src="images/tmp/c1.gif" width="88" height="31" border="0" alt="" /></a>
+            <a href="#"><img src="images/tmp/c2.gif" width="88" height="31" border="0" alt="" /></a>
+        </div>
+    </div>
+
+    <!-- bottom menu -->
+    <div class="bottommenu">
+        <ul>
+            <li class="active"><a href="#">Новости и акции</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Оплата и доставка</a></li>
+            <li><a href="#">Книга отзывов</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

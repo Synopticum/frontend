@@ -1,0 +1,139 @@
+html, body { height:100%; }
+body {
+	font-family: Verdana, Tahoma sans-serif;
+	font-size: 12px;
+	color: #666;
+	width:100%;
+	min-width: 1000px;
+	background: url(../images/body-bg.png) repeat-x left top #e4e4e4;
+}
+
+a { color: #bd0c26; }
+strong { font-weight: bold; }
+.cleaner { clear: both; }
+
+
+#wrap {
+	position: relative;
+	background: #fff;
+	width: 1000px;
+	margin: 0px auto;
+	min-height: 100%;
+	height:auto !important;
+	height: 100%;
+	background: url(../images/wrap-bg.png) no-repeat left top;
+}
+
+/* header */
+
+.header { position: relative; width: 1000px; height: 208px; background: url(../images/woman.png) no-repeat 313px bottom; }
+	.header #logo { position: absolute; top: 80px; left: 120px; width: 140px; height: 128px; }
+	.header #phone { position: absolute; top: 120px; right: 75px; width: 216px; height: 50px; }
+		.header #phone span { display: block; padding-left: 52px; }
+	.header ul { position: absolute; right: 0; bottom: 0; width: 660px; height: 30px; padding: 10px 0 0 40px; background: url(../images/ul-bg.png); }
+		.header ul li { float: left; padding: 0 11px 0 7px; background: url(../images/ul-li-bg.png) no-repeat right 3px;}
+			.header ul li a { font-weight: bold; font-size: 13px; }
+			.header ul li a:hover { text-decoration: none; }
+
+/* content */
+.content { width: 842px; margin: 53px auto 44px auto; }
+
+	/* main page */
+	.mainblock { width: 385px; float: left; margin-left: 35px; }
+		.mainblock h1 { width: 385px; font-size: 18px; color: #000; border-bottom: 3px solid #8b8b8b; padding-bottom: 13px; margin-bottom: 15px; font-weight: bold; }
+		.mainblock ul { margin: 0; }
+			.mainblock ul li { font-size: 11px; margin: 10px 0; }
+		.mainblock p { margin-bottom: 15px; }
+
+	/* inside page */
+	.content_top { width: 100%; height: 33px; border-bottom: 3px solid #959595; }
+		.content_top h1 { font-size: 18px; color: #000; font-weight: bold; }
+
+
+
+	/* yury page */
+	.yury_page { }
+		.yury_page .post { padding: 12px 0;	border-bottom: 1px solid #929292; }
+			.yury_page .post a { display: block; float: left; width: 190px; font-weight: bold;}
+			.yury_page .post p { float: right; width: 545px; font-size: 11px; }
+
+	/* yury ul */
+	.yury_ul ul { width: 238px; float: left; margin: 25px 0; }
+		.yury_ul ul li { zoom: 1; overflow: hidden; margin-bottom: 11px; }
+			.yury_ul ul li a { font-size: 14px; font-weight: bold; }
+
+			.yury_ul ul li ul { margin: 8px 0; }
+				.yury_ul ul li ul li { padding: 0 0 0 20px; margin: 0; background: url(../images/li-1.png) no-repeat left 7px; }
+					.yury_ul ul li ul li a { font-size: 12px; color: #cd5163; }
+
+				.yury_ul ul li ul li ul { margin: 4px 0 4px -20px; }
+					.yury_ul ul li ul li ul li { padding: 3px 0 3px 42px; margin: 0; background: url(../images/li-2.png) no-repeat left 7px; }
+						.yury_ul ul li ul li ul li a { font-size: 10px; color: #d8818e; }
+
+	/* yury text */
+	.yury_text { float: left; width: 524px; margin: 12px 0 0 15px; }
+		.yury_text h1 { font-size: 18px; font-weight: normal; }
+		.yury_text p { font-size: 11px; margin: 7px 0; }
+			.yury_text p a { font-weight: bold; }
+
+	/* services ul */
+	.services_ul ul { width: 238px; float: left; margin: 25px 0; }
+		.services_ul ul li { overflow: hidden; margin-bottom: 11px; }
+			.services_ul ul li a { font-size: 12px; font-weight: bold; }
+
+
+
+	/* services text */
+	.services_text { float: left; width: 587px; margin: 12px 0 0 15px; }
+		.services_text h1 { font-size: 18px; font-weight: bold; color: #808080; }
+		.services_text p { font-size: 11px; margin: 7px 0; border-bottom: 1px solid #929292; padding-bottom: 13px; }
+			.services_text p a { font-weight: bold; font-size: 10px; padding-right: 10px; background: url(../images/next.png) no-repeat right 5px; }
+		.services_text img { border: 1px solid #c01932; float: right; margin: 6px 0 0 40px; }
+
+
+	/* case page */
+	.case_page { width: 100%; padding: 20px 6px; }
+		.case_page h1 { font-size: 18px; font-weight: bold; color: #808080; margin-bottom: 4px; }
+		.case_page p { font-size: 11px; margin-bottom: 7px; }
+		.case_page img { float: left; margin: 0 20px 20px 0; border: 1px solid #bd0c26; }
+
+	/* case gallery */
+	.case_gallery { width: 100%; height: 84px; padding: 0 0 24px 6px; margin-top: 15px; }
+		.case_gallery img { float: left; margin-right: 15px; border: 1px solid #444; }
+
+	/* contacts */
+	.contacts { margin: 28px 0;	float: left; }
+		.contacts h1 { font-size: 18px; font-weight: bold; color: #808080; }
+		.contacts p { font-size: 11px; margin: 7px 0; }
+
+	/* mail form */
+	.mailform { margin-top: 30px; }
+		.mailform h2 { font-size: 14px; font-weight: normal; }
+		.mailform textarea { width: 316px; height: 77px; margin: 8px 0; padding: 4px 7px; font-size: 11px; font-family: Verdana, sans-serif; color: #666; }
+		.mailform input#clientmail { width: 141px; height: 18px; padding: 0 7px; font-size: 11px; font-family: Verdana, sans-serif; color: #666; }
+		.mailform input#sendbutton { width: 110px; height: 22px; border: 0; margin: 8px 0; cursor: pointer; background: url(../images/send.png) no-repeat; }
+
+	/* yandex map */
+	.map { float: left; width: 423px height: 268px; margin: 20px 0 0 20px;}
+
+
+/* footer */
+#footer {
+	position: relative;
+	margin: -137px auto 0 auto;
+	height: 133px;
+	width: 100%;
+	background: #e4e4e4;
+}
+
+.footer_wrapper { position: relative; width: 842px; border-top: 4px solid #8b8b8b; height: 133px; margin: 0 auto; background: url(../images/footer-bg.jpg) no-repeat right bottom; }
+	.footer_wrapper img#footer_pandora_logo { float: left; margin: 20px 0 0 0; }
+	.footer_wrapper img#footer_kaizen_logo { float: right; margin: 32px 0 0 0; }
+	.footer_wrapper address { float: left; font-style: normal; width: 470px; margin: 36px 0 0 55px; font-size: 10px; color: #000; }
+
+.footer_blank {	height: 133px; clear: both; }
+
+/* iefix */
+
+*html .mainblock { width: 385px; float: left; margin-left: 17px; }
+*html .yury_ul ul li ul li ul li { padding-left: 55px; background-position: 15px 7px; }

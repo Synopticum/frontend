@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+
+<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+
+<script type="text/javascript">
+$(function() {
+    $('#slideshow').cycle({
+        fx:       'fade',
+        timeout:   2000,
+        after:     onAfter,
+        prev:   '#prevBtn',
+        next:   '#nextBtn'
+    });
+});
+
+function onAfter(curr,next,opts) {
+	var caption = 'Image ' + (opts.currSlide + 1) + ' of ' + opts.slideCount;
+	$('#caption').html(caption);
+}
+</script>
+
+
+</head>
+<body>
+<!-- content -->
+<div class="content theme-home">
+
+        <!-- slider -->
+        <span id="prevBtn"><a href="#"></a></span>
+        <span id="nextBtn"><a href="#"></a></span>
+
+        <div id="slideshow">
+            <img src="images/tmp/slider-1.jpg" width="100%" height="433" alt="" class="first" id="" />
+            <img src="images/tmp/slider-2.jpg" width="100%" height="433" alt="" id="" />
+            <img src="images/tmp/slider-3.jpg" width="100%" height="433" alt="" id="" />
+        </div>
+
+    <div class="wrapper">
+        <div class="home-title">
+            <h1>Сайт агенства starlink</h1>
+
+            <div class="more">
+                <p>Наше агенство разработало сайт для starlink и все такое</p>
+
+                <a href="#" title="">starlink.ru &gt;</a>
+            </div>
+        </div>  
+    </div>
+</div>
+
+<!-- navigation -->
+<div class="nav">
+    <div class="wrapper">
+        <a href="#" title=""><img src="images/logo.gif" width="254" height="66" alt="" class="logo" /></a>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#" title="">Агенство</a>
+                    <ul>
+                        <li><a href="#" title="">о нас</a></li>
+                        <li><a href="#" title="">Клиенты</a></li>
+                        <li><a href="#" title="">награды</a></li>
+                        <li><a href="#" title="">вакансии</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="">Услуги</a></li>
+                <li><a href="#" title="">Портфолио</a></li>
+                <li><a href="#" title="">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div class="language">
+            <a href="#" title="">RU</a>
+            <span>ENG</span>
+        </div>
+    </div>
+</div>
+
+<!-- static -->
+<div class="static">
+    <div class="box info">
+        <div class="wrapper">
+            <div class="title">
+                <span>Инфо</span>
+            </div>
+
+            <div class="description">
+                <h2>Красивая залипуха для клиентов</h2>
+
+                <p>В общем, адекватная ментальность экономит поведенческий таргетинг, отвоевывая свою долю рынка. Управление
+                брендом достижимо в разумные сроки. Стимулирование коммьюнити развивает формирование имиджа, учитывая результат
+                предыдущих медиа-кампаний. Реклама откровенно цинична.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box parthners">
+        <div class="wrapper">
+            <div class="title">
+                <span>Клиенты</span>
+            </div>
+
+            <div class="description">
+                <table class="slider">
+                    <tr>
+                        <td><a href="#" title=""><img src="images/logo1.png" width="140" height="100" alt="" /></a></td>
+                        <td><a href="#" title=""><img src="images/logo2.png" width="140" height="100" alt="" /></a></td>
+                        <td><a href="#" title=""><img src="images/logo3.png" width="140" height="100" alt="" /></a></td>
+                        <td><a href="#" title=""><img src="images/logo4.png" width="140" height="100" alt="" /></a></td>
+                        <td><a href="#" title=""><img src="images/logo5.png" width="140" height="100" alt="" /></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="box agency">
+        <div class="wrapper">
+            <div class="title">
+                <span>Агенство</span>
+            </div>
+
+            <div class="description">
+                <div class="col">
+                    <h5>Карта сайта:</h5>
+
+                    <ul>
+                        <li><a href="#" title="">Агенство</a></li>
+                        <li><a href="#" title="">Портфолио</a></li>
+                        <li><a href="#" title="">Услуги</a></li>
+                        <li><a href="#" title="">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h5>Адрес:</h5>
+
+                    <p>Москва,<br />Красная площадь д 1, офис 1</p>
+                </div>
+
+                <div class="col">
+                    <h5>Контакты:</h5>
+
+                    <p>89131233213<br /><a href="mailto:agensy@gmai.com">agensy@gmai.com</a></p>
+                </div>
+
+                <div class="col">
+                    <h5>Копирайты:</h5>
+
+                    <p>© все закопирайчено<br />2012</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

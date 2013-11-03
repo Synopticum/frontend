@@ -1,0 +1,235 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border: 0 none;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img { border:0 none; }
+table { border-collapse: collapse; border-spacing: 0; }
+ol, ul { list-style-image: none; list-style-position: outside; list-style-type: none; }
+q:before, q:after, blockquote:before, blockquote:after { content:""; }
+
+@font-face {
+    font-family: 'PT Sans Regular';
+    src: url('../fonts/pts55f-webfont.eot');
+    src: url('../fonts/pts55f-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pts55f-webfont.woff') format('woff'),
+         url('../fonts/pts55f-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans Italic';
+    src: url('../fonts/pts56f-webfont.eot');
+    src: url('../fonts/pts56f-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pts56f-webfont.woff') format('woff'),
+         url('../fonts/pts56f-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans Bold';
+    src: url('../fonts/pts75f-webfont.eot');
+    src: url('../fonts/pts75f-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pts75f-webfont.woff') format('woff'),
+         url('../fonts/pts75f-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans Bold Italic';
+    src: url('../fonts/pts76f-webfont.eot');
+    src: url('../fonts/pts76f-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pts76f-webfont.woff') format('woff'),
+         url('../fonts/pts76f-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+strong { font-weight: normal; font-family: 'PT Sans Bold'; }
+em { font-style: normal; font-family: 'PT Sans Italic'; }
+
+/* css begin */
+html, body { height:100%; }
+body {
+	font-family: 'PT Sans Regular', Tahoma, sans-serif;
+	font-size: 14px;
+	color: #111;
+	width: 100%;
+	min-width: 1000px;
+    background: url(../images/header-bg.jpg) no-repeat 50% 0 #fff;
+}
+
+/* content */
+#wrap {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+a { color: #0095da; }
+
+/* header */
+.header { position: relative; height: 369px; padding: 43px 0 0 0; background: url(../images/header-bg.png) no-repeat 50% 0; }
+    .header .logo { float: left; margin: 0 0 0 1px; color: #316aa9; }
+        .header .logo img { margin-bottom: 8px; }
+
+    .header .slogan { float: left; margin: 0 0 0 135px; font-size: 26px; }
+
+     .header .nav { float: right; margin: 5px 15px 0 0; }
+        .header .nav img { padding-bottom: 2px; border-bottom: 2px solid #fff; }
+        .header .nav img:hover { border-bottom: 2px solid #0095da; }
+        .header .nav .spacer { margin: 0 16px; }
+
+     .header-title { position: absolute; display: inline-block; padding: 2px 5px; color: #fff; text-decoration: none; background: #316aa9; font-size: 14px; }
+        .h1 { left: 741px; top: 196px; }
+        .h2 { right: 41px; top: 255px; }
+        .h3 { left: 833px; top: 358px; }
+        .h4 { left: 696px; top: 378px; }
+        .h5 { left: 174px; top: 360px; }
+        .h6 { left: 25px; top: 313px; }
+        .h7 { left: 61px; top: 210px; }
+        .h8 { left: 198px; top: 185px; }
+
+     .header .phone { position: absolute; top: 85px; right: 6px; text-align: right; padding-left: 35px; background: url(../images/icon-phone.png) no-repeat; }
+        .header .phone strong { font-size: 28px; }
+        .header .phone span { color: #0095da; }
+
+/* middle */
+.middle { margin-bottom: 20px; background: url(../images/shattered2.jpg); }
+    .middle .wrapper { padding: 20px 25px; overflow: hidden }
+
+    .topmenu { padding: 10px 0 10px 10px; height: 40px; border: 1px solid #000; border-radius: 5px; background: url(../images/topmenu-bg.gif) repeat-x; }
+        .topmenu li { float: left; padding: 10px 21px; border-left: 1px dashed #fff; }
+        .topmenu li:first-child { border: 0; }
+        .topmenu li a { font-family: "Trebuchet MS", 'PT Sans Regular', Tahoma, sans-serif; font-weight: bold; color: #fff; text-transform: uppercase; text-decoration: none; }
+        .topmenu li a:hover { color: #9ed010; }
+
+    .middle .search { float: left; margin: 20px 0 0 0; color: #fff; }
+        .middle .search a { color: #fff; font-family: 'PT Sans Italic'; text-decoration: none; border-bottom: 1px dashed #fff; }
+        .middle .search p { padding: 0 5px; }
+        .middle .searchform { width: 421px; height: 45px; margin: 0 0 10px 0; background: url(../images/search-bg.png) no-repeat; overflow: hidden; }
+            .middle .search .textbox { float: left; padding: 5px; margin: 12px 0 0 15px; outline: none; font-family: 'PT Sans Regular', Tahoma, sans-serif; border: 0; font-size: 14px; color: #646363; }
+            .middle .search .find { float: right; display: block; border: 0; margin: 8px 10px 0 0; cursor: pointer; width: 28px; height: 31px; background: url(../images/icon-search.png) no-repeat; }
+
+            .middle .category { float: right; margin: 10px 7px 0 0; padding: 5px 0 5px 10px; border-left: 1px solid #646363; padding-left: 8px; }
+                .middle .search .select-category { font-family: 'PT Sans Regular', Tahoma, sans-serif; font-size: 14px; color: #646363; padding-right: 17px; background: url(../images/down.png) no-repeat 100% 4px; }
+                .middle .search .select-category:hover { text-decoration: underline; }
+
+    .middle .cart { float: right; margin: 20px 10px 0 0; padding: 0 0 0 40px; background: url(../images/header-cart.png) no-repeat 0 0; }
+        .middle .cart .spacer { margin: 0 5px -3px 5px; }
+        .middle .cart a { color: #111; }
+        .middle .cart a.cost { color: #fff; font-size: 24px; text-decoration: none; border-bottom: 1px solid #fff; }
+
+/* aside */
+.aside { float: left; width: 320px; margin: 0 10px 0 0; }
+    .aside .box { background: url(../images/aside-box-bg.png); }
+        .aside .box h3 { font-size: 22px; color: #fff; background: url(../images/shattered3.png); }
+            .aside .box h3 span { display: block; padding: 8px 0 7px 45px; }
+
+    .aside .menu { margin: 0 0 20px 0; }
+        .aside .menu h3 { }
+            .aside .menu h3 span { background: url(../images/icon-catalog.png) no-repeat 11px 5px; }
+
+        .aside .menu .level-1 { padding: 6px; }
+            .aside .menu .level-1 li { margin: 9px 0; }
+            .aside .menu .level-1 li a { font-size: 16px; color: #111; text-decoration: none; padding-left: 30px; background: url(../images/menu-level-1.png) no-repeat 5px 0; }
+            .aside .menu .level-1 li.active a { font-family: 'PT Sans Bold'; }
+
+        .aside .menu .level-2 { }
+            .aside .menu .level-2 li { margin: 10px 0 10px 0px; }
+            .aside .menu .level-2 li a { font-family: 'PT Sans Regular'; padding-left: 15px; background: url(../images/menu-level-2.png) no-repeat 0 8px; }
+            .aside .menu .level-2 li.active a { font-family: 'PT Sans Bold Italic'; }
+            .aside .menu .level-2 .indent { padding-left: 70px; }
+
+        .aside .menu .level-3 { margin: 5px 0; padding: 1px 0; background: url(../images/shattered3.png); }
+            .aside .menu .level-3 li { margin: 10px 0 10px 0px; }
+            .aside .menu .level-3 li a { font-family: 'PT Sans Italic' !important; color: #fff; padding-left: 0px; background: none; }
+            .aside .menu .level-3 li.active a { font-family: 'PT Sans Bold Italic' !important; }
+            .aside .menu .level-3 .indent { padding-left: 105px; }
+
+            .aside .menu li a:hover { text-decoration: underline; }
+
+
+    .aside .news { padding: 0 0 20px 0; }
+        .aside .news h3 {  }
+            .aside .menu h3 span { background: url(../images/icon-play.png) no-repeat 11px 5px; }
+
+        .aside .news .item { padding: 0 24px; margin: 20px 0 0 0; font-family: Arial, sans-serif; font-size: 12px; color: #252525; }
+            .aside .news .date { display: block; font-size: 10px; color: #646363; }
+            .aside .news p { margin: 5px 0; font-size: 13px; }
+            .aside .news a { color: #316aa9; }
+
+    .aside .feedback { padding: 80px 0; text-align: center; background: url(../images/shattered3.png); }
+        .aside .button-feedback { display: block; margin: 0 auto; width: 229px; height: 62px; text-indent: -9999px; overflow: hidden; background: url(../images/button-feedback.png) no-repeat; }
+
+/* content */
+.content { overflow: hidden; }
+    .special { overflow: hidden; }
+        .special h2 { font-size: 22px; color: #fff; background: url(../images/shattered3.png); }
+            .special h2 span { display: block; padding: 8px 0 7px 45px; background: url(../images/icon-special.png) no-repeat 11px 5px; }
+
+        .special .wrapper { margin: 0 0 0 -45px; }
+            .special .item { position: relative; overflow: hidden; float: left; width: 191px; margin: 20px 0 0px 45px; height: 254px; border: 1px solid #37302e; }
+                .special .price { position: absolute; left: 0; bottom: 0; overflow: hidden; width: 179px; height: 19px; padding: 10px 6px 9px 6px; background: #316aa9; font-size: 18px; color: #fff; }
+                .special .addtocart { position: relative; z-index: 100; float: right; display: block; margin: -3px 0 0 0; width: 82px; height: 27px; text-indent: -9999px; overflow: hidden; background: url(../images/button-addtocart.png) no-repeat; }
+                .special .addtocart:hover { background-position: 0 100%; }
+
+                .special .title { position: absolute; left: 0; bottom: 38px; padding: 5px 0; background: #71d440; text-align: center; }
+                    .special .title a { color: #000; font-size: 13px; }
+
+                .special .go { display: none; position: absolute; left: 0; top: 0; z-index: 50; width: 191px; height: 254px; background: url(../images/special-pattern.gif); }
+                    .special .go a { display: block; margin: 75px auto 0 auto; width: 108px; height: 35px; text-indent: -9999px; overflow: hidden; background: url(../images/button-go.png) no-repeat; }
+
+                .special .item:hover .go { display: block; }
+
+    .destroy { margin: 20px 0; text-align: center; }
+        .destroy h2 { font-size: 22px; color: #fff; background: url(../images/shattered3.png); }
+            .destroy h2 span { display: block; padding: 8px 0 7px 45px; background: url(../images/icon-neutral.png) no-repeat 11px 5px; }
+        .destroy .item { margin: 10px 0; width: 32%; display: inline-block; vertical-align: top; text-align: center; }
+
+    .text { margin: 20px 0; }
+        .text h2 { font-size: 22px; color: #fff; background: url(../images/shattered3.png); }
+            .text h2 span { display: block; padding: 8px 0 7px 45px; background: url(../images/icon-neutral.png) no-repeat 11px 5px; }
+        .text h4 { font-family: 'PT Sans Bold'; margin: 25px 0; font-size: 16px; }
+        .text p { margin: 25px 0; font-size: 13px; line-height: 160%; }
+
+/* footer */
+#footer {
+	padding-top: 35px;
+	position: relative;
+	margin: -156px auto 0 auto;
+	height: 120px;
+	width: 1000px;
+    border-top: 1px solid #cbd5db;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+#footer .logo { float: left; margin-left: 30px; }
+
+#footer .copyright { float: left; margin-left: 20px; }
+    #footer .copyright p { margin-bottom: 15px; }
+    #footer .copyright a { color: #111; }
+
+#footer .madein { float: right; margin-right: 35px; }
+    #footer .madein a { color: #316aa9; }
+    #footer .madein img { margin-bottom: 5px; }
+
+#footer .search { float: right; margin-right: 10px; padding-top: 13px; }
+    #footer .search .textbox { border: 0; display: block; width: 138px; height: 20px; padding-left: 10px; padding-right: 20px; background: url(../images/footer-search.png) no-repeat; }
+
+.footer_blank {	clear: both; height: 175px; }

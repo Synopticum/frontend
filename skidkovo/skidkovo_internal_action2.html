@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+
+<script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
+<script type="text/javascript">
+		$(document).ready(function() {
+			$("a#example1").fancybox();
+
+			$("#link-popup-enter").fancybox({
+				'titlePosition'		: 'inside',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+		});
+</script>
+</head>
+<body>
+
+<!-- popups -->
+<div class="popup">
+    <div class="wrapper" id="popup_enter">
+	    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi eu elit tempor facilisis
+        id et neque. Nulla sit amet sem sapien. Vestibulum imperdiet porta ante ac ornare. Nulla et lorem
+        eu nibh adipiscing ultricies nec at lacus. Cras laoreet ultricies sem, at blandit mi eleifend aliquam.
+        Nunc enim ipsum, vehicula non pretium varius, cursus ac tortor. Vivamus fringilla congue laoreet. Quisque
+        ultrices sodales orci, quis rhoncus justo auctor in. Phasellus dui eros, bibendum eu feugiat ornare,
+        faucibus eu mi. Nunc aliquet tempus sem, id aliquam diam varius ac. Maecenas nisl nunc, molestie vitae
+        eleifend vel, iaculis sed magna. Aenean tempus lacus vitae orci posuere porttitor eget non felis. Donec
+        lectus elit, aliquam nec eleifend sit amet, vestibulum sed nunc.
+    </div>
+</div>
+
+<!-- navigation panel -->
+<div id="navpanel">
+    <div class="wrapper">
+        <a href="#" title="" class="select-city"><span>Москва</span></a>
+
+        <!-- user panel -->
+        <div class="userpanel">
+            <span class="name">Александр Иванов</span>
+
+            Личный счет  <span class="count">55р.</span>
+            <span class="spacer"></span>
+
+            Бонусный счет <span class="count">14р.</span>
+            <span class="spacer"></span>
+
+            <a href="#" title="">Личный кабинет</a>
+            <a href="#" title="" class="userlink u1"></a>
+            <a href="#" title="" class="userlink u2"></a>
+            <a href="#" title="" class="userlink u3"></a>
+            <a href="#" title="" class="userlink u4"></a>
+
+            <a href="#" title="">Раздел поставщика</a>
+
+            <span class="spacer"></span>
+            <a href="#" title="" id="link-popup-logout">Выход</a>
+        </div>
+    </div>
+</div>
+
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+        <a href="#" title=""><img src="images/header-logo.png" width="230" height="230" class="logo" alt="" /></a>
+
+        <div class="header-content">
+          <!-- top menu -->
+          <div class="topmenu">
+              <ul>
+                  <li><a href="#" title="">Акции</a></li>
+                  <li><a href="#" title="">Прошедшие акции</a></li>
+                  <li><a href="#" title="">Всё о проекте</a></li>
+                  <li><a href="#" title="">Для бизнеса</a></li>
+                  <li class="folder"><a href="#" title="">Мы в сети</a>
+                    <ul>
+                        <li><a href="#" title="">Vkontakte</a></li>
+                        <li><a href="#" title="">Facebook</a></li>
+                        <li><a href="#" title="">Livejournal</a></li>
+                    </ul>
+                  </li>
+              </ul>
+          </div>
+
+          <!-- header text -->
+          <div class="slogan">
+              Это сервис, который предлагает существенные скидки на различные услуги и товары. Каждый день
+              на сайте появляется новое интересное предложение.<br />
+              У нас вы можете получить скидки на рестораны, боулинг.
+          </div>
+        </div>
+    </div>
+
+	<!-- content wrapper -->
+	<div class="content-wrapper">
+        <div class="text">
+            <div class="tabs">
+                <h1>Ужин в ресторане на две персоны</h1>
+
+                <!-- big image -->
+                <div class="bigimage">
+                    <div class="ctl"></div><div class="ctr"></div>
+                    <img src="images/tmp/big-1.jpg" width="655" height="338" alt="" />
+                    <div class="cbl"></div><div class="cbr"></div>
+                </div>
+
+                <!-- switcher -->
+                <div class="switcher">
+                    <a href="#" title="" class="active">Описание</a>
+                    <a href="#" title="">Комментарии (5)</a>
+                    <a href="#" title="">О поставщике</a>
+                </div>
+
+                <!-- tab 1 -->
+                <div class="tab tab1">
+                    <div class="short-about-action">
+                        <h4>Кратко</h4>
+
+                        <ul>
+                            <li>Описание акции: это сервис, который</li>
+                            <li>Предлагает существенные скидки на</li>
+                            <li>Различные услуги и товары. Каждый день</li>
+                            <li>На сайте появляется новое интересное</li>
+                            <li>Предложение.</li>
+                            <li>У нас вы можете получить</li>
+                            <li>Скидки на рестораны и боулинг.</li>
+                            <li>Это сервис, который предлагает</li>
+                            <li>Существенные скидки на различные</li>
+                            <li>Услуги и товары</li>
+                        </ul>
+                    </div>
+
+                    <div class="terms">
+                        <h4>Условия акции:</h4>
+
+                        <div class="time">
+                            купон действует с 01.01.2011 г. по 31.01.2011 г.
+                        </div>
+
+                        <ul>
+                            <li>Каждый день на сайте появляется новое</li>
+                            <li>Интересное предложение.</li>
+                            <li>У нас вы можете получить скидки на</li>
+                            <li>Рестораны, боулинг.Это сервис, который</li>
+                            <li>Предлагает существенные скидки на</li>
+                            <li>Различные услуги и товары. Каждый день на</li>
+                            <li>Сайте появляется новое интересное</li>
+                            <li>Предложение. У нас вы можете получить</li>
+                            <li>Скидки на рестораны</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="rightside">
+            <!-- info box -->
+            <div class="infobox">
+                <!-- offers -->
+                <div class="icons">
+                    <img src="images/offers-r2.png" width="60" height="59" alt="" />
+                    <img src="images/offers-r3.png" width="60" height="59" alt="" />
+                    <img src="images/offers-r4.png" width="60" height="59" alt="" />
+                </div>
+
+                <!-- cost -->
+                <div class="cost">
+                    <span class="cost-normal"><strong>1500</strong>руб. <small>обычная цена</small></span>
+                    <span class="cost-discount"><strong>- 50% </strong> <small>скидка</small></span>
+                    <div class="cost-final"><strong>750</strong> р. <small>цена для вас</small></div>
+                </div>
+
+                <!-- coupons -->
+                <div class="coupons">
+                    <div class="left">
+                        <span>осталось<br />купонов:</span>
+                        <strong>143</strong>
+                    </div>
+
+                    <div class="purchased">
+                        <span>куплено<br />купонов:</span>
+                        <strong>12</strong>
+                    </div>
+                </div>
+
+                <!-- time -->
+                <div class="time">
+                    <small>до конца акции осталось:</small>
+                    <strong>2</strong>дня <strong>12:12:12</strong>
+                </div>
+
+                <!-- nav -->
+                <div class="nav">
+                    <a href="#" title="" class="buy"></a>
+                    <a href="#" title="" class="buy2"></a>
+                </div>
+            </div>
+
+            <!-- social -->
+            <div class="social">
+                Поделиться:
+                <a href="#" title=""><img src="images/s1.png" width="24" height="24" alt="" /></a>
+                <a href="#" title=""><img src="images/s2.png" width="24" height="24" alt="" /></a>
+                <a href="#" title=""><img src="images/s3.png" width="24" height="24" alt="" /></a>
+                <a href="#" title=""><img src="images/s4.png" width="24" height="24" alt="" /></a>
+            </div>
+
+            <!-- comment -->
+            <div class="comment">
+                <h4>Последний комментарий</h4>
+
+                <div class="author">
+                    anastasi22... ,07/12/2010 - 20:02.
+                </div>
+
+                <div class="body">
+                    С телефоном все в порядке, мы только что проверили, именно по нему вы уточните все вопросы!
+                </div>
+
+                <a href="#" title="" class="comment-this">комментировать</a>
+                <div id="comment-fix"></div>
+            </div>
+
+        </div>
+
+        <!-- action description -->
+        <div class="action-description">
+            <div class="item">
+                <a href="#" title="" class="title">Презентация</a>
+
+                <p>Описание акции: это сервис, который предлагает существенные скидки на различные услуги и товары. Каждый
+                день на сайте появляется новое интересное предложение. У нас вы можете получить скидки на рестораны, боулинг. </p>
+
+                <div class="video">
+                    <div class="wrapper"><img src="images/tmp/v1.jpg" width="624" height="317" alt="" /></div>
+                    <a href="#" title="" class="go"></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <a href="#" title="" class="title">Видео</a>
+
+                <div class="video">
+                    <div class="wrapper"><img src="images/tmp/v1.jpg" width="624" height="317" alt="" /></div>
+                    <a href="#" title="" class="go"></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <a href="#" title="" class="title">Изображения</a>
+
+                <a href="#" title="" class="buy"></a>
+            </div>
+        </div>
+
+        <div class="cleaner"></div>
+    </div>
+
+	<!-- footer -->
+
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+    <div class="wrapper">
+        <div class="box">
+            <h6>О проекте</h6>
+
+            <ul>
+                <li><a href="#" title="">Как это работает</a></li>
+                <li><a href="#" title="">Вопрос - ответ</a></li>
+                <li><a href="#" title="">Инструкция</a></li>
+                <li><a href="#" title="">Обратная связь</a></li>
+            </ul>
+        </div>
+        <!-- -->
+        <div class="box">
+            <h6>Партнерам</h6>
+
+            <ul>
+                <li><a href="#" title="">Сотрудничество</a></li>
+                <li><a href="#" title="">Реклама</a></li>
+            </ul>
+        </div>
+        <!-- -->
+        <div class="box">
+            <h6>На связи</h6>
+
+            <ul>
+                <li><img src="images/footer-lj.png" width="15" height="15" alt="" /> <a href="#" title="">ЖЖ блог</a></li>
+                <li><img src="images/footer-twitter.png" width="15" height="15" alt="" /> <a href="#" title="">Twitter</a></li>
+                <li><img src="images/footer-facebook.png" width="15" height="15" alt="" /> <a href="#" title="">Facebook</a></li>
+                <li><img src="images/footer-vkontakte.png" width="15" height="15" alt="" /> <a href="#" title="">Вконтакте</a></li>
+            </ul>
+        </div>
+
+        <!-- copyright -->
+        <div class="copyright">
+            <p>&copy; 2010 Skidkovo. Все права защищены.<br />Создание сайта...</p>
+
+            <a href="#" title="RSS" class="rss">Подписаться</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

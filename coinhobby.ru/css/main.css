@@ -1,0 +1,190 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border: 0 none;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img { border:0 none; }
+table { border-collapse: collapse; border-spacing: 0; }
+ol, ul { list-style-image: none; list-style-position: outside; list-style-type: none; }
+q:before, q:after, blockquote:before, blockquote:after { content:""; }
+
+/* css begin */
+html, body { height:100%; }
+body {
+	font-family: Georgia, Times New Roman, serif;
+	font-size: 12px;
+	color: #5b5b5b;
+	background: #fff;
+	width: 100%;
+	min-width: 1000px;
+}
+
+/* content */
+#wrap {
+	position: relative;
+	background: #fff;
+	width: 100%;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+a { color: #5b5b5b; }
+
+/* header */
+.header { height: 316px; background: url(../images/header-bg.jpg) no-repeat 50% 0; }
+    .header .wrapper { position: relative; width: 1000px; margin: 0 auto; }
+
+    #logo { position: absolute; left: -65px; top: 15px; width: 397px; height: 233px; background: url(../images/logo.png) no-repeat; }
+        #logo a { display: block; width: 272px; height: 58px; margin: 120px 0 0 75px; text-indent: -9999px; overflow: hidden; }
+
+/* topmenu */
+.topmenu { height: 43px; background: #5b5b5b; padding-left: 70px; }
+
+.topmenu .paginator { position: relative; overflow: hidden; text-align: center; }
+    .topmenu .pagicontainer { float: left; left: 50%; position: relative; text-align: center; }
+    .topmenu .paginator .wrapper {	position: relative;	left: -50%;	float: left; list-style: none; }
+    .topmenu .paginator a, .topmenu .paginator li  { float: left; }
+    .topmenu .paginator li  { padding: 12px 20px 0 20px; }
+    .topmenu .paginator a  { color: #fff; font-size: 16px; }
+
+/* content */
+.content { width: 1000px; margin: 0 auto; }
+
+.leftside { position: relative; float: left; width: 196px; min-height: 750px; margin: -9px 0 0 25px; padding: 20px; background: url(../images/leftside-bg.gif) no-repeat 100% 0; }
+    .leftside .top { position: absolute; left: 0; top: 0; width: 236px; height: 9px; background: url(../images/leftside-top.gif) no-repeat; }
+
+    .leftside .menu ul {}
+        .leftside .menu li { padding: 2px 0 4px 35px; background: url(../images/leftmenu-li.png) no-repeat; }
+        .leftside .menu li a { font-size: 16px; text-decoration: none; }
+
+    .leftside .menu li ul { margin: 3px 0 3px -15px; }
+        .leftside .menu li li { padding: 2px 0 1px 23px; background: url(../images/leftmenu-li-li.gif) no-repeat; }
+        .leftside .menu li li:last-child { background: url(../images/leftmenu-li-li-last.gif) no-repeat; }
+        .leftside .menu li li a { text-decoration: underline; font-size: 11px; }
+
+
+    .leftside .links { display: none; padding: 10px 0 10px 35px; line-height: 160%; font-size: 16px; }
+
+/* text */
+.text { position: relative; z-index: 100; float: left; width: 630px; min-height: 800px; padding: 35px; margin: 0 0 0 -25px; background: url(../images/text-bg.png) no-repeat 0 100%; }
+
+    .text .catalog {  }
+        .text .catalog .item { width: 624px; padding: 20px 40px 30px 40px; background: url(../images/item-bg.png) no-repeat 0 100%; overflow: hidden; }
+        .text .catalog .description { overflow: hidden; width: 240px; }
+            .text .catalog .description .title { font-size: 16px; color: #b95f3c; text-decoration: none; }
+            .text .catalog .description p { margin: 13px 0; }
+        .text .catalog .view { float: right; }
+
+.text .navinator { position: relative; overflow: hidden; text-align: center; }
+    .text .navicontainer { float: left; left: 50%; position: relative; text-align: center; }
+    .text .navinator .wrapper {	position: relative;	left: -50%;	float: left; list-style: none; }
+    .text .navinator a, .text .navinator li  { float: left; }
+    .text .navinator li  { padding: 22px 10px 12px 10px; }
+    .text .navinator a  { font-family: Arial, sans-serif; color: #c37d00; font-size: 12px; }
+
+/* jScroll */
+.jscrolllist { width: 184px; height: 241px; padding: 10px;  background: url(../images/jscroll.png) no-repeat; font-size: 11px; }
+
+.jscrolllist li { background: none !important; }
+.jscrolllist li a { background: none; }
+
+.jScrollPaneContainer {
+	position: relative;
+	overflow: hidden;
+	height: 151px;
+	z-index: 1;
+}
+
+.jScrollPaneTrack {
+	position: absolute;
+	cursor: pointer;
+	left: 0px;
+	top: 0;
+    width: 11px;
+    height: 118px;
+    background: url(../images/jtrack.png) no-repeat;
+}
+.jScrollPaneDrag {
+	position: absolute;
+	cursor: pointer;
+	overflow: hidden;
+    width: 11px;
+    height: 21px !important;
+    background: url(../images/jdrag.png) no-repeat;
+}
+.jScrollPaneDragTop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+.jScrollPaneDragBottom {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	overflow: hidden;
+}
+a.jScrollArrowUp {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	text-indent: -2000px;
+	overflow: hidden;
+	height: 9px;
+}
+
+a.jScrollArrowDown {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	text-indent: -2000px;
+	overflow: hidden;
+	height: 9px;
+}
+
+/* footer */
+#footer {
+	position: relative;
+	margin-top: -130px;
+	height: 130px;
+	width: 100%;
+    background: #5c5c5c;
+    color: #c8c8c8;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+}
+
+#footer .wrapper { position: relative; width: 960px; padding: 20px 0 0 0; margin: 0 auto; }
+
+#footer .copyright p { margin: 15px 0; }
+#footer .copyright span { color: #fff; }
+#footer .copyright small { font-size: 9px; }
+#footer .copyright a { color: #c8c8c8; }
+#footer .copyright a:hover { color: #fff; }
+#footer .copyright img { margin: 0 3px 1px 3px; }
+
+#footer .links { float: right; text-align: right; margin: 0 150px 0 0; }
+  #footer .links a { color: #fff; margin: 0 5px; }
+  #footer .links img { margin: 9px 5px; }
+
+    #footer .nf { float: right; width: 75px; height: 44px; margin: 0 0 0 12px; padding: 5px 15px 0 15px; background: url(../images/footer-nf.png) no-repeat 0 50%; font-size: 10px; }
+        #footer .nf a { margin: 0; }
+
+#footer-gold { z-index: 100; position: absolute; top: -61px; right: 10px; width: 178px; height: 110px; background: url(../images/footer-gold.png) no-repeat; }
+#footer-coin { position: absolute; top: -316px; left: 96px; width: 279px; height: 346px; background: url(../images/footer-coin.png) no-repeat; }
+
+.footer_blank {	clear: both; height: 105px; }

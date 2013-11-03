@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>window</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="ie6fix.js"></script>
+<script type="text/javascript">
+	DD_belatedPNG.fix('.login, .discount1, #enter');
+</script>
+<![endif]-->
+</head>
+<body>
+<div id="wrapper">
+	<div id="popupWindow">
+		<h1>Уведомление</h1>
+		<a href="#" onclick="document.getElementById('popupWindow').style.display='none';"><img src="images/close.gif" id="popupWindowClose" alt="" /></a>
+		<div id="popupWindowText">Информация: количество товара обновлено</div>
+		<p><input type="submit" name="next" id="popupWindowNext" value="" /><input type="button" name="next" id="popupWindowCart" value="" /></p>
+	</div>
+</div>
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+		<div class="logo">
+		<a href="#"><img src="images/logo.jpg" title="" id="logotype" alt="" /></a>
+			<div>
+				<strong>+495 222 33 33</strong><br />
+				<strong>&nbsp;&nbsp;+495 432 54 23</strong><br />
+				<span>ICQ: 234-344-321</span>
+			</div>
+		</div>
+		<div class="worktime"></div>
+		<div class="search">
+			<div class="cart">
+				<img src="images/cart.gif" width="16" height="14" alt="" />В корзине <a href="#" class="gotocart">2 товара</a> на сумму <span>628 000р</span>.
+				<a href="#">перейти к заказу</a>
+			</div>
+			<input name="search" type="text" tabindex="4" />
+			<input type="submit" name="searchnow" id="searchnow" value="" />
+		</div>
+		<div class="login">
+			<input name="login" type="text" tabindex="1" /><br />
+			<input name="password" type="password" tabindex="2" />
+			<input name="enter" type="submit" id="enter" value="" tabindex="3" />
+		</div>
+	</div>
+
+	<!-- middle -->
+	<div class="middle">
+		<div class="middle_left"></div>
+		<div class="middle_right"><a href="#"><img src="images/buynow.png" alt="" width="111" height="30" /></a></div>
+	</div>
+
+	<!-- menu -->
+	<div class="menu_container">
+		<div class="menu">
+			<a href="#" id="about"></a>
+			<a href="#" id="howtobuy"></a>
+			<a href="#" id="howtopay"></a>
+			<a href="#" id="qa"></a>
+			<a href="#" id="contacts"></a>
+		</div>
+	</div>
+
+	<!-- content -->
+	<div class="content">
+		<!-- left column -->
+		<div class="col1">
+			<h1>Каталог продукции</h1>
+			<ul>
+				<li><a href="#">Кольца</a>
+					<ul>
+						<li><a href="#">Обручальные</a></li>
+						<li><a href="#">С брильянтами</a></li>
+						<li><a href="#">Перстни и печатки</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Серьги</a></li>
+				<li><a href="#">Подвески</a>
+					<ul>
+						<li><a href="#">Культовые</a></li>
+						<li><a href="#">Знаки зодиака</a></li>
+						<li><a href="#">С бриллиантами</a></li>
+						<li><a href="#">Без вставок</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Цепи</a></li>
+				<li><a href="#">Браслеты</a></li>
+				<li><a href="#">Колье</a>
+					<ul>
+						<li><a href="#">Без вставок</a></li>
+						<li><a href="#">С драгоценными камнями</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Мужская коллекция</a></li>
+				<li><a href="#">Сувениры</a></li>
+				<li><a href="#">Комплекты</a></li>
+				<li><a href="#">Коллекции</a></li>
+			</ul>
+			<div class="banner"><a href="#"><img src="images/temp/1.gif" alt="" width="161" height="138" /></a></div>
+		</div>
+
+		<!-- middle column -->
+		<div class="col2">
+			<!-- main page filter -->
+			<div class="main_filter">
+				<div id="item_cost">
+					<label for="mainfilter_cost">Цена:</label>
+					<select name="mainfilter_cost" size="1">
+						<option></option>
+					</select>
+				</div>
+				<div id="item_type">
+					<label for="mainfilter_item_type">Тип товара:</label>
+					<select name="mainfilter_item_type" size="1">
+						<option></option>
+					</select>
+				</div>
+				<div id="item_metall">
+					<label for="mainfilter_item_metall">Металл:</label>
+					<select name="mainfilter_item_metall" size="1">
+						<option></option>
+					</select>
+				</div>
+				<div id="item_sample">
+					<label for="mainfilter_item_sample">Проба:</label>
+					<select name="mainfilter_item_sample" size="1">
+						<option></option>
+					</select>
+				</div>
+				<div id="item_insert">
+					<label for="mainfilter_item_insert">Вставка:</label>
+					<select name="mainfilter_item_insert" size="1">
+						<option></option>
+					</select>
+				</div>
+				<input type="submit" name="mainfilter_find" id="mainfilter_find" value="" />
+			</div>
+
+			<div class="actions">
+			<h1>Акции и скидки</h1>
+				<div class="item">
+					<div class="discount">
+						<img src="images/discount_30.png" class="discount1" alt="" />
+						<a href="#"><img src="images/temp/s1.jpg" alt="" /></a>
+					</div>
+					<a href="#">Суперское кольцо</a>
+					<span>Металл:</span>
+					платина
+					<span>Плетение:</span>
+					Панцирное двойное
+					<big>87 000р.</big>
+				</div>
+				<div class="item">
+					<div class="discount">
+						<a href="#"><img src="images/temp/s1.jpg" alt="" /></a>
+					</div>
+					<a href="#">Суперское кольцо</a>
+					<span>Металл:</span>
+					платина
+					<span>Плетение:</span>
+					Панцирное двойное
+					<big>87 000р.</big>
+				</div>
+				<div class="item">
+					<div class="discount">
+						<a href="#"><img src="images/temp/s1.jpg" alt="" /></a>
+					</div>
+					<a href="#">Суперское кольцо</a>
+					<span>Металл:</span>
+					платина
+					<span>Плетение:</span>
+					Панцирное двойное
+					<big>87 000р.</big>
+				</div>
+				<div class="item">
+					<div class="discount">
+						<img src="images/discount_30g.png" class="discount1" alt="" />
+						<a href="#"><img src="images/temp/s1.jpg" alt="" /></a>
+					</div>
+					<a href="#">Суперское кольцо</a>
+					<span>Металл:</span>
+					платина
+					<span>Плетение:</span>
+					Панцирное двойное
+					<big>87 000р.</big>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+
+			<div class="top">
+				<h1>Самые покупаемые товары</h1>
+				<div class="item">
+					<a href="#"><img src="images/temp/t1.jpg" alt="" /></a>
+					<a href="#">Суперское кольцо</a>
+					<span>Металл:</span>
+					платина
+					<span>Плетение:</span>
+					Панцирное двойное
+					<big>87 000р.</big>
+				</div>
+				<div class="item">
+					<a href="#"><img src="images/temp/t2.jpg" alt="" /></a>
+					<a href="#">Суперское кольцо</a>
+					<span>Металл:</span>
+					платина
+					<span>Плетение:</span>
+					Панцирное двойное
+					<big>15 000р.</big>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- left column -->
+		<div class="col3">
+			<!-- right text block -->
+			<div class="sometext"><strong>Мы рады приветствовать вас в нашем магазине!</strong> на отноше ние человека к окружаущей
+			его действительности и к себе а также обусловленные этими взглядами основные жизнен ные убеждения к.</div>
+			<!-- news block -->
+			<div class="news">
+				<h1>Новости</h1>
+				<div class="news_item">
+					<small>11\11\2009</small>
+					Мировоззрение — это систе ма взглядов на объективный мир и место в нем
+				</div>
+				<div class="news_item">
+					<small>11\11\2009</small>
+					на отношение человека к окружаущей его действитель ности и к себе
+				</div>
+				<div class="news_item">
+					<small>11\11\2009</small>
+					а также обусловленные этими взглядами основные жизнен ные убеждения на объек тивный мир и место в нем
+				</div>
+				<div class="news_item">
+					<small>11\11\2009</small>
+					на отношение человека к окружаущей его действитель ности и к себе это система взглядов
+				</div>
+				<br />
+				<a href="#">Все новости</a> | <a href="#">Архив новостей</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+	<div id="diamond"></div>
+	<span class="copyright">&copy; Первый ювелир, 2009</span>
+	<div class="counters">
+		<a href="#"><img src="images/temp/c1.gif" alt="" /></a>
+		<a href="#"><img src="images/temp/c2.gif" alt="" /></a>
+		<a href="#"><img src="images/temp/c1.gif" alt="" /></a>
+		<a href="#"><img src="images/temp/c2.gif" alt="" /></a>
+	</div>
+	<span class="madeby">Дизайн сайта — <a href="#">RGBist</a></span>
+</div>
+</body>
+</html>

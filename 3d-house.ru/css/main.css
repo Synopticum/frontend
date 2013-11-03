@@ -1,0 +1,136 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border: 0 none;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img { border:0 none; }
+table { border-collapse: collapse; border-spacing: 0; }
+ol, ul { list-style-image: none; list-style-position: outside; list-style-type: none; }
+q:before, q:after, blockquote:before, blockquote:after { content:""; }
+
+@font-face {
+    font-family: 'PT Sans Regular';
+    src: url('../fonts/pt_sans_regular-webfont.eot');
+    src: url('../fonts/pt_sans_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pt_sans_regular-webfont.woff') format('woff'),
+         url('../fonts/pt_sans_regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans Bold';
+    src: url('../fonts/pt_sans_bold-webfont.eot');
+    src: url('../fonts/pt_sans_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pt_sans_bold-webfont.woff') format('woff'),
+         url('../fonts/pt_sans_bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+b, strong { font-weight: normal; font-family: 'PT Sans Bold'; }
+
+/* css begin */
+html, body { height:100%; }
+body {
+	font-family: 'PT Sans Regular', Arial, Tahoma, sans-serif;
+	font-size: 14px;
+	color: #000;
+	background: #fff;
+	width: 100%;
+	min-width: 1000px;
+}
+
+#wrap {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+
+a { color: #456282; }
+a:hover { color: #000 }
+
+/* header */
+.header { background: url(../images/header-bg.png) repeat-x; }
+    .header-wrapper-main { height: 729px; background: url(../images/header-sky.jpg) no-repeat 50% 0; }
+    .header-wrapper-inner { width: 940px; margin: 0 auto; }
+
+    .header .logo { float: left; margin: 12px 0 15px 0; }
+
+    .header-phone { float: right; margin: 30px 0 0 0; padding: 2px 0 0 55px; background: url(../images/header-phone.png) no-repeat 0 0; font-family: 'PT Sans Bold', sans-serif; font-size: 23px; letter-spacing: -1px; text-shadow: 1px 1px 0 #fff }
+        .header-phone-title { display: block; font-size: 12px; text-align: right; text-transform: uppercase; font-family: 'PT Sans Regular'; letter-spacing: 0; text-shadow: none }
+        .header-phone-code { color: #456282; }
+
+    .header-search { float: right; clear: right; margin: 10px 0 0 0; width: 270px; overflow: hidden }
+        .header-search .input-search { float: left; width: 210px; height: 30px; border: 0; outline: none; padding-left: 15px; padding-right: 15px; font-family: 'PT Sans Regular', sans-serif; font-size: 12px; background: url(../images/header-search.png ) no-repeat 0 0; }
+        .header-search #s { float: left; width: 30px; height: 30px; border: 0; cursor: pointer; background: url(../images/header-search.png) no-repeat 100% 0; }
+
+/* top menu */
+.topmenu { position: relative; clear: both; height: 76px; padding: 0 10px; background: url(../images/topmenu-bg.png) repeat-x; border-radius: 10px; }
+    .topmenu li { float: left; height: 76px; border-left: 1px dashed #000; }
+    .topmenu li:first-child { border: 0 }
+    .topmenu li a { display: block; padding: 31px 57px 25px 58px; color: #fff; font-size: 20px; text-decoration: none; text-transform: uppercase; background: url(../images/topmenu-hover.png) no-repeat 50% -999px; }
+    .topmenu li a:hover, .topmenu li.current_page_item a { background-position: 50% 0; }
+
+    .topmenu ul ul { position: absolute; left: 0; top: 84px; padding: 5px 0 5px 5px; background: #fff; border-radius: 10px; }
+        .topmenu li li { border: 0; height: auto; }
+        .topmenu li li a { display: inline-block; padding: 5px 12px 1px 12px; background: none; border-radius: 10px; margin-right: 5px; color: #000; font-family: 'PT Sans Regular'; font-size: 12px; text-decoration: underline; }
+        .topmenu li li a:hover { background: #999; color: #fff; text-decoration: none; }
+        .topmenu li li.current_page_item a { background: #456282; color: #fff; text-decoration: none; }
+
+
+.header-aboutus { float: left; width: 290px; margin: 40px 0 0 0; }
+    .header-aboutus h1 { font-family: 'PT Sans Bold', sans-serif; cursor: default; font-size: 60px; text-transform: uppercase; line-height: 130%; }
+        .header-aboutus h1 span { font-size: 110px; }
+
+    .header-aboutus p { margin: 25px 0; }
+    .header-aboutus ul { margin: 25px 0; }
+    .header-aboutus li { padding-left: 18px; margin-bottom: 5px; background: url(../images/li.png) no-repeat 0 4px; }
+    .header-aboutus .more { display: inline-block; padding: 20px 20px 0 20px; font-size: 18px; color: #fff; text-transform: uppercase; text-decoration: none; height: 32px; background: url(../images/more.png) repeat-x; border-radius: 7px; }
+    .header-aboutus .more:hover { background-position: 0 100%; }
+    .header-aboutus .more span { border-bottom: 1px dotted #fff; }
+
+/* house */
+.header-house { float: right; margin: 60px -25px 0 0; width: 658px; height: 383px; background: url(../images/house.png) no-repeat; }
+
+/* content */
+.content { width: 940px; margin: 0 auto; padding: 20px 0; }
+    .news { margin-left: -10px; text-align: center; }
+        .news h2 { text-transform: uppercase; font-size: 20px; margin-left: 10px; }
+        .news .item { display: inline-block; width: 300px; margin: 20px 5px 0 5px; vertical-align: top; zoom: 1; *display: inline; }
+            .news .view { width: 297px; height: 102px; margin: 0 auto 10px auto; background: url(../images/news-view.png) no-repeat; }
+            .news .title { margin-left: 10px; font-family: Arial, sans-serif; font-weight: bold; text-decoration: none; }
+            .news .date { display: block; margin: 7px 10px; color: #999; font-size: 11px; }
+            .news p { margin: 7px 10px; font-size: 13px; }
+
+/* footer */
+#footer {
+	position: relative;
+	margin-top: -54px;
+	height: 54px;
+	width: 100%;
+    background: url(../images/footer-bg.png) no-repeat 50% 0;
+    font-size: 12px;
+}
+
+.footer-wrapper { width: 940px; margin: 0 auto; padding: 22px 0 0 0; }
+
+#footer .copyright { float: left; }
+
+#footer .bottommenu { float: right; }
+    #footer .bottommenu li { float: left; margin-left: 30px; }
+
+#footer .counters { float: right; margin: -9px 0 0 35px; }
+
+.footer_blank {	clear: both; height: 54px; }

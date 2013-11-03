@@ -1,0 +1,130 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border: 0 none;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img { border:0 none; }
+table { border-collapse: collapse; border-spacing: 0; }
+ol, ul { list-style-image: none; list-style-position: outside; list-style-type: none; }
+q:before, q:after, blockquote:before, blockquote:after { content:""; }
+
+/* css begin */
+html, body { height:100%; }
+body {
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 12px;
+	color: #000;
+    background: url(../images/body-bg.gif) repeat-x #fff;
+	width: 100%;
+	min-width: 1000px;
+}
+
+/* content */
+#wrap {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+/* header */
+.header { position: relative; height: 200px; }
+    .header .logo { position: relative; z-index: 100; float: left; margin: 50px 0 0 40px; }
+    #pattern { position: absolute; top: 35px; left: 123px; z-index: 50; width: 249px; height: 138px; background: url(../images/header-pattern.png) no-repeat; }
+
+    .header .phone { position: absolute; right: 34px; top: 50px; height: 27px; padding: 11px 75px 0 0; font-size: 24px; text-shadow: 1px 1px 0 #fff; background: url(../images/header-phone.png) no-repeat 100% 0; }
+        .header .phone span { color: #cd0000; }
+
+    .topmenu { float: right; margin: 120px 20px 0 0; }
+        .topmenu li { float: left; padding: 0 12px 0 0; margin: 0 0 0 10px; }
+        .topmenu li.current_page_item { background: url(../images/topmenu-hover.png) no-repeat 100% 0; }
+        .topmenu li a { display: block; padding: 7px 8px 7px 18px; font-style: italic; font-size: 19px; color: #000; }
+        .topmenu li a:hover { color: #cd0000; }
+        .topmenu li a span { background: url(../images/topmenu-a.gif) repeat-x 0 21px; }
+        .topmenu li a:hover span { background: none; }
+        .topmenu li.current_page_item a { border: 0; background: url(../images/topmenu-hover.png) no-repeat 0 0; }
+        .topmenu li.current_page_item a:hover { color: #000; }
+        .topmenu li.current_page_item span { background: none; }
+
+/* Easy Slider */
+.slider { position: relative; margin: 0 0 0 41px; padding: 0 6px 6px 0; background: url(../images/slider-bg.gif) no-repeat 117px 100%; }
+
+	#slider ul, #slider li,
+	#slider2 ul, #slider2 li{
+		margin:0;
+		padding:0;
+		list-style:none;
+		}
+	#slider2{margin-top:1em;}
+	#slider li, #slider2 li{
+		/*
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/
+		width:917px;
+		height:406px;
+		overflow:hidden;
+		}
+	#prevBtn, #nextBtn,
+	#slider1next, #slider1prev{
+		display:block;
+		width:39px;
+		height:95px;
+		position:absolute;
+		left:-50px;
+		top:145px;
+		z-index:1000;
+		}
+	#nextBtn, #slider1next{
+		left:934px;
+		}
+	#prevBtn a, #nextBtn a,
+	#slider1next a, #slider1prev a{
+		display:block;
+		position:relative;
+		width:39px;
+		height:95px;
+		background:url(../images/slider-arrows.png) no-repeat 0 0;
+        text-indent: -9999px;
+        overflow: hidden;
+		}
+	#nextBtn a, #slider1next a{
+		background:url(../images/slider-arrows.png) no-repeat 100% 0;
+		}
+    #prevBtn a:hover {
+        background-position: 0 100%;
+        }
+    #nextBtn a:hover {
+        background-position: 100% 100%;
+        }
+
+/* navigation */
+.navigation { overflow: hidden; margin: 25px 0 0 0; }
+    .navigation .view-all { float: left; width: 212px; height: 160px; padding: 50px 0 0 108px; background: url(../images/view-all.png) no-repeat 54px 0;}
+        .navigation .view-all a { font-size: 24px; font-style: italic; color: #000; border-bottom: 2px solid #cd0000; }
+        .navigation .view-all a:hover { color: #cd0000; border: 0; }
+
+    .navigation .quote { float: right; margin: 15px 0 0 0; padding: 10px 130px 47px 35px; border-left: 1px solid #cd0000; font-size: 20px; font-style: italic; text-align: right; line-height: 140%; background: url(../images/quote.png) no-repeat 100% 100%; }
+        .navigation .quote span { color: #ccc; }
+
+
+/* footer */
+#footer {
+	position: relative;
+	margin-top: -63px;
+	height: 63px;
+	width: 100%;
+    background: url(../images/footer-bg.png) repeat-x;
+}
+
+.footer_blank {	clear: both; height: 80px; }

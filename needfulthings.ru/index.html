@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/easySlider1.7.js"></script>
+
+<!-- image rotator -->
+<script type="text/javascript">
+function theRotator() {
+	$('div.rotator ul li').css({opacity: 0.0});
+	$('div.rotator ul li:first').css({opacity: 1.0});
+	setInterval('rotate()',6000);
+}
+
+function rotate() {
+	var current = ($('div.rotator ul li.show')?  $('div.rotator ul li.show') : $('div.rotator ul li:first'));
+    if ( current.length == 0 ) current = $('div.rotator ul li:first');
+	var next = ((current.next().length) ? ((current.next().hasClass('show')) ? $('div.rotator ul li:first') :current.next()) : $('div.rotator ul li:first'));
+	next.css({opacity: 0.0})
+	.addClass('show')
+	.animate({opacity: 1.0}, 1000);
+	current.animate({opacity: 0.0}, 1000)
+	.removeClass('show');
+};
+
+$(document).ready(function() {
+	theRotator();
+	$('div.rotator').fadeIn(1000);
+    $('div.rotator ul li').fadeIn(1000);
+});
+</script>
+
+<!-- item slider -->
+<script language="JavaScript" type="text/javascript">
+/*<![CDATA[*/
+$(document).ready(function(){
+	$(".slider").easySlider();
+});
+/*]]>*/
+</script>
+</head>
+<body>
+<div id="wrap">
+
+	<!-- aside -->
+	<div class="aside">
+		<div class="nav">
+			<a href="#" title="" class="n1"></a>
+			<a href="#" title="" class="n2"></a>
+		</div>
+
+		<!-- main menu -->
+		<div class="mainmenu">
+			<ul>
+				<li><a href="#" title="">Холодное</a>
+					<ul>
+						<li><a href="#" title="">Огнестрельное</a></li>
+						<li><a href="#" title="">Комбинированное</a></li>
+						<li><a href="#" title="">Ударно-дробящее</a></li>
+						<li><a href="#" title="">Древковое оружие</a></li>
+						<li><a href="#" title="">Метательное</a></li>
+						<li><a href="#" title="">Гражданских ведомств</a></li>
+						<li><a href="#" title="">Неуставное</a></li>
+					</ul>
+				</li>
+				<li><a href="#" title="">Огнестрельное</a></li>
+				<li><a href="#" title="">Комбинированное</a></li>
+				<li><a href="#" title="">Ударно-дробящее</a></li>
+				<li><a href="#" title="">Древковое оружие</a></li>
+				<li><a href="#" title="">Метательное</a></li>
+				<li><a href="#" title="">гражданских ведомств</a></li>
+				<li><a href="#" title="">Неуставное</a></li>
+				<li><a href="#" title="">Доспехи</a></li>
+				<li><a href="#" title="">Щит</a></li>
+				<li><a href="#" title="">Латы</a></li>
+				<li><a href="#" title="">Шлем</a></li>
+				<li><a href="#" title="">Кольчуга</a></li>
+				<li><a href="#" title="">Наручи</a></li>
+			</ul>
+		</div>
+
+		<!-- additional menu -->
+		<div class="additionalmenu">
+			<ul>
+				<li><a href="#" title="">Экспертиза</a></li>
+				<li><a href="#" title="">Энциклопедия</a></li>
+				<li><a href="#" title="">Контакты</a></li>
+			</ul>
+		</div>
+
+		<p>ТЕЛЕФОН:<br />(+7 910) 450–76–18</p>
+
+		<p><small>Москва,ул.Пушечная 2/2<br />схема проезда</small></p>
+	</div>
+
+	<!-- content -->
+	<div class="content">
+
+		<!-- theme switcher -->
+		<div class="theme-switcher">
+			<a href="#" title="" id="switch"></a>
+
+			<script language="JavaScript" type="text/javascript">
+			/*<![CDATA[*/
+			$(document).ready(function() {
+			    $("#switch").click(function() {
+			        $("body").toggleClass("theme-black", "theme white");
+			    });
+			});
+			/*]]>*/
+			</script>
+		</div>
+
+		<!-- image rotator -->
+		<div class="rotator">
+			<ul>
+				<li class="show"><a href="#" title=""><img src="images/image-1.jpg" width="100%" height="158"  alt="pic1" /></a></li>
+				<li><a href="#" title=""><img src="images/image-2.jpg" width="100%" height="158"  alt="pic2" /></a></li>
+				<li><a href="#" title=""><img src="images/image-3.jpg" width="100%" height="158"  alt="pic3" /></a></li>
+				<li><a href="#" title=""><img src="images/image-4.jpg" width="100%" height="158"  alt="pic4" /></a></li>
+			</ul>
+		</div>
+
+		<h1>антикварное оружие</h1>
+
+		<p>Блеск и холод стальных клинков, изящество линий лезвий и рукоятей, лаконичная функциональность и мощь охотничьих ружей
+		всегда привлекали настоящих мужчин. Поэтому посещение магазина антикварного оружия вызывает у сильной половины человечества
+		непреодолимое желание пополнить свой арсенал авторским или раритетным старинным оружием.<br />
+		В нашем салоне вы сможете не только купить уникальный подарок другу или новый экземпляр в свою коллекцию, но и заказать
+		униформу различных армий времен отечественной и мировой войны, а также средневековое русское оружие.</p>
+
+		<div class="slider">
+			<ul>
+				<li>
+				<div class="item">
+					
+					<!-- -->
+					<a href="#" title=""><img src="images/tmp_1.png" width="144" height="120" alt="" /></a>
+					<p><a href="#" title="">Шпага</a><br />
+					Англия<br />
+					сталь, дерево, ткань</p>
+					<!-- -->
+					
+				</div>
+
+				<div class="item">
+					
+					<!-- -->
+					<a href="#" title=""><img src="images/tmp_2.png" width="144" height="120" alt="" /></a>
+					<p><a href="#" title="">Шпага</a><br />
+					Англия<br />
+					сталь, дерево, ткань</p>
+					<!-- -->
+					
+				</div>
+
+				<div class="item">
+					
+					<!-- -->
+					<a href="#" title=""><img src="images/tmp_3.png" width="144" height="120" alt="" /></a>
+					<p><a href="#" title="">Шпага</a><br />
+					Англия<br />
+					сталь, дерево, ткань</p>
+					<!-- -->
+					
+				</div>
+
+				<div class="item">
+					
+					<!-- -->
+					<a href="#" title=""><img src="images/tmp_4.png" width="144" height="120" alt="" /></a>
+					<p><a href="#" title="">Шпага</a><br />
+					Англия<br />
+					сталь, дерево, ткань</p>
+					<!-- -->
+					
+				</div>
+				</li>
+
+				<!-- spacer -->
+
+				<li>
+				<div class="item">
+					
+					<!-- -->
+					<a href="#" title=""><img src="images/tmp_1.png" width="144" height="120" alt="" /></a>
+					<p><a href="#" title="">Шпага</a><br />
+					Англия<br />
+					сталь, дерево, ткань</p>
+					<!-- -->
+					
+				</div>
+
+				<div class="item">
+					
+					<!-- -->
+					<a href="#" title=""><img src="images/tmp_2.png" width="144" height="120" alt="" /></a>
+					<p><a href="#" title="">Шпага</a><br />
+					Англия<br />
+					сталь, дерево, ткань</p>
+					<!-- -->
+					
+				</div>
+
+				<div class="item">
+					
+					<!-- -->
+					<a href="#" title=""><img src="images/tmp_3.png" width="144" height="120" alt="" /></a>
+					<p><a href="#" title="">Шпага</a><br />
+					Англия<br />
+					сталь, дерево, ткань</p>
+					<!-- -->
+					
+				</div>
+
+				<div class="item">
+					
+					<!-- -->
+					<a href="#" title=""><img src="images/tmp_4.png" width="144" height="120" alt="" /></a>
+					<p><a href="#" title="">Шпага</a><br />
+					Англия<br />
+					сталь, дерево, ткань</p>
+					<!-- -->
+					
+				</div>
+				</li>
+			</ul>
+		</div>
+
+		<h2>Любителям старины</h2>
+
+		<p>Любителям старины мы поможем пополнить свои коллекции доспехами, палашами, шпагами, кортиками, саблями и другими
+		разновидностями холодного и огнестрельного оружия разных эпох. У нас вы сможете купить уникальные образцы старинного
+		оружия, предметы солдатского и офицерского обихода, а также коллекционное наградное и авторское оружие, сувениры
+		военной тематики.</p>
+
+		<p>Сегодня, когда редкое оружие интересует не только специалистов и увлеченных коллекционеров, но и людей,
+		далеких от истории, купить качественный военный антиквариат в Москве становится все сложнее. Продаваемые нами
+		коллекционные образцы обязательно проходит экспертизу, а оружие эпохи средневековья в точности соответствует внешнему
+		виду старинных оригиналов.</p>
+
+		<p>Все желающие приобрести антикварные вещи могут ознакомиться с разделами сайта нашего магазина, где
+		представлены раритетные охотничьи ружья, холодное оружие, амуниция, огнестрельное оружие.</p>
+
+		<div class="catalog">
+			<div class="item">
+				
+				<!-- -->
+				<a href="#" title=""><img src="images/tmp_1.png" width="144" height="120" alt="" /></a>
+				<p><a href="#" title="">Шпага</a><br />
+				Англия<br />
+				сталь, дерево, ткань</p>
+				<!-- -->
+				
+			</div>
+
+			<div class="item">
+				
+				<!-- -->
+				<a href="#" title=""><img src="images/tmp_2.png" width="144" height="120" alt="" /></a>
+				<p><a href="#" title="">Шпага</a><br />
+				Англия<br />
+				сталь, дерево, ткань</p>
+				<!-- -->
+				
+			</div>
+
+			<div class="item">
+				
+				<!-- -->
+				<a href="#" title=""><img src="images/tmp_3.png" width="144" height="120" alt="" /></a>
+				<p><a href="#" title="">Шпага</a><br />
+				Англия<br />
+				сталь, дерево, ткань</p>
+				<!-- -->
+				
+			</div>
+
+			<div class="item">
+				
+				<!-- -->
+				<a href="#" title=""><img src="images/tmp_4.png" width="144" height="120" alt="" /></a>
+				<p><a href="#" title="">Шпага</a><br />
+				Англия<br />
+				сталь, дерево, ткань</p>
+				<!-- -->
+				
+			</div>
+
+			<div class="item">
+				
+				<!-- -->
+				<a href="#" title=""><img src="images/tmp_5.png" width="144" height="120" alt="" /></a>
+				<p><a href="#" title="">Шпага</a><br />
+				Англия<br />
+				сталь, дерево, ткань</p>
+				<!-- -->
+				
+			</div>
+
+			<div class="item">
+				
+				<!-- -->
+				<a href="#" title=""><img src="images/tmp_1.png" width="144" height="120" alt="" /></a>
+				<p><a href="#" title="">Шпага</a><br />
+				Англия<br />
+				сталь, дерево, ткань</p>
+				<!-- -->
+				
+			</div>
+
+			<div class="item">
+				
+				<!-- -->
+				<a href="#" title=""><img src="images/tmp_2.png" width="144" height="120" alt="" /></a>
+				<p><a href="#" title="">Шпага</a><br />
+				Англия<br />
+				сталь, дерево, ткань</p>
+				<!-- -->
+				
+			</div>
+
+			<div class="item">
+				
+				<!-- -->
+				<a href="#" title=""><img src="images/tmp_3.png" width="144" height="120" alt="" /></a>
+				<p><a href="#" title="">Шпага</a><br />
+				Англия<br />
+				сталь, дерево, ткань</p>
+				<!-- -->
+				
+			</div>
+
+			<div class="item">
+				
+				<!-- -->
+				<a href="#" title=""><img src="images/tmp_4.png" width="144" height="120" alt="" /></a>
+				<p><a href="#" title="">Шпага</a><br />
+				Англия<br />
+				сталь, дерево, ткань</p>
+				<!-- -->
+				
+			</div>
+
+			<div class="item">
+				
+				<!-- -->
+				<a href="#" title=""><img src="images/tmp_5.png" width="144" height="120" alt="" /></a>
+				<p><a href="#" title="">Шпага</a><br />
+				Англия<br />
+				сталь, дерево, ткань</p>
+				<!-- -->
+
+			</div>
+		</div>
+
+		<h3>кортики минувших войн</h3>
+
+		<p>Шашки, сабли, кинжалы, ножи, а также кортики минувших войн приобрели большую ценность и пользуются высоким спросом
+		среди коллекционеров, а продажа антикварного оружия тех времен стала распространенным явлением. Памятные знаки и надписи,
+		сохранившиеся на холодном оружии, обладают высокой исторической ценностью, так как позволяют прикоснуться к материальным
+		свидетельствам ушедшей эпохи. У нас вы можете пополнить свою коллекцию очень интересными и впечатляющими образцами
+		дробящего оружия, посудой, одеждой и знаками отличия армий, сражавшихся в великих войнах.</p>
+
+		<p>Коллекционеры и любители антиквариата достаточно хорошо ориентируются в его стоимости, поэтому вы не увидите на сайте
+		ценников. Наш салон антикварного оружия не устанавливает твердых цен на товары, более того, торг всегда уместен, и мы
+		готовы отдать бесценные образцы оружия в хорошие руки со значительной скидкой.</p>
+
+		<div class="catalog">
+			<div class="item">
+				
+				<!-- -->
+				<a href="#" title=""><img src="images/tmp_1.png" width="144" height="120" alt="" /></a>
+				<p><a href="#" title="">Шпага</a><br />
+				Англия<br />
+				сталь, дерево, ткань</p>
+				<!-- -->
+				
+			</div>
+
+			<div class="item">
+				
+				<!-- -->
+				<a href="#" title=""><img src="images/tmp_2.png" width="144" height="120" alt="" /></a>
+				<p><a href="#" title="">Шпага</a><br />
+				Англия<br />
+				сталь, дерево, ткань</p>
+				<!-- -->
+				
+			</div>
+
+			<div class="item">
+				
+				<!-- -->
+				<a href="#" title=""><img src="images/tmp_3.png" width="144" height="120" alt="" /></a>
+				<p><a href="#" title="">Шпага</a><br />
+				Англия<br />
+				сталь, дерево, ткань</p>
+				<!-- -->
+				
+			</div>
+
+			<div class="item">
+
+				<!-- -->
+				<a href="#" title=""><img src="images/tmp_4.png" width="144" height="120" alt="" /></a>
+				<p><a href="#" title="">Шпага</a><br />
+				Англия<br />
+				сталь, дерево, ткань</p>
+				<!-- -->
+
+			</div>
+
+		</div>
+	</div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+	<div class="copyright">
+		Лицензия № 34245 от 16.07.2004<br />
+		<a href="mail@needfulthings.ru" title="">mail@needfulthings.ru</a><br />
+		&copy; 1999–2011 Все права защищены. антикварное оружие<br />
+		<a href="#" title="">Создание сайта</a> — Любимая Студия
+	</div>
+</div>
+</body>
+</html>

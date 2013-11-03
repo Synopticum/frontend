@@ -1,0 +1,109 @@
+html, body { height:100%; }
+body {
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #a4b5ba;
+	width:100%;
+	min-width: 1000px;
+}
+
+#wrap {
+	position: relative;
+	background: #fff;
+	width: 1000px;
+	margin: 0px auto;
+	min-height: 100%;
+	height:auto !important;
+	height: 100%;
+}
+
+a { color: #3587b5; }
+
+
+.header { position: relative; width: 100%; height: 260px; background: url(../images/bg.jpg) no-repeat top center; }
+	.header #logo { margin: 70px 0 0 83px; }
+	.header p { position: absolute; top: 125px; right: 75px; }
+		.header p span { display: block; }
+		.header p img { margin-top: 5px; }
+
+.mainpage .header { position: relative; width: 100%; height: 717px; background: url(../images/bg-index.jpg) no-repeat top center; }
+	.mainpage .header #logo { margin: 23px 0 0 83px; }
+	.mainpage .header p { position: absolute; top: 58px; right: 75px; }.aside ul { width: 190px; margin-left: 80px; }
+	.mainpage .header ul { position: absolute; left: 83px; top: 225px; width: 378px; float: left; }
+	.mainpage .header ul li { height: 23px; padding: 7px 0; background: url(../images/bg-li.png) no-repeat left bottom; }
+		.mainpage .header ul li img { margin-right: 10px; }
+		.mainpage .header ul li a { color: #5a7272; font-size: 14px; text-decoration: none; }
+		.mainpage .header ul li.last { background: none; }
+	.mainpage .header .button { display: block; position: absolute; width: 177px; height: 37px; background: url(../images/button.png) no-repeat; top: 161px; left: 83px; }
+
+
+.aside { width: 378px; float: left; }
+	.aside ul { width: 190px; margin-left: 80px; }
+		.aside ul li { height: 23px; padding: 7px 0; background: url(../images/bg-li.png) no-repeat left bottom; }
+			.aside ul li img { margin-right: 10px; }
+			.aside ul li a { color: #5a7272; font-size: 14px; text-decoration: none; }
+		.aside ul li.last { background: none; }
+
+.mainpage .aside { width: 308px; padding-left: 80px; color: #696969; }
+	.mainpage .aside h1 { font-size: 24px; color: #5a5858; margin: -7px 0 35px 0; }
+	.mainpage .aside small { display: block; width: 30px; float: left; margin-right: 10px; }
+	.mainpage .aside span { display: block; width: 250px; float: left; }
+
+.upper { margin-top: -220px; position: relative; z-index: 100; }
+
+
+.content { position: relative; width: 622px; float: left; }
+	.content .hr { width: 100%; height: 1px; border-top: 1px solid #ccc; margin: 15px 0; }
+	.content .item { padding: 0px 20px; }
+
+.mainpage .content { width: 542px; }
+
+.content .text { color: #696969; line-height: 17px; }
+	.content .text h1 { font-size: 24px; color: #5a5858; margin-bottom: 35px; }
+	.content .text p { margin: 12px 0; }
+	.content .text ul { padding-left: 15px; }
+		.content .text ul li { list-style-type: disc; }
+
+
+fieldset { border: 1px solid #ccc; padding: 30px 0; }
+	fieldset h1 { color: #999; margin-bottom: 30px; }
+	fieldset strong { display: block; margin-bottom: 18px; font-weight: bold; color: #657b7b; }
+
+legend { font-size: 24px; color: #5a5858; padding: 0 6px 0 2px; margin: 0 0 0 15px; }
+
+ul.method { margin-top: -15px; }
+	ul.method li { padding: 7px 24px; background: url(../images/arrow.png) no-repeat left 13px; }
+
+table.forms { width: 582px; color: #333; }
+	table.forms span { color: #ee5400; }
+	table.forms td { padding: 5px 5px 5px 0; width: 169px; height: 35px; vertical-align: middle; }
+		table.forms td strong { margin: 0; }
+	table.forms th { height: 35px; vertical-align: middle; }
+		table.forms th p { float: left; margin: 0 23px 10px 0; }
+	table.forms .inputtext { width: 412px; height: 16px; padding: 5px 3px; border: 0; background: url(../images/input-text.png) no-repeat; }
+	table.forms textarea { width: 412px; height: 99px; padding: 5px 3px; border: 0; overflow: hidden; background: url(../images/input-textarea.png) no-repeat; }
+	table.forms select { width: 418px; height: 26px; }
+	table.forms #sendnow { width: 164px; height: 29px; border: 0; background: url(../images/submit.png) no-repeat; }
+
+
+#footer {
+	padding-top: 25px;
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: -70px;
+	height: 75px;
+	background: url(../images/footer-hr.png) repeat-x;
+	color: #666;
+}
+
+#footer .copy { float: left; }
+#footer address { float: left; margin-left: 250px; line-height: 16px; }
+	#footer address img { margin: 10px 0 -4px 0; }
+#footer .madein { float: right; }
+
+
+.footer_blank {
+	height: 100px;
+	clear: both;
+}

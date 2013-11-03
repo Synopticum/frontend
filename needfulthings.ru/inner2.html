@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>inner2</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/easySlider1.7.js"></script>
+
+<!-- image rotator -->
+<script type="text/javascript">
+function theRotator() {
+	$('div.rotator ul li').css({opacity: 0.0});
+	$('div.rotator ul li:first').css({opacity: 1.0});
+	setInterval('rotate()',6000);
+}
+
+function rotate() {
+	var current = ($('div.rotator ul li.show')?  $('div.rotator ul li.show') : $('div.rotator ul li:first'));
+    if ( current.length == 0 ) current = $('div.rotator ul li:first');
+	var next = ((current.next().length) ? ((current.next().hasClass('show')) ? $('div.rotator ul li:first') :current.next()) : $('div.rotator ul li:first'));
+	next.css({opacity: 0.0})
+	.addClass('show')
+	.animate({opacity: 1.0}, 1000);
+	current.animate({opacity: 0.0}, 1000)
+	.removeClass('show');
+};
+
+$(document).ready(function() {
+	theRotator();
+	$('div.rotator').fadeIn(1000);
+    $('div.rotator ul li').fadeIn(1000);
+});
+</script>
+
+<!-- item slider -->
+<script language="JavaScript" type="text/javascript">
+/*<![CDATA[*/
+$(document).ready(function(){
+	$(".slider").easySlider();
+});
+/*]]>*/
+</script>
+
+<!-- fancybox -->
+<script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
+<script type="text/javascript">
+		$(document).ready(function() {
+			$("a[rel=example_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+		});
+</script>
+</head>
+<body>
+<div id="wrap">
+
+	<!-- aside -->
+	<div class="aside">
+		<div class="nav">
+			<a href="#" title="" class="n1"></a>
+			<a href="#" title="" class="n2"></a>
+		</div>
+
+		<!-- main menu -->
+		<div class="mainmenu">
+			<ul>
+				<li class="active"><a href="#" title="">Холодное</a>
+					<ul>
+						<li><a href="#" title="">Огнестрельное</a></li>
+						<li><a href="#" title="">Комбинированное</a></li>
+						<li class="active"><a href="#" title="">Ударно-дробящее</a></li>
+						<li><a href="#" title="">Древковое оружие</a></li>
+						<li><a href="#" title="">Метательное</a></li>
+						<li><a href="#" title="">Гражданских ведомств</a></li>
+						<li><a href="#" title="">Неуставное</a></li>
+					</ul>
+				</li>
+				<li><a href="#" title="">Огнестрельное</a></li>
+				<li><a href="#" title="">Комбинированное</a></li>
+				<li><a href="#" title="">Ударно-дробящее</a></li>
+				<li><a href="#" title="">Древковое оружие</a></li>
+				<li><a href="#" title="">Метательное</a></li>
+				<li><a href="#" title="">гражданских ведомств</a></li>
+				<li><a href="#" title="">Неуставное</a></li>
+				<li><a href="#" title="">Доспехи</a></li>
+				<li><a href="#" title="">Щит</a></li>
+				<li><a href="#" title="">Латы</a></li>
+				<li><a href="#" title="">Шлем</a></li>
+				<li><a href="#" title="">Кольчуга</a></li>
+				<li><a href="#" title="">Наручи</a></li>
+			</ul>
+		</div>
+
+		<!-- additional menu -->
+		<div class="additionalmenu">
+			<ul>
+				<li><a href="#" title="">Экспертиза</a></li>
+				<li><a href="#" title="">Энциклопедия</a></li>
+				<li><a href="#" title="">Контакты</a></li>
+			</ul>
+		</div>
+
+		<p>ТЕЛЕФОН:<br />(+7 910) 450–76–18</p>
+
+		<p><small>Москва,ул.Пушечная 2/2<br />схема проезда</small></p>
+	</div>
+
+	<!-- content -->
+	<div class="content">
+
+		<!-- theme switcher -->
+		<div class="theme-switcher">
+			<a href="#" title="" id="switch"></a>
+
+			<script language="JavaScript" type="text/javascript">
+			/*<![CDATA[*/
+			$(document).ready(function() {
+			    $("#switch").click(function() {
+			        $("body").toggleClass("theme-black", "theme white");
+			    });
+			});
+			/*]]>*/
+			</script>
+		</div>
+
+		<h2>Любителям старины</h2>
+
+		<div class="product">
+			<div class="view">
+				<img src="images/1.png" width="466" height="466" alt="" />
+
+				<div class="thumbnails">
+					<a href="images/1.png" title="" rel="example_group"><img src="images/1.png" width="100" height="100" alt="" /></a>
+					<a href="images/1.png" title="" rel="example_group"><img src="images/1.png" width="100" height="100" alt="" /></a>
+				</div>
+			</div>
+
+			<div class="description">
+				<a href="#" title="" class="order"></a>
+
+				<table>
+					<tr>
+						<td>Материалы</td>
+						<td>дамаск, дерево, белый металл</td>
+					</tr>
+					<tr>
+						<td>Происхождение</td>
+						<td>Османская империя  19-20 вв.</td>
+					</tr>
+					<tr>
+						<td>Общая длина</td>
+						<td>40,5  см</td>
+					</tr>
+					<tr>
+						<td>Длина клинка/лезвия</td>
+						<td>26 см</td>
+					</tr>
+					<tr>
+						<td>Ширина клинка у пяты</td>
+						<td>3,2 см</td>
+					</tr>
+					<tr>
+						<td>Техника изготовления</td>
+						<td>ковка, гравировка, золочение, насечка</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+	<div class="copyright">
+		Лицензия № 34245 от 16.07.2004<br />
+		<a href="mail@needfulthings.ru" title="">mail@needfulthings.ru</a><br />
+		&copy; 1999–2011 Все права защищены. антикварное оружие<br />
+		<a href="#" title="">Создание сайта</a> — Любимая Студия
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+<script src="js/input-focus.js"></script>
+
+<!-- jQuery (required) -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
+	<!-- Anything Slider optional plugins -->
+	<script src="js/jquery.easing.1.2.js"></script>
+
+	<!-- AnythingSlider -->
+	<link rel="stylesheet" href="css/anythingslider.css">
+	<script src="js/jquery.anythingslider.js"></script>
+
+	<!-- Ideally, add the stylesheet(s) you are going to use here,
+	 otherwise they are loaded and appended to the <head> automatically and will over-ride the IE stylesheet below -->
+	<link rel="stylesheet" href="css/theme-construction.css">
+	<link rel="stylesheet" href="css/theme-cs-portfolio.css">
+	<link rel="stylesheet" href="css/theme-metallic.css">
+
+	<script>
+		// Set up Sliders
+		// **************
+		$(function(){
+			$('#slider1').anythingSlider({
+				theme           : 'metallic',
+				easing          : 'easeInOutBack'
+			});
+		});
+	</script>
+</head>
+<body>
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+        <div class="column">
+            <div class="logo">
+                <!--<a href="#"><img src="images/logo.png" width="180" height="98" border="0" alt="" /></a>-->
+                <object
+                type="application/x-shockwave-flash" data="images/logo.swf"
+                width="177" height="98">
+                <param name="movie" value="images/logo.swf" />
+                <param name="wmode" value="transparent" />
+                </object>
+            </div>
+
+            <div class="phone">
+                8-495-123-45-67
+            </div>
+
+            <div class="email">
+                E-mail: <a href=mailto:zakaz@korrozii.net">zakaz@korrozii.net</a>
+            </div>
+
+            <div class="time">
+                С 9:00 до 18:00
+            </div>
+
+            <!-- search -->
+            <div class="search">
+                <form>
+                    <input name="searchbar" type="text" value="Search here..." tabindex="1" class="textbox" />
+                    <input type="submit" name="find" value="" tabindex="2" class="find" />
+                </form>
+            </div>
+        </div>
+
+        <!-- slider -->
+        <div class="slider">
+			<ul id="slider1">
+				<li><img src="images/s1.jpg" width="766" height="271" border="0" alt="" /></li>
+				<li><img src="images/s1.jpg" width="766" height="271" border="0" alt="" /></li>
+				<li><img src="images/s1.jpg" width="766" height="271" border="0" alt="" /></li>
+				<li><img src="images/s1.jpg" width="766" height="271" border="0" alt="" /></li>
+				<li><img src="images/s1.jpg" width="766" height="271" border="0" alt="" /></li>
+			</ul>
+        </div>
+        <div id="underslider"></div>
+
+        <!-- top menu -->
+        <div class="topmenu">
+            <a href="#" title="Карта сайта" class="map">Карта сайта</a>
+
+            <ul>
+                <li><a href="#" title="">О компании</a></li>
+                <li><a href="#" title="">Каталог продукции</a></li>
+                <li class="active"><a href="#" title="">Статьи</a></li>
+                <li><a href="#" title="">Где купить</a></li>
+                <li><a href="#" title="">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- aside -->
+    <div class="aside">
+        <div class="menu">
+            <ul>
+                <li><a href="#">Индивидуальная защита от коррозии</a>
+                    <ul>
+                        <li><a href="#">PRIM BODY</a></li>
+                        <li class="active"><a href="#">PRIM BODY PLATINUM</a></li>
+                        <li><a href="#">PRIM ML</a></li>
+                        <li><a href="#">PRIM ML PLATINUM</a></li>
+                        <li><a href="#">PRIM АНТИГРАВИЙ</a></li>
+                        <li><a href="#">PRIM ЖИДКИЕ     ПОДКРЫЛКИ</a></li>
+                        <li><a href="#">PRIM АНТИБИТУМ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Профессиональная защита от коррозии</a>
+                    <ul>
+                        <li><a href="#">PRIM BODY 2000</a></li>
+                        <li><a href="#">PRIM BODY PLATINUM</a></li>
+                        <li><a href="#">PRIM ML 2000</a></li>
+                        <li><a href="#">PRIM ML PLATINUM</a></li>
+                        <li><a href="#">PRIM АНТИШУМ</a></li>
+                        <li><a href="#">PRIM-W ЖИДКИЕ ПОДКРЫЛКИ</a></li>
+                        <li><a href="#">PRIM-W АНТИГРАВИЙ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Сопутствующие товары</a>
+                    <ul>
+                        <li><a href="#">растворители</a></li>
+                        <li><a href="#">оборудование</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- benners -->
+        <div class="banners">
+            <div class="item">
+                <a href="#"><img src="images/b1.jpg" width="167" height="167" border="0" alt="" /></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="images/b2.jpg" width="169" height="169" border="0" alt="" /></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="images/b3.jpg" width="156" height="156" border="0" alt="" /></a>
+            </div>
+        </div>
+    </div>
+
+	<!-- content -->
+	<div class="content">
+        <!-- breadcrumbs -->
+        <div class="breadcrumbs">
+            <a href="#">Главная</a>   <span>/</span>  Контакты
+        </div>
+
+        <!-- contacts -->
+        <div class="contacts">
+            <h1>Контакты</h1>
+
+            <p><strong>Прим Баженов</strong><br />
+            Барс    Красногорск    ул.Ленина д56   563-06-54<br />
+            Барс+    Нахабино        Лесопарковая ул.д.2    566-50-75<br />
+            ДолАвто   Лихачевское шоссе, 86а     676-85-77  </p>
+
+            <p><strong>ООО «ФОНДАВТО»    — автосервис</strong><br />
+            Адрес: Московская область, Люберецкий р-он,<br />
+             г. Котельники, мкр. Силикат, Промзона стр. 11.<br />
+            Тел.:550-18-93, 778-38-03  Моб. тел.: 8-905-767-46-63 </p>
+
+            <p><strong>КЭМП Подольск</strong><br />
+            Адрес: Московская область, Подольский район, с.Покров (13-й км. Симферопольского шоссе)<br />
+            Телефоны: (495)926-2242 - Секретари (495)926-2413,<br />
+            926-2414, 926-2415 - Справка по автозапчастям</p>
+
+            <p><strong>КЭМП Домодедово</strong><br />
+            Адрес: Московская область, Домодедовский район, дер. Заборье, д. 1-в (46-й км Каширского шоссе)<br />
+            Телефоны: (49679) 66-700, (49679) 66-491, (495) 926-3208</p>
+
+            <p><strong>КЭМП Серпухов</strong><br />
+            Адрес: 142211, Московская область, г. Серпухов, ул. Урицкого, д. 1.<br />
+            Телефоны: (495)502-78-74</p>
+
+            <p><strong>АвтоВираж     универсальный</strong><br />
+            г.Мытищи, Волковское ш., стр. 21	(495) 661-7154, (495) 663-6350.<br />
+            Грант    универсальный <br />
+            М.О. Новорязанское ш. 5	(495)913-1429 (495) 744-9506  м. Новорязанское ш. <br />
+            Грант    универсальный <br />
+            М.О. Носовихинское ш. 14 км, ПОВ.1Б-2Б	(495) 520-5822 (495) 520-5824  м. Новосовихинское ш.</p>
+        </div>
+
+        <!-- feedback -->
+        <div class="feedback">
+            <form>
+                <h2>Пишите нам:</h2>
+
+                <label>Имя<br />
+                <input name="t1" type="text" value="" class="textbox" /></label>
+
+                <label>E-mail<br />
+                <input name="t2" type="text" value="" class="textbox" /></label>
+
+                <label>Телефон<br />
+                <input name="t3" type="text" value="" class="textbox" /></label>
+
+                <label>Ваше сообщение<br />
+                <textarea name="t4"></textarea></label>
+
+                <label class="captcha"><img src="images/tmp/cap.gif" width="66" height="42" border="0" alt="" />
+                <input name="t5" type="text" value="" class="textbox" /></label>
+
+                <input type="submit" name="t6" value="отправить" class="sendnow" />
+            </form>
+        </div>
+
+
+    </div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+    <div class="wrapper">
+        <a href="#" title=""><img src="images/logo2.png" width="142" height="77" border="0" alt="" class="logo" /></a>
+
+        <div class="copyright">
+            <p><span>(c) Copyright &copy; 2012 Примула, Все права защищены.</span><br />
+            Корпорация «Примула» - официальный дистрибьютер материалов „Прим” © 1998</p>
+
+            <!-- social -->
+            <div class="social">
+                <p>Давайте<br />общаться</p>
+
+                <a href="#"><img src="images/fb.png" width="27" height="27" border="0" alt="" /></a>
+                <a href="#"><img src="images/vk.png" width="27" height="27" border="0" alt="" /></a>
+            </div>
+
+            <div class="counters">
+                <img src="images/tmp/c.jpeg" width="31" height="31" border="0" alt="" />
+            </div>
+        </div>
+
+        <!-- made -->
+        <div class="made">
+            <a href="#">Создание, поддержка и продвижение сайтов</a><br />
+            web-more.ru
+        </div>
+
+        <!-- bottom menu -->
+        <div class="bottommenu">
+            <ul>
+                <li><a href="#" title="">Карта сайта</a></li>
+                <li><a href="#" title="">О компании</a></li>
+                <li><a href="#" title="">Каталог продукции</a></li>
+                <li><a href="#" title="">Новости</a></li>
+                <li><a href="#" title="">Статьи</a></li>
+                <li><a href="#" title="">Где купить</a></li>
+                <li><a href="#" title="">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

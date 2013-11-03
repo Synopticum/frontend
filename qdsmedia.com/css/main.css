@@ -1,0 +1,109 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border: 0 none;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img { border:0 none; }
+table { border-collapse: collapse; border-spacing: 0; }
+ol, ul { list-style-image: none; list-style-position: outside; list-style-type: none; }
+q:before, q:after, blockquote:before, blockquote:after { content:""; }
+
+/* css begin */
+html, body { height:100%; }
+body {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #fff;
+	background: #000;
+	width: 100%;
+	min-width: 1000px;
+}
+
+/* content */
+#wrap {
+	position: relative;
+	width: 900px;
+    padding: 0 50px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+a { color: #fff; }
+
+/* header */
+.header { position: relative; height: 195px; background: url(../images/header-bg.jpg) no-repeat 0 60px; }
+    .header .logo { float: left; margin: 90px 0 0 3px; }
+        .header .logo ul { margin: 15px 0 0 0; }
+        .header .logo li { float: left; padding: 0 0 0 20px; margin: 0 13px 0 0; background: url(../images/header-logo-spacer.png) no-repeat 0 2px; }
+        .header .logo li:first-child { padding: 0; background: none; }
+        .header .logo a { text-decoration: none; text-transform: uppercase; font-size: 15px; }
+
+    .header .contacts { float: right; margin: 80px 0 0 0; }
+        .header .contacts big { text-transform: uppercase; font-size: 15px; }
+        .header .contacts big span { color: #f00; }
+
+        .header .contacts p { text-align: right; margin: 7px 0 10px 0; }
+
+.mainmenu { position: absolute; bottom: -25px; right: 0; }
+    .mainmenu li { position: relative; float: left; background: #fff; padding: 3px 13px 3px 3px; border-right: 2px solid #949494;  }
+    .mainmenu li a { text-transform: uppercase; color: #000; font-size: 18px; letter-spacing: -1px; }
+    .mainmenu li.active { background: #000; }
+    .mainmenu li.active a { color: #7becff; }
+
+    .mainmenu .tip { display: none; position: absolute; z-index: 999; right: -10px; bottom: -12px; background: #777; color: #fff; padding: 2px 10px; font-size: 12px; }
+
+#flash { position: absolute; width: 93px; height: 114px; left: 423px; top: 60px; }
+#facebook { position: absolute; width: 250px; height: 54px; right: 0px; top: 10px; border: 1px solid red; }
+
+/* columns */
+.column-left { float: left; margin: 20px 0 0 0; width: 450px;  }
+    .column-left h1, .column-left h2, .column-right h2 { color: #26262b; font-weight: bold; text-transform: uppercase; font-size: 24px; }
+    .column-left p { margin: 12px 0; }
+        .column-left p img { margin-right: 17px; border: 5px solid #fff; }
+        .column-left .social { margin: 0 20px 0 0; border: 0; opacity: 0.7; }
+        .column-left .social:hover { opacity: 1; }
+
+    .column-left #comment { margin: 10px 0; overflow: hidden; }
+        .column-left #comment h3 { margin: 0 0 15px 0; }
+        .column-left #comment .textbox { float: left; width: 125px; padding: 3px 5px; margin: 0 8px 20px 0; background: #161512; border: 0; border-right: 1px solid #36342e; color: #989489; font-size: 16px; }
+        .column-left #comment textarea { display: block; padding: 5px; clear: both; width: 418px; height: 135px; border: 1px solid #36342e; background: #161512; color: #989489; font-size: 16px; }
+        #submitcomment { display: block; float: right; margin: 3px 20px 0 0; border: 0; width: 124px; height: 34px; background: url(../images/submit.gif) no-repeat; cursor: pointer; }
+
+.column-right { float: right; width: 400px; margin: 50px 0 0 0; padding: 10px 0 10px 30px; border-left: 1px solid #2b2b2b; }
+    .column-right .wrapper { min-height: 450px; background: url(../images/column-right-bg.jpg) no-repeat 50% 270px; }
+    .column-right h2 { margin-bottom: 5px; }
+    .column-right p { margin-bottom: 30px; font-size: 17px; line-height: 160%; text-align: justify; }
+
+form .cufon-canvas { display: none !important; }
+
+/* footer */
+#footer {
+	position: relative;
+	margin-top: -100px;
+	height: 100px;
+	width: 100%;
+}
+
+#footer .wrapper { position: relative; width: 900px; margin: 0 auto; padding: 22px 0 0 0; background: url(../images/footer-bg.png) no-repeat; }
+    #footer ul { display: inline-block; background: #1d1d1d; padding: 4px 0 4px 10px; }
+    #footer li { float: left; padding: 0 0 0 12px; margin: 0 11px 0 0; background: url(../images/footer-spacer.gif) no-repeat 0 0; }
+    #footer li:first-child { padding-left: 0; background: none; }
+    #footer li a { text-transform: uppercase; text-decoration: none; color: #fff; opacity: 0.5; }
+    #footer li a:hover { opacity: 1; }
+
+    #footer .copyright { margin: 15px 0 0 0; font-size: 11px; color: #989488; }
+        #footer .copyright a { text-decoration: none; color: #a94229; }
+
+    #footer .seo { position: absolute; top: -4px; right: 0; width: 115px; height: 104px; background: url(../images/cert.png) no-repeat; }
+
+.footer_blank {	clear: both; height: 100px; }

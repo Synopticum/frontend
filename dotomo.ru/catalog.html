@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/main.css">
+        <!--[if lte IE 7]><link rel="stylesheet" href="css/ie.css"><![endif]-->
+
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+
+        <link href="js/selectbox/jquery.selectbox.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="js/selectbox/jquery.selectbox-0.2.min.js"></script>
+
+        <script type="text/javascript" src="js/checkbox/niceCheckbox.js"></script>
+
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div class="ucp clearfix">
+                <div class="ucp-welcome">Здравствуте, UserName</div>
+
+                <div class="ucp-menu">
+                    <ul>
+                        <li class="r1"><a href="" title="">Мои объявления</a><sup>1</sup></li>
+                        <li class="r2"><a href="" title="">Сообщения</a><sup>2</sup></li>
+                        <li class="r3"><a href="" title="">Платежи и счет</a></li>
+                        <li class="r4"><a href="" title="">Настройки</a></li>
+                        <li class="r5"><a href="" title="">Выход</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <header>
+                <div class="header-wrapper">
+                    <a href=""><img src="images/header-logo.png" alt="" class="header-logo" /></a>
+
+                    <div class="header-menu">
+                        <ul>
+                            <li class="r1"><a href="" title="">Личный кабинет</a></li>
+                            <li class="r2"><a href="" title="">Закладки</a><span class="count">345</span></li>
+                            <li class="r3"><a href="" title="">Недавно просмотренные</a></li>
+                            <li class="r4"><a href="" title="">Помощь</a></li>
+                        </ul>
+                    </div>
+
+                    <a href="" class="header-add">Дать объявление</a>
+
+                    <div class="header-city">
+                        <img src="images/header-city.png" height="16" width="16" alt=""> <a href="javascript:void(0);" class="current"><span>Москва</span></a>
+                    </div>
+
+                    <div class="header-counter">
+                        На сайте <span>2.233.232</span> актуальных объявлений
+                    </div>
+                </div>
+            </header>
+
+            <!-- top search -->
+            <div class="top-search">
+                <div class="top-search-wrapper">
+                    <form action="">
+                        <table class="top-search-main">
+                            <tr>
+                                <td>
+                                    <label>Я ищу<br />
+                                    <input type="text" id="" value="" class="textbox" /></label>
+                                </td>
+                                <td>
+                                    <label>Где<br />
+                                        <select name="" id="" class="selectbox" tabindex="1">
+                                            <option value="">Москва</option>
+                                            <option value="">Казань</option>
+                                            <option value="">Владивосток</option>
+                                        </select>
+                                    </label>
+                                </td>
+                                <td>
+                                    <span class="label">Цена, руб<br />
+                                    <input type="text" id="" value="" class="textbox textbox-short" placeholder="от" />
+                                    <input type="text" id="" value="" class="textbox textbox-short" placeholder="до" /></span>
+                                </td>
+                                <td>
+                                    <label>Рубрика<br />
+                                        <select name="" id="" class="selectbox" tabindex="2">
+                                            <option value="">Транспорт</option>
+                                            <option value="">Финансы</option>
+                                            <option value="">Другое</option>
+                                        </select>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input type="submit" id="" value="Найти" class="default-button" />
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- categories -->
+                        <div class="top-search-cats">
+                            <table>
+                                <tr>
+                                    <td><span class="cat active"><span>Все объявления в рубрике транспорт</span>, 155 000</span></td>
+                                    <td><span class="cat"><a href="">мотоциклы и мототехника</a>, 110</span></td>
+                                    <td><span class="cat"><a href="">водный транспорт</a>, 11</span></td>
+                                    <td><input type="checkbox" class="niceCheck" id="c0" /> <label for="c0" style="display: inline">Только с фото</label></td>
+                                </tr>
+
+                                <tr>
+                                    <td><span class="cat"><a href="">автомобили с пробегом</a>, 1 200</span></td>
+                                    <td><span class="cat"><a href="">спецтпехника</a>, 11</span></td>
+                                    <td><span class="cat"><a href="">воздушный транспорт</a>, 11</span></td>
+                                    <td></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><span class="cat"><a href="">новые автомобили</a>, 110</span></td>
+                                    <td><span class="cat"><a href="">сельхозтехника</a>, 11</span></td>
+                                    <td><span class="cat"><a href="">запчасти и аксессуары</a>, 11</span></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <!-- parameters -->
+                        <div class="top-search-params">
+                            <h6>Пaраметры</h6>
+                            <a href="javascript:void(0);" class="show-params"><span>Показать параметры</span></a>
+
+                            <div class="top-search-tabs">
+                                <a href="javascript:void(0);" class="tab1-link active">Куплю</a>
+                                <a href="javascript:void(0);" class="tab1-link">Продам</a>
+                                <a href="javascript:void(0);" class="tab1-link">Обменяю</a>
+                            </div>
+
+                            <div class="top-search-tabcontent">
+                                <div class="tab1">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <span class="label">Марка<br />
+                                                <select name="" id="" class="selectbox" tabindex="2">
+                                                    <option value="">Любая</option>
+                                                    <option value="">Финансы</option>
+                                                    <option value="">Другое</option>
+                                                </select>
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="label">Тип двигателя<br />
+                                                <select name="" id="" class="selectbox" tabindex="2">
+                                                    <option value="">Бензиновый</option>
+                                                    <option value="">Финансы</option>
+                                                    <option value="">Другое</option>
+                                                </select>
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="label">Тип привода<br />
+                                                <select name="" id="" class="selectbox" tabindex="2">
+                                                    <option value="">Полный</option>
+                                                    <option value="">Финансы</option>
+                                                    <option value="">Другое</option>
+                                                </select>
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="label">Вид топлива<br />
+                                                <select name="" id="" class="selectbox" tabindex="2">
+                                                    <option value="">Бензин</option>
+                                                    <option value="">Финансы</option>
+                                                    <option value="">Другое</option>
+                                                </select>
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="label">Наличие<br />
+                                                <select name="" id="" class="selectbox" tabindex="2">
+                                                    <option value="">Любая</option>
+                                                    <option value="">Финансы</option>
+                                                    <option value="">Другое</option>
+                                                </select>
+                                                </span>
+                                            </td>
+                                        </tr>
+
+                                        <!--  -->
+
+                                        <tr>
+                                            <td>
+                                                <span class="label">Модель<br />
+                                                <select name="" id="" class="selectbox" tabindex="2">
+                                                    <option value="">Не важно</option>
+                                                    <option value="">Финансы</option>
+                                                    <option value="">Другое</option>
+                                                </select>
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="label">Объем двигателя, см<sup>3</sup><br />
+                                                    <input type="text" id="" value="" class="textbox textbox-short" placeholder="от" />
+                                                    &mdash;
+                                                    <input type="text" id="" value="" class="textbox textbox-short" placeholder="до" />
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="label">Тип трансмиссии<br />
+                                                <select name="" id="" class="selectbox" tabindex="2">
+                                                    <option value="">Не важно</option>
+                                                    <option value="">Финансы</option>
+                                                    <option value="">Другое</option>
+                                                </select>
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="label">Тип руля<br />
+                                                <select name="" id="" class="selectbox" tabindex="2">
+                                                    <option value="">Левый</option>
+                                                    <option value="">Финансы</option>
+                                                    <option value="">Другое</option>
+                                                </select>
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="label">Состояние<br />
+                                                <select name="" id="" class="selectbox" tabindex="2">
+                                                    <option value="">Отличное</option>
+                                                    <option value="">Финансы</option>
+                                                    <option value="">Другое</option>
+                                                </select>
+                                                </span>
+                                            </td>
+                                        </tr>
+
+                                        <!--  -->
+
+                                        <tr>
+                                            <td>
+                                                <span class="label">Тип кузова<br />
+                                                <select name="" id="" class="selectbox" tabindex="2">
+                                                    <option value="">Любая</option>
+                                                    <option value="">Финансы</option>
+                                                    <option value="">Другое</option>
+                                                </select>
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="label">Мощность, л.с.<br />
+                                                    <input type="text" id="" value="" class="textbox textbox-short" placeholder="от" />
+                                                    &mdash;
+                                                    <input type="text" id="" value="" class="textbox textbox-short" placeholder="до" />
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="label">Пробег, км<br />
+                                                    <input type="text" id="" value="" class="textbox textbox-short" placeholder="от" />
+                                                    &mdash;
+                                                    <input type="text" id="" value="" class="textbox textbox-short" placeholder="до" />
+                                                </span>
+                                            </td>
+                                            <td colspan="2" class="doubleselect">
+                                                <span class="label">Год выпуска<br />                                       
+                                                <select name="" id="" class="selectbox" tabindex="2">
+                                                    <option value="">от 2012</option>
+                                                    <option value="">Финансы</option>
+                                                    <option value="">Другое</option>
+                                                </select>
+                                                <span style="float: left;"></span>       
+                                                <select name="" id="" class="selectbox" tabindex="2">
+                                                    <option value="">до 1980</option>
+                                                    <option value="">Финансы</option>
+                                                    <option value="">Другое</option>
+                                                </select>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <div class="tab2"></div>
+
+                                <div class="tab3"></div>
+                            </div>
+                        </div>
+
+                        <!-- complectation -->
+                        <div class="top-search-complect">
+                            <a href="" class="title">Комплектация</a>
+
+                            <table>
+                                <tr>
+                                    <td>
+                                        <span class="label">Безопасность</span>
+                                        <input type="checkbox" class="niceCheck" id="c1" /> <label for="c1">Антиблокировочная система (ABS)</label><br />
+                                        <input type="checkbox" class="niceCheck" id="c2" /> <label for="c2">Антипробуксовочная система</label><br />
+                                        <input type="checkbox" class="niceCheck" id="c3" /> <label for="c3">Бортовой компьютер</label><br />
+                                        <input type="checkbox" class="niceCheck" id="c4" /> <label for="c4">Газобаллон.оборуд. (ГБО)</label>
+                                    </td>
+                                    <td>
+                                        <span class="label">Салон</span>
+                                        <input type="checkbox" class="niceCheck" id="c5" /> <label for="c5">Антиблокировочная система (ABS)</label><br />
+                                        <div class="tsc-select clearfix">
+                                                <span>Кондиционер</span>
+                                                <select name="" id="" class="selectbox" tabindex="2">
+                                                    <option value="">Любая</option>
+                                                    <option value="">Финансы</option>
+                                                    <option value="">Другое</option>
+                                                </select>
+                                        </div>
+                                        <input type="checkbox" class="niceCheck" id="c6" /> <label for="c6">Бортовой компьютер</label><br />
+                                        <input type="checkbox" class="niceCheck" id="c7" /> <label for="c7">Газобаллон.оборуд. (ГБО)</label>
+                                    </td>
+                                    <td>
+                                        <span class="label">Внешний вид</span>
+                                        <input type="checkbox" class="niceCheck" id="c8" /> <label for="c8">Антиблокировочная система (ABS)</label><br />
+                                        <input type="checkbox" class="niceCheck" id="c9" /> <label for="c9">Антипробуксовочная система</label><br />
+                                        <input type="checkbox" class="niceCheck" id="c10" /> <label for="c10">Бортовой компьютер</label><br />
+                                        <input type="checkbox" class="niceCheck" id="c11" /> <label for="c11">Газобаллон.оборуд. (ГБО)</label>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table>
+                                <tr>
+                                    <td>
+                                        <span class="label">Комфорт</span>
+                                        <input type="checkbox" class="niceCheck" id="c12" /> <label for="c12">Антиблокировочная система (ABS)</label><br />
+                                        <input type="checkbox" class="niceCheck" id="c13" /> <label for="c13">Антипробуксовочная система</label><br />
+                                        <input type="checkbox" class="niceCheck" id="c14" /> <label for="c14">Бортовой компьютер</label><br />                                       
+                                        <div class="tsc-select clearfix">
+                                                <span>Кондиционер</span>
+                                                <select name="" id="" class="selectbox" tabindex="2">
+                                                    <option value="">Любая</option>
+                                                    <option value="">Финансы</option>
+                                                    <option value="">Другое</option>
+                                                </select>
+                                        </div>
+                                    </td>
+                                    <td colspan="2">
+                                        <span class="label">Музыка и видео</span>
+                                        <input type="checkbox" class="niceCheck" id="c15" /> <label for="c15">Антиблокировочная система (ABS)</label><br />
+                                        <input type="checkbox" class="niceCheck" id="c16" /> <label for="c16">Антипробуксовочная система</label><br />
+                                        <input type="checkbox" class="niceCheck" id="c17" /> <label for="c17">Бортовой компьютер</label><br />
+                                        <input type="checkbox" class="niceCheck" id="c18" /> <label for="c18">Газобаллон.оборуд. (ГБО)</label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <!-- find -->
+                        <div class="top-search-find">
+                            <input type="text" id="" value="Найти" class="default-button" />
+                            или
+                            <a href="">Очистить параметры</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="wrap" class="clearfix">
+
+                <!-- breadcrumbs -->
+                <div class="breadcrumbs">
+                    <a href=""><span>Главная</span></a>
+                    <a href=""><span>Транспорт</span></a>
+                    Все объявления в рубрике транспорт
+                </div>
+
+                <div class="catalog">
+                    <div class="tab-content">
+                        <div class="tab1">
+                            <h2>VIP объявления</h2>
+                            <a href="" class="premium-place"><span>Как сюда попасть?</span></a>
+
+                            <div class="tab-pages">
+                                Стр.1 из 55
+                                <a href=""><img src="images/left.png" height="15" width="15" alt=""></a>
+                                <a href=""><img src="images/right.png" height="15" width="15" alt=""></a>
+                                <a href="" class="all">Все</a>
+                            </div>
+
+                            <div class="catalog-list">
+                                <div class="item">
+                                    <div class="view">
+                                        <a href=""><img src="images/tmp/p3.jpg" height="97" width="128" alt=""></a>
+                                    </div>
+
+                                    <div class="description">
+                                        <span class="date">Сегодня, 14:32</span>
+                                        <a href="" class="name">Peugeot 405. 1989 г.<br /> выпуска </a>
+                                        <span class="price">608 000 руб.</span>
+                                        <p>Транспорт, Автомобили с пробегом</p>
+
+                                        <a href="" class="favorite">В закладки</a>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="view">
+                                        <a href=""><img src="images/tmp/p3.jpg" height="97" width="128" alt=""></a>
+                                    </div>
+
+                                    <div class="description">
+                                        <span class="date">Сегодня, 14:32</span>
+                                        <a href="" class="name">Peugeot 405. 1989 г.<br /> выпуска </a>
+                                        <span class="price">608 000 руб.</span>
+                                        <p>Транспорт, Автомобили с пробегом</p>
+
+                                        <a href="" class="favorite">В закладки</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="item">
+                                    <div class="view">
+                                        <a href=""><img src="images/tmp/p3.jpg" height="97" width="128" alt=""></a>
+                                    </div>
+
+                                    <div class="description">
+                                        <span class="date">Сегодня, 14:32</span>
+                                        <a href="" class="name">Peugeot 405. 1989 г.<br /> выпуска </a>
+                                        <span class="price">608 000 руб.</span>
+                                        <p>Транспорт, Автомобили с пробегом</p>
+
+                                        <a href="" class="favorite">В закладки</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabs">
+                        <a href="javascript:void(0);" class="tab1-link active"><span>Компании</span> 125 000</a>
+                        <a href="javascript:void(0);" class="tab2-link"><span>Частные лица</span> 30 000</a>
+                    </div>
+                </div>
+
+                <!-- right side -->
+                <aside class="rightside">
+                    <div class="aside-box">
+                        <div class="aside-box-title"><h4 >На нашем сайте для Вас</h4></div>
+
+                        <div class="aside-features">
+                            <div class="item">
+                                <div class="position">1.</div>
+                                <div class="description">
+                                    Абсолютно <strong>бесплатная</strong> подача объявления <strong>за 2 минуты</strong> по: покупке &gt; продаже &gt; обмену
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="position">2.</div>
+                                <div class="description">
+                                    Дополнительные платные возможности по <strong>продвижению</strong> вашего объявления.
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+                                <div class="position">3.</div>
+                                <div class="description">
+                                    Все объявления тщательно проверяются и содержат реальные контактные данные.
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+                                <div class="position">&nbsp;</div>
+                                <div class="description">
+                                    <a href="" class="default-button">Дать объявление</a>
+                                    <span class="free"><span>*</span>бесплатно</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  -->
+
+                    <div class="aside-box">
+                        <img src="images/tmp/y2.png" height="371" width="255" alt="">
+                    </div>
+
+                    <!--  -->
+
+                    <div class="aside-box">
+                        <img src="images/tmp/s1.png" height="290" width="240" alt="">
+                    </div>
+
+                    <!--  -->
+
+                    <div class="aside-box">
+                        <h5>Мы в социальных сетях:</h5>
+
+                        <div class="aside-social">
+                            <a href=""><img src="images/s1.png" height="24" width="24" alt=""></a>
+                            <a href=""><img src="images/s2.png" height="24" width="24" alt=""></a>
+                            <a href=""><img src="images/s3.png" height="24" width="24" alt=""></a>
+                            <a href=""><img src="images/s4.png" height="24" width="24" alt=""></a>
+                            <a href=""><img src="images/s5.png" height="24" width="24" alt=""></a>
+                            <a href=""><img src="images/s6.png" height="24" width="24" alt=""></a>
+                            <a href=""><img src="images/s7.png" height="24" width="24" alt=""></a>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- content -->
+                <div class="content">
+
+                    <!-- ads -->
+                    <div class="ads">
+                        <div class="box-title"><h3>Объявления</h3></div>
+
+                        <div class="ads-sort">
+                            Сортировать по: 
+                            <a href="" class="expand"><span>Дата добавления</span></a>
+                            <a href=""><span>Цена</span></a>
+                        </div>
+
+                        <!-- ads promo -->
+                        <div class="ads-promo">
+                            <h3>Рекомендуем</h3>
+                            <a href="" class="premium-place"><span>Как сюда попасть?</span></a>
+                            <a href="" class="show-all">Посмотреть все</a>
+
+                            <div class="ads-promo-wrapper">
+                                <div class="item clearfix">
+                                    <div class="price">
+                                        <span class="cost">608 000 руб.</span>
+                                        <div class="date">Сегодня, 14:32</div>
+                                    </div>
+
+                                    <div class="view">
+                                        <a href=""><img src="images/tmp/p2.jpg" height="97" width="128" alt=""></a>
+                                        <div class="vip"></div>
+                                    </div>
+
+                                    <div class="description">
+                                        <a href="" class="name">Peugeot 405. 1989 г.выпуска </a>
+                                        <p>Машина в отличном состоянии. 1 владелец. Стоит зимняя резина.<br />Сигнализация с автозапуском.</p>
+                                    </div>
+
+                                    <div class="category">
+                                        <p>Транспорт, Автомобили с пробегом</p>
+                                        <p>Москва м.Академическая</p>
+                                    </div>
+
+                                    <div class="nav">
+                                        <a href="" class="favorite"></a>
+                                    </div>
+                                </div>
+
+                                <div class="item highlight clearfix">
+                                    <div class="price">
+                                        <span class="cost">608 000 руб.</span>
+                                        <div class="date">Сегодня, 14:32</div>
+                                    </div>
+
+                                    <div class="view">
+                                        <a href=""><img src="images/tmp/p2.jpg" height="97" width="128" alt=""></a>
+                                        <div class="vip"></div>
+                                        <a href="" class="quickly"></a>
+                                    </div>
+
+                                    <div class="description">
+                                        <a href="" class="name">Peugeot 405. 1989 г.выпуска </a>
+                                        <p>Машина в отличном состоянии. 1 владелец. Стоит зимняя резина.<br />Сигнализация с автозапуском.</p>
+                                    </div>
+
+                                    <div class="category">
+                                        <p>Транспорт, Автомобили с пробегом</p>
+                                        <p>Москва м.Академическая</p>
+                                    </div>
+
+                                    <div class="nav">
+                                        <a href="" class="favorite active"></a>
+                                        <a href="" class="up"></a>
+                                    </div>
+                                </div>
+                                
+                                <div class="item clearfix">
+                                    <div class="price">
+                                        <span class="cost">608 000 руб.</span>
+                                        <div class="date">Сегодня, 14:32</div>
+                                    </div>
+
+                                    <div class="view">
+                                        <a href=""><img src="images/tmp/p2.jpg" height="97" width="128" alt=""></a>
+                                        <div class="vip"></div>
+                                    </div>
+
+                                    <div class="description">
+                                        <a href="" class="name">Peugeot 405. 1989 г.выпуска </a>
+                                        <p>Машина в отличном состоянии. 1 владелец. Стоит зимняя резина.<br />Сигнализация с автозапуском.</p>
+                                    </div>
+
+                                    <div class="category">
+                                        <p>Транспорт, Автомобили с пробегом</p>
+                                        <p>Москва м.Академическая</p>
+                                    </div>
+
+                                    <div class="nav">
+                                        <a href="" class="favorite"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ads all  -->
+                        <div class="ads-list">                            
+                            <div class="item clearfix">
+                                <div class="price">
+                                    <span class="cost">608 000 руб.</span>
+                                    <div class="date">Сегодня, 14:32</div>
+                                </div>
+
+                                <div class="view">
+                                    <a href=""><img src="images/tmp/p2.jpg" height="97" width="128" alt=""></a>
+                                </div>
+
+                                <div class="description">
+                                    <a href="" class="name">Peugeot 405. 1989 г.выпуска </a>
+                                    <p>Машина в отличном состоянии. 1 владелец. Стоит зимняя резина.<br />Сигнализация с автозапуском.</p>
+                                </div>
+
+                                <div class="category">
+                                    <p>Транспорт, Автомобили с пробегом</p>
+                                    <p>Москва м.Академическая</p>
+                                </div>
+
+                                <div class="nav">
+                                    <a href="" class="favorite"></a>
+                                </div>
+                            </div>    
+
+                            <div class="item clearfix">
+                                <div class="price">
+                                    <span class="cost">608 000 руб.</span>
+                                    <div class="date">Сегодня, 14:32</div>
+                                </div>
+
+                                <div class="view">
+                                    <a href=""><img src="images/tmp/p2.jpg" height="97" width="128" alt=""></a>
+                                </div>
+
+                                <div class="description">
+                                    <a href="" class="name">Peugeot 405. 1989 г.выпуска </a>
+                                    <p>Машина в отличном состоянии. 1 владелец. Стоит зимняя резина.<br />Сигнализация с автозапуском.</p>
+                                </div>
+
+                                <div class="category">
+                                    <p>Транспорт, Автомобили с пробегом</p>
+                                    <p>Москва м.Академическая</p>
+                                </div>
+
+                                <div class="nav">
+                                    <a href="" class="favorite"></a>
+                                </div>
+                            </div>
+                                                 
+                            <div class="item clearfix">
+                                <div class="price">
+                                    <span class="cost">608 000 руб.</span>
+                                    <div class="date">Сегодня, 14:32</div>
+                                </div>
+
+                                <div class="view">
+                                    <a href=""><img src="images/tmp/p2.jpg" height="97" width="128" alt=""></a>
+                                </div>
+
+                                <div class="description">
+                                    <a href="" class="name">Peugeot 405. 1989 г.выпуска </a>
+                                    <p>Машина в отличном состоянии. 1 владелец. Стоит зимняя резина.<br />Сигнализация с автозапуском.</p>
+                                </div>
+
+                                <div class="category">
+                                    <p>Транспорт, Автомобили с пробегом</p>
+                                    <p>Москва м.Академическая</p>
+                                </div>
+
+                                <div class="nav">
+                                    <a href="" class="favorite"></a>
+                                </div>
+                            </div>
+                                                 
+                            <div class="item clearfix">
+                                <div class="price">
+                                    <span class="cost">608 000 руб.</span>
+                                    <div class="date">Сегодня, 14:32</div>
+                                </div>
+
+                                <div class="view">
+                                    <a href=""><img src="images/tmp/p2.jpg" height="97" width="128" alt=""></a>
+                                </div>
+
+                                <div class="description">
+                                    <a href="" class="name">Peugeot 405. 1989 г.выпуска </a>
+                                    <p>Машина в отличном состоянии. 1 владелец. Стоит зимняя резина.<br />Сигнализация с автозапуском.</p>
+                                </div>
+
+                                <div class="category">
+                                    <p>Транспорт, Автомобили с пробегом</p>
+                                    <p>Москва м.Академическая</p>
+                                </div>
+
+                                <div class="nav">
+                                    <a href="" class="favorite"></a>
+                                </div>
+                            </div>
+                                                 
+                            <div class="item highlight clearfix">
+                                <div class="price">
+                                    <span class="cost">608 000 руб.</span>
+                                    <div class="date">Сегодня, 14:32</div>
+                                </div>
+
+                                <div class="view">
+                                    <a href=""><img src="images/tmp/p2.jpg" height="97" width="128" alt=""></a>
+                                    <a href="" class="quickly"></a>
+                                </div>
+
+                                <div class="description">
+                                    <a href="" class="name">Peugeot 405. 1989 г.выпуска </a>
+                                    <p>Машина в отличном состоянии. 1 владелец. Стоит зимняя резина.<br />Сигнализация с автозапуском.</p>
+                                </div>
+
+                                <div class="category">
+                                    <p>Транспорт, Автомобили с пробегом</p>
+                                    <p>Москва м.Академическая</p>
+                                </div>
+
+                                <div class="nav">
+                                    <a href="" class="favorite"></a>
+                                </div>
+
+                                <div class="your"><a href="" class="edit">Изменить</a> Ваше объявление</div>
+                            </div>
+                                                 
+                            <div class="item clearfix">
+                                <div class="price">
+                                    <span class="cost">608 000 руб.</span>
+                                    <div class="date">Сегодня, 14:32</div>
+                                </div>
+
+                                <div class="view">
+                                    <a href=""><img src="images/tmp/p2.jpg" height="97" width="128" alt=""></a>
+                                </div>
+
+                                <div class="description">
+                                    <a href="" class="name">Peugeot 405. 1989 г.выпуска </a>
+                                    <p>Машина в отличном состоянии. 1 владелец. Стоит зимняя резина.<br />Сигнализация с автозапуском.</p>
+                                </div>
+
+                                <div class="category">
+                                    <p>Транспорт, Автомобили с пробегом</p>
+                                    <p>Москва м.Академическая</p>
+                                </div>
+
+                                <div class="nav">
+                                    <a href="" class="favorite"></a>
+                                </div>
+                            </div>
+                                                 
+                            <div class="item clearfix">
+                                <div class="price">
+                                    <span class="cost">608 000 руб.</span>
+                                    <div class="date">Сегодня, 14:32</div>
+                                </div>
+
+                                <div class="view">
+                                    <a href=""><img src="images/tmp/p2.jpg" height="97" width="128" alt=""></a>
+                                </div>
+
+                                <div class="description">
+                                    <a href="" class="name">Peugeot 405. 1989 г.выпуска </a>
+                                    <p>Машина в отличном состоянии. 1 владелец. Стоит зимняя резина.<br />Сигнализация с автозапуском.</p>
+                                </div>
+
+                                <div class="category">
+                                    <p>Транспорт, Автомобили с пробегом</p>
+                                    <p>Москва м.Академическая</p>
+                                </div>
+
+                                <div class="nav">
+                                    <a href="" class="favorite"></a>
+                                </div>
+                            </div>
+                                                 
+                            <div class="item clearfix">
+                                <div class="price">
+                                    <span class="cost">608 000 руб.</span>
+                                    <div class="date">Сегодня, 14:32</div>
+                                </div>
+
+                                <div class="view">
+                                    <a href=""><img src="images/tmp/p2.jpg" height="97" width="128" alt=""></a>
+                                </div>
+
+                                <div class="description">
+                                    <a href="" class="name">Peugeot 405. 1989 г.выпуска </a>
+                                    <p>Машина в отличном состоянии. 1 владелец. Стоит зимняя резина.<br />Сигнализация с автозапуском.</p>
+                                </div>
+
+                                <div class="category">
+                                    <p>Транспорт, Автомобили с пробегом</p>
+                                    <p>Москва м.Академическая</p>
+                                </div>
+
+                                <div class="nav">
+                                    <a href="" class="favorite"></a>
+                                </div>
+                            </div>
+
+
+                            <!-- paginator -->
+                            <div class="ads-navigation clearfix">
+                                <div class="paginator">
+                                    <span class="prev">Предыдущая</span>
+
+                                    <ul>
+                                        <li>1</li>
+                                        <li><a href="">2</a></li>
+                                        <li><a href="">3</a></li>
+                                        <li><a href="">4</a></li>
+                                        <li><a href="">...</a></li>
+                                        <li><a href="">540</a></li>
+                                    </ul>
+
+                                    <a href="" class="next">Следующая</a>
+                                </div>
+
+                                <div class="gotopage">
+                                    <a href="">Перейти на страницу</a>
+                                    <input type="text" id="" class="textbox" value="" />
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- banners -->
+                        <div class="banners">
+                            <a href=""><img src="images/tmp/ba.png" height="61" width="719" alt=""></a>
+                        </div>
+
+                        <!-- popular -->
+                        <div class="popular">
+                            <h6>Популярные запросы</h6>
+
+                            <ul>
+                                <li><a href="" title="">жк</a></li>
+                                <li><a href="" title="">видеомагнитофон</a></li>
+                                <li><a href="" title="">hd</a></li>
+                                <li><a href="" title="">плазменный</a></li>
+                                <li><a href="" title="">пульт</a></li>
+                                <li><a href="" title="">проектор</a></li>
+                                <li><a href="" title="">ресивер</a></li>
+                                <li><a href="" title="">экран</a></li>
+                                <li><a href="" title="">домашний кинотеатр</a></li>
+                                <li><a href="" title="">триколор</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- recent -->
+                        <div class="recent">
+                            <a href="">Недавно просмотренные</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- rubrics bottom -->
+                <div class="rubricator">
+                    <h6>Рубрикатор объявлений</h6>
+
+                    <ul>
+                        <li><a href="" title="">Личные вещи</a></li>
+                        <li><a href="" title="">Транспорт</a></li>
+                        <li><a href="" title="">Недвижимость</a></li>
+                        <li><a href="" title="">Работа</a></li>
+                        <li><a href="" title="">Бизнес</a></li>
+                        <li><a href="" title="">Детям</a></li>
+                        <li><a href="" title="">Для дома и дачи</a></li>
+                        <li><a href="" title="">Хобби и отдых</a></li>
+                        <li><a href="" title="">Животные</a></li>
+                        <li><a href="" title="">Электроника</a></li>
+                        <li><a href="" title="">Услуги</a></li>
+                        <li><a href="" title="">Общество</a></li>
+                        <li><a href="" title="">Знакомства</a></li>
+                        <li><a href="" title="">Отдам даром</a></li>
+                        <li><a href="" title="">Обмен</a></li>
+                    </ul>
+
+                    <p>У нас 20 тыс. пользователей в день покупают 500 товаров</p>
+
+                    <div class="rubricator-add">
+                        <a href="" class="default-button-big"><img src="images/plus.png" height="14" width="14" alt="">Дать объявление</a>
+                        <span class="free"><span>*</span> бесплатно</span>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-wrapper">
+                    <div class="footer-copyright">
+                        © 2012 <a href="">Dotomo.ru</a> доска бесплатных объявлений
+                    </div>
+
+                    <div class="footer-menu">
+                        <table>
+                            <tr>
+                                <td><a href="" title="">Помощь</a></td>
+                                <td><a href="" title="">Условия использования</a></td>
+                                <td><a href="" title="">VIP объявления</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="" title="">О нас</a></td>
+                                <td colspan="2"><a href="" title="">Контакты</a></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="footer-contact">
+                        Есть предложения или замечания по работе сайта?<br />
+                        <a href="">Напишите нам.</a>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <script src="js/call.js"></script>
+    </body>
+</html>

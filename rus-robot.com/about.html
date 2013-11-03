@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+        <a href="#" title=""><img src="images/logo.png" width="254" height="23" alt="" class="logo" /></a>
+
+        <div class="slogan">
+            <img src="images/slogan.png" width="298" height="11" alt="" />
+        </div>
+
+        <div class="nav">
+            <a href="#" title="" class="home">Главная</a>
+            <a href="#" title="" class="contacts">Контакты</a>
+        </div>
+    </div>
+
+    <!-- search -->
+    <div class="search">
+        <form>
+            <input name="searchbar" type="text" value="найти на сайте" class="textbox" tabindex="1" />
+            <input type="submit" name="find" value="" class="find" tabindex="2" />
+        </form>
+    </div>
+
+    <!-- top menu -->
+    <div class="topmenu">
+        <ul>
+            <li><a href="#" title="">Новости</a></li>
+            <li><a href="#" title="">Статьи</a></li>
+            <li><a href="#" title="">Спецпредложения</a></li>
+            <li><a href="#" title="">Контакты</a></li>
+            <li><a href="#" title="">About us</a></li>
+        </ul>
+
+        <div class="tright"></div>
+    </div>
+
+    <div class="aside">
+        <!-- leftmenu -->
+        <div class="leftmenu">
+            <div class="ltop"></div>
+            <ul>
+                <li class="active"><a href="#" title="">Применения</a>
+                    <ul>
+                        <li><a href="#" title="">сварочные роботы</a></li>
+                        <li><a href="#" title="">роботы для плазменной резки</a></li>
+                        <li><a href="#" title="">роботы для дуговой сварки</a></li>
+                        <li><a href="#" title="">роботы для контактной сварки</a></li>
+                        <li><a href="#" title="">робот-манипулятор</a></li>
+                        <li class="all"><a href="#" title="">смотреть весь список</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="">Роботы</a>
+                    <ul>
+                        <li><a href="#" title="">сварочные роботы</a></li>
+                        <li><a href="#" title="">роботы для плазменной резки</a></li>
+                        <li><a href="#" title="">роботы для дуговой сварки</a></li>
+                        <li><a href="#" title="">роботы для контактной сварки</a></li>
+                        <li><a href="#" title="">робот-манипулятор</a></li>
+                        <li><a href="#" title="">смотреть весь список</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="">Компоненты</a>
+                    <ul>
+                        <li><a href="#" title="">сварочные роботы</a></li>
+                        <li><a href="#" title="">роботы для плазменной резки</a></li>
+                        <li><a href="#" title="">роботы для дуговой сварки</a></li>
+                        <li><a href="#" title="">роботы для контактной сварки</a></li>
+                        <li><a href="#" title="">робот-манипулятор</a></li>
+                        <li><a href="#" title="">смотреть весь список</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="">Запасные части</a>
+                    <ul>
+                        <li><a href="#" title="">сварочные роботы</a></li>
+                        <li><a href="#" title="">роботы для плазменной резки</a></li>
+                        <li><a href="#" title="">роботы для дуговой сварки</a></li>
+                        <li><a href="#" title="">роботы для контактной сварки</a></li>
+                        <li><a href="#" title="">робот-манипулятор</a></li>
+                        <li><a href="#" title="">смотреть весь список</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="lbottom"></div>
+            <script language="JavaScript" type="text/javascript">
+            /*<![CDATA[*/
+            $(".leftmenu a").click(function() {
+              $(this).siblings().toggle('fast');
+            });
+            /*]]>*/
+            </script>
+        </div>
+
+        <!-- question -->
+        <div class="question">
+            <div class="qtop"></div>
+
+            <div class="wrapper">
+                <form>
+                    <input name="myname" type="text" value="Имя:" tabindex="1" class="textbox" />
+                    <input name="myemail" type="text" value="E-mail:" tabindex="2" class="textbox" />
+                    <input name="myphone" type="text" value="Телефон:" tabindex="3" class="textbox" />
+                    <textarea name="mymessage" tabindex="4">Сообщение:</textarea>
+                    <input type="button" name="sendnow" value="" class="sendnow" tabindex="5" />
+                </form>
+            </div>
+
+            <div class="qbottom"></div>
+        </div>
+    </div>
+
+	<!-- content -->
+	<div class="content">
+        <div class="page-title">
+            <h1>About us</h1>
+        </div>
+
+
+        <div class="about">
+            <div class="item i1">
+                <p class="aligncenter"><img src="images/en.jpg" width="102" height="102" alt="" /></p>
+                <p>JSC “Robotics engineering” is the company, introducing modern equipment into
+                technical processes: robot systems, based on 6-axis industrial robots.<br />
+                We consider questions of cooperation related to the purchasing of your new and used industrial
+                robots, as well as robotic cells and its individual elements such as gripping devices, conveyor systems.<br />
+                Please feel free to contact us: antonbuchin@ya.ru<br />
+                Our office and warehouse are located in Yaroslavl, Russia.</p>
+            </div>
+
+
+            <div class="item i2">
+                <p class="aligncenter"><img src="images/de.jpg" width="102" height="102" alt="" /></p>
+                <p>GAG "Robotertechnika" integriert moderne Ausrüstung in alle Industrie  Bereiche: wir
+                bieten Robotisierte –Systemlösungen auf 6-Achsen Industrie Roboter Basis.<br />
+                Gerne sprechen wir über eine Kooperation rund um Erwerb von neuen oder gebrauchten
+                Industrieroboter sowie Robotisierte -Systemen oder einzelnen Komponenten wie Greifer und Förderanlagen.<br />
+                Kontaktieren Sie uns: antonbuchin@ya.ru<br />
+                Büro und Lager Standort  Jaroslawl, Russland.</p>
+            </div>
+
+
+            <div class="item i3">
+                <p class="aligncenter"><img src="images/se.jpg" width="102" height="102" alt="" /></p>
+                <p>JSC "Robotics Engineering" är ett företag som arbetar med moderna lösningar inom
+                automationssystem baserat på 6-axliga industriella robotar.<br />
+                Vi överväger frågor gällande försäljning och inköp av begagnade och nya industriella robotar,
+                kompletta celler samt individuella komponenter som gripdon, transportsystem m.m.<br />
+                Ni får gärna kontakta oss på: antonbuchin@ya.ru<br />
+                Vårt kontor och lager finns i Yaroslavl, Ryssland.</p>
+            </div>
+        </div>
+
+        <!-- video -->
+        <div class="video">
+            <div class="wrapper">
+                <a href="#" title=""><img src="images/tmp_1.jpg" width="360" height="232" alt="" /></a>
+            </div>
+        </div>
+    </div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+    <div class="copyright">
+        <a href="#" title=""><img src="images/logo2.png" width="200" height="19" alt="" /></a>
+        <p>2008-2012 (c) «Roboter GMBH»</p>
+    </div>
+
+    <div class="info">
+        Автоматизация производства,<br />
+        промышленные роботы, робототехника.<br />
+        Сертифицированные товары и услуги.
+    </div>
+
+    <div class="contacts">
+        Россия, г. Ярославль, ул. Некрасова 37-а.<br />
+        <img src="images/footer-phone.gif" width="14" height="13" alt="" /> <strong>+7 910 662 1562<br />
+        <img src="images/footer-phone.gif" width="14" height="13" alt="" /> +7 903 638 8197<br />
+        <img src="images/footer-phone.gif" width="14" height="13" alt="" /> +7 960 532 9230</strong>
+    </div>
+</div>
+</body>
+</html>

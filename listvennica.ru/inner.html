@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			$(".zoom, .zoomthumb").fancybox();
+
+			$("a[rel=photo_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+
+<!-- header -->
+<div class="header">
+	<div class="wrapper">
+		<a href="#" title="" class="logo"><!-- logo link --></a>
+
+		<div class="phones">
+			<span>Наши телефоны:</span>
+			<big>8 (495) <strong>000 00 00</strong></big>
+			<big>8 (495) <strong>000 00 00</strong></big>
+		</div>
+	</div>
+</div>
+
+<div id="wrap">
+	<!-- top menu -->
+	<div class="topmenu">
+		<div class="navi">
+			<div class="navicontainer">
+				<ul class="wrpr">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Продукция</a></li>
+					<li><a href="#">Цены</a></li>
+					<li><a href="#">Домостроение</a></li>
+					<li><a href="#">Полезно знать</a></li>
+					<li><a href="#">Фотогалерея</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- leftside -->
+	<div class="leftside">
+		<h2>Каталог Продукции</h2>
+
+		<h4>ПОРОДЫ</h4>
+		<ul>
+			<li class="active"><a href="#" title="">Лиственница</a>
+				<ul>
+					<li class="active"><a href="#" title="">Евровагонка</a></li>
+					<li><a href="#" title="">Вагонка штиль</a></li>
+					<li><a href="#" title="">Половая доска</a></li>
+					<li><a href="#" title="">Террасная доска</a></li>
+					<li><a href="#" title="">Палубная доска</a></li>
+					<li><a href="#" title="">Планкен</a></li>
+					<li><a href="#" title="">Имитация бруса</a></li>
+					<li><a href="#" title="">Блок хаус</a></li>
+					<li><a href="#" title="">Строганная доска</a></li>
+					<li><a href="#" title="">Массивная паркетная доска</a></li>
+					<li><a href="#" title="">Мебельный щит</a></li>
+					<li><a href="#" title="">Лестницы</a></li>
+				</ul>
+			</li>
+			<li><a href="#" title="">Сосна, Ель</a></li>
+			<li><a href="#" title="">Липа</a></li>
+			<li><a href="#" title="">Дуб, ясень</a></li>
+			<li><a href="#" title="">Экзотика</a></li>
+		</ul>
+		<!-- -->
+		<h4>СТЕНОВЫЕ ИЗДЕЛИЯ</h4>
+		<ul>
+			<li><a href="#" title="">Евровагонка</a></li>
+			<li><a href="#" title="">Вагонка штиль</a></li>
+			<li><a href="#" title="">Имитация бруса</a></li>
+			<li><a href="#" title="">Блок хаус</a></li>
+			<li><a href="#" title="">Планкен</a></li>
+			<li><a href="#" title="">Строганная доска и брусок</a></li>
+		</ul>
+		<!-- -->
+		<h4>НАПОЛЬНЫЕ ПОКРЫТИЯ</h4>
+		<ul>
+			<li><a href="#" title="">Половая доска</a></li>
+			<li><a href="#" title="">Паркетная доска</a></li>
+			<li><a href="#" title="">Палубная доска</a></li>
+			<li><a href="#" title="">Террасная доска</a></li>
+		</ul>
+		<!-- -->
+		<h4>ЛЕСТНИЧНЫЕ ЭЛЕМЕНТЫ</h4>
+		<ul>
+			<li><a href="#" title="">Деревянные лестницы</a></li>
+			<li><a href="#" title="">Мебельный щит</a></li>
+		</ul>
+		<!-- -->
+		<h4>ДРУГАЯ ПРОДУКЦИЯ</h4>
+		<ul>
+			<li><a href="#" title="">Клееный брус</a></li>
+			<li><a href="#" title="">OSB-3</a></li>
+			<li><a href="#" title="">Крепежи</a></li>
+			<li><a href="#" title="">Все для бани и сауны</a></li>
+			<li><a href="#" title="">Погонаж</a></li>
+			<li><a href="#" title="">Двери</a></li>
+			<li><a href="#" title="">Лаки, масла, защита</a></li>
+			<li><a href="#" title="">Распродажа</a></li>
+		</ul>
+	</div>
+
+	<!-- content -->
+	<div class="content-inner">
+		<div class="breadcrumbs">
+			<a href="#" title="">Главная</a> / <a href="#" title="">Каталог</a> / <a href="#" title="">Лиственница</a> / <span>Евро-вагонка из лиственницы</span>
+		</div>
+
+		<h1>Евровагонка из лиственницы</h1>
+
+		<div class="hr"></div>
+
+		<!-- description -->
+		<div class="description">
+			<div class="view">
+				<div class="thumbnail">
+					<a class="zoomthumb" href="images/tmp_3.jpg" title=""><img src="images/tmp_3.jpg" width="152" height="114" alt="" /></a>
+				</div>
+				<a href="images/tmp_3.jpg" title="" class="zoom">Увеличить</a>
+			</div>
+
+			<p>Вагонка из лиственницы - плоская стеновая панель. Применяется для отделки офисов,
+			квартир и жилых домов. Соединение «шип-паз» позволяет легко производить сборку
+			панелей. Выпускается в трех вариантах профиля: «классическая» евровагонка, вагонка
+			«софт-лайн», «универсальная» (русская обшивка).</p>
+
+			<p><small>Крепление для вагонки - кляймер</small> <a href="#" title="">смотрите здесь</a></p>
+
+			<p>Сопутствующие товары: <a href="#" title="">лаки</a>, <a href="#" title="">краски</a>, <a href="#" title="">масла</a></p>
+		</div>
+
+		<!-- details -->
+		<div class="details">
+			<h4>Цены на евровагонку из лиственницы</h4>
+
+			<div class="download">
+				<span>Скачать весь прайс-лист на изделия из сибирской лиственницы Вы можете <a href="#" title="">здесь</a></span>
+			</div>
+		</div>
+
+		<!-- photos -->
+		<h3>Фотографии интерьеров с применением евровагонки из лиственницы</h3>
+		<div class="photos">
+
+			<div class="item">
+				<div class="thumbnail">
+					<a rel="photo_group" href="images/tmp_3.jpg" title=""><img src="images/tmp_3.jpg" width="152" height="114" alt="" /></a>
+				</div>
+				<a rel="photo_group" href="images/tmp_3.jpg" title="" class="zoom">Увеличить</a>
+			</div>
+
+			<div class="item">
+				<div class="thumbnail">
+					<a rel="photo_group" href="images/tmp_3.jpg" title=""><img src="images/tmp_3.jpg" width="152" height="114" alt="" /></a>
+				</div>
+				<a rel="photo_group" href="images/tmp_3.jpg" title="" class="zoom">Увеличить</a>
+			</div>
+
+			<div class="item">
+				<div class="thumbnail">
+					<a rel="photo_group" href="images/tmp_3.jpg" title=""><img src="images/tmp_3.jpg" width="152" height="114" alt="" /></a>
+				</div>
+				<a rel="photo_group" href="images/tmp_3.jpg" title="" class="zoom">Увеличить</a>
+			</div>
+
+			<div class="item">
+				<div class="thumbnail">
+					<a rel="photo_group" href="images/tmp_3.jpg" title=""><img src="images/tmp_3.jpg" width="152" height="114" alt="" /></a>
+				</div>
+				<a rel="photo_group" href="images/tmp_3.jpg" title="" class="zoom">Увеличить</a>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+	<div class="wrapper">
+		<p>&copy; 2011 Listvennica.ru - пиломатериалы из<br />
+		 лиственницы и не только.Использование<br />
+		материалов сайта только с письменного<br />
+		 разрешения.карта сайта</p>
+
+		<p>Наш адрес:  г. Москва ул.Пражская 0<br />
+		Наши телефоны : 8(495) 000 00 00 , 8 (495) 000 00 00<br />
+		E-mail: listvennica@mail.ru</p>
+
+		<div class="counters">
+			<a href="#" title=""><img src="images/tmp_2.gif" width="31" height="31" alt="" /></a>
+		</div>
+	</div>
+</div>
+</body>
+</html>

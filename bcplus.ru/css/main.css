@@ -1,0 +1,131 @@
+/* reset */
+html, body {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border: 0 none;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+}
+ul, li { padding: 0; margin: 0; list-style-type: none; list-style-position: inside; }
+h1, h2, h3, h4, h5, h6 { margin: 0 !important; }
+
+/* css begin */
+html, body { height:100%; }
+body {
+	font-family: Trebuchet MS, Arial, Tahoma, sans-serif;
+	font-size: 13px;
+	color: #333;
+	background: #fff;
+	width: 100%;
+	min-width: 1000px;
+}
+
+#wrap {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+a { color: #529977 }
+a:hover { color: #000 }
+
+/* header */
+.topnav { padding: 8px 0; background: #343434; overflow: hidden; }
+	.topnav-wrapper { width: 1000px; margin: 0 auto; }
+	.topnav li { float: left; margin-right: 40px; padding-left: 15px; background: url(../images/tnl.png) no-repeat 0 8px; }
+	.topnav li a { color: #fff; font-size: 11px; }
+	.topnav li a:hover, .bottommenu li.current_page_item a { color: #84d4ae; }
+
+/* header */
+.header { height: 158px; }
+	.header-wrapper { width: 1000px; margin: 0 auto; }
+	.header .logo { float: left; margin: 25px 0 0 0; }
+
+	.header .mainmenu { float: right; margin: 28px 0 25px 0; }
+		.header .mainmenu-title { float: left; margin: 10px 20px 0 0; font-size: 24px; }
+		.header .mainmenu-title span { color: #818181; }
+		.header .mainmenu a { padding: 10px 15px; text-decoration: none; }
+
+		.header-contact { float: right; text-align: right; }
+		.header-email { padding-right: 25px; border-right: 1px solid #e5e5e5; }
+		.header-phone { clear: right; margin-left: 20px; }
+			.header-contact-title { padding-right: 38px; color: #000; text-decoration: none; font-size: 24px; }
+			.header-contact-title span { color: #529977; }
+			.header-contact small { font-size: 10px; text-transform: uppercase; }
+
+			.header-email .header-contact-title { background: url(../images/header-email.png) no-repeat 100% 3px; }
+			.header-phone .header-contact-title { background: url(../images/header-phone.png) no-repeat 100% 2px; }
+
+/* middle */
+.middle { clear: both; height: 350px; background: url(../images/middle-bg.png) repeat-x #e5eae6;}
+	.middle-wrapper { width: 1000px; margin: 0 auto; padding: 17px 0; }
+		.middle-wrapper .hr { margin: 15px 0; height: 1px; background: #dadbd4; }
+
+	.middle-item { display: inline-block; vertical-align: top; padding: 15px; width: 298px; border: 1px solid transparent; background: url(../images/middle-hover.png) repeat-x 0 -999px; border-radius: 5px; }
+	.middle-item:hover { background-position: 0 0; background-color: #e5e6e3; border: 1px solid #dadbd4; }
+		.middle-item-title { font-size: 16px; color: #000; font-weight: bold; }
+
+		.middle-item-icon { float: left; width: 100px; }
+			.middle-item-cost { font-size: 16px; font-weight: bold; }
+				.middle-item-cost small { font-size: 12px; font-weight: normal; }
+			.middle-item-icon .r { margin: -3px 0 0 0; }
+
+		.middle-item-description { overflow: hidden; }
+			.middle-item-description p { color: #999; margin: 10px 0; }
+			.middle-item-description .btn { text-decoration: none; font-weight: bold; }
+
+
+/* content */
+.content {  }
+
+/* columns */
+.columns { width: 1000px; margin: 0 auto; padding: 20px 0; }
+	.columns .box-title { font-size: 20px; font-weight: normal; }
+	.columns hr { margin: 15px 0; height: 9px; background: url(../images/hr.png) no-repeat 50% 0; border: 0; }
+
+.column-left { float: left; width: 485px; padding-right: 15px; }
+	#slider li { width: 485px; height: 180px; overflow: hidden; }
+		#slider li img { margin: 10px 10px 10px 0; border: 1px solid #bababa; }
+
+	.news { margin: 20px 0; }
+		.news-item { padding: 20px 0 15px 0; border-bottom: 1px solid #e1e1e1; }
+		.news-date { color: #999; }
+		.news .more { float: right; margin: -18px 0 0 0; }
+
+		.news-nav { margin: 15px 0 0 0; }
+			.news-nav a { text-decoration: none; }
+
+.column-right { float: right; width: 485px; padding-left: 15px; }
+	.column-right p { margin: 15px 0; line-height: 140%; text-indent: 15px; }
+
+/* footer */
+#footer {
+	position: relative;
+	margin-top: -90px;
+	height: 90px;
+	width: 100%;
+	background: #343434;
+	color: #fff;
+	font-size: 11px;
+}
+#footer a { color: #fff; }
+#footer a:hover { color: #84d4ae; }
+
+.footer-wrapper { width: 1000px; margin: 0 auto; padding: 15px 0 0 0; }
+	
+	.footer-contacts { float: left; line-height: 180%; }
+
+	.bottommenu { float: right; }
+		.bottommenu li { float: left; margin-right: 40px; padding-left: 15px; background: url(../images/tnl.png) no-repeat 0 8px;  }
+		.bottommenu li a { color: #fff; }
+		.bottommenu li a:hover, .bottommenu li.current_page_item a { color: #84d4ae; }
+
+.footer_blank {	clear: both; height: 110px; }

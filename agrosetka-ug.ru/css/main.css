@@ -1,0 +1,163 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border: 0 none;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img { border:0 none; }
+table { border-collapse: collapse; border-spacing: 0; }
+ol, ul { list-style-image: none; list-style-position: outside; list-style-type: none; }
+q:before, q:after, blockquote:before, blockquote:after { content:""; }
+
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('../fonts/arialn-webfont.eot');
+    src: url('../fonts/arialn-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/arialn-webfont.woff') format('woff'),
+         url('../fonts/arialn-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* css begin */
+html, body { height:100%; }
+body {
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 12px;
+	color: #69614a;
+	background: url(../images/body-bg.png);
+	width: 100%;
+	min-width: 1260px;
+}
+
+/* content */
+#wrap {
+	position: relative;
+	width: 1258px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+    border-left: 1px solid #aaa598;
+    border-right: 1px solid #aaa598;
+}
+
+a { color: #3399ff; }
+
+/* header */
+.header { position: relative; height: 460px; background: url(../images/header-bg.jpg) no-repeat; }
+    .header .logo { padding: 25px 0 0 0; text-align: center; }
+
+    .header .contacts { position: absolute; top: 17px; right: 34px; width: 184px; height: 73px; padding: 4px 0 0 16px; overflow: hidden; font-family: 'Arial Narrow', sans-serif; font-size: 18px; background: url(../images/header-contacts.png) no-repeat; }
+        .header .contacts .phone { color: #3a6309; padding: 0 0 0 30px; line-height: 120%; background: url(../images/header-phone.png) no-repeat 0 4px; }
+        .header .contacts .email { padding: 2px 0 2px 30px; line-height: 120%; background: url(../images/header-email.png) no-repeat 0 4px; }
+            .header .contacts .email a { color: #69614a; text-decoration: none; }
+
+    .header .booble { position: absolute; height: 68px; white-space: nowrap; }
+        .header .booble .title { font-family: 'Arial Narrow', sans-serif; font-weight: bold; font-size: 14px; color: #3a6309; }
+        .header .booble a:hover { color: #3a6309 }
+        .header .b1 { top: 294px; left: 20px; padding: 26px 5px 0 10px; height: 42px; background: url(../images/booble-2.png) no-repeat; }
+        .header .b2 { top: 163px; left: 258px; padding: 7px 5px 0 10px; height: 63px; background: url(../images/booble-1.png) no-repeat; }
+        .header .b3 { top: 230px; left: 525px; padding: 7px 5px 0 10px; height: 63px; background: url(../images/booble-1.png) no-repeat; }
+        .header .b4 { top: 163px; left: 797px; padding: 7px 5px 0 10px; height: 63px; background: url(../images/booble-1.png) no-repeat; }
+        .header .b5 { top: 230px; right: 50px; padding: 7px 0 0 10px; height: 63px; background: url(../images/booble-3.png) no-repeat; }
+        .header .close { position: absolute; width: 10px; height: 68px; }
+        .header .b1 .close { top: 0; right: -10px; background: url(../images/booble-2.png) no-repeat 100% 0; }
+        .header .b2 .close { top: 0; right: -10px; background: url(../images/booble-1.png) no-repeat 100% 0; }
+        .header .b3 .close { top: 0; right: -10px; background: url(../images/booble-1.png) no-repeat 100% 0; }
+        .header .b4 .close { top: 0; right: -10px; background: url(../images/booble-1.png) no-repeat 100% 0; }
+        .header .b5 .close { top: 0; right: -30px; width: 30px; background: url(../images/booble-3.png) no-repeat 100% 0; }
+
+    .topmenu { margin: 255px 0 0 0; padding: 0 30px; }
+        .topmenu ul { height: 30px; padding: 0 0 38px 0; background: url(../images/topmenu-bg.png) repeat-x 0 100%; }
+        .topmenu li { position: relative; float: left; padding: 0 48px 0 48px; font-family: 'Arial Narrow', sans-serif; line-height: 130%; background: url(../images/topmenu-spacer.png) no-repeat 0 15px; }
+        .topmenu li:first-child { background: none }
+            .topmenu li span { display: block; text-align: right; font-size: 14px; color: #958b70; }
+            .topmenu li a { font-size: 18px; color: #69614a; text-decoration: none; }
+            .topmenu li a:hover { color: #3a6309; }
+
+        .topmenu li ul { display: none; position: absolute; left: 50px; top: 35px; z-index: 150; height: auto; padding: 7px 0; border: 1px solid #a29a86; border-radius: 7px; background: url(../images/submenu-bg.png); }
+        .topmenu li:hover ul { display: block; }
+            .topmenu li li { float: none; white-space: nowrap; padding: 5px 25px; background: url(../images/li.png) no-repeat 100% 50%; padding: 5px 30px 5px 15px; }
+            .topmenu li li:first-child { background: url(../images/li.png) no-repeat 100% 50%; }
+            .topmenu li li a { display: inline; padding: 0 !important; text-transform: none; text-decoration: underline; text-shadow: none; background: none; border-radius: 0; border: 0; font-family: Arial, sans-serif; font-size: 14px; color: #69614a; }
+            .topmenu li li a:hover, .topmenu li li:hover a { background: none; border: 0; text-shadow: none; color: #fff; }
+            .topmenu li li:hover { background-color: #69614a; }
+            .topmenu li li span { display: inline; margin-right: 5px; }
+
+            .topmenu li li ul { display: none !important; left: 100%; top: -2px; }
+            .topmenu li li:hover ul { display: block !important; }
+                .topmenu li li li { }
+                .topmenu li li li:hover { }
+                .topmenu li li li a { font-size: 12px; color: #69614a !important; }
+                .topmenu li li li:hover a, .topmenu li li li a:hover { color: #fff !important; }
+
+/* aside */
+.aside { float: left; width: 245px; margin: 0 55px 0 50px; }
+    .aside .box-title { position: relative; z-index: 100; width: 327px; height: 33px; margin: 0 0 -10px -40px; padding: 10px 0 0 0; overflow: hidden; text-align: center; color: #fff; font-family: 'Arial Narrow', sans-serif; font-size: 18px; font-weight: bold; text-shadow: 1px 1px 0 #467112; background: url(../images/aside-ribbon.png) no-repeat; }
+
+    .aside .actions { position: relative; top: 0px; z-index: 50; }
+        .aside .actions .wrapper { padding: 0 22px; background: url(../images/aside-actions.png); }
+
+        .aside .actions .item { padding: 15px 0 10px 0; text-align: center; border-bottom: 1px dotted #69614a; }
+        .aside .actions .last { border: 0; }
+            .aside .actions .title { font-family: 'Arial Narrow', sans-serif; font-size: 14px; color: #3a6309; font-weight: bold; text-decoration: none; }
+            .aside .actions .thumbnail { margin: 10px 0; }
+            .aside .actions .more { display: block; margin: 10px 0 0 0; padding: 3px 0 0 0; width: 85px; height: 19px; text-align: center; font-size: 11px; text-decoration: none; color: #fff; background: url(../images/more.png) no-repeat; }
+            .aside .actions .more:hover { background-position: 0 -22px; }
+
+    .aside .news { margin: 15px 0 0 0; }
+        .aside .news .item { padding: 15px 0 10px 0; border-bottom: 1px dotted #69614a; }
+            .aside .news .date { float: left; margin: 0 10px 0 0; }
+                .aside .news .day { display: block; margin-bottom: 3px; padding: 5px 7px; text-align: center; font-weight: bold; font-size: 18px; color: #fff; background: #aea693; border-radius: 5px; }
+
+            .aside .news .description { overflow: hidden; }
+                .aside .news .title { color: #3a6309; }
+                .aside .news p a { text-decoration: none; }
+
+            .aside .news .more { float: right; font-size: 11px; margin: 5px 0; }
+
+/* content */
+.content { float: left; width: 900px; }
+    .content h1.page-title { display: inline-block; min-width: 265px; font-size: 18px; padding: 10px 0 0 0; margin: 0 0 0 25px; border-top: 5px solid #528218; text-transform: uppercase; color: #5a792e; }
+    .content h2.page-title { display: inline-block; font-size: 16px; padding: 10px 0 0 0; border-top: 5px solid #528218; text-transform: uppercase; color: #5a792e; }
+    .content h3.page-title { display: inline-block; font-size: 14px; padding: 10px 0 0 0; border-top: 5px solid #528218; text-transform: uppercase; color: #5a792e; }
+    .content h4.page-title { display: inline-block; font-size: 12px; padding: 10px 0 0 0; border-top: 5px solid #528218; text-transform: uppercase; color: #5a792e; }
+    .content h5.page-title { display: inline-block; font-size: 10px; padding: 10px 0 0 0; border-top: 5px solid #528218; text-transform: uppercase; color: #5a792e; }
+
+/* catalog */
+.catalog { }
+    .catalog .item { margin: 20px 0; padding: 0 4px 0 6px; border-left: 1px dotted #69614a; display: inline-block; vertical-align: top; width: 285px; overflow: hidden; }
+    .catalog .first-in-line { padding-left: 0; border: 0; }
+    .catalog .last-in-line { padding-right: 0; }
+        .catalog .item .thumbnail { padding: 7px 0 0 8px; width: 277px; height: 144px; background: url(../images/catalog-view.png) no-repeat; }
+        .catalog .item p { padding: 7px 5px; }
+        .catalog .item .cost { float: left; display: inline-block; font-size: 14px; color: #fff; padding: 5px 10px; border-radius: 5px; background: #60991c; }
+        .catalog .item .more { float: right; display: block; margin: 4px 0 0 0; padding: 3px 0 0 0; width: 85px; height: 19px; text-align: center; font-size: 11px; text-decoration: none; color: #fff; background: url(../images/more.png) no-repeat; }
+        .catalog .item .more:hover { background-position: 0 -22px; }
+
+/* footer */
+#footer {
+	position: relative;
+	margin-top: -120px;
+	height: 120px;
+	width: 100%;
+    background: url(../images/footer-bg.png) no-repeat 50% 100%;
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 13px;
+}
+
+#footer .wrapper { margin: 0 auto; width: 1200px; padding: 25px 0 0 0; background: url(../images/topmenu-bg.png) repeat-x; }
+
+#footer .contacts { float: left; width: 420px; margin-right: 80px; }
+#footer .phones { float: left; width: 110px; }
+#footer .counters { float: right; margin: 10px 0 0 0; }
+
+.footer_blank {	clear: both; height: 140px; }

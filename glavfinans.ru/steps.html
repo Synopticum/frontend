@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+
+        <link href="js/jquery-ui/ui-lightness/jquery-ui-1.10.1.custom.css" rel="stylesheet">
+        <script src="js/jquery-ui/jquery-ui-1.10.1.custom.min.js"></script>
+
+        <script src="js/jquery.selectbox/jquery.selectbox-0.2.min.js"></script>
+        <link rel="stylesheet" href="js/jquery.selectbox/jquery.selectbox.css">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+
+    </head>
+    <body>
+        <div id="main">
+            <header>
+                <div class="header-wrapper">
+                    <a href="" title=""><img src="images/header-logo.png" alt="" class="header-logo" /></a>
+
+                    <div class="header-phone">
+                        Бесплатная горячая линия <span class="header-phone-number">8-800-555-00-00</span>
+                    </div>
+
+                    <!-- login form -->
+                    <div class="header-login">
+                        <div class="header-login-wrapper">
+                            <a href="" title="" id="not-logged-in"><span>Войти</span></a>
+
+                            <div class="header-login-dropdown">
+                                <div class="header-login-dropdown-top"></div>
+
+                                <div class="header-login-dropdown-wrapper">
+                                    <div>Вход для клиентов:</div>
+
+                                    <form action="">
+                                        <input type="text" id="lt1" class="header-login-textbox" value="Телефон" /><br />
+                                        <input type="text" id="lt2" class="header-login-textbox" value="Пароль" />
+
+                                        <input type="submit" id="lt3" class="button" value="Войти" />
+
+                                        <div class="header-login-dropdown-links">
+                                            <a href="">Зарегистрироваться</a><br />
+                                            <a href="">Забыли пароль?</a>
+                                        </div>
+                                    </form>
+                                </div>    
+
+                                <div class="header-login-dropdown-bottom"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- main menu -->
+                    <div class="header-menu">
+                        <ul>
+                            <li class="active"><a href="" title="">Главная</a></li>
+                            <li><a href="" title="">Как это работает</a></li>
+                            <li><a href="" title="">Требования к заемщику</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- slogan -->
+                    <div class="header-slogan">
+                        Онлайн займы до зарплаты.
+                    </div>
+                </div>
+            </header>
+
+            <div id="wrap">
+                <div class="page">
+                    <h1>Как это работает?</h1>
+
+                    <div class="steps step3"></div>
+
+                    <!-- step 1 -->
+                    <div class="box-wide" style="display: none">
+                        <form action="">
+                        <div class="step-column-left">
+                            <table>
+                                <tr>
+                                    <td><label for="st1-1">Фамилия:</label></td>
+                                    <td><input type="text" value="Иванов" id="st1-1" class="textbox" /></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label for="st1-2">Имя:</label></td>
+                                    <td><input type="text" value="Иван" id="st1-2" class="textbox" /></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label for="st1-3">Отчество:</label></td>
+                                    <td><input type="text" value="Иванович" id="st1-3" class="textbox" /></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="box-wide-notice">* Все поля обязательны для заполнения.</div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="step-column-right">
+                            <table>
+                                <tr>
+                                    <td colspan="2">
+                                        <label>Серия: <input type="text" value="0000" id="st1-4" class="textbox" /></label>
+                                        <label>Номер: <input type="text" value="000000" id="st1-5" class="textbox" /></label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="2">
+                                        <label>Код подразделения:
+                                        <input type="text" value="000-000" id="st1-6" class="textbox" /></label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label>Кем выдан:
+                                        <textarea id="st1-7">отдел. № 1 УФМС России по г. Москве и Московской области в Центральном районе г. Москва.</textarea></label>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><label>Дата выдачи: <input type="text" value="дд.мм.гггг" id="st1-8" class="textbox" /></label>
+                                    <input type="button" value="Далее" id="st1-9" class="button" /></td>
+                                </tr>
+                            </table>
+                        </div>
+                        </form>
+
+                        <div class="cleaner"></div>
+                    </div>   
+
+                    <!-- step 2 -->
+                    <div class="box-wide" style="display: none">
+                        <form action="">
+                        <div class="step-column-left">
+                            <table>
+                                <tr>
+                                    <td><label>Дата рождения: <input type="text" value="дд.мм.гггг" id="st2-1" class="textbox" /></label></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label>Место рождения: <input type="text" value="г. Москва" id="st2-2" class="textbox" /></label></td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label>Пол:</label>
+                                        <div class="radioset" style="margin-left: 12px">
+                                            <input type="radio" id="radio1" name="radio" /><label for="radio1">Мужской</label>
+                                            <input type="radio" id="radio2" name="radio" checked="checked" /><label for="radio2">Женский</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                        <div class="step-column-right">
+                            <table>
+                                <tr>
+                                    <td><label for="st2-3">Семейное положение:</label></td>
+                                    <td class="text-right option1">
+                                        <select class="selectbox" id="st2-3">
+                                            <option>Холост</option>
+                                            <option>Женат</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label for="st2-4">Условия<br />проживания:</label></td>
+                                    <td class="text-right option2">
+                                        <select class="selectbox" id="st2-4">
+                                            <option>Собственное жилье</option>
+                                            <option>Арендованное жилье</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label for="st2-5">Количество детей:</label></td>
+                                    <td class="text-right option3">
+                                        <select class="selectbox" id="vehicle_id">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="box-wide-margin"></div>
+
+                        <div class="step2-submit">
+                            <input type="button" value="Назад" id="st2-6" class="button" />
+                            <input type="button" value="Далее" id="st2-7" class="button" />
+                        </div>
+
+                        <div class="box-wide-notice">
+                            Все поля обязательны для заполнения. <br />
+                            Если вы ошиблись -  вернитесь на шаг назад и перепроверьте свои данные.
+                        </div>
+                        </form>
+
+                        <div class="cleaner"></div>
+                    </div>
+
+                    <!-- step 3 -->
+                    <div class="box-wide">
+                        <form action="">
+                        <div class="step-column-wide">
+                            <table>
+                                <tr>
+                                    <td width="50%"><label>Место работы: <input type="text" id="st3-1" class="textbox" value="ООО Мосстрой" /></label></td>
+                                    <td width="50%" class="text-right"><label>Рабочий телефон: <input type="text" id="st3-2" class="textbox" value="(495) 000-00-00" /></label></td>
+                                </tr>
+                                <tr>
+                                    <td width="50%" ><label>Должность: <input type="text" id="st3-3" class="textbox" value="Водитель" /></label></td>
+                                    <td width="50%" class="text-right"><label>ФИО начальника: <input type="text" id="st3-4" class="textbox" value="Иванов Дмитрий Васильевич" /></label></td>
+                                </tr>
+                            </table>
+
+                            <div class="box-wide-hr"></div>
+
+                            <table>
+                                <tr>
+                                    <td width="50%"><label>ФИО поручителя: <input type="text" id="st3-5" class="textbox" value="Иванов Дмитрий Васильевич" /></label></td>
+                                    <td width="50%" class="text-right"><label>Телефон: <input type="text" id="st3-6" class="textbox" value="8 (900) 000-00-00" /></label></td>
+                                </tr>
+                                <tr>
+                                    <td width="50%" ><label>ФИО поручителя: <input type="text" id="st3-7" class="textbox" value="Иванов Дмитрий Васильевич" /></label></td>
+                                    <td width="50%" class="text-right"><label>Телефон: <input type="text" id="st3-8" class="textbox" value="8 (900) 000-00-00" /></label></td>
+                                </tr>
+                            </table>
+
+                            <div class="box-wide-hr"></div>
+
+                            <table>
+                                <tr>
+                                    <td class="text-center"><input type="checkbox" id="check" class="check" /><label for="check" class="checkbox">Согласен на обработку персональных данных</label></td>
+                                </tr>
+                            </table>
+
+                            <div class="text-center" style="margin: 5px 0;">
+                                <input type="submit" class="button" id="" value="Получить деньги" />
+                            </div>
+
+                        </div>
+                        </form>
+                    </div>
+
+                    <!-- links -->
+                    <div class="home-links-wide">
+                        <a href="" title="">Пользовательское соглашение</a>
+                        <a href="" title="">Правила оказания услуг</a>
+                    </div>               
+                </div>
+
+                <div class="cleaner"></div>
+            </div>
+
+            <footer>
+                <div class="footer-wrapper">
+                    <span class="footer-title">Требования к заемщику</span>
+
+                    <div class="footer-expand">
+                        <div class="column-left">
+                            <p>Концепция микрокредитования была разработана профессором экономики Мухаммедом Юнусом. Профессор получил образование в США, но сам был родом из Бангладеш, одной из самых бедных стран мира. В 1974 году Юнус включился в борьбу с голодом в своей родной стране. В ходе борьбы он обнаружил, что даже самый незначительный кредит может сыграть решающую роль в выживании бедняков.</p>
+
+                            <p>Концепция микрокредитования была разработана профессором экономики Мухаммедом Юнусом. Профессор получил образование в США, но сам был родом из Бангладеш, одной из самых бедных стран мира. В 1974 году Юнус включился в борьбу с голодом в своей родной стране. В ходе борьбы он обнаружил, что даже самый незначительный кредит может сыграть решающую роль в выживании бедняков.</p>
+                        </div>
+
+                        <div class="column-right">
+                            <p>Концепция микрокредитования была разработана профессором экономики Мухаммедом Юнусом. Профессор получил образование в США, но сам был родом из Бангладеш, одной из самых бедных стран мира. В 1974 году Юнус включился в борьбу с голодом в своей родной стране. В ходе борьбы он обнаружил, что даже самый незначительный кредит может сыграть решающую роль в выживании бедняков.</p>
+
+                            <p>Концепция микрокредитования была разработана профессором экономики Мухаммедом Юнусом. Профессор получил образование в США, но сам был родом из Бангладеш, одной из самых бедных стран мира. В 1974 году Юнус включился в борьбу с голодом в своей родной стране. В ходе борьбы он обнаружил, что даже самый незначительный кредит может сыграть решающую роль в выживании бедняков.</p>
+                        </div>
+                    </div>
+
+                    <a href="javascript:void(0);" id="footer-toggle"></a>
+
+                    <hr />
+
+                    <div class="footer-copyright">
+                        &copy; Главфинанс, 2012-2013.  
+                    </div>
+
+                    <div class="footer-phone">
+                        Бесплатная горячая линия &nbsp; 8-800-555-00-00
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/call.js"></script>
+    </body>
+</html>

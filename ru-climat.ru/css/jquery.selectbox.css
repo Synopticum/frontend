@@ -1,0 +1,82 @@
+@CHARSET "UTF-8";
+
+.jquery-selectbox {
+	position: relative;
+	height: 16px;
+	width: 215px !important;
+	z-index: 0;
+	float: left;
+	display: inline;
+	margin: 4px 4px 4px 0;
+	font-family: Arial, Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: italic;
+	color: #666;
+	padding: 0;
+	background-image: url("../images/bg-TextField.gif");
+}
+.jquery-selectbox.selecthover {
+	border-color: #9F7627;
+	background-color: #eee;
+	background-image: url("../images/bg-TextFieldFocused.gif");
+	z-index: 700;
+}	
+.jquery-selectbox .jquery-selectbox-currentItem {
+	padding: 3px 20px 0px 3px;
+	white-space: nowrap;
+	display: block;
+	overflow: hidden;
+}
+
+.jquery-selectbox .jquery-selectbox-list {
+	display: none;
+	position: absolute;
+	top: 16px;
+	padding: 2px;
+	left: 0px;
+	background: #fff;
+	width: 215px !important;
+	height: 120px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	z-index: 1000;
+}
+.jquery-selectbox .jquery-selectbox-moreButton {
+	/*
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	*/
+	float: right;
+	background: url("../images/lay-selectMoreButton.gif");
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+.jquery-selectbox .jquery-selectbox-moreButton.morebuttonhover {
+	background: url("../images/lay-selectMoreButtonHover.gif");
+}
+
+.jquery-selectbox .jquery-selectbox-item.listelementhover {
+	background: #eee;
+	color: #333;
+}
+.jquery-selectbox .jquery-selectbox-item {
+	display: block;
+	cursor: default;
+}
+
+/** ERROR classes **/
+form .error .jquery-selectbox {
+	color: #d00;
+	border-color: #d00;
+	background-image: url("../images/bg-TextFieldError.gif");
+}
+
+
+.order-form .custom-selectbox, .order-form .custom-selectbox-small { display: inline-block; float: none; }
+	.order-form .jquery-selectbox { width: 260px !important; }
+	.order-form .custom-selectbox .jquery-selectbox-list { width: 256px !important; }
+
+.order-form .custom-selectbox-small .jquery-selectbox  { width: 65px !important; color: #333; margin: 5px; }
+	.order-form .custom-selectbox-small .jquery-selectbox-list { width: 61px !important; }

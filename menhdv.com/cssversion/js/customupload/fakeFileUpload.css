@@ -1,0 +1,170 @@
+﻿/* Required. Don't alter | START*/
+.fakeContainer {
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 31px;
+}
+.customuploadform .file {
+    position: absolute;
+    z-index: 3;
+    cursor: default;
+    border: 1px solid #c8c9cb;
+    margin: 0px;
+    padding: 0px;
+}
+.customuploadform .text {
+    position: absolute;
+    top: 0px;
+    cursor: default;
+    z-index: 1;
+    padding: 0 1px;
+    margin: 0px;/*This is must for animator to work correctly*/
+}
+.customuploadform .animator {
+    position: absolute;
+    z-index: 2;
+    cursor: default;
+    margin: 0px;
+}
+.customuploadform .button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: default;
+    z-index: 1;
+    margin: 0px;
+}
+/* Required. Don't alter | END*/
+
+/* For Demo purpose | START*/
+/* Demo 1 | START */
+.fakeContainer .button
+{
+    width: 108px;
+    background: url("../images/btn_mid.gif") repeat-x scroll left top #FFCC00;
+    border-color: #c8c9cb;
+    border-width: 1px;
+    border-style:solid;
+    -moz-border-radius:0.4em 0.4em 0.4em 0.4em;
+}
+.fakeContainer .button.hover
+{
+    -moz-box-shadow:0 0 2px 1px #4F93FF;
+    background:url("../images/btn_mid_hover.gif") repeat-x scroll left top #FFE57F;
+    border-color:#FFDA47 #A58400 #A58400 #FFDA47;
+    border-style:solid;
+    border-width:2px;
+}
+.fakeContainer .text
+{
+    left: 0px;
+    border:1px solid #c8c9cb;
+    padding: 6px 11px;
+    width: 178px;
+    border-radius: 4px;
+}
+.fakeContainer .text.hover
+{
+    background-color: #F6F6F6;
+}
+.fakeContainer .text.watermarkTextbox
+{
+    font-size: 12px;
+    font-family: "Trebuchet MS", sans-serif;
+    color: #000;
+}
+.fakeContainer .animator
+{
+    right: 205px;
+    background-color: #9c9d9f;
+    -moz-border-radius: 4px;
+    padding: 3px 7px;
+    margin: 0 -3px 0 0px;
+    font-size: 13px;
+    color: #fff;
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: normal;
+}
+/* Demo 1 | END */
+/* Demo 2 | START */
+.fakeContainer2 {
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 60px;
+}
+.fakeContainer2 .text
+{
+    border:2px solid #9c9d9f;
+    background-color: Beige;
+    padding-left:1px;
+    padding-right:1px;
+    width: 300px;
+}
+.fakeContainer2 .text.hover
+{
+    background-color: #FFF;
+}
+.fakeContainer2 .button
+{
+    top: 30px;
+    left: 0px;
+    width: 100px;
+}
+.fakeContainer2 .text.watermarkTextbox
+{
+    color: Green;
+}
+.fakeContainer2 .animator
+{
+    right: 100px;
+    background-color: Red;
+    -moz-border-radius: 4px;
+    padding: 0px 10px;
+}
+/* Demo 2 | END */
+/* Demo 6 | START */
+.fakeContainer6 {
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 31px;
+}
+.fakeContainer6 .text
+{
+    border:2px solid Red;
+    background-color: Beige;
+    padding-left:1px;
+    padding-right:1px;
+    width: 200px;
+    right : 0px;
+}
+.fakeContainer6 .button
+{
+    width: 108px;
+    background: url("../images/btn_mid.gif") repeat-x scroll left top #FFCC00;
+    border-color: #FFDA47 #A58400 #A58400 #FFDA47;
+    border-width: 2px;
+    border-style:solid;
+    -moz-border-radius:0.4em 0.4em 0.4em 0.4em;
+    top: 0px;
+    left: 0px;
+}
+.fakeContainer6 .button.hover
+{
+    -moz-box-shadow:0 0 2px 1px #4F93FF;
+    border-color:#FFDA47 #A58400 #A58400 #FFDA47;
+    border-style:solid;
+    border-width:2px;
+}
+.fakeContainer6 .animator
+{
+    right: 55px;
+    background-color: Red;
+    -moz-border-radius: 4px;
+    padding: 0px 10px;
+    font-size: 11px;
+}
+/* Demo 6 | END */
+/* For Demo purpose | END*/

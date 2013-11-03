@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/easySlider1.7.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+	    $("#slider").easySlider({
+		    auto: true,
+			continuous: true
+		});
+    });
+</script>
+
+<script src="js/cufon-yui.js" type="text/javascript"></script>
+<script src="js/SomeFamily_700-SomeFamily_italic_400.font.js" type="text/javascript"></script>
+<script type="text/javascript">
+    Cufon.replace(".topmenu a, .header .phone, .view-all a, .navigation .quote", {hover: true});
+</script>
+</head>
+<body>
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+        <a href="#" title=""><img src="images/logo.png" width="249" height="39" class="logo" alt="" /></a>
+        <div id="pattern"></div>
+
+        <div class="phone">
+            <span>(843)</span> 515-61-63
+        </div>
+
+        <!-- top menu -->
+        <div class="topmenu">
+            <ul>
+                <li><a href="#" title=""><span>Фотографии</span></a></li>
+                <li class="current_page_item"><a href="#" title=""><span>Услуги</span></a></li>
+                <li><a href="#" title=""><span>Цены</span></a></li>
+                <li><a href="#" title=""><span>Наши координаты</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- slider -->
+    <div class="slider">
+		<div id="slider">
+			<ul>
+				<li><img src="images/slider-1.jpg" width="917" height="406" alt="" /></li>
+				<li><img src="images/slider-1.jpg" width="917" height="406" alt="" /></li>
+				<li><img src="images/slider-1.jpg" width="917" height="406" alt="" /></li>
+				<li><img src="images/slider-1.jpg" width="917" height="406" alt="" /></li>
+			</ul>
+		</div>
+    </div>
+
+	<!-- content -->
+	<div class="content"></div>
+
+    <div class="navigation">
+        <div class="view-all">
+            <a href="#" title="">Просмотреть<br />весь список работ</a>
+        </div>
+
+        <div class="quote">
+            <span>&laquo;</span>Мы изготавливаем кованые изделия, решетки,<br />
+            заборы, ворота, ограждения, калитки,<br />
+            козырьки, мебель в Казани.<span>&raquo;</span>
+        </div>
+    </div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer"></div>
+</body>
+</html>

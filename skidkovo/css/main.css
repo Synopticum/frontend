@@ -1,0 +1,613 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border: 0 none;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img { border:0 none; }
+table { border-collapse: collapse; border-spacing: 0; }
+ol, ul { list-style-image: none; list-style-position: outside; list-style-type: none; }
+q:before, q:after, blockquote:before, blockquote:after { content:""; }
+
+/* css begin */
+html, body { height:100%; }
+body {
+	font-family: "Trebuchet MS", Tahoma, sans-serif;
+	font-size: 13px;
+	color: #000;
+	background: #fff;
+	width: 100%;
+	min-width: 1000px;
+    background: url(../images/body-bg-1.jpg) #faefe0;
+}
+
+/* navigation panel */
+#navpanel { height: 30px; background: #d43a72; }
+    #navpanel .wrapper { width: 910px; margin: 0 auto; padding: 4px 20px 0 20px; }
+
+    #navpanel a { color: #fff; }
+        #navpanel .select-city { float: left; text-decoration: none; padding: 0 13px 0 0; background: url(../images/navpanel-arrow.png) no-repeat 100% 7px; }
+            #navpanel .select-city span { border-bottom: 1px dotted #fff; }
+
+        #navpanel .userpanel { float: right; text-align: right; padding: 1px 0 0 0; font-size: 12px; color: #fff; }
+            #navpanel .userpanel .name { color: #fda6c6; margin-right: 15px; }
+            #navpanel .userpanel .count { color: #fda6c6; }
+            #navpanel .userpanel .spacer { display: inline-block; width: 1px; height: 15px; background: #e1779e; margin: 0 8px -4px 8px; }
+            #navpanel .userpanel .userlink { display: inline-block; height: 16px; margin: 0 2px -4px 2px; background: url(../images/userpanel-user.png) no-repeat; }
+                #navpanel .userpanel .u1 { width: 14px; background-position: 0 0; margin-left: 5px; }
+                #navpanel .userpanel .u2 { width: 11px; background-position: -23px 0; }
+                #navpanel .userpanel .u3 { width: 18px; background-position: -42px 0; }
+                #navpanel .userpanel .u4 { width: 16px; background-position: -69px 0; margin-right: 5px; }
+
+#wrap {
+	position: relative;
+	width: 950px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+/* header */
+.header { }
+    .header .logo { float: left; margin: 7px 0 15px -20px; }
+
+    .header-content { float: right; width: 725px; }
+
+    .header .select-city { float: left; margin: 20px 0 0 110px; font-size: 12px; font-weight: bold; color: #7c5c57; }
+
+    .header .userbox { float: right; margin: 13px 0 -33px 0; background: #cd3c76; color: #fff; padding: 12px 12px 8px 12px; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+        .header .userbox p { margin-bottom: 5px; }
+        .header .userbox a { color: #f5e9d9; font-size: 14px; }
+        .header .userbox a:hover { color: #fff; text-decoration: none; }
+            .header .userbox .cabinet { padding-left: 14px; margin-right: 30px; background: url(../images/userbox-cabinet.gif) no-repeat 0 5px; }
+            .header .userbox .cabinet:hover { background-position: 0 -36px;  }
+            .header .userbox .logout { padding-left: 14px; background: url(../images/userbox-logout.gif) no-repeat 0 5px; }
+            .header .userbox .logout:hover { background-position: 0 -36px;  }
+
+            .header .userbox .register { font-size: 12px; margin-left: 5px; }
+
+        .header .userbox input[type="text"], .header .userbox input[type="password"] {
+            width: 100px; font-family: "Trebuchet MS", sans-serif; font-size: 12px; padding: 0 6px; margin-bottom: 3px; color: #7c5c57; border: 0; background: #fff; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc);
+        }
+        .header .userbox input[type="password"] { margin-left: 10px; }
+        .header .userbox .enter { float: right; border: 0; background: none; font-family: "Trebuchet MS", sans-serif; font-size: 12px; color: #f5e9d9; text-decoration: underline; }
+        .header .userbox .enter:hover { color: #fff; }
+
+    .header .topmenu { float: right; margin: 50px 0 0 0; }
+        .header .topmenu li { position: relative; float: left; margin: 0 2px; }
+        .header .topmenu li a { display: inline-block; padding: 2px 10px; font-size: 17px; text-decoration: none; color: #d43a72; }
+        .header .topmenu li a:hover { color: #f18ab3; }
+        .header .topmenu .active a { color: #faefe0; background: #7c5c57; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+        .header .topmenu .active a:hover { color: #faefe0; }
+            .header .topmenu li small { font-size: 13px; }
+
+        .header .topmenu li ul { display: none; position: absolute; top: 25px; left: 5px; padding: 8px 0; background: #fff; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+        .header .topmenu li:hover ul { display: block; }
+            .header .topmenu li li { float: none; margin: 0; }
+            .header .topmenu li li a { display: block; font-size: 12px; color: #7c5c57; padding: 2px 15px; text-decoration: underline; }
+            .header .topmenu li li a:hover { background: #fbe3ed; color: #cd3c76; text-decoration: none; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; behavior: none; }
+
+    .header .slogan { clear: both; float: right; margin: 45px 30px 0 0; width: 585px; font-size: 16px; color: #624642; }
+
+    .grid-1 .userbox { margin-top: 97px; }
+    .grid-1 .select-city { margin-top: 105px; }
+    .grid-1 .topmenu { margin-top: 65px; }
+
+/* content */
+.content { position: relative; z-index: 50; clear: both; float: left; margin: 30px 0 0 0; width: 645px; }
+    img.alignleft { float: left; margin: 7px 0; }
+    img.alignright { float: right; margin: 7px 0; }
+
+/* offers */
+.offers { width: 643px; }
+    .offers .item { margin: 0 0 48px 0; }
+        .offers .title { position: relative; padding: 8px 20px 20px 20px; background: #d43a72; font-size: 22px; font-style: italic; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+            .offers .title a { color: #ffd0e1; text-decoration: none; }
+            .offers .title a:hover { text-decoration: underline; color: #fff; }
+            .offers .comments { position: absolute; right: 12px; bottom: 20px; padding: 0 0 0 22px; color: #fff !important; font-size: 13px; font-style: normal; background: url(../images/offers-comments.png) no-repeat 0 3px; }
+            .offers .comments:hover { text-decoration: underline; }
+
+            .offers-all .comments { position: static; padding: 0 0 0 15px; color: #ea9cb8 !important; font-size: 13px; font-style: normal; background: url(../images/offers-comment-all.gif) no-repeat 0 5px; }
+            .offers-all .comments:hover { background-position: 0 -34px; color: #fff !important; text-decoration: none !important; }
+
+        .offers .view { position: relative; z-index: 10; margin: -10px 0 0 0; height: 241px; overflow: hidden; }
+            .offers .view .bottom { position: absolute; left: 0; bottom: 0; width: 643px; height: 54px; padding: 8px 0 0 0; background: url(../images/offers-bottom-bg.png); }
+
+                .offers .view .time { float: left; margin: 0 0 0 15px; font-size: 14px; color: #443a3a; line-height: 150%; }
+                    .offers .view .time small { display: block; font-size: 12px; color: #000; margin-left: 2px; }
+                    .offers .view .time strong { font-size: 26px; font-weight: bold; }
+
+                .offers .view .buy { display: block; float: right; margin: 0 7px 0 0; width: 144px; height: 48px; text-indent: -9999px; overflow: hidden; background: url(../images/offers-buy-home.png) no-repeat; }
+                .offers .view .buy:hover { background-position: 0 100%; }
+
+                .offers-all .view .buy { display: block; float: right; margin: 6px 13px 0 5px; width: 134px; height: 34px; text-indent: -9999px; overflow: hidden; background: url(../images/offers-buy-all.png) no-repeat; }
+
+                .offers .view .left { float: right; height: 50px; margin: 5px 10px 0 0; overflow: hidden; font-size: 18px; line-height: 100%; color: #576606; }
+                    .offers .view .left span { display: inline-block; }
+                    .offers .view .left strong { float: right; margin: 9px 0 0 0; font-size: 44px; font-weight: normal;  }
+
+                .offers .view .purchased { float: right; height: 50px; margin: 5px 10px 0 0; overflow: hidden; font-size: 18px; line-height: 100%; color: #d43a72; }
+                    .offers .view .purchased span { display: inline-block; }
+                    .offers .view .purchased strong { float: right; margin: 9px 0 0 0; font-size: 44px; font-weight: normal;  }
+
+            .offers .cost { position: absolute; right: 95px; bottom: 90px; height: 42px; min-width: 150px; padding: 10px 25px 5px 15px; background: url(../images/offers-cost-bg.png); -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+                .offers .cost span { display: block; float: left; }
+
+                .offers .cost-normal { color: #543530; font-size: 14px; line-height: 140%; }
+                    .offers .cost-normal strong { font-weight: normal; font-size: 24px; letter-spacing: -1px; }
+                    .offers .cost-normal small { display: block; margin-left: 2px; color: #8a6a12; font-size: 11px; }
+
+                .offers .cost-discount { margin: 0 0 0 7px; color: #d43a72; font-size: 14px; line-height: 140%; padding: 0 15px 0 0; background: url(../images/offers-cost-discount.png) no-repeat 100% 9px; }
+                    .offers .cost-discount strong { font-weight: normal; font-size: 24px; letter-spacing: -1px; }
+                    .offers .cost-discount small { display: block; margin: 0 0 0 15px; color: #8a6a12; font-size: 11px;  }
+
+                    .offers .cost-discount-big strong { font-weight: normal; font-size: 24px; letter-spacing: -1px; color: #543530; }
+                        .offers .cost-discount-big strong .highlight { float: none; display: inline; color: #d43a72; }
+
+                .offers .cost-final { position: absolute; right: 12px; bottom: 90px; height: 42px; padding: 10px 15px 5px 15px; background: #d43a72; color: #fff; font-size: 14px; line-height: 140%; text-align: center; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+                    .offers .cost-final strong { font-weight: normal; font-size: 24px; letter-spacing: -1px; }
+                    .offers .cost-final small { display: block; margin-left: 2px; color: #f7b2cb; font-size: 11px; }
+
+            .offers .icons { position: absolute; right: 14px; bottom: 170px; }
+                .offers .icons img { margin: 0 0 0 7px; }
+
+            .offers-all .icons { bottom: 180px; }
+
+        .offers .view .cbl, .offers .view .cbr { position: absolute; left: 0; bottom: 0; width: 6px; height: 7px; background: url(../images/offers-corners.png) no-repeat; }
+        .offers .view .cbr { left: 637px; background-position: 100% 0; }
+
+/* text content */
+.text { margin: -20px 0 0 0; font-size: 16px; color: #7b5b56; }
+    .text p { margin: 15px 0; line-height: 120%; }
+    .text a { color: #cd3c76; }
+
+    .text h1, .text h2 { font-size: 30px; margin: 20px 0 -10px 0; color: #56423e; }
+
+    .text ul { margin: 15px 0; }
+        .text ul li { padding: 0 0 0 35px; background: url(../images/text-bullet.png) no-repeat 0 6px; }
+
+.cleaner { clear: both; }
+
+/* content wrapper */
+.content-wrapper { clear: both; background: #fff; padding: 30px; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+    .content-wrapper .text { float: left; width: 660px; }
+        .content-wrapper .text h1 { margin: 10px 0; }
+
+.rightside { float: right; width: 215px; }
+    .rightside .ask { display: block; width: 188px; height: 39px; padding: 25px 0 0 24px; font-size: 21px; color: #4e1209; text-decoration: none; background: url(../images/ask.png) no-repeat; }
+
+    .infobox { margin: 44px 0 0 -16px; width: 247px; height: 317px; background: #f2e8d9; padding: 10px 0; -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+        .infobox .icons { text-align: center; padding: 5px 0 9px 0 }
+
+        .infobox .cost { position: relative; overflow: hidden; height: 42px; min-width: 150px; padding: 10px 25px 5px 10px; background: #f7c02e; }
+            .infobox .cost span { display: block; float: left; }
+
+            .infobox .cost-normal { color: #543530; font-size: 14px; line-height: 140%; }
+                .infobox .cost-normal strong { font-weight: normal; font-size: 24px; letter-spacing: -1px; }
+                    .infobox .cost-normal small { display: block; margin-left: 2px; color: #8a6a12; font-size: 11px; }
+
+            .infobox .cost-discount { margin: 0 0 0 7px; color: #d43a72; font-size: 14px; line-height: 140%; padding: 0 15px 0 0; background: url(../images/offers-cost-discount.png) no-repeat 100% 9px; }
+                .infobox .cost-discount strong { font-weight: normal; font-size: 24px; letter-spacing: -1px; }
+                .infobox .cost-discount small { display: block; margin: 0 0 0 15px; color: #8a6a12; font-size: 11px;  }
+
+                .infobox .cost-discount-big strong { font-weight: normal; font-size: 24px; letter-spacing: -1px; color: #543530; }
+                    .infobox .cost-discount-big strong .highlight { float: none; display: inline; color: #d43a72; }
+
+                .infobox .cost-final { position: absolute; right: -7px; bottom: 0px; height: 42px; padding: 10px 13px 5px 5px; background: #d43a72; color: #fff; font-size: 14px; line-height: 140%; text-align: center; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+                    .infobox .cost-final strong { font-weight: normal; font-size: 24px; letter-spacing: -1px; }
+                    .infobox .cost-final small { display: block; margin-left: 2px; color: #f7b2cb; font-size: 11px; }
+
+        .infobox .coupons { overflow: hidden; padding-right: 7px; border-bottom: 1px solid #dfd1bd; }
+        .infobox .coupons .left { float: right; height: 40px; margin: 13px 10px 0 0; overflow: hidden; font-size: 12px; line-height: 100%; color: #576606; }
+            .infobox .coupons .left span { display: inline-block; margin-top: 4px; }
+            .infobox .coupons .left strong { float: right; margin: 9px 0 0 0; font-size: 36px; font-weight: normal;  }
+
+        .infobox .coupons .purchased { float: right; height: 45px; margin: 13px 10px 0 0; overflow: hidden; font-size: 12px; line-height: 100%; color: #d43a72; }
+            .infobox .coupons .purchased span { display: inline-block; margin-top: 4px; }
+            .infobox .coupons .purchased strong { float: right; margin: 9px 0 0 0; font-size: 36px; font-weight: normal;  }
+
+        .infobox .time { text-align: center; margin: 15px 0; font-size: 14px; color: #443a3a; line-height: 150%; }
+            .infobox .time small { text-align: center; display: block; font-size: 12px; color: #000; margin-left: 2px; }
+            .infobox .time strong { font-size: 26px; font-weight: bold; }
+
+        .infobox .nav { overflow: hidden; padding: 0 0 0; }
+        .infobox .buy { display: block; float: left; margin: 0 7px 0 15px; width: 147px; height: 48px; text-indent: -9999px; overflow: hidden; background: url(../images/infobox-buy-1.png) no-repeat; }
+        .infobox .buy:hover { background-position: 0 100%; }
+        .infobox .buy2 { display: block; float: right; margin: 0 14px 0 0px; width: 60px; height: 48px; text-indent: -9999px; overflow: hidden; background: url(../images/infobox-buy-2.png) no-repeat; }
+        .infobox .buy2:hover { background-position: 0 100%; }
+
+        /* infobox action */
+        .infobox-action { position: relative; }
+            #action { position: absolute; top: -48px; right: 0; width: 126px; height: 74px; background: url(../images/action.png) no-repeat; }
+
+            .infobox-action .cost { background: none; margin-top: 20px; }
+                .infobox-action .cost-normal { text-align: center; }
+                .infobox-action .cost-discount { margin-left: 0; }
+                .infobox-action .cost-final { position: static; float: left; padding-top: 0; text-align: left; }
+                .infobox-action .cost-normal strong { font-size: 18px; }
+                .infobox-action .cost-discount strong { font-size: 18px; }
+                .infobox-action .cost-final strong { font-size: 18px; }
+                .infobox-action .cost-normal small { color: #543530;}
+                .infobox-action .cost-discount { color: #d18816; }
+                .infobox-action .cost-final { background: none; color: #cd3c76; }
+                .infobox-action .cost-final small { color: #543530; }
+
+            .infobox-action .time { text-align: left; padding-left: 24px; margin-top: 30px; }
+                .infobox-action .time small { text-align: left; color: #666060; }
+
+            .infobox-action .buy3 { display: block; width: 222px; height: 34px; margin: 20px auto 0 auto; background: url(../images/button-buy-yellow.png) no-repeat; }
+            .infobox-action .buy3:hover { background-position: 0 100%; }
+
+            .coupons-smart { background: #dfd1bd; margin: 30px 0 0 0; padding: 10px 18px; font-size: 12px; overflow: hidden; }
+                .coupons-smart .wrapper { position: relative; width: 211px; height: 6px; margin: 0 auto;  background: url(../images/coupons-smart-bg.png) no-repeat; }
+                    .coupons-smart .wrapper .over { height: 6px; background: url(../images/coupons-smart-over.png) no-repeat; }
+                    #limit1, #limit2 { position: absolute; top: 0; width: 3px; height: 7px; background: #faefe0; }
+
+    /* social */
+    .rightside .social { margin: 30px 0 0 -16px; width: 247px; font-size: 18px; color: #4e1209; }
+        .rightside .social img { margin: 0 0 -5px 6px; }
+
+    /* comment */
+    .rightside .comment { position: relative; margin: 30px 0 30px -16px; width: 219px; padding: 13px; font-size: 18px; color: #4e1209; border: 1px solid #dfd1bd; -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+        .rightside .comment h5 { font-size: 18px; }
+        .rightside .comment .author { font-size: 12px; padding: 4px 0; margin: 20px 0 0 0; border-bottom: 1px solid #c3aea4; }
+        .rightside .comment .body { margin: 10px 0 15px 0; font-size: 14px; font-style: italic; color: #7b5b56; }
+        .rightside .comment .comment-this { color: #cd3c76; }
+        #comment-fix { position: absolute; left: 47px; bottom: -27px; width: 54px; height: 27px; background: url(../images/rightside-comment.gif) no-repeat; }
+
+    /* contacts */
+    .rightside .contacts { margin: 117px 0 0 -16px; width: 247px; color: #4e1209; }
+        .rightside .contacts h3 { font-size: 24px; }
+        .rightside .contacts .item { font-size: 12px; margin: 15px 0 25px 0; }
+            .rightside .contacts .count { float: left; margin: 5px 10px 0 0; width: 20px; height: 36px; text-align: center; color: #f7b7d1; font-size: 16px; font-weight: bold; background: url(../images/rightside-contacts-count.png) no-repeat; }
+            .rightside .contacts .body { overflow: hidden; line-height: 130%; }
+            .rightside .contacts .item strong { color: #cd3c76; }
+            .rightside .contacts .item .phone { color: #4e1209; }
+
+    .rightside .box { padding: 0px; margin-bottom: 45px; color: #513c38; }
+        .rightside .box h3 { font-size: 14px; }
+        .rightside .box p { margin: 6px 0 0 0; }
+        .rightside .box .big { margin: 12px 0 6px 0; font-size: 24px; }
+        .rightside .box a { color: #d43a72; }
+            .rightside .box .email { padding: 0; font-size: 12px; }
+            .rightside .box .icq { padding: 0 0 0 20px; background: url(../images/aside-icq.png) no-repeat 0 1px; }
+            .rightside .box .feedback { padding: 0 0 0 20px; background: url(../images/aside-feedback.png) no-repeat 0 1px; }
+
+        .rightside .gift { margin: 40px 0 0 0; }
+            .rightside .gift a { font-size: 18px; }
+
+    .rightside .contacts { padding-left: 17px; }
+
+    .rightside .payment {}
+        .rightside .payment ul { margin: 12px 0; overflow: hidden; }
+        .rightside .payment li { float: left; width: 49%; font-size: 11px; overflow: hidden; margin-bottom: 10px; }
+            .rightside .payment .icon { float: left; display: block; width: 34px; margin-right: 3px; }
+        .rightside .payment p img { margin-right: 4px; }
+
+    .rightside .socialsystems { margin: 20px 0; }
+        .rightside .socialsystems img { margin: 0 15px 15px 0px; }
+
+    /* balance */
+    .rightside .balance { padding: 12px; width: 222px; margin-left: -9px; background: #cd3c76; -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+        .rightside .balance .show { font-size: 24px; color: #f29ec0; }
+            .rightside .balance .show span { color: #fff; }
+            .rightside .balance .show small { color: #fff; font-size: 14px; }
+        .rightside .balance .go { color: #f4abc8; font-size: 12px; }
+        .rightside .balance .pay { cursor: pointer; display: block; width: 222px; height: 48px; border: 0; background: url(../images/cabinet-pay.png) no-repeat; overflow: hidden; text-indent: -9999px; }
+        .rightside .balance .pay:hover { background-position: 0 100%; }
+        .rightside .balance .textbox { margin-top: 10px; width: 202px; border: 1px solid #89083c; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+
+    /* invite */
+    .rightside .invite { padding: 12px; width: 222px; margin: 15px 0; margin-left: -9px; color: #4e1209; background: #faf4ea; -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+        .rightside .invite a { color: #cd3c76; }
+        .rightside .invite p { margin: 0 0 5px 0; }
+
+        .rightside .invite form { margin: 13px 0 0 0; }
+        .rightside .invite .textbox { border: 1px solid #c5bcb6; width: 202px; color: #c5bcb6; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+        .rightside .invite .textareabox { border: 1px solid #c5bcb6; width: 202px; height: 80px; padding: 5px 10px; color: #c5bcb6; font-family: "Trebuchet MS", sans-serif; font-size: 16px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+        .rightside .invite-submit { cursor: pointer; display: block; margin: 10px 0 0 0; width: 222px; height: 48px; border: 0; background: url(../images/invite.png) no-repeat; overflow: hidden; text-indent: -9999px; }
+        .rightside .invite-submit:hover { background-position: 0 100%; }
+/* tabs */
+.tabs { margin: 0 0 0 -15px; }
+
+.bigimage { position: relative; width: 655px; height: 338px; margin: 15px 0 0 0; }
+    .bigimage .ctl, .bigimage .ctr, .bigimage .cbl, .bigimage .cbr { position: absolute; width: 7px; height: 7px; background: url(../images/text-bigimage-corners.png) no-repeat; }
+    .bigimage .ctr { right: 0; top: 0; background-position: 100% 0; }
+    .bigimage .cbl { bottom: 0; left: 0; background-position: 0 100%; }
+    .bigimage .cbr { bottom: 0; right: 0; background-position: 100% 100%; }
+
+.tabs .switcher { margin: 25px 0; overflow: hidden; }
+    .tabs .switcher a { padding: 0 15px; display: inline-block; font-size: 18px; color: #cd3c76; padding: 3px 11px; margin-right: 4px; text-decoration: underline; }
+    .tabs .switcher a.active { color: #dfd7cd; text-decoration: none; background: #7c5c57; -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+
+    .tabs .motto-logo { float: left; margin: 0 24px 0 15px; }
+    .tabs h2 { font-size: 30px; }
+    .tabs .motto { font-size: 14px; font-style: italic; margin: 20px 0; }
+    .tabs p { overflow: hidden; margin: 0 15px; padding-right: 15px; position: relative; z-index: 150; }
+
+    #map { position: relative; padding: 92px 15px 100px 15px; margin: -70px 0 0 0; }
+        #map h3 { font-size: 24px; }
+        #map .wrapper { position: relative; z-index: 150; width: 606px; margin: 15px 0; padding: 10px; background: #f5eeea; }
+
+        #map #flora-1 { position: absolute; top: 0; right: 0; width: 291px; height: 238px; z-index: 100; background: url(../images/map-flora-1.png) no-repeat; }
+        #map #flora-2 { position: absolute; bottom: 0; left: 15px; width: 291px; height: 238px; z-index: 100; background: url(../images/map-flora-2.png) no-repeat; }
+
+.tab { /*overflow: hidden;*/ }
+    .short-about-action { float: left; width: 280px; }
+        .short-about-action h4 { font-size: 18px; }
+        .short-about-action ul { margin: 11px 0; }
+            .short-about-action li { font-size: 13px; margin-bottom: 2px; padding-left: 24px !important; background: url(../images/ok.png) no-repeat 0 1px !important; }
+
+    .terms { float: left; width: 310px; margin: 0 0 0 35px; }
+        .terms h4 { font-size: 18px; }
+        .terms .time { font-size: 12px; color: #4e1209; font-style: italic; margin: 16px 0; padding: 3px 10px; background: #f2e8d9; -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+        .terms ul { margin: 11px 0; }
+            .terms li { font-size: 13px; margin-bottom: 3px; padding-left: 24px !important; background: url(../images/ok2.png) no-repeat 0 4px !important; }
+
+/* action description */
+.action-description { clear: both; padding: 20px 0 0 0; }
+    .action-description .item { margin: 0 0 40px 0; }
+        .action-description .title { font-size: 18px; color: #cd3c76; text-decoration: none; border-bottom: 1px dashed #cd3c76; }
+        .action-description p { margin: 17px 0; font-size: 16px; color: #7b5b56; }
+        .action-description .video { margin: 17px 0; overflow: hidden; }
+            .action-description .video .wrapper { float: left; width: 624px; }
+            .action-description .video .go { display: block; float: left; margin: 96px 0 0 0; width: 241px; height: 211px; background: url(../images/action-description-go.png) no-repeat; }
+
+        .action-description .buy { display: block; margin: 17px 0; width: 387px; height: 48px; background: url(../images/action-description-buy.png) no-repeat; }
+        .action-description .buy:hover { background-position: 0 100%; }
+
+/* comments */
+.comments { padding: 0 10px; }
+    .comments .item { margin: 15px 0; }
+        .comments .item .meta { font-size: 12px; border-bottom: 1px solid #c3aea4; padding: 3px 2px; }
+            .comments .user .author { color: #be7300; }
+            .comments .admin .author { color: #cd3c76; }
+            .comments .delivery .author { color: #7526be; }
+            .comments .item .meta img { margin: 0 -5px -4px 0; }
+        .comments .item .body { font-size: 16px; color: #7b5b56; padding: 5px 2px 10px 2px; }
+        .comments .admin .body { color: #92556d; }
+        .comments .delivery .body { color: #9461a3; }
+        .comments .item .reply { font-size: 12px; }
+
+        .comments .item .item { margin-left: 30px; }
+        .comments .item .item .item .item { margin-left: 0; }
+
+.comments-form { position: relative; width: 625px; padding: 0 10px; margin-bottom: 40px; }
+    .comments-form h2 { position: relative; z-index: 999; font-size: 24px;  }
+    .comments-form label { position: relative; z-index: 999; margin: 35px 0 20px 0; display: block; font-size: 14px; color: #7d514b; text-indent: 11px; }
+    .comments-form textarea { width: 625px; margin: 5px 0; height: 135px; }
+
+    #comment-form-flowers { position: absolute; right: -107px; bottom: -30px; width: 505px; height: 346px; background: url(../images/comment-form-flowers.gif) no-repeat; }
+
+/* faq */
+.faq {  }
+    .faq .item { margin-bottom: 15px; }
+    .faq .question { display: inline-block; padding-left: 25px; background: url(../images/text-bullet.png) no-repeat 0 9px; font-size: 20px; color: #7b5b56; text-decoration: none; }
+        .faq .question span { border-bottom: 1px dashed #7b5b56; }
+        .faq .question:hover span { border: 0; }
+
+    .faq .answer { display: none; padding-left: 25px; background: url(../images/x.gif) no-repeat 0 6px; }
+
+.askquestion { margin: 50px 0 0 0; }
+    .askquestion h2 { margin-bottom: 15px; }
+    .askquestion p { font-size: 14px; margin-top: 30px; }
+
+    .askquestion .button-yellow { margin-top: 20px; cursor: pointer; }
+
+    .required { color: #d43a72; display: inline-block; vertical-align: top; }
+
+    .askquestion .big { width: 605px !important; }
+
+    table.contacts { margin: 20px 0; }
+        table.contacts th { font-size: 24px; padding: 5px 0; }
+
+
+/* cabinet */
+.text.cabinet { margin-left: -15px; }
+.rightside.cabinet { margin-right: 7px; }
+    .cabinet .nav { position: relative; overflow: hidden;  }
+        .cabinet .nav li { float: left; background: none; padding: 0; margin-right: 7px; }
+        .cabinet .nav a, .cabinet .nav span { padding: 0 15px; display: inline-block; font-size: 18px; color: #cd3c76; padding: 3px 11px; margin-right: 4px; text-decoration: underline; }
+        .cabinet .nav .active a { color: #dfd7cd; text-decoration: none; background: #7c5c57; -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+
+        .cabinet .nav .sub { clear: both; padding: 10px 0; overflow: hidden; }
+        .cabinet .nav .sub a { font-size: 16px; color: #56423e; }
+        .cabinet .nav .sub span { text-decoration: none; }
+
+    .cabinet-table { clear: both; margin: 20px 0; position: relative; }
+    .cabinet-table table { width: 100%; font-size: 12px; color: #7a4d46; }
+        .cabinet-table th { padding: 13px 25px; background: #e4dad8; border: 1px solid #fff; text-align: center; font-weight: bold; vertical-align: middle; white-space: nowrap; }
+
+        .cabinet-table .even td { padding: 13px 25px; background: #f9efe0; border: 1px solid #fff; }
+        .cabinet-table .odd td { padding: 13px 25px; background: #faf4ea; border: 1px solid #fff; }
+
+        .cabinet-table tfoot td { padding: 13px 25px; background: #e4dad8; border: 1px solid #fff; text-align: center; font-weight: bold; vertical-align: middle; white-space: nowrap; }
+
+        .cabinet-table .cost { white-space: nowrap; text-align: center; }
+        .cabinet-table .expires { padding: 13px 8px; }
+        .cabinet-table .date { padding: 13px 10px; }
+
+        .cabinet-table .first { border-left: 3px solid #e4dad8 !important; }
+        .cabinet-table th .first { border-left: 3px solid #e4dad8 !important; }
+        .cabinet-table .pink .first { border-left: 3px solid #f29ec0 !important; }
+        .cabinet-table .magenta .first { border-left: 3px solid #d99ef2 !important; }
+        .cabinet-table .blue .first { border-left: 3px solid #9ec6f2 !important; }
+        .cabinet-table .orange .first { border-left: 3px solid #f5bf70 !important; }
+
+        .cabinet-table .pink:hover td { background: #fce0ec; }
+        .cabinet-table .magenta:hover td { background: #f1e4f6; }
+        .cabinet-table .blue:hover td { background: #e1edfa; }
+        .cabinet-table .orange:hover td { background: #f9e3c3; }
+
+        /* popups */
+        .cabinet-table .view { position: relative; display: block; float: left; margin: 0 0 0 10px; width: 15px; height: 16px; background: url(../images/table-view.png) no-repeat; }
+            .cabinet-table .view .hint { position: absolute; top: -35px; left: -48px; z-index: 150; padding: 5px 0 0 22px; display: none; width: 83px; height: 41px; text-decoration: none; color: #a08984; background: url(../images/hint-small.png) no-repeat; }
+        .cabinet-table .gift { position: relative; display: block; float: left; margin: 0 10px; width: 15px; height: 16px; background: url(../images/table-gift.png) no-repeat; }
+            .cabinet-table .gift .hint { position: absolute; top: 10px; left: -73px; z-index: 150; padding: 18px 0 0 15px; display: none; width: 143px; height: 111px; text-decoration: none; color: #a08984; background: url(../images/hint-big.png) no-repeat; }
+            .cabinet-table .gift .hint p { margin: 3px 0; font-weight: bold; text-align: center; text-indent: -10px; }
+            .cabinet-table .gift .hint .textbox { width: 115px; font-size: 12px; margin: 3px 0; padding: 3px 8px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+        .cabinet-table .print { position: relative; display: block; float: left; width: 15px; height: 16px; background: url(../images/table-print.png) no-repeat; }
+            .cabinet-table .print .hint { position: absolute; top: -35px; left: -48px; z-index: 150; padding: 5px 0 0 22px; display: none; width: 83px; height: 41px; text-decoration: none; color: #a08984; background: url(../images/hint-small.png) no-repeat; }
+
+
+    .paginator { margin-left: 15px; overflow: hidden; }
+        .paginator ul { margin: 0; }
+        .paginator li { float: left; background: none !important; padding: 0 !important; margin-left: -9px; }
+        .paginator a { padding: 0 15px; display: inline-block; font-size: 18px; color: #cd3c76; padding: 3px 11px; margin-right: 4px; text-decoration: underline; }
+        .paginator .active a { color: #dfd7cd; text-decoration: none; background: #7c5c57; -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+
+    .paginator-small { }
+        .paginator-small li { margin-left: -5px; }
+        .paginator-small .prev { margin-right: 15px; }
+        .paginator-small .next { margin-left: 15px; }
+        .paginator-small a { font-size: 14px; padding: 2px 8px; }
+        .paginator-small a:hover { color: #ef97bb; }
+        .paginator-small .active a { color: #fff; background: #ffbf5c; }
+
+    .total { float: right; width: 245px; padding: 10px 0; background: #f9efe0; color: #9f8784; font-size: 16px; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+        .total table { width: 100%; }
+        .total td { padding: 4px 14px; }
+        .total .count { font-size: 18px; }
+
+.ctl, .ctr, .cbl, .cbr { position: absolute; left: 0; top: 0; width: 15px; height: 15px; background: url(../images/10-corners.png) no-repeat; }
+    .ctr { left: 100%; top: 0; margin-left: -15px; background-position: 100% 0; }
+    .cbl { left: 0; top: 100%; margin-top: -15px; background-position: 0 100%; }
+    .cbr { left: 100%; top: 100%; margin-top: -15px; margin-left: -15px; background-position: 100% 100%; }
+
+.notice { font-size: 12px; font-style: italic; padding: 0 20px; }
+
+/* user info */
+.userinfo { overflow: hidden; padding: 10px 0 0 10px; }
+    .userinfo label { display: block; margin: 0 0 10px 0; font-size: 18px; }
+    .userinfo .textbox { margin: 5px 0; width: 555px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+    .userinfo .short { width: 305px; }
+
+    .userinfo-submit { display: block; float: left; margin: 24px 12px 0 0 ; width: 181px; height: 48px; border: 0; cursor: pointer; background: url(../images/userinfo-save.png) no-repeat; }
+    .userinfo-submit:hover { background-position: 0 100%; }
+
+    .userinfo-cancel { display: block; float: left; margin: 24px 0 0 0 ; width: 159px; height: 48px; border: 0; cursor: pointer; background: url(../images/userinfo-cancel.png) no-repeat; }
+    .userinfo-cancel:hover { background-position: 0 100%; }
+
+/* tariff */
+.tariff { overflow: hidden; }
+    .tariff h2 { font-size: 20px; margin: 0 0 15px 10px; }
+        .tariff h2 span { font-size: 24px; color: #cd3c76; }
+    .tariff .box { float: left; width: 315px; margin-bottom: 15px; }
+    .tariff .box-left { clear: left; float: left; }
+    .tariff .box-right { float: right; }
+        .tariff .box h4 { font-size: 15px; margin-left: 10px; white-space: nowrap; }
+        .tariff .box .wrapper { margin: 8px 0 0 0; padding: 10px 20px; font-size: 15px; background: #faefe0; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+            .tariff .box .wrapper span { font-size: 18px; color: #cd3c76; }
+
+        .tariff .pink .wrapper { background: #cd3c76; color: #fff; font-size: 36px; }
+            .tariff .pink .wrapper small { font-size: 24px; }
+/* full */
+.full { clear: both; width: 922px; margin: 0 0 0 -16px; }
+    .full .coupons-sort { margin: -25px 0 0 0; padding: 0 0 0 0; overflow: hidden; }
+    .full .coupons-sort li { float: left; margin-left: 20px; }
+    .full .coupons-sort li a { display: block; padding: 0 0 0 18px; font-size: 18px; color: #56423e; }
+    .full .coupons-sort li a:hover { color: #fb88b6; }
+    .full .coupons-sort li span { font-size: 18px; color: #cd3c76; }
+
+    .full .coupons-sort .r1 a { background: url(../images/coupons-sort-r1.png) no-repeat 0 4px; }
+    .full .coupons-sort .r2 a { background: url(../images/coupons-sort-r2.png) no-repeat 0 4px; }
+    .full .coupons-sort .r3 a { background: url(../images/coupons-sort-r3.png) no-repeat 0 4px; }
+    .full .coupons-sort .r5 a { background: url(../images/coupons-sort-r5.png) no-repeat 0 4px; }
+
+/* aside */
+.aside { position: relative; z-index: 50; float: right; margin: 30px 0 0 0; width: 260px; }
+    .aside .box { padding: 15px; margin-bottom: 45px; background: url(../images/aside-box-bg.png); color: #513c38; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+        .aside .box h3 { font-size: 16px; font-style: italic; }
+        .aside .box p { margin: 12px 0 0 0; }
+        .aside .box .big { margin: 12px 0; font-size: 20px; }
+        .aside .box a { color: #d43a72; }
+            .aside .box .email { padding: 0 0 0 20px; background: url(../images/aside-email.png) no-repeat 0 3px; }
+            .aside .box .icq { padding: 0 0 0 20px; background: url(../images/aside-icq.png) no-repeat 0 1px; }
+            .aside .box .feedback { padding: 0 0 0 20px; background: url(../images/aside-feedback.png) no-repeat 0 1px; }
+
+    .aside .contacts { background: url(../images/aside-box-bg-contacts.png); }
+
+    .aside .payment {}
+        .aside .payment ul { margin: 12px 0; overflow: hidden; }
+        .aside .payment li { float: left; width: 49%; font-size: 11px; overflow: hidden; margin-bottom: 10px; }
+            .aside .payment .icon { float: left; display: block; width: 34px; margin-right: 3px; }
+        .aside .payment p img { margin-right: 4px; }
+
+        .aside .paymentsystems { margin: 20px 0; }
+            .aside .paymentsystems img { margin: 0 0 15px 15px; }
+
+    .aside .gift { background: url(../images/aside-box-bg-gifts.png); }
+        .aside .gift .title { width: 130px; margin: -20px 0 0 -15px; padding: 8px 115px 8px 15px; font-size: 17px; font-style: italic; line-height: 120%; background: url(../images/aside-title-gift.png) no-repeat 100% 100% #ffcf73; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+
+
+    .aside .light { background: none; border-radius: 0; overflow: hidden;  }
+        .aside .light h3 { font-style: normal; }
+
+        .aside .gift { margin-top: 20px; }
+          .aside .gift a { font-size: 18px; color: #d43a72; text-decoration: underline; }
+          .aside .gift a:hover { color: #f18ab3; text-decoration: none; }
+
+        .aside .contacts .big, .aside .contacts p { margin: 7px 0 0 0 }
+        .aside .contacts .big { font-size: 24px; }
+            .aside .contacts .email { font-size: 12px; padding: 0; background: none; }
+
+/* buttons */
+.button-yellow { border: 1px solid #dea303; color: #4e1209; padding: 1px 25px; font-size: 21px; background: url(../images/button-bg-yellow.gif) repeat-x 0 50% #fbde8e; font-family: "Trebuchet MS", sans-serif; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+
+/* forms */
+.textbox, .askquestion .textareabox { width: 280px; border: 1px solid #c2aaa7; color: #7b5b56; margin-bottom: 10px; padding: 5px 10px; font-family: "Trebuchet MS", sans-serif; font-size: 16px; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; behavior: url(http://demo.hdev.ru/works/skidkovo/css/PIE.htc); }
+.textareabox { height: 140px; overflow: hidden; }
+
+/* popups */
+.popup { display: none; }
+    .popup .wrapper { width: 620px; }
+
+/* trees */
+#d-br { position: absolute; right: 40px; bottom: 240px; z-index: 5; width: 532px; height: 583px; background: url(../images/d-br.png) no-repeat; }
+#d-bl { position: absolute; left: 200px; bottom: 240px; z-index: 5; width: 537px; height: 674px; background: url(../images/d-bl.png) no-repeat; }
+
+#d-tl { position: absolute; left: 40px; top: 170px; z-index: 5; width: 279px; height: 328px; background: url(../images/d-tl.png) no-repeat; }
+#d-tr { position: absolute; right: 0; top: 30px; z-index: 5; width: 536px; height: 492px; background: url(../images/d-tr.png) no-repeat; }
+
+/* footer */
+#footer {
+	position: relative;
+	margin-top: -240px;
+	height: 240px;
+	width: 100%;
+    background: url(../images/footer-bg.png) repeat-x 0 100%;
+}
+
+#footer .wrapper { width: 950px; margin: 0 auto; }
+
+#footer .box { float: left; margin: 30px 110px 0 0; }
+    #footer h6 { font-size: 20px; color: #bb0749; }
+    #footer li { margin: 15px 0; }
+    #footer a { color: #4e1209; text-decoration: none; border-bottom: 1px solid #886056 }
+    #footer a:hover { color: #000; border-bottom: 1px solid #333 }
+    #footer li img { margin: 0 3px -4px 0; }
+
+    #footer .small { margin-right: 140px; }
+    #footer .small h6 { color: #d43a72; margin-bottom: 20px; }
+    #footer .small li { margin: 3px 0; }
+    #footer .small li a { font-size: 12px; border: 0 !important; text-decoration: underline; }
+    #footer .small li a:hover { color: #9f473a; text-decoration: none; }
+
+#footer .copyright { float: right; margin: 30px 0 0 0; color: #4e1209; }
+    #footer .copyright p { margin-bottom: 30px; }
+
+    #footer .rss { display: inline-block; font-size: 15px; padding: 5px 0 5px 40px; border: 0; text-decoration: underline; background: url(../images/footer-rss.png) no-repeat; }
+    #footer .rss:hover { border: 0; }
+
+    #footer .copyright a { border: 0; }
+    #footer .copyright img { margin: 0 35px -15px 0; }
+
+.footer_blank {	clear: both; height: 300px; }

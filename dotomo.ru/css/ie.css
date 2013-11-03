@@ -1,0 +1,22 @@
+.default-button,
+.default-button-big,
+.niceCheck,
+.edit,
+.rubrics li,
+.premium .item,
+.similar .item,
+.premium .price,
+.ads .your,
+.catalog .tabs a,
+.catalog-list .item {
+	zoom: 1;
+	*display: inline;
+}
+
+.similar .price { color: #fff !important; background: #ebebeb !important; }
+.ucp-menu li { margin-right: 35px; }
+
+.footer-menu table { width: 70%; }
+
+.top-search .textbox { width: 300px; }
+.top-search .textbox-short { width: 55px; }

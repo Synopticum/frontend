@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+</head>
+<body>
+
+<!-- top bar -->
+<div class="topbar">
+    <div class="wrapper">
+      <a href="#" title="" class="register">Регистрация</a>
+      <a href="#" title="" class="enter">Вход</a>
+
+      <div class="search">
+      <form>
+          <input name="searchbar" type="text" value="поиск" tabindex="1" />
+      </form>
+      </div>
+    </div>
+</div>
+
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+        <a href="#" title=""><img src="images/logo.png" alt="" class="logo" /></a>
+
+        <div class="selectobject">
+            <a href="#" title="">Выбор объекта</a>
+        </div>
+
+        <div class="image">
+            <!-- img -->
+        </div>
+
+        <!-- top menu -->
+        <div class="topmenu">
+            <ul>
+                <li class="t1"><a href="#" title="">Новости</a></li>
+                <li class="t2"><a href="#" title="">Отели</a></li>
+                <li class="t3"><a href="#" title="">Веб-камеры</a></li>
+                <li class="t4"><a href="#" title="">Подъемники и склоны</a></li>
+                <li class="t5"><a href="#" title="">Путеводитель</a></li>
+                <li class="t6"><a href="#" title="">Форум</a></li>
+                <li class="t7"><a href="#" title="">Погода на склонах</a></li>
+            </ul>
+        </div>
+    </div>
+
+	<!-- content -->
+	<div class="content">
+        <div class="content-top"></div>
+
+        <div class="breadcrumbs">
+            <a href="#" title="">Главная страница</a> &rarr; Гостиницы и отели
+        </div>
+
+        <h1>Гостиницы и отели</h1>
+
+        <div class="text">
+
+            <!-- filter -->
+            <div class="filter">
+                <a href="#" title="" class="hide-filter">свернуть</a>
+                <a href="#" title="" class="show-filter">показать</a>
+
+                <form>
+                <table>
+                    <tr>
+                        <td><label>Категория<br />
+                            <select name="filter_category" size="1">
+                                <option value="Санаторий" selected="selected">Санаторий</option>
+                                <option value="Санаторий">Санаторий</option>
+                                <option value="Санаторий">Санаторий</option>
+                                <option value="Санаторий">Санаторий</option>
+                            </select>
+                        </label></td>
+
+                        <td><label>Уровень<br />
+                            <select name="filter_level" size="1">
+                                <option value="4 звезды" selected="selected">4 звезды</option>
+                                <option value="Санаторий">Санаторий</option>
+                                <option value="Санаторий">Санаторий</option>
+                                <option value="Санаторий">Санаторий</option>
+                            </select>
+                        </label></td>
+
+                        <td><label>Расположение<br />
+                            <select name="filter_place" size="1">
+                                <option value="На окраине" selected="selected">На окраине</option>
+                                <option value="Санаторий">Санаторий</option>
+                                <option value="Санаторий">Санаторий</option>
+                                <option value="Санаторий">Санаторий</option>
+                            </select>
+                        </label></td>
+
+                        <td><input type="submit" name="filter_now" id="filter_now" value="Применить" /></td>
+                    </tr>
+                </table>
+                </form>
+
+                <script language="JavaScript" type="text/javascript">
+                /*<![CDATA[*/
+                $('.hide-filter').click(function() {
+                  $('.filter table').toggle();
+                  $(this).hide();
+                  $('.show-filter').show();
+                });
+                $('.show-filter').click(function() {
+                  $('.filter table').toggle();
+                  $(this).hide();
+                  $('.hide-filter').show();
+                });
+                /*]]>*/
+                </script>
+            </div>
+
+            <div class="filtered">
+                <div class="item">
+                    <div class="description">
+                        <a href="#" title="" class="title">Отель &laquo;Кроун Плаза&raquo;</a>
+                        <span class="rating four"><!-- --></span>
+                        <span class="cost">от <big>3 000</big></span>
+
+                        <p>Территория комплекса составляет 35 Га. Все номера отеля оснащены электронными сейфами, минибарами,
+                        несколькими телефонами, системой кондиционирования воздуха.</p>
+                    </div>
+
+                    <div class="photos">
+                        <a href="#" title=""><img src="images/tmp/l1.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l2.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l3.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l4.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l5.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l6.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l7.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l8.jpg" width="48" height="48" alt="" /></a>
+                    </div>
+                </div>
+
+                <!-- -->
+
+                <div class="item">
+                    <div class="description">
+                        <a href="#" title="" class="title">Отель &laquo;Кроун Плаза&raquo;</a>
+                        <span class="rating four"><!-- --></span>
+                        <span class="cost">от <big>15 000</big></span>
+
+                        <p>Территория комплекса составляет 35 Га. Все номера отеля оснащены электронными сейфами, минибарами,
+                        несколькими телефонами, системой кондиционирования воздуха.</p>
+                    </div>
+
+                    <div class="photos">
+                        <a href="#" title=""><img src="images/tmp/l1.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l2.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l3.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l4.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l5.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l6.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l7.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l8.jpg" width="48" height="48" alt="" /></a>
+                    </div>
+                </div>
+
+                <!-- -->
+
+                <div class="item">
+                    <div class="description">
+                        <a href="#" title="" class="title">Отель &laquo;Кроун Плаза&raquo;</a>
+                        <span class="rating four"><!-- --></span>
+                        <span class="cost">от <big>1 000</big></span>
+
+                        <p>Территория комплекса составляет 35 Га. Все номера отеля оснащены электронными сейфами, минибарами,
+                        несколькими телефонами, системой кондиционирования воздуха.</p>
+                    </div>
+
+                    <div class="photos">
+                        <a href="#" title=""><img src="images/tmp/l1.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l2.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l3.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l4.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l5.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l6.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l7.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l8.jpg" width="48" height="48" alt="" /></a>
+                    </div>
+                </div>
+
+                <!-- -->
+
+                <div class="item">
+                    <div class="description">
+                        <a href="#" title="" class="title">Отель &laquo;Кроун Плаза&raquo;</a>
+                        <span class="rating four"><!-- --></span>
+                        <span class="cost">от <big>3 000</big></span>
+
+                        <p>Территория комплекса составляет 35 Га. Все номера отеля оснащены электронными сейфами, минибарами,
+                        несколькими телефонами, системой кондиционирования воздуха.</p>
+                    </div>
+
+                    <div class="photos">
+                        <a href="#" title=""><img src="images/tmp/l1.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l2.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l3.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l4.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l5.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l6.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l7.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l8.jpg" width="48" height="48" alt="" /></a>
+                    </div>
+                </div>
+
+                <!-- -->
+
+                <div class="item">
+                    <div class="description">
+                        <a href="#" title="" class="title">Отель &laquo;Кроун Плаза&raquo;</a>
+                        <span class="rating four"><!-- --></span>
+                        <span class="cost">от <big>3 000</big></span>
+
+                        <p>Территория комплекса составляет 35 Га. Все номера отеля оснащены электронными сейфами, минибарами,
+                        несколькими телефонами, системой кондиционирования воздуха.</p>
+                    </div>
+
+                    <div class="photos">
+                        <a href="#" title=""><img src="images/tmp/l1.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l2.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l3.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l4.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l5.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l6.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l7.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l8.jpg" width="48" height="48" alt="" /></a>
+                    </div>
+                </div>
+
+                <!-- -->
+
+                <div class="item">
+                    <div class="description">
+                        <a href="#" title="" class="title">Отель &laquo;Кроун Плаза&raquo;</a>
+                        <span class="rating four"><!-- --></span>
+                        <span class="cost">от <big>3 000</big></span>
+
+                        <p>Территория комплекса составляет 35 Га. Все номера отеля оснащены электронными сейфами, минибарами,
+                        несколькими телефонами, системой кондиционирования воздуха.</p>
+                    </div>
+
+                    <div class="photos">
+                        <a href="#" title=""><img src="images/tmp/l1.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l2.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l3.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l4.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l5.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l6.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l7.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l8.jpg" width="48" height="48" alt="" /></a>
+                    </div>
+                </div>
+
+                <!-- -->
+
+                <div class="item">
+                    <div class="description">
+                        <a href="#" title="" class="title">Отель &laquo;Кроун Плаза&raquo;</a>
+                        <span class="rating four"><!-- --></span>
+                        <span class="cost">от <big>3 000</big></span>
+
+                        <p>Территория комплекса составляет 35 Га. Все номера отеля оснащены электронными сейфами, минибарами,
+                        несколькими телефонами, системой кондиционирования воздуха.</p>
+                    </div>
+
+                    <div class="photos">
+                        <a href="#" title=""><img src="images/tmp/l1.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l2.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l3.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l4.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l5.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l6.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l7.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l8.jpg" width="48" height="48" alt="" /></a>
+                    </div>
+                </div>
+
+                <!-- -->
+
+                <div class="item">
+                    <div class="description">
+                        <a href="#" title="" class="title">Отель &laquo;Кроун Плаза&raquo;</a>
+                        <span class="rating four"><!-- --></span>
+                        <span class="cost">от <big>3 000</big></span>
+
+                        <p>Территория комплекса составляет 35 Га. Все номера отеля оснащены электронными сейфами, минибарами,
+                        несколькими телефонами, системой кондиционирования воздуха.</p>
+                    </div>
+
+                    <div class="photos">
+                        <a href="#" title=""><img src="images/tmp/l1.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l2.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l3.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l4.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l5.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l6.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l7.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l8.jpg" width="48" height="48" alt="" /></a>
+                    </div>
+                </div>
+
+                <!-- -->
+
+                <div class="item">
+                    <div class="description">
+                        <a href="#" title="" class="title">Отель &laquo;Кроун Плаза&raquo;</a>
+                        <span class="rating four"><!-- --></span>
+                        <span class="cost">от <big>3 000</big></span>
+
+                        <p>Территория комплекса составляет 35 Га. Все номера отеля оснащены электронными сейфами, минибарами,
+                        несколькими телефонами, системой кондиционирования воздуха.</p>
+                    </div>
+
+                    <div class="photos">
+                        <a href="#" title=""><img src="images/tmp/l1.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l2.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l3.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l4.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l5.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l6.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l7.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l8.jpg" width="48" height="48" alt="" /></a>
+                    </div>
+                </div>
+
+                <!-- -->
+
+                <div class="item">
+                    <div class="description">
+                        <a href="#" title="" class="title">Отель &laquo;Кроун Плаза&raquo;</a>
+                        <span class="rating four"><!-- --></span>
+                        <span class="cost">от <big>3 000</big></span>
+
+                        <p>Территория комплекса составляет 35 Га. Все номера отеля оснащены электронными сейфами, минибарами,
+                        несколькими телефонами, системой кондиционирования воздуха.</p>
+                    </div>
+
+                    <div class="photos">
+                        <a href="#" title=""><img src="images/tmp/l1.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l2.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l3.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l4.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l5.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l6.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l7.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l8.jpg" width="48" height="48" alt="" /></a>
+                    </div>
+                </div>
+
+                <!-- -->
+
+                <div class="item">
+                    <div class="description">
+                        <a href="#" title="" class="title">Отель &laquo;Кроун Плаза&raquo;</a>
+                        <span class="rating four"><!-- --></span>
+                        <span class="cost">от <big>3 000</big></span>
+
+                        <p>Территория комплекса составляет 35 Га. Все номера отеля оснащены электронными сейфами, минибарами,
+                        несколькими телефонами, системой кондиционирования воздуха.</p>
+                    </div>
+
+                    <div class="photos">
+                        <a href="#" title=""><img src="images/tmp/l1.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l2.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l3.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l4.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l5.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l6.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l7.jpg" width="48" height="48" alt="" /></a>
+                        <a href="#" title=""><img src="images/tmp/l8.jpg" width="48" height="48" alt="" /></a>
+                    </div>
+                </div>
+
+                <!-- paginator -->
+                <div class="paginator">
+                    Страница:
+
+                    <ul>
+                        <li class="active"><a href="#" title="">1</a></li>
+                        <li><a href="#" title="">2</a></li>
+                        <li><a href="#" title="">3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- rightside -->
+        <div class="rightside">
+            <div class="box booking">
+                <h4>Бронируйте по телефонам:</h4>
+
+                <p><big>(8622) 69-44-20</big> в Сочи и<br />
+                <big>(495) 411-82-52</big> в Москве<br />
+                или онлайн:</p>
+
+                <a href="#" title="" class="button-booking">Забронировать онлайн</a>
+            </div>
+
+            <div class="box">
+                <h4>Блок с любым контентом:</h4>
+            </div>
+        </div>
+
+        <div class="cleaner"></div>
+
+        <div class="content-bottom"></div>
+    </div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer"></div>
+</body>
+</html>

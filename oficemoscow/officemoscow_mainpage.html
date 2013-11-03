@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/boilerplate.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!--[if lte IE 7]><link rel="stylesheet" href="css/ie.css"><![endif]-->   
+
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
+
+        <!-- sustom selectbox -->
+        <link href="js/jquery.selectbox/jquery.selectbox.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="js/jquery.selectbox/jquery.selectbox-0.2.min.js"></script>
+
+        <!-- jquery ui -->
+        <link href="js/jquery-ui-1.10.2.custom/css/ui-lightness/jquery-ui-1.10.2.custom.css" rel="stylesheet">
+        <script src="js/jquery-ui-1.10.2.custom/js/jquery-ui-1.10.2.custom.js"></script>
+
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <header>
+                <div class="header-wrapper">
+                    <a href="#" title=""><img src="images/header-logo.png" alt="" class="header-logo" /></a>
+
+                    <div class="header-select">
+                        <a href="" title="" class="active"><span class="line">АРЕНДА</span><span class="arrow"></span></a> 
+                        И 
+                        <a href="" title=""><span class="line">ПРОДАЖА</span><span class="arrow"></span></a>
+                    </div>
+
+                    <div class="header-menu">
+                        <ul>
+                            <li><a href="" title="">КОМПАНИИ</a></li>
+                            <li><a href="" title="">НОВОСТИ</a></li>
+                            <li><a href="" title="">КАРТА</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="header-menu-add">
+                        <a href="" title="">+ <span>ДОБАВИТЬ МЕСТО</span></a>
+                    </div>
+
+                    <a href="" title="" class="header-login">Войти</a>
+                </div>
+            </header>
+
+            <div id="wrap" class="clearfix">
+                <!-- content -->
+                <div class="content">
+                    <div class="page-search clearfix">
+                        <form action="">
+                            <div class="clearfix">
+                                <input type="text" id="" value="" class="default-textbox page-search-bar" placeholder="Поиск по названию" />
+                                <input type="button" id="" value="НАЙТИ" class="default-button page-search-find" />
+                            </div>
+
+                            <div class="page-search-advanced clearfix">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <span class="default-label">ПЛОЩАДЬ</span>
+
+                                            <div class="page-search-values">
+                                                от <input type="text" id="" value="10" class="default-textbox page-search-areamin" />
+                                                до <input type="text" id="" value="60000" class="default-textbox page-search-areamax" />
+                                                м<sup>2</sup>
+                                            </div>
+                                        </td>
+
+                                        <td colspan="2">
+                                            <span class="default-label">СТОИМОСТЬ</span>
+
+                                            <div class="page-search-values">
+                                                от <input type="text" id="" value="200" class="default-textbox page-search-pricemin" />
+                                                до <input type="text" id="" value="99000000" class="default-textbox page-search-pricemax" />
+                                                в месяц
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="default-label">ТИП ОБЪЕКТА</span>
+
+                                            <div class="page-search-values page-search-objecttype">
+                                                <select class="default-selectbox" id="">
+                                                    <option>Офис</option>
+                                                    <option>Бизнес-центр</option>
+                                                    <option>торговое помещение</option>
+                                                    <option>склад</option>
+                                                    <option>гараж</option>
+                                                </select>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <span class="default-label">Класс</span>
+
+                                            <span class="default-checkbox"><input type="checkbox" id="c1" class="checkbox" /><label for="c1">A+</label></span>
+                                            <span class="default-checkbox"><input type="checkbox" id="c2" class="checkbox" /><label for="c2">A</label></span>
+                                            <span class="default-checkbox"><input type="checkbox" id="c3" class="checkbox" /><label for="c3">B+</label></span>
+                                            <span class="default-checkbox"><input type="checkbox" id="c4" class="checkbox" /><label for="c4">B</label></span>
+                                            <span class="default-checkbox"><input type="checkbox" id="c5" class="checkbox" /><label for="c5">C</label></span>
+                                        </td>
+
+                                        <td class="paddingfix">
+                                            <span class="default-label">Тип здания</span>
+
+                                            <div class="page-search-values page-search-buildingtype">
+                                                <select class="default-selectbox" id="">
+                                                    <option>ВСЕ</option>
+                                                    <option>ВСЕ</option>
+                                                    <option>ВСЕ</option>
+                                                    <option>ВСЕ</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <span class="default-label">Состояние здания</span>
+
+                                            <span class="default-checkbox"><input type="checkbox" id="c6" class="checkbox" /><label for="c6">идет строительство</label></span>
+                                            <span class="default-checkbox"><input type="checkbox" id="c7" class="checkbox" /><label for="c7">действующий объект</label></span>
+                                            <span class="default-checkbox"><input type="checkbox" id="c8" class="checkbox" /><label for="c8">идет заполнение</label></span>
+                                        </td>
+
+                                        <td class="paddingfix">
+                                            <span class="default-label">МЕСТО</span>
+
+                                            <a href="" title="" class="page-search-place">выбрать</a>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <input type="button" id="" value="Подобрать" class="default-button-blue page-search-find" />
+                            </div>
+                        </form>
+
+                        <div href="javascript:void(0);" title="" class="page-search-hide">свернуть поиск</div>
+                        <div href="javascript:void(0);" title="" class="page-search-show">развернуть поиск</div>
+                    </div>
+
+                    <!-- news -->
+                    <div class="page-news">
+                        <h1 class="box-title"><a href="" title="">Новости коммерческой недвижимости</a></h1>
+
+                        <div class="page-news-item page-news-item-main">
+                            <a href=""><img src="images/tmp/n1.jpg" alt="" class="page-news-image" /></a>
+
+                            <div class="page-news-title">
+                                <a href="" title="" class="">Подмосковные стройки выйдут в онлайн</a>
+                                27 Фев
+                            </div>
+
+                            <div class="page-news-description">
+                                <p>По словам временно исполняющего обязанности губернатора Подмосковья Андрея Воробьева, к 15 марта намечено оснастить камерами видеонаблюдения 
+                                региональные объекты, где ведутся или планируются строительные работы.</p>
+                            </div>
+                        </div>
+
+                        <div class="page-news-item page-news-item-main">
+                            <a href=""><img src="images/tmp/n2.jpg" alt="" class="page-news-image" /></a>
+
+                            <div class="page-news-title">
+                                <a href="" title="" class="">Улицы ЦАО будут перекрывать в выходные</a>
+                                27 Фев
+                            </div>
+
+                            <div class="page-news-description">
+                                <p>Московские власти планируют перекрывать для пешеходных прогулок улицы в историческом центре города в выходные дни.</p>
+                            </div>
+                        </div>
+
+                        <!-- -->
+
+                        <div class="page-news-item">
+                            <div class="page-news-title">
+                                <a href="" title="" class="">Улицы ЦАО будут перекрывать в выходные</a>
+                                27 Фев
+                            </div>
+
+                            <div class="page-news-description">
+                                <p>Московские власти планируют перекрывать для пешеходных прогулок улицы в историческом центре города в выходные дни.</p>
+                            </div>
+
+                            <a href="" title="" class="page-news-comments">12</a>
+                        </div>
+
+                        <div class="page-news-item">
+                            <a href=""><img src="images/tmp/n3.jpg" alt="" class="page-news-image" /></a>
+
+                            <div class="page-news-title">
+                                <a href="" title="" class="">Дороги «Сколково» обойдутся в 29 млрд рублей</a>
+                                27 Фев
+                            </div>
+
+                            <div class="page-news-description">
+                                <p>По словам заммэра столицы по градостроительной политике и строительству Марата Хуснуллина, стоимость строительства подъездных дорог к инновационному центру «Сколково» в Москве составляет порядка 29 миллиадов рублей.</p>
+                            </div>
+                        </div>
+
+                        <!-- -->
+
+                        <div class="page-news-item page-news-item-short">
+                            <div class="page-news-title">
+                                <a href="" title="" class="">ЦДР занимает 32% от всего офисного фонда Москвы</a>
+                                27 Фев
+                            </div>
+                        </div>
+
+                        <div class="page-news-item page-news-item-short">
+                            <div class="page-news-title">
+                                <a href="" title="" class="">«Москва-Сити» получит архитектурную концепцию</a>
+                                27 Фев
+                            </div>
+                        </div>
+
+                        <div class="page-news-item page-news-item-short">
+                            <div class="page-news-title">
+                                <a href="" title="" class="">Enter пришёл в Орехово-Зуево</a>
+                                27 Фев
+                            </div>
+                        </div>
+
+                        <div class="page-news-item page-news-item-short">
+                            <div class="page-news-title">
+                                <a href="" title="" class="">Количество необходимых для строительства процедур будет снижено</a>
+                                27 Фев
+                            </div>
+                        </div>
+
+                        <div class="page-news-item page-news-item-short">
+                            <div class="page-news-title">
+                                <a href="" title="" class="">В закон о госкадастре недвижимости готовят поправки</a>
+                                27 Фев
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- analytics -->
+                    <div class="page-analytics">
+                        <h1 class="box-title"><a href="" title="">Аналитика</a></h1>
+
+                        <div class="page-analytics-item clearfix">
+                            <div class="page-analytics-image">
+                                <a href="" title="" class="page-analytics-image"><img src="images/tmp/a1.jpg" alt="" /></a>
+
+                                <a href="" title="" class="page-analytics-title"><span class="uniform-bg"><span>В ближайшие три года Москве грозит избыток качественных офисов и падение ставок аренды</span></span></a>
+
+                                <div class="page-analytics-description">
+                                    <p>Как минимум в ближайшие три года в центральной части Москвы не будет дефицита качественных помещений, заявил в ходе круглого стола "Качественные офисы в центре Москвы: что можно будет арендовать в три года" генеральный директор Forum Properties...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page-analytics-item clearfix">
+                            <div class="page-analytics-image">
+                                <a href="" title="" class="page-analytics-image"><img src="images/tmp/a2.jpg" alt="" /></a>
+
+                                <a href="" title="" class="page-analytics-title"><span class="uniform-bg"><span>Ручной труд снова в моде — опрос Head Hunter</span></span></a>
+
+                                <div class="page-analytics-description">
+                                    <p>Оказывается, треть сотрудников офиса не прочь уйти «в поля», променяв офисное кресло и компьютер на деятельность, предполагающую ручной труд! 43% из них утверждают, что такая работа перспективна и всегда востребована, четверть уверены, что это неплохой источник заработка...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page-analytics-item clearfix">
+                            <div class="page-analytics-image">
+                                <a href="" title="" class="page-analytics-image"><img src="images/tmp/a3.jpg" alt="" /></a>
+
+                                <a href="" title="" class="page-analytics-title"><span class="uniform-bg"><span>Инвестиции в офисы находятся на исторических максимумах</span></span></a>
+
+                                <div class="page-analytics-description">
+                                    <p>В IV квартале 2012 г. объем инвестиций в российскую коммерческую недвижимость составил $1,73 млрд. Это на 32% больше, чем в III квартале 2012 г., но уступает 21% показателю IV квартала 2011 г. В 2012 г. офисный сегмент был наиболее популярным у инвесторов...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- statistic's -->
+                    <div class="page-stats">
+                        <h1 class="box-title">Статистика</h1>
+                        <h2 class="small-title">Арендуемые помещения в Москве</h2>
+
+                        <p><img src="images/tmp/g1.png" alt="" /></p>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Классы зданий</th>
+                                    <th><span>Количество</span></th>
+                                    <th>Цена за м2</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="images/stats-1.png" alt="" /><a href="" title="">Класс «А»</a></td>
+                                    <td><span>203</span></td>
+                                    <td>22 899 руб.</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/stats-2.png" alt="" /><a href="" title="">Класс «B»</a></td>
+                                    <td><span>92</span></td>
+                                    <td>17 023 руб.</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/stats-3.png" alt="" /><a href="" title="">Класс «B+»</a></td>
+                                    <td><span>242</span></td>
+                                    <td>14 833 руб.</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/stats-4.png" alt="" /><a href="" title="">Класс «C»</a></td>
+                                    <td><span>48</span></td>
+                                    <td>10 701 руб.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- do not forget -->
+                    <div class="page-dnf">
+                        <h6>Не забудьте посмотреть:</h6>
+
+                        <div class="page-dnf-item">
+                            <img src="images/tmp/d1.jpg" alt="" class="page-dnf-image" />
+                            <a href="" title="" class="page-dnf-title"><span class="uniform-bg"><span>10 000 руб.<br />Офисный центр<br />Бибирево-сити B+</span></span></a>
+
+                            <p>Новый и современный бизнес-центр в самом сердце Москвы</p>
+                        </div>
+
+                        <div class="page-dnf-item">
+                            <img src="images/tmp/d2.jpg" alt="" class="page-dnf-image" />
+                            <a href="" title="" class="page-dnf-title"><span class="uniform-bg"><span>5 000 руб.<br />Жилой дом<br />под офисы B+</span></span></a>
+
+                            <p>Старинный графский особняк с современным ремонтом и уникальным фасадом здания</p>
+                        </div>
+
+                        <div class="page-dnf-item">
+                            <img src="images/tmp/d3.jpg" alt="" class="page-dnf-image" />
+                            <a href="" title="" class="page-dnf-title"><span class="uniform-bg"><span>25 000 руб.<br />Особняк А+</span></span></a>
+
+                            <p>Элитное здание в центре Москвы, охраняемая парковка, круглосуточная охрана и интернет</p>
+                        </div>
+
+                        <div class="page-dnf-item">
+                            <img src="images/tmp/d4.jpg" alt="" class="page-dnf-image" />
+                            <a href="" title="" class="page-dnf-title"><span class="uniform-bg"><span>12 000 руб.<br />Офисный центр<br />Бибирево-сити B+</span></span></a>
+
+                            <p>Полностью перестроенное здание с видом на парк, шаговая доступность от метро и магазина</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- special -->
+                <div class="special">
+                    <h5 class="special-title">СПЕЦПРЕДЛОЖЕНИЯ</h5>
+
+                    <div class="item">
+                        <img src="images/tmp/s1.jpg" alt="" />
+
+                        <div class="description">
+                            <span class="price">12 000 руб.</span><br />
+
+                            <div class="title">
+                                <a href="" title="">Офисный центр</a> А+
+                            </div>
+
+                            <p>Новый и современный бизнес-центр в самом сердце Москвы</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/tmp/s1.jpg" alt="" />
+
+                        <div class="description">
+                            <span class="price">12 000 руб.</span><br />
+
+                            <div class="title">
+                                <a href="" title="">Офисный центр</a> А+
+                            </div>
+                            
+                            <p>Новый и современный бизнес-центр в самом сердце Москвы</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/tmp/s1.jpg" alt="" />
+
+                        <div class="description">
+                            <span class="price">12 000 руб.</span><br />
+
+                            <div class="title">
+                                <a href="" title="">Офисный центр</a> А+
+                            </div>
+                            
+                            <p>Новый и современный бизнес-центр в самом сердце Москвы</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/tmp/s1.jpg" alt="" />
+
+                        <div class="description">
+                            <span class="price">12 000 руб.</span><br />
+
+                            <div class="title">
+                                <a href="" title="">Офисный центр</a> А+
+                            </div>
+                            
+                            <p>Новый и современный бизнес-центр в самом сердце Москвы</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/tmp/s1.jpg" alt="" />
+
+                        <div class="description">
+                            <span class="price">12 000 руб.</span><br />
+
+                            <div class="title">
+                                <a href="" title="">Офисный центр</a> А+
+                            </div>
+                            
+                            <p>Новый и современный бизнес-центр в самом сердце Москвы</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/tmp/s1.jpg" alt="" />
+
+                        <div class="description">
+                            <span class="price">12 000 руб.</span><br />
+
+                            <div class="title">
+                                <a href="" title="">Офисный центр</a> А+
+                            </div>
+                            
+                            <p>Новый и современный бизнес-центр в самом сердце Москвы</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/tmp/s1.jpg" alt="" />
+
+                        <div class="description">
+                            <span class="price">12 000 руб.</span><br />
+
+                            <div class="title">
+                                <a href="" title="">Офисный центр</a> А+
+                            </div>
+                            
+                            <p>Новый и современный бизнес-центр в самом сердце Москвы</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/tmp/s1.jpg" alt="" />
+
+                        <div class="description">
+                            <span class="price">12 000 руб.</span><br />
+
+                            <div class="title">
+                                <a href="" title="">Офисный центр</a> А+
+                            </div>
+                            
+                            <p>Новый и современный бизнес-центр в самом сердце Москвы</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/tmp/s1.jpg" alt="" />
+
+                        <div class="description">
+                            <span class="price">12 000 руб.</span><br />
+
+                            <div class="title">
+                                <a href="" title="">Офисный центр</a> А+
+                            </div>
+                            
+                            <p>Новый и современный бизнес-центр в самом сердце Москвы</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/tmp/s1.jpg" alt="" />
+
+                        <div class="description">
+                            <span class="price">12 000 руб.</span><br />
+
+                            <div class="title">
+                                <a href="" title="">Офисный центр</a> А+
+                            </div>
+                            
+                            <p>Новый и современный бизнес-центр в самом сердце Москвы</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/tmp/s1.jpg" alt="" />
+
+                        <div class="description">
+                            <span class="price">12 000 руб.</span><br />
+
+                            <div class="title">
+                                <a href="" title="">Офисный центр</a> А+
+                            </div>
+                            
+                            <p>Новый и современный бизнес-центр в самом сердце Москвы</p>
+                        </div>
+                    </div>
+
+                    <div class="special-add">
+                        <a href="" title="">Я ХОЧУ ДОБАВИТЬ ОБЪЕКТ В КАТАЛОГ</a>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-wrapper">
+                    <div class="footer-copyright">
+                        <a href="" title="" class="title">ОФИС.МОСКВА</a>
+                        <p>Аренда офисных, торговых и нежилых помещений во всех районах Москвы. На нашем сайте только актуальныие и проверенные предложения.</p>
+                        <p><span>© 2012—2013</span></p>
+                    </div>
+
+                    <ul>
+                        <li><a href="" title="">Компании</a></li>
+                        <li><a href="" title="">Новости</a></li>
+                        <li><a href="" title="">Карта сайта</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="" title="">О проекте</a></li>
+                        <li><a href="" title="">Размещение объектов</a></li>
+                        <li><a href="" title="">Контактная информация</a></li>
+                    </ul>
+
+                    <div class="footer-phone">
+                        <big>(495) 432-34-11</big><br />
+                        <big>(495) 432-81-23</big>
+
+                        <p><a href="" title="">Напишите нам</a></p>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/call.js"></script>
+    </body>
+</html>

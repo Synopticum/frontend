@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mantime - Checkout Page</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/pngfix.js"></script>
+<script type="text/javascript">
+	DD_belatedPNG.fix('.png24, html *');
+</script>
+<![endif]-->
+</head>
+<body>
+<div class="wrap">
+	<!-- header -->
+	<div class="header">
+		<a href="mantime_index_02-2.html" title=""><img src="images/logo.gif" width="163" height="70" class="logo" alt="" /></a>
+
+		<div class="menu">
+			<ul>
+				<li>Наборы</li>
+				<li><a href="#">Подарочные наборы</a></li>
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Блог</a></li>
+				<li><a href="#">Вопросы и ответы</a></li>
+			</ul>
+		</div>
+
+		<div class="login">
+			<a href="#" class="enter">Вход</a>
+			<a href="#">Регистрация</a>
+		</div>
+	</div>
+
+	<!-- step's -->
+	<div class="steps">
+		<ul>
+			<li>1. Выбор набора</li>
+			<li>2. Выбор стиля</li>
+			<li class="active">3. Платежная информация</li>
+			<li>4. Адрес доставки</li>
+			<li class="last">5. Готово!</li>
+		</ul>
+	</div>
+
+	<!-- pack's -->
+	<div class="stepblock">
+		<h1>Платежная информация</h1>
+		<p>Выберите способ оплаты или отредактируйте заказ</p>
+
+		<div class="construct">
+
+			<div class="checkout">
+				<p>Пожалуйста, в приведенном ниже списке выберите свой регион.</p>
+
+				<select name="town" size="1">
+					<option value="Волгоград" selected="selected">Волгоград</option>
+					<option value="Волгоград">Волгоград</option>
+					<option value="Волгоград">Волгоград</option>
+					<option value="Волгоград">Волгоград</option>
+				</select><br />
+
+				<img src="images/sh.png" width="45" height="29" class="next" alt="" />
+
+				<p>Для выбранного Вами региона доступны следующие варианты доставки:</p>
+
+				<label>
+					<input type="radio" name="EMS Почта России" value="EMS Почта России" checked="checked" />
+					EMS Почта России
+				</label>
+
+				<img src="images/sh.png" width="45" height="29" class="next" alt="" />
+
+				<p>Для выбранных параметров доступны такие варианты оплаты:</p>
+				<p><br /></p>
+
+				<label>
+					<input type="radio" name="Наложенный платеж ЕМС Почта России" value="Наложенный платеж ЕМС Почта России" checked="checked" />
+					Наложенный платеж ЕМС Почта России
+				</label>
+
+				<label>
+					<input type="radio" name="Оплата банковской картой" value="Оплата банковской картой" />
+					Оплата банковской картой
+				</label>
+
+				<label>
+					<input type="radio" name="Оплата PayPal" value="Оплата PayPal" />
+					Оплата PayPal
+				</label>
+			</div>
+
+			<!-- cart-overview -->
+			<div class="cart-overview">
+				<h4>МОЙ ЗАКАЗ</h4>
+
+				<table>
+					<col width="10%" />
+					<col width="45%" />
+					<col width="40%" />
+					<col width="5%" />
+					<tr>
+						<th><span>3 шт</span></th>
+						<td class="col2">
+							<img src="images/t-shirt.png" alt="" />
+							<strong>Футболки</strong><br />
+							Hanes Белая,<br />
+							V-neck воротник
+						</td>
+						<td class="col3"><a href="#" class="edit">Редактировать</a> <a href="#" title="Редактировать" class="edit"><img src="images/edit.gif" alt="" /></a></td>
+						<td><a href="#" title="Удалить" class="remove">Удалить</a></td>
+					</tr>
+					<tr>
+						<th><span>3 шт</span></th>
+						<td class="col2">
+							<img src="images/shirt.png" alt="" />
+							<strong>Трусы</strong><br />
+							Hanes Белая
+						</td>
+						<td class="col3"><a href="#" class="edit">Редактировать</a> <a href="#" title="Редактировать" class="edit"><img src="images/edit.gif" alt="" /></a></td>
+						<td><a href="#" title="Удалить" class="remove">Удалить</a></td>
+					</tr>
+					<tr>
+						<th><span>3 шт</span></th>
+						<td class="col2">
+							<img src="images/socks.png" alt="" />
+							<strong>Пара носок</strong><br />
+							Hanes Белая
+						</td>
+						<td class="col3"><a href="#" class="edit">Редактировать</a> <a href="#" title="Редактировать" class="edit"><img src="images/edit.gif" alt="" /></a></td>
+						<td><a href="#" title="Удалить" class="remove">Удалить</a></td>
+					</tr>
+					<tfoot>
+					<tr>
+						<th style="height: 7px; padding: 0; border: 0"></th>
+						<td colspan="4" style="height: 7px; padding: 0;"></td>
+					</tr>
+					<tr>
+						<th class="chkt"></th>
+						<td class="col2 chkt">
+							Стоимость доставки:
+						</td>
+						<td class="col3 chkt" colspan="2">
+							<strong>400 рублей</strong>
+						</td>
+					</tr>
+					<tr>
+						<th class="chkt2"></th>
+						<td class="col2 chkt2" style="text-align: right; padding-right: 25px">
+							Итого:
+						</td>
+						<td class="col3 chkt2" colspan="2">
+							<strong>400 рублей</strong>
+						</td>
+					</tr>
+					</tfoot>
+				</table>
+
+				<div class="valuecount">
+					<a href="#" title="Следующий шаг">Следующий шаг</a>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="checkout-period">
+			<p>Вам не нужно делать повторные заказы. </p>
+			<p>Выберите период времени, в который вы хотите повторить ваш заказ и мы доставим его точно в срок.</p>
+
+			<select name="period" size="1">
+				<option value="Выберите период">Выберите период</option>
+				<option value="Выберите период" selected="selected">Выберите период</option>
+				<option value="Выберите период">Выберите период</option>
+			</select>
+		</div>
+	</div>
+
+</div>
+
+<!-- footer -->
+<div class="footer">
+	<div class="wrap">
+		Copyright &copy; 2010 Mantime. All rights reserved.
+		<strong>Телефон: +7 495 123-45-67</strong>
+		<a href="#">Обратная связь</a>
+	</div>
+</div>
+
+</body>
+</html>

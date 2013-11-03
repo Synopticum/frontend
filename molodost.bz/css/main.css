@@ -1,0 +1,184 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border: 0 none;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img { border:0 none; }
+table { border-collapse: collapse; border-spacing: 0; }
+ol, ul { list-style-image: none; list-style-position: outside; list-style-type: none; }
+q:before, q:after, blockquote:before, blockquote:after { content:""; }
+
+/* css begin */
+html, body { height:100%; }
+body {
+	font-family: Tahoma, sans-serif;
+	font-size: 12px;
+	color: #111;
+	background: #fff;
+	width: 100%;
+	min-width: 979px;
+}
+
+/* content */
+#wrap {
+	position: relative;
+	width: 979px;
+	margin: 0 auto;
+	min-height: 89%;
+	height: auto !important;
+	height: 100%;
+}
+/* header */
+.header { height: 68px; background: url(../images/header-bg.jpg) repeat-x; overflow: hidden; }
+    .header .wrapper { width: 979px; margin: 0 auto; }
+
+    .header .logo { float: left; margin: 14px 0 0 22px; }
+
+    .header .login { float: right; margin: 13px 0 0 0; text-align: right; line-height: 160%; }
+        .header .login a { color: #a2a2a2; }
+        .header .enter { color: #fff !important; font-size: 14px; }
+
+    .header .phone { float: right; margin: 13px 22px 0 90px; text-align: right; font-weight: bold; font-size: 16px; color: #fff; }
+        .header .phone span { color: #b4b4b4; }
+
+/* top menu */
+.topmenu { height: 34px; background: url(../images/topmenu-bg.gif) repeat-x; overflow: hidden; border-bottom: 7px solid #00b6fc; }
+    .topmenu .wrapper { width: 979px; margin: 0 auto; }
+
+    .topmenu ul { float: left; overflow: hidden; margin-left: 22px; background: url(../images/topmenu-li.gif) 100% 0 repeat-y; }
+        .topmenu li { float: left; padding: 7px 18px 9px 18px; background: url(../images/topmenu-li.gif) repeat-y; }
+        .topmenu li a { font-size: 14px; font-weight: bold; color: #fff; }
+        .topmenu li.active a { color: #393939; text-decoration: none; }
+
+    .topmenu .what { float: right; color: #333; margin: 9px 22px 0 0; }
+
+/* content */
+.content { padding: 12px 22px; font-family: "Trebuchet MS", sans-serif; }
+    .content .menu { overflow: hidden; margin-bottom: 25px; }
+        .content .menu li { float: left; padding: 4px 9px 5px 9px; background: url(../images/menu-li.gif) repeat-x; margin-right: 3px; border-top: 1px solid #009bc5; border-right: 1px solid #78cae4; }
+        .content .menu li a { color: #fff; text-decoration: none; font-family: "Trebuchet MS", sans-serif; font-style: italic; font-size: 16px;  }
+
+    .intro { }
+        .intro big { display: block; text-align: center; font-family: "Trebuchet MS", sans-serif; font-style: italic; font-size: 24px; color: #931717; }
+        .intro .video { width: 810px; height: 442px; margin: 25px auto; }
+
+    .content h1 { font-size: 24px; text-transform: uppercase; }
+
+.franchises { }
+    .franchises .item { padding: 20px 0; overflow: hidden; border-bottom: 1px solid #e5e5e5; }
+        .franchises .icon { float: left; margin-right: 35px; width: 108px; height: 108px; }
+
+        .franchises .description { float: left; width: 550px; overflow: hidden; }
+            .franchises .description h3 { font-size: 18px; color: #00b6fc; }
+            .franchises .description p { margin: 10px 0; font-size: 14px; color: #333; }
+            .franchises .description .more { font-style: italic; font-weight: bold; color: #111; }
+
+        .franchises .price { float: right; width: 200px; font-size: 18px; text-align: center; }
+            .franchises .date { color: #930d0d; }
+            .franchises .cost { display: block; margin: 7px 0; text-align: center; font-size: 24px; font-weight: bold; font-style: italic; }
+            .franchises .order { display: block; margin-top: 10px; padding: 8px 0; border: 1px solid #30b8e3; background: url(../images/order-bg.gif) repeat-x #01afeb; font-size: 14px; color: #fff; text-decoration: none; text-align: center; font-style: italic; font-weight: bold; text-shadow: 1px 1px 0 #057da6; }
+
+.about { padding: 30px 0; border-bottom: 1px solid #e5e5e5; font-size: 14px; color: #333; }
+    .about h2 { font-size: 24px; color: #930d0d; margin-bottom: 25px; }
+    .about p { margin: 15px 0; }
+    .about .short { float: left; width: 135px; color: #111; font-size: 12px; font-weight: bold; font-style: italic; text-align: right; margin-right: 20px; }
+
+.order { margin: 25px 0; }
+    .order h2 { text-align: center; font-size: 24px; color: #00b6fc; font-style: italic; }
+
+    .order .form { position: relative; width: 430px; padding: 20px 80px 30px 80px; margin: 30px auto 0 auto; font-size: 14px; overflow: hidden; background: url(../images/orderform-bg.gif) repeat-x #eee; border: 1px solid #dedede; border-radius: 10px; }
+        .order .form h6 { font-size: 18px; margin-bottom: 15px; color: #930d0d; font-style: italic; }
+        .order .form label { display: inline-block; width: 85px; }
+        .order .form .long { width: auto; }
+        .order .form .textbox { border: 1px solid #c9c9c9; width: 310px; padding: 2px 5px; margin: 0 0 7px 0; font-family: "Trebuchet MS", sans-serif; color: #777; }
+        .order .form select { width: 244px; font-family: "Trebuchet MS", sans-serif; color: #777; padding: 2px 5px; }
+
+        #ordernow { float: right; display: block; border: 0; margin: 15px 17px 15px 0; font-family: "Trebuchet MS", sans-serif; padding: 0; cursor: pointer; color: #fff; font-style: italic; font-weight: bold; font-size: 18px; width: 264px; height: 41px; background: url(../images/order.png) no-repeat; }
+        #arrow { position: absolute; left: 158px; top: 185px; }
+
+.fname { padding: 15px 0 60px 0; text-align: center; font-size: 24px; text-transform: uppercase; border-bottom: 1px solid #e5e5e5; }
+    .fname img { margin: 0 30px -50px 0; }
+
+.popup { position: relative; width: 320px; padding: 25px; overflow:hidden; font-family: "Trebuchet MS", sans-serif; font-size: 14px; }
+    .popup h6 { font-style: italic; color: #930d0d; margin-bottom: 15px; }
+    .popup label { display: inline-block; width: 81px; font-size: 12px; }
+    .popup .textbox { width: 203px; border: 1px solid #ccc; padding: 3px 5px; margin: 0 0 6px 0; font-family: "Trebuchet MS", sans-serif; font-size: 12px; color: #777; }
+    .popup textarea { width: 296px; height: 60px; border: 1px solid #ccc; font-family: "Trebuchet MS", sans-serif; font-size: 12px; color: #777; }
+
+
+    #ordernowpopup { float: right; display: block; border: 0; margin: 15px 17px 15px 0; padding: 0; cursor: pointer; color: #fff; font-family: "Trebuchet MS", sans-serif; font-style: italic; font-weight: bold; font-size: 14px; width: 220px; height: 41px; background: url(../images/orderpopup-submit.png) no-repeat; }
+    #arrow2 { position: absolute; left: 38px; top: 165px; }
+    #arrow3 { position: absolute; left: 38px; bottom: 9px; }
+
+
+.fdescription { border-bottom: 1px solid #e5e5e5; padding: 25px 0 25px 40px; }
+    .fdescription h1 { font-size: 24px; color: #00b6fc; text-transform: none; }
+
+    .fdescription .item { margin: 20px 0 0 0; overflow: hidden; }
+        .fdescription .icon { float: left; width: 70px; margin: 0 20px 0 0; }
+        .fdescription .description { overflow: hidden; font-size: 14px; }
+            .fdescription .description p { margin: 5px 0; color: #333; }
+            .fdescription .only { margin-top: 15px; font-size: 24px; color: #00b6fc; text-transform: uppercase; }
+
+        .fdescription .price { margin: 25px 0 0 0; font-size: 18px; color: #111; }
+            .fdescription .date { color: #930d0d; }
+            .fdescription .cost { font-size: 24px; font-style: italic; font-weight: bold; }
+
+    .fdescription .photo { float: right; margin: 0 0 0 40px; }
+        .fdescription .photo img { margin: 20px 0; }
+
+.fnav { text-align: center; margin-top: 20px; }
+    .fnav a { display: inline-block; padding: 8px 24px; margin: 0 2px; border: 1px solid #b9b9b9; background: url(../images/fnav.gif) repeat-x; font-size: 14px; color: #fff; text-decoration: none; text-align: center; font-style: italic; font-weight: bold; text-shadow: 1px 1px 0 #8e8f8f; }
+    .fnav .order { text-shadow: 1px 1px 0 #057da6; border: 1px solid #30b8e3; background-position: 0 -36px; }
+
+.contacts { text-align: center; font-size: 30px; padding-top: 40px; border-top: 1px solid #e5e5e5; }
+    .contacts p { text-align: center; text-transform: uppercase; margin: 25px 0 30px 0; }
+    .contacts .phone { text-align: center; font-size: 48px; color: #00b6fc; }
+        .contacts .phone img { margin: 0 0 -15px 0; }
+
+.text { border-bottom: 1px solid #e5e5e5; }
+    .text h1 { text-align: center; }
+    .text h2 { text-align: center; margin: 35px 0; font-size: 36px; color: #930d0d; }
+    .text h3 { text-align: center; margin: 35px 0; font-size: 24px; color: #930d0d; font-style: italic; }
+    .text h4 { text-align: center; margin: 35px 0; font-size: 18px; font-style: italic; }
+
+    .text p { font-size: 14px; color: #333; margin: 20px 0; }
+    .text .quote { margin: 40px 0; padding: 20px 60px 20px 60px; font-size: 14px; overflow: hidden; background: url(../images/orderform-bg.gif) repeat-x #eee; border: 1px solid #dedede; border-radius: 10px; }
+    .tr { text-align: right; }
+    .tc { text-align: center; }
+
+    .gotocatalog { display: block; margin: 35px auto; width: 332px; height: 51px; text-indent: -9999px; overflow: hidden; background: url(../images/catalog.png) no-repeat; }
+
+.catalog { padding-bottom: 35px; border-bottom: 1px solid #e5e5e5; }
+    .catalog h1 { text-align: center; margin-bottom: 15px; }
+    .catalog h3 { text-align: center; margin: 35px 0 15px 0; font-size: 36px; color: #930d0d; }
+    .catalog h4 { text-align: center; margin: 15px 0; font-size: 24px; font-style: italic; }
+
+
+    .catalog .item { overflow: hidden; margin: 10px 0; }
+        .catalog .item .icon { float: left; width: 475px; padding: 20px 0; margin: 0 35px 0 0; text-align: center; font-size: 14px; overflow: hidden; background: url(../images/orderform-bg.gif) repeat-x #eee; border: 1px solid #dedede; border-radius: 10px; }
+        .catalog .item .description { font-size: 14px; padding: 15px 0; overflow: hidden; }
+
+        .feedbacknow { display: block; border: 0; margin: 25px auto; text-align: center; text-decoration: none; padding: 7px 0 0 0; cursor: pointer; color: #fff; font-style: italic; font-weight: bold; font-size: 18px; width: 264px; height: 34px; background: url(../images/order.png) no-repeat; }
+
+/* footer */
+#footer {
+	position: relative;
+	margin-top: -70px;
+	height: 70px;
+	width: 100%;
+    background: #f1f1f1;
+    border-top: 1px solid  #d8d8d8;
+}
+
+#footer .wrapper { width: 979px; margin: 0 auto; }
+
+.footer_blank {	clear: both; height: 100px; }

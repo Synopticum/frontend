@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+
+<link href="css/ui-lightness/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+<script src="js/jquery-ui-1.9.2.custom.js"></script>
+	<script>
+	$(function() {		
+		$( "#button" ).button();
+		$( "#radioset" ).buttonset();
+		
+		$( "#tabs" ).tabs();
+		
+		$( "#slider" ).slider({
+			range: true,
+			values: [ 17, 67 ]
+		});		
+	});
+	</script>
+
+</head>
+<body>
+
+<!-- top navigation -->
+<div class="topnav">
+	<div class="wrapper">
+		<!-- welcome -->
+		<div class="topnav-welcome">
+			Мы вас не узнаем. <a href="javascript:void(0);" title="" class="nohref">Паркуйтесь</a> или <a href="" title="">регистрируйтесь</a>
+		</div>
+
+		<!-- top menu -->
+		<div class="topnav-menu">
+			<ul>
+				<li><a href="" title="">Наши покупатели</a></li>
+				<li><a href="" title="">Корпоративным клиентам</a></li>
+				<li><a href="" title="">Полезная информация</a></li>
+				<li><a href="" title="">Контакты</a></li>
+				<li><a href="" title="">О компании</a></li>				                                    
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+		<!-- search -->
+		<div class="header-search">
+			<form action="">
+			    <input name="textbox" type="text" value="Поиск по сайту" id="s" tabindex="1" />
+			    <input name="find" type="submit" value="" id="searchsubmit"tabindex="2" />
+			</form>
+		</div>
+
+		<!-- contacts -->
+		<div class="header-phone">
+			<big>(8 800) 345-34-45</big><br />
+			<a href="" title="">Задать вопрос on-line</a>
+		</div>
+
+		<!-- main menu -->
+		<div class="header-menu">
+			<table>
+				<tr>
+					<td class="r1 active"><a href="" title=""><span></span>Купить автомобиль</a></td>
+					<td class="r2"><a href="" title=""><span></span>Купить сервис</a></td>
+					<td class="r3"><a href="" title=""><span></span>Купить страховку</a></td>
+					<td class="r4"><a href="" title=""><span></span>Купить в кредит</a></td>
+					<td class="r5"><a href="" title=""><span></span>Продать старый автомобиль</a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<!-- content -->
+	<div class="content">
+		<div class="page">
+			<!-- page navigation -->
+			<div class="page-nav">
+				<ul>
+					<li><a href="" title="" class="standart-button">Тест-драйв</a></li>
+					<li><a href="" title="" class="standart-button">Забронировать</a></li>
+				</ul>
+			</div>
+
+			<h1 class="page-title">Mitsubishi Pajero Sport</h1>
+
+			<div id="back-to-settings"><a href="" title="">Вернуться к параметрам</a></div>
+
+			<!-- product view -->
+			<div class="product-view">
+				<!-- gallery -->
+				<div class="product-view-gallery">
+					<div class="product-view-gallery-big">
+						<img src="images/tmp/g1.jpg" alt="" />
+					</div>
+
+					<div class="product-view-gallery-thumbnails">
+						<a href=""><img src="images/tmp/g2.jpg" alt="" /></a><br />
+						<a href=""><img src="images/tmp/g2.jpg" alt="" /></a><br />
+						<a href=""><img src="images/tmp/g2.jpg" alt="" /></a><br />
+						<a href=""><img src="images/tmp/g2.jpg" alt="" /></a><br />
+						<a href=""><img src="images/tmp/g2.jpg" alt="" /></a><br />
+						<a href=""><img src="images/tmp/g2.jpg" alt="" /></a>
+					</div>
+
+					<div style="clear: both;"></div>
+				</div>
+
+				<!-- short text -->
+				<div class="product-view-text">
+					<p>Авто от страховой компании. Гарантии юридической чистоты. Оформление на месте<br />
+					в течение 15 мин. Запчасти с авто отдельно не продаются. Цены по телефону<br />
+					не обсуждаются.5099-ГАвто от страховой компании. Гарантии юридической чистоты. Оформление на месте в течение 15 мин. Запчасти с 
+					авто отдельно не продаются. Цены по телефону не обсуждаются.5099-ГАвто от страховой компании. Гарантии юридической чистоты. 
+					Оформление на месте в течение 15 мин. Запчасти с авто отдельно не продаются. Цены по телефону не обсуждаются.5099-Г.</p>
+				</div>
+			</div>
+
+			<!-- product description -->
+			<div class="product-description">
+				<!-- product cost -->
+				<div class="product-description-cost">
+					<table>
+						<tr>
+							<td>Цена:</td>
+							<td><big>300 000</big></td>
+							<td><img src="images/r.png" alt="" /></td>
+						</tr>
+					</table>					 
+					<div class=" right"></div>
+				</div>
+
+				<!-- product full description-->
+				<div class="product-description-full">
+					<!-- tabs -->
+					<div id="tabs">
+						<ul>
+							<li><a href="#tabs-1">Характеристики</a></li>
+							<li><a href="#tabs-2">Комплектация</a></li>
+						</ul>
+
+						<div id="tabs-1">
+							<table>
+								<tbody>
+									<tr>
+										<td>Модификация:</td>
+										<td>2.0 i 16V (140 Hp)</td>
+									</tr>
+									<tr>
+										<td>Год выпуска:</td>
+										<td>2008</td>
+									</tr>
+									<tr>
+										<td>КПП:</td>
+										<td>Механика</td>
+									</tr>
+									<tr>
+										<td>Тип двигателя:</td>
+										<td>2000 см³ / 140 л.с. / Бензин инжектор</td>
+									</tr>
+									<tr>
+										<td>Привод:</td>
+										<td>Передний</td>
+									</tr>
+									<tr>
+										<td>Пробег:</td>
+										<td>38 000 км</td>
+									</tr>
+									<tr>
+										<td>Руль:</td>
+										<td>Левый</td>
+									</tr>
+									<tr>
+										<td>Тип кузова:</td>
+										<td>Внедорожник 5d</td>
+									</tr>
+									<tr>
+										<td>Цвет:</td>
+										<td>Чёрный</td>
+									</tr>
+									<tr>
+										<td>Состояние:</td>
+										<td>Б/У</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div id="tabs-2">
+							<table>
+								<tbody>
+									<tr>
+										<td>Пробег:</td>
+										<td>38 000 км</td>
+									</tr>
+									<tr>
+										<td>Руль:</td>
+										<td>Левый</td>
+									</tr>
+									<tr>
+										<td>Тип кузова:</td>
+										<td>Внедорожник 5d</td>
+									</tr>
+									<tr>
+										<td>Цвет:</td>
+										<td>Чёрный</td>
+									</tr>
+									<tr>
+										<td>Состояние:</td>
+										<td>Б/У</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- similar -->
+			<div class="similar">
+				<h4>Похожие предложения:</h4>
+
+				<div class="item">
+					<a href="" title="">Ford Fiesta</a><br />
+					<strong class="similar-cost">450 000 руб.</strong><br />
+
+					<div class="similar-view">
+						<a href="" title=""><img src="images/tmp/g3.jpg" alt="" /></a>
+					</div>
+				</div>
+
+				<div class="item">
+					<a href="" title="">Ford Fiesta</a><br />
+					<strong class="similar-cost">450 000 руб.</strong><br />
+
+					<div class="similar-view">
+						<a href="" title=""><img src="images/tmp/g3.jpg" alt="" /></a>
+					</div>
+				</div>
+
+				<div class="item">
+					<a href="" title="">Ford Fiesta</a><br />
+					<strong class="similar-cost">450 000 руб.</strong><br />
+
+					<div class="similar-view">
+						<a href="" title=""><img src="images/tmp/g3.jpg" alt="" /></a>
+					</div>
+				</div>
+
+				<div class="item">
+					<a href="" title="">Ford Fiesta</a><br />
+					<strong class="similar-cost">450 000 руб.</strong><br />
+
+					<div class="similar-view">
+						<a href="" title=""><img src="images/tmp/g3.jpg" alt="" /></a>
+					</div>
+				</div>
+
+				<div class="item">
+					<a href="" title="">Ford Fiesta</a><br />
+					<strong class="similar-cost">450 000 руб.</strong><br />
+
+					<div class="similar-view">
+						<a href="" title=""><img src="images/tmp/g3.jpg" alt="" /></a>
+					</div>
+				</div>
+
+				<div class="item">
+					<a href="" title="">Ford Fiesta</a><br />
+					<strong class="similar-cost">450 000 руб.</strong><br />
+
+					<div class="similar-view">
+						<a href="" title=""><img src="images/tmp/g3.jpg" alt="" /></a>
+					</div>
+				</div>
+
+				<div class="item">
+					<a href="" title="">Ford Fiesta</a><br />
+					<strong class="similar-cost">450 000 руб.</strong><br />
+
+					<div class="similar-view">
+						<a href="" title=""><img src="images/tmp/g3.jpg" alt="" /></a>
+					</div>
+				</div>
+
+				<div class="item">
+					<a href="" title="">Ford Fiesta</a><br />
+					<strong class="similar-cost">450 000 руб.</strong><br />
+
+					<div class="similar-view">
+						<a href="" title=""><img src="images/tmp/g3.jpg" alt="" /></a>
+					</div>
+				</div>
+
+				<div class="item">
+					<a href="" title="">Ford Fiesta</a><br />
+					<strong class="similar-cost">450 000 руб.</strong><br />
+
+					<div class="similar-view">
+						<a href="" title=""><img src="images/tmp/g3.jpg" alt="" /></a>
+					</div>
+				</div>
+
+				<div class="item">
+					<a href="" title="">Ford Fiesta</a><br />
+					<strong class="similar-cost">450 000 руб.</strong><br />
+
+					<div class="similar-view">
+						<a href="" title=""><img src="images/tmp/g3.jpg" alt="" /></a>
+					</div>
+				</div>
+
+				<div class="item">
+					<a href="" title="">Ford Fiesta</a><br />
+					<strong class="similar-cost">450 000 руб.</strong><br />
+
+					<div class="similar-view">
+						<a href="" title=""><img src="images/tmp/g3.jpg" alt="" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+	<div class="wrapper">
+		<!-- text -->
+		<div class="footer-text">
+			<div class="footer-text-left">
+				<h6>Купить Mitsubishi</h6>
+
+				<p><a href="" title="">Mitsubishi Lancer</a> | 
+					<a href="" title="">Mitsubishi Lancer evolution</a> | 
+					<a href="" title="">Mitsubishi I-Miev</a> | 
+					<a href="" title="">Mitsubishi ASX</a> | 
+					<a href="" title="">Mitsubishi Outlander</a> | 
+					<a href="" title="">Mitsubishi Pajero Sport</a> | 
+					<a href="" title="">Mitsubishi Pajero</a> | 
+					<a href="" title="">Mitsubishi L200</a>
+				</p>
+
+			</div>
+
+			<div class="footer-text-right">
+				<h6>Купить Hyundai</h6>
+
+				<p><a href="" title="">Hyundai Solaris | 
+					<a href="" title="">Hyundai i30</a> | 
+					<a href="" title="">Hyundai i40</a> | 
+					<a href="" title="">Hyundai Elantra</a> | 
+					<a href="" title="">Hyundai Sonata</a> | 
+					<a href="" title="">Hyundai Veloster</a> | 
+					<a href="" title="">Hyundai Grandeur</a> | 
+					<a href="" title="">Hyundai Genesis</a> | 
+					<a href="" title="">Hyundai Genesis coupe</a> | 
+					<a href="" title="">Hyundai Equus</a> | 
+					<a href="" title="">Hyundai ix35</a> | 
+					<a href="" title="">Hyundai Santa Fe</a> | 
+					<a href="" title="">Hyundai ix55</a> | 
+					<a href="" title="">Hyundai H-1</a>
+				</p>
+			</div>
+
+			<div class="footer-text-center">
+				<h6>Услуги автосалона</h6>
+
+				<p><a href="" title="">Акции</a> | 
+					<a href="" title="">О компании</a> | 
+					<a href="" title="">Наша команда</a> | 
+					<a href="" title="">Автосервис</a> | 
+					<a href="" title="">Автострахование</a> | 
+					<a href="" title="">Отзывы</a> | 
+					<a href="" title="">Купить автомобиль в кредит</a> | 
+					<a href="" title="">Продать автомобиль</a> | 
+					<a href="" title="">Корпоративным клиентам</a> | 
+					<a href="" title="">Программа лояльности</a> | 
+					<a href="" title="">Шиномонтаж</a> | 
+					<a href="" title="">Шинный отель</a> | 
+					<a href="" title="">Техническое обслуживание</a> | 
+					<a href="" title="">Покраска автомобилей</a> | 
+					<a href="" title="">Контакты</a> |
+				</p>
+			</div>
+		</div>
+
+		<div class="footer-copyright">
+			© 2011—2012 “РОЛЬФ On-line”<br />
+			<a href="" title="">Контактная информация</a>
+
+			<div class="footer-social">
+				<a href="" title=""><img src="images/tw.png" alt="" /></a>
+				<a href="" title=""><img src="images/fb.png" alt="" /></a>
+				<a href="" title=""><img src="images/yt.png" alt="" /></a>
+			</div>
+		</div>
+
+		<!-- made by -->
+		<div class="footer-made">
+			Сварено &mdash; <a href="" title=""><img src="images/weway.png" alt="" /></a>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/call.js"></script>
+</body>
+</html>

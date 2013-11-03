@@ -1,0 +1,178 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border: 0 none;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img { border:0 none; }
+table { border-collapse: collapse; border-spacing: 0; }
+ol, ul { list-style-image: none; list-style-position: outside; list-style-type: none; }
+q:before, q:after, blockquote:before, blockquote:after { content:""; }
+
+/* css begin */
+html, body { height:100%; }
+body {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	color: #4f5866;
+	width: 100%;
+	background: url(../images/header-bg.jpg) no-repeat 50% 43px #f6f6f6;
+}
+
+.topline { width: 100%; height: 43px; background: #4f5866; }
+	.topline .wrapper { width: 940px; margin: 0 auto; }
+
+	.topline .textinput {
+		float: left;
+		width: 199px;
+		border: 0;
+		margin: 9px 0 0 0;
+		padding: 4px 8px 8px 8px;
+		font-family: Arial, sans-serif;
+		font-size: 14px;
+		color: #4f5866;
+		background: url(../images/top-input.png) no-repeat left top;
+	}
+	.topline .submitinput {
+		float: left;
+		width: 27px;
+		height: 26px;
+		border: 0;
+		margin: 9px 0 0 0;
+		cursor: pointer;
+		background: url(../images/top-input.png) no-repeat right top;
+	}
+
+	.topline .contact {
+		float: right;
+		display: inline-block;
+		font-size: 14px;
+		padding: 0 0 0 30px;
+		margin: 13px 0 0 38px;
+		color: #fff;
+	}
+	.topline .icq { background: url(../images/ico-icq.png) no-repeat left 0; }
+	.topline .skype { background: url(../images/ico-skype.png) no-repeat left 0; }
+
+/* header */
+.header { width: 100%; height: 475px; }
+
+	.header .logo-one { float: left; width: 366px; height: 36px; margin: 35px 0 0 7px; background: url(../images/logo-1.png) no-repeat; }
+	.header .logo-two { float: left; width: 227px; height: 34px; margin: 35px 0 0 18px; background: url(../images/logo-2.png) no-repeat; }
+	.header .phone { float: right; width: 205px; height: 51px; margin: 27px 16px 0 0; overflow: hidden; text-indent: -9999px; background: url(../images/phone.png) no-repeat; }
+
+/* main menu */
+.mainmenu { width: 100%; border-bottom: 1px solid #bcbfc4; overflow: hidden; }
+
+	.mainmenu ul { width: 80%; }
+	.mainmenu li { float: left; padding: 15px 0 5px 0; margin: 0 20px 10px 20px; }
+		.mainmenu li a { font-size: 14px; color: #4f5866; text-decoration: none;  }
+		.mainmenu li a:hover { color: #f41e27; border-bottom: 1px dotted #f41e27;  }
+
+	.mainmenu .nav { float: right; margin: 17px 45px 0 0; }
+		.mainmenu .nav a { margin-left: 32px; }
+
+/* leftside */
+.leftside { width: 305px; float: left; padding-top: 15px; }
+
+	.leftside li { padding: 7px 0 7px 20px; border-top: 1px dashed #999; background: url(../images/bullet-1.gif) no-repeat left 15px; }
+	.leftside li:first-child { border: 0; }
+	.leftside li a { color: #4f5866; font-size: 14px; text-decoration: none; }
+	.leftside li a:hover { color: #f41e27; border-bottom: 1px dotted #f41e27; }
+
+	.leftside li ul { margin: 7px 0 3px 0; }
+	.leftside li li { border-top: 0; padding: 0 0 2px 20px; background: none; }
+
+	.leftside .adv { margin: 20px 0; text-align: center; }
+		.leftside .adv h2 { margin-bottom: 20px; }
+		.leftside .adv img { margin-bottom: 24px; }
+
+/* content */
+#wrap {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+.cleaner { clear: both; }
+
+h1, h2 { padding-bottom: 10px; font-size: 18px; font-weight: normal; color: #f41e27; }
+
+
+/* text */
+.content { float: left; width: 630px; margin-left: 5px; line-height: 18px; }
+
+	.content-top { position: relative; padding: 17px 0 0 28px; height: 60px; background: url(../images/content-top.gif) no-repeat left top; }
+	.content-bottom { position: relative; margin-top: -50px; height: 60px; background: url(../images/content-bottom.gif) no-repeat left bottom; }
+	.content-main { margin-top: -40px; overflow: hidden; padding: 0 0 5px 28px; background: url(../images/content-main.gif) repeat-y left top; }
+
+	.content p { margin: 10px 0; width: 95%; }
+
+/* catalog */
+.catalog { padding-bottom: 10px; overflow: hidden; }
+
+	.catalog .item { width: 280px; float: left; margin: 0 20px 10px 0; }
+		.catalog .item .thumbnail { width: 106px; float: left; }
+		.catalog .item .cost { float: left; font-size: 18px; color: #000; padding: 35px 0 0 10px; }
+		.catalog .item .description { clear: both; }
+			.catalog .item .description a { display: block; font-size: 14px; font-weight: normal; color: #095cb5; text-decoration: none; border-bottom: 1px dotted #f6f6f6;}
+			.catalog .item .description a:hover { border-bottom: 1px dotted #095cb5; }
+			.catalog .item p { margin: 3px 0; line-height: 16px; }
+
+	.catalog .sort { position: relative; margin: 15px 0; color: #f41e27; }
+		.catalog .sort span { font-size: 14px; margin-right: 110px; color: #4f5866; }
+		.catalog .sort a { color: #f41e27; text-decoration: none; }
+		.catalog .sort a:hover { border-bottom: 1px dotted #f41e27; }
+
+	.catalog .paginator { clear: both; overflow: hidden; padding: 10px 0;}
+		.catalog .paginator li { float: left; margin-right: 7px; }
+		.catalog .paginator li a {
+			display: inline-block;
+			padding: 8px 12px;
+			color: #fff;
+			background: #4f5866;
+			text-decoration: none;
+			font-size: 14px;
+			-moz-border-radius: 5px;
+  			-webkit-border-radius: 5px;
+  			-khtml-border-radius: 5px;
+  			border-radius: 5px;
+			behavior: url(ie-css3.htc);
+		}
+		.catalog .paginator li a:hover, .catalog .paginator li.current a { background: #ccc; color: #4f5866; }
+
+/* footer */
+#footer {
+	position: relative;
+	margin-top: -119px;
+	height: 119px;
+	width: 100%;
+	background: url(../images/footer-bg.gif) repeat-x;
+	font-size: 14px;
+	color: #ccc;
+	line-height: 20px;
+}
+
+#footer .wrapper { width: 940px; margin: 0 auto; }
+
+#footer .copyright { float: left; width: 220px; margin-top: 29px; }
+
+#footer ul { float: right; width: 720px; margin-top: 29px; }
+#footer li { float: left; margin: 0 0 10px 40px; }
+	#footer li a { color: #ccc; text-decoration: none; }
+	#footer li a:hover { color: #fff; border-bottom: 1px dotted #fff; }
+
+#footer .counters { clear: both; float: right; margin-top: 5px; }
+#footer .counters div { float: right; width: 88px; margin-left: 20px; }
+
+.footer_blank {	clear: both; height: 135px; }

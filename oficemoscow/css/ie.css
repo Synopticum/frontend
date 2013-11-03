@@ -1,0 +1,12 @@
+/* ie7 */
+.page-news-item-main,
+.page-news-comments,
+.page-dnf-item,
+.paginator li a,
+.page-company-objects-nav li a,
+.page-user-forms .default-checkbox { 
+	zoom: 1; 
+	*display: inline; 
+} 
+
+sup { position: relative; left: 6px; }

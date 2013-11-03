@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/boilerplate.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!--[if lte IE 7]><link rel="stylesheet" href="css/ie.css"><![endif]-->   
+
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
+
+        <!-- sustom selectbox -->
+        <link href="js/jquery.selectbox/jquery.selectbox.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="js/jquery.selectbox/jquery.selectbox-0.2.min.js"></script>
+
+        <!-- jquery ui -->
+        <link href="js/jquery-ui-1.10.2.custom/css/ui-lightness/jquery-ui-1.10.2.custom.css" rel="stylesheet">
+        <script src="js/jquery-ui-1.10.2.custom/js/jquery-ui-1.10.2.custom.js"></script>
+
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <header>
+                <div class="header-wrapper">
+                    <a href="#" title=""><img src="images/header-logo.png" alt="" class="header-logo" /></a>
+
+                    <div class="header-select">
+                        <a href="" title="" class="active"><span class="line">АРЕНДА</span><span class="arrow"></span></a> 
+                        И 
+                        <a href="" title=""><span class="line">ПРОДАЖА</span><span class="arrow"></span></a>
+                    </div>
+
+                    <div class="header-menu">
+                        <ul>
+                            <li><a href="" title="">КОМПАНИИ</a></li>
+                            <li><a href="" title="">НОВОСТИ</a></li>
+                            <li><a href="" title="">КАРТА</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="header-menu-add">
+                        <a href="" title="">+ <span>ДОБАВИТЬ МЕСТО</span></a>
+                    </div>
+
+                    <a href="" title="" class="header-login">Войти</a>
+                </div>
+            </header>
+
+            <div id="wrap" class="clearfix">
+                <!-- content -->
+                <div class="content">
+                    <div class="page-nav clearfix">
+                        <div class="page-nav-menu">
+                            <ul>
+                                <li><a href="" title="">ТИП ОБЪЕКТА<sup>3</sup></a></li>
+                                <li><a href="" title="">КЛАСС<sup>1</sup></a></li>
+                                <li><a href="" title="">ПЛОЩАДЬ</a></li>
+                                <li><a href="" title="">СТОИМОСТЬ</a>
+                                    <ul>
+                                        <li>
+                                            <div class="page-search-values">
+                                                <form action="">
+                                                    от <input type="text" id="" value="10" class="default-textbox page-search-areamin" />
+                                                    до <input type="text" id="" value="60000" class="default-textbox page-search-areamax" />
+                                                    руб
+                                                    в месяц
+                                                </form>
+                                            </div>   
+                                            <div class="up"></div>                                    
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="" title="">МЕСТО<sup>8</sup></a>
+                                    <ul>
+                                        <li><a href="" title="">Округ</a></li>
+                                        <li><a href="" title="">Район</a>
+                                            <div class="page-nav-last">
+                                                <div class="page-nav-last-wrapper">
+                                                    <table>
+                                                        <tr>
+                                                            <td><span class="default-checkbox"><input type="checkbox" id="x1" class="checkbox" /><label for="x1">Академический</label></span></td>
+                                                            <td><span class="default-checkbox"><input type="checkbox" id="x2" class="checkbox" /><label for="x2">Аэропорт</label></span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="default-checkbox"><input type="checkbox" id="x3" class="checkbox" /><label for="x3">Котловка</label></span></td>
+                                                            <td><span class="default-checkbox"><input type="checkbox" id="x4" class="checkbox" /><label for="x4">Кузьминки</label></span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="default-checkbox"><input type="checkbox" id="x5" class="checkbox" /><label for="x5">Проспект Вернадского</label></span></td>
+                                                            <td><span class="default-checkbox"><input type="checkbox" id="x6" class="checkbox" /><label for="x6">Савеловский</label></span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="default-checkbox"><input type="checkbox" id="x7" class="checkbox" /><label for="x7">Алексеевский</label></span></td>
+                                                            <td><span class="default-checkbox"><input type="checkbox" id="x8" class="checkbox" /><label for="x8">Бабушкинский</label></span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="default-checkbox"><input type="checkbox" id="x9" class="checkbox" /><label for="x9">Красносельский</label></span></td>
+                                                            <td><span class="default-checkbox"><input type="checkbox" id="x10" class="checkbox" /><label for="x10">Кунцево</label></span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="default-checkbox"><input type="checkbox" id="x11" class="checkbox" /><label for="x11">Раменки</label></span></td>
+                                                            <td><span class="default-checkbox"><input type="checkbox" id="x12" class="checkbox" /><label for="x12">Свиблово</label></span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="default-checkbox"><input type="checkbox" id="x13" class="checkbox" /><label for="x13">Алтуфьевский</label></span></td>
+                                                            <td><span class="default-checkbox"><input type="checkbox" id="x14" class="checkbox" /><label for="x14">Басманный</label></span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="default-checkbox"><input type="checkbox" id="x15" class="checkbox" /><label for="x15">Крылатское</label></span></td>
+                                                            <td><span class="default-checkbox"><input type="checkbox" id="x16" class="checkbox" /><label for="x16">Куркино</label></span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="default-checkbox"><input type="checkbox" id="x17" class="checkbox" /><label for="x17">Ростокино</label></span></td>
+                                                            <td><span class="default-checkbox"><input type="checkbox" id="x18" class="checkbox" /><label for="x18">Северное Бутово</label></span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="default-checkbox"><input type="checkbox" id="x19" class="checkbox" /><label for="x19">Арбат</label></span></td>
+                                                            <td><span class="default-checkbox"><input type="checkbox" id="x20" class="checkbox" /><label for="x20">Беговой</label></span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="default-checkbox"><input type="checkbox" id="x21" class="checkbox" /><label for="x21">Крюково</label></span></td>
+                                                            <td><span class="default-checkbox"><input type="checkbox" id="x22" class="checkbox" /><label for="x22">Левобережный</label></span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="default-checkbox"><input type="checkbox" id="x23" class="checkbox" /><label for="x23">Рязанский</label></span></td>
+                                                            <td><span class="default-checkbox"><input type="checkbox" id="x24" class="checkbox" /><label for="x24">Северное Измайлово</label></span></td>
+                                                        </tr>
+                                                    </table>
+                                                    <div class="left"></div>
+                                                </div>
+                                            </div>
+                                            <div class="up"></div>  
+                                        </li>
+                                        <li><a href="" title="">Метро</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="page-nav-search clearfix">
+                            <input type="text" id="" value="" class="default-textbox page-search-bar" placeholder="Поиск" />
+                            <input type="button" id="" value="НАЙТИ" class="default-button page-search-find" />
+                        </div>
+                    </div>
+
+                    <!-- do not forget -->
+                    <div class="page-dnf">
+                        <h6>Не забудьте посмотреть:</h6>
+
+                        <div class="page-dnf-item">
+                            <img src="images/tmp/d1.jpg" alt="" class="page-dnf-image" />
+                            <a href="" title="" class="page-dnf-title"><span class="uniform-bg"><span>10 000 руб.<br />Офисный центр<br />Бибирево-сити B+</span></span></a>
+
+                            <p>Новый и современный бизнес-центр в самом сердце Москвы</p>
+                        </div>
+
+                        <div class="page-dnf-item">
+                            <img src="images/tmp/d2.jpg" alt="" class="page-dnf-image" />
+                            <a href="" title="" class="page-dnf-title"><span class="uniform-bg"><span>5 000 руб.<br />Жилой дом<br />под офисы B+</span></span></a>
+
+                            <p>Старинный графский особняк с современным ремонтом и уникальным фасадом здания</p>
+                        </div>
+
+                        <div class="page-dnf-item">
+                            <img src="images/tmp/d3.jpg" alt="" class="page-dnf-image" />
+                            <a href="" title="" class="page-dnf-title"><span class="uniform-bg"><span>25 000 руб.<br />Особняк А+</span></span></a>
+
+                            <p>Элитное здание в центре Москвы, охраняемая парковка, круглосуточная охрана и интернет</p>
+                        </div>
+
+                        <div class="page-dnf-item">
+                            <img src="images/tmp/d4.jpg" alt="" class="page-dnf-image" />
+                            <a href="" title="" class="page-dnf-title"><span class="uniform-bg"><span>12 000 руб.<br />Офисный центр<br />Бибирево-сити B+</span></span></a>
+
+                            <p>Полностью перестроенное здание с видом на парк, шаговая доступность от метро и магазина</p>
+                        </div>
+                    </div>
+
+                    <!-- company list -->
+                    <div class="page-company">
+                        <div class="breadcrumbs">
+                            <a href="">Офисы в Москве</a> / <a href="">СЗАО</a> / <a href="">м. Полежаевская</a> /
+                        </div>
+
+                        <div class="page-company-nav clearfix">
+                            <ul class="en">
+                                <li><a href="" title="">A</a></li>
+                                <li><a href="" title="">B-D</a></li>
+                                <li><a href="" title="">E</a></li>
+                                <li><a href="" title="">F-J</a></li>
+                                <li><a href="" title="">K</a></li>
+                                <li><a href="" title="">L</a></li>
+                                <li><a href="" title="">M</a>
+                                    <ul>
+                                        <li><a href="" title="">Mitchell Silver Company</a></li>
+                                        <li><a href="" title="">Minnesota Oracle</a></li>
+                                        <li><a href="" title="">Mordor Oldway</a></li>
+                                        <li><a href="" title="">Mantika Orbit</a></li>
+                                        <li><a href="" title="">Munnal middletown</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="" title="">N</a></li>
+                                <li><a href="" title="">O</a></li>
+                                <li><a href="" title="">P-S</a></li>
+                                <li><a href="" title="">T-Z</a></li>
+                            </ul>
+
+                            <ul class="ru">
+                                <li><a href="" title="">А</a></li>
+                                <li><a href="" title="">Б</a></li>
+                                <li><a href="" title="">В</a></li>
+                                <li><a href="" title="">Г</a></li>
+                                <li><a href="" title="">Д</a></li>
+                                <li><a href="" title="">Е-З</a></li>
+                                <li><a href="" title="">И</a></li>
+                                <li><a href="" title="">К</a></li>
+                                <li><a href="" title="">Л</a></li>
+                                <li><a href="" title="">Л</a></li>
+                                <li><a href="" title="">М</a></li>
+                                <li><a href="" title="">Н</a></li>
+                                <li><a href="" title="">О</a></li>
+                                <li><a href="" title="">П</a></li>
+                                <li><a href="" title="">Р</a></li>
+                                <li><a href="" title="">С</a></li>
+                                <li><a href="" title="">Т-Ц</a></li>
+                                <li><a href="" title="">Ч-Я</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- card -->
+                        <div class="page-company-card">
+                            <h1>URBAN GROUP</h1>
+                            <h6>Собственник: 35 ПРЕДЛОЖЕНИЙ</h6>
+
+                            <div class="page-company-card-wrapper">
+                                <div class="page-company-info">
+                                    <img src="images/tmp/cc1.png" alt="" />
+
+                                    <div class="page-company-phone">+7 (495) 334-23-12</div>
+                                    <div class="page-company-url"><a href="">symbiosislab.ru</a></div>
+                                    <div class="page-company-email"><a href="mailto:">mailbox@urbangroup.ru</a></div>
+                                </div>
+
+                                <div class="page-company-about">
+                                    <p>Компания представляет собой крупный девелоперский холдинг и занимается строительством жилой недвижимости в Московской области.</p>
+
+                                    <p>Основной целью Urban Group выделяет строительство красивого, комфортного, но в тоже время доступного жилья. «Город для жизни» стал 
+                                    успешной находкой и фирменным форматом для компании жилья.</p>
+
+                                    <p>За счет вертикального интегрирования компании все работы, начиная с изготовления материалов, проходят внутри фирмы, что позволяет 
+                                    экономить и держать невысокую цену за метр.</p>
+                                </div>
+
+                                <div class="social">
+                                    <a href="" title="" class="social-vk"></a>
+                                    <a href="" title="" class="social-tw"></a>
+                                    <a href="" title="" class="social-fb"></a>
+                                    <a href="" title="" class="social-email"></a>
+                                    <a href="" title="" class="social-ok"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- -->
+                        <div class="page-company-objects clearfix">
+                            <h2>ОБЪЕКТЫ КОМПАНИИ</h2>
+
+                            <div class="page-company-objects-nav">
+                                <ul>
+                                    <li class="active"><a href="" title="">АРЕНДА</a><sup>12</sup></li>
+                                    <li><a href="" title="">ПРОДАЖА</a><sup>23</sup></li>
+                                </ul>
+                            </div>
+
+                            <div class="page-company-objects-item">
+                                <div class="page-company-objects-image">
+                                    <span>собственник</span>
+                                    <img src="images/tmp/o1.jpg" alt="" />
+                                </div>
+
+                                <div class="page-company-objects-description">
+                                    <div class="page-company-objects-title">
+                                        <a href="" title="" class="">«<strong>ТРИО</strong>» Бизнес-парк</a>
+                                        <sup>B+</sup>
+                                    </div>
+
+                                    <div class="page-company-objects-line">
+                                        Аренда: <span><big>5—19</big> тыс. руб м²/год</span> <small>от 10 до 550 м²</small>
+                                    </div>
+
+                                    <div class="page-company-objects-line">
+                                        Адрес: <span>Москва, ул. Бауманская, 32, стр. 2</span> <small><a href="">на карте</a></small>
+                                    </div>
+
+                                    <div class="page-company-objects-line">
+                                        Округ: <a href="">ЦАО</a> Метро: <a href="">Новокузнецкая</a> <small>0.2 км,</small> <a href="">Третьяковская</a> 0.8 км
+                                    </div>
+
+                                    <div class="page-company-objects-line">
+                                        Состояние здания: <a href="">идёт строительство</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="page-company-objects-item">
+                                <div class="page-company-objects-image">
+                                    <span>собственник</span>
+                                    <img src="images/tmp/o2.jpg" alt="" />
+                                </div>
+
+                                <div class="page-company-objects-description">
+                                    <div class="page-company-objects-title">
+                                        <a href="" title="" class="">«<strong>ЕЛОХОВСКИЙ ПАССАЖ</strong>» Офисное здание</a>
+                                        <sup>B+</sup>
+                                    </div>
+
+                                    <div class="page-company-objects-line">
+                                        Аренда: <span><big>5—19</big> тыс. руб м²/год</span> <small>от 10 до 550 м²</small>
+                                    </div>
+
+                                    <div class="page-company-objects-line">
+                                        Адрес: <span>Москва, ул. Бауманская, 32, стр. 2</span> <small><a href="">на карте</a></small>
+                                    </div>
+
+                                    <div class="page-company-objects-line">
+                                        Округ: <a href="">ЦАО</a> Метро: <a href="">Новокузнецкая</a> <small>0.2 км,</small> <a href="">Третьяковская</a> 0.8 км
+                                    </div>
+
+                                    <div class="page-company-objects-line">
+                                        Состояние здания: <a href="">идёт строительство</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="page-company-objects-item">
+                                <div class="page-company-objects-image">
+                                    <span>собственник</span>
+                                    <img src="images/tmp/o3.jpg" alt="" />
+                                </div>
+
+                                <div class="page-company-objects-description">
+                                    <div class="page-company-objects-title">
+                                        <a href="" title="" class="">«<strong>КИТАЙ-ГОРОД</strong>» Многофункциональный центр</a>
+                                        <sup>B+</sup>
+                                    </div>
+
+                                    <div class="page-company-objects-line">
+                                        Аренда: <span><big>5—19</big> тыс. руб м²/год</span> <small>от 10 до 550 м²</small>
+                                    </div>
+
+                                    <div class="page-company-objects-line">
+                                        Адрес: <span>Москва, ул. Бауманская, 32, стр. 2</span> <small><a href="">на карте</a></small>
+                                    </div>
+
+                                    <div class="page-company-objects-line">
+                                        Округ: <a href="">ЦАО</a> Метро: <a href="">Новокузнецкая</a> <small>0.2 км,</small> <a href="">Третьяковская</a> 0.8 км
+                                    </div>
+
+                                    <div class="page-company-objects-line">
+                                        Состояние здания: <a href="">идёт строительство</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="page-company-objects-item">
+                                <div class="page-company-objects-image">
+                                    <span>собственник</span>
+                                    <img src="images/tmp/o4.jpg" alt="" />
+                                </div>
+
+                                <div class="page-company-objects-description">
+                                    <div class="page-company-objects-title">
+                                        <a href="" title="" class="">«<strong>ГОЛДЕН ГЕЙТ</strong>» Административное здание</a>
+                                        <sup>B+</sup>
+                                    </div>
+
+                                    <div class="page-company-objects-line">
+                                        Аренда: <span><big>5—19</big> тыс. руб м²/год</span> <small>от 10 до 550 м²</small>
+                                    </div>
+
+                                    <div class="page-company-objects-line">
+                                        Адрес: <span>Москва, ул. Бауманская, 32, стр. 2</span> <small><a href="">на карте</a></small>
+                                    </div>
+
+                                    <div class="page-company-objects-line">
+                                        Округ: <a href="">ЦАО</a> Метро: <a href="">Новокузнецкая</a> <small>0.2 км,</small> <a href="">Третьяковская</a> 0.8 км
+                                    </div>
+
+                                    <div class="page-company-objects-line">
+                                        Состояние здания: <a href="">идёт строительство</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="page-company-objects-item">
+                                <div class="page-company-objects-image">
+                                    <span>собственник</span>
+                                    <img src="images/tmp/o1.jpg" alt="" />
+                                </div>
+
+                                <div class="page-company-objects-description">
+                                    <div class="page-company-objects-title">
+                                        <a href="" title="" class="">«<strong>ТРИО</strong>» Бизнес-парк</a>
+                                        <sup>B+</sup>
+                                    </div>
+
+                                    <div class="page-company-objects-line">
+                                        Аренда: <span><big>5—19</big> тыс. руб м²/год</span> <small>от 10 до 550 м²</small>
+                                    </div>
+
+                                    <div class="page-company-objects-line">
+                                        Адрес: <span>Москва, ул. Бауманская, 32, стр. 2</span> <small><a href="">на карте</a></small>
+                                    </div>
+
+                                    <div class="page-company-objects-line">
+                                        Округ: <a href="">ЦАО</a> Метро: <a href="">Новокузнецкая</a> <small>0.2 км,</small> <a href="">Третьяковская</a> 0.8 км
+                                    </div>
+
+                                    <div class="page-company-objects-line">
+                                        Состояние здания: <a href="">идёт строительство</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- paginator -->
+                            <div class="paginator">
+                                <ul>
+                                    <li><a href="" title=""><img src="images/p-left.png" alt="" /></a></li>
+                                    <li><a href="" title="">1</a></li>
+                                    <li class="active"><a href="" title="">2</a></li>
+                                    <li><a href="" title="">3</a></li>
+                                    <li><a href="" title="">4</a></li>
+                                    <li><a href="" title="">5</a></li>
+                                    <li><a href="" title="">6</a></li>
+                                    <li><span>...</span></li>
+                                    <li><a href="" title="">101</a></li>
+                                    <li><a href="" title=""><img src="images/p-right.png" alt="" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- special -->
+                <div class="special">
+                    <h5 class="special-title">СПЕЦПРЕДЛОЖЕНИЯ</h5>
+
+                    <div class="item">
+                        <img src="images/tmp/s1.jpg" alt="" />
+
+                        <div class="description">
+                            <span class="price">12 000 руб.</span><br />
+
+                            <div class="title">
+                                <a href="" title="">Офисный центр</a> А+
+                            </div>
+
+                            <p>Новый и современный бизнес-центр в самом сердце Москвы</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/tmp/s1.jpg" alt="" />
+
+                        <div class="description">
+                            <span class="price">12 000 руб.</span><br />
+
+                            <div class="title">
+                                <a href="" title="">Офисный центр</a> А+
+                            </div>
+                            
+                            <p>Новый и современный бизнес-центр в самом сердце Москвы</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/tmp/s1.jpg" alt="" />
+
+                        <div class="description">
+                            <span class="price">12 000 руб.</span><br />
+
+                            <div class="title">
+                                <a href="" title="">Офисный центр</a> А+
+                            </div>
+                            
+                            <p>Новый и современный бизнес-центр в самом сердце Москвы</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/tmp/s1.jpg" alt="" />
+
+                        <div class="description">
+                            <span class="price">12 000 руб.</span><br />
+
+                            <div class="title">
+                                <a href="" title="">Офисный центр</a> А+
+                            </div>
+                            
+                            <p>Новый и современный бизнес-центр в самом сердце Москвы</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/tmp/s1.jpg" alt="" />
+
+                        <div class="description">
+                            <span class="price">12 000 руб.</span><br />
+
+                            <div class="title">
+                                <a href="" title="">Офисный центр</a> А+
+                            </div>
+                            
+                            <p>Новый и современный бизнес-центр в самом сердце Москвы</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/tmp/s1.jpg" alt="" />
+
+                        <div class="description">
+                            <span class="price">12 000 руб.</span><br />
+
+                            <div class="title">
+                                <a href="" title="">Офисный центр</a> А+
+                            </div>
+                            
+                            <p>Новый и современный бизнес-центр в самом сердце Москвы</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/tmp/s1.jpg" alt="" />
+
+                        <div class="description">
+                            <span class="price">12 000 руб.</span><br />
+
+                            <div class="title">
+                                <a href="" title="">Офисный центр</a> А+
+                            </div>
+                            
+                            <p>Новый и современный бизнес-центр в самом сердце Москвы</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/tmp/s1.jpg" alt="" />
+
+                        <div class="description">
+                            <span class="price">12 000 руб.</span><br />
+
+                            <div class="title">
+                                <a href="" title="">Офисный центр</a> А+
+                            </div>
+                            
+                            <p>Новый и современный бизнес-центр в самом сердце Москвы</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/tmp/s1.jpg" alt="" />
+
+                        <div class="description">
+                            <span class="price">12 000 руб.</span><br />
+
+                            <div class="title">
+                                <a href="" title="">Офисный центр</a> А+
+                            </div>
+                            
+                            <p>Новый и современный бизнес-центр в самом сердце Москвы</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/tmp/s1.jpg" alt="" />
+
+                        <div class="description">
+                            <span class="price">12 000 руб.</span><br />
+
+                            <div class="title">
+                                <a href="" title="">Офисный центр</a> А+
+                            </div>
+                            
+                            <p>Новый и современный бизнес-центр в самом сердце Москвы</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/tmp/s1.jpg" alt="" />
+
+                        <div class="description">
+                            <span class="price">12 000 руб.</span><br />
+
+                            <div class="title">
+                                <a href="" title="">Офисный центр</a> А+
+                            </div>
+                            
+                            <p>Новый и современный бизнес-центр в самом сердце Москвы</p>
+                        </div>
+                    </div>
+
+                    <div class="special-add">
+                        <a href="" title="">Я ХОЧУ ДОБАВИТЬ ОБЪЕКТ В КАТАЛОГ</a>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-wrapper">
+                    <div class="footer-copyright">
+                        <a href="" title="" class="title">ОФИС.МОСКВА</a>
+                        <p>Аренда офисных, торговых и нежилых помещений во всех районах Москвы. На нашем сайте только актуальныие и проверенные предложения.</p>
+                        <p><span>© 2012—2013</span></p>
+                    </div>
+
+                    <ul>
+                        <li><a href="" title="">Компании</a></li>
+                        <li><a href="" title="">Новости</a></li>
+                        <li><a href="" title="">Карта сайта</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="" title="">О проекте</a></li>
+                        <li><a href="" title="">Размещение объектов</a></li>
+                        <li><a href="" title="">Контактная информация</a></li>
+                    </ul>
+
+                    <div class="footer-phone">
+                        <big>(495) 432-34-11</big><br />
+                        <big>(495) 432-81-23</big>
+
+                        <p><a href="" title="">Напишите нам</a></p>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/call.js"></script>
+    </body>
+</html>

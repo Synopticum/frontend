@@ -1,0 +1,219 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border: 0 none;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img { border:0 none; }
+table { border-collapse: collapse; border-spacing: 0; }
+ol, ul { list-style-image: none; list-style-position: outside; list-style-type: none; }
+q:before, q:after, blockquote:before, blockquote:after { content:""; }
+
+/* css begin */
+html, body { height:100%; }
+body {
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 13px;
+	color: #666;
+	background: #fff;
+	width: 100%;
+	min-width: 1000px;
+}
+
+/* content */
+#wrap {
+	position: relative;
+	background: #fff;
+	width: 100%;
+	margin: 0 auto;
+	min-height: 87%;
+	height: auto !important;
+	height: 87%;
+}
+
+/* header */
+.header { height: 120px; background: url(../images/header-bg.gif) repeat-x; }
+	.header .wrapper { width: 960px; margin: 0 auto; height: 120px; background: url(../images/header-wrapper.jpg) no-repeat 50% 0; }
+
+	.header .logo { float: left; margin: 25px 0 0 0; }
+
+	.header .search { float: right; width: 320px; overflow: hidden; margin: 40px 0 0 0; }
+		#searchbar { float: left; width: 274px; height: 30px; height: 13px; border: 0; color: #97d3fa; font-style: italic; padding: 8px 8px 9px 8px; background: url(../images/header-search.gif) no-repeat; }
+		#searchbar:focus { outline: none; color: #fff; font-style: normal; background-position: 0 100%; }
+		#find { float: left; border: 0; width: 28px; height: 30px; background: url(../images/header-search.gif) no-repeat 100% 0; cursor: pointer; }
+
+/* content header */
+.content-header { width: 960px; margin: 0 auto; overflow: hidden; padding: 10px 0; }
+	.content-header h1 { float: left; width: 60%; font-size: 48px; color: #666; font-weight: bold; letter-spacing: -3px; line-height: 80%; }
+	.content-header .contacts { float: right; width: 40%; text-align: right; font-size: 18px; color: #999; }
+		.content-header .phone { display: inline-block; margin: 10px 0 10px 0; font-size: 30px; color: #3fa9f5; letter-spacing: -2px; }
+		.content-header .phone img { margin: 0 4px -4px 0; }
+
+	.content-header .hr { clear: both; height: 20px; border-top: 20px solid #fff; border-bottom: 20px solid #fff; background: #3fa9f5; }
+
+	.content-header table { width: 100%; }
+		.content-header td { width: 16%; height: 35px; background: url(../images/mainmenu-bg.gif) no-repeat 50% 0; border-right: 3px solid #fff; padding: 0 5px; line-height: 32px; }
+		.content-header td a { text-decoration: none; color: #333; }
+		.content-header td:hover { background-position: 50% 100%; }
+		.content-header td:hover a { color: #3fa9f5; }
+		.content-header td a:hover { color: #3fa9f5; }
+
+/* content */
+.content { margin: 10px 0 0 0; overflow: hidden; background: url(../images/content-bg.gif) repeat-x #f9f9f9; }
+	.content .wrapper { width: 960px; margin: 0 auto; padding: 20px 0; }
+
+	.content .welcome { float: left; width: 416px; height: 70px; color: #fff; padding: 15px 20px; background: url(../images/welcome-bg.gif) repeat-x #3fa9f5; overflow: hidden; }
+		.content .welcome h2 { font-size: 18px; font-weight: bold; margin-bottom: 7px; }
+
+	.content .certs { position: relative; float: right; width: 416px; height: 70px; color: #fff; padding: 15px 20px; background: url(../images/certs-bg.gif) repeat-x #999; }
+		.content .certs h2 { font-size: 18px; font-weight: bold; margin-bottom: 7px; }
+		.content .certs img { position: absolute; right: 0; bottom: 0; }
+
+	.content .delivery { float: left; border-top: 10px solid #3fa9f5; height: 65px; border-bottom: 1px solid #3fa9f5; width: 436px; padding: 10px; margin: 20px 0; letter-spacing: -1px; }
+		.content .delivery h3 { font-size: 24px; color: #3fa9f5; font-weight: bold; line-height: 90%; letter-spacing: -1px; white-space: nowrap; }
+		.content .delivery .contacts { float: right; text-align: right; font-size: 14px; color: #999; }
+			.content .delivery .contacts span { font-size: 24px; color: #3fa9f5; }
+
+	.content .support { float: right; border-top: 10px solid #999; height: 65px; border-bottom: 1px solid #999; width: 436px; padding: 10px; margin: 20px 0; letter-spacing: -1px; }
+		.content .support h3 { font-size: 24px; color: #666; font-weight: bold; line-height: 90%; white-space: nowrap; }
+		.content .support .contacts { float: right; text-align: right; font-size: 14px; color: #999; }
+			.content .support .contacts span { font-size: 24px; color: #666; }
+
+	.content .boxes { clear: both; margin-left: -30px; }
+		.content .boxes h4 { font-size: 18px;color: #3fa9f5; padding: 4px 0; border-bottom: 5px solid #3fa9f5; }
+		.content .boxes p { padding: 15px 0 20px 0; height: 55px; overflow: hidden; border-bottom: 1px solid #3fa9f5; }
+		.content .boxes .more { float: right; margin: 2px 0; color: #999; font-style: italic; }
+
+		.content .box { width: 300px; float: left; margin-left: 30px; }
+
+	.content .catalog { clear: left; float: left; width: 630px; margin: 15px 0; background: #3fa9f5; }
+		.content .catalog h2 { padding: 14px 20px; font-size: 24px; color: #3fa9f5; font-weight: bold; background: url(../images/catalog-h2.gif) repeat-x 0 100%; letter-spacing: -1px; }
+		.content .catalog .wrapper { padding: 20px 40px 45px 40px; width: 550px; overflow: hidden; }
+			.content .catalog .col-1 { width: 45%; float: left; }
+			.content .catalog .col-2 { width: 45%; float: right; }
+
+			.content .catalog .list { margin-top: 25px; }
+				.content .catalog h5 { color: #333; font-weight: bold; }
+				.content .catalog ul { margin: 18px 0; color: #fff; }
+				.content .catalog li { background: url(../images/catalog-li.gif) no-repeat 0 7px; padding-left: 35px; margin-bottom: 1px; }
+				.content .catalog li a { color: #fff; }
+				.content .catalog .more { font-style: italic; color: #fff; }
+
+	.content .b-gray { margin: 15px 0; padding: 8px; background: #efeff0; letter-spacing: -1px; overflow: hidden; }
+		.content .b-gray h3 { font-size: 18px; color: #3fa9f5; }
+		.content .b-gray p { color: #333; margin: 10px 0; }
+		.content .b-gray .notice { color: #999; margin: 6px 0; font-style: italic; }
+		.content .button { display: inline-block; margin-top: 10px; border: 0; text-decoration: underline; text-align: center; padding: 5px 0 7px 0; color: #fff; }
+			.content .register { width: 135px; background: #999; margin-right: 10px; }
+			.content .enter { width: 135px; background: #3fa9f5; }
+
+	.content .b-blue { margin: 5px 0; padding: 8px; background: #e5f0f9; letter-spacing: -1px; overflow: hidden; }
+		.content .b-blue h3 { font-size: 18px; color: #3fa9f5; }
+		.content .b-blue p { color: #333; margin: 10px 0; }
+		.content .b-blue .notice { color: #3fa9f5; font-style: italic; }
+		.content .feedback textarea { border: 0; margin: 5px 0 0 0; padding: 5px 10px; width: 264px; height: 60px; overflow: hidden; background: url(../images/textarea.gif) no-repeat; font-style: italic; color: #999; font-family: Arial, sans-serif; }
+		.content .feedback textarea:focus { font-style: normal; color: #333; }
+		.content .feedback .button { float: right; cursor: pointer; }
+
+	.content .works .button { display: block; background: #3fa9f5; }
+	.content .works .all { float: right; margin: -19px 0 0 0; color: #999; }
+
+	.content .aside { float: right; width: 300px; margin-left: 30px; }
+
+	.content .text { margin: 15px 0; overflow: hidden; background: #efefef; font-size: 14px; }
+		.content .text h1 { padding: 14px 20px; font-size: 24px; color: #fff; font-weight: bold; background: url(../images/welcome-bg.gif) repeat-x 0 100%; letter-spacing: -1px; }
+		.content .text h2.sub { font-weight: bold; padding: 0 10px; font-size: 24px; color: #333; }
+		.content .text h5.sub { font-weight: bold; padding: 0 10px; color: #333; }
+		.content .text .highlight { color: #3fa9f5 !important; }
+		.content .text .wrapper { width: auto; padding: 40px; }
+
+		.content .text ol { }
+			.content .text ol li { padding: 15px 0; border-top: 2px solid #ddd; }
+			.content .text ol span { float: left; font-weight: bold; color: #3fa9f5; width: 25px; }
+			.content .text ol p { overflow: hidden; }
+
+/* product */
+.product { overflow: hidden; width: 97%; margin: 10px auto; }
+	.product .view { float: left; width: 305px; margin-right: 10px; }
+	.product .description { overflow: hidden; background: #fff; font-size: 13px; color: #333; padding: 20px 20px 40px 20px; }
+		.product .description table { width: 100%; }
+		.product .description td { padding: 5px 0 }
+
+		.product .cost { border-top: 10px solid #efefef; padding: 15px 20px; font-size: 18px; font-weight: bold; overflow: hidden; background: #fff; }
+			.product .cost span { color: #333; }
+			.product .cost a { float: right; color: #3fa9f5; text-decoration:none;  }
+
+.price { float: right; margin: 5px 25px 0 0; text-align: right; color: #333; }
+	.price big { font-size: 24px; font-weight: bold; }
+	.price em { font-size: 13px; color: #666; }
+
+.full-description { overflow: hidden; width: 97%; margin: 10px auto; }
+	.full-description .brand { float: left; width: 305px; height: 45px; background: #fff; margin: 0 10px 10px 0; overflow: hidden; }
+	.full-description .buy { float: left; display: block; text-align: center; width: 114px; height: 35px; background: #3fa9f5; font-size: 18px; color: #fff; text-decoration: none; padding: 10px 0 0 0; margin: 0 10px 10px 0; overflow: hidden; }
+	.full-description .bill { float: left; display: block; text-align: center; width: 170px; height: 35px; background: #999; font-size: 18px; color: #fff; text-decoration: none; padding: 10px 0 0 0; margin: 0 0 10px 0; overflow: hidden; }
+
+	.full-description .thumbnail { clear: left; float: left; width: 305px; height: 201px; background: #fff; margin: 0 10px 10px 0; overflow: hidden; }
+		.full-description .thumbnail td { text-align: center; vertical-align: middle; }
+	.full-description .features { float: left; background: #fff; width: 255px; height: 161px; padding: 20px; }
+		.full-description .features table { width: 100%; font-size: 13px; color: #333; }
+		.full-description .features td { padding: 5px 0 }
+
+	.full-description .description { clear: left; font-size: 13px; color: #333; background: #fff; padding: 20px; width: 440px; }
+		.full-description .description h6 { font-weight: bold; }
+		.full-description .description p { margin: 7px 0; }
+
+	.full-description .certificate { float: right; display: block; margin: 10px 0 0 0; width: 110px; height: 68px; }
+
+	.full-description .notify { clear: both; color: #666; font-style: italic; font-size: 13px; padding: 10px 15px 0 15px; }
+
+/* tables */
+.submenu { width: 100%; }
+	.submenu td { font-weight: bold; line-height: 100%; padding: 5px 10px; background: url(../images/product-submenu.gif) repeat-y #ddd; }
+	.submenu a { color: #666; text-decoration: none; }
+	.submenu td.active { background: #efefef; }
+	.submenu td.active a { color: #333; }
+
+.products-list { width: 97%; margin: 10px auto; font-size: 13px;  }
+	.products-list td { padding: 2px 10px; color: #333; }
+	.products-list td img { margin: 0 0 -2px 0; }
+	.products-list a { color: #333; }
+	.products-list a:hover { color: #3fa9f5; }
+
+	.text .hr-small { height: 1px; background: #ccc; width: 97%; margin: 10px auto; }
+	.text .hr-big { height: 3px; background: #ccc; width: 97%; margin: 15px auto; }
+
+.products-models { width: 97%; margin: 10px auto; color: #333; font-size: 13px; }
+	.products-models th { padding: 5px 10px; font-weight: bold; }
+	.products-models td { padding: 2px 10px; vertical-align: middle; }
+	.products-models .odd td { background: #fff; }
+/* footer */
+#footer {
+	position: relative;
+	margin-top: -114px;
+	height: 120px;
+	width: 100%;
+	background: url(../images/footer-bg.gif) repeat-x #999;]
+	color: #fff;
+}
+#footer .wrapper { width: 960px; margin: 0 auto; }
+
+#footer .logo { float: left; margin: 47px 0 0 0; }
+
+#footer ul { float: right; margin: 55px 0 0 0; }
+	#footer li { float: left; padding: 0 10px; border-left: 1px solid #fff; }
+	#footer li:first-child { border: 0; }
+	#footer li a { color: #fff; text-decoration: none; }
+	#footer li a:hover { text-decoration: underline; }
+
+
+.footer_blank {	clear: both; height: 114px; }
+
+/* ie7 */
+-,.box { margin: 0 15px 0 0 !important; }

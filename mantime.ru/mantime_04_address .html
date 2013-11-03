@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mantime - Address Page</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/pngfix.js"></script>
+<script type="text/javascript">
+	DD_belatedPNG.fix('.png24, html *');
+</script>
+<![endif]-->
+</head>
+<body>
+<div class="wrap">
+	<!-- header -->
+	<div class="header">
+		<a href="mantime_index_02-2.html" title=""><img src="images/logo.gif" width="163" height="70" class="logo" alt="" /></a>
+
+		<div class="menu">
+			<ul>
+				<li>Наборы</li>
+				<li><a href="#">Подарочные наборы</a></li>
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Блог</a></li>
+				<li><a href="#">Вопросы и ответы</a></li>
+			</ul>
+		</div>
+
+		<div class="login">
+			<a href="#" class="enter">Вход</a>
+			<a href="#">Регистрация</a>
+		</div>
+	</div>
+
+	<!-- step's -->
+	<div class="steps">
+		<ul>
+			<li>1. Выбор набора</li>
+			<li>2. Выбор стиля</li>
+			<li>3. Платежная информация</li>
+			<li class="active">4. Адрес доставки</li>
+			<li class="last">5. Готово!</li>
+		</ul>
+	</div>
+
+	<!-- pack's -->
+	<div class="stepblock">
+		<h1>Адрес доставки</h1>
+		<p>Введите ваши персональные данные и контактную информацию</p>
+
+		<div class="construct">
+
+			<div class="forms">
+				<table>
+					<col width="30%" />
+					<col width="65%" />
+					<col width="5%" />
+					<tr>
+						<td><label for="yourname1">Имя:</label></td>
+						<td><input name="yourname1" type="text" tabindex="1" /></td>
+						<th><span>*</span></th>
+					</tr>
+					<tr>
+						<td><label for="yourname2">Фамилия:</label></td>
+						<td><input name="yourname2" type="text" tabindex="2" /></td>
+						<th></th>
+					</tr>
+					<tr>
+						<td><label for="yourname3">Отчество:</label></td>
+						<td><input name="yourname3" type="text" tabindex="3" /></td>
+						<th></th>
+					</tr>
+					<tr>
+						<td><label for="yourmail">Эл, почта:</label></td>
+						<td><input name="yourmail" value="Заполните все поля" class="error" type="text" tabindex="4" /></td>
+						<th><span class="error">*</span></th>
+					</tr>
+					<tr>
+						<td><label for="yourphone">Телефон:</label></td>
+						<td><input name="yourphone" type="text" value="+7 495 000 00 00" tabindex="5" /></td>
+						<th><span>*</span></th>
+					</tr>
+					<tr>
+						<td><label for="yourcity">Город:</label></td>
+						<td><input name="yourcity" type="text" tabindex="6" /></td>
+						<th></th>
+					</tr>
+					<tr>
+						<td><label for="youraddress">Адрес доставки:</label></td>
+						<td><input name="youraddress" type="text" tabindex="7" /></td>
+						<th></th>
+					</tr>
+				</table>
+			</div>
+
+			<!-- cart-overview -->
+			<div class="cart-overview">
+				<h4>МОЙ ЗАКАЗ</h4>
+
+				<table>
+					<col width="10%" />
+					<col width="45%" />
+					<col width="40%" />
+					<col width="5%" />
+					<tr>
+						<th><span>3 шт</span></th>
+						<td class="col2">
+							<img src="images/t-shirt.png" alt="" />
+							<strong>Футболки</strong><br />
+							Hanes Белая,<br />
+							V-neck воротник
+						</td>
+						<td class="col3"><a href="#" class="edit">Редактировать</a> <a href="#" title="Редактировать" class="edit"><img src="images/edit.gif" alt="" /></a></td>
+						<td><a href="#" title="Удалить" class="remove">Удалить</a></td>
+					</tr>
+					<tr>
+						<th><span>3 шт</span></th>
+						<td class="col2">
+							<img src="images/shirt.png" alt="" />
+							<strong>Трусы</strong><br />
+							Hanes Белая
+						</td>
+						<td class="col3"><a href="#" class="edit">Редактировать</a> <a href="#" title="Редактировать" class="edit"><img src="images/edit.gif" alt="" /></a></td>
+						<td><a href="#" title="Удалить" class="remove">Удалить</a></td>
+					</tr>
+					<tr>
+						<th><span>3 шт</span></th>
+						<td class="col2">
+							<img src="images/socks.png" alt="" />
+							<strong>Пара носок</strong><br />
+							Hanes Белая
+						</td>
+						<td class="col3"><a href="#" class="edit">Редактировать</a> <a href="#" title="Редактировать" class="edit"><img src="images/edit.gif" alt="" /></a></td>
+						<td><a href="#" title="Удалить" class="remove">Удалить</a></td>
+					</tr>
+					<tfoot>
+					<tr>
+						<th></th>
+						<td class="col2">
+							<label><input type="radio" name="courier" value="courier" checked="checked" /> Доставка курьером</label><br />
+							<label><input type="radio" name="postal" value="postal" /> Доставка почтой</label>
+						</td>
+						<td class="col3">
+							<strong>400 рублей</strong><br />
+							<strong>300 рублей</strong>
+						</td>
+						<td></td>
+					</tr>
+					</tfoot>
+				</table>
+
+				<div class="valuecount">
+					<p>Итого: <strong>690<sup>00</sup> руб</strong></p>
+					<a href="#" title="Следующий шаг">Следующий шаг</a>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="qa">
+			<strong>Вопросы и ответы:</strong>
+			<h2>Why should I want a Manpacks subscription?</h2>
+			<p>It's convenient, affordable, and risk-free. And you will always have fresh socks,
+			underwear, and t-shirts (is this ever a bad thing?).</p>
+		</div>
+	</div>
+
+</div>
+
+<!-- footer -->
+<div class="footer">
+	<div class="wrap">
+		Copyright &copy; 2010 Mantime. All rights reserved.
+		<strong>Телефон: +7 495 123-45-67</strong>
+		<a href="#">Обратная связь</a>
+	</div>
+</div>
+
+</body>
+</html>

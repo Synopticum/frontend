@@ -1,0 +1,403 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+<link type="text/css" rel="stylesheet" href="css/reset.css">
+<link type="text/css" rel="stylesheet" href="css/styles.css">
+<link type="text/css" rel="stylesheet" href="css/slider.css">
+<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.jqtransform.js"></script>
+<script type="text/javascript" src="js/jquery.sliderkit.1.6.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+<script type="text/javascript" src="js/_common.js"></script>
+<script type="text/javascript">
+	jQuery(window).load(function(){
+		jQuery(".my-products").sliderkit({
+			auto:false, // Режим прокрутки - автоматический или ручной. Параметры false или auto
+			shownavitems:"auto", //Количество цифр и слайдов (в нашем случае 1 слайд содержит 4 блока). И сейчас слайдов 4, 4 цифры.  
+			panelfx:"sliding", //Сам эффект
+			panelfxspeed:1500,  //Скорость пролиствания
+			autospeed:4500,//Время между переключениями в милисекундах
+			panelfxeasing:"easeInOutExpo" //Сам эффект
+		});
+		
+		  jQuery(document).ready(function(){
+             jQuery(".cat, #jsddmm").hover(
+               function () {
+                   jQuery(".cat").addClass("cat-hover");
+                   jQuery("#jsddmm").show();
+             }, 
+               function () {
+                   jQuery(".cat").removeClass("cat-hover");
+                   jQuery("#jsddmm").hide();
+              }
+             ); 
+	      });
+		  
+		
+		  jQuery(document).ready(function(){
+             jQuery("#open-cart, .cart-hidden").hover(
+               function () {
+            jQuery(".cart-hidden").show();
+             }, 
+               function () {
+              jQuery(".cart-hidden").hide();
+              }
+             ); 
+	      });
+		  
+        jQuery(function() {
+			jQuery("form.search").jqTransform();
+	    });
+		
+        jQuery(document).ready(function(){
+             jQuery(".region-select, .region-hidden").hover(
+               function () {
+            jQuery(".region-hidden").show();
+             }, 
+               function () {
+              jQuery(".region-hidden").hide();
+              }
+             ); 
+         });
+   
+});	
+</script>
+<script type="text/javascript">
+var timeout         = 0;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+function jsddmm_open()
+{	jsddmm_canceltimer();
+	jsddmm_close();
+	ddmenuitem = $(this).addClass("active");
+	ddmenuitem = $(this).find('div').eq(0).css('visibility', 'visible');}
+
+function jsddmm_close()
+{	if(ddmenuitem) ddmenuitem.css('visibility', 'hidden');
+    $("li").removeClass("active");
+}
+	
+
+function jsddmm_timer()
+{	closetimer = window.setTimeout(jsddmm_close, timeout);}
+
+function jsddmm_canceltimer()
+{	if(closetimer)
+	{	window.clearTimeout(closetimer);
+		closetimer = null;}}
+
+$(document).ready(function()
+{	$('#jsddmm > li').bind('mouseover', jsddmm_open);
+	$('#jsddmm > li').bind('mouseout',  jsddmm_timer);});
+
+document.onclick = jsddmm_close;
+</script>
+<!--[if IE 7]>
+<![endif]-->
+
+<!--[if IE 8]> 
+<link type="text/css" rel="stylesheet" href="css/ie8.css">
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script>
+  var e = ("article,aside,figcaption,figure,footer,header,hgroup,nav,section,time").split(',');
+  for (var i = 0; i < e.length; i++) {
+    document.createElement(e[i]);
+  }
+ </script>
+
+<![endif]-->
+</head>
+<body>
+<div class="overflow">
+<header>
+  <div class="header">
+    <div class="logo"> <a href="/"><img src="img/logo.png"></a> <span>Сравниваем цены перед покупкой!</span> </div>
+    <div class="header-right">
+      <div class="top-menu">
+        <div class="top-menu-left"></div>
+        <ul>
+          <li><a href="magazinam.html" class="shops"><span> Магазинам</span></a></li>
+          <li><a href="#" class="customers"><span>Покупателям</span></a></li>
+          <li><a href="faq.html" class="about active"><span>О нас</span></a></li>
+          <li><a href="#" class="online"><span>Он-лайн консультант</span></a></li>
+          <li><a href="#" class="settings"><span>Настройки</span></a></li>
+        </ul>
+        <div class="top-menu-right"></div>
+      </div>
+      <div class="welcome">Добро пожаловать <a href="#">Войти</a> или <a href="#">Зарегистрироваться</a></div>
+    </div>
+    <!--header-right--> 
+    
+  </div>
+  <!--header--> 
+</header>
+<!--header-->
+
+<section class="search">
+  <div class="search">
+    <div class="left-menu">
+            <div class="cat">Категории</div>
+            <ul id="jsddmm">
+              <li class="first"><a href="#">Фото</a>
+                <div class="submenu">
+                  <div class="submenu-arr"></div>
+                  <div class="submenu-top"></div>
+                  <ul>
+                    <li><a href="#">Компьютеры</a></li>
+                    <li><a href="#">Сотовые телефоны</a></li>
+                    <li><a href="#">Электроника</a></li>
+                    <li><a href="#">Крупная бытовая техника</a></li>
+                    <li><a href="#">Мелкая бытовая техника</a></li>
+                    <li><a href="#">Сотовые телефоны</a></li>
+                    <li><a href="#">Электроника</a></li>
+                    <li><a href="#">Крупная бытовая техника</a></li>
+                    <li><a href="#">Мелкая бытовая техника</a></li>
+                    <li><a href="#">Компьютеры</a></li>
+                    <li><a href="#">Сотовые телефоны</a></li>
+                    <li><a href="#">Электроника</a></li>
+                  </ul>
+                  <div class="submenu-bottom"></div>
+                </div>
+              </li>
+              <li><a href="#">Компьютеры</a></li>
+              <li><a href="#">Сотовые телефоны</a></li>
+              <li><a href="#">Электроника</a>
+                <div class="submenu">
+                  <div class="submenu-arr"></div>
+                  <div class="submenu-top"></div>
+                  <ul>
+                    <li><a href="#">Компьютеры</a></li>
+                    <li><a href="#">Сотовые телефоны</a></li>
+                    <li><a href="#">Электроника</a></li>
+                    <li><a href="#">Крупная бытовая техника</a></li>
+                    <li><a href="#">Мелкая бытовая техника</a></li>
+                    <li><a href="#">Сотовые телефоны</a></li>
+                    <li><a href="#">Электроника</a></li>
+                    <li><a href="#">Крупная бытовая техника</a></li>
+                    <li><a href="#">Мелкая бытовая техника</a></li>
+                    <li><a href="#">Компьютеры</a></li>
+                    <li><a href="#">Сотовые телефоны</a></li>
+                    <li><a href="#">Электроника</a></li>
+                  </ul>
+                  <div class="submenu-bottom"></div>
+                </div>
+              </li>
+              <li><a href="#">Крупная бытовая техника</a></li>
+              <li><a href="#">Мелкая бытовая техника</a></li>
+              <li class="last"><a href="#">Авто</a>
+                <div class="submenu">
+                  <div class="submenu-arr"></div>
+                  <div class="submenu-top"></div>
+                  <ul>
+                    <li><a href="#">Компьютеры</a></li>
+                    <li><a href="#">Сотовые телефоны</a></li>
+                    <li><a href="#">Электроника</a></li>
+                    <li><a href="#">Крупная бытовая техника</a></li>
+                    <li><a href="#">Мелкая бытовая техника</a></li>
+                    <li><a href="#">Сотовые телефоны</a></li>
+                    <li><a href="#">Электроника</a></li>
+                    <li><a href="#">Крупная бытовая техника</a></li>
+                    <li><a href="#">Мелкая бытовая техника</a></li>
+                    <li><a href="#">Компьютеры</a></li>
+                    <li><a href="#">Сотовые телефоны</a></li>
+                    <li><a href="#">Электроника</a></li>
+                  </ul>
+                  <div class="submenu-bottom"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--left-menu-->
+    
+    <div class="search-block"> <span class="title">Поиск:</span>
+      <form class="search">
+        <div class="search-block-input">
+          <input type="text">
+        </div>
+        <div class="search-block-select">
+          <select>
+             <option>Все категории</option>
+             <option>Фото</option>
+             <option>Компьютеры</option>
+             <option>Сотовые телефоны</option>
+             <option>Электроника</option>
+             <option>Крупная бытовая техника</option>
+             <option>Мелкая бытовая техника</option>
+             <option>Авто</option>
+          </select>
+        </div>
+        <input type="button" value="Найти">
+      </form>
+    </div>
+    <div class="cart-block">
+      <div class="cart-text">Товаров<br>
+        в корзине:</div>
+      <div class="cart"><span>100</span></div>
+      <div class="cart-open"><a href="#" id="open-cart">Открыть корзину</a>
+        <div class="cart-hidden">
+          <div class="hidden-cart-top"></div>
+          <div class="hidden-cart-center">
+            <p>Your Shopping Cart is empty.</p>
+            <p>Give it purpose—fill it with books, DVDs, clothes, electronics, and more.</p>
+            <p>If you already have an account, sign in.</p>
+          </div>
+          <div class="hidden-cart-bottom"></div>
+        </div>
+      </div>
+      <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+  </div>
+</section>
+<!--search-->
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	
+	
+             jQuery(".faq-left ul li a.minus").toggle(
+               function () {
+				   jQuery(this).removeClass("minus");
+				   jQuery(this).addClass("plus");
+				   jQuery(this).parent().find('ul').hide();
+             }, 
+               function () {
+				   jQuery(this).removeClass("plus");
+				   jQuery(this).addClass("minus");
+				   jQuery(this).parent().find('ul').show();
+              }
+             ); 
+			 
+			 
+});
+</script>
+
+<section class="content">
+  <div class="content">
+  	<div class="faq">
+    	<div class="faq-left">
+           <div class="fltl"></div>
+           <div class="fltr"></div>
+           <div class="flbl"></div>
+           <div class="flbr"></div> 
+           <h3>Размещение магазина</h3>
+           <ul>
+             <li><a href="#" class="minus">Регистрация магазина</a>
+             	<ul>
+                	<li><a href="auth.html">Шаг 1. Авторизация</a></li>
+                	<li><a href="#">Шаг 2. Проверка прайс-листа</a></li>
+                	<li><a href="#">Отправка на проверку</a></li>
+                	<li><a href="#">Предоставление документов при рекламе особых видов товаров или услуг</a></li>
+                </ul>
+             </li>
+             <li><a href="#" class="minus">Модерация</a>
+             	<ul>
+                	<li><a href="auth.html">Шаг 1. Авторизация</a></li>
+                	<li><a href="#">Шаг 2. Проверка прайс-листа</a></li>
+                	<li><a href="#">Отправка на проверку</a></li>
+                	<li><a href="#">Предоставление документов при рекламе особых видов товаров или услуг</a></li>
+                </ul>
+             </li>
+             <li><a href="#" class="minus">Оплата</a>
+             	<ul>
+                	<li><a href="auth.html">Шаг 1. Авторизация</a></li>
+                	<li><a href="#">Шаг 2. Проверка прайс-листа</a></li>
+                	<li><a href="#">Отправка на проверку</a></li>
+                	<li><a href="#">Предоставление документов при рекламе особых видов товаров или услуг</a></li>
+                </ul>
+             </li>
+        </div>
+    	<div class="faq-right">
+           <h2>10 Фактов о marketrpice.ru</h2>
+           <p>PriceGrabber provides access to millions of ready-to-buy shoppers with the most extensive optimization tools. We provide product listing solutions for merchants of all sizes, detailed and comprehensive product, and transaction and merchant information. PriceGrabber.com qualifies shoppers and refers buyers to the appropriate merchant to complete the purchase process. PriceGrabber enjoys the highest conversion rates of shoppers into buyers, and high quality external traffic sources which result in cost effective sales for merchant partners. The Company connects its online shoppers to merchants from large traditional merchants, such as Best Buy, Nordstrom, Office Depot and Walmart, to smaller local merchants and individuals through PriceGrabber Storefronts. PriceGrabber Storefronts is a service that allows smaller merchants and individuals to list and sell merchandise on PriceGrabber.com without the need for their own websites.</p>
+<p>For more information, click here to <a href="#">contact us</a>.</p>
+           <p>PriceGrabber provides access to millions of ready-to-buy shoppers with the most extensive optimization tools. We provide product listing solutions for merchants of all sizes, detailed and comprehensive product, and transaction and merchant information. PriceGrabber.com qualifies shoppers and refers buyers to the appropriate merchant to complete the purchase process. PriceGrabber enjoys the highest conversion rates of shoppers into buyers, and high quality external traffic sources which result in cost effective sales for merchant partners. The Company connects its online shoppers to merchants from large traditional merchants, such as Best Buy, Nordstrom, Office Depot and Walmart, to smaller local merchants and individuals through PriceGrabber Storefronts. PriceGrabber Storefronts is a service that allows smaller merchants and individuals to list and sell merchandise on PriceGrabber.com without the need for their own websites.</p>
+<p>For more information, click here to <a href="#">contact us</a>.</p>
+           <p>PriceGrabber provides access to millions of ready-to-buy shoppers with the most extensive optimization tools. We provide product listing solutions for merchants of all sizes, detailed and comprehensive product, and transaction and merchant information. PriceGrabber.com qualifies shoppers and refers buyers to the appropriate merchant to complete the purchase process. PriceGrabber enjoys the highest conversion rates of shoppers into buyers, and high quality external traffic sources which result in cost effective sales for merchant partners. The Company connects its online shoppers to merchants from large traditional merchants, such as Best Buy, Nordstrom, Office Depot and Walmart, to smaller local merchants and individuals through PriceGrabber Storefronts. PriceGrabber Storefronts is a service that allows smaller merchants and individuals to list and sell merchandise on PriceGrabber.com without the need for their own websites.</p>
+<p>For more information, click here to <a href="#">contact us</a>.</p>
+           <p>PriceGrabber provides access to millions of ready-to-buy shoppers with the most extensive optimization tools. We provide product listing solutions for merchants of all sizes, detailed and comprehensive product, and transaction and merchant information. PriceGrabber.com qualifies shoppers and refers buyers to the appropriate merchant to complete the purchase process. PriceGrabber enjoys the highest conversion rates of shoppers into buyers, and high quality external traffic sources which result in cost effective sales for merchant partners. The Company connects its online shoppers to merchants from large traditional merchants, such as Best Buy, Nordstrom, Office Depot and Walmart, to smaller local merchants and individuals through PriceGrabber Storefronts. PriceGrabber Storefronts is a service that allows smaller merchants and individuals to list and sell merchandise on PriceGrabber.com without the need for their own websites.</p>
+<p>For more information, click here to <a href="#">contact us</a>.</p>
+           <p>PriceGrabber provides access to millions of ready-to-buy shoppers with the most extensive optimization tools. We provide product listing solutions for merchants of all sizes, detailed and comprehensive product, and transaction and merchant information. PriceGrabber.com qualifies shoppers and refers buyers to the appropriate merchant to complete the purchase process. PriceGrabber enjoys the highest conversion rates of shoppers into buyers, and high quality external traffic sources which result in cost effective sales for merchant partners. The Company connects its online shoppers to merchants from large traditional merchants, such as Best Buy, Nordstrom, Office Depot and Walmart, to smaller local merchants and individuals through PriceGrabber Storefronts. PriceGrabber Storefronts is a service that allows smaller merchants and individuals to list and sell merchandise on PriceGrabber.com without the need for their own websites.</p>
+<p>For more information, click here to <a href="#">contact us</a>.</p>
+           <p>PriceGrabber provides access to millions of ready-to-buy shoppers with the most extensive optimization tools. We provide product listing solutions for merchants of all sizes, detailed and comprehensive product, and transaction and merchant information. PriceGrabber.com qualifies shoppers and refers buyers to the appropriate merchant to complete the purchase process. PriceGrabber enjoys the highest conversion rates of shoppers into buyers, and high quality external traffic sources which result in cost effective sales for merchant partners. The Company connects its online shoppers to merchants from large traditional merchants, such as Best Buy, Nordstrom, Office Depot and Walmart, to smaller local merchants and individuals through PriceGrabber Storefronts. PriceGrabber Storefronts is a service that allows smaller merchants and individuals to list and sell merchandise on PriceGrabber.com without the need for their own websites.</p>
+<p>For more information, click here to <a href="#">contact us</a>.</p>
+           <p>PriceGrabber provides access to millions of ready-to-buy shoppers with the most extensive optimization tools. We provide product listing solutions for merchants of all sizes, detailed and comprehensive product, and transaction and merchant information. PriceGrabber.com qualifies shoppers and refers buyers to the appropriate merchant to complete the purchase process. PriceGrabber enjoys the highest conversion rates of shoppers into buyers, and high quality external traffic sources which result in cost effective sales for merchant partners. The Company connects its online shoppers to merchants from large traditional merchants, such as Best Buy, Nordstrom, Office Depot and Walmart, to smaller local merchants and individuals through PriceGrabber Storefronts. PriceGrabber Storefronts is a service that allows smaller merchants and individuals to list and sell merchandise on PriceGrabber.com without the need for their own websites.</p>
+<p>For more information, click here to <a href="#">contact us</a>.</p>
+           <p>PriceGrabber provides access to millions of ready-to-buy shoppers with the most extensive optimization tools. We provide product listing solutions for merchants of all sizes, detailed and comprehensive product, and transaction and merchant information. PriceGrabber.com qualifies shoppers and refers buyers to the appropriate merchant to complete the purchase process. PriceGrabber enjoys the highest conversion rates of shoppers into buyers, and high quality external traffic sources which result in cost effective sales for merchant partners. The Company connects its online shoppers to merchants from large traditional merchants, such as Best Buy, Nordstrom, Office Depot and Walmart, to smaller local merchants and individuals through PriceGrabber Storefronts. PriceGrabber Storefronts is a service that allows smaller merchants and individuals to list and sell merchandise on PriceGrabber.com without the need for their own websites.</p>
+<p>For more information, click here to <a href="#">contact us</a>.</p>
+           <p>PriceGrabber provides access to millions of ready-to-buy shoppers with the most extensive optimization tools. We provide product listing solutions for merchants of all sizes, detailed and comprehensive product, and transaction and merchant information. PriceGrabber.com qualifies shoppers and refers buyers to the appropriate merchant to complete the purchase process. PriceGrabber enjoys the highest conversion rates of shoppers into buyers, and high quality external traffic sources which result in cost effective sales for merchant partners. The Company connects its online shoppers to merchants from large traditional merchants, such as Best Buy, Nordstrom, Office Depot and Walmart, to smaller local merchants and individuals through PriceGrabber Storefronts. PriceGrabber Storefronts is a service that allows smaller merchants and individuals to list and sell merchandise on PriceGrabber.com without the need for their own websites.</p>
+<p>For more information, click here to <a href="#">contact us</a>.</p>
+           <p>PriceGrabber provides access to millions of ready-to-buy shoppers with the most extensive optimization tools. We provide product listing solutions for merchants of all sizes, detailed and comprehensive product, and transaction and merchant information. PriceGrabber.com qualifies shoppers and refers buyers to the appropriate merchant to complete the purchase process. PriceGrabber enjoys the highest conversion rates of shoppers into buyers, and high quality external traffic sources which result in cost effective sales for merchant partners. The Company connects its online shoppers to merchants from large traditional merchants, such as Best Buy, Nordstrom, Office Depot and Walmart, to smaller local merchants and individuals through PriceGrabber Storefronts. PriceGrabber Storefronts is a service that allows smaller merchants and individuals to list and sell merchandise on PriceGrabber.com without the need for their own websites.</p>
+<p>For more information, click here to <a href="#">contact us</a>.</p>
+           <p>PriceGrabber provides access to millions of ready-to-buy shoppers with the most extensive optimization tools. We provide product listing solutions for merchants of all sizes, detailed and comprehensive product, and transaction and merchant information. PriceGrabber.com qualifies shoppers and refers buyers to the appropriate merchant to complete the purchase process. PriceGrabber enjoys the highest conversion rates of shoppers into buyers, and high quality external traffic sources which result in cost effective sales for merchant partners. The Company connects its online shoppers to merchants from large traditional merchants, such as Best Buy, Nordstrom, Office Depot and Walmart, to smaller local merchants and individuals through PriceGrabber Storefronts. PriceGrabber Storefronts is a service that allows smaller merchants and individuals to list and sell merchandise on PriceGrabber.com without the need for their own websites.</p>
+<p>For more information, click here to <a href="#">contact us</a>.</p>
+        </div>
+    </div>    
+  </div>
+  <div class="clr"></div>
+</section>
+
+<footer>
+   <div class="seo-block">
+   <p>PriceGrabber.com offers the best online shopping experience. Our unique shopping site offers extensive inventory at the lowest prices by comparing products, product reviews, and merchant deals for all of your shopping needs. Browse thousands of popular brands, hot products, featured deals and find exactly what you want at discount prices. Shopping online has never been easier!</p>
+   <p>Best Products: <a href="#">Cameras</a>, <a href="#">Electronics</a>, <a href="#">Clothing</a>, <a href="#">Sports Gear</a>, <a href="#">Home Appliances</a>, <a href="#">Laptops & Computers</a>, <a href="#">Video Games</a>, <a href="#">Toys</a></p>
+   <p>Quick Search: <a href="#">Digital Cameras, <a href="#">Cheap Laptops & Notebooks</a>, <a href="#">Macbook Pro</a>, <a href="#">Ink Catridges</a>, <a href="#">Coffee Makers</a>, <a href="#">Engagement Rings</a>, <a href="#">Plus Size Dresses</a>, <a href="#">Canon Cameras</a>, <a href="#">IPad 2</a>, <a href="#">Weights</a>, <a href="#">Rockford Fosgate</a>, <a href="#">IHard Drives</a>, <a href="#">GE Appliances</a>, <a href="#">Xbox 360 Games</a>, <a href="#">Dell Computers</a>, <a href="#">Cheap Shoes</a>, <a href="#">Ashley Furniture</a>, <a href="#">Uggs Boots</a>, <a href="#">Wedding Dresses</a>, <a href="#">IBose Headphones</a></p>
+   </div>
+   <div class="clr"></div>
+   <div class="services-block">
+       <div class="subscribe">
+          Be in touch with the PriceGrabber Newsletter:
+          <form>
+             <input type="text" onblur="if(this.value=='') this.value='Введите свой E-mail';" onfocus="if(this.value=='Введите свой E-mail') this.value='';" value="Введите свой E-mail" class="input">
+             <input type="button" value="Подписаться" class="button">
+          </form>
+       </div>
+       
+       <div class="adds-block">
+          <div class="adds-block-left"></div>
+          <div class="adds-block-item shop" onclick="location.href='http://google.ru';">
+              <img src="img/shop.png">
+              <h4>Создай свою витрину</h4>
+              <p>Продавайте свои товары даже<br> если у вас нет своего магазина</p>
+          </div>
+          <div class="adds-block-item money" onclick="location.href='http://google.ru';">
+              <img src="img/money.png">
+              <h4>Узнай первым <br>о снижении цен</h4>
+              <p>Следите за ценами</p>
+          </div>
+          <div class="adds-block-item disqus" onclick="location.href='http://google.ru';">
+              <img src="img/disqus.png">
+              <h4>Читайте отзывы</h4>
+              <p>Оставляйте и читайте<br>отзывы от товарах</p>
+          </div>
+          <div class="adds-block-right"></div>
+       </div><!--adds-block-->
+   </div><!--services-block-->
+   
+   <div class="clr"></div>
+   <div class="footer-bottom">
+        <div class="footer-menu">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li>|</li>
+              <li><a href="#">Попупателям</a></li>
+              <li>|</li>
+              <li><a href="#">Прайс-листы</a></li>
+              <li>|</li>
+              <li><a href="#">Сервисное соглашение</a></li>
+              <li>|</li>
+              <li><a href="#">Реклама на сайте</a></li>
+            </ul>
+        </div>
+        <div class="copyright">&copy; 2002-2009 MarketPrice. Все права защищены</div>
+   </div>   
+</footer>
+
+</div>
+</body>
+</html>

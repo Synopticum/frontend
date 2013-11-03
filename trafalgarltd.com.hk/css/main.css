@@ -1,0 +1,105 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border: 0 none;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+}
+a img, :link img, :visited img { border:0 none; }
+table { border-collapse: collapse; border-spacing: 0; }
+ol, ul { list-style-image: none; list-style-position: outside; list-style-type: none; }
+q:before, q:after, blockquote:before, blockquote:after { content:""; }
+.cleaner { clear: both; }
+
+
+/* css begin */
+html, body { height:100%; }
+body {
+	font-family: "Calibri", Tahoma, sans-serif;
+	font-size: 13px;
+	color: #000;
+	background: #e3e3e3;
+	width: 100%;
+	min-width: 1000px;
+}
+
+/* content */
+#wrap {
+	position: relative;
+	background: url(../images/wrap-bg.gif) repeat-y;
+	width: 998px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+a { color: #de5437; }
+
+
+/* header */
+.header { position: relative; width: 980px; height: 155px; margin: 0 auto; border-bottom: 4px solid #000; background: url(../images/header-bg.gif) repeat-x; }
+	.header .logo { float: left; margin: 13px 0 0 35px; }
+	.header .phones { float: right; margin: 40px 35px 0 0; }
+
+.topmenu { position: absolute; left: 0; bottom: 0; clear: both; height: 37px; }
+	.topmenu li { position: relative; float: left; height: 37px; padding: 0 22px; background: url(../images/topmenu-bg.gif) no-repeat; }
+	.topmenu li a { display: block; padding-top: 12px; color: #fff; font-size: 14px; text-decoration: none; text-shadow: 1px 1px 0 #b95201; }
+	.topmenu li span { display: block; position: absolute; right: 0; top: 0; width: 7px; height: 37px;  background: url(../images/topmenu-bg.gif) no-repeat 100% 0;}
+
+	.topmenu li:hover, .topmenu li.current_page_item { background-position: 0 -37px; }
+	.topmenu li:hover span, .topmenu li.current_page_item span { background-position: 100% -37px; }
+
+/* slider */
+.slider { width: 980px; margin: 0 auto; border-bottom: 4px solid #000; }
+
+/* content */
+.content { width: 980px; margin: 0 auto; padding: 25px 0 0 0; min-height: 700px; background: url(../images/content-bg-2.jpg) no-repeat 0 100%; }
+
+	.aside { float: left; width: 182px; }
+
+		.leftmenu { margin-left: -5px; }
+		.leftmenu li { margin-bottom: 5px; }
+		.leftmenu li a { display: block; font-size: 14px; background: url(../images/leftmenu-bullet.gif) no-repeat 30px 10px; padding: 5px 0 5px 48px; border: 1px solid transparent; }
+		.leftmenu .current_page_item a, .leftmenu li:hover a, .leftmenu .current_page_item a:hover { background: url(../images/leftmenu-bg.gif) repeat-x 0 100%; border: 1px solid #c6c6c6; text-decoration: none; font-weight: bold; }
+		.leftmenu li:hover a { font-weight: normal; background: url(../images/leftmenu-bullet-2.gif) no-repeat 30px 10px; border: 1px solid transparent; }
+
+		.aside .agent { padding-left: 20px; margin: 20px 0; }
+			.aside .agent a { color: #000; }
+			.aside .agent img { float: left; margin-right: 7px; }
+
+	.text { float: left; width: 710px; margin: 0 0 0 50px; }
+
+		.text h1, .text h2 { font-size: 22px; color: #de5437; }
+
+		.text p { margin: 20px 0; line-height: 140%; }
+			.text p img { border: 4px solid #c4c4c4; margin-right: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+
+		.text .hr { width: 706px; height: 41px; margin: 20px auto; background: url(../images/hr.png) no-repeat; }
+
+
+/* footer */
+#footer {
+	padding-top: 20px;
+	position: relative;
+	margin: -69px auto 0 auto;
+	height: 45px;
+	width: 980px;
+	background: url(../images/footer-bg.jpg) no-repeat;
+	border-top: 4px solid #000;
+	color: #fff;
+}
+
+#footer .counters { float: left; display: inline-block; margin: 0 12px 0 20px; }
+
+#footer .copyright { float: left; display: inline-block; }
+
+#footer .phones { float: right; font-size: 16px; text-align: right; margin: -5px 90px 0 0; }
+
+.footer_blank {	clear: both; height: 140px; }

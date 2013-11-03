@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>aqplus-ru-web-07-home</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+
+
+<link rel="stylesheet" href="js/treeview/jquery.treeview.css" />
+<script src="js/treeview/jquery.cookie.js" type="text/javascript"></script>
+<script src="js/treeview/jquery.treeview.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#browser").treeview({
+			toggle: function() {
+				console.log("%s was toggled.", $(this).find(">span").text());
+			}
+		});
+
+		$("#add").click(function() {
+			var branches = $("<li><span class='folder'>New Sublist</span><ul>" +
+				"<li><span class='file'>Item1</span></li>" +
+				"<li><span class='file'>Item2</span></li></ul></li>").appendTo("#browser");
+			$("#browser").treeview({
+				add: branches
+			});
+		});
+	});
+	</script>
+</head>
+<body>
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+		<a href="#" title=""><img src="images/header-logo.png" alt="" class="logo" /></a>
+		
+		<div class="header-contacts">
+			<span class="title">Телефон в Санкт-Петербурге:</span>
+			+7 (812) <big>622-12-51</big>
+		</div>
+		
+		<div class="header-links">
+			<span class="map"><a href="#" title="">Схема проезда</a></span ><br />
+			<a href="" title="">Оптовым покупателям</a>
+		</div>
+		
+		<div class="header-user">
+			<a href="" title="" class="cabinet">Личный кабинет</a><br />
+			<a href="" title="">В корзине:</a> <big>0</big> товаров<br />
+			На сумму: <big>0</big> руб.
+		</div>
+	</div>
+	
+	<!-- top menu -->
+	<div class="mainmenu">
+		<ul>                                          
+			<li><a href="#" title="">Производство</a></li>
+			<li><a href="#" title="">Интернет-магазин</a></li>
+			<li><a href="#" title="">О компании</a>
+				<ul>
+					<li><a href="#" title="">Оптовая торговля</a></li>
+					<li><a href="#" title="">Салон «Акваландия»</a></li>
+					<li><a href="#" title="">Производство</a></li>
+					<li><a href="#" title="">Наши партнёры</a></li>
+					<li><a href="#" title="">Вакансии</a></li>
+					<li><a href="#" title="">Контакты и реквизиты</a></li>
+					<li class="last"></li>
+				</ul>
+			</li>
+			<li class="none"><a href="#" title="">Форум</a></li>
+			<li class="none"><a href="#" title="">Контакты</a></li>
+		</ul>
+		
+		<div class="search">
+			<form>
+				<input name="searchbar" id="searchbar" type="text" value="Поиск по сайту" tabindex="1" />
+				<input type="submit" name="find" id="find" value="" tabindex="2" />				
+			</form>
+		</div>
+	</div>
+
+	<!-- content -->
+	<div class="content">
+		
+		<!-- content small -->
+		<div class="content-small">
+			<div class="breadcrumbs">
+				<a href="#" title="">Главная</a> &rarr; <a href="#" title="">Интернет-магазин</a> &rarr; <a href="#" title="">Корзина</a> &rarr;
+			</div>
+			
+			<h1>Оформление заказа</h1>
+
+            <h2>Заказ оформлен!</h2>
+
+            <p>Фьорд широко разогревает денудационно-аккумулятивный сталагмит, где присутствуют моренные суглинки днепровского возраста.
+            Соленосный артезианский бассейн вызывает плейстоцен, что связано с мощностью вскрыши и полезного ископаемого. Грунт обедняет
+            фирн, и в то же время устанавливается достаточно приподнятый над уровнем моря коренной цоколь. Базис эрозии фоссилизирует плюмаж,
+            что лишь подтверждает то, что породные отвалы располагаются на склонах.</p>
+
+            <p><a href="#" title="" class="big">Заказ №1234 от 22.07.2011 года</a></p>
+
+		</div>
+
+
+	</div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+	<div class="wrapper">
+		<div class="box">
+			<ul>
+				<li><a href="#" title="">Производство</a></li>
+				<li><a href="#" title="">Серия STANDART</a></li>
+				<li><a href="#" title="">Серия LUX</a></li>
+				<li><a href="#" title="">Серия PRO</a></li>
+				<li><a href="#" title="">Аквариумы на заказ</a></li>
+			</ul>
+		</div>
+
+		<div class="box">
+			<ul>
+				<li><a href="#" title="">Интернет-магазин</a></li>
+				<li><a href="#" title="">Каталог</a></li>
+				<li><a href="#" title="">Как сделать заказ</a></li>
+				<li><a href="#" title="">Доставка</a></li>
+				<li><a href="#" title="">Оплата</a></li>
+			</ul>
+		</div>
+
+		<div class="box">
+			<ul>
+				<li><a href="#" title="">О компании</a></li>
+				<li><a href="#" title="">Оптовая торговля</a></li>
+				<li><a href="#" title="">Салон «Акваландия»</a></li>
+				<li><a href="#" title="">Производство</a></li>
+				<li><a href="#" title="">Наши партнёры</a></li>
+				<li><a href="#" title="">Вакансии</a></li>
+				<li><a href="#" title="">Контакты и реквизиты</a></li>
+			</ul>
+		</div>
+		
+		<div class="paymentsystems">
+			<h4>Способы оплаты</h4>
+			<span>в Интернет-магазине</span><br />
+			
+			<img src="images/footer-payment.jpg" alt="" />
+		</div>
+		
+		<div class="subscribe">
+			<h4>Подписаться</h4>
+			
+			<ul>
+				<li class="s1"><a href="#" title="">по E-mail</a></li>
+				<li class="s2"><a href="#" title="">по RSS</a></li>
+				<li class="s3"><a href="#" title="">в Twitter</a></li>
+				<li class="s4"><a href="#" title="">ВКонтакте</a></li>
+			</ul>
+		</div>
+
+		<!-- copyright -->
+		<div class="footer-bottom">
+			<div class="copyright">&copy; 2004–2010, ООО Аква Плюс, Все права защищены. <br />
+			<small>Перепечатка любых материалов сайта без предварительного согласия запрещена.</small> </div>
+			
+			<div class="made">
+				<a href="#" title="">Разработка сайта</a> &mdash; <img src="images/footer-made.png" alt="" /> «Дело в сайте»
+			</div>
+			
+			<div class="counters">
+				<a href="#" title=""><img src="images/tmp_1.gif" alt="" /></a>
+				<a href="#" title=""><img src="images/tmp_2.gif" alt="" /></a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

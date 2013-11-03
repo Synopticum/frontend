@@ -1,0 +1,1311 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+<link type="text/css" rel="stylesheet" href="css/reset.css">
+<link type="text/css" rel="stylesheet" href="css/styles.css">
+<link type="text/css" rel="stylesheet" href="css/slider.css">
+<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.jqtransform.js"></script>
+<script type="text/javascript" src="js/jquery.sliderkit.1.6.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+<script type="text/javascript" src="js/_common.js"></script>
+<script type="text/javascript">
+	jQuery(window).load(function(){
+		jQuery(".my-products").sliderkit({
+			auto:false, // Режим прокрутки - автоматический или ручной. Параметры false или auto
+			shownavitems:"auto", //Количество цифр и слайдов (в нашем случае 1 слайд содержит 4 блока). И сейчас слайдов 4, 4 цифры.  
+			panelfx:"sliding", //Сам эффект
+			panelfxspeed:1500,  //Скорость пролиствания
+			autospeed:4500,//Время между переключениями в милисекундах
+			panelfxeasing:"easeInOutExpo" //Сам эффект
+		});
+		
+		  jQuery(document).ready(function(){
+             jQuery(".cat, #jsddmm").hover(
+               function () {
+                   jQuery(".cat").addClass("cat-hover");
+                   jQuery("#jsddmm").show();
+             }, 
+               function () {
+                   jQuery(".cat").removeClass("cat-hover");
+                   jQuery("#jsddmm").hide();
+              }
+             ); 
+	      });
+		  
+		
+		  jQuery(document).ready(function(){
+             jQuery("#open-cart, .cart-hidden").hover(
+               function () {
+            jQuery(".cart-hidden").show();
+             }, 
+               function () {
+              jQuery(".cart-hidden").hide();
+              }
+             ); 
+	      });
+		  
+        jQuery(function() {
+			jQuery("form.search").jqTransform();
+	    });
+		
+        jQuery(document).ready(function(){
+             jQuery(".region-select, .region-hidden").hover(
+               function () {
+            jQuery(".region-hidden").show();
+             }, 
+               function () {
+              jQuery(".region-hidden").hide();
+              }
+             ); 
+         });
+   
+});	
+</script>
+<script type="text/javascript">
+var timeout         = 0;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+function jsddmm_open()
+{	jsddmm_canceltimer();
+	jsddmm_close();
+	ddmenuitem = $(this).addClass("active");
+	ddmenuitem = $(this).find('div').eq(0).css('visibility', 'visible');}
+
+function jsddmm_close()
+{	if(ddmenuitem) ddmenuitem.css('visibility', 'hidden');
+    $("li").removeClass("active");
+}
+	
+
+function jsddmm_timer()
+{	closetimer = window.setTimeout(jsddmm_close, timeout);}
+
+function jsddmm_canceltimer()
+{	if(closetimer)
+	{	window.clearTimeout(closetimer);
+		closetimer = null;}}
+
+$(document).ready(function()
+{	$('#jsddmm > li').bind('mouseover', jsddmm_open);
+	$('#jsddmm > li').bind('mouseout',  jsddmm_timer);});
+
+document.onclick = jsddmm_close;
+</script>
+
+<!-- http://fancybox.net/ -->
+<script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
+<!-- http://www.fyneworks.com/jquery/star-rating/ -->
+<script type="text/javascript" src="js/star-rating/jquery.rating.pack.js"></script>
+<link type="text/css" rel="stylesheet" href="js/star-rating/jquery.rating.css">
+
+<!--[if IE 7]>
+<![endif]-->
+
+<!--[if IE 8]> 
+<link type="text/css" rel="stylesheet" href="css/ie8.css">
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script>
+  var e = ("article,aside,figcaption,figure,footer,header,hgroup,nav,section,time").split(',');
+  for (var i = 0; i < e.length; i++) {
+    document.createElement(e[i]);
+  }
+ </script>
+
+<![endif]-->
+</head>
+<body>
+<div class="overflow">
+<header>
+  <div class="header">
+    <div class="logo"> <a href="/"><img src="img/logo.png"></a> <span>Сравниваем цены перед покупкой!</span> </div>
+    <div class="header-right">
+      <div class="top-menu">
+        <div class="top-menu-left"></div>
+        <ul>
+          <li><a href="magazinam.html" class="shops"><span> Магазинам</span></a></li>
+          <li><a href="#" class="customers"><span>Покупателям</span></a></li>
+          <li><a href="faq.html" class="about active"><span>О нас</span></a></li>
+          <li><a href="#" class="online"><span>Он-лайн консультант</span></a></li>
+          <li><a href="#" class="settings"><span>Настройки</span></a></li>
+        </ul>
+        <div class="top-menu-right"></div>
+      </div>
+      <div class="welcome">Добро пожаловать <a href="#">Войти</a> или <a href="#">Зарегистрироваться</a></div>
+    </div>
+    <!--header-right--> 
+    
+  </div>
+  <!--header--> 
+</header>
+<!--header-->
+
+<section class="search">
+  <div class="search">
+    <div class="search-block"> <span class="title">Поиск:</span>
+      <form class="search">
+        <div class="search-block-input">
+          <input type="text">
+        </div>
+        <div class="search-block-select">
+          <select>
+             <option>Все категории</option>
+             <option>Фото</option>
+             <option>Компьютеры</option>
+             <option>Сотовые телефоны</option>
+             <option>Электроника</option>
+             <option>Крупная бытовая техника</option>
+             <option>Мелкая бытовая техника</option>
+             <option>Авто</option>
+          </select>
+        </div>
+        <input type="button" value="Найти">
+      </form>
+    </div>
+    <div class="clr"></div>
+  </div>
+</section>
+<!--search-->
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	
+	
+             jQuery(".faq-left ul li a.minus").toggle(
+               function () {
+				   jQuery(this).removeClass("minus");
+				   jQuery(this).addClass("plus");
+				   jQuery(this).parent().find('ul').hide();
+             }, 
+               function () {
+				   jQuery(this).removeClass("plus");
+				   jQuery(this).addClass("minus");
+				   jQuery(this).parent().find('ul').show();
+              }
+             ); 
+			 
+			 
+});
+</script>
+
+<section class="content">
+  <div class="content">
+
+    <div class="product-page">
+        <div class="breadcrumbs">
+            <a href="#">Фото</a> <img src="img/breadcrumbs-spacer.png" width="4" height="7" alt="" class="spacer" />
+            Цифровые Камеры
+        </div>
+
+        <!-- product description -->
+        <div class="product-info">
+            <div class="product-info-view">
+                <img src="img/tmp/th4.jpg" width="98" height="98" alt="" />
+
+                <div class="product-info-thumbnails">
+                    <a href="img/tmp/th5.jpg" title="" rel="product_info_thumbnails_group"><img src="img/tmp/th1.jpg" width="46" height="50" alt="" /></a>
+                    <a href="img/tmp/th5.jpg" title="" rel="product_info_thumbnails_group"><img src="img/tmp/th1.jpg" width="46" height="50" alt="" /></a>
+                    <a href="img/tmp/th5.jpg" title="" rel="product_info_thumbnails_group"><img src="img/tmp/th2.jpg" width="46" height="50" alt="" /></a>
+                    <a href="img/tmp/th5.jpg" title="" rel="product_info_thumbnails_group"><img src="img/tmp/th3.jpg" width="46" height="50" alt="" /></a>
+                </div>
+
+            </div>
+
+            <div class="product-info-description">
+                <h1>Sony Cyber-shot DSC-TX55</h1>
+
+                <p>матрица: 1/2.3", 5х увеличение, диафрагма: F3.50 - 4.80, оптический стабилизатор, карты: Memory Stick, скорость
+                съемки: 10 кадров/с, видео разрешением до 1920x1080, 94 г</p>
+
+                <div class="product-info-price">
+                    <strong>Цена</strong>: от <span class="from">0</span> руб. до <span class="to">0</span> руб.
+                </div>
+
+                <div class="product-info-buyers">
+                    От <a href="#">25</a> продавцов
+                </div>
+
+                <div class="product-info-rating">
+                    <strong>Рейтинг:</strong>
+
+                    <div class="product-info-rating-form">
+                    <form action="">
+                        <input name="star1" type="radio" class="star">
+                        <input name="star1" type="radio" class="star">
+                        <input name="star1" type="radio" class="star" checked="checked"/>
+                        <input name="star1" type="radio" class="star">
+                        <input name="star1" type="radio" class="star">
+                    </form>
+                    </div>
+                    <a href="#">1 голосовавший (х)</a>
+
+                    <!-- popup -->
+                    <div class="product-info-rating-popup">
+                        <div class="wrapper">
+                            <span class="title">Quick Rate this Product</span>
+                            <span class="subtitle">Quick Rated 1 time</span>
+
+                            <div class="stars">
+                            <form action="">
+                                <input name="star1" type="radio" class="star">
+                                <input name="star1" type="radio" class="star">
+                                <input name="star1" type="radio" class="star" checked="checked"/>
+                                <input name="star1" type="radio" class="star">
+                                <input name="star1" type="radio" class="star">
+                            </form>
+                            </div>
+
+                            <p>Not yet reviewed - <a href="#">Write a review</a></p>
+
+                            <input type="button" name="bbb" value="Сохранить" class="save-button" />
+                        </div>
+                        <a href="javascript:void(0);" title="" class="close"></a>
+                        <div class="bottom"></div>
+                    </div>
+                </div>
+
+                <div class="product-info-links">
+                     <a href="#" title="" class="link1">Узнать о снижении цены</a>
+                     <a href="#" title="" class="link2">Послать на почту</a>
+                     <a href="#" title="" class="link3">Добавить в Мои Товары</a>
+                </div>
+
+                <div class="product-info-register">
+                    Хотите продать такую же модель? <a href="#">Зарегистрируйтесь</a>
+                </div>
+
+                <br />
+                <a id="sendfeed-popup-link" href="#sendfeed-popup">Link 1</a>
+                <a class="buyers-popup-link" href="#buyers-popup-1">Link 2</a>
+            </div>
+
+            <div style="clear: both"></div>
+        </div>
+
+        <!-- side -->
+        <div class="product-side">
+            <div class="product-side-banner">
+                <a href="#"><img src="img/tmp/banner.jpg" width="210" height="175" alt="" /></a>
+            </div>
+
+            <div class="product-side-set">
+                <h4>Customers Also Viewed</h4>
+
+                <div class="item">
+                    <div class="view">
+                        <a href="#"><img src="img/tmp/p2.jpg" width="63" height="89" alt="" /></a>
+                    </div>
+
+                    <div class="description">
+                        <a href="#" title="">ELAGO EL-S4SM-CBL-BA S4 Slim Fit Case...</a>
+
+                        <p>от <span>$0.99</span></p>
+
+                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="view">
+                        <a href="#"><img src="img/tmp/p2.jpg" width="63" height="89" alt="" /></a>
+                    </div>
+
+                    <div class="description">
+                        <a href="#" title="">ELAGO EL-S4SM-CBL-BA S4 Slim Fit Case...</a>
+
+                        <p>от <span>$0.99</span></p>
+
+                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                    </div>
+                </div>
+
+                <div class="listing">
+                    <a href="#" class="right">right</a>
+                    <a href="#" class="left">left</a>
+                    <span class="listing-count">3 из 11</span>
+                </div>
+            </div>
+
+            <!-- -->
+
+            <div class="product-side-set">
+                <h4>More from Nikon</h4>
+
+                <div class="item">
+                    <div class="view">
+                        <a href="#"><img src="img/tmp/p2.jpg" width="63" height="89" alt="" /></a>
+                    </div>
+
+                    <div class="description">
+                        <a href="#" title="">ELAGO EL-S4SM-CBL-BA S4 Slim Fit Case...</a>
+
+                        <p>от <span>$0.99</span></p>
+
+                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- product tabs -->
+        <div class="product-tabs">
+            <div class="product-tabs-nav">
+                <a href="javascript:void(0);" title="" class="tab1link active">Сравнение цен</a>
+                <a href="javascript:void(0);" title="" class="tab2link">Характеристики</a>
+                <a href="javascript:void(0);" title="" class="tab3link">Прочитать отзывы</a>
+                <a href="javascript:void(0);" title="" class="tab4link">Написать отзыв</a>
+                <a href="javascript:void(0);" title="" class="tab5link">Форум</a>
+            </div>
+
+            <!-- tab 1 -->
+            <div class="tab1">
+            <div class="product-compare">
+                <table>
+                    <col width="10%" />
+                    <col width="40%" />
+                    <col width="15%" />
+                    <col width="10%" />
+                    <col width="10%" />
+
+                    <thead>
+                    <tr>
+                        <th>Выбранные продавцы</th>
+                        <th>Информация <img src="img/list-buyers.png" width="11" height="10" alt="" /></th>
+                        <th>Рейтинг магазина</th>
+                        <th>Цена
+                            <a href="#" title=""><img src="img/up.gif" width="5" height="3" alt="" class="sort" /></a>
+                            <a href="#" title=""><img src="img/down.gif" width="5" height="3" alt="" class="sort" /></a>
+                            <form action="">
+                                <select name="product-rating-price" size="1">
+                                <option value="Рубли" selected="selected">Рубли</option>
+                                <option value="Доллары">Доллары</option>
+                                </select>
+                            </form>
+                        </th>
+                        <th class="product-compare-buy"><a href="#"><img src="img/plus2.png" width="20" height="22" alt="" /></a></th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td class="product-compare-thumbnail"><a href="#"><img src="img/tmp/p1.jpg" width="87" height="31" alt="" /></a></td>
+                        <td class="product-compare-description">
+                            <p><strong>Модель:</strong> Цифровой фотоаппарат SONY Cyber-shot DSC-TX55 черный</p>
+                            <p><strong>Вендор:</strong></p>
+                            <p><strong>Цена: 7990 руб.</strong></p>
+                        </td>
+                        <td class="product-compare-rating">
+                            <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                            <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                            <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                            <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                            <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                            <br />
+                            <a href="#" title="">60 отзывов</a>
+                        </td>
+                        <td class="product-compare-cost"><strong>10000</strong> руб.</td>
+                        <td class="product-compare-buy"><a href="#" title="" class="button">КУПИТЬ</a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="product-compare-thumbnail"><a href="#"><img src="img/tmp/p1.jpg" width="87" height="31" alt="" /></a></td>
+                        <td class="product-compare-description">
+                            <p><strong>Модель:</strong> Цифровой фотоаппарат SONY Cyber-shot DSC-TX55 черный</p>
+                            <p><strong>Вендор:</strong></p>
+                            <p><strong>Цена: 7990 руб.</strong></p>
+                        </td>
+                        <td class="product-compare-rating">
+                            <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                            <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                            <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                            <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                            <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                            <br />
+                            <a href="#" title="">60 отзывов</a>
+                        </td>
+                        <td class="product-compare-cost"><strong>10000</strong> руб.</td>
+                        <td class="product-compare-buy"><a href="#" title="" class="button">КУПИТЬ</a></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="4"><strong class="product-compare-title">Цены в интернете</strong></td>
+                        <td class="product-compare-buy"><a href="#"><img src="img/minus2.png" width="20" height="22" alt="" /></a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="product-compare-thumbnail"><a href="#">Abt.com</a></td>
+                        <td class="product-compare-description">
+                            <p><strong>Модель:</strong> Цифровой фотоаппарат SONY Cyber-shot DSC-TX55 черный</p>
+                            <p><strong>Вендор:</strong></p>
+                            <p><strong>Цена: 7990 руб.</strong></p>
+                        </td>
+                        <td class="product-compare-rating">
+                            <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                            <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                            <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                            <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                            <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                            <br />
+                            fewer than 10 reviews
+                            <br />
+                            <a href="#" title="">Write a Review</a>
+                        </td>
+                        <td class="product-compare-cost"><strong>10000</strong> руб.</td>
+                        <td class="product-compare-buy"><a href="#" title="" class="button">КУПИТЬ</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <div class="product-page-notice">
+                    Сообщить об ошибке цены продукта вы можете нажав <a href="#">сюда</a>. MarketPrice делает все усилия чтобы гарантировать точность
+                    информации предоставленной на нашем сайте. Мы предлагаем пользователям проводить свои собственные исследования перед
+                    покупкой товаров в прорекламированных нами магазинах. Пожалуйста, обратитесь к нашему Соглашению О Сервисе для полных
+                    деталей.
+                </div>
+            </div>
+
+            <!-- feeds -->
+            <div class="product-feeds">
+                <h5>Отзывы</h5>
+                <a href="#" title="" class="product-feeds-add">Написать отзыв</a>
+
+                <table>
+                    <tr>
+                        <!-- statistic -->
+                        <td class="product-feeds-stats">
+                            <div>
+                                <div class="product-feeds-stats-count">
+                                    <span class="name">5 stars</span>
+                                    <span class="vote">(2)</span>
+
+                                    <div class="bar">
+                                        <span class="fill" style="width: 66%"><!-- --></span>
+                                    </div>
+                                </div>
+
+                                <div class="product-feeds-stats-count">
+                                    <span class="name">4 stars</span>
+                                    <span class="vote">(1)</span>
+
+                                    <div class="bar">
+                                        <span class="fill" style="width: 33%"><!-- --></span>
+                                    </div>
+                                </div>
+
+                                <div class="product-feeds-stats-count">
+                                    <span class="name">3 stars</span>
+                                    <span class="vote">(0)</span>
+
+                                    <div class="bar">
+                                        <span class="fill" style="width: 0%"><!-- --></span>
+                                    </div>
+                                </div>
+
+                                <div class="product-feeds-stats-count">
+                                    <span class="name">2 stars</span>
+                                    <span class="vote">(0)</span>
+
+                                    <div class="bar">
+                                        <span class="fill" style="width: 0%"><!-- --></span>
+                                    </div>
+                                </div>
+
+                                <div class="product-feeds-stats-count">
+                                    <span class="name">1 stars</span>
+                                    <span class="vote">(0)</span>
+
+                                    <div class="bar">
+                                        <span class="fill" style="width: 0%"><!-- --></span>
+                                    </div>
+                                </div>
+
+                                <p><strong>100%</strong> jn Reviewers reccomended this product.</p>
+                            </div>
+                        </td>
+
+                        <!-- items -->
+                        <td class="product-feeds-list">
+                            <div>
+                                <div class="product-feeds-item">
+                                    <div class="product-feeds-item-rating">
+                                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                                    </div>
+
+                                    <div class="product-feeds-item-title">
+                                        <a href="#">Abt.com</a> by alex, Dec 22, 2011
+                                    </div>
+
+                                    <div class="product-feeds-item-short">
+                                        very satisfied with purchase
+                                    </div>
+
+                                    <div class="product-feeds-item-excerpt">
+                                        "...Delivery was late, and they do not help setting up ... <a href="#">See more</a>
+                                    </div>
+                                </div>
+
+                                <div class="product-feeds-item">
+                                    <div class="product-feeds-item-rating">
+                                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                                    </div>
+
+                                    <div class="product-feeds-item-title">
+                                        <a href="#">Abt.com</a> by alex, Dec 22, 2011
+                                    </div>
+
+                                    <div class="product-feeds-item-short">
+                                        very satisfied with purchase
+                                    </div>
+
+                                    <div class="product-feeds-item-excerpt">
+                                        "...Delivery was late, and they do not help setting up ... <a href="#">See more</a>
+                                    </div>
+                                </div>
+
+                                <div class="product-feeds-item">
+                                    <div class="product-feeds-item-rating">
+                                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                                    </div>
+
+                                    <div class="product-feeds-item-title">
+                                        <a href="#">Abt.com</a> by alex, Dec 22, 2011
+                                    </div>
+
+                                    <div class="product-feeds-item-short">
+                                        very satisfied with purchase
+                                    </div>
+
+                                    <div class="product-feeds-item-excerpt">
+                                        "...Delivery was late, and they do not help setting up ... <a href="#">See more</a>
+                                    </div>
+                                </div>
+
+                                <div class="product-feeds-item">
+                                    <div class="product-feeds-item-rating">
+                                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                                    </div>
+
+                                    <div class="product-feeds-item-title">
+                                        <a href="#">Abt.com</a> by alex, Dec 22, 2011
+                                    </div>
+
+                                    <div class="product-feeds-item-short">
+                                        very satisfied with purchase
+                                    </div>
+
+                                    <div class="product-feeds-item-excerpt">
+                                        "...Delivery was late, and they do not help setting up ... <a href="#">See more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- map -->
+            <div class="product-shops">
+                <div class="product-shops-list">
+                    <h6>Магазины рядом</h6>
+
+                    <div class="product-shops-item">
+                        <div class="count">1</div>
+
+                        <div class="wrapper">
+                            <a href="#">Rakurs.by</a><br />
+                            Минск, Хоружей, д. 18, офис 2<br />
+                            <strong>10000</strong> руб
+                        </div>
+                    </div>
+
+                    <div class="product-shops-item">
+                        <div class="count">2</div>
+
+                        <div class="wrapper">
+                            <a href="#">Rakurs.by</a><br />
+                            Минск, Хоружей, д. 18, офис 2<br />
+                            <strong>10000</strong> руб
+                        </div>
+                    </div>
+
+                    <div class="product-shops-item">
+                        <div class="count">3</div>
+
+                        <div class="wrapper">
+                            <a href="#">Rakurs.by</a><br />
+                            Минск, Хоружей, д. 18, офис 2<br />
+                            <strong>10000</strong> руб
+                        </div>
+                    </div>
+
+                    <!-- -->
+
+                    <div class="listing">
+                        <a href="#" class="right">right</a>
+                        <a href="#" class="left">left</a>
+                        <span class="listing-count">3 из 11</span>
+                    </div>
+                </div>
+
+                <div class="product-shops-map">
+                    <img src="img/tmp/map.jpg" width="408" height="308" alt="" />
+                </div>
+            </div>
+            </div>
+
+            <!-- tab 2 -->
+            <div class="tab2">
+            <div class="product-full">
+                <ul>
+                    <li class="show"><a href="javascript:void(0);" title="" class="toggle">Режимы съемки</a>
+                        <table>
+                            <tr>
+                                <td class="product-full-title"><span>Время включения</span></td>
+                                <td class="product-full-value">-</td>
+                            </tr>
+                            <tr>
+                                <td class="product-full-title"><span>Время работы таймера</span></td>
+                                <td class="product-full-value">-</td>
+                            </tr>
+                            <tr>
+                                <td class="product-full-title"><span>Макросъёмка</span></td>
+                                <td class="product-full-value">есть</td>
+                            </tr>
+                            <tr>
+                                <td class="product-full-title"><span>Максимальная серия снимков</span></td>
+                                <td class="product-full-value">10 для JPEG</td>
+                            </tr>
+                            <tr>
+                                <td class="product-full-title"><span>Режим серийной съемки</span></td>
+                                <td class="product-full-value">-</td>
+                            </tr>
+                            <tr>
+                                <td class="product-full-title"><span>Скорость съемки</span></td>
+                                <td class="product-full-value">10 кадр./сек</td>
+                            </tr>
+                            <tr>
+                                <td class="product-full-title"><span>Таймер</span></td>
+                                <td class="product-full-value">есть</td>
+                            </tr>
+                            <tr>
+                                <td class="product-full-title"><span>Формат кадра (фотосъемка)</span></td>
+                                <td class="product-full-value">-</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li class="show"><a href="javascript:void(0);" title="" class="toggle">Питание</a>
+                        <table>
+                            <tr>
+                                <td class="product-full-title"><span>Батарейный блок</span></td>
+                                <td class="product-full-value">есть</td>
+                            </tr>
+                            <tr>
+                                <td class="product-full-title"><span>Емкость аккумулятор</span></td>
+                                <td class="product-full-value">250 фотографий</td>
+                            </tr>
+                            <tr>
+                                <td class="product-full-title"><span>Количество аккумуляторов</span></td>
+                                <td class="product-full-value">1</td>
+                            </tr>
+                            <tr>
+                                <td class="product-full-title"><span>Разъем питания</span></td>
+                                <td class="product-full-value">есть</td>
+                            </tr>
+                            <tr>
+                                <td class="product-full-title"><span>Формат аккумуляторов</span></td>
+                                <td class="product-full-value">свой собственный</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li class="hide"><a href="javascript:void(0);" title="" class="toggle">Режимы съемки</a>
+                        <table>
+                            <tr>
+                                <td class="product-full-title"><span>Время включения</span></td>
+                                <td class="product-full-value">-</td>
+                            </tr>
+                            <tr>
+                                <td class="product-full-title"><span>Время работы таймера</span></td>
+                                <td class="product-full-value">-</td>
+                            </tr>
+                            <tr>
+                                <td class="product-full-title"><span>Макросъёмка</span></td>
+                                <td class="product-full-value">есть</td>
+                            </tr>
+                            <tr>
+                                <td class="product-full-title"><span>Максимальная серия снимков</span></td>
+                                <td class="product-full-value">10 для JPEG</td>
+                            </tr>
+                            <tr>
+                                <td class="product-full-title"><span>Режим серийной съемки</span></td>
+                                <td class="product-full-value">-</td>
+                            </tr>
+                            <tr>
+                                <td class="product-full-title"><span>Скорость съемки</span></td>
+                                <td class="product-full-value">10 кадр./сек</td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+
+                <div class="product-page-notice">
+                    Сообщить об ошибке цены продукта вы можете нажав <a href="#">сюда</a>. MarketPrice делает все усилия чтобы гарантировать точность
+                    информации предоставленной на нашем сайте. Мы предлагаем пользователям проводить свои собственные исследования
+                    перед покупкой товаров в прорекламированных нами магазинах. Пожалуйста, обратитесь к нашему Соглашению О Сервисе
+                    для полных деталей.
+                </div>
+            </div>
+            </div>
+
+            <!-- tab 3 -->
+            <div class="tab3">
+            <div class="product-feeds">
+                <table>
+                    <tr>
+                        <!-- statistic -->
+                        <td class="product-feeds-stats">
+                            <div>
+                                <div class="product-feeds-stats-count">
+                                    <span class="name">5 stars</span>
+                                    <span class="vote">(2)</span>
+
+                                    <div class="bar">
+                                        <span class="fill" style="width: 66%"><!-- --></span>
+                                    </div>
+                                </div>
+
+                                <div class="product-feeds-stats-count">
+                                    <span class="name">4 stars</span>
+                                    <span class="vote">(1)</span>
+
+                                    <div class="bar">
+                                        <span class="fill" style="width: 33%"><!-- --></span>
+                                    </div>
+                                </div>
+
+                                <div class="product-feeds-stats-count">
+                                    <span class="name">3 stars</span>
+                                    <span class="vote">(0)</span>
+
+                                    <div class="bar">
+                                        <span class="fill" style="width: 0%"><!-- --></span>
+                                    </div>
+                                </div>
+
+                                <div class="product-feeds-stats-count">
+                                    <span class="name">2 stars</span>
+                                    <span class="vote">(0)</span>
+
+                                    <div class="bar">
+                                        <span class="fill" style="width: 0%"><!-- --></span>
+                                    </div>
+                                </div>
+
+                                <div class="product-feeds-stats-count">
+                                    <span class="name">1 stars</span>
+                                    <span class="vote">(0)</span>
+
+                                    <div class="bar">
+                                        <span class="fill" style="width: 0%"><!-- --></span>
+                                    </div>
+                                </div>
+
+                                <p><strong>100%</strong> jn Reviewers reccomended this product.</p>
+                            </div>
+                        </td>
+
+                        <!-- items -->
+                        <td class="product-feeds-list">
+                            <div>
+                                <div class="product-feeds-item">
+                                    <div class="product-feeds-item-rating">
+                                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                                    </div>
+
+                                    <div class="product-feeds-item-title">
+                                        <a href="#">Abt.com</a> by alex, Dec 22, 2011
+                                    </div>
+
+                                    <div class="product-feeds-item-short">
+                                        very satisfied with purchase
+                                    </div>
+
+                                    <div class="product-feeds-item-excerpt">
+                                        "...Delivery was late, and they do not help setting up ... <a href="#">See more</a>
+                                    </div>
+                                </div>
+
+                                <div class="product-feeds-item">
+                                    <div class="product-feeds-item-rating">
+                                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                                    </div>
+
+                                    <div class="product-feeds-item-title">
+                                        <a href="#">Abt.com</a> by alex, Dec 22, 2011
+                                    </div>
+
+                                    <div class="product-feeds-item-short">
+                                        very satisfied with purchase
+                                    </div>
+
+                                    <div class="product-feeds-item-excerpt">
+                                        "...Delivery was late, and they do not help setting up ... <a href="#">See more</a>
+                                    </div>
+                                </div>
+
+                                <div class="product-feeds-item">
+                                    <div class="product-feeds-item-rating">
+                                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                                    </div>
+
+                                    <div class="product-feeds-item-title">
+                                        <a href="#">Abt.com</a> by alex, Dec 22, 2011
+                                    </div>
+
+                                    <div class="product-feeds-item-short">
+                                        very satisfied with purchase
+                                    </div>
+
+                                    <div class="product-feeds-item-excerpt">
+                                        "...Delivery was late, and they do not help setting up ... <a href="#">See more</a>
+                                    </div>
+                                </div>
+
+                                <div class="product-feeds-item">
+                                    <div class="product-feeds-item-rating">
+                                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                                        <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                                    </div>
+
+                                    <div class="product-feeds-item-title">
+                                        <a href="#">Abt.com</a> by alex, Dec 22, 2011
+                                    </div>
+
+                                    <div class="product-feeds-item-short">
+                                        very satisfied with purchase
+                                    </div>
+
+                                    <div class="product-feeds-item-excerpt">
+                                        "...Delivery was late, and they do not help setting up ... <a href="#">See more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="product-page-notice">
+                    Сообщить об ошибке цены продукта вы можете нажав <a href="#">сюда</a>. MarketPrice делает все усилия чтобы гарантировать точность информации
+                    предоставленной на нашем сайте. Мы предлагаем пользователям проводить свои собственные исследования перед покупкой товаров в
+                    прорекламированных нами магазинах. Пожалуйста, обратитесь к нашему Соглашению О Сервисе для полных деталей.
+                </div>
+            </div>
+            </div>
+
+            <!-- tab 4 -->
+            <div class="tab4">
+            <div class="product-sendfeed">
+                <p>Когда вы создаете отзыв, пожалуйста напишите что вам понравилось или не понравилось в этой конкретной модели и причины почему.</p>
+
+                <p>Поля со звездочкой <span class="req">*</span> обязательны.</p>
+
+                <form action="">
+                <table class="product-sendfeed-rating">
+                    <tr>
+                        <td><span class="req">*</span> <strong>Общий рейтинг:</strong></td>
+                        <td>
+                            <input name="star2" type="radio" class="star">
+                            <input name="star2" type="radio" class="star">
+                            <input name="star2" type="radio" class="star" checked="checked"/>
+                            <input name="star2" type="radio" class="star">
+                            <input name="star2" type="radio" class="star">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Легкость в использовании:</strong></td>
+                        <td>
+                            <input name="star3" type="radio" class="star">
+                            <input name="star3" type="radio" class="star">
+                            <input name="star3" type="radio" class="star" checked="checked"/>
+                            <input name="star3" type="radio" class="star">
+                            <input name="star3" type="radio" class="star">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Характеристики:</strong></td>
+                        <td>
+                            <input name="star4" type="radio" class="star">
+                            <input name="star4" type="radio" class="star">
+                            <input name="star4" type="radio" class="star" checked="checked"/>
+                            <input name="star4" type="radio" class="star">
+                            <input name="star4" type="radio" class="star">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Качество:</strong></td>
+                        <td>
+                            <input name="star5" type="radio" class="star">
+                            <input name="star5" type="radio" class="star">
+                            <input name="star5" type="radio" class="star" checked="checked"/>
+                            <input name="star5" type="radio" class="star">
+                            <input name="star5" type="radio" class="star">
+                        </td>
+                    </tr>
+                </table>
+                </form>
+
+                <!-- -->
+
+                <table class="product-sendfeed-main">
+                    <tr>
+                        <td>
+                            <p><label>Ваше мнение кратко:<br />
+                            <input name="t1" type="text" tabindex="1" class="textbox" /></label></p>
+
+                            <p><label>Напишите ваше мнение (300 символов):<br />
+                            <textarea name="t2" tabindex="2"></textarea></label></p>
+
+                            <p><label>Преимущества (300 символов):<br />
+                            <textarea name="t3" tabindex="3"></textarea></label></p>
+
+                            <p><label>Недостатки (300 символов):<br />
+                            <textarea name="t4" tabindex="4"></textarea></label></p>
+
+                            <table>
+                                <tr>
+                                    <td><span class="req">*</span> Ваше имя:</td>
+                                    <td><input name="t5" type="text" tabindex="5" class="textbox" /></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="req">*</span> Ваш E-mail:</td>
+                                    <td><input name="t6" type="text" tabindex="6" class="textbox error" /></td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td><input type="checkbox" name="t7" tabindex="7" /> <label for="t7"><small>Не показывайте мой e-mail</small></label></td>
+                                </tr>
+                            </table>
+
+                            <input type="submit" name="t9" value="Сохранить" tabindex="8" class="save-button" />
+                        </td>
+
+                        <td class="product-page-rules">
+                            <h3>Правила:</h3>
+
+                            <h4>Можно:</h4>
+
+                            <ul>
+                                <li>Коментарии которые помогут другим понять больше об этом товаре. Пожалуйста, характеризуйте только товар показанный на этой странице.</li>
+                                <li>Сравните этот товар с другими похожими товарами.</li>
+                                <li>Сообщите как этот товар вам пригодился или наоборот не оправдал ваших надежд.</li>
+                            </ul>
+
+                            <h4>Нельзя:</h4>
+
+                            <ul>
+                                <li>Использовать вульгарный язык</li>
+                                <li>Характеризовать не новый товар.</li>
+                                <li>HTML код и любые URL линки, адреса или телефонные номера</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                </form>
+
+                <div class="product-page-notice">
+                    Сообщить об ошибке цены продукта вы можете нажав <a href="#">сюда</a>. MarketPrice делает все усилия чтобы гарантировать точность информации
+                    предоставленной на нашем сайте. Мы предлагаем пользователям проводить свои собственные исследования перед покупкой товаров в
+                    прорекламированных нами магазинах. Пожалуйста, обратитесь к нашему Соглашению О Сервисе для полных деталей.
+                </div>
+            </div>
+            </div>
+
+            <!-- tab 5 -->
+            <div class="tab5">
+            <div class="product-comments">
+                <div class="product-comments-form">
+                <form action="">
+                    <p><label>Ваше мнение кратко:<br />
+                    <input name="k1" type="text" tabindex="1" class="textbox" /></label></p>
+
+                    <p><label>Напишите ваше мнение (300 символов):<br />
+                    <textarea name="k2" tabindex="2"></textarea></label></p>
+
+                    <input type="submit" name="k3" value="Сохранить" tabindex="3" class="save-button" />
+                </form>
+                </div>
+
+                <!-- -->
+                <div class="product-comments-list">
+                    <div class="product-comments-item">
+                        <div class="product-comments-title"><a href="#">Alex</a>  Dec 22, 2011</div>
+
+                        <p>very satisfied with purchasevery satisfied with purchasevery satisfied with purchasevery satisfied with purchasevery
+                        satisfied with purchasevery satisfied with purchase.very satisfied with purchasevery satisfied with purchasevery satisfied
+                        with purchasevery satisfied with purchasevery satisfied with purchasevery satisfied with purchase.</p>
+
+                        <p>very satisfied with purchasevery satisfied with purchasevery satisfied with purchasevery satisfied with purchasevery
+                        satisfied with purchasevery satisfied with purchase</p>
+                    </div>
+
+                    <div class="product-comments-item">
+                        <div class="product-comments-title"><a href="#">Alex</a>  Dec 22, 2011</div>
+
+                        <p>very satisfied with purchasevery satisfied with purchasevery satisfied with purchasevery satisfied with purchasevery
+                        satisfied with purchasevery satisfied with purchase.very satisfied with purchasevery satisfied with purchasevery satisfied
+                        with purchasevery satisfied with purchasevery satisfied with purchasevery satisfied with purchase.</p>
+
+                        <p>very satisfied with purchasevery satisfied with purchasevery satisfied with purchasevery satisfied with purchasevery
+                        satisfied with purchasevery satisfied with purchase</p>
+                    </div>
+                </div>
+
+                <div class="product-page-notice">
+                    Сообщить об ошибке цены продукта вы можете нажав <a href="#">сюда</a>. MarketPrice делает все усилия чтобы гарантировать точность информации
+                    предоставленной на нашем сайте. Мы предлагаем пользователям проводить свои собственные исследования перед покупкой товаров в
+                    прорекламированных нами магазинах. Пожалуйста, обратитесь к нашему Соглашению О Сервисе для полных деталей.
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+  </div>
+  <div class="clr"></div>
+</section>
+
+<footer>
+   <div class="seo-block">
+   <p>PriceGrabber.com offers the best online shopping experience. Our unique shopping site offers extensive inventory at the lowest prices by comparing products, product reviews, and merchant deals for all of your shopping needs. Browse thousands of popular brands, hot products, featured deals and find exactly what you want at discount prices. Shopping online has never been easier!</p>
+   <p>Best Products: <a href="#">Cameras</a>, <a href="#">Electronics</a>, <a href="#">Clothing</a>, <a href="#">Sports Gear</a>, <a href="#">Home Appliances</a>, <a href="#">Laptops & Computers</a>, <a href="#">Video Games</a>, <a href="#">Toys</a></p>
+   <p>Quick Search: <a href="#">Digital Cameras, <a href="#">Cheap Laptops & Notebooks</a>, <a href="#">Macbook Pro</a>, <a href="#">Ink Catridges</a>, <a href="#">Coffee Makers</a>, <a href="#">Engagement Rings</a>, <a href="#">Plus Size Dresses</a>, <a href="#">Canon Cameras</a>, <a href="#">IPad 2</a>, <a href="#">Weights</a>, <a href="#">Rockford Fosgate</a>, <a href="#">IHard Drives</a>, <a href="#">GE Appliances</a>, <a href="#">Xbox 360 Games</a>, <a href="#">Dell Computers</a>, <a href="#">Cheap Shoes</a>, <a href="#">Ashley Furniture</a>, <a href="#">Uggs Boots</a>, <a href="#">Wedding Dresses</a>, <a href="#">IBose Headphones</a></p>
+   </div>
+   <div class="clr"></div>
+   <div class="services-block">
+       <div class="subscribe">
+          Be in touch with the PriceGrabber Newsletter:
+          <form>
+             <input type="text" onblur="if(this.value=='') this.value='Введите свой E-mail';" onfocus="if(this.value=='Введите свой E-mail') this.value='';" value="Введите свой E-mail" class="input">
+             <input type="button" value="Подписаться" class="button">
+          </form>
+       </div>
+       
+       <div class="adds-block">
+          <div class="adds-block-left"></div>
+          <div class="adds-block-item shop" onclick="location.href='http://google.ru';">
+              <img src="img/shop.png">
+              <h4>Создай свою витрину</h4>
+              <p>Продавайте свои товары даже<br> если у вас нет своего магазина</p>
+          </div>
+          <div class="adds-block-item money" onclick="location.href='http://google.ru';">
+              <img src="img/money.png">
+              <h4>Узнай первым <br>о снижении цен</h4>
+              <p>Следите за ценами</p>
+          </div>
+          <div class="adds-block-item disqus" onclick="location.href='http://google.ru';">
+              <img src="img/disqus.png">
+              <h4>Читайте отзывы</h4>
+              <p>Оставляйте и читайте<br>отзывы от товарах</p>
+          </div>
+          <div class="adds-block-right"></div>
+       </div><!--adds-block-->
+   </div><!--services-block-->
+   
+   <div class="clr"></div>
+   <div class="footer-bottom">
+        <div class="footer-menu">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li>|</li>
+              <li><a href="#">Попупателям</a></li>
+              <li>|</li>
+              <li><a href="#">Прайс-листы</a></li>
+              <li>|</li>
+              <li><a href="#">Сервисное соглашение</a></li>
+              <li>|</li>
+              <li><a href="#">Реклама на сайте</a></li>
+            </ul>
+        </div>
+        <div class="copyright">&copy; 2002-2009 MarketPrice. Все права защищены</div>
+   </div>   
+</footer>
+</div>
+
+<!-- -->
+<div style="display: none">
+		<div id="sendfeed-popup">
+            <h3>Магазин: КЕЙ</h3>
+
+            <div class="product-sendfeed">
+                <table class="product-sendfeed-main">
+                    <tr>
+                        <td>
+                            <p>Поля со звездочкой <span class="req">*</span> обязательны.</p>
+
+                            <table class="product-sendfeed-rating">
+                                <tr>
+                                    <td><span class="req">*</span> <strong>Ваш рейтинг:</strong></td>
+                                    <td>
+                                    <form action="">
+                                        <input name="star0" type="radio" class="star">
+                                        <input name="star0" type="radio" class="star">
+                                        <input name="star0" type="radio" class="star" checked="checked"/>
+                                        <input name="star0" type="radio" class="star">
+                                        <input name="star0" type="radio" class="star">
+                                    </form>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <p><label>Недостатки (300 символов):<br />
+                            <textarea name="t04" tabindex="04"></textarea></label></p>
+
+                            <table>
+                                <tr>
+                                    <td><span class="req">*</span> Ваше имя:</td>
+                                    <td><input name="t05" type="text" tabindex="5" class="textbox" /></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="req">*</span> Ваш E-mail:</td>
+                                    <td><input name="t06" type="text" tabindex="6" class="textbox error" /></td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td><input type="checkbox" name="t07" tabindex="7" /> <label for="t7"><small>Не показывайте мой e-mail</small></label></td>
+                                </tr>
+                            </table>
+
+                            <input type="submit" name="t09" value="Сохранить" tabindex="8" class="save-button" />
+                        </td>
+
+                        <td class="product-page-rules">
+                            <h3>Правила:</h3>
+
+                            <h4>Можно:</h4>
+
+                            <ul>
+                                <li>Коментарии которые помогут другим понять больше об этом товаре. Пожалуйста, характеризуйте только товар показанный на этой странице.</li>
+                                <li>Сравните этот товар с другими похожими товарами.</li>
+                                <li>Сообщите как этот товар вам пригодился или наоборот не оправдал ваших надежд.</li>
+                            </ul>
+
+                            <h4>Нельзя:</h4>
+
+                            <ul>
+                                <li>Использовать вульгарный язык</li>
+                                <li>Характеризовать не новый товар.</li>
+                                <li>HTML код и любые URL линки, адреса или телефонные номера</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                </form>
+            </div>
+	</div>
+</div>
+
+<!-- -->
+<div style="display: none">
+    <div id="buyers-popup-1" class="buyers-popup">
+        <img src="img/tmp/th4.jpg" width="98" height="98" alt="" class="alignright" />
+        <h3>Магазин: Mobilmax.ru</h3>
+
+        <p><strong>Модель:</strong> Цифровой фотоаппарат SONY Cyber-shot DSC-TX55 черный</p>
+        <p><strong>Вендор:</strong></p>
+        <p><strong>Цена: <span>7990 руб.</span></strong></p>
+
+        <table>
+            <tr>
+                <td>
+                    Overall Rating:
+                    <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                    <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                    <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                    <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                    <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                </td>
+                <td>
+                    Features
+                    <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                    <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                    <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                    <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                    <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Ease of Use:
+                    <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                    <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                    <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                    <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                    <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                </td>
+                <td>
+                    Quality:
+                    <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                    <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                    <img src="img/star2.png" width="12" height="14" alt="" class="star" />
+                    <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                    <img src="img/star1.png" width="12" height="14" alt="" class="star" />
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+
+<script type="text/javascript" src="js/call.js"></script>
+</body>
+</html>

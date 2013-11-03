@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.20.custom.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/input-focus.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.20.custom.min.js"></script>
+<script>
+	$(function() {
+		$( "#slider" ).slider({
+			range: true,
+			min: 0,
+			max: 40000,
+			values: [ 5000, 20000 ],
+			slide: function( event, ui ) {
+				$( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+			}
+		});
+		$( "#amount" ).val( "$" + $( "#slider" ).slider( "values", 0 ) +
+			" - $" + $( "#slider" ).slider( "values", 1 ) );
+        $(window).load(function(){
+            handle = $('#slider .ui-slider-handle');
+            handle.eq(0).addClass('first-handle');
+            handle.eq(1).addClass('second-handle');
+        });
+	});
+	</script>
+</head>
+<body>
+<div id="wrap">
+	<!-- header -->
+	<div class="header">
+        <a href="#"><img src="images/logo.png" width="277" height="64" border="0" alt="" class="logo"/></a>
+
+        <!-- work time -->
+        <div class="worktime">
+            <span class="title">Время работы</span>
+
+            <div class="from">
+                с 9:00 до 19:00 <span>вых</span>
+            </div>
+
+            <div class="days">
+                <span class="green">Пн</span>
+                <span class="green">Вт</span>
+                <span class="green">Ср</span>
+                <span class="green">Чт</span>
+                <span class="green">Пт</span>
+                <span class="red">Сб</span>
+                <span class="red">Вс</span>
+            </div>
+        </div>
+
+        <!-- map -->
+        <div class="map">
+            <a href="#"><img src="images/header-map.png" width="97" height="59" border="0" alt="" /></a>
+        </div>
+
+        <!-- contacts -->
+        <div class="contacts">
+            <span class="phone"><span>8 (495)</span> 649-89-37</span>
+            <p>Ленинский проспект, дом 87,<br />
+            стр.1, офис 367</p>
+            <p><a href="javascript:void(0);" id="ordercall">Заказать обратный звонок</a></p>
+
+            <div id="call">
+                <label>Ваше имя:<br />
+                <input name="c1" type="text" value="Введите ваше имя" class="textbox" /></label>
+
+                <label>Ваше телефон:<br />
+                <input name="c2" type="text" value="Введите ваш телефон" class="textbox" /></label>
+
+                <input type="button" name="c3" value="" class="callnow" />
+            </div>
+            <script language="JavaScript" type="text/javascript">
+            /*<![CDATA[*/
+            $("#ordercall").click(function() {
+              $("#call").toggle();
+            });
+            /*]]>*/
+            </script>
+        </div>
+
+        <!-- search&catalog -->
+        <div class="search">
+            <a href="#" class="select-category">Выберите раздел каталога</a>
+
+            <div id="catalog-expand">
+                <ul>
+                    <li><a href="#">Отопление и обогрев</a>
+                        <ul>
+                            <li><a href="#">Тепловые завесы</a></li>
+                            <li><a href="#">Тепловые пушки</a></li>
+                            <li><a href="#">Дизельные и газовые Обогреватели</a></li>
+                            <li><a href="#">Инфракрасные обогреватели</a></li>
+                            <li><a href="#">Конвекторы</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Сантехника и подогрев воды</a></li>
+                    <li><a href="#">Кондиционеры</a></li>
+                    <li><a href="#">Вентиляция и обработка воздуха</a></li>
+                    <li><a href="#">Различное оборудование</a></li>
+                    <li><a href="#">Товары для дачи</a></li>
+                </ul>
+            </div>
+            <script language="JavaScript" type="text/javascript">
+            /*<![CDATA[*/
+            $(".search .select-category").click(function() {
+              $("#catalog-expand").toggle();
+            });
+            /*]]>*/
+            </script>
+
+            <div class="searchform">
+                <form>
+                    <input name="searchbar" type="text" value="Поиск по сайту" tabindex="1" class="textbox" />
+                    <input type="submit" name="find" value="" tabindex="2" class="find" />
+                </form>
+            </div>
+        </div>
+
+        <!-- navigation -->
+        <div class="nav">
+            <a href="#" class="home" title="Главная">Главная</a>
+            <a href="#" class="sitemap" title="Карта сайта">Карта сайта</a>
+            <a href="#" class="mail" title="Связаться с нами">Связаться с нами</a>
+        </div>
+
+        <!-- top menu -->
+        <div class="topmenu">
+            <ul>
+                <li class="active"><a href="#">Новости и акции</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Оплата и доставка</a></li>
+                <li><a href="#">Книга отзывов</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- breadcrumbs -->
+    <div class="breadcrumbs">
+        <img src="images/bcl.gif" width="2" height="9" border="0" alt="" class="border" />
+
+        <a href="#">Главная</a>
+        <img src="images/bc.gif" width="7" height="3" border="0" alt="" class="spacer" />
+        <a href="#">Отопление и обогрев</a>
+        <img src="images/bc.gif" width="7" height="3" border="0" alt="" class="spacer" />
+        <span>Тепловые завесы</span>
+    </div>
+
+	<!-- content -->
+	<div class="content">
+        <h1>Тепловые завесы</h1>
+
+        <div class="sort">
+            На странице:
+            <select name="count" size="1">
+                <option value="25" selected="selected">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+            товаров
+
+            <div class="orderby">
+                Сортировка:
+                <a href="#" class="desc">по рейтингу</a>
+                <a href="#">по цене</a>
+                <a href="#" class="asc">по производителю</a>
+            </div>
+        </div>
+
+        <!-- item's list -->
+        <div class="items-list">
+            <div class="item">
+                <div class="view">
+                    <img src="images/tmp/i1.jpg" width="106" height="54" border="0" alt="" />
+                </div>
+
+                <div class="description">
+                    <a href="#" class="title">Тепловая завеса Тропик К-5</a>
+
+                    <p><strong>Мощность</strong> (охлаждение), кВт - 2,6</p>
+                    <p><strong>Напряжение</strong>, В - 220</p>
+                    <p><strong>Высота установки</strong>, м - 20</p>
+                    <p><strong>Размеры (ДхВхГ)</strong>, мм - 713х145х114</p>
+                </div>
+
+                <div class="price">
+                    <div class="cost">
+                        Цена: <span>20970</span> <strong>Руб.</strong>
+                    </div>
+                    <a href="#" class="addtocart">В корзину</a>
+                </div>
+            </div>
+
+            <!-- -->
+
+            <div class="item">
+                <div class="view">
+                    <img src="images/tmp/i1.jpg" width="106" height="54" border="0" alt="" />
+                </div>
+
+                <div class="description">
+                    <a href="#" class="title">Тепловая завеса Тропик К-5</a>
+
+                    <p><strong>Мощность</strong> (охлаждение), кВт - 2,6</p>
+                    <p><strong>Напряжение</strong>, В - 220</p>
+                    <p><strong>Высота установки</strong>, м - 20</p>
+                    <p><strong>Размеры (ДхВхГ)</strong>, мм - 713х145х114</p>
+                </div>
+
+                <div class="price">
+                    <div class="old">
+                        Старая цена: <span>18500</span> <strong>Руб.</strong>
+                    </div>
+                    <div class="cost">
+                        Цена: <span>20970</span> <strong>Руб.</strong>
+                    </div>
+                    <a href="#" class="addtocart">В корзину</a>
+                </div>
+            </div>
+
+            <!-- -->
+
+            <div class="item">
+                <div class="view">
+                    <img src="images/tmp/i1.jpg" width="106" height="54" border="0" alt="" />
+                </div>
+
+                <div class="description">
+                    <a href="#" class="title">Тепловая завеса Тропик К-5</a>
+
+                    <p><strong>Мощность</strong> (охлаждение), кВт - 2,6</p>
+                    <p><strong>Напряжение</strong>, В - 220</p>
+                    <p><strong>Высота установки</strong>, м - 20</p>
+                    <p><strong>Размеры (ДхВхГ)</strong>, мм - 713х145х114</p>
+                </div>
+
+                <div class="price">
+                    <div class="cost">
+                        Цена: <span>20970</span> <strong>Руб.</strong>
+                    </div>
+                    <a href="#" class="addtocart">В корзину</a>
+                </div>
+            </div>
+
+            <!-- -->
+
+            <div class="item">
+                <div class="view">
+                    <img src="images/tmp/i1.jpg" width="106" height="54" border="0" alt="" />
+                </div>
+
+                <div class="description">
+                    <a href="#" class="title">Тепловая завеса Тропик К-5</a>
+
+                    <p><strong>Мощность</strong> (охлаждение), кВт - 2,6</p>
+                    <p><strong>Напряжение</strong>, В - 220</p>
+                    <p><strong>Высота установки</strong>, м - 20</p>
+                    <p><strong>Размеры (ДхВхГ)</strong>, мм - 713х145х114</p>
+                </div>
+
+                <div class="price">
+                    <div class="cost">
+                        Цена: <span>20970</span> <strong>Руб.</strong>
+                    </div>
+                    <a href="#" class="addtocart">В корзину</a>
+                </div>
+            </div>
+
+            <!-- -->
+
+            <div class="item">
+                <div class="view">
+                    <img src="images/tmp/i1.jpg" width="106" height="54" border="0" alt="" />
+                </div>
+
+                <div class="description">
+                    <a href="#" class="title">Тепловая завеса Тропик К-5</a>
+
+                    <p><strong>Мощность</strong> (охлаждение), кВт - 2,6</p>
+                    <p><strong>Напряжение</strong>, В - 220</p>
+                    <p><strong>Высота установки</strong>, м - 20</p>
+                    <p><strong>Размеры (ДхВхГ)</strong>, мм - 713х145х114</p>
+                </div>
+
+                <div class="price">
+                    <div class="cost">
+                        Цена: <span>20970</span> <strong>Руб.</strong>
+                    </div>
+                    <a href="#" class="addtocart">В корзину</a>
+                </div>
+            </div>
+
+            <!-- -->
+
+            <div class="item">
+                <div class="view">
+                    <img src="images/tmp/i1.jpg" width="106" height="54" border="0" alt="" />
+                </div>
+
+                <div class="description">
+                    <a href="#" class="title">Тепловая завеса Тропик К-5</a>
+
+                    <p><strong>Мощность</strong> (охлаждение), кВт - 2,6</p>
+                    <p><strong>Напряжение</strong>, В - 220</p>
+                    <p><strong>Высота установки</strong>, м - 20</p>
+                    <p><strong>Размеры (ДхВхГ)</strong>, мм - 713х145х114</p>
+                </div>
+
+                <div class="price">
+                    <div class="cost">
+                        Цена: <span>20970</span> <strong>Руб.</strong>
+                    </div>
+                    <a href="#" class="addtocart">В корзину</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- paginator -->
+        <div class="paginator">
+            <ul>
+                <li><span>Страницы:</span></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#" class="next"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- aside -->
+    <div class="aside">
+        <!-- customize -->
+        <div class="custom">
+            <h3>Выбор по параметрам</h3>
+
+            <form>
+                <div class="category">
+                    <h5>Производители:</h5>
+
+                    <label><input type="checkbox" name="c1" checked="checked" /> <strong>Выбрать все</strong></label>
+                    <label><input type="checkbox" name="c2" /> Ballu</label>
+                    <label><input type="checkbox" name="c2" /> General Climate</label>
+                    <label><input type="checkbox" name="c2" /> Termica</label>
+                    <label><input type="checkbox" name="c2" /> NeoClima</label>
+                    <label><input type="checkbox" name="c2" /> Тепломаш</label>
+                    <label><input type="checkbox" name="c2" /> Тропик</label>
+                    <label><input type="checkbox" name="c2" /> Dantex</label>
+                </div>
+
+                <div class="price">
+                    <h5>Цена</h5>
+		            <p>
+                    	<input type="text" id="amount" style="" />
+                    </p>
+
+                    <div id="state">
+                        <ul>
+                            <li>0</li>
+                            <li>5000</li>
+                            <li>15000</li>
+                            <li>20000</li>
+                            <li>40000</li>
+                        </ul>
+                    </div>
+		            <div id="slider"></div>
+
+                    <div class="find">
+                        <a href="#" class="findnow">Подобрать</a>
+                        <a href="#">Очистить форму</a>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+        <!-- information -->
+        <div class="information">
+            <h4>Знаете ли Вы что?</h4>
+
+            <div class="item">
+                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает?
+            </div>
+
+            <div class="item">
+                Оценке дизайна и композиции читаемый текст мешает сосредоточиться?
+            </div>
+
+            <div class="item">
+                Читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот?
+            </div>
+
+            <div class="item">
+                Обеспечивает более или менее стандартное заполнение шаблона?
+            </div>
+        </div>
+
+        <!-- last feeds -->
+        <div class="lastfeeds">
+            <h4>Книга отзывов и вопросов</h4>
+
+            <div class="item">
+                <div class="author">
+                    <strong>Поляруш Роман</strong>
+                    12 марта 2012 г. 15:55
+                </div>
+
+                <div class="q">
+                    <strong>В: </strong>Давно выяснено, что при оценке дизайна и композиции читаемый
+                    текст мешает Используют потому, что тот обеспечивает более.
+                    <div class="c"></div>
+                </div>
+                <div class="a">
+                    <strong>O: </strong>Композиции читаемый текст мешает потому, что тот обеспечивает
+                    или менее стандартное.
+                    <div class="c"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- delivery -->
+    <div class="delivery">
+        <a href="#"><img src="images/d1.gif" width="220" height="86" border="0" alt="" /></a>
+        <a href="#"><img src="images/d2.gif" width="220" height="86" border="0" alt="" /></a>
+        <a href="#"><img src="images/d3.gif" width="220" height="86" border="0" alt="" /></a>
+        <a href="#"><img src="images/d4.gif" width="220" height="86" border="0" alt="" /></a>
+    </div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+    <div class="wrapper">
+        <div class="copyright">
+            &copy; 2012 Торговый Дом  Северный Ветер<br />
+            Все права защищены.
+        </div>
+
+        <div class="contacts">
+            <span class="title">Контактный телефон</span>
+            <span class="phone"><span>8 (495)</span> 649-89-37</span>
+            <p>Ленинский проспект, дом 87, стр.1, офис 367</p>
+        </div>
+
+        <div class="counters">
+            <a href="#"><img src="images/tmp/c1.gif" width="88" height="31" border="0" alt="" /></a>
+            <a href="#"><img src="images/tmp/c2.gif" width="88" height="31" border="0" alt="" /></a>
+        </div>
+    </div>
+
+    <!-- bottom menu -->
+    <div class="bottommenu">
+        <ul>
+            <li class="active"><a href="#">Новости и акции</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Оплата и доставка</a></li>
+            <li><a href="#">Книга отзывов</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

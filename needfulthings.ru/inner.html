@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>inner</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/easySlider1.7.js"></script>
+
+<!-- image rotator -->
+<script type="text/javascript">
+function theRotator() {
+	$('div.rotator ul li').css({opacity: 0.0});
+	$('div.rotator ul li:first').css({opacity: 1.0});
+	setInterval('rotate()',6000);
+}
+
+function rotate() {
+	var current = ($('div.rotator ul li.show')?  $('div.rotator ul li.show') : $('div.rotator ul li:first'));
+    if ( current.length == 0 ) current = $('div.rotator ul li:first');
+	var next = ((current.next().length) ? ((current.next().hasClass('show')) ? $('div.rotator ul li:first') :current.next()) : $('div.rotator ul li:first'));
+	next.css({opacity: 0.0})
+	.addClass('show')
+	.animate({opacity: 1.0}, 1000);
+	current.animate({opacity: 0.0}, 1000)
+	.removeClass('show');
+};
+
+$(document).ready(function() {
+	theRotator();
+	$('div.rotator').fadeIn(1000);
+    $('div.rotator ul li').fadeIn(1000);
+});
+</script>
+
+<!-- item slider -->
+<script language="JavaScript" type="text/javascript">
+/*<![CDATA[*/
+$(document).ready(function(){
+	$(".slider").easySlider();
+});
+/*]]>*/
+</script>
+</head>
+<body>
+<div id="wrap">
+
+	<!-- aside -->
+	<div class="aside">
+		<div class="nav">
+			<a href="#" title="" class="n1"></a>
+			<a href="#" title="" class="n2"></a>
+		</div>
+
+		<!-- main menu -->
+		<div class="mainmenu">
+			<ul>
+				<li><a href="#" title="">Холодное</a>
+					<ul>
+						<li><a href="#" title="">Огнестрельное</a></li>
+						<li><a href="#" title="">Комбинированное</a></li>
+						<li><a href="#" title="">Ударно-дробящее</a></li>
+						<li><a href="#" title="">Древковое оружие</a></li>
+						<li><a href="#" title="">Метательное</a></li>
+						<li><a href="#" title="">Гражданских ведомств</a></li>
+						<li><a href="#" title="">Неуставное</a></li>
+					</ul>
+				</li>
+				<li><a href="#" title="">Огнестрельное</a></li>
+				<li><a href="#" title="">Комбинированное</a></li>
+				<li><a href="#" title="">Ударно-дробящее</a></li>
+				<li><a href="#" title="">Древковое оружие</a></li>
+				<li><a href="#" title="">Метательное</a></li>
+				<li><a href="#" title="">гражданских ведомств</a></li>
+				<li><a href="#" title="">Неуставное</a></li>
+				<li><a href="#" title="">Доспехи</a></li>
+				<li><a href="#" title="">Щит</a></li>
+				<li><a href="#" title="">Латы</a></li>
+				<li><a href="#" title="">Шлем</a></li>
+				<li><a href="#" title="">Кольчуга</a></li>
+				<li><a href="#" title="">Наручи</a></li>
+			</ul>
+		</div>
+
+		<!-- additional menu -->
+		<div class="additionalmenu">
+			<ul>
+				<li><a href="#" title="">Экспертиза</a></li>
+				<li><a href="#" title="">Энциклопедия</a></li>
+				<li><a href="#" title="">Контакты</a></li>
+			</ul>
+		</div>
+
+		<p>ТЕЛЕФОН:<br />(+7 910) 450–76–18</p>
+
+		<p><small>Москва,ул.Пушечная 2/2<br />схема проезда</small></p>
+	</div>
+
+	<!-- content -->
+	<div class="content">
+
+		<!-- theme switcher -->
+		<div class="theme-switcher">
+			<a href="#" title="" id="switch"></a>
+
+			<script language="JavaScript" type="text/javascript">
+			/*<![CDATA[*/
+			$(document).ready(function() {
+			    $("#switch").click(function() {
+			        $("body").toggleClass("theme-black", "theme white");
+			    });
+			});
+			/*]]>*/
+			</script>
+		</div>
+
+		<!-- filter -->
+		<div class="filter">
+			<ul>
+				<li><a href="#" title="">материал</a>
+					<ul>
+						<li><a href="#" title="">сталь сталь сталь сталь</a></li>
+						<li><a href="#" title="">дерево</a></li>
+						<li><a href="#" title="">Турция (Османская империя)</a></li>
+						<li><a href="#" title="">латунь</a></li>
+						<li><a href="#" title="">ткань</a></li>
+						<li><a href="#" title="">рог</a></li>
+						<li class="bottom"></li>
+					</ul>
+				</li>
+				<li><a href="#" title="">регион</a>
+					<ul>
+						<li><a href="#" title="">Италия</a></li>
+						<li><a href="#" title="">п-о Сардиния</a></li>
+						<li><a href="#" title="">Китай</a></li>
+						<li class="bottom"></li>
+					</ul>
+				</li>
+				<li><a href="#" title="">назначение</a>
+					<ul>
+						<li><a href="#" title="">уставное</a></li>
+						<li><a href="#" title="">&nbsp;</a></li>
+						<li><a href="#" title="">&nbsp;</a></li>
+						<li class="bottom"></li>
+					</ul>
+				</li>
+			</ul>
+
+			<script language="JavaScript" type="text/javascript">
+			/*<![CDATA[*/
+			$(document).ready(function() {
+			    $(".filter li").click(function() {
+			        $(this).addClass("active");
+					$(this).siblings().removeClass("active");
+			    });
+			});
+			/*]]>*/
+			</script>
+		</div>
+
+		<h2>Любителям старины</h2>
+
+		<p>Любителям старины мы поможем пополнить свои коллекции доспехами, палашами, шпагами, кортиками, саблями и другими
+		разновидностями холодного и огнестрельного оружия разных эпох. У нас вы сможете купить уникальные образцы старинного
+		оружия, предметы солдатского и офицерского обихода, а также коллекционное наградное и авторское оружие, сувениры
+		военной тематики.</p>
+
+		<div class="catalog">
+			<div class="item">
+				
+				<!-- -->
+				<a href="#" title=""><img src="images/tmp_1.png" width="144" height="120" alt="" /></a>
+				<p><a href="#" title="">Шпага</a><br />
+				Англия<br />
+				сталь, дерево, ткань, дерево, ткань, дерево, ткань</p>
+				<!-- -->
+				
+			</div>
+
+			<div class="item">
+				
+				<!-- -->
+				<a href="#" title=""><img src="images/tmp_2.png" width="144" height="120" alt="" /></a>
+				<p><a href="#" title="">Шпага</a><br />
+				Англия<br />
+				сталь, дерево, ткань</p>
+				<!-- -->
+				
+			</div>
+
+			<div class="item">
+				
+				<!-- -->
+				<a href="#" title=""><img src="images/tmp_3.png" width="144" height="120" alt="" /></a>
+				<p><a href="#" title="">Шпага</a><br />
+				Англия<br />
+				сталь, дерево, ткань</p>
+				<!-- -->
+				
+			</div>
+
+			<div class="item">
+				
+				<!-- -->
+				<a href="#" title=""><img src="images/tmp_4.png" width="144" height="120" alt="" /></a>
+				<p><a href="#" title="">Шпага</a><br />
+				Англия<br />
+				сталь, дерево, ткань</p>
+				<!-- -->
+				
+			</div>
+
+			<div class="item">
+				
+				<!-- -->
+				<a href="#" title=""><img src="images/tmp_5.png" width="144" height="120" alt="" /></a>
+				<p><a href="#" title="">Шпага</a><br />
+				Англия<br />
+				сталь, дерево, ткань</p>
+				<!-- -->
+				
+			</div>
+
+			<div class="item">
+				
+				<!-- -->
+				<a href="#" title=""><img src="images/tmp_1.png" width="144" height="120" alt="" /></a>
+				<p><a href="#" title="">Шпага</a><br />
+				Англия<br />
+				сталь, дерево, ткань</p>
+				<!-- -->
+				
+			</div>
+
+			<div class="item">
+				
+				<!-- -->
+				<a href="#" title=""><img src="images/tmp_2.png" width="144" height="120" alt="" /></a>
+				<p><a href="#" title="">Шпага</a><br />
+				Англия<br />
+				сталь, дерево, ткань</p>
+				<!-- -->
+				
+			</div>
+
+			<div class="item">
+				
+				<!-- -->
+				<a href="#" title=""><img src="images/tmp_3.png" width="144" height="120" alt="" /></a>
+				<p><a href="#" title="">Шпага</a><br />
+				Англия<br />
+				сталь, дерево, ткань</p>
+				<!-- -->
+				
+			</div>
+
+			<div class="item">
+				
+				<!-- -->
+				<a href="#" title=""><img src="images/tmp_4.png" width="144" height="120" alt="" /></a>
+				<p><a href="#" title="">Шпага</a><br />
+				Англия<br />
+				сталь, дерево, ткань</p>
+				<!-- -->
+				
+			</div>
+
+			<div class="item">
+				
+				<!-- -->
+				<a href="#" title=""><img src="images/tmp_5.png" width="144" height="120" alt="" /></a>
+				<p><a href="#" title="">Шпага</a><br />
+				Англия<br />
+				сталь, дерево, ткань</p>
+				<!-- -->
+				
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<div class="footer_blank"></div>
+</div>
+<div id="footer">
+	<div class="copyright">
+		Лицензия № 34245 от 16.07.2004<br />
+		<a href="mail@needfulthings.ru" title="">mail@needfulthings.ru</a><br />
+		&copy; 1999–2011 Все права защищены. антикварное оружие<br />
+		<a href="#" title="">Создание сайта</a> — Любимая Студия
+	</div>
+</div>
+</body>
+</html>

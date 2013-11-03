@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/input-focus.js"></script>
+</head>
+<body>
+<div id="wrap">
+<div class="wrap-inner">
+
+	<!-- header -->
+	<div class="header">
+        <div class="header-topline">
+            <div class="links">
+                <a href="#" title="">Мои заказы</a> |
+                <a href="#" title="">Мой кабинет</a> |
+                <a href="#" title="">Нужна помощь?</a>
+            </div>
+
+            <div class="compare">
+                <a href="" title="">Сравнить товары:</a> (2)
+            </div>
+
+            <div class="cart">
+                <img src="images/header-cart.gif" width="21" height="18" alt="" /> <a href="" title="">Ваша корзина:</a> (1)
+            </div>
+        </div>
+
+        <a href="#" title=""><img src="images/logo.png" width="239" height="88" alt="" class="logo" /></a>
+
+        <!-- top menu -->
+        <div class="topmenu">
+            <ul>
+                <li><a href="#" title="">Главная</a></li>
+                <li><a href="#" title="">Каталог</a></li>
+                <li><a href="#" title="">Как купить</a></li>
+                <li><a href="#" title="">Доставка</a></li>
+                <li><a href="#" title="">О магазине</a></li>
+            </ul>
+        </div>
+
+        <div class="phone">
+            8 (495) 907-999-7
+        </div>
+
+        <div class="login">
+            <a href="#" title="">Войти на сайт</a> |
+            <a href="#" title="">Зарегистрироваться</a>
+        </div>
+    </div>
+
+    <!-- aside -->
+    <div class="aside">
+
+        <!-- left menu -->
+        <div class="leftmenu">
+            <ul>
+                <li><a href="#" title="">Корма для кошек</a></li>
+                <li><a href="#" title="">Корма для собак</a></li>
+                <li><a href="#" title="">Профессиональная уборка</a></li>
+                <li><a href="#" title="">Сопутствующие товары</a>
+                    <ul>
+                        <li><a href="#" title="">Губки</a></li>
+                        <li><a href="#" title="">Перчатки</a></li>
+                        <li class="active"><a href="#" title="">Тряпки</a></li>
+                        <li><a href="#" title="">Ветошь</a></li>
+                        <li><a href="#" title="">Мешки</a></li>
+                        <li><a href="#" title="">Салфетки</a></li>
+                        <li><a href="#" title="">Туалетная бумага</a></li>
+                        <li><a href="#" title="">Фольга</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="">Средства для стирки</a></li>
+                <li><a href="#" title="">Чистящие средства</a></li>
+            </ul>
+        </div>
+
+        <!-- special -->
+        <div class="special">
+            <h3>Спецпредложение</h3>
+
+            <div class="wrapper">
+                <div class="item">
+                    <img src="images/tmp/s1.jpg" width="118" height="137" alt="" /><br />
+
+                    <a href="#" title="" class="title">Далли ФЕЙН КОЛОР</a>
+                    <p>DEOX Deo-capi neri Жидкое<br />1л (12) 20 стирок</p>
+                    <p><strong>105  руб.</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<!-- content -->
+	<div class="content">
+
+        <!-- intro -->
+        <div class="intro">
+            <div class="search">
+                <form>
+                    <input name="searchbar" type="text" value="Поиск" tabindex="1" />
+                </form>
+            </div>
+
+            <!-- quote -->
+            <a href="#" title="" id="quote1_activate"></a>
+            <a href="#" title="" id="quote2_activate"></a>
+            <a href="#" title="" id="quote3_activate"></a>
+
+            <div class="quote" id="quote1">
+                <img src="images/q1.png" width="19" height="15" alt="" />
+
+                <p>В нашем Интернет-магазине вы всегда<br /> сможете купить корма для кошек и собак
+                "Royal Canin" французкого производства,<br />
+                а так же качественную европейскую бытовую химию производителями.</p>
+
+                <img src="images/q2.png" width="19" height="15" alt="" class="q2" />
+            </div>
+
+            <div class="quote" id="quote2">
+                <img src="images/q1.png" width="19" height="15" alt="" />
+
+                <p>В нашем Интернет-магазине  химию производителями.</p>
+
+                <img src="images/q2.png" width="19" height="15" alt="" class="q2" />
+            </div>
+
+            <div class="quote" id="quote3">
+                <img src="images/q1.png" width="19" height="15" alt="" />
+
+                <p>а так же качественную европейскую бытовую химию производителями.</p>
+
+                <img src="images/q2.png" width="19" height="15" alt="" class="q2" />
+            </div>
+
+            <script language="JavaScript" type="text/javascript">
+            /*<![CDATA[*/
+            $('#quote1_activate').hover(function() {
+              $('#quote1').show();
+              $('#quote2').hide();
+              $('#quote3').hide();
+            });
+            $('#quote2_activate').hover(function() {
+              $('#quote1').hide();
+              $('#quote2').show();
+              $('#quote3').hide();
+            });
+            $('#quote3_activate').hover(function() {
+              $('#quote1').hide();
+              $('#quote2').hide();
+              $('#quote3').show();
+            });
+            /*]]>*/
+            </script>
+        </div>
+
+        <!-- catalog -->
+        <div class="catalog">
+            <h2 class="green"><span class="color">Новинки</span><span class="close"></span></h2>
+
+            <div class="items">
+              <div class="item">
+                  <a href="#" title="" class="title">DEOX Deo-Capi Neri</a>
+
+                  <div class="view">
+                      <img src="images/tmp/i1.jpg" width="96" height="106" alt="" />
+                  </div>
+
+                  <div class="description">
+                    <p>DEOX Deo-capi neri Жидкое средство для стирки темных и деликатных
+                    тканей с формулой устране</p>
+                    <p><a href="#" title="" class="more">подробнее</a></p>
+                    <p><strong>105 руб.</strong></p>
+                  </div>
+              </div>
+
+              <!-- -->
+
+              <div class="item">
+                  <a href="#" title="" class="title">ДРЕКО СУПЕР</a>
+
+                  <div class="view">
+                      <img src="images/tmp/i2.jpg" width="96" height="106" alt="" />
+                  </div>
+
+                  <div class="description">
+                    <p>DEOX Deo-capi neri Жидкое средство для стирки темных и деликатных
+                    тканей с формулой устране</p>
+                    <p><a href="#" title="" class="more">подробнее</a></p>
+                    <p><strong>105 руб.</strong></p>
+                  </div>
+              </div>
+
+              <!-- -->
+
+              <div class="item">
+                  <a href="#" title="" class="title">Далли ФЕЙН КОЛОР</a>
+
+                  <div class="view">
+                      <img src="images/tmp/i3.jpg" width="96" height="106" alt="" />
+                  </div>
+
+                  <div class="description">
+                    <p>DEOX Deo-capi neri Жидкое средство для стирки темных и деликатных
+                    тканей с формулой устране</p>
+                    <p><a href="#" title="" class="more">подробнее</a></p>
+                    <p><strong>105 руб.</strong></p>
+                  </div>
+              </div>
+
+              <!-- -->
+
+              <div class="item">
+                  <a href="#" title="" class="title">Babycat Instinctive 10</a>
+
+                  <div class="view">
+                      <img src="images/tmp/i4.jpg" width="96" height="106" alt="" />
+                  </div>
+
+                  <div class="description">
+                    <p>DEOX Deo-capi neri Жидкое средство для стирки темных и деликатных
+                    тканей с формулой устране</p>
+                    <p><a href="#" title="" class="more">подробнее</a></p>
+                    <p><strong>105 руб.</strong></p>
+                  </div>
+              </div>
+            </div>
+
+            <!-- top sales -->
+
+            <h2 class="brown"><span class="color">лидеры продаж</span><span class="close"></span></h2>
+
+            <div class="items">
+              <div class="item">
+                  <a href="#" title="" class="title">DEOX Deo-Capi Neri</a>
+
+                  <div class="view">
+                      <img src="images/tmp/i1.jpg" width="96" height="106" alt="" />
+                  </div>
+
+                  <div class="description">
+                    <p>DEOX Deo-capi neri Жидкое средство для стирки темных и деликатных
+                    тканей с формулой устране</p>
+                    <p><a href="#" title="" class="more">подробнее</a></p>
+                    <p><strong>105 руб.</strong></p>
+                  </div>
+              </div>
+
+              <!-- -->
+
+              <div class="item">
+                  <a href="#" title="" class="title">ДРЕКО СУПЕР</a>
+
+                  <div class="view">
+                      <img src="images/tmp/i2.jpg" width="96" height="106" alt="" />
+                  </div>
+
+                  <div class="description">
+                    <p>DEOX Deo-capi neri Жидкое средство для стирки темных и деликатных
+                    тканей с формулой устране</p>
+                    <p><a href="#" title="" class="more">подробнее</a></p>
+                    <p><strong>105 руб.</strong></p>
+                  </div>
+              </div>
+        </div>
+    </div>
+
+    <!-- news -->
+    <div class="news">
+        <h2><span class="color">новости</span><span class="close"></span></h2>
+
+        <div class="item">
+            <span class="date">27.11.2011</span>
+
+            <p><a href="#" title="">Получено новое прочное водостойкое клеевое</a></p>
+            <p>Изобретение относится к области получения и применения клеящих составов...</p>
+        </div>
+
+        <div class="item">
+            <span class="date">27.11.2011</span>
+
+            <p><a href="#" title="">Получено новое прочное водостойкое клеевое</a></p>
+            <p>Изобретение относится к области получения и применения клеящих составов...</p>
+        </div>
+
+        <div class="item">
+            <span class="date">27.11.2011</span>
+
+            <p><a href="#" title="">Получено новое прочное водостойкое клеевое</a></p>
+            <p>Изобретение относится к области получения и применения клеящих составов...</p>
+        </div>
+
+        <a href="#" title="" class="all">Все новости</a>
+
+        <!-- subscribe -->
+        <div class="subscribe">
+            <h3>Подписка на новости</h3>
+
+            <form>
+                <input name="yourmail" type="text" class="textbox" tabindex="2" />
+                <input type="submit" name="subscribenow" value="" class="button" />
+            </form>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="copyright">
+            <span>&copy; Интернет-магазин "NeTide.ru", 2011</span><br />
+            Работает на «1С-Битрикс: Управление сайтом»
+        </div>
+
+        <ul>
+            <li><a href="#" title="">Контакты</a></li>
+            <li><a href="#" title="">Карта сайта</a></li>
+            <li><a href="#" title="">Поиск</a></li>
+        </ul>
+    </div>
+
+    <!-- left bottom image -->
+    <div id="lb"></div>
+</div>
+</div>
+</div>
+</body>
+</html>
