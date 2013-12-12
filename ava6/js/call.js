@@ -1,0 +1,1 @@
+$( ".f-checkbox" ).button();

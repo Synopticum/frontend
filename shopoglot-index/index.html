@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+
+        <link href="js/jquery-ui-1.10.3.custom/css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+        <script src="js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.js"></script>
+
+        <link href="js/selectbox/jquery.selectbox.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="js/selectbox/jquery.selectbox-0.2.min.js"></script>
+
+        <link rel="stylesheet" href="js/anythingslider/anythingslider.css">
+        <script src="js/anythingslider/jquery.anythingslider.js"></script>
+
+        <script src="js/jquery.placeholder.js"></script>
+
+        <script type="text/javascript" src="js/jquery.validate.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#demoForm").validate();
+            });
+            $(document).ready(function(){
+                $("#demoForm2").validate();
+            });
+                $.validator.messages.required = "Заполните поле!";
+                $.validator.messages.email = "Неверный формат email";
+        </script>
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <header>
+                <div class="header-wrapper">
+                    <div class="box-login">
+                        <p>Войти или <a href="">зарегистрироваться:</a></p>
+
+                        <form action="">
+                        <table>
+                            <tr>
+                                <td><input type="text" id="" value="" class="box-login-textbox" placeholder="Эл. почта" /></td>
+                                <td><a href="" class="box-login-forgot">Забыли пароль?</a></td>
+                            </tr>
+                            <tr>
+                                <td><input type="password" id="" value="" class="box-login-textbox" placeholder="Пароль" /></td>
+                                <td><input type="button" id="" value="Войти" class="box-login-submit" /></td>
+                            </tr>
+                        </table>
+                        </form>
+                    </div>
+
+                    <div class="box-spacer"></div>
+
+                    <div class="box-contacts">
+                        <p>У вас есть вопросы? Задавайте!</p>
+
+                        <table>
+                            <tr>
+                                <td class="c1"><a href="" class="box-contacts-forum">Форум</a></td>
+                                <td class="c2"><a href="" class="box-contacts-email">Напишите нам</a></td>
+                                <td class="c3">+7 495 661 4741 <img src="images/hc-online.png" alt="" class="box-contacts-status"></td>
+                            </tr>
+                            <tr>
+                                <td class="c1"><a href="" class="box-contacts-chat">Чат</a> <img src="images/hc-online.png" alt="" class="box-contacts-status" style="margin-bottom: -1px;"></td>
+                                <td class="c2"><a href="javascript:void(0);" class="box-contacts-address">Офис в Москве</a></td>
+                                <td class="c3">+1 888 289 8997 <img src="images/hc-offline.png" alt="" class="box-contacts-status"></td>
+                            </tr>
+                        </table>
+
+                        <div class="box-contacts-hover">
+                            <p><strong>Рабочие дни:</strong></p>
+
+                            <p>Пн–Пт, с 11:00 до 19:00<br />
+                            Вс, с 10:00 до 18:00</p>
+
+                            <p><strong class="highlight">Сб — выходной</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="box-spacer"></div>
+
+                    <div class="box-language">
+                        <p>Выберите язык:</p>
+
+                        <table>
+                            <tr>
+                                <td><a href="" class="active"><img src="images/hl-ru.png" alt=""> RUS</a></td>
+                                <td><a href=""><img src="images/hl-jp.png" alt=""> JAP</a></td>
+                                <td><a href=""><img src="images/hl-es.png" alt=""> ESP</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href=""><img src="images/hl-en.png" alt=""> ENG</a></td>
+                                <td><a href=""><img src="images/hl-de.png" alt=""> GER</a></td>
+                                <td><a href=""><img src="images/hl-fr.png" alt=""> FRA</a></td>
+                            </tr>
+                        </table>                        
+                    </div>
+
+                    <div class="box-spacer"></div>
+
+                    <div class="box-social">
+                        <img src="images/tmp/s1.png" alt="" style="margin-top: -5px;">
+                    </div>
+                </div>
+            </header>
+
+            <!-- main menu -->
+            <div class="mainmenu">
+                <div class="mainmenu-wrapper">
+                    <ul>
+                        <li><a href="" title="">О нас</a></li>
+                        <li><a href="" title="">Наши услуги</a></li>
+                        <li><a href="" title="">Стоимость услуг</a></li>
+                        <li class="double"><a href="" title="">Калькулятор<br /><span>стоимости пересылки</span></a></li>
+                        <li class="double active"><a href="" title="">Оформить заказ<br /><span style="font-size: 11px;">на приобретение товаров</span></a></li>
+                        <li><a href="" title="">Личный кабинет</a></li>
+                    </ul>                                          
+                </div>
+            </div>
+
+            <!-- welcome -->
+            <div class="welcome">
+                <div class="welcome-wrapper-1">
+                    <div class="welcome-wrapper-2">
+                        <div class="welcome-logo">
+                            <img src="images/welcome-logo.png" alt="">
+                        </div>
+
+                        <div class="welcome-description">
+                            <h1>Мы — посредник в США №1</h1>
+
+                            <p>Мы оказываем услуги по приобретению товаров из интернет-магазинов и аукционов США!<br />
+                            Мы высылаем товары из США во все страны мира! Это действительно работает!<br />
+                            <strong><a href="">Посмотрите примеры вещей</a></strong>, которые уже были заказаны через нас.</p>
+
+                            <p><strong>Расскажите о нас друзьям:</strong> <img src="images/tmp/s2.png" alt="" style="margin: 0 0 -7px 3px;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- about -->
+            <div class="about">
+                <div class="about-wrapper">
+                    <h1>Как мы работаем?</h1>
+
+                    <!-- step's -->
+                    <div class="about-steps">
+                        <div class="item i1">
+                            <div class="view"></div>
+
+                            <p><a href="">Зарегистрируйтесь</a><br />и получите свой<br />персональный<br />адрес в США</p>
+                        </div>
+
+                        <div class="item i2">
+                            <div class="view"></div>
+
+                            <p>Самостоятельно или<br />с нашей помощью<br />покупайте товары<br />в любых <a href="">магазинах</a>.</p>
+                        </div>
+
+                        <div class="item i3">
+                            <div class="view"></div>
+
+                            <p>Мы получаем ваши<br />товары на нашем<br />складе в США.</p>
+                        </div>
+
+                        <div class="item i4">
+                            <div class="view"></div>
+
+                            <p>Мы отправляем ваши<br />товары по вашему<br />требованию на любой<br />ваш адрес.</p>
+                        </div>
+
+                        <div class="item i5">
+                            <div class="view"></div>
+
+                            <p>Вы получаете ваши<br />покупки и счастливы!</p>
+                        </div>
+                    </div>
+
+                    <div class="about-arrows"></div>
+
+                    <!-- -->
+                    <div class="about-more">
+                        <a href="javascript:void(0);" class="about-more-toggle about-more-show"><span>Показать подробную информацию</span></a>
+                        <a href="javascript:void(0);" class="about-more-toggle about-more-hide"><span>Скрыть подробную информацию</span></a>
+
+                        <div class="about-more-wrapper">
+                            <div class="item even">
+                                <span class="title">1. Регистрация</span>
+
+                                <p>Вы <strong>бесплатно</strong> <a href="">регистрируетесь на нашем сайте</a> и автоматически получаете свой персональный адрес в США, на который вам будут поступать все ваши покупки.</p>
+                            </div>
+
+                            <div class="item odd">
+                                <span class="title">2. Покупка товаров</span>
+
+                                <p>Вы можете самостоятельно приобретать товары в любых интернет-магазинах и выслать их на ваш персональный адрес. Или мы можем приобрести эти товары для вас.</p>
+                            </div>
+                            
+                            <div class="item even">
+                                <span class="title">3. Получение на склад</span>
+
+                                <p>Мы получаем ваши заказы на нашем складе в США и сразу же регистрируем их в нашей системе. Все полученные нами посылки с вашими заказами доступны вам в вашем личном кабинете.</p>
+                            </div>
+                            
+                            <div class="item odd">
+                                <span class="title">4. Отправка посылок вам</span>
+
+                                <p>Вы создаете запрос на отправку выбранных вами посылок. Мы обрабатываем ваш запрос, объединяем ваши посылки (при необходимости) и высылаем их на ваш адрес.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- register -->
+            <div class="register">
+                <div class="register-wrapper">
+                    <span class="register-title">Зарегистрируйтесь и получите свой адрес в США <img src="images/register-flag.png" alt=""></span>
+
+                    <div class="register-subtitle">
+                        Регистрация абсолютно <strong>бесплатна</strong>! Зарегистрируйтесь <strong>прямо сейчас</strong> и получите <span class="bonus">бонус $5 на счет!</span>
+                    </div>
+
+                    <form action="" id="demoForm" method="get">
+                    <table>
+                        <tr>
+                            <td class="field">
+                                <input type="text" id="" value="" class="textbox required email" placeholder="Эл. почта" />
+                            </td>
+                            <td class="field">
+                                <input type="password" id="" value="" class="textbox required" placeholder="Пароль" />
+                                <p>Оставьте это поле пустым — тогда мы вышлем вам ваш пароль на почту.</p>
+                            </td>
+                            <td class="ok">
+                                <input type="submit" id="" value="Зарегистрироваться" class="submit" />
+                                <p>Сегодня зарегистрировалось <strong>54</strong> человека!</p>
+                            </td>
+                        </tr>
+                    </table>
+                    </form>
+                </div>
+            </div>
+
+            <!-- calculator -->
+            <div class="calculator">
+                <div class="calculator-wrapper clearfix">
+                    <span class="calculator-title">Калькулятор стоимости пересылки товаров из США:</span>
+
+                    <form action="">
+                    <div class="calculator-params">
+                        <div class="left">
+                            <span class="calculator-params-title">1. Параметры заказа в магазине</span>
+
+                            <div class="radioset">
+                                <input type="radio" id="radio1" name="radio"><label for="radio1">Вы оплачиваете заказ самостоятельно</label>
+                                <input type="radio" id="radio2" name="radio" checked="checked"><label for="radio2">Мы оплачиваем заказы для вас</label>
+                            </div>
+
+                            <label for="" class="forprice">Примерная стоимость<br />товара в магазине:</label>
+                            <div class="price">
+                                <span class="cur">$</span><input type="text" id="" value="" class="textbox" placeholder="1000" />
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <span class="calculator-params-title">2. Параметры пересылки заказа</span>
+                            
+                            <div class="weight clearfix">
+                                <span class="label">Приблизительный<br />вес посылки:</span>
+
+                                <select name="country_id" class="selectbox selectbox-1" tabindex="1">
+                                    <option value="">кг</option>
+                                    <option value="4">фт</option>
+                                    <option value="10">ар</option>
+                                </select>
+
+                                <input type="text" id="" value="" class="textbox" placeholder="5" />
+                            </div>
+
+                            <div class="examples"><a href="">Примеры весов вещей</a></div>
+
+                            <div class="country clearfix">
+                                <span class="label">Страна получателя:</span>
+
+                                <select name="country_id" class="selectbox selectbox-2" tabindex="1">
+                                    <option value="">Россия</option>
+                                    <option value="4">Россия</option>
+                                    <option value="10">Россия</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calculator-notice">
+                        <h3>Подсказка</h3>
+
+                        <div class="calculator-notice-wrapper">
+                            <p>Вам необходимо заполнить все поля и нажать кнопку «Рассчитать стоимость».</p>
+                            <p class="spacer">&nbsp;</p>
+                            <p>Если у вас есть вопросы по работе калькулятора, то вы можете обратиться за помощью к консультантам.</p>
+                        </div>
+                    </div>
+
+                    <div class="calculator-get clearfix">
+                        <input type="button" id="" value="Рассчитать стоимость" class="calculate" />
+                        <p class="more">или <a href="">перейти к детальному калькулятору</a></p>
+                    </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- results -->
+            <div class="results">
+                <div class="results-wrapper">
+                    <a href="javascript:void(0);" class="results-title"><span>Результат расчета вашего отправления:</span></a>
+
+                    <div class="results-table">
+                        <div class="results-table-wrapper">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th class="name">Способы отправки</th>
+                                <th class="col">First Class</th>
+                                <th class="col">Priority Mail</th>
+                                <th class="col">Express Mail</th>
+                            </tr>
+                            </thead>
+                            
+                            <tbody>
+                            <tr>
+                                <td class="name">Примерная стоимость товара:</td>
+                                <td class="col center" colspan="3">$300.00</td>
+                            </tr>
+
+                            <tr>
+                                <td class="name">Стоимость наших услуг по приобретению вашего заказа — 5% (но не менее $10):</td>
+                                <td class="col center" colspan="3">$15.00</td>
+                            </tr>
+
+                            <tr>
+                                <td class="name">Стоимость наших услуг по отправке заказа из США:</td>
+                                <td class="col center" colspan="3">$6.00</td>
+                            </tr>
+
+                            <tr>
+                                <td class="name">Стоимость пересылки заказа из США до указанного вами адреса:</td>
+                                <td class="col">$45.00</td>
+                                <td class="col">$55.00</td>
+                                <td class="col">$65.00</td>
+                            </tr>
+
+                            <tr>
+                                <td class="name">&nbsp;</td>
+                                <td class="col center" colspan="3">
+                                    <a href="javascript:void(0);" class="results-more"><span>Показать особенности данных способов доставки</span></a>
+
+                                    <div class="results-more-wrapper">
+                                        sdvhbasl;db
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+
+                            <tfoot>
+                            <tr>
+                                <td class="name">Итоговая общая стоимость:<span class="req">*</span></td>
+                                <td class="col">$376.00</td>
+                                <td class="col">$476.00</td>
+                                <td class="col">$576.00</td>
+                            </tr>
+                            </tfoot>
+                        </table>
+                        </div>
+
+                        <!-- -->
+
+                        <div class="results-required">
+                            <span class="req">*</span>  —  Полученная стоимость является примерной, поскольку не включает в себя различные <strong>прочие необязательные параметры</strong>.<br />Например, стоимость страховки отправления, стоимость таможенной декларации  отправления и различные платные доп. опции.
+                        </div>
+
+                        <div class="results-notice">
+                            <span class="title">Совет!</span> Если <strong>стоимость пересылки больше стоимости вещей</strong>, то тут будет совет, почему так вышло и что нужно сделать. Этот совет идет в две или более строки. А может быть и больше.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- examples -->
+            <div class="exlist">
+                <div class="exlist-wrapper">
+                    <span class="exlist-title">Примеры весов вещей:</span>
+
+                    <div class="exlist-items">
+                        <div class="item first">
+                            <a href=""><img src="images/tmp/e1.jpg" alt=""></a>
+                            <p><span class="title">Туфли Лабутен</span><br />
+                            Примерный вес: <strong>0.3 кг</strong></p>
+                        </div>
+
+                        <div class="item">
+                            <a href=""><img src="images/tmp/e1.jpg" alt=""></a>
+                            <p><span class="title">Туфли Лабутен</span><br />
+                            Примерный вес: <strong>0.3 кг</strong></p>
+                        </div>
+                        
+                        <div class="item">
+                            <a href=""><img src="images/tmp/e1.jpg" alt=""></a>
+                            <p><span class="title">Туфли Лабутен</span><br />
+                            Примерный вес: <strong>0.3 кг</strong></p>
+                        </div>
+                        
+                        <div class="item">
+                            <a href=""><img src="images/tmp/e1.jpg" alt=""></a>
+                            <p><span class="title">Туфли Лабутен</span><br />
+                            Примерный вес: <strong>0.3 кг</strong></p>
+                        </div>
+                        
+                        <div class="item">
+                            <a href=""><img src="images/tmp/e1.jpg" alt=""></a>
+                            <p><span class="title">Туфли Лабутен</span><br />
+                            Примерный вес: <strong>0.3 кг</strong></p>
+                        </div>
+                    </div>
+
+                    <a href="javascript:void(0);" class="exlist-more"><span>Показать больше примеров</span></a>
+
+                    <div class="exlist-items exlist-items-more">
+                        <div class="item first">
+                            <a href=""><img src="images/tmp/e1.jpg" alt=""></a>
+                            <p><span class="title">Туфли Лабутен</span><br />
+                            Примерный вес: <strong>0.3 кг</strong></p>
+                        </div>
+
+                        <div class="item">
+                            <a href=""><img src="images/tmp/e1.jpg" alt=""></a>
+                            <p><span class="title">Туфли Лабутен</span><br />
+                            Примерный вес: <strong>0.3 кг</strong></p>
+                        </div>
+                        
+                        <div class="item">
+                            <a href=""><img src="images/tmp/e1.jpg" alt=""></a>
+                            <p><span class="title">Туфли Лабутен</span><br />
+                            Примерный вес: <strong>0.3 кг</strong></p>
+                        </div>
+                        
+                        <div class="item">
+                            <a href=""><img src="images/tmp/e1.jpg" alt=""></a>
+                            <p><span class="title">Туфли Лабутен</span><br />
+                            Примерный вес: <strong>0.3 кг</strong></p>
+                        </div>
+                        
+                        <div class="item ">
+                            <a href=""><img src="images/tmp/e1.jpg" alt=""></a>
+                            <p><span class="title">Туфли Лабутен</span><br />
+                            Примерный вес: <strong>0.3 кг</strong></p>
+                        </div>
+
+                        <div class="item first">
+                            <a href=""><img src="images/tmp/e1.jpg" alt=""></a>
+                            <p><span class="title">Туфли Лабутен</span><br />
+                            Примерный вес: <strong>0.3 кг</strong></p>
+                        </div>
+                        
+                        <div class="item">
+                            <a href=""><img src="images/tmp/e1.jpg" alt=""></a>
+                            <p><span class="title">Туфли Лабутен</span><br />
+                            Примерный вес: <strong>0.3 кг</strong></p>
+                        </div>
+                        
+                        <div class="item">
+                            <a href=""><img src="images/tmp/e1.jpg" alt=""></a>
+                            <p><span class="title">Туфли Лабутен</span><br />
+                            Примерный вес: <strong>0.3 кг</strong></p>
+                        </div>
+                        
+                        <div class="item">
+                            <a href=""><img src="images/tmp/e1.jpg" alt=""></a>
+                            <p><span class="title">Туфли Лабутен</span><br />
+                            Примерный вес: <strong>0.3 кг</strong></p>
+                        </div>
+                        
+                        <div class="item">
+                            <a href=""><img src="images/tmp/e1.jpg" alt=""></a>
+                            <p><span class="title">Туфли Лабутен</span><br />
+                            Примерный вес: <strong>0.3 кг</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- examples slider -->
+            <div class="exslider">
+                <div class="exslider-wrapper">
+                    <span class="exslider-title">Примеры доставленных товаров из США</span>
+                    <a href="" class="exslider-all"><span>Посмотреть все примеры (965)</span></a>
+
+                    <a href="#" class="middle-up"></a>
+
+                    <div class="slider">
+                        <ul id="exslider">
+                            <li>
+                                <div class="exslider-box">
+                                    <div class="item">
+                                        <div class="view">
+                                            <a href=""><img src="images/tmp/ex1.jpg" alt=""></a>
+                                        </div>
+
+                                        <div class="description">
+                                            <a href="" class="title">Часы Panerai PAM 000</a>
+                                            <span class="subtitle">panerai-online.com/us</span>
+
+                                            <p><strong>Кто оплачивал заказ:</strong><br />
+                                            Клиент самостоятельно</p>
+
+                                            <p><strong>Цена в магазине США:</strong> $800</p>
+
+                                            <p><strong>В чем преимущество:</strong><br />
+                                            Эти часы стоят в Москве
+                                            на $1000-2000 дороже. Это
+                                            просто невообразимо :-)</p>
+                                        </div>
+
+                                        <div class="share"><strong>Расскажите друзьям:</strong> <img src="images/tmp/s3.jpg" alt=""></div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="view">
+                                            <a href=""><img src="images/tmp/ex2.jpg" alt=""></a>
+                                        </div>
+
+                                        <div class="description">
+                                            <a href="" class="title">Туфли Christian Louboutin</a>
+                                            <span class="subtitle">www.louboutin-oline.com/russia</span>
+
+                                            <p><strong>Кто оплачивал заказ:</strong><br />
+                                            Клиент самостоятельно</p>
+
+                                            <p><strong>Цена в магазине США:</strong> $1800</p>
+
+                                            <p><strong>В чем преимущество:</strong><br />
+                                            Туфли невозможно купить в РФ. Поэтому всем советую покупать их на официальном сайте!</p>
+                                        </div>
+
+                                        <div class="share"><strong>Расскажите друзьям:</strong> <img src="images/tmp/s3.jpg" alt=""></div>
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <div class="view">
+                                            <a href=""><img src="images/tmp/ex3.jpg" alt=""></a>
+                                        </div>
+
+                                        <div class="description">
+                                            <a href="" class="title">Часы Panerai PAM 000</a>
+                                            <span class="subtitle">panerai-online.com/us</span>
+
+                                            <p><strong>Кто оплачивал заказ:</strong><br />
+                                            Клиент самостоятельно</p>
+
+                                            <p><strong>Цена в магазине США:</strong> $800</p>
+
+                                            <p><strong>В чем преимущество:</strong><br />
+                                            Эти часы стоят в Москве
+                                            на $1000-2000 дороже. Это
+                                            просто невообразимо :-)</p>
+                                        </div>
+
+                                        <div class="share"><strong>Расскажите друзьям:</strong> <img src="images/tmp/s3.jpg" alt=""></div>
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <div class="view">
+                                            <a href=""><img src="images/tmp/ex4.jpg" alt=""></a>
+                                        </div>
+
+                                        <div class="description">
+                                            <a href="" class="title">Туфли Christian Louboutin</a>
+                                            <span class="subtitle">www.louboutin-oline.com/russia</span>
+
+                                            <p><strong>Кто оплачивал заказ:</strong><br />
+                                            Клиент самостоятельно</p>
+
+                                            <p><strong>Цена в магазине США:</strong> $800</p>
+
+                                            <p><strong>В чем преимущество:</strong><br />
+                                            Существенная разница в цене, выгода более 50%.</p>
+                                        </div>
+
+                                        <div class="share"><strong>Расскажите друзьям:</strong> <img src="images/tmp/s3.jpg" alt=""></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="exslider-box">
+                                    <div class="item">
+                                        <div class="view">
+                                            <a href=""><img src="images/tmp/ex1.jpg" alt=""></a>
+                                        </div>
+
+                                        <div class="description">
+                                            <a href="" class="title">Часы Panerai PAM 000</a>
+                                            <span class="subtitle">panerai-online.com/us</span>
+
+                                            <p><strong>Кто оплачивал заказ:</strong><br />
+                                            Клиент самостоятельно</p>
+
+                                            <p><strong>Цена в магазине США:</strong> $800</p>
+
+                                            <p><strong>В чем преимущество:</strong><br />
+                                            Эти часы стоят в Москве
+                                            на $1000-2000 дороже. Это
+                                            просто невообразимо :-)</p>
+                                        </div>
+
+                                        <div class="share"><strong>Расскажите друзьям:</strong> <img src="images/tmp/s3.jpg" alt=""></div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="view">
+                                            <a href=""><img src="images/tmp/ex2.jpg" alt=""></a>
+                                        </div>
+
+                                        <div class="description">
+                                            <a href="" class="title">Туфли Christian Louboutin</a>
+                                            <span class="subtitle">www.louboutin-oline.com/russia</span>
+
+                                            <p><strong>Кто оплачивал заказ:</strong><br />
+                                            Клиент самостоятельно</p>
+
+                                            <p><strong>Цена в магазине США:</strong> $1800</p>
+
+                                            <p><strong>В чем преимущество:</strong><br />
+                                            Туфли невозможно купить в РФ. Поэтому всем советую покупать их на официальном сайте!</p>
+                                        </div>
+
+                                        <div class="share"><strong>Расскажите друзьям:</strong> <img src="images/tmp/s3.jpg" alt=""></div>
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <div class="view">
+                                            <a href=""><img src="images/tmp/ex3.jpg" alt=""></a>
+                                        </div>
+
+                                        <div class="description">
+                                            <a href="" class="title">Часы Panerai PAM 000</a>
+                                            <span class="subtitle">panerai-online.com/us</span>
+
+                                            <p><strong>Кто оплачивал заказ:</strong><br />
+                                            Клиент самостоятельно</p>
+
+                                            <p><strong>Цена в магазине США:</strong> $800</p>
+
+                                            <p><strong>В чем преимущество:</strong><br />
+                                            Эти часы стоят в Москве
+                                            на $1000-2000 дороже. Это
+                                            просто невообразимо :-)</p>
+                                        </div>
+
+                                        <div class="share"><strong>Расскажите друзьям:</strong> <img src="images/tmp/s3.jpg" alt=""></div>
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <div class="view">
+                                            <a href=""><img src="images/tmp/ex4.jpg" alt=""></a>
+                                        </div>
+
+                                        <div class="description">
+                                            <a href="" class="title">Туфли Christian Louboutin</a>
+                                            <span class="subtitle">www.louboutin-oline.com/russia</span>
+
+                                            <p><strong>Кто оплачивал заказ:</strong><br />
+                                            Клиент самостоятельно</p>
+
+                                            <p><strong>Цена в магазине США:</strong> $800</p>
+
+                                            <p><strong>В чем преимущество:</strong><br />
+                                            Существенная разница в цене, выгода более 50%.</p>
+                                        </div>
+
+                                        <div class="share"><strong>Расскажите друзьям:</strong> <img src="images/tmp/s3.jpg" alt=""></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="exslider-box">
+                                    <div class="item">
+                                        <div class="view">
+                                            <a href=""><img src="images/tmp/ex1.jpg" alt=""></a>
+                                        </div>
+
+                                        <div class="description">
+                                            <a href="" class="title">Часы Panerai PAM 000</a>
+                                            <span class="subtitle">panerai-online.com/us</span>
+
+                                            <p><strong>Кто оплачивал заказ:</strong><br />
+                                            Клиент самостоятельно</p>
+
+                                            <p><strong>Цена в магазине США:</strong> $800</p>
+
+                                            <p><strong>В чем преимущество:</strong><br />
+                                            Эти часы стоят в Москве
+                                            на $1000-2000 дороже. Это
+                                            просто невообразимо :-)</p>
+                                        </div>
+
+                                        <div class="share"><strong>Расскажите друзьям:</strong> <img src="images/tmp/s3.jpg" alt=""></div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="view">
+                                            <a href=""><img src="images/tmp/ex2.jpg" alt=""></a>
+                                        </div>
+
+                                        <div class="description">
+                                            <a href="" class="title">Туфли Christian Louboutin</a>
+                                            <span class="subtitle">www.louboutin-oline.com/russia</span>
+
+                                            <p><strong>Кто оплачивал заказ:</strong><br />
+                                            Клиент самостоятельно</p>
+
+                                            <p><strong>Цена в магазине США:</strong> $1800</p>
+
+                                            <p><strong>В чем преимущество:</strong><br />
+                                            Туфли невозможно купить в РФ. Поэтому всем советую покупать их на официальном сайте!</p>
+                                        </div>
+
+                                        <div class="share"><strong>Расскажите друзьям:</strong> <img src="images/tmp/s3.jpg" alt=""></div>
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <div class="view">
+                                            <a href=""><img src="images/tmp/ex3.jpg" alt=""></a>
+                                        </div>
+
+                                        <div class="description">
+                                            <a href="" class="title">Часы Panerai PAM 000</a>
+                                            <span class="subtitle">panerai-online.com/us</span>
+
+                                            <p><strong>Кто оплачивал заказ:</strong><br />
+                                            Клиент самостоятельно</p>
+
+                                            <p><strong>Цена в магазине США:</strong> $800</p>
+
+                                            <p><strong>В чем преимущество:</strong><br />
+                                            Эти часы стоят в Москве
+                                            на $1000-2000 дороже. Это
+                                            просто невообразимо :-)</p>
+                                        </div>
+
+                                        <div class="share"><strong>Расскажите друзьям:</strong> <img src="images/tmp/s3.jpg" alt=""></div>
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <div class="view">
+                                            <a href=""><img src="images/tmp/ex4.jpg" alt=""></a>
+                                        </div>
+
+                                        <div class="description">
+                                            <a href="" class="title">Туфли Christian Louboutin</a>
+                                            <span class="subtitle">www.louboutin-oline.com/russia</span>
+
+                                            <p><strong>Кто оплачивал заказ:</strong><br />
+                                            Клиент самостоятельно</p>
+
+                                            <p><strong>Цена в магазине США:</strong> $800</p>
+
+                                            <p><strong>В чем преимущество:</strong><br />
+                                            Существенная разница в цене, выгода более 50%.</p>
+                                        </div>
+
+                                        <div class="share"><strong>Расскажите друзьям:</strong> <img src="images/tmp/s3.jpg" alt=""></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- shoplist -->
+            <div class="shoplist">
+                <div class="shoplist-wrapper">
+                    <span class="shoplist-title">Список интернет-магазинов <img src="images/b.png" alt=""></span>
+
+                    <p class="short">Ниже приведен ознакомительный список наиболее популярных интернет-магазинов и аукционов в США, из которых вы можете заказывать товары. Данный список не является полным, поэтому смело оформляйте заказы из любых интернет-магазинов.</p>
+
+                    <a href="#" class="middle-up"></a>
+
+                    <div class="shoplist-tabs">
+                        <div id="tabs">
+                            <ul>
+                                <li><a href="#tabs-1">Все</a></li>
+                                <li><a href="#tabs-2">Одежда</a></li>
+                                <li><a href="#tabs-3">Аксессуары</a></li>
+                                <li><a href="#tabs-4">Дети</a></li>
+                                <li><a href="#tabs-5">Электроника</a></li>
+                                <li><a href="#tabs-6">Дом</a></li>
+                                <li><a href="#tabs-7">Авто</a></li>
+                                <li><a href="#tabs-8">Бьюти</a></li>
+                                <li><a href="#tabs-9">Прочее</a></li>
+                            </ul>
+                            <div id="tabs-1">
+                                <div class="tabs-search">
+                                    <form action="">
+                                        <strong>Поиск магазина по названию:</strong>
+                                        <input type="text" id="" value="" class="textbox" placeholder="Введите название интернет-магазина" />
+                                    </form>
+                                </div>
+
+                                <div class="tabs-filter">
+                                    <span class="tabs-filter-title">Фильтры:</span>
+
+                                    <table>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" title="">Все категории</a></td>
+                                            <td><a href="javascript:void(0);" title="" class="active">Женская одежда</a></td>
+                                            <td><a href="javascript:void(0);" title="">Мужская одежда</a></td>
+                                            <td><a href="javascript:void(0);" title="">Спортивная одежда</a></td>
+                                            <td><a href="javascript:void(0);" title="">Для активного отдыха</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="javascript:void(0);" title="">Нижнее белье</a></td>
+                                            <td><a href="javascript:void(0);" title="" class="active">Купальники</a></td>
+                                            <td><a href="javascript:void(0);" title="" class="active">Для свадьбы</a></td>
+                                            <td><a href="javascript:void(0);" title="">Джинсовая одежда</a></td>
+                                            <td><a href="javascript:void(0);" title="">Большие размеры</a></td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <div class="tabs-list">
+                                    <div class="letter">
+                                        <div class="title">A</div>
+
+                                        <ul>
+                                            <li><a href="" title="">ACACIA</a></li>
+                                            <li><a href="" title="">AFFLICTION</a></li>
+                                            <li><a href="" title="">AG (ANDRIANO GOLDSHMIED)</a></li>
+                                            <li><a href="" title="">ALDO</a></li>
+                                            <li><a href="" title="">ALEXANDER MCQUEEN</a></li>
+                                            <li class="more"><a href="" title="">ВСЕ ОСТАЛЬНЫЕ НА «А»</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="letter">
+                                        <div class="title">D</div>
+
+                                        <ul>
+                                            <li><a href="" title="">D&G</a></li>
+                                            <li><a href="" title="">DEBBIE KATZ</a></li>
+                                            <li><a href="" title="">DESTINATION MATERNITY</a></li>
+                                            <li><a href="" title="">DIESEL</a></li>
+                                            <li><a href="" title="">DIRK BIKKEMBERGS</a></li>
+                                            <li class="more"><a href="" title="">ВСЕ ОСТАЛЬНЫЕ НА «D»</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="letter">
+                                        <div class="title">H</div>
+
+                                        <ul>
+                                            <li><a href="" title="">H&MNEW</a></li>
+                                            <li><a href="" title="">HAMMACHER</a></li>
+                                            <li><a href="" title="">HEELS</a></li>
+                                            <li><a href="" title="">HELMUT LANG</a></li>
+                                            <li><a href="" title="">HERMES</a></li>
+                                            <li class="more"><a href="" title="">ВСЕ ОСТАЛЬНЫЕ НА «Y»</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="letter">
+                                        <div class="title">G</div>
+
+                                        <ul>
+                                            <li><a href="" title="">ACACIA</a></li>
+                                            <li><a href="" title="">AFFLICTION</a></li>
+                                            <li><a href="" title="">AG (ANDRIANO GOLDSHMIED)</a></li>
+                                            <li><a href="" title="">ALDO</a></li>
+                                            <li><a href="" title="">ALEXANDER MCQUEEN</a></li>
+                                            <li class="more"><a href="" title="">ВСЕ ОСТАЛЬНЫЕ НА «G»</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="letter">
+                                        <div class="title">A</div>
+
+                                        <ul>
+                                            <li><a href="" title="">ACACIA</a></li>
+                                            <li><a href="" title="">AFFLICTION</a></li>
+                                            <li><a href="" title="">AG (ANDRIANO GOLDSHMIED)</a></li>
+                                            <li><a href="" title="">ALDO</a></li>
+                                            <li><a href="" title="">ALEXANDER MCQUEEN</a></li>
+                                            <li class="more"><a href="" title="">ВСЕ ОСТАЛЬНЫЕ НА «А»</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="letter">
+                                        <div class="title">D</div>
+
+                                        <ul>
+                                            <li><a href="" title="">D&G</a></li>
+                                            <li><a href="" title="">DEBBIE KATZ</a></li>
+                                            <li><a href="" title="">DESTINATION MATERNITY</a></li>
+                                            <li><a href="" title="">DIESEL</a></li>
+                                            <li><a href="" title="">DIRK BIKKEMBERGS</a></li>
+                                            <li class="more"><a href="" title="">ВСЕ ОСТАЛЬНЫЕ НА «D»</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="letter">
+                                        <div class="title">H</div>
+
+                                        <ul>
+                                            <li><a href="" title="">H&MNEW</a></li>
+                                            <li><a href="" title="">HAMMACHER</a></li>
+                                            <li><a href="" title="">HEELS</a></li>
+                                            <li><a href="" title="">HELMUT LANG</a></li>
+                                            <li><a href="" title="">HERMES</a></li>
+                                            <li class="more"><a href="" title="">ВСЕ ОСТАЛЬНЫЕ НА «Y»</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="letter">
+                                        <div class="title">G</div>
+
+                                        <ul>
+                                            <li><a href="" title="">ACACIA</a></li>
+                                            <li><a href="" title="">AFFLICTION</a></li>
+                                            <li><a href="" title="">AG (ANDRIANO GOLDSHMIED)</a></li>
+                                            <li><a href="" title="">ALDO</a></li>
+                                            <li><a href="" title="">ALEXANDER MCQUEEN</a></li>
+                                            <li class="more"><a href="" title="">ВСЕ ОСТАЛЬНЫЕ НА «G»</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="letter">
+                                        <div class="title">A</div>
+
+                                        <ul>
+                                            <li><a href="" title="">ACACIA</a></li>
+                                            <li><a href="" title="">AFFLICTION</a></li>
+                                            <li><a href="" title="">AG (ANDRIANO GOLDSHMIED)</a></li>
+                                            <li><a href="" title="">ALDO</a></li>
+                                            <li><a href="" title="">ALEXANDER MCQUEEN</a></li>
+                                            <li class="more"><a href="" title="">ВСЕ ОСТАЛЬНЫЕ НА «А»</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="letter">
+                                        <div class="title">D</div>
+
+                                        <ul>
+                                            <li><a href="" title="">D&G</a></li>
+                                            <li><a href="" title="">DEBBIE KATZ</a></li>
+                                            <li><a href="" title="">DESTINATION MATERNITY</a></li>
+                                            <li><a href="" title="">DIESEL</a></li>
+                                            <li><a href="" title="">DIRK BIKKEMBERGS</a></li>
+                                            <li class="more"><a href="" title="">ВСЕ ОСТАЛЬНЫЕ НА «D»</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="letter">
+                                        <div class="title">H</div>
+
+                                        <ul>
+                                            <li><a href="" title="">H&MNEW</a></li>
+                                            <li><a href="" title="">HAMMACHER</a></li>
+                                            <li><a href="" title="">HEELS</a></li>
+                                            <li><a href="" title="">HELMUT LANG</a></li>
+                                            <li><a href="" title="">HERMES</a></li>
+                                            <li class="more"><a href="" title="">ВСЕ ОСТАЛЬНЫЕ НА «Y»</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <a href="javascript:void(0);" class="tabs-list-more">Нажмите, чтобы открыть полный список интернет-магазинов</a>
+
+                                <div class="tabs-list tabs-list-items-more">
+                                    <div class="letter">
+                                        <div class="title">D</div>
+
+                                        <ul>
+                                            <li><a href="" title="">D&G</a></li>
+                                            <li><a href="" title="">DEBBIE KATZ</a></li>
+                                            <li><a href="" title="">DESTINATION MATERNITY</a></li>
+                                            <li><a href="" title="">DIESEL</a></li>
+                                            <li><a href="" title="">DIRK BIKKEMBERGS</a></li>
+                                            <li class="more"><a href="" title="">ВСЕ ОСТАЛЬНЫЕ НА «D»</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="letter">
+                                        <div class="title">H</div>
+
+                                        <ul>
+                                            <li><a href="" title="">H&MNEW</a></li>
+                                            <li><a href="" title="">HAMMACHER</a></li>
+                                            <li><a href="" title="">HEELS</a></li>
+                                            <li><a href="" title="">HELMUT LANG</a></li>
+                                            <li><a href="" title="">HERMES</a></li>
+                                            <li class="more"><a href="" title="">ВСЕ ОСТАЛЬНЫЕ НА «Y»</a></li>
+                                        </ul>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div id="tabs-2">t2</div>
+                            <div id="tabs-3">t3</div>
+                            <div id="tabs-4">t4</div>
+                            <div id="tabs-5">t5</div>
+                            <div id="tabs-6">t6</div>
+                            <div id="tabs-7">t7</div>
+                            <div id="tabs-8">t8</div>
+                            <div id="tabs-9">t9</div>
+                        </div>
+
+                                                                                               
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- register -->
+            <div class="register">
+                <div class="register-wrapper">
+                    <a href="#" class="blue-up"></a>
+
+                    <span class="register-title">Вы еще не зарегистрировались? Регистрируйтесь сейчас!<br />Это займет всего пару секунд!</span>
+
+                    <div class="register-subtitle">
+                        Регистрация абсолютно <strong>бесплатна</strong>! Зарегистрируйтесь <strong>прямо сейчас</strong> и получите <span class="bonus">бонус $5 на счет!</span>
+                    </div>
+
+                    <form action="" id="demoForm2" method="get">
+                    <table>
+                        <tr>
+                            <td class="field">
+                                <input type="text" id="" value="" class="textbox required email" placeholder="Эл. почта" />
+                            </td>
+                            <td class="field">
+                                <input type="password" id="" value="" class="textbox required" placeholder="Пароль" />
+                                <p>Оставьте это поле пустым — тогда мы вышлем вам ваш пароль на почту.</p>
+                            </td>
+                            <td class="ok">
+                                <input type="submit" id="" value="Зарегистрироваться" class="submit" />
+                                <p>Сегодня зарегистрировалось <strong>54</strong> человека!</p>
+                            </td>
+                        </tr>
+                    </table>
+                    </form>
+                </div>
+            </div>
+
+            <!-- features -->
+            <div class="features">
+                <div class="features-wrapper">
+                    <span class="features-title">Почему нам стоит доверять или почему мы №1?</span>
+
+                    <div class="features-list">
+                        <div class="item f1">
+                            <span class="title">Офис в России</span>
+                            <p>Мы единственный посредник в США, у которого есть свой собственный <strong><a href="">полноценный офис в России</a></strong>. Приезжайте к нам, задайте любой вопрос и получите на него ответ, выпив кофе.</p>
+                        </div>
+
+                        <div class="item f2">
+                            <span class="title">Круглосуточный форум</span>
+                            <p>Заходите на наш <a href="">форум</a>, посмотрите сообщения от наших клиентов, которые делятся <strong>непредвзятыми мнениями о нашем сервисе</strong> в режиме 24/7.</p>
+                        </div>
+                        
+                        <div class="item f3">
+                            <span class="title">Яндекс доверяет нам!</span>
+                            <p>Мы принимаем платежи Яндекс.Деньгами, а также информация о нашей компании размещена на странице <a href="">yandex.ru/adreslink/company.html</a> —<br /> <strong>нас проверила крупнейшая IT-компания России</strong> и хочет с нами работать!</p>
+                        </div>
+                        
+                        <div class="item f4">
+                            <span class="title">Безопасность превыше всего</span>
+                            <p>Для того, чтобы получить сертификаты Autorize, Macafee, Norton, наша компания <strong>прошла проверку службами безопасности этих компаний</strong>. Кстати, сертификаты свидетельствуют и о том, что все процессы оплаты на нашем сайте безопасны!</p>
+                        </div>
+                        
+                        <div class="item f5">
+                            <span class="title">Тысячи удачных покупок</span>
+                            <p><strong><a href="">Все эти вещи</a></strong> были приобретены либо нашими клиентами самостоятельно, либо с нашей помощью и получены на нашем складе в США.</p>
+                        </div>
+                        
+                        <div class="item f6">
+                            <span class="title">Приветственное слово</span>
+                            <p>Посмотрите <strong><a href="">видео-презентацию</a></strong> с нашим CEO. Из нее вы сможете узнать о безопасности компании, а также на нашем сайте.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- security -->
+            <div class="security">
+                <div class="security-wrapper">
+                    <span class="security-title">Мы гарантируем безопасность!</span>
+
+                    <table> 
+                        <col width="15%" />
+                        <col width="20%" />
+                        <col width="15%" />
+                        <col width="25%" />
+                        <col width="25%" />
+                        <tr>
+                            <td style="text-align: left;"><a href=""><img src="images/se1.jpg" alt=""></a><br /><a href="">Что это значит?</a></td>
+                            <td><a href=""><img src="images/se2.jpg" alt=""></a><br /><a href="">Что это значит?</a></td>
+                            <td><a href=""><img src="images/se3.jpg" alt=""></a><br /><a href="">Что это значит?</a></td>
+                            <td><a href=""><img src="images/se4.jpg" alt=""></a><br /><a href="">Что это значит?</a></td>
+                            <td><a href=""><img src="images/se5.jpg" alt=""></a><br /><a href="">Что это значит?</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- payment -->
+            <div class="payment">
+                <div class="payment-wrapper">
+                    <span class="payment-title">Принимаем к оплате:</span>
+
+                    <a href="" class="footer-up"></a>
+
+                    <table>
+                        <tr>
+                            <td class="left"><a href="" title=""><img src="images/p1.png" alt=""></a></td>
+                            <td><a href="" title=""><img src="images/p2.png" alt=""></a></td>
+                            <td><a href="" title=""><img src="images/p3.png" alt=""></a></td>
+                            <td><a href="" title=""><img src="images/p4.png" alt=""></a></td>
+                            <td><a href="" title=""><img src="images/p5.png" alt=""></a></td>
+                            <td class="right"><a href="" title=""><img src="images/p6.png" alt=""></a></td>
+                        </tr>
+                        <tr>
+                            <td class="left"><a href="" title=""><img src="images/p7.png" alt=""></a></td>
+                            <td><a href="" title=""><img src="images/p6.png" alt=""></a></td>
+                            <td colspan="2"><a href="" title=""><img src="images/p9.png" alt=""></a></td>
+                            <td><a href="" title=""><img src="images/p10.png" alt=""></a></td>
+                            <td class="right"><a href="" title=""><img src="images/p11.png" alt=""></a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- video -->
+            <div class="video">
+                <div class="video-wrapper">
+                    <span class="video-title">Посмотрите видео о нас и нашей работе</span>
+
+                    <div class="hslider">
+                        <div class="slider">
+                            <ul id="slider2">
+                                <li>
+                                    <div class="video-items">
+                                        <div class="item">
+                                            <div class="view">
+                                                <a href=""><img src="images/tmp/v1.jpg" alt=""></a>
+                                            </div>
+
+                                            <span class="title">Как мы работаем: схема работы</span>
+
+                                            <p><a href="">Посмотрите это видео на Youtube</a> или поделитесь с друзьями:</p>
+                                            <p><img src="images/tmp/s3.jpg" alt=""></p>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="view">
+                                                <a href=""><img src="images/tmp/v2.jpg" alt=""></a>
+                                            </div>
+
+                                            <span class="title">Как сэкономить на покупках?</span>
+
+                                            <p><a href="">Посмотрите это видео на Youtube</a> или поделитесь с друзьями:</p>
+                                            <p><img src="images/tmp/s3.jpg" alt=""></p>
+                                        </div>
+                                        
+                                        <div class="item">
+                                            <div class="view">
+                                                <a href=""><img src="images/tmp/v3.jpg" alt=""></a>
+                                            </div>
+
+                                            <span class="title">Примеры доставленных товаров</span>
+
+                                            <p><a href="">Посмотрите это видео на Youtube</a> или поделитесь с друзьями:</p>
+                                            <p><img src="images/tmp/s3.jpg" alt=""></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="video-items">
+                                        <div class="item">
+                                            <div class="view">
+                                                <a href=""><img src="images/tmp/v1.jpg" alt=""></a>
+                                            </div>
+
+                                            <span class="title">Как мы работаем: схема работы</span>
+
+                                            <p><a href="">Посмотрите это видео на Youtube</a> или поделитесь с друзьями:</p>
+                                            <p><img src="images/tmp/s3.jpg" alt=""></p>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="view">
+                                                <a href=""><img src="images/tmp/v2.jpg" alt=""></a>
+                                            </div>
+
+                                            <span class="title">Как сэкономить на покупках?</span>
+
+                                            <p><a href="">Посмотрите это видео на Youtube</a> или поделитесь с друзьями:</p>
+                                            <p><img src="images/tmp/s3.jpg" alt=""></p>
+                                        </div>
+                                        
+                                        <div class="item">
+                                            <div class="view">
+                                                <a href=""><img src="images/tmp/v3.jpg" alt=""></a>
+                                            </div>
+
+                                            <span class="title">Примеры доставленных товаров</span>
+
+                                            <p><a href="">Посмотрите это видео на Youtube</a> или поделитесь с друзьями:</p>
+                                            <p><img src="images/tmp/s3.jpg" alt=""></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="video-items">
+                                        <div class="item">
+                                            <div class="view">
+                                                <a href=""><img src="images/tmp/v1.jpg" alt=""></a>
+                                            </div>
+
+                                            <span class="title">Как мы работаем: схема работы</span>
+
+                                            <p><a href="">Посмотрите это видео на Youtube</a> или поделитесь с друзьями:</p>
+                                            <p><img src="images/tmp/s3.jpg" alt=""></p>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="view">
+                                                <a href=""><img src="images/tmp/v2.jpg" alt=""></a>
+                                            </div>
+
+                                            <span class="title">Как сэкономить на покупках?</span>
+
+                                            <p><a href="">Посмотрите это видео на Youtube</a> или поделитесь с друзьями:</p>
+                                            <p><img src="images/tmp/s3.jpg" alt=""></p>
+                                        </div>
+                                        
+                                        <div class="item">
+                                            <div class="view">
+                                                <a href=""><img src="images/tmp/v3.jpg" alt=""></a>
+                                            </div>
+
+                                            <span class="title">Примеры доставленных товаров</span>
+
+                                            <p><a href="">Посмотрите это видео на Youtube</a> или поделитесь с друзьями:</p>
+                                            <p><img src="images/tmp/s3.jpg" alt=""></p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- other -->
+            <div class="other">
+                <div class="other-wrapper">
+                    <div class="hslider">
+                        <div class="slider">
+                            <ul id="slider3">
+                                <li>
+                                    <div class="other-items">
+                                        <div class="left">
+                                            <span class="title">Сколько идет посылка?</span>
+
+                                            <p>Ждать в среднем 10-16 дней. Иногда посылки приходят раньше (например, 5 дней до Москвы), иногда посылки идут дольше  (20-25 дней до Чебоксар), но в любом случае наши посылки всегда доходят и радуют своего получателя!</p>
+
+                                            <a href="" title="" class="default-button">Перейти на форум</a> чтобы обсудить покупки!
+                                        </div>
+
+                                        <div class="right">
+                                            <span class="title">Какие есть способы отправки?</span>
+
+                                            <p><strong>USPS <span class="highlight">Express</span> Mail International</strong><br />
+                                            Посылка будет доставлена по адресу с помощью курьера EMS. Все посылки обязательно страхуются.</p>
+
+                                            <p><strong>USPS <span class="highlight">Priority</span> Mail International</strong><br />
+                                            Посылка будет доставлена только до вашего почтового отделения. Посылки могут быть незастрахованы. </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="other-items">
+                                        <div class="left">
+                                            <span class="title">Сколько идет посылка?</span>
+
+                                            <p>Ждать в среднем 10-16 дней. Иногда посылки приходят раньше (например, 5 дней до Москвы), иногда посылки идут дольше  (20-25 дней до Чебоксар), но в любом случае наши посылки всегда доходят и радуют своего получателя!</p>
+
+                                            <a href="" title="" class="default-button">Перейти на форум</a> чтобы обсудить покупки!
+                                        </div>
+
+                                        <div class="right">
+                                            <span class="title">Какие есть способы отправки?</span>
+
+                                            <p><strong>USPS <span class="highlight">Express</span> Mail International</strong><br />
+                                            Посылка будет доставлена по адресу с помощью курьера EMS. Все посылки обязательно страхуются.</p>
+
+                                            <p><strong>USPS <span class="highlight">Priority</span> Mail International</strong><br />
+                                            Посылка будет доставлена только до вашего почтового отделения. Посылки могут быть незастрахованы. </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="other-items">
+                                        <div class="left">
+                                            <span class="title">Сколько идет посылка?</span>
+
+                                            <p>Ждать в среднем 10-16 дней. Иногда посылки приходят раньше (например, 5 дней до Москвы), иногда посылки идут дольше  (20-25 дней до Чебоксар), но в любом случае наши посылки всегда доходят и радуют своего получателя!</p>
+
+                                            <a href="" title="" class="default-button">Перейти на форум</a> чтобы обсудить покупки!
+                                        </div>
+
+                                        <div class="right">
+                                            <span class="title">Какие есть способы отправки?</span>
+
+                                            <p><strong>USPS <span class="highlight">Express</span> Mail International</strong><br />
+                                            Посылка будет доставлена по адресу с помощью курьера EMS. Все посылки обязательно страхуются.</p>
+
+                                            <p><strong>USPS <span class="highlight">Priority</span> Mail International</strong><br />
+                                            Посылка будет доставлена только до вашего почтового отделения. Посылки могут быть незастрахованы. </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <footer>
+                <div class="footer-wrapper">
+                    <a href="#" class="footer-up"></a>
+                    
+                    <!-- navigation -->
+
+                    <div class="footer-navigation">
+                        <div class="footer-about">
+                            <h6>Shopoglot.com</h6>
+
+                            <p>— сервис предназначенный для создания заказов на доставку любой одежды, обуви и различных аксессуаров из официальных интернет-магазинов в США. С помощью нашего сервиса вы сможете сэкономить в два и более раз, по сравнению с ценами в российских магазинах.</p>
+                        </div>
+
+                        <div class="footer-links">
+                            <div class="footer-links-box first">
+                                <h6>КОМПАНИЯ</h6>
+
+                                <ul>
+                                    <li><a href="" title="">О нас</a></li>
+                                    <li><a href="" title="">Видео</a></li>
+                                    <li><a href="" title="">Контакты</a></li>
+                                    <li><a href="" title="">Вакансии</a></li>
+                                    <li><a href="" title="">Партнерам</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="footer-links-box second">
+                                <h6>НАШИ УСЛУГИ</h6>
+
+                                <ul>
+                                    <li><a href="" title="">Чем мы занимаемся?</a></li>
+                                    <li><a href="" title="">Стоимость услуг</a></li>
+                                    <li><a href="" title="">Калькулятор</a></li>
+                                    <li><a href="" title="">Гарантии</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="footer-links-box third">
+                                <h6>ПОМОЩЬ</h6>
+
+                                <ul>
+                                    <li><a href="" title="">Новичкам</a></li>
+                                    <li><a href="" title="">Пошаговые инструкции</a></li>
+                                    <li><a href="" title="">Советы клиентам</a></li>
+                                    <li><a href="" title="">Оплата наших услуг</a></li>
+                                    <li><a href="" title="">Таможенные вопроса</a></li>
+                                    <li><a href="" title="">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- contacts -->
+
+                    <div class="footer-contacts">
+                        <div class="box-register">
+                            <p>Вся регистрация займет не более 5 секунд и абсолютно бесплатна!</p>
+
+                            <a href="" class="box-register-button">Зарегистрироваться!</a>
+                        </div>
+
+                        <div class="box-language">
+                            <p>Выберите язык:</p>
+
+                            <table>
+                                <tr>
+                                    <td><a href=""><img src="images/hl-ru.png" alt=""> RUS</a></td>
+                                    <td><a href=""><img src="images/hl-jp.png" alt=""> JAP</a></td>
+                                    <td><a href=""><img src="images/hl-es.png" alt=""> ESP</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href=""><img src="images/hl-en.png" alt=""> ENG</a></td>
+                                    <td><a href=""><img src="images/hl-de.png" alt=""> GER</a></td>
+                                    <td><a href=""><img src="images/hl-fr.png" alt=""> FRA</a></td>
+                                </tr>
+                            </table>                        
+                        </div>
+
+                        <div class="box-contacts">
+                            <p>У вас есть вопросы? Задавайте!</p>
+
+                            <table>
+                                <tr>
+                                    <td class="c1"><a href="" class="box-contacts-forum">Форум</a></td>
+                                    <td class="c2"><a href="" class="box-contacts-email">Напишите нам</a></td>
+                                    <td class="c3">+7 495 661 4741 <img src="images/hc-online.png" alt="" class="box-contacts-status"></td>
+                                </tr>
+                                <tr>
+                                    <td class="c1"><a href="" class="box-contacts-chat">Чат</a> <img src="images/hc-online.png" alt="" class="box-contacts-status" style="margin-bottom: -1px;"></td>
+                                    <td class="c2"><a href="" class="box-contacts-address">Офис в Москве</a></td>
+                                    <td class="c3">+1 888 289 8997 <img src="images/hc-offline.png" alt="" class="box-contacts-status"></td>
+                                </tr>
+                            </table>
+                        </div>                        
+                    </div>
+
+                    <!-- other -->
+                    <div class="footer-other">
+                        <h6>Другие наши проекты:</h6>
+
+                        <div class="box-pro">
+                            <a href="">Shopoglot.PRO</a> — mail forwarding компания. <br />
+                            Вам предоставляется персональный адрес в США и возможность заказывать абсолютно любые товары!
+                        </div>
+
+                        <div class="box-cart">
+                            <a href="">Маркет</a> — самостоятельно продавайте, <br />
+                            обменивайтесь или дарите ненужные вещи.
+                        </div>
+                    </div>
+
+                    <!-- features -->
+
+                    <div class="footer-features">
+                        <div class="box-payment">
+                            <p>Способы оплаты:</p>
+
+                            <table>
+                                <tr>
+                                    <td><a href="" title="" class="r1"></a></td>
+                                    <td><a href="" title="" class="r2"></a></td>
+                                    <td><a href="" title="" class="r3"></a></td>
+                                    <td><a href="" title="" class="r4"></a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="" title="" class="r5"></a></td>
+                                    <td><a href="" title="" class="r6"></a></td>
+                                    <td><a href="" title="" class="r7"></a></td>
+                                    <td><a href="" title="" class="r8"></a></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="box-secure">
+                            <p>Безопасность сайта:</p>
+
+                            <table>
+                                <tr>
+                                    <td><a href=""><img src="images/s1.png" alt=""></a></td>
+                                    <td><a href=""><img src="images/s2.png" alt=""></a></td>
+                                    <td><a href=""><img src="images/s3.png" alt=""></a></td>
+                                    <td><a href=""><img src="images/s4.png" alt=""></a></td>
+                                    <td><a href=""><img src="images/s5.png" alt=""></a></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="box-share">
+                            <p>Расскажите друзьям:</p>
+                            
+                            <a href="" class="vk"></a>
+                            <a href="" class="fb"></a>
+                            <a href="" class="tw"></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- left panel -->
+        <a href="javascript:void(0);" class="leftpanel-show"></a>
+
+        <div class="leftpanel">
+            <ul>
+                <li><a href="" title="">Схема работы</a></li>
+                <li><a href="" title="">Калькулятор<br /><span>сколько будет стоить</span></a></li>
+                <li><a href="" title="">Примеры<br /><span>заказанных вещей</span></a></li>
+                <li><a href="" title="">Магазины в США<br /><span>или откуда можно заказать</span></a></li>
+                <li><a href="" title="">Способы оплаты</a></li>
+                <li><a href="" title="">Гарантии<br /><span>или почему мы №1</span></a></li>
+                <li><a href="" title="">Видео<br /><span>почему выгодно и как еще экономить</span></a></li>
+            </ul>
+
+            <a href="" class="leftpanel-register">регистрация</a>
+
+            <div class="leftside-social">
+                <img src="images/tmp/s1.png" alt="">
+            </div>
+
+            <a href="javascript:void(0);" class="leftpanel-hide">← Свернуть</a>
+        </div>
+
+        <script src="js/call.js"></script>
+    </body>
+</html>
