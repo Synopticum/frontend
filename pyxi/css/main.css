@@ -311,19 +311,44 @@ header a:hover { color: #fff; }
             background: #f4f7f8;
         }
 
+        .rent .single .odd td {
+            padding: 0px 10px 10px 0;
+            background: #fff;
+        }
+        .rent .single td {
+            border: 0;
+        }
+
+        .rent .selected {
+            border: 2px solid #b0c3c8;
+        }
+
+        .rent big { position: relative; top: -2px; font-family: 'Open Sans Bold'; font-size: 15px; }
+
         .rent .green { color: #3f8e6a; }
         .rent .red { color: #d00015; }
         .rent .deposite { font-family: 'Open Sans Bold'; font-size: 15px; color: #3f8e6a; }
 
-        .rent-star, .rent-photo, .rent-pointer { display: block; margin-bottom: 6px; }
-        .rent-star:hover, .rent-photo:hover, .rent-pointer:hover { opacity: 0.75; }
+        .rent-star, .rent-star.active, .rent-photo, .rent-pointer, .rent-close, .rent-close2 { display: block; margin: 0 0 6px 10px; }
+        .rent-star:hover, .rent-star.active:hover, .rent-photo:hover, .rent-pointer:hover, .rent-close:hover, .rent-close2:hover { opacity: 0.75; }
         .rent-star { width: 17px; height: 16px; background: url(../images/rent-star.png) no-repeat 0 0; }
+        .rent-star.active { width: 17px; height: 16px; background: url(../images/rent-star2.png) no-repeat 0 0; }
         .rent-photo { width: 17px; height: 13px; background: url(../images/rent-photo.png) no-repeat 0 0; }
         .rent-pointer { width: 17px; height: 16px; background: url(../images/rent-pointer.png) no-repeat 2px 0; }
+        .rent-close { width: 17px; height: 12px; background: url(../images/rent-close1.png) no-repeat 2px 0; }
+        .rent-close2 { width: 17px; height: 12px; background: url(../images/rent-close2.png) no-repeat 2px 0; }
 
         .rent-link a { text-decoration: none; border-bottom: 1px dotted #9eb8d4; white-space: nowrap; }
 
         .rent-write { margin: 20px 0 0 0; padding: 0 0 0 15px; background: url(../images/rent-write.png) no-repeat 0 4px; }
+        .rent-map { padding: 0 0 0 15px; background: url(../images/rent-map.png) no-repeat 0 4px; }
+        .rent-nomargin { margin-top: 0; }
+
+        .rent-select { margin: 8px 0 0 0; }
+            .rent-select select { width: 145px; font-family: 'Open Sans Regular'; font-size: 12px; border: 2px solid #d4dfe2; outline: none; color: #43525e; }
+
+        .rent-service { display: block; width: 16px; height: 16px; background: url(../images/rent-service.png) no-repeat; }
+        .rent-service:hover { opacity: 0.75; }
 
 /* paginator */
 .paginator { margin: 20px 0; }
