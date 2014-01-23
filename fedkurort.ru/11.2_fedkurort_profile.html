@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <script src="js/vendor/jquery-1.7.2.min.js"></script>
+
+        <!-- custom selectbox -->
+        <link rel="stylesheet" href="js/selectbox/jquery.selectbox.css">
+        <script src="js/selectbox/jquery.selectbox-0.2.min.js"></script>
+
+        <!-- touchcarousel -->
+        <link rel="stylesheet" href="js/touchcarousel/touchcarousel.css">
+        <script src="js/touchcarousel/jquery.touchcarousel-1.2.min.js"></script>
+
+        <!-- jquery ui -->
+        <link rel="stylesheet" href="js/jquery-ui/css/ui-lightness/jquery-ui-1.10.3.custom.min.css">
+        <script src="js/jquery-ui/js/jquery-ui-1.10.3.custom.min.js"></script>
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <header>
+                <div class="header-wrapper">
+                    <a href=""><img src="images/header-logo.png" height="51" width="175" alt="" class="header-logo"></a>
+                    <div class="header-slogan"></div>
+
+                    <div class="header-login">
+                        <a href="javascript:;" class="header-login-link">ВОЙТИ</a> | <a href="">СОЗДАТЬ АККАУНТ</a>
+                    </div>
+
+                    <div class="header-login-form">
+                        <form action="">
+                            <div class="notify error">Неверный пароль</div>
+
+                            <div class="item">
+                                <label>Номер телефона<br>
+                                <input type="text" class="textbox"></label>
+                            </div>
+
+                            <div class="item">
+                                <label>Пароль<br>
+                                <input type="password" class="textbox textbox-error"></label>
+                            </div>
+
+                            <div class="item">
+                                <span class="hl-checkbox"><input type="checkbox" id="mycheck0"><label for="mycheck0">Запомнить меня</label></span>
+                            </div>
+
+                            <div class="item">
+                                <a href="" class="forgot">Восстановить пароль</a>
+                            </div>
+
+                            <input type="submit" class="hl-button" value="Войти">
+                        </form>
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </header>
+
+            <div id="wrap">
+                <div class="page page-register clearfix">
+                    <div class="mainsearch-menu">
+                        <ul>
+                            <li><a href="" title="">НОВОСТИ</a></li>
+                            <li><a href="" title="">КАТАЛОГ САНАТОРИЕВ</a></li>
+                            <li><a href="" title="">ЭКСКУРСИИ</a></li>
+                            <li><a href="" title="">УСЛУГИ</a></li>
+                            <li class="pay"><span class="icon"></span><a href="" title="">ОПЛАТА ТУРА</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- aside -->
+                    <aside class="leftside">
+
+                        <!-- main filter -->
+                        <div class="mainsearch-form clearfix">
+                            <form action="">
+                                <h3 class="mf-title">Найти</h3>
+
+                                <div class="mf-autocomplete">
+                                    <span class="label">Место, название курорта</span>
+                                    <input id="mf-autocomplete" class="textbox" title="type "a"">
+
+                                    <script>
+                                    var availableTags = [
+                                        "ActionScript",
+                                        "AppleScript",
+                                        "Asp",
+                                        "BASIC",
+                                        "C",
+                                        "C++",
+                                        "Clojure",
+                                        "COBOL",
+                                        "ColdFusion",
+                                        "Erlang",
+                                        "Fortran",
+                                        "Groovy",
+                                        "Haskell",
+                                        "Java",
+                                        "JavaScript",
+                                        "Lisp",
+                                        "Perl",
+                                        "PHP",
+                                        "Python",
+                                        "Ruby",
+                                        "Scala",
+                                        "Scheme"
+                                    ];
+                                    $( "#mf-autocomplete" ).autocomplete({
+                                        source: availableTags
+                                    });
+                                    </script>
+                                </div>
+
+                                <div class="mf-date clearfix">
+                                    <div class="box clearfix">
+                                    <span class="label">Дата заезда</span>
+                                    <div class="mf-select mf-day">
+                                        <div class="icon"></div>
+
+                                        <select name="" class="selectbox" tabindex="">
+                                            <option value="">День</option>
+                                            <option value="1">1</option>
+                                            <option value="1">2</option>
+                                            <option value="1">3</option>
+                                            <option value="1">4</option>
+                                            <option value="1">5</option>
+                                            <option value="1">6</option>
+                                            <option value="1">7</option>
+                                            <option value="1">8</option>
+                                            <option value="1">9</option>
+                                            <option value="1">10</option>
+                                            <option value="1">11</option>
+                                            <option value="1">12</option>
+                                            <option value="1">13</option>
+                                            <option value="1">14</option>
+                                            <option value="1">15</option>
+                                            <option value="1">16</option>
+                                            <option value="1">17</option>
+                                            <option value="1">18</option>
+                                            <option value="1">19</option>
+                                            <option value="1">20</option>
+                                            <option value="1">21</option>
+                                            <option value="1">22</option>
+                                            <option value="1">23</option>
+                                            <option value="1">24</option>
+                                            <option value="1">25</option>
+                                            <option value="1">26</option>
+                                            <option value="1">27</option>
+                                            <option value="1">28</option>
+                                            <option value="1">29</option>
+                                            <option value="1">30</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mf-select mf-month">
+                                        <select name="" class="selectbox" tabindex="">
+                                            <option value="">Месяц</option>
+                                            <option value="1">Январь</option>
+                                            <option value="1">Февраль</option>
+                                            <option value="1">Март</option>
+                                            <option value="1">Апрель</option>
+                                            <option value="1">Май</option>
+                                            <option value="1">Июнь</option>
+                                            <option value="1">Июль</option>
+                                            <option value="1">Август</option>
+                                            <option value="1">Сентябрь</option>
+                                            <option value="1">Октябрь</option>
+                                            <option value="1">Ноябрь</option>
+                                            <option value="1">Декабрь</option>
+                                        </select>
+                                    </div>
+                                    </div>
+
+                                    <div class="box clearfix">
+                                    <span class="label">Дата отъезда</span>
+                                    <div class="mf-select mf-day">
+                                        <div class="icon"></div>
+
+                                        <select name="" class="selectbox" tabindex="">
+                                            <option value="">День</option>
+                                            <option value="1">1</option>
+                                            <option value="1">2</option>
+                                            <option value="1">3</option>
+                                            <option value="1">4</option>
+                                            <option value="1">5</option>
+                                            <option value="1">6</option>
+                                            <option value="1">7</option>
+                                            <option value="1">8</option>
+                                            <option value="1">9</option>
+                                            <option value="1">10</option>
+                                            <option value="1">11</option>
+                                            <option value="1">12</option>
+                                            <option value="1">13</option>
+                                            <option value="1">14</option>
+                                            <option value="1">15</option>
+                                            <option value="1">16</option>
+                                            <option value="1">17</option>
+                                            <option value="1">18</option>
+                                            <option value="1">19</option>
+                                            <option value="1">20</option>
+                                            <option value="1">21</option>
+                                            <option value="1">22</option>
+                                            <option value="1">23</option>
+                                            <option value="1">24</option>
+                                            <option value="1">25</option>
+                                            <option value="1">26</option>
+                                            <option value="1">27</option>
+                                            <option value="1">28</option>
+                                            <option value="1">29</option>
+                                            <option value="1">30</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mf-select mf-month">
+                                        <select name="" class="selectbox" tabindex="">
+                                            <option value="">Месяц</option>
+                                            <option value="1">Январь</option>
+                                            <option value="1">Февраль</option>
+                                            <option value="1">Март</option>
+                                            <option value="1">Апрель</option>
+                                            <option value="1">Май</option>
+                                            <option value="1">Июнь</option>
+                                            <option value="1">Июль</option>
+                                            <option value="1">Август</option>
+                                            <option value="1">Сентябрь</option>
+                                            <option value="1">Октябрь</option>
+                                            <option value="1">Ноябрь</option>
+                                            <option value="1">Декабрь</option>
+                                        </select>
+                                    </div>
+                                    </div>
+
+
+                                    <div class="box clearfix">
+                                    <span class="mf-checkbox"><input type="checkbox" id="mycheck"><label for="mycheck">Точные даты поездки пока неизвестны </label></span>
+                                    </div>
+
+                                    <div class="box clearfix">
+                                        <table>
+                                            <tr>
+                                                <td class="label">Номера</td>
+                                                <td class="value">
+                                                    <div class="mf-select mf-small">
+                                                        <select name="" class="selectbox" tabindex="">
+                                                            <option value=""></option>
+                                                            <option value="1">1</option>
+                                                            <option value="1">2</option>
+                                                            <option value="1">3</option>
+                                                            <option value="1">4</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">Взрослых</td>
+                                                <td class="value">
+                                                    <div class="mf-select mf-small">
+                                                        <select name="" class="selectbox" tabindex="">
+                                                            <option value=""></option>
+                                                            <option value="1">1</option>
+                                                            <option value="1">2</option>
+                                                            <option value="1">3</option>
+                                                            <option value="1">4</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">Детей</td>
+                                                <td class="value">
+                                                    <div class="mf-select mf-small">
+                                                        <select name="" class="selectbox" tabindex="">
+                                                            <option value=""></option>
+                                                            <option value="1">1</option>
+                                                            <option value="1">2</option>
+                                                            <option value="1">3</option>
+                                                            <option value="1">4</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <input type="submit" id="" value="Подобрать" class="mf-button">
+                            </form>
+
+                            <div class="mainsearch-form-t"></div><div class="mainsearch-form-corner"></div>
+                        </div>
+
+                        <!--  -->
+
+                        <div class="home-phone clearfix">
+                            <span class="icon"></span>
+                            <div class="number">8 (800) 633 00 00</div>
+                            <div class="tt">
+                                СЛУЖБА БРОНИРОВАНИЯ
+                                <p>бесплатный звонок по всей россии</p>
+                            </div>
+                        </div>
+
+                        <!--  -->
+
+                        <div class="earlier">
+                            <a href="" class="r-more">Другие &raquo;</a>
+                            <h3 class="r-title">Другие места </h3>
+
+                            <div class="r-item">
+                                <div class="view">
+                                    <a href=""><img src="images/tmp/r1.jpg" height="60" width="60" alt=""></a>
+                                </div>
+
+                                <div class="description">
+                                    <a href="" class="title">Санаторий 30 лет Победы</a>
+                                    <div class="city">Железноводск</div>
+
+                                    <div class="clearfix">
+                                        <div class="rating-mini">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <span>4.7</span>
+                                        </div>
+
+                                        <div class="feeds-mini">
+                                            <span class="icon"></span>
+                                            107 отзывов
+                                        </div>
+                                    </div>
+
+                                    <div class="last">Последнее бронирование: 3 часа назад</div>
+                                </div>
+                            </div>
+
+                            <div class="r-item">
+                                <div class="view">
+                                    <a href=""><img src="images/tmp/r1.jpg" height="60" width="60" alt=""></a>
+                                </div>
+
+                                <div class="description">
+                                    <a href="" class="title">Санаторий 30 лет Победы</a>
+                                    <div class="city">Железноводск</div>
+
+                                    <div class="clearfix">
+                                        <div class="rating-mini">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <span>4.7</span>
+                                        </div>
+                                        
+                                        <div class="feeds-mini">
+                                            <span class="icon"></span>
+                                            107 отзывов
+                                        </div>
+                                    </div>
+
+                                    <div class="last">Последнее бронирование: 3 часа назад</div>
+                                </div>
+                            </div>
+
+                            <div class="r-item">
+                                <div class="view">
+                                    <a href=""><img src="images/tmp/r1.jpg" height="60" width="60" alt=""></a>
+                                </div>
+
+                                <div class="description">
+                                    <a href="" class="title">Санаторий 30 лет Победы</a>
+                                    <div class="city">Железноводск</div>
+
+                                    <div class="clearfix">
+                                        <div class="rating-mini">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <span>4.7</span>
+                                        </div>
+                                        
+                                        <div class="feeds-mini">
+                                            <span class="icon"></span>
+                                            107 отзывов
+                                        </div>
+                                    </div>
+
+                                    <div class="last">Последнее бронирование: 3 часа назад</div>
+                                </div>
+                            </div>
+
+                            <div class="r-item">
+                                <div class="view">
+                                    <a href=""><img src="images/tmp/r1.jpg" height="60" width="60" alt=""></a>
+                                </div>
+
+                                <div class="description">
+                                    <a href="" class="title">Санаторий 30 лет Победы</a>
+                                    <div class="city">Железноводск</div>
+
+                                    <div class="clearfix">
+                                        <div class="rating-mini">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <span>4.7</span>
+                                        </div>
+                                        
+                                        <div class="feeds-mini">
+                                            <span class="icon"></span>
+                                            107 отзывов
+                                        </div>
+                                    </div>
+
+                                    <div class="last">Последнее бронирование: 3 часа назад</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  -->
+
+                        <div class="earlier">
+                            <a href="" class="r-more">Другие &raquo;</a>
+                            <h3 class="r-title">Ранее вы смотрели</h3>
+
+                            <div class="r-item">
+                                <div class="view">
+                                    <a href=""><img src="images/tmp/r1.jpg" height="60" width="60" alt=""></a>
+                                </div>
+
+                                <div class="description">
+                                    <a href="" class="title">Санаторий 30 лет Победы</a>
+                                    <div class="city">Железноводск</div>
+
+                                    <div class="clearfix">
+                                        <div class="rating-mini">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <span>4.7</span>
+                                        </div>
+
+                                        <div class="feeds-mini">
+                                            <span class="icon"></span>
+                                            107 отзывов
+                                        </div>
+                                    </div>
+
+                                    <div class="last">Последнее бронирование: 3 часа назад</div>
+                                </div>
+                            </div>
+
+                            <div class="r-item">
+                                <div class="view">
+                                    <a href=""><img src="images/tmp/r1.jpg" height="60" width="60" alt=""></a>
+                                </div>
+
+                                <div class="description">
+                                    <a href="" class="title">Санаторий 30 лет Победы</a>
+                                    <div class="city">Железноводск</div>
+
+                                    <div class="clearfix">
+                                        <div class="rating-mini">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <span>4.7</span>
+                                        </div>
+                                        
+                                        <div class="feeds-mini">
+                                            <span class="icon"></span>
+                                            107 отзывов
+                                        </div>
+                                    </div>
+
+                                    <div class="last">Последнее бронирование: 3 часа назад</div>
+                                </div>
+                            </div>
+
+                            <div class="r-item">
+                                <div class="view">
+                                    <a href=""><img src="images/tmp/r1.jpg" height="60" width="60" alt=""></a>
+                                </div>
+
+                                <div class="description">
+                                    <a href="" class="title">Санаторий 30 лет Победы</a>
+                                    <div class="city">Железноводск</div>
+
+                                    <div class="clearfix">
+                                        <div class="rating-mini">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <span>4.7</span>
+                                        </div>
+                                        
+                                        <div class="feeds-mini">
+                                            <span class="icon"></span>
+                                            107 отзывов
+                                        </div>
+                                    </div>
+
+                                    <div class="last">Последнее бронирование: 3 часа назад</div>
+                                </div>
+                            </div>
+
+                            <div class="r-item">
+                                <div class="view">
+                                    <a href=""><img src="images/tmp/r1.jpg" height="60" width="60" alt=""></a>
+                                </div>
+
+                                <div class="description">
+                                    <a href="" class="title">Санаторий 30 лет Победы</a>
+                                    <div class="city">Железноводск</div>
+
+                                    <div class="clearfix">
+                                        <div class="rating-mini">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <span>4.7</span>
+                                        </div>
+                                        
+                                        <div class="feeds-mini">
+                                            <span class="icon"></span>
+                                            107 отзывов
+                                        </div>
+                                    </div>
+
+                                    <div class="last">Последнее бронирование: 3 часа назад</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </aside>
+
+                    <!-- content -->
+                    <div class="content">
+                        <div class="breadcrumbs">
+                            <a href="">Главная</a> &rarr;  
+                            <span class="current">Личный кабинет</span>
+                        </div>
+
+                        <div class="page-title">
+                            <h1>Личный кабинет</h1>
+                            <h2>Акутин Иван</h2>
+                        </div>
+
+                        <div class="cabinet clearfix">
+                            <aside class="cabinet-control">
+                                <div class="view">
+                                    <img src="images/tmp/photo.jpg" height="139" width="140" alt=""><br>
+                                    <a href="">Изменить фото</a>
+
+                                    <div class="nav">
+                                        <ul>
+                                            <li class="n1"><span class="icon"></span><a href="">Мои Данные</a></li>
+                                            <li class="n2"><span class="icon"></span><a href="">Действующие брони</a></li>
+                                            <li class="n3 active"><span class="icon"></span><a href="">Архив брони</a></li>
+                                            <li class="n4"><span class="icon"></span><a href="">Документы</a></li>
+                                            <li class="n5"><span class="icon"></span><a href="">Выход</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </aside>
+
+                            <div class="cabinet-content">
+                                <div class="cabinet-reservation">
+                                    <table>
+                                        <tr>
+                                            <td class="name">
+                                                <div class="title"><a href="">Вилла-Парк</a></div>
+                                                <p>Кисловодск. 10.07.2013 - 30.07.2013<br>
+                                                Двухместный номер с 1 кроватью, 2 взрослых</p>
+                                                <div class="price">450 000 руб.</div>
+                                            </td>
+                                            <td class="status">статус: <span>Ожидает</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">
+                                                <div class="title"><a href="">Вилла-Парк</a></div>
+                                                <p>Кисловодск. 10.07.2013 - 30.07.2013<br>
+                                                Двухместный номер с 1 кроватью, 2 взрослых</p>
+                                                <div class="price">450 000 руб.</div>
+                                            </td>
+                                            <td class="status">статус: <span>Ожидает</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">
+                                                <div class="title"><a href="">Вилла-Парк</a></div>
+                                                <p>Кисловодск. 10.07.2013 - 30.07.2013<br>
+                                                Двухместный номер с 1 кроватью, 2 взрослых</p>
+                                                <div class="price">450 000 руб.</div>
+                                            </td>
+                                            <td class="status">статус: <span>Выполнен</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">
+                                                <div class="title"><a href="">Вилла-Парк</a></div>
+                                                <p>Кисловодск. 10.07.2013 - 30.07.2013<br>
+                                                Двухместный номер с 1 кроватью, 2 взрослых</p>
+                                                <div class="price">450 000 руб.</div>
+                                            </td>
+                                            <td class="status">статус: <span>Выполнен</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">
+                                                <div class="title"><a href="">Вилла-Парк</a></div>
+                                                <p>Кисловодск. 10.07.2013 - 30.07.2013<br>
+                                                Двухместный номер с 1 кроватью, 2 взрослых</p>
+                                                <div class="price">450 000 руб.</div>
+                                            </td>
+                                            <td class="status">статус: <span>Выполнен</span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-wrapper">
+                    <div class="footer-copyright">
+                        <p>Copyright © 2013 <a href="">fedkurort.ru</a>. Все права защищены</p>
+
+                        <p>Федеральные курорты России<br>
+                        При поддержке министерства курортов и туризма Ставропольского края</p>
+                    </div>
+
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="" title="">О проекте</a></li>
+                            <li><a href="" title="">Условия и правила</a></li>
+                            <li><a href="" title="">Курорты</a></li>
+                            <li><a href="" title="">Санатории</a></li>
+                            <li><a href="" title="">Реклама</a></li>
+                            <li><a href="" title="">Контакты</a></li>
+                            <li><a href="" title="">Партнерам</a></li>
+                            <li><a href="" title="">Обратная связь</a></li>
+                            <li><a href="" title="">Помощь</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <script src="js/call.js"></script>
+    </body>
+</html>

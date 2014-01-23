@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <script src="js/vendor/jquery-1.7.2.min.js"></script>
+
+        <!-- custom selectbox -->
+        <link rel="stylesheet" href="js/selectbox/jquery.selectbox.css">
+        <script src="js/selectbox/jquery.selectbox-0.2.min.js"></script>
+
+        <!-- touchcarousel -->
+        <link rel="stylesheet" href="js/touchcarousel/touchcarousel.css">
+        <script src="js/touchcarousel/jquery.touchcarousel-1.2.min.js"></script>
+
+        <!-- jquery ui -->
+        <link rel="stylesheet" href="js/jquery-ui/css/ui-lightness/jquery-ui-1.10.3.custom.min.css">
+        <script src="js/jquery-ui/js/jquery-ui-1.10.3.custom.min.js"></script>
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <header>
+                <div class="header-wrapper">
+                    <a href=""><img src="images/header-logo.png" height="51" width="175" alt="" class="header-logo"></a>
+                    <div class="header-slogan"></div>
+
+                    <div class="header-login">
+                        <a href="javascript:;" class="header-login-link">ВОЙТИ</a> | <a href="">СОЗДАТЬ АККАУНТ</a>
+                    </div>
+
+                    <div class="header-login-form">
+                        <form action="">
+                            <div class="notify error">Неверный пароль</div>
+
+                            <div class="item">
+                                <label>Номер телефона<br>
+                                <input type="text" class="textbox"></label>
+                            </div>
+
+                            <div class="item">
+                                <label>Пароль<br>
+                                <input type="password" class="textbox textbox-error"></label>
+                            </div>
+
+                            <div class="item">
+                                <span class="hl-checkbox"><input type="checkbox" id="mycheck0"><label for="mycheck0">Запомнить меня</label></span>
+                            </div>
+
+                            <div class="item">
+                                <a href="" class="forgot">Восстановить пароль</a>
+                            </div>
+
+                            <input type="submit" class="hl-button" value="Войти">
+                        </form>
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </header>
+
+            <div id="wrap">
+                <div class="page clearfix">
+                    <div class="mainsearch-menu">
+                        <ul>
+                            <li><a href="" title="">НОВОСТИ</a></li>
+                            <li><a href="" title="">КАТАЛОГ САНАТОРИЕВ</a></li>
+                            <li><a href="" title="">ЭКСКУРСИИ</a></li>
+                            <li><a href="" title="">УСЛУГИ</a></li>
+                            <li class="pay"><span class="icon"></span><a href="" title="">ОПЛАТА ТУРА</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- aside -->
+                    <aside class="leftside">
+
+                        <!-- main filter -->
+                        <div class="mainsearch-form clearfix">
+                            <form action="">
+                                <h3 class="mf-title">Найти</h3>
+
+                                <div class="mf-autocomplete">
+                                    <span class="label">Место, название курорта</span>
+                                    <input id="mf-autocomplete" class="textbox" title="type "a"">
+
+                                    <script>
+                                    var availableTags = [
+                                        "ActionScript",
+                                        "AppleScript",
+                                        "Asp",
+                                        "BASIC",
+                                        "C",
+                                        "C++",
+                                        "Clojure",
+                                        "COBOL",
+                                        "ColdFusion",
+                                        "Erlang",
+                                        "Fortran",
+                                        "Groovy",
+                                        "Haskell",
+                                        "Java",
+                                        "JavaScript",
+                                        "Lisp",
+                                        "Perl",
+                                        "PHP",
+                                        "Python",
+                                        "Ruby",
+                                        "Scala",
+                                        "Scheme"
+                                    ];
+                                    $( "#mf-autocomplete" ).autocomplete({
+                                        source: availableTags
+                                    });
+                                    </script>
+                                </div>
+
+                                <div class="mf-date clearfix">
+                                    <div class="box clearfix">
+                                    <span class="label">Дата заезда</span>
+                                    <div class="mf-select mf-day">
+                                        <div class="icon"></div>
+
+                                        <select name="" class="selectbox" tabindex="">
+                                            <option value="">День</option>
+                                            <option value="1">1</option>
+                                            <option value="1">2</option>
+                                            <option value="1">3</option>
+                                            <option value="1">4</option>
+                                            <option value="1">5</option>
+                                            <option value="1">6</option>
+                                            <option value="1">7</option>
+                                            <option value="1">8</option>
+                                            <option value="1">9</option>
+                                            <option value="1">10</option>
+                                            <option value="1">11</option>
+                                            <option value="1">12</option>
+                                            <option value="1">13</option>
+                                            <option value="1">14</option>
+                                            <option value="1">15</option>
+                                            <option value="1">16</option>
+                                            <option value="1">17</option>
+                                            <option value="1">18</option>
+                                            <option value="1">19</option>
+                                            <option value="1">20</option>
+                                            <option value="1">21</option>
+                                            <option value="1">22</option>
+                                            <option value="1">23</option>
+                                            <option value="1">24</option>
+                                            <option value="1">25</option>
+                                            <option value="1">26</option>
+                                            <option value="1">27</option>
+                                            <option value="1">28</option>
+                                            <option value="1">29</option>
+                                            <option value="1">30</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mf-select mf-month">
+                                        <select name="" class="selectbox" tabindex="">
+                                            <option value="">Месяц</option>
+                                            <option value="1">Январь</option>
+                                            <option value="1">Февраль</option>
+                                            <option value="1">Март</option>
+                                            <option value="1">Апрель</option>
+                                            <option value="1">Май</option>
+                                            <option value="1">Июнь</option>
+                                            <option value="1">Июль</option>
+                                            <option value="1">Август</option>
+                                            <option value="1">Сентябрь</option>
+                                            <option value="1">Октябрь</option>
+                                            <option value="1">Ноябрь</option>
+                                            <option value="1">Декабрь</option>
+                                        </select>
+                                    </div>
+                                    </div>
+
+                                    <div class="box clearfix">
+                                    <span class="label">Дата отъезда</span>
+                                    <div class="mf-select mf-day">
+                                        <div class="icon"></div>
+
+                                        <select name="" class="selectbox" tabindex="">
+                                            <option value="">День</option>
+                                            <option value="1">1</option>
+                                            <option value="1">2</option>
+                                            <option value="1">3</option>
+                                            <option value="1">4</option>
+                                            <option value="1">5</option>
+                                            <option value="1">6</option>
+                                            <option value="1">7</option>
+                                            <option value="1">8</option>
+                                            <option value="1">9</option>
+                                            <option value="1">10</option>
+                                            <option value="1">11</option>
+                                            <option value="1">12</option>
+                                            <option value="1">13</option>
+                                            <option value="1">14</option>
+                                            <option value="1">15</option>
+                                            <option value="1">16</option>
+                                            <option value="1">17</option>
+                                            <option value="1">18</option>
+                                            <option value="1">19</option>
+                                            <option value="1">20</option>
+                                            <option value="1">21</option>
+                                            <option value="1">22</option>
+                                            <option value="1">23</option>
+                                            <option value="1">24</option>
+                                            <option value="1">25</option>
+                                            <option value="1">26</option>
+                                            <option value="1">27</option>
+                                            <option value="1">28</option>
+                                            <option value="1">29</option>
+                                            <option value="1">30</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mf-select mf-month">
+                                        <select name="" class="selectbox" tabindex="">
+                                            <option value="">Месяц</option>
+                                            <option value="1">Январь</option>
+                                            <option value="1">Февраль</option>
+                                            <option value="1">Март</option>
+                                            <option value="1">Апрель</option>
+                                            <option value="1">Май</option>
+                                            <option value="1">Июнь</option>
+                                            <option value="1">Июль</option>
+                                            <option value="1">Август</option>
+                                            <option value="1">Сентябрь</option>
+                                            <option value="1">Октябрь</option>
+                                            <option value="1">Ноябрь</option>
+                                            <option value="1">Декабрь</option>
+                                        </select>
+                                    </div>
+                                    </div>
+
+
+                                    <div class="box clearfix">
+                                    <span class="mf-checkbox"><input type="checkbox" id="mycheck"><label for="mycheck">Точные даты поездки пока неизвестны </label></span>
+                                    </div>
+
+                                    <div class="box clearfix">
+                                        <table>
+                                            <tr>
+                                                <td class="label">Номера</td>
+                                                <td class="value">
+                                                    <div class="mf-select mf-small">
+                                                        <select name="" class="selectbox" tabindex="">
+                                                            <option value=""></option>
+                                                            <option value="1">1</option>
+                                                            <option value="1">2</option>
+                                                            <option value="1">3</option>
+                                                            <option value="1">4</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">Взрослых</td>
+                                                <td class="value">
+                                                    <div class="mf-select mf-small">
+                                                        <select name="" class="selectbox" tabindex="">
+                                                            <option value=""></option>
+                                                            <option value="1">1</option>
+                                                            <option value="1">2</option>
+                                                            <option value="1">3</option>
+                                                            <option value="1">4</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">Детей</td>
+                                                <td class="value">
+                                                    <div class="mf-select mf-small">
+                                                        <select name="" class="selectbox" tabindex="">
+                                                            <option value=""></option>
+                                                            <option value="1">1</option>
+                                                            <option value="1">2</option>
+                                                            <option value="1">3</option>
+                                                            <option value="1">4</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <input type="submit" id="" value="Подобрать" class="mf-button">
+                            </form>
+
+                            <div class="mainsearch-form-t"></div><div class="mainsearch-form-corner"></div>
+                        </div>
+
+                        <!--  -->
+
+                        <div class="home-phone clearfix">
+                            <span class="icon"></span>
+                            <div class="number">8 (800) 633 00 00</div>
+                            <div class="tt">
+                                СЛУЖБА БРОНИРОВАНИЯ
+                                <p>бесплатный звонок по всей россии</p>
+                            </div>
+                        </div>
+
+                        <!--  -->
+                        <div class="leftside-menu">
+                            <ul>
+                                <li><a href="" title="">ОПИСАНИЕ</a></li>
+                                <li class="active"><a href="" title="">ДОСТУПНЫЕ НОМЕРА</a></li>
+                                <li><a href="" title="">УДОБСТВА И УСЛУГИ</a></li>
+                                <li><a href="" title="">ЛЕЧЕНИЕ И СПА</a></li>
+                                <li><a href="" title="">ПОРЯДОК ПРОЖИВАНИЯ</a></li>
+                                <li><a href="" title="">ДОСУГ И РАЗВЛЕЧЕНИЕ </a></li>
+                                <li><a href="" title="">ВАЖНАЯ ИНФОРМАЦИЯ</a></li>
+                                <li><a href="" title="">ПОСМОТРЕТЬ ВСЕ ОТЗЫВЫ</a></li>
+                            </ul>
+                        </div>
+
+                        <!--  -->
+
+                        <div class="earlier">
+                            <a href="" class="r-more">Другие &raquo;</a>
+                            <h3 class="r-title">Другие места </h3>
+
+                            <div class="r-item">
+                                <div class="view">
+                                    <a href=""><img src="images/tmp/r1.jpg" height="60" width="60" alt=""></a>
+                                </div>
+
+                                <div class="description">
+                                    <a href="" class="title">Санаторий 30 лет Победы</a>
+                                    <div class="city">Железноводск</div>
+
+                                    <div class="clearfix">
+                                        <div class="rating-mini">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <span>4.7</span>
+                                        </div>
+
+                                        <div class="feeds-mini">
+                                            <span class="icon"></span>
+                                            107 отзывов
+                                        </div>
+                                    </div>
+
+                                    <div class="last">Последнее бронирование: 3 часа назад</div>
+                                </div>
+                            </div>
+
+                            <div class="r-item">
+                                <div class="view">
+                                    <a href=""><img src="images/tmp/r1.jpg" height="60" width="60" alt=""></a>
+                                </div>
+
+                                <div class="description">
+                                    <a href="" class="title">Санаторий 30 лет Победы</a>
+                                    <div class="city">Железноводск</div>
+
+                                    <div class="clearfix">
+                                        <div class="rating-mini">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <span>4.7</span>
+                                        </div>
+                                        
+                                        <div class="feeds-mini">
+                                            <span class="icon"></span>
+                                            107 отзывов
+                                        </div>
+                                    </div>
+
+                                    <div class="last">Последнее бронирование: 3 часа назад</div>
+                                </div>
+                            </div>
+
+                            <div class="r-item">
+                                <div class="view">
+                                    <a href=""><img src="images/tmp/r1.jpg" height="60" width="60" alt=""></a>
+                                </div>
+
+                                <div class="description">
+                                    <a href="" class="title">Санаторий 30 лет Победы</a>
+                                    <div class="city">Железноводск</div>
+
+                                    <div class="clearfix">
+                                        <div class="rating-mini">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <span>4.7</span>
+                                        </div>
+                                        
+                                        <div class="feeds-mini">
+                                            <span class="icon"></span>
+                                            107 отзывов
+                                        </div>
+                                    </div>
+
+                                    <div class="last">Последнее бронирование: 3 часа назад</div>
+                                </div>
+                            </div>
+
+                            <div class="r-item">
+                                <div class="view">
+                                    <a href=""><img src="images/tmp/r1.jpg" height="60" width="60" alt=""></a>
+                                </div>
+
+                                <div class="description">
+                                    <a href="" class="title">Санаторий 30 лет Победы</a>
+                                    <div class="city">Железноводск</div>
+
+                                    <div class="clearfix">
+                                        <div class="rating-mini">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <span>4.7</span>
+                                        </div>
+                                        
+                                        <div class="feeds-mini">
+                                            <span class="icon"></span>
+                                            107 отзывов
+                                        </div>
+                                    </div>
+
+                                    <div class="last">Последнее бронирование: 3 часа назад</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  -->
+
+                        <div class="earlier">
+                            <a href="" class="r-more">Другие &raquo;</a>
+                            <h3 class="r-title">Ранее вы смотрели</h3>
+
+                            <div class="r-item">
+                                <div class="view">
+                                    <a href=""><img src="images/tmp/r1.jpg" height="60" width="60" alt=""></a>
+                                </div>
+
+                                <div class="description">
+                                    <a href="" class="title">Санаторий 30 лет Победы</a>
+                                    <div class="city">Железноводск</div>
+
+                                    <div class="clearfix">
+                                        <div class="rating-mini">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <span>4.7</span>
+                                        </div>
+
+                                        <div class="feeds-mini">
+                                            <span class="icon"></span>
+                                            107 отзывов
+                                        </div>
+                                    </div>
+
+                                    <div class="last">Последнее бронирование: 3 часа назад</div>
+                                </div>
+                            </div>
+
+                            <div class="r-item">
+                                <div class="view">
+                                    <a href=""><img src="images/tmp/r1.jpg" height="60" width="60" alt=""></a>
+                                </div>
+
+                                <div class="description">
+                                    <a href="" class="title">Санаторий 30 лет Победы</a>
+                                    <div class="city">Железноводск</div>
+
+                                    <div class="clearfix">
+                                        <div class="rating-mini">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <span>4.7</span>
+                                        </div>
+                                        
+                                        <div class="feeds-mini">
+                                            <span class="icon"></span>
+                                            107 отзывов
+                                        </div>
+                                    </div>
+
+                                    <div class="last">Последнее бронирование: 3 часа назад</div>
+                                </div>
+                            </div>
+
+                            <div class="r-item">
+                                <div class="view">
+                                    <a href=""><img src="images/tmp/r1.jpg" height="60" width="60" alt=""></a>
+                                </div>
+
+                                <div class="description">
+                                    <a href="" class="title">Санаторий 30 лет Победы</a>
+                                    <div class="city">Железноводск</div>
+
+                                    <div class="clearfix">
+                                        <div class="rating-mini">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <span>4.7</span>
+                                        </div>
+                                        
+                                        <div class="feeds-mini">
+                                            <span class="icon"></span>
+                                            107 отзывов
+                                        </div>
+                                    </div>
+
+                                    <div class="last">Последнее бронирование: 3 часа назад</div>
+                                </div>
+                            </div>
+
+                            <div class="r-item">
+                                <div class="view">
+                                    <a href=""><img src="images/tmp/r1.jpg" height="60" width="60" alt=""></a>
+                                </div>
+
+                                <div class="description">
+                                    <a href="" class="title">Санаторий 30 лет Победы</a>
+                                    <div class="city">Железноводск</div>
+
+                                    <div class="clearfix">
+                                        <div class="rating-mini">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <span>4.7</span>
+                                        </div>
+                                        
+                                        <div class="feeds-mini">
+                                            <span class="icon"></span>
+                                            107 отзывов
+                                        </div>
+                                    </div>
+
+                                    <div class="last">Последнее бронирование: 3 часа назад</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </aside>
+
+                    <!-- content -->
+                    <div class="content">
+                        <div class="breadcrumbs">
+                            <a href="">Главная</a> &rarr;  
+                            <a href="">Ставропольский край</a> &rarr;
+                            <a href="">Кисловодск</a> &rarr;
+                            <span class="current">Санаторий Плаза Кисловодск </span>
+                        </div>
+
+                        <h1 class="page-title">САНАТОРИЙ ПЛАЗА КИСЛОВОДСК</h1>
+
+                        <div class="page-address">Проспект Ленина 26, Кисловодск, Россия</div>
+
+                        <!-- overview -->
+                        <div class="overview clearfix">
+                            <div class="view">
+                                <div class="big">
+                                    <img src="images/tmp/p1.jpg" height="300" width="530" alt="">
+                                </div>
+
+                                <div class="thumbnails">
+                                    <a href="" class="all"></a>
+                                    <a href=""><img src="images/tmp/p2.jpg" height="60" width="60" alt=""></a>
+                                    <a href=""><img src="images/tmp/p2.jpg" height="60" width="60" alt=""></a>
+                                    <a href=""><img src="images/tmp/p2.jpg" height="60" width="60" alt=""></a>
+                                    <a href=""><img src="images/tmp/p2.jpg" height="60" width="60" alt=""></a>
+                                    <a href=""><img src="images/tmp/p2.jpg" height="60" width="60" alt=""></a>
+                                    <a href=""><img src="images/tmp/p2.jpg" height="60" width="60" alt=""></a>
+                                    <a href=""><img src="images/tmp/p2.jpg" height="60" width="60" alt=""></a>
+                                    <a href=""><img src="images/tmp/p3.jpg" height="60" width="60" alt=""></a>
+                                </div>
+                            </div>
+
+                            <div class="description">                                
+                                <input type="button" class="addfeed" value="Забронировать">
+
+                                <div class="search-rating">
+                                    <big>Хорошо</big>, 7.7 /10
+                                    <div class="total-count">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <div class="count">Оценка по 11 отзывам</div>
+
+                                    <div class="feed-item">
+                                        <div class="title"><strong>Максим</strong>, 3 Июля 2013</div>
+
+                                        <div class="wrapper">
+                                            Санаторий оставил очень хорошее впечатление, причем дважды. Удобное расположение. Хороший ,приветливый, вышколенный персонал. Чистые комнаты. Хорошее питание. Большой 
+                                            <div class="arrow"></div>
+                                        </div>
+
+                                        <a href="" class="all">Все отзывы гостей &raquo;</a>
+                                    </div>
+
+                                    <div class="map">
+                                        <img src="images/tmp/map2.png" height="133" width="220" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text">
+                                <p>Этот 4-звездочный отель находится рядом с живописным парком Кисловодска. К услугам гостей бесплатный беспроводной доступ в Интернет и спа-центр с крытым бассейном и тренажерным залом. До железнодорожного вокзала Кисловодска 10 минут ходьбы.</p>
+
+                                <p>В обеденном зале "Панорама" на завтрак, обед и ужин предлагают богатый "шведский стол". Гости могут насладиться напитками и коктейлями в лобби-баре отеля "Плаза" и баре "24".</p>
+
+                                <p>Курортный отель "Плаза" располагает номерами с кондиционером и традиционной деревянной мебелью. Во всех номерах есть спутниковое телевидение и удобства для приготовления горячих напитков. В ванных комнатах имеются халаты и туалетные принадлежности.</p>
+
+                                <p>В спа-центре отеля "Плаза" можно заказать косметические процедуры и различные виды массажа. В спа-центре есть несколько саун и паровых бань.В спа-центре отеля "Плаза" можно заказать косметические процедуры и различные виды массажа. В спа-центре есть несколько саун и паровых бань.В спа-центре отеля "Плаза" можно заказать косметические процедуры и различные виды массажа. В спа-центре есть несколько саун и паровых бань.</p>
+                            </div>
+                        </div>
+
+                        <!--  -->
+
+                        <div class="fastsearch">
+                            <h3>ДОСТУПНЫЕ НОМЕРА</h3>
+
+                            <form action="">
+                            <div class="fastsearch-form clearfix">
+                                <h4>Когда вы желаете остановиться в Санаторий Плаза Кисловодск?</h4>
+
+                                <table>
+                                    <tr>
+                                        <td>
+                                        <div class="mf-date clearfix">
+                                            <div class="box clearfix">
+                                            <span class="label">Регистрация заезда:</span>
+                                            <div class="mf-select mf-day">
+                                                <div class="icon"></div>
+
+                                                <select name="" class="selectbox" tabindex="">
+                                                    <option value="">День</option>
+                                                    <option value="1">1</option>
+                                                    <option value="1">2</option>
+                                                    <option value="1">3</option>
+                                                    <option value="1">4</option>
+                                                    <option value="1">5</option>
+                                                    <option value="1">6</option>
+                                                    <option value="1">7</option>
+                                                    <option value="1">8</option>
+                                                    <option value="1">9</option>
+                                                    <option value="1">10</option>
+                                                    <option value="1">11</option>
+                                                    <option value="1">12</option>
+                                                    <option value="1">13</option>
+                                                    <option value="1">14</option>
+                                                    <option value="1">15</option>
+                                                    <option value="1">16</option>
+                                                    <option value="1">17</option>
+                                                    <option value="1">18</option>
+                                                    <option value="1">19</option>
+                                                    <option value="1">20</option>
+                                                    <option value="1">21</option>
+                                                    <option value="1">22</option>
+                                                    <option value="1">23</option>
+                                                    <option value="1">24</option>
+                                                    <option value="1">25</option>
+                                                    <option value="1">26</option>
+                                                    <option value="1">27</option>
+                                                    <option value="1">28</option>
+                                                    <option value="1">29</option>
+                                                    <option value="1">30</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="mf-select mf-month">
+                                                <select name="" class="selectbox" tabindex="">
+                                                    <option value="">Месяц</option>
+                                                    <option value="1">Январь</option>
+                                                    <option value="1">Февраль</option>
+                                                    <option value="1">Март</option>
+                                                    <option value="1">Апрель</option>
+                                                    <option value="1">Май</option>
+                                                    <option value="1">Июнь</option>
+                                                    <option value="1">Июль</option>
+                                                    <option value="1">Август</option>
+                                                    <option value="1">Сентябрь</option>
+                                                    <option value="1">Октябрь</option>
+                                                    <option value="1">Ноябрь</option>
+                                                    <option value="1">Декабрь</option>
+                                                </select>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </td>
+                                        <td>
+                                        <div class="mf-date clearfix">
+                                            <div class="box clearfix">
+                                            <span class="label">Регистрация отъезда:</span>
+                                            <div class="mf-select mf-day">
+                                                <div class="icon"></div>
+
+                                                <select name="" class="selectbox" tabindex="">
+                                                    <option value="">День</option>
+                                                    <option value="1">1</option>
+                                                    <option value="1">2</option>
+                                                    <option value="1">3</option>
+                                                    <option value="1">4</option>
+                                                    <option value="1">5</option>
+                                                    <option value="1">6</option>
+                                                    <option value="1">7</option>
+                                                    <option value="1">8</option>
+                                                    <option value="1">9</option>
+                                                    <option value="1">10</option>
+                                                    <option value="1">11</option>
+                                                    <option value="1">12</option>
+                                                    <option value="1">13</option>
+                                                    <option value="1">14</option>
+                                                    <option value="1">15</option>
+                                                    <option value="1">16</option>
+                                                    <option value="1">17</option>
+                                                    <option value="1">18</option>
+                                                    <option value="1">19</option>
+                                                    <option value="1">20</option>
+                                                    <option value="1">21</option>
+                                                    <option value="1">22</option>
+                                                    <option value="1">23</option>
+                                                    <option value="1">24</option>
+                                                    <option value="1">25</option>
+                                                    <option value="1">26</option>
+                                                    <option value="1">27</option>
+                                                    <option value="1">28</option>
+                                                    <option value="1">29</option>
+                                                    <option value="1">30</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="mf-select mf-month">
+                                                <select name="" class="selectbox" tabindex="">
+                                                    <option value="">Месяц</option>
+                                                    <option value="1">Январь</option>
+                                                    <option value="1">Февраль</option>
+                                                    <option value="1">Март</option>
+                                                    <option value="1">Апрель</option>
+                                                    <option value="1">Май</option>
+                                                    <option value="1">Июнь</option>
+                                                    <option value="1">Июль</option>
+                                                    <option value="1">Август</option>
+                                                    <option value="1">Сентябрь</option>
+                                                    <option value="1">Октябрь</option>
+                                                    <option value="1">Ноябрь</option>
+                                                    <option value="1">Декабрь</option>
+                                                </select>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </td>
+                                        <td>
+                                            <input type="submit" id="" value="Подобрать" class="mf-button">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            </form>
+
+                            <div class="fastsearch-result">
+                                <div class="info">Цена за 1 ночь</div>
+                                <table>
+                                    <col width="10%">
+                                    <col width="53%">
+                                    <col width="10%">
+                                    <col width="17%">
+                                    <col width="10%">
+                                    <thead>
+                                        <tr>
+                                            <th class="first">&nbsp;</th>
+                                            <th>Тип номера</th>
+                                            <th class="persons">Число гостей</th>
+                                            <th class="price">Цена</th>
+                                            <th class="last">&nbsp;</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="first"><a href=""><img src="images/tmp/rr1.jpg" height="65" width="95" alt=""></a></td>
+                                            <td><a href="" class="title">Двухместный номер с 1 кроватью или 2 отдельными кроватями: лечение включено </a></td>
+                                            <td class="persons">
+                                                <div class="person"></div>
+                                                <div class="person"></div>
+                                            </td>
+                                            <td class="price">18 600 <span class="icon-r"></span></td>
+                                            <td class="last"><input type="button" class="addfeed" value="Забронировать"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="first"><a href=""><img src="images/tmp/rr1.jpg" height="65" width="95" alt=""></a></td>
+                                            <td><a href="" class="title">Двухместный номер с 1 кроватью или 2 отдельными кроватями: лечение включено </a></td>
+                                            <td class="persons">
+                                                <div class="person"></div>
+                                                <div class="person"></div>
+                                            </td>
+                                            <td class="price">18 600 <span class="icon-r"></span></td>
+                                            <td class="last"><input type="button" class="addfeed" value="Забронировать"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="first"><a href=""><img src="images/tmp/rr1.jpg" height="65" width="95" alt=""></a></td>
+                                            <td><a href="" class="title">Двухместный номер с 1 кроватью или 2 отдельными кроватями: лечение включено </a></td>
+                                            <td class="persons">
+                                                <div class="person"></div>
+                                                <div class="person"></div>
+                                            </td>
+                                            <td class="price">318 600 <span class="icon-r"></span></td>
+                                            <td class="last"><input type="button" class="addfeed" value="Забронировать"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!--  -->
+
+                        <div class="services">
+                            <h3>УДОБСТВА И УСЛУГИ</h3>
+
+                            <table>
+                                <tr>
+                                    <td class="label">
+                                        <span class="icon i1">Общие</span>
+                                    </td>
+                                    <td class="value">
+                                        Номера для некурящих, Лифт, Сейф, Звукоизолированные номера, Отопление, Магазины в отеле, Специальные номера для аллергиков , Курение на всей территории отеля и в номерах запрещено, Места для курения 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label">
+                                        <span class="icon i2">Сервисы</span>
+                                    </td>
+                                    <td class="value">
+                                        Круглосуточная стойка регистрации, Ускоренная регистрация заезда/отъезда, Обслуживание номеров, Конференц-зал/Банкетный зал, Трансфер до/из аэропорта, Бизнес-центр, Няня/Услуги по уходу за детьми, Прачечная, Химчистка, Парикмахерская/Салон красоты, V.I.P. Услуги, Услуги по глажению одежды, Сувенирный магазин, Экскурсионное бюро, Факс/Ксерокопирование, Услуги по продаже билетов, Банкомат на территории отеля, Услуги консьержа, Трансфер (за дополнительную плату) 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label">
+                                        <span class="icon i3">Питание и напитки</span>
+                                    </td>
+                                    <td class="value">
+                                        Ресторан, Бар, Ресторан (меню), Ресторан ("шведский стол") 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label">
+                                        <span class="icon i4">Спорт и Отдых</span>
+                                    </td>
+                                    <td class="value">
+                                        Фитнес-центр, Игровая комната, Солярий, Спа и оздоровительный центр, Массаж, Детская игровая площадка, Бильярд, Настольный теннис, Караоке, Библиотека, Пешие прогулки, Велоспорт, Турецкая/Паровая баня, Крытый плавательный бассейн , Крытый бассейн (работает круглый год), Прокат велосипедов, Анимационный персонал 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label">
+                                        <span class="icon i5">На свежем воздухе</span>
+                                    </td>
+                                    <td class="value">
+                                        Терраса, Барбекю 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label">
+                                        <span class="icon i6">Интернет</span>
+                                    </td>
+                                    <td class="value">
+                                        <strong>Бесплатно!</strong> Wi-Fi предоставляется на территории всего отеля бесплатно
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label">
+                                        <span class="icon i7">Бассейн</span>
+                                    </td>
+                                    <td class="value">
+                                        Занятия аквааэробикой, которые  проводятся в бассейне каждое утро под зажигательную музыку. 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label">
+                                        <span class="icon i8">Парковка</span>
+                                    </td>
+                                    <td class="value">
+                                        <strong>Бесплатно!</strong>  Бесплатная Частная парковка на месте (требуется предварительный заказ) 
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <!--  -->
+
+                        <div class="innerslider">
+                            <h3>ЛЕЧЕНИЕ И СПА</h3>
+
+                            <div id="carousel-image-text-horizontal" class="touchcarousel  three-d">      
+                                <ul class="touchcarousel-container">
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>  
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>    
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>              
+                                </ul>
+                            </div>
+
+                            <p>Медицинский центр санатория занимает территорию более 3 тыс. квадратных метров и оснащен новейшим оборудованием закупленном в Германии, Голландии, России и других странах.</p>
+
+                            <p>В санатории создана мощная современная лечебно-диагностическая база. Квалифицированный медицинский персонал, прошедший обучение как в России, так и за рубежом, поможет сделать Ваше лечение приятным и эффективным.</p>
+                        </div>
+
+                        <!--  -->
+
+                        <div class="accordion">
+                            <div class="item">
+                                <div class="title">
+                                    <span class="arrow"></span>
+                                    <a href="javascript:;">СПЕЦИАЛИЗИРОВАННАЯ ПРОГРАММА САНАТОРНО–КУРОРТНОГО ЛЕЧЕНИЯ АЛЛЕРГИЧЕСКИХ ЗАБОЛЕВАНИЙ<br><em>Минимальная продолжительность от 14 дней</em></a>
+                                </div>
+
+                                <div class="description">
+                                    <table>
+                                        <col width="74%">
+                                        <col width="13%">
+                                        <col width="13%">
+                                        <thead>
+                                            <tr>
+                                                <th>Рекомендуемый перечень процедур</th>
+                                                <th class="center">14 дней</th>
+                                                <th class="center">21 день</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="3" class="subtitle">Диагностический блок</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Первичный прием и динамическое наблюдение кардиолога</td>
+                                                <td class="center">5</td>
+                                                <td class="center">6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Консультация офтальмолога, невролога. Консультация психотерапевта (по показаниям)</td>
+                                                <td class="center">5</td>
+                                                <td class="center">6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Клинический анализ крови (по показаниям)</td>
+                                                <td class="center">5</td>
+                                                <td class="center">6</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" class="subtitle">Оздоровительный блок</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Бассейн – свободное плавание с термотерапией  — 1 час</td>
+                                                <td colspan="2" class="center">ежедневно</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Естественный солярий на климатической террасе или лечебный сон под открытым небом 2 часа</td>
+                                                <td colspan="2" class="center">ежедневно</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="title">
+                                    <span class="arrow"></span>
+                                    <a href="javascript:;">СПЕЦИАЛИЗИРОВАННАЯ ПРОГРАММА САНАТОРНО–КУРОРТНОГО ЛЕЧЕНИЯ АЛЛЕРГИЧЕСКИХ ЗАБОЛЕВАНИЙ</a>
+                                </div>
+
+                                <div class="description">
+                                    <table>
+                                        <col width="74%">
+                                        <col width="13%">
+                                        <col width="13%">
+                                        <thead>
+                                            <tr>
+                                                <th>Рекомендуемый перечень процедур</th>
+                                                <th class="center">14 дней</th>
+                                                <th class="center">21 день</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="3" class="subtitle">Диагностический блок</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Первичный прием и динамическое наблюдение кардиолога</td>
+                                                <td class="center">5</td>
+                                                <td class="center">6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Консультация офтальмолога, невролога. Консультация психотерапевта (по показаниям)</td>
+                                                <td class="center">5</td>
+                                                <td class="center">6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Клинический анализ крови (по показаниям)</td>
+                                                <td class="center">5</td>
+                                                <td class="center">6</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" class="subtitle">Оздоровительный блок</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Бассейн – свободное плавание с термотерапией  — 1 час</td>
+                                                <td colspan="2" class="center">ежедневно</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Естественный солярий на климатической террасе или лечебный сон под открытым небом 2 часа</td>
+                                                <td colspan="2" class="center">ежедневно</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <h6>Ожидаемый эффект:</h6>
+
+                                    <p>нормализация основных параметров гемодинамики (пульс и АД), тенденция к нормализации липидного обмена, функции печени и поджелудочной железы,  снижение веса, улучшение качества жизни, восстановление валеологических показателей</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="title">
+                                    <span class="arrow"></span>
+                                    <a href="javascript:;">ПРОГРАММА ПРИ НАРУШЕНИЯХ СНА</a>
+                                </div>
+
+                                <div class="description">
+                                    <table>
+                                        <col width="74%">
+                                        <col width="13%">
+                                        <col width="13%">
+                                        <thead>
+                                            <tr>
+                                                <th>Рекомендуемый перечень процедур</th>
+                                                <th class="center">14 дней</th>
+                                                <th class="center">21 день</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="3" class="subtitle">Диагностический блок</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Первичный прием и динамическое наблюдение кардиолога</td>
+                                                <td class="center">5</td>
+                                                <td class="center">6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Консультация офтальмолога, невролога. Консультация психотерапевта (по показаниям)</td>
+                                                <td class="center">5</td>
+                                                <td class="center">6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Клинический анализ крови (по показаниям)</td>
+                                                <td class="center">5</td>
+                                                <td class="center">6</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" class="subtitle">Оздоровительный блок</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Бассейн – свободное плавание с термотерапией  — 1 час</td>
+                                                <td colspan="2" class="center">ежедневно</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Естественный солярий на климатической террасе или лечебный сон под открытым небом 2 часа</td>
+                                                <td colspan="2" class="center">ежедневно</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <h6>Ожидаемый эффект:</h6>
+
+                                    <p>нормализация основных параметров гемодинамики (пульс и АД), тенденция к нормализации липидного обмена, функции печени и поджелудочной железы,  снижение веса, улучшение качества жизни, восстановление валеологических показателей</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="title">
+                                    <span class="arrow"></span>
+                                    <a href="javascript:;">СПЕЦИАЛИЗИРОВАННАЯ САНАТОРНО-КУРОРТНАЯ ПРОГРАММА «КОРРЕКЦИЯ МЕТАБОЛИЧЕСКОГО СИНДРОМА»</a>
+                                </div>
+
+                                <div class="description">
+                                    <table>
+                                        <col width="74%">
+                                        <col width="13%">
+                                        <col width="13%">
+                                        <thead>
+                                            <tr>
+                                                <th>Рекомендуемый перечень процедур</th>
+                                                <th class="center">14 дней</th>
+                                                <th class="center">21 день</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="3" class="subtitle">Диагностический блок</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Первичный прием и динамическое наблюдение кардиолога</td>
+                                                <td class="center">5</td>
+                                                <td class="center">6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Консультация офтальмолога, невролога. Консультация психотерапевта (по показаниям)</td>
+                                                <td class="center">5</td>
+                                                <td class="center">6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Клинический анализ крови (по показаниям)</td>
+                                                <td class="center">5</td>
+                                                <td class="center">6</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" class="subtitle">Оздоровительный блок</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Бассейн – свободное плавание с термотерапией  — 1 час</td>
+                                                <td colspan="2" class="center">ежедневно</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Естественный солярий на климатической террасе или лечебный сон под открытым небом 2 часа</td>
+                                                <td colspan="2" class="center">ежедневно</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <h6>Ожидаемый эффект:</h6>
+
+                                    <p>нормализация основных параметров гемодинамики (пульс и АД), тенденция к нормализации липидного обмена, функции печени и поджелудочной железы,  снижение веса, улучшение качества жизни, восстановление валеологических показателей</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  -->
+
+                        <div class="services">
+                            <h3>УДОБСТВА И УСЛУГИ</h3>
+
+                            <table>
+                                <tr>
+                                    <td class="label">
+                                        <div class="subtitle">Регистрация заезда</div>
+                                    </td>
+                                    <td class="value vt">
+                                        C 14:00 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label vt">
+                                        <div class="subtitle">Регистрация заезда</div>
+                                    </td>
+                                    <td class="value">
+                                        C 14:00 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label vt">
+                                        <div class="subtitle">Отмена бронирования / Предоплата</div>
+                                    </td>
+                                    <td class="value">
+                                        Правила отмены бронирования и предоплаты зависят от категории номера. Пожалуйста, ознакомьтесь с условиями бронирования номера при выборе номера из показанных выше. 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label vt">
+                                        <div class="subtitle">Отмена бронирования / Предоплата</div>
+                                    </td>
+                                    <td class="value">
+                                        При размещении всех детей младше 2 лет на детских кроватках взимается RUB 1200 с человека за ночь.<br>
+                                        При размещении всех детей в возрасте от 2 до 4 лет на дополнительных кроватях взимается RUB 1650 с человека за ночь.<br>
+                                        При размещении всех детей в возрасте от 4 до 12 лет на дополнительных кроватях взимается 60 % от стоимости номера за ночь за человека.<br>
+                                        При размещении всех детей старшего возраста или взрослых на дополнительных кроватях взимается 70 % от стоимости номера за ночь за человека.
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <!--  -->
+
+                        <div class="innerslider">
+                            <h3>ДОСУГ И РАЗВЛЕЧЕНИЕ</h3>
+
+                            <div id="carousel-image-text-horizontal2" class="touchcarousel  three-d">      
+                                <ul class="touchcarousel-container">
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>  
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>    
+                                    <li class="touchcarousel-item">
+                                        <img src="images/tmp/sss.jpg" height="125" width="188" alt="">
+                                    </li>              
+                                </ul>
+                            </div>
+
+                            <p>Обслуживание в отдельном VIP-зале предусмотрено для гостей за дополнительную плату, а также включено в стоимость для гостей, проживающих в номерах апартаменты. Индивидуальный сервис и неповторимая атмосфера к Вашим услугам. Здесь Вам также предложат спиртные, прохладительные напитки и a’la carte меню.</p>
+                        </div>
+
+                        <!--  -->
+
+                        <div class="accordion">
+                            <div class="item">
+                                <div class="title">
+                                    <span class="arrow"></span>
+                                    <a href="javascript:;">СПЕЦИАЛИЗИРОВАННАЯ САНАТОРНО-КУРОРТНАЯ ПРОГРАММА «КОРРЕКЦИЯ МЕТАБОЛИЧЕСКОГО СИНДРОМА»</a>
+                                </div>
+
+                                <div class="description">
+                                    <div class="times">
+                                        <img src="images/tmp/tt1.jpg" height="125" width="188" alt="">
+                                        <div class="times-text">
+                                            <h5>Главный обеденный зал «Панорама»</h5>
+
+                                            <p><strong>Часы работы:</strong></p>
+
+                                            <p>Завтрак с 7.30 до 10.00 ежедневно</p>
+
+                                            <p>Обед с 12.30 до 14.30 ежедневно</p>
+
+                                            <p>Ужин с 18.00 до 20.00 ежедневно</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="times">
+                                        <img src="images/tmp/tt1.jpg" height="125" width="188" alt="">
+                                        <div class="times-text">
+                                            <h5>Главный обеденный зал «Панорама»</h5>
+
+                                            <p><strong>Часы работы:</strong></p>
+
+                                            <p>Завтрак с 7.30 до 10.00 ежедневно</p>
+
+                                            <p>Обед с 12.30 до 14.30 ежедневно</p>
+
+                                            <p>Ужин с 18.00 до 20.00 ежедневно</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="times">
+                                        <img src="images/tmp/tt1.jpg" height="125" width="188" alt="">
+                                        <div class="times-text">
+                                            <h5>Главный обеденный зал «Панорама»</h5>
+
+                                            <p><strong>Часы работы:</strong></p>
+
+                                            <p>Завтрак с 7.30 до 10.00 ежедневно</p>
+
+                                            <p>Обед с 12.30 до 14.30 ежедневно</p>
+
+                                            <p>Ужин с 18.00 до 20.00 ежедневно</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="title">
+                                    <span class="arrow"></span>
+                                    <a href="javascript:;">СПЕЦИАЛИЗИРОВАННАЯ САНАТОРНО-КУРОРТНАЯ ПРОГРАММА «КОРРЕКЦИЯ МЕТАБОЛИЧЕСКОГО СИНДРОМА»</a>
+                                </div>
+
+                                <div class="description">
+                                    <div class="times">
+                                        <img src="images/tmp/tt1.jpg" height="125" width="188" alt="">
+                                        <div class="times-text">
+                                            <h5>Главный обеденный зал «Панорама»</h5>
+
+                                            <p><strong>Часы работы:</strong></p>
+
+                                            <p>Завтрак с 7.30 до 10.00 ежедневно</p>
+
+                                            <p>Обед с 12.30 до 14.30 ежедневно</p>
+
+                                            <p>Ужин с 18.00 до 20.00 ежедневно</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="times">
+                                        <img src="images/tmp/tt1.jpg" height="125" width="188" alt="">
+                                        <div class="times-text">
+                                            <h5>Главный обеденный зал «Панорама»</h5>
+
+                                            <p><strong>Часы работы:</strong></p>
+
+                                            <p>Завтрак с 7.30 до 10.00 ежедневно</p>
+
+                                            <p>Обед с 12.30 до 14.30 ежедневно</p>
+
+                                            <p>Ужин с 18.00 до 20.00 ежедневно</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="times">
+                                        <img src="images/tmp/tt1.jpg" height="125" width="188" alt="">
+                                        <div class="times-text">
+                                            <h5>Главный обеденный зал «Панорама»</h5>
+
+                                            <p><strong>Часы работы:</strong></p>
+
+                                            <p>Завтрак с 7.30 до 10.00 ежедневно</p>
+
+                                            <p>Обед с 12.30 до 14.30 ежедневно</p>
+
+                                            <p>Ужин с 18.00 до 20.00 ежедневно</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  -->
+
+                        <div class="services">
+                            <h3>ВАЖНАЯ ИНФОРМАЦИЯ</h3>
+
+                            <p>Обратите внимание, что санаторно-курортные программы можно посещать только при проживании от 10 суток. Оздоровительные программы производятся при бронировании от 3 суток. В случае бронирования менее чем на 3 суток обслуживание по оздоровительным и санаторно-курортным программам не предоставляется. Услуги в рамках лечебных и оздоровительных программ осуществляются за дополнительную плату.</p>
+
+                            <h6>Мы гарантируем</h6>
+
+                            <ul>
+                                <li>Безопасность. При бронировании на нашем сайте введенные вами данные защищаются безопасным соединением.</li>
+                                <li>Конфиденциальность. Ваша информация будет использоваться только для гарантии бронирования.</li>
+                                <li>Отсутствие комиссии. Вы платите только отелю. Компания Booking.com никогда не списывает деньги с вашей кредитной карты.</li>
+                                <li>Гарантированная лучшая цена. Нашли в Интернете забронированный вами номер дешевле? Мы предложим вам ту же цену.</li>
+                            </ul>
+                        </div>
+
+                        <!-- inner feeds -->
+
+                        <div class="feeds-inner">
+                            <h3>ОТЗЫВЫ</h3>
+
+                            <div class="rateit clearfix">
+                                <div class="total">
+                                    <div class="title">Общая оценка отеля</div>                                    
+
+                                    <div class="search-rating">
+                                        <big>Хорошо</big>, 7.7 /10
+                                        <div class="total-count">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="count">Оценка по 11 отзывам</div>
+                                    </div>
+                                </div>
+
+                                <div class="vote">
+                                    <div class="title">Составные части оценки</div>
+
+                                    <table>
+                                        <tr>
+                                            <td class="label">Чистота</td>
+                                            <td class="value">
+                                                8.4
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label">Комфорт</td>
+                                            <td class="value">
+                                                8
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label">Месторасположение </td>
+                                            <td class="value">
+                                                8.4
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label">Удобства</td>
+                                            <td class="value">
+                                                7.5
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label">Персонал</td>
+                                            <td class="value">
+                                                7.7
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label">Соотношение цена/качество</td>
+                                            <td class="value">
+                                                6.1
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!--  -->
+
+                            <div class="feeds-static">
+                                <div class="feed-item">
+                                    <div class="title"><strong>Максим</strong>, 3 Июля 2013</div>
+
+                                    <div class="wrapper">
+                                        Санаторий оставил очень хорошее впечатление, причем дважды. Удобное расположение. Хороший ,приветливый, вышколенный персонал. Чистые комнаты. Хорошее питание. Большой спектр процедур и обследований 
+                                        <div class="arrow"></div>
+                                    </div>
+
+                                    <div class="total-count">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <span class="number">4</span>
+                                    </div>
+                                </div>     
+
+                                <div class="feed-item">
+                                    <div class="title"><strong>Максим</strong>, 3 Июля 2013</div>
+
+                                    <div class="wrapper">
+                                        Санаторий оставил очень хорошее впечатление, причем дважды. Удобное расположение. Хороший ,приветливый, вышколенный персонал. Чистые комнаты. Хорошее питание. Большой спектр процедур и обследований 
+                                        <div class="arrow"></div>
+                                    </div>
+
+                                    <div class="total-count">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <span class="number">4</span>
+                                    </div>
+                                </div>     
+
+                                <div class="feed-item">
+                                    <div class="title"><strong>Максим</strong>, 3 Июля 2013</div>
+
+                                    <div class="wrapper">
+                                        Санаторий оставил очень хорошее впечатление, причем дважды. Удобное расположение. Хороший ,приветливый, вышколенный персонал. Чистые комнаты. Хорошее питание. Большой спектр процедур и обследований 
+                                        <div class="arrow"></div>
+                                    </div>
+
+                                    <div class="total-count">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <span class="number">4</span>
+                                    </div>
+                                </div>     
+
+                                <div class="feed-item">
+                                    <div class="title"><strong>Максим</strong>, 3 Июля 2013</div>
+
+                                    <div class="wrapper">
+                                        Санаторий оставил очень хорошее впечатление, причем дважды. Удобное расположение. Хороший ,приветливый, вышколенный персонал. Чистые комнаты. Хорошее питание. Большой спектр процедур и обследований 
+                                        <div class="arrow"></div>
+                                    </div>
+
+                                    <div class="total-count">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <span class="number">4</span>
+                                    </div>
+                                </div>     
+
+                                <div class="feed-item">
+                                    <div class="title"><strong>Максим</strong>, 3 Июля 2013</div>
+
+                                    <div class="wrapper">
+                                        Санаторий оставил очень хорошее впечатление, причем дважды. Удобное расположение. Хороший ,приветливый, вышколенный персонал. Чистые комнаты. Хорошее питание. Большой спектр процедур и обследований 
+                                        <div class="arrow"></div>
+                                    </div>
+
+                                    <div class="total-count">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <span class="number">4</span>
+                                    </div>
+                                </div>     
+
+                                <div class="feed-item">
+                                    <div class="title"><strong>Максим</strong>, 3 Июля 2013</div>
+
+                                    <div class="wrapper">
+                                        Санаторий оставил очень хорошее впечатление, причем дважды. Удобное расположение. Хороший ,приветливый, вышколенный персонал. Чистые комнаты. Хорошее питание. Большой спектр процедур и обследований 
+                                        <div class="arrow"></div>
+                                    </div>
+
+                                    <div class="total-count">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <span class="number">4</span>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-wrapper">
+                    <div class="footer-copyright">
+                        <p>Copyright © 2013 <a href="">fedkurort.ru</a>. Все права защищены</p>
+
+                        <p>Федеральные курорты России<br>
+                        При поддержке министерства курортов и туризма Ставропольского края</p>
+                    </div>
+
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="" title="">О проекте</a></li>
+                            <li><a href="" title="">Условия и правила</a></li>
+                            <li><a href="" title="">Курорты</a></li>
+                            <li><a href="" title="">Санатории</a></li>
+                            <li><a href="" title="">Реклама</a></li>
+                            <li><a href="" title="">Контакты</a></li>
+                            <li><a href="" title="">Партнерам</a></li>
+                            <li><a href="" title="">Обратная связь</a></li>
+                            <li><a href="" title="">Помощь</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <script src="js/call.js"></script>
+    </body>
+</html>

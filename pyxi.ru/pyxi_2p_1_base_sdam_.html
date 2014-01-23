@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+
+        <link rel="stylesheet" href="js/anythingslider/anythingslider.css">
+        <script src="js/anythingslider/jquery.anythingslider.js"></script>
+
+        <script type="text/javascript" src="js/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+        <link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+        <script src="js/jquery.inputmask.js"></script>
+
+        <link href="js/jquery-ui/css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+        <script src="js/jquery-ui/js/jquery-ui-1.10.3.custom.js"></script>
+        <script>
+        $(function() {
+            $( ".radiobox" ).buttonset();
+        });
+        </script>
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <header>
+                <div class="header-top">                    
+                    <div class="header-wrapper clearfix">
+                        <div class="header-phone">+7 (499) 653-64-06</div>
+
+                        <div class="header-question"><a href="">Задать вопрос</a></div>
+                        <div class="header-email"><a href="mailto:info@pyxi.ru">info@pyxi.ru</a></div>
+
+                        <div class="header-register"><a href="">Регистрация</a></div>
+                        <div class="header-login"><a href="">Вход</a></div>
+                    </div>
+                </div>
+
+                <div class="header-menu has-submenu">                    
+                    <div class="header-wrapper clearfix">
+                        <ul>
+                            <li><a href="javascript:;" title="">Тарифы</a>
+                                <ul>
+                                    <li class="active"><a href="" title="">Сдам</a></li>
+                                    <li><a href="" title="">Избранное <span class="count">(5)</span></a></li>
+                                    <li><a href="" title="">Архив</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:;" title="">Услуги</a>
+                                <ul>
+                                    <li class="active"><a href="" title="">Сдам</a></li>
+                                    <li><a href="" title="">Продам</a></li>
+                                    <li><a href="" title="">Архив</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a href="javascript:;" title="">База</a>
+                                <ul>
+                                    <li><a href="" title="">Сниму</a></li>
+                                    <li><a href="" title="">Избранное <span class="count">(5)</span></a></li>
+                                    <li><a href="" title="">Архив</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:;" title="">Личный кабинет</a>
+                                <ul>
+                                    <li class="active"><a href="" title="">Сдам</a></li>
+                                    <li><a href="" title="">Архив</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:;" title="">Сайт</a>
+                                <ul>
+                                    <li class="active"><a href="" title="">Сдам</a></li>
+                                    <li><a href="" title="">Сниму</a></li>
+                                    <li><a href="" title="">Продам</a></li>
+                                    <li><a href="" title="">Избранное <span class="count">(5)</span></a></li>
+                                    <li><a href="" title="">Архив</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <a href=""><img src="images/header-logo.png" height="39" width="101" alt="" class="header-logo" /></a>
+                    </div>
+                </div>
+            </header>
+
+            <div id="wrap">
+                <div class="content">
+                    <!-- user nav -->
+                    <div class="usernav clearfix">
+                        <div class="usernav-search">
+                            <form action="">
+                                <input type="text" id="" value="" class="usernav-search-input" placeholder="поиск" />
+                            </form>
+                        </div>
+
+                        <div class="usernav-bonus">
+                            Бонусы: <strong>0</strong>
+                            <a href="javascript:;" class="usernav-q"></a>
+                        </div>
+
+                        <div class="usernav-pay">
+                            Выкупы: <strong>0</strong>
+                            <a href="" class="usernav-button">купить</a>
+                        </div>
+                    </div>
+
+                    <!-- rent -->
+                    <div class="rent">
+                        <table>
+                            <col width="5%" />
+                            <col width="7%" />
+                            <col width="7%" />
+                            <col width="22%" />
+                            <col width="7%" />
+                            <col width="7%" />
+                            <col width="13%" />
+                            <col width="22%" />
+                            <col width="10%" />
+                            <col width="14%" />
+                            <thead>
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <th>Дата</th>
+                                    <th>Комн</th>
+                                    <th>Расположение</th>
+                                    <th>Этаж</th>
+                                    <th>Меб/тех</th>
+                                    <th>Условия</th>
+                                    <th>Комментарий</th>
+                                    <th>Цена</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>1к</td>
+                                    <td>
+                                        25 мин. транспортом<br />
+                                        м. Молодежная Одинцово<br />
+                                        Говорова, д. 50
+                                    </td>
+                                    <td>9/17</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="green">Хол+</span>
+                                    </td>
+                                    <td>
+                                        1Ж,<br />
+                                        <span class="green">Славян</span><br />
+                                        <span class="red">Без животных.</span></span><br />
+                                        <span class="red">Без детей.</span>
+                                    </td>
+                                    <td>
+                                        <span class="green">Балкон.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        39/-/10, еврорем, консьерж,<br />
+                                        инет
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">34 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>2</strong><br />
+                                        Собственник<br />
+                                        +79055053811<br />
+
+                                        <br />
+
+                                        <div class="rent-abuse rent-link"><a href="#popup-abuse" class="fancybox">Пожаловаться</a></div>
+                                        <div class="rent-link"><a href="">Выкупить</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>   
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>Комн</td>
+                                    <td>
+                                        4 мин. пешком<br />
+                                        м. Парк Победы<br />
+                                        Дениса Давыдова, д. 12/1
+                                    </td>
+                                    <td>2/2</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="red">Хол-</span>
+                                    </td>
+                                    <td>
+                                        1Ж
+                                    </td>
+                                    <td>
+                                        <span class="red">Cубаренда.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        15 м2  в3-к, хор комн, соседи<br />
+                                        2-ж и 1-м
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">17 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>0</strong><br />
+                                        Субаренда<br />
+
+                                        <br />
+
+                                        <div class="rent-link"><a href="">Открыть контакт</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>1к</td>
+                                    <td>
+                                        25 мин. транспортом<br />
+                                        м. Молодежная Одинцово<br />
+                                        Говорова, д. 50
+                                    </td>
+                                    <td>9/17</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="green">Хол+</span>
+                                    </td>
+                                    <td>
+                                        1Ж,<br />
+                                        <span class="green">Славян</span><br />
+                                        <span class="red">Без животных.</span></span><br />
+                                        <span class="red">Без детей.</span>
+                                    </td>
+                                    <td>
+                                        <span class="green">Балкон.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        39/-/10, еврорем, консьерж,<br />
+                                        инет
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">34 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>2</strong><br />
+                                        Собственник<br />
+                                        +79055053811<br />
+
+                                        <br />
+
+                                        <div class="rent-abuse rent-link"><a href="#popup-abuse" class="fancybox">Пожаловаться</a></div>
+                                        <div class="rent-link"><a href="">Выкупить</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>   
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>Комн</td>
+                                    <td>
+                                        4 мин. пешком<br />
+                                        м. Парк Победы<br />
+                                        Дениса Давыдова, д. 12/1
+                                    </td>
+                                    <td>2/2</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="red">Хол-</span>
+                                    </td>
+                                    <td>
+                                        1Ж
+                                    </td>
+                                    <td>
+                                        <span class="red">Cубаренда.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        15 м2  в3-к, хор комн, соседи<br />
+                                        2-ж и 1-м
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">17 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>0</strong><br />
+                                        Субаренда<br />
+
+                                        <br />
+
+                                        <div class="rent-link"><a href="">Открыть контакт</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>1к</td>
+                                    <td>
+                                        25 мин. транспортом<br />
+                                        м. Молодежная Одинцово<br />
+                                        Говорова, д. 50
+                                    </td>
+                                    <td>9/17</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="green">Хол+</span>
+                                    </td>
+                                    <td>
+                                        1Ж,<br />
+                                        <span class="green">Славян</span><br />
+                                        <span class="red">Без животных.</span></span><br />
+                                        <span class="red">Без детей.</span>
+                                    </td>
+                                    <td>
+                                        <span class="green">Балкон.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        39/-/10, еврорем, консьерж,<br />
+                                        инет
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">34 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>2</strong><br />
+                                        Собственник<br />
+                                        +79055053811<br />
+
+                                        <br />
+
+                                        <div class="rent-abuse rent-link"><a href="#popup-abuse" class="fancybox">Пожаловаться</a></div>
+                                        <div class="rent-link"><a href="">Выкупить</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>   
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>Комн</td>
+                                    <td>
+                                        4 мин. пешком<br />
+                                        м. Парк Победы<br />
+                                        Дениса Давыдова, д. 12/1
+                                    </td>
+                                    <td>2/2</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="red">Хол-</span>
+                                    </td>
+                                    <td>
+                                        1Ж
+                                    </td>
+                                    <td>
+                                        <span class="red">Cубаренда.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        15 м2  в3-к, хор комн, соседи<br />
+                                        2-ж и 1-м
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">17 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>0</strong><br />
+                                        Субаренда<br />
+
+                                        <br />
+
+                                        <div class="rent-link"><a href="">Открыть контакт</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>1к</td>
+                                    <td>
+                                        25 мин. транспортом<br />
+                                        м. Молодежная Одинцово<br />
+                                        Говорова, д. 50
+                                    </td>
+                                    <td>9/17</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="green">Хол+</span>
+                                    </td>
+                                    <td>
+                                        1Ж,<br />
+                                        <span class="green">Славян</span><br />
+                                        <span class="red">Без животных.</span></span><br />
+                                        <span class="red">Без детей.</span>
+                                    </td>
+                                    <td>
+                                        <span class="green">Балкон.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        39/-/10, еврорем, консьерж,<br />
+                                        инет
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">34 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>2</strong><br />
+                                        Собственник<br />
+                                        +79055053811<br />
+
+                                        <br />
+
+                                        <div class="rent-abuse rent-link"><a href="#popup-abuse" class="fancybox">Пожаловаться</a></div>
+                                        <div class="rent-link"><a href="">Выкупить</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>   
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>Комн</td>
+                                    <td>
+                                        4 мин. пешком<br />
+                                        м. Парк Победы<br />
+                                        Дениса Давыдова, д. 12/1
+                                    </td>
+                                    <td>2/2</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="red">Хол-</span>
+                                    </td>
+                                    <td>
+                                        1Ж
+                                    </td>
+                                    <td>
+                                        <span class="red">Cубаренда.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        15 м2  в3-к, хор комн, соседи<br />
+                                        2-ж и 1-м
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">17 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>0</strong><br />
+                                        Субаренда<br />
+
+                                        <br />
+
+                                        <div class="rent-link"><a href="">Открыть контакт</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>1к</td>
+                                    <td>
+                                        25 мин. транспортом<br />
+                                        м. Молодежная Одинцово<br />
+                                        Говорова, д. 50
+                                    </td>
+                                    <td>9/17</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="green">Хол+</span>
+                                    </td>
+                                    <td>
+                                        1Ж,<br />
+                                        <span class="green">Славян</span><br />
+                                        <span class="red">Без животных.</span></span><br />
+                                        <span class="red">Без детей.</span>
+                                    </td>
+                                    <td>
+                                        <span class="green">Балкон.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        39/-/10, еврорем, консьерж,<br />
+                                        инет
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">34 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>2</strong><br />
+                                        Собственник<br />
+                                        +79055053811<br />
+
+                                        <br />
+
+                                        <div class="rent-abuse rent-link"><a href="#popup-abuse" class="fancybox">Пожаловаться</a></div>
+                                        <div class="rent-link"><a href="">Выкупить</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>   
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>Комн</td>
+                                    <td>
+                                        4 мин. пешком<br />
+                                        м. Парк Победы<br />
+                                        Дениса Давыдова, д. 12/1
+                                    </td>
+                                    <td>2/2</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="red">Хол-</span>
+                                    </td>
+                                    <td>
+                                        1Ж
+                                    </td>
+                                    <td>
+                                        <span class="red">Cубаренда.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        15 м2  в3-к, хор комн, соседи<br />
+                                        2-ж и 1-м
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">17 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>0</strong><br />
+                                        Субаренда<br />
+
+                                        <br />
+
+                                        <div class="rent-link"><a href="">Открыть контакт</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>1к</td>
+                                    <td>
+                                        25 мин. транспортом<br />
+                                        м. Молодежная Одинцово<br />
+                                        Говорова, д. 50
+                                    </td>
+                                    <td>9/17</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="green">Хол+</span>
+                                    </td>
+                                    <td>
+                                        1Ж,<br />
+                                        <span class="green">Славян</span><br />
+                                        <span class="red">Без животных.</span></span><br />
+                                        <span class="red">Без детей.</span>
+                                    </td>
+                                    <td>
+                                        <span class="green">Балкон.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        39/-/10, еврорем, консьерж,<br />
+                                        инет
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">34 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>2</strong><br />
+                                        Собственник<br />
+                                        +79055053811<br />
+
+                                        <br />
+
+                                        <div class="rent-abuse rent-link"><a href="#popup-abuse" class="fancybox">Пожаловаться</a></div>
+                                        <div class="rent-link"><a href="">Выкупить</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>   
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>Комн</td>
+                                    <td>
+                                        4 мин. пешком<br />
+                                        м. Парк Победы<br />
+                                        Дениса Давыдова, д. 12/1
+                                    </td>
+                                    <td>2/2</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="red">Хол-</span>
+                                    </td>
+                                    <td>
+                                        1Ж
+                                    </td>
+                                    <td>
+                                        <span class="red">Cубаренда.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        15 м2  в3-к, хор комн, соседи<br />
+                                        2-ж и 1-м
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">17 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>0</strong><br />
+                                        Субаренда<br />
+
+                                        <br />
+
+                                        <div class="rent-link"><a href="">Открыть контакт</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>1к</td>
+                                    <td>
+                                        25 мин. транспортом<br />
+                                        м. Молодежная Одинцово<br />
+                                        Говорова, д. 50
+                                    </td>
+                                    <td>9/17</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="green">Хол+</span>
+                                    </td>
+                                    <td>
+                                        1Ж,<br />
+                                        <span class="green">Славян</span><br />
+                                        <span class="red">Без животных.</span></span><br />
+                                        <span class="red">Без детей.</span>
+                                    </td>
+                                    <td>
+                                        <span class="green">Балкон.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        39/-/10, еврорем, консьерж,<br />
+                                        инет
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">34 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>2</strong><br />
+                                        Собственник<br />
+                                        +79055053811<br />
+
+                                        <br />
+
+                                        <div class="rent-abuse rent-link"><a href="#popup-abuse" class="fancybox">Пожаловаться</a></div>
+                                        <div class="rent-link"><a href="">Выкупить</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>   
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>Комн</td>
+                                    <td>
+                                        4 мин. пешком<br />
+                                        м. Парк Победы<br />
+                                        Дениса Давыдова, д. 12/1
+                                    </td>
+                                    <td>2/2</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="red">Хол-</span>
+                                    </td>
+                                    <td>
+                                        1Ж
+                                    </td>
+                                    <td>
+                                        <span class="red">Cубаренда.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        15 м2  в3-к, хор комн, соседи<br />
+                                        2-ж и 1-м
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">17 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>0</strong><br />
+                                        Субаренда<br />
+
+                                        <br />
+
+                                        <div class="rent-link"><a href="">Открыть контакт</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>1к</td>
+                                    <td>
+                                        25 мин. транспортом<br />
+                                        м. Молодежная Одинцово<br />
+                                        Говорова, д. 50
+                                    </td>
+                                    <td>9/17</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="green">Хол+</span>
+                                    </td>
+                                    <td>
+                                        1Ж,<br />
+                                        <span class="green">Славян</span><br />
+                                        <span class="red">Без животных.</span></span><br />
+                                        <span class="red">Без детей.</span>
+                                    </td>
+                                    <td>
+                                        <span class="green">Балкон.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        39/-/10, еврорем, консьерж,<br />
+                                        инет
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">34 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>2</strong><br />
+                                        Собственник<br />
+                                        +79055053811<br />
+
+                                        <br />
+
+                                        <div class="rent-abuse rent-link"><a href="#popup-abuse" class="fancybox">Пожаловаться</a></div>
+                                        <div class="rent-link"><a href="">Выкупить</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>   
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>Комн</td>
+                                    <td>
+                                        4 мин. пешком<br />
+                                        м. Парк Победы<br />
+                                        Дениса Давыдова, д. 12/1
+                                    </td>
+                                    <td>2/2</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="red">Хол-</span>
+                                    </td>
+                                    <td>
+                                        1Ж
+                                    </td>
+                                    <td>
+                                        <span class="red">Cубаренда.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        15 м2  в3-к, хор комн, соседи<br />
+                                        2-ж и 1-м
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">17 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>0</strong><br />
+                                        Субаренда<br />
+
+                                        <br />
+
+                                        <div class="rent-link"><a href="">Открыть контакт</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>1к</td>
+                                    <td>
+                                        25 мин. транспортом<br />
+                                        м. Молодежная Одинцово<br />
+                                        Говорова, д. 50
+                                    </td>
+                                    <td>9/17</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="green">Хол+</span>
+                                    </td>
+                                    <td>
+                                        1Ж,<br />
+                                        <span class="green">Славян</span><br />
+                                        <span class="red">Без животных.</span></span><br />
+                                        <span class="red">Без детей.</span>
+                                    </td>
+                                    <td>
+                                        <span class="green">Балкон.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        39/-/10, еврорем, консьерж,<br />
+                                        инет
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">34 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>2</strong><br />
+                                        Собственник<br />
+                                        +79055053811<br />
+
+                                        <br />
+
+                                        <div class="rent-abuse rent-link"><a href="#popup-abuse" class="fancybox">Пожаловаться</a></div>
+                                        <div class="rent-link"><a href="">Выкупить</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>   
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>Комн</td>
+                                    <td>
+                                        4 мин. пешком<br />
+                                        м. Парк Победы<br />
+                                        Дениса Давыдова, д. 12/1
+                                    </td>
+                                    <td>2/2</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="red">Хол-</span>
+                                    </td>
+                                    <td>
+                                        1Ж
+                                    </td>
+                                    <td>
+                                        <span class="red">Cубаренда.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        15 м2  в3-к, хор комн, соседи<br />
+                                        2-ж и 1-м
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">17 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>0</strong><br />
+                                        Субаренда<br />
+
+                                        <br />
+
+                                        <div class="rent-link"><a href="">Открыть контакт</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>1к</td>
+                                    <td>
+                                        25 мин. транспортом<br />
+                                        м. Молодежная Одинцово<br />
+                                        Говорова, д. 50
+                                    </td>
+                                    <td>9/17</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="green">Хол+</span>
+                                    </td>
+                                    <td>
+                                        1Ж,<br />
+                                        <span class="green">Славян</span><br />
+                                        <span class="red">Без животных.</span></span><br />
+                                        <span class="red">Без детей.</span>
+                                    </td>
+                                    <td>
+                                        <span class="green">Балкон.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        39/-/10, еврорем, консьерж,<br />
+                                        инет
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">34 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>2</strong><br />
+                                        Собственник<br />
+                                        +79055053811<br />
+
+                                        <br />
+
+                                        <div class="rent-abuse rent-link"><a href="#popup-abuse" class="fancybox">Пожаловаться</a></div>
+                                        <div class="rent-link"><a href="">Выкупить</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>   
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>Комн</td>
+                                    <td>
+                                        4 мин. пешком<br />
+                                        м. Парк Победы<br />
+                                        Дениса Давыдова, д. 12/1
+                                    </td>
+                                    <td>2/2</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="red">Хол-</span>
+                                    </td>
+                                    <td>
+                                        1Ж
+                                    </td>
+                                    <td>
+                                        <span class="red">Cубаренда.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        15 м2  в3-к, хор комн, соседи<br />
+                                        2-ж и 1-м
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">17 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>0</strong><br />
+                                        Субаренда<br />
+
+                                        <br />
+
+                                        <div class="rent-link"><a href="">Открыть контакт</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>1к</td>
+                                    <td>
+                                        25 мин. транспортом<br />
+                                        м. Молодежная Одинцово<br />
+                                        Говорова, д. 50
+                                    </td>
+                                    <td>9/17</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="green">Хол+</span>
+                                    </td>
+                                    <td>
+                                        1Ж,<br />
+                                        <span class="green">Славян</span><br />
+                                        <span class="red">Без животных.</span></span><br />
+                                        <span class="red">Без детей.</span>
+                                    </td>
+                                    <td>
+                                        <span class="green">Балкон.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        39/-/10, еврорем, консьерж,<br />
+                                        инет
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">34 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>2</strong><br />
+                                        Собственник<br />
+                                        +79055053811<br />
+
+                                        <br />
+
+                                        <div class="rent-abuse rent-link"><a href="#popup-abuse" class="fancybox">Пожаловаться</a></div>
+                                        <div class="rent-link"><a href="">Выкупить</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>   
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>Комн</td>
+                                    <td>
+                                        4 мин. пешком<br />
+                                        м. Парк Победы<br />
+                                        Дениса Давыдова, д. 12/1
+                                    </td>
+                                    <td>2/2</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="red">Хол-</span>
+                                    </td>
+                                    <td>
+                                        1Ж
+                                    </td>
+                                    <td>
+                                        <span class="red">Cубаренда.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        15 м2  в3-к, хор комн, соседи<br />
+                                        2-ж и 1-м
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">17 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>0</strong><br />
+                                        Субаренда<br />
+
+                                        <br />
+
+                                        <div class="rent-link"><a href="">Открыть контакт</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>1к</td>
+                                    <td>
+                                        25 мин. транспортом<br />
+                                        м. Молодежная Одинцово<br />
+                                        Говорова, д. 50
+                                    </td>
+                                    <td>9/17</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="green">Хол+</span>
+                                    </td>
+                                    <td>
+                                        1Ж,<br />
+                                        <span class="green">Славян</span><br />
+                                        <span class="red">Без животных.</span></span><br />
+                                        <span class="red">Без детей.</span>
+                                    </td>
+                                    <td>
+                                        <span class="green">Балкон.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        39/-/10, еврорем, консьерж,<br />
+                                        инет
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">34 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>2</strong><br />
+                                        Собственник<br />
+                                        +79055053811<br />
+
+                                        <br />
+
+                                        <div class="rent-abuse rent-link"><a href="#popup-abuse" class="fancybox">Пожаловаться</a></div>
+                                        <div class="rent-link"><a href="">Выкупить</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>   
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>Комн</td>
+                                    <td>
+                                        4 мин. пешком<br />
+                                        м. Парк Победы<br />
+                                        Дениса Давыдова, д. 12/1
+                                    </td>
+                                    <td>2/2</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="red">Хол-</span>
+                                    </td>
+                                    <td>
+                                        1Ж
+                                    </td>
+                                    <td>
+                                        <span class="red">Cубаренда.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        15 м2  в3-к, хор комн, соседи<br />
+                                        2-ж и 1-м
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">17 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>0</strong><br />
+                                        Субаренда<br />
+
+                                        <br />
+
+                                        <div class="rent-link"><a href="">Открыть контакт</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>1к</td>
+                                    <td>
+                                        25 мин. транспортом<br />
+                                        м. Молодежная Одинцово<br />
+                                        Говорова, д. 50
+                                    </td>
+                                    <td>9/17</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="green">Хол+</span>
+                                    </td>
+                                    <td>
+                                        1Ж,<br />
+                                        <span class="green">Славян</span><br />
+                                        <span class="red">Без животных.</span></span><br />
+                                        <span class="red">Без детей.</span>
+                                    </td>
+                                    <td>
+                                        <span class="green">Балкон.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        39/-/10, еврорем, консьерж,<br />
+                                        инет
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">34 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>2</strong><br />
+                                        Собственник<br />
+                                        +79055053811<br />
+
+                                        <br />
+
+                                        <div class="rent-abuse rent-link"><a href="#popup-abuse" class="fancybox">Пожаловаться</a></div>
+                                        <div class="rent-link"><a href="">Выкупить</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>   
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>Комн</td>
+                                    <td>
+                                        4 мин. пешком<br />
+                                        м. Парк Победы<br />
+                                        Дениса Давыдова, д. 12/1
+                                    </td>
+                                    <td>2/2</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="red">Хол-</span>
+                                    </td>
+                                    <td>
+                                        1Ж
+                                    </td>
+                                    <td>
+                                        <span class="red">Cубаренда.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        15 м2  в3-к, хор комн, соседи<br />
+                                        2-ж и 1-м
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">17 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>0</strong><br />
+                                        Субаренда<br />
+
+                                        <br />
+
+                                        <div class="rent-link"><a href="">Открыть контакт</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>1к</td>
+                                    <td>
+                                        25 мин. транспортом<br />
+                                        м. Молодежная Одинцово<br />
+                                        Говорова, д. 50
+                                    </td>
+                                    <td>9/17</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="green">Хол+</span>
+                                    </td>
+                                    <td>
+                                        1Ж,<br />
+                                        <span class="green">Славян</span><br />
+                                        <span class="red">Без животных.</span></span><br />
+                                        <span class="red">Без детей.</span>
+                                    </td>
+                                    <td>
+                                        <span class="green">Балкон.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        39/-/10, еврорем, консьерж,<br />
+                                        инет
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">34 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>2</strong><br />
+                                        Собственник<br />
+                                        +79055053811<br />
+
+                                        <br />
+
+                                        <div class="rent-abuse rent-link"><a href="#popup-abuse" class="fancybox">Пожаловаться</a></div>
+                                        <div class="rent-link"><a href="">Выкупить</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>   
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>Комн</td>
+                                    <td>
+                                        4 мин. пешком<br />
+                                        м. Парк Победы<br />
+                                        Дениса Давыдова, д. 12/1
+                                    </td>
+                                    <td>2/2</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="red">Хол-</span>
+                                    </td>
+                                    <td>
+                                        1Ж
+                                    </td>
+                                    <td>
+                                        <span class="red">Cубаренда.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        15 м2  в3-к, хор комн, соседи<br />
+                                        2-ж и 1-м
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">17 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>0</strong><br />
+                                        Субаренда<br />
+
+                                        <br />
+
+                                        <div class="rent-link"><a href="">Открыть контакт</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>1к</td>
+                                    <td>
+                                        25 мин. транспортом<br />
+                                        м. Молодежная Одинцово<br />
+                                        Говорова, д. 50
+                                    </td>
+                                    <td>9/17</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="green">Хол+</span>
+                                    </td>
+                                    <td>
+                                        1Ж,<br />
+                                        <span class="green">Славян</span><br />
+                                        <span class="red">Без животных.</span></span><br />
+                                        <span class="red">Без детей.</span>
+                                    </td>
+                                    <td>
+                                        <span class="green">Балкон.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        39/-/10, еврорем, консьерж,<br />
+                                        инет
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">34 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>2</strong><br />
+                                        Собственник<br />
+                                        +79055053811<br />
+
+                                        <br />
+
+                                        <div class="rent-abuse rent-link"><a href="#popup-abuse" class="fancybox">Пожаловаться</a></div>
+                                        <div class="rent-link"><a href="">Выкупить</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>   
+                                    </td>
+                                </tr>
+
+                                <!--  -->
+
+                                <tr>
+                                    <td>
+                                        <a href="javascript;" class="rent-star"></a>
+                                        <a href="#popup-photo" class="rent-photo fancybox"></a>
+                                        <a href="#popup-map" class="rent-pointer fancybox"></a>
+                                    </td>
+                                    <td>03.12.13</td>
+                                    <td>Комн</td>
+                                    <td>
+                                        4 мин. пешком<br />
+                                        м. Парк Победы<br />
+                                        Дениса Давыдова, д. 12/1
+                                    </td>
+                                    <td>2/2</td>
+                                    <td>
+                                        <span class="green">Стир+</span><br />
+                                        <span class="green">Меб+</span><br />
+                                        <span class="red">Хол-</span>
+                                    </td>
+                                    <td>
+                                        1Ж
+                                    </td>
+                                    <td>
+                                        <span class="red">Cубаренда.</span><br />
+                                        <span class="green">Есть TV</span><br />
+                                        15 м2  в3-к, хор комн, соседи<br />
+                                        2-ж и 1-м
+
+                                        <div class="rent-write rent-link"><a href="#popup-addcomment" class="fancybox">Оставить комментарий </a></div>
+                                    </td>
+                                    <td>
+                                        <span class="deposite">17 000</span><br />
+                                        депозит
+                                    </td>
+                                    <td>
+                                        Открыли: <strong>0</strong><br />
+                                        Субаренда<br />
+
+                                        <br />
+
+                                        <div class="rent-link"><a href="">Открыть контакт</a></div>
+                                        <div class="rent-link"><a href="">Подбор клиента</a></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- paginator -->
+                        <div class="paginator">
+                            <ul>
+                                <li class="first"><a href="">Первая</a></li>
+                                <li class="previous"><a href="">Предыдущая</a></li>
+                                <li><a href="">1</a></li>
+                                <li class="active"><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                                <li><a href="">4</a></li>
+                                <li><a href="">5</a></li>
+                                <li><a href="">6</a></li>
+                                <li><a href="">7</a></li>
+                                <li class="next"><a href="">Следующая</a></li>
+                                <li class="last"><a href="">Последняя</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-wrapper clearfix">
+                    <div class="footer-copyright">
+                        © 2012 www.Pyxi.ru - информационный сервис для агентов по недвижимости
+                    </div>
+
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="" title="">info@pyxi.ru</a></li>
+                            <li><a href="" title="">Регистрация</a></li>
+                            <li><a href="" title="">Вход</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-phone">
+                        +7 (499) 653-64-06
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <!-- popup: add comment -->
+        <div id="popup-addcomment" class="popup">
+            <div class="modal-inner">
+                <header>
+                    <h2 id="modal-label">Оставить комментарий</h2>
+                </header>
+
+                <div class="modal-content">
+                    <form action="">
+                        <div class="modal-form">
+                            <textarea name="" id="" cols="" rows="" class="default-textarea"></textarea>
+                        </div>
+
+                        <div class="modal-form">
+                            <input type="submit" value="Опубликовать" class="default-submit default-public" />
+                        </div>                        
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- popup: photo -->
+        <div id="popup-photo" class="popup">
+            <div class="modal-inner">
+                <div class="modal-content">
+                    <div class="big">
+                        <img src="images/tmp/i1.jpg" height="440" width="640" alt="">
+                    </div>
+
+                    <div class="thumbs">
+                        <a href=""><img src="images/tmp/i2.jpg" alt=""></a>
+                        <a href=""><img src="images/tmp/i3.jpg" alt=""></a>
+                        <a href=""><img src="images/tmp/i5.jpg" alt=""></a>
+                        <a href=""><img src="images/tmp/i6.jpg" alt=""></a>
+                        <a href=""><img src="images/tmp/i7.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- popup: map -->
+        <div id="popup-map" class="popup">
+            <div class="modal-inner">
+                <div class="modal-content">
+                    <div class="map"><img src="images/tmp/map.png" height="400" width="600" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- popup: abuse -->
+        <div id="popup-abuse" class="popup">
+            <div class="modal-inner">
+                <div class="modal-content">
+                    <header>
+                        <h2>Пожаловаться</h2>
+                    </header>
+
+                    <form action="">
+                        <div class="modal-form">
+                            <div class="radiobox">
+                                <input type="radio" id="radio01" name="radio"><label for="radio01">Агент</label>
+                                <input type="radio" id="radio02" name="radio" checked="checked"><label for="radio02">Сдана</label>
+                                <input type="radio" id="radio03" name="radio"><label for="radio03">Ошибка</label>
+                                <input type="radio" id="radio04" name="radio"><label for="radio04">Не работает с АН</label>
+                            </div>
+                        </div>
+
+                        <div class="modal-form">
+                            <textarea name="" id="" cols="" rows="" class="default-textarea"></textarea>
+                        </div>
+
+                        <div class="modal-form">
+                            <input type="submit" value="Опубликовать" class="default-submit default-public" />
+                        </div>                        
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/call.js"></script>
+    </body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+
+        <link rel="stylesheet" href="js/anythingslider/anythingslider.css">
+        <script src="js/anythingslider/jquery.anythingslider.js"></script>
+
+        <link href="js/selectbox/jquery.selectbox.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="js/selectbox/jquery.selectbox-0.2.js"></script>
+
+        <script src="js/jquery.inputmask.js"></script>
+
+        <link href="js/jquery-ui/css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+        <script src="js/jquery-ui/js/jquery-ui-1.10.3.custom.js"></script>
+        <script>
+        $(function() {
+            $( ".checkbox" ).button();
+            $( ".radiobox" ).buttonset();
+        });
+        </script>
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <header>
+                <div class="header-top">                    
+                    <div class="header-wrapper clearfix">
+                        <div class="header-phone">+7 (499) 653-64-06</div>
+
+                        <div class="header-question"><a href="">Задать вопрос</a></div>
+                        <div class="header-email"><a href="mailto:info@pyxi.ru">info@pyxi.ru</a></div>
+
+                        <div class="header-register"><a href="">Регистрация</a></div>
+                        <div class="header-login"><a href="">Вход</a></div>
+                    </div>
+                </div>
+
+                <div class="header-menu has-submenu">                    
+                    <div class="header-wrapper clearfix">
+                        <ul>
+                            <li><a href="" title="">Тарифы</a></li>
+                            <li><a href="" title="">Услуги</a></li>
+                            <li><a href="" title="">База</a></li>
+                            <li class="active"><a href="" title="">Личный кабинет</a>
+                                <ul>
+                                    <li><a href="" title="">Управление доступом</a></li>
+                                    <li><a href="" title="">Реклама</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" title="">Сайт</a></li>
+                        </ul>
+
+                        <a href=""><img src="images/header-logo.png" height="39" width="101" alt="" class="header-logo" /></a>
+                    </div>
+                </div>
+            </header>
+
+            <div id="wrap">
+                <div class="content">
+                    <!-- user nav -->
+                    <div class="usernav clearfix">
+                        <div class="usernav-bonus">
+                            Бонусы: <strong>0</strong>
+                            <a href="javascript:;" class="usernav-q"></a>
+                        </div>
+
+                        <div class="usernav-pay">
+                            Выкупы: <strong>0</strong>
+                            <a href="" class="usernav-button">купить</a>
+                        </div>
+                    </div>
+
+                    <!-- packs -->
+                    <div class="packs clearfix">
+                        <h1>Пакеты объявлений</h1>
+
+                        <div class="packs-table">
+                            <table>
+                                <col width="10%" />
+                                <col width="40%" />
+                                <col width="25%" />
+                                <col width="25%" />
+                                <thead>
+                                    <tr>
+                                        <th>№</th>
+                                        <th>Количество объявлений в день</th>
+                                        <th>Действует по</th>
+                                        <th>Действие</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>55</td>
+                                        <td>15</td>
+                                        <td>01.01.1970</td>
+                                        <td>
+                                            <a href="" class="control">Продлить</a>
+                                            <a href="" class="control nomargin">Удалить</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>55</td>
+                                        <td>15</td>
+                                        <td>01.01.1970</td>
+                                        <td>
+                                            <a href="" class="control">Продлить</a>
+                                            <a href="" class="control nomargin">Удалить</a>
+
+                                            <div class="packs-pay">
+                                                <div class="title">Продление пакета № 24</div>
+
+                                                <div class="wrapper">
+                                                    <div class="radiobox">
+                                                        <input type="radio" id="radio1" name="radio"><label for="radio1">InterKassa</label>
+                                                        <input type="radio" id="radio2" name="radio" checked="checked"><label for="radio2">Qiwi</label>
+                                                        <input type="radio" id="radio3" name="radio"><label for="radio3">Счет</label>
+                                                    </div>
+                                                    
+                                                    <input type="text" id="phone3" class="default-textbox"><br />
+
+                                                    <a href="" class="green-button">Продлить</a>
+
+                                                    <div class="arrow"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="packs-control clearfix">
+                                <select name="" id="" class="selectbox" tabindex="1">
+                                    <option value="">Любой</option>
+                                    <option value="4">Brazil</option>
+                                    <option value="10">South Africa</option>
+                                </select>    
+
+                                <input type="button" id="" value="Добавить" class="green-button" />                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- rent -->
+                    <h2 class="rent-title">Шаблоны объявлений</h2>
+
+                    <div class="rent">
+                        <table>
+                            <col width="10%" />
+                            <col width="10%" />
+                            <col width="23%" />
+                            <col width="12%" />
+                            <col width="11%" />
+                            <col width="13%" />
+                            <col width="21%" />
+                            <thead>
+                                <tr>
+                                    <th>Статус</th>
+                                    <th>Комн</th>
+                                    <th>Метро</th>
+                                    <th>Бюджет</th>
+                                    <th>Количество</th>
+                                    <th>Телефон</th>
+                                    <th>Действие</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="green">Активен</span></td>
+                                    <td>1к</td>
+                                    <td>
+                                        <div class="rent-select nomargin">
+                                        <select name="" id="" size="4">
+                                            <option value="">Сокол</option>
+                                            <option value="">Динамо</option>
+                                            <option value="">Береговая</option>
+                                            <option value="">Улица 1905 года</option>
+                                        </select>
+                                        </div>
+                                    </td>
+                                    <td>Дорогие</td>
+                                    <td>5</td>
+                                    <td>+79055053811</td>
+                                    <td>
+                                        <a href="" class="control">Изменить</a>
+                                        <a href="" class="control">Выкл</a>
+                                        <a href="" class="control nomargin">Удалить</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><span class="green">Активен</span></td>
+                                    <td>1к</td>
+                                    <td>
+                                        <div class="rent-select nomargin">
+                                        <select name="" id="" size="4">
+                                            <option value="">Сокол</option>
+                                            <option value="">Динамо</option>
+                                            <option value="">Береговая</option>
+                                            <option value="">Улица 1905 года</option>
+                                        </select>
+                                        </div>
+                                    </td>
+                                    <td>Дорогие</td>
+                                    <td>5</td>
+                                    <td>+79055053811</td>
+                                    <td>
+                                        <a href="" class="control">Изменить</a>
+                                        <a href="" class="control">Выкл</a>
+                                        <a href="" class="control nomargin">Удалить</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <a href="" class="green-button">Добавить</a>
+                    </div>
+
+                    <!-- adv -->
+                    <div class="effective-adv clearfix">
+                        <h2>эффективная <span>реклама</span></h2>
+
+                        <div class="view">
+                            <a href=""><img src="images/tmp/pl2.png" height="327" width="480" alt=""></a>
+                        </div>
+
+                        <div class="description">
+                            <p>Если у Вас еще нет сайта, или по каким-то причинам он Вас не устраивает, Вы можете воспользоваться нашим готовым решением. У Вас на сайте будет наша база со всеми возможностями, как и здесь: поиск с картой метро, фотографии и яндекс карта будут выглядеть так же как здесь. Так же Вы сможете сможете добавлять свои варианты и принимать заявки. Всё это будет управляться через простую панель управления здесь на сайте.</p>
+
+                            <p>Как и с готовым решением у Вас на сайте появится наша база со всеми возможностями, как и здесь: поиск с картой метро, фотографии и яндекс карта будут выглядеть так же как здесь. Так же Вы сможете сможете добавлять свои варианты и принимать заявки. Всё это будет управляться через простую панель управления здесь на сайте.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-wrapper clearfix">
+                    <div class="footer-copyright">
+                        © 2012 www.Pyxi.ru - информационный сервис для агентов по недвижимости
+                    </div>
+
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="" title="">info@pyxi.ru</a></li>
+                            <li><a href="" title="">Регистрация</a></li>
+                            <li><a href="" title="">Вход</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-phone">
+                        +7 (499) 653-64-06
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <script>
+        $(document).ready(function() {
+            $("#phone3").inputmask("+7 (999) 999-99-99");//маска
+        });
+        </script>
+
+        <script src="js/call.js"></script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Cuprum Bold';
+    src: url('cuprum_bold_cyrillic/Cuprum-Bold-webfont.eot');
+    src: url('cuprum_bold_cyrillic/Cuprum-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('cuprum_bold_cyrillic/Cuprum-Bold-webfont.woff') format('woff'),
+         url('cuprum_bold_cyrillic/Cuprum-Bold-webfont.ttf') format('truetype'),
+         url('cuprum_bold_cyrillic/Cuprum-Bold-webfont.svg#cuprumbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cuprum Italic';
+    src: url('cuprum_italic_cyrillic/Cuprum-Italic-webfont.eot');
+    src: url('cuprum_italic_cyrillic/Cuprum-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('cuprum_italic_cyrillic/Cuprum-Italic-webfont.woff') format('woff'),
+         url('cuprum_italic_cyrillic/Cuprum-Italic-webfont.ttf') format('truetype'),
+         url('cuprum_italic_cyrillic/Cuprum-Italic-webfont.svg#cuprumitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cuprum Regular';
+    src: url('cuprum_regular_cyrillic/Cuprum-Regular-webfont.eot');
+    src: url('cuprum_regular_cyrillic/Cuprum-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('cuprum_regular_cyrillic/Cuprum-Regular-webfont.woff') format('woff'),
+         url('cuprum_regular_cyrillic/Cuprum-Regular-webfont.ttf') format('truetype'),
+         url('cuprum_regular_cyrillic/Cuprum-Regular-webfont.svg#cuprumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <script src="js/vendor/jquery-1.7.2.min.js"></script>
+
+        <!-- custom selectbox -->
+        <link rel="stylesheet" href="js/selectbox/jquery.selectbox.css">
+        <script src="js/selectbox/jquery.selectbox-0.2.min.js"></script>
+
+        <!-- touchcarousel -->
+        <link rel="stylesheet" href="js/touchcarousel/touchcarousel.css">
+        <script src="js/touchcarousel/jquery.touchcarousel-1.2.min.js"></script>
+
+        <!-- jquery ui -->
+        <link rel="stylesheet" href="js/jquery-ui/css/ui-lightness/jquery-ui-1.10.3.custom.min.css">
+        <script src="js/jquery-ui/js/jquery-ui-1.10.3.custom.min.js"></script>
+
+        <!-- rating stars -->
+        <link type="text/css" rel="stylesheet" href="js/rating/demo/css/application.css">
+        <script type="text/javascript" src="js/rating/jquery.raty.js"></script>
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <header>
+                <div class="header-wrapper">
+                    <a href=""><img src="images/header-logo.png" height="51" width="175" alt="" class="header-logo"></a>
+                    <div class="header-slogan"></div>
+
+                    <div class="header-login">
+                        <a href="javascript:;" class="header-login-link">ВОЙТИ</a> | <a href="">СОЗДАТЬ АККАУНТ</a>
+                    </div>
+
+                    <div class="header-login-form">
+                        <form action="">
+                            <div class="notify error">Неверный пароль</div>
+
+                            <div class="item">
+                                <label>Номер телефона<br>
+                                <input type="text" class="textbox"></label>
+                            </div>
+
+                            <div class="item">
+                                <label>Пароль<br>
+                                <input type="password" class="textbox textbox-error"></label>
+                            </div>
+
+                            <div class="item">
+                                <span class="hl-checkbox"><input type="checkbox" id="mycheck0"><label for="mycheck0">Запомнить меня</label></span>
+                            </div>
+
+                            <div class="item">
+                                <a href="" class="forgot">Восстановить пароль</a>
+                            </div>
+
+                            <input type="submit" class="hl-button" value="Войти">
+                        </form>
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </header>
+
+            <div id="wrap">
+                <div class="page clearfix">
+                    <div class="mainsearch-menu">
+                        <ul>
+                            <li><a href="" title="">НОВОСТИ</a></li>
+                            <li><a href="" title="">КАТАЛОГ САНАТОРИЕВ</a></li>
+                            <li><a href="" title="">ЭКСКУРСИИ</a></li>
+                            <li><a href="" title="">УСЛУГИ</a></li>
+                            <li class="pay"><span class="icon"></span><a href="" title="">ОПЛАТА ТУРА</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="reserv clearfix">
+                        <div class="mainsearch-form clearfix">
+                            <h1 class="mf-title">Бронирование</h1>
+                            <div class="mainsearch-form-t"></div><div class="mainsearch-form-corner"></div>
+                        </div>
+
+                        <div class="reserv-column-left">
+                            <div class="reserv-step-1">
+                                <h5>1. ВЫБОР КУРОРТА И РАЗМЕЩЕНИЯ</h5>
+
+                                <div class="wrapper">
+                                    <div class="view">
+                                        <img src="images/tmp/s1.jpg" height="150" width="175" alt="">
+                                    </div>
+
+                                    <div class="description">
+                                        <div class="title">Двухместный номер с 1 кроватью или 2 отдельными кроватями:</div>
+                                        <p>Prospekt Pobedy 9A,<br>Кисловодск, Россия</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="reserv-step-2">
+                                <h5>2. ВЫБОР КУРОРТА И РАЗМЕЩЕНИЯ</h5>
+
+                                <div class="wrapper">
+                                    <h6>ПРАВИЛА И СРОКИ ОПЛАТЫ</h6>
+
+                                    <div class="alert">
+                                        ВСЕ ЦЕНЫ НА ПРОЖИВАНИЕ И ЛЕЧЕНИИ СООТВЕТСТВУЮТ ОФИЦИАЛЬНЫМ ЦЕНАМ САНАТОРИЕВ И ОТЕЛЕЙ
+                                        <span class="icon"></span>
+                                    </div>
+
+                                    <div class="red">
+                                        ВНЕСТИ ПРЕДОПЛАТУ НЕОБХОДИМО В ТЕЧЕНИИ 3 (ТРЕХ) ДНЕЙ ПОСЛЕ ПОДТВЕРЖДЕНИЯ БРОНИ ОТЕЛЕМ ИЛИ САНАТОРИЕМ
+                                    </div>
+
+                                    <div class="blue">
+                                        ПОЛНЫЙ ОСТАТОК СТОИМОСТИ НЕОБХОДИМО ВНЕСТИ НЕ ПОЗДНЕЕ 7 ДНЕЙ ПОСЛЕ ВНЕСЕНИЯ ПРЕДОЛПЛАТЫ.
+                                    </div>
+
+                                    <a href="" class="addfunds"><img src="images/q.png" height="16" width="16" alt="">ПОДРОБНЫЕ УСЛОВИЯ БРОНИРОВАНИЯ И ОПЛАТЫ >></a>
+                                </div>
+                            </div>
+
+                            <div class="yourchoice clearfix">
+                                <h6>ВЫ БРОНИРУЕТЕ:</h6>
+
+                                <div class="wrapper clearfix">
+                                    <div class="view">
+                                        <img src="images/tmp/z1.jpg" height="150" width="215" alt="">
+                                    </div>
+
+                                    <div class="description">
+                                        <h3>Двухместный номер с 1 кроватью или 2 отдельными кроватями: </h3>
+
+                                        <div class="default-radio">
+                                            <input type="radio" id="radio1" name="radio"><label for="radio1"><span class="bed1"></span>БОЛЬШАЯ ДВУХСПАЛЬНАЯ КРОВАТЬ</label><br>
+                                            <input type="radio" id="radio2" name="radio" checked="checked"><label for="radio2"><span class="bed2"></span>ДВЕ ОДНОСПАЛЬНЫХ КРОВАТИ</label><br>
+                                            <input type="radio" id="radio3" name="radio"><label for="radio3"><span class="bed3"></span>ДВЕ ДВУХСПАЛЬНЫЕ КРОВАТЬ</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="additional">
+                                        <div class="max">
+                                            <div class="title">МАК. КОЛ. В НОМЕРЕ - 4</div>
+
+                                            <table class="max-peoples">
+                                                <tr>
+                                                    <td>
+                                                        <div class="peoples"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="child"></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="label">ВЗРОСЛЫХ:</td>
+                                                    <td class="value">1 человек</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="label" style="padding-bottom: 5px;">ДЕТЕЙ:</td>
+                                                    <td class="value" style="padding-bottom: 5px;">1 человек</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" class="food"><span class="icon"></span>Бесплатный завтрак</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="yourselect">
+                                <h6>ЭКСКУРСИИ И МЕРОПРИЯТИЯ</h6>
+
+                                <div class="wrapper">
+                                    <table>
+                                        <tr>
+                                            <td class="label">КОНЦЕРТ ТРОФИМА <a href=""><img src="images/q.png" height="16" width="16" alt=""></a></td>
+                                            <td class="value"><span>500 руб.</span> 24.09.2013 - 17:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label">ЭКСКУРСИЯ ДОМБАЙ <a href=""><img src="images/q.png" alt=""></a></td>
+                                            <td class="value"><span>500 руб.</span> 24.09.2013 - 17:00</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="yoursubmit">
+                                <div class="blue">ПОДБЕРИТЕ ЭКСКУРСИИ И МЕРОПРИЯТИЯ ВО ВРЕМЯ ВАШЕГО ОТДЫХА НА КУРОРТЕ</div>
+
+                                <input type="submit" class="submit" value="ПОДОБРАТЬ">
+
+                                <div class="alert">КОМПАНИЯ FEDKURORT НЕ ДЕЛАЕТ НАЦЕНОК НА КОНЦЕРТНЫЕ БИЛЕТЫ И ЭКСКУРСИИ<span class="icon"></span></div>
+                            </div>
+                        </div>
+
+                        <!--  -->
+
+                        <div class="reserv-column-right">
+                            <div class="reserv-step-3">
+                                <h5>3. КОНТАКТНЫЕ ДАННЫЕ И РЕГИСТРАЦИЯ</h5>
+                            </div>
+                            
+                            <div class="yourtotal">
+                                <table>
+                                    <tr>
+                                        <td class="icon i1"><span></span></td>
+                                        <td class="label">РАЗМЕЩЕНИЕ:</td>
+                                        <td class="value">68 000 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="icon i2"><span></span></td>
+                                        <td class="label">ТРАНСФЕРТ:</td>
+                                        <td class="value">68 000 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="icon i3"><span></span></td>
+                                        <td class="label">АВИА И ЖД БИЛЕТЫ:</td>
+                                        <td class="value">68 000 руб</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="icon"></td>
+                                        <td class="label">ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ:</td>
+                                        <td class="value"></td>
+                                    </tr>
+                                    <tr>
+                                    <tr>
+                                        <td class="icon"></td>
+                                        <td class="label">ЭКСКУРСИИ И КОНЦЕРТЫ:</td>
+                                        <td class="value"></td>
+                                    </tr>
+                                </table>
+
+                                <div class="summ">
+                                    ОБЩАЯ СТОИМОСТЬ  |  <strong>68 000</strong> руб.
+                                </div>
+
+                                <div class="supersumm">
+                                    <table>
+                                        <tr>
+                                            <td class="prepay"><span>ПРЕДОПЛАТА:</span> (10%)</td>
+                                            <td class="totalpay">68 000 руб.</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!--  -->
+
+                            <div class="yourdop">
+                                <h6>ЦЕНЫ УКАЗАНЫ В РУБЛЯХ РФ С НДС</h6>
+
+                                <table>
+                                    <tr>
+                                        <td class="mode i1"><span></span></td>
+                                        <td class="default-radio"><input type="radio" id="radio01" name="radio0"><label for="radio01">В ОДНУ СТОРОНУ</label></td>
+                                        <td class="default-radio"><input type="radio" id="radio02" name="radio0"><label for="radio02">В ОДНУ СТОРОНУ</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mode i2"><span></span></td>
+                                        <td class="default-radio"><input type="radio" id="radio03" name="radio2"><label for="radio03">АЭРОПОРТ-ОТЕЛЬ</label></td>
+                                        <td class="default-radio"><input type="radio" id="radio04" name="radio2"><label for="radio04">ЖД ВОКЗАЛ - ОТЕЛЬ</label></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="yourdop2">
+                                <h6>ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</h6>
+
+                                <table>
+                                    <tr>
+                                        <td width="60%" class="i1"><span class="lf-checkbox"><input type="checkbox" id="mycheck"><label for="mycheck"><span class="icon"></span>МЕСТНАЯ СИМ КАРТА</label></span></td>
+                                        <td width="10%" class="q"><a href=""><img src="images/q.png" height="16" width="16" alt=""></a></td>
+                                        <td width="30%" class="value">500 руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="60%" class="i2"><span class="lf-checkbox"><input type="checkbox" id="mycheck2"><label for="mycheck2"><span class="icon"></span>ТУР. СНАРЯЖЕНИЕ</label></span></td>
+                                        <td width="10%" class="q"><a href=""><img src="images/q.png" height="16" width="16" alt=""></a></td>
+                                        <td width="30%" class="value">500 руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="60%" class="i3"><span class="lf-checkbox"><input type="checkbox" id="mycheck3"><label for="mycheck3"><span class="icon"></span>КУРОРТНАЯ ФОТОСЕССИЯ</label></span></td>
+                                        <td width="10%" class="q"><a href=""><img src="images/q.png" height="16" width="16" alt=""></a></td>
+                                        <td width="30%" class="value">500 руб.</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="yourdop3">
+                                <h6>КУРОРТНАЯ КАРТА</h6>
+                                <p>Номер, оформленный в индивидуальном стиле, с телевизором, по которому можно посмотреть программы кабельного телевидения, балконом и собственной ванной комнатой с бесплатным набором туалетно-косметических принадлежностей. Номер оснащен кондиционером и укомплектован халатами и тапочками. </p>
+                            </div>
+
+                            <input type="submit" class="finalsubmit" value="ЗАБРОНИРОВАТЬ">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-wrapper">
+                    <div class="footer-copyright">
+                        <p>Copyright © 2013 <a href="">fedkurort.ru</a>. Все права защищены</p>
+
+                        <p>Федеральные курорты России<br>
+                        При поддержке министерства курортов и туризма Ставропольского края</p>
+                    </div>
+
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="" title="">О проекте</a></li>
+                            <li><a href="" title="">Условия и правила</a></li>
+                            <li><a href="" title="">Курорты</a></li>
+                            <li><a href="" title="">Санатории</a></li>
+                            <li><a href="" title="">Реклама</a></li>
+                            <li><a href="" title="">Контакты</a></li>
+                            <li><a href="" title="">Партнерам</a></li>
+                            <li><a href="" title="">Обратная связь</a></li>
+                            <li><a href="" title="">Помощь</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <script src="js/call.js"></script>
+    </body>
+</html>

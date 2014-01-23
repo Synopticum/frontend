@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <script src="js/vendor/jquery-1.7.2.min.js"></script>
+
+        <!-- custom selectbox -->
+        <link rel="stylesheet" href="js/selectbox/jquery.selectbox.css">
+        <script src="js/selectbox/jquery.selectbox-0.2.min.js"></script>
+
+        <!-- touchcarousel -->
+        <link rel="stylesheet" href="js/touchcarousel/touchcarousel.css">
+        <script src="js/touchcarousel/jquery.touchcarousel-1.2.min.js"></script>
+
+        <!-- jquery ui -->
+        <link rel="stylesheet" href="js/jquery-ui/css/ui-lightness/jquery-ui-1.10.3.custom.min.css">
+        <script src="js/jquery-ui/js/jquery-ui-1.10.3.custom.min.js"></script>
+
+        <!-- rating stars -->
+        <link type="text/css" rel="stylesheet" href="js/rating/demo/css/application.css">
+        <script type="text/javascript" src="js/rating/jquery.raty.js"></script>
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <header>
+                <div class="header-wrapper">
+                    <a href=""><img src="images/header-logo.png" height="51" width="175" alt="" class="header-logo"></a>
+                    <div class="header-slogan"></div>
+
+                    <div class="header-login">
+                        <a href="javascript:;" class="header-login-link">ВОЙТИ</a> | <a href="">СОЗДАТЬ АККАУНТ</a>
+                    </div>
+
+                    <div class="header-login-form">
+                        <form action="">
+                            <div class="notify error">Неверный пароль</div>
+
+                            <div class="item">
+                                <label>Номер телефона<br>
+                                <input type="text" class="textbox"></label>
+                            </div>
+
+                            <div class="item">
+                                <label>Пароль<br>
+                                <input type="password" class="textbox textbox-error"></label>
+                            </div>
+
+                            <div class="item">
+                                <span class="hl-checkbox"><input type="checkbox" id="mycheck0"><label for="mycheck0">Запомнить меня</label></span>
+                            </div>
+
+                            <div class="item">
+                                <a href="" class="forgot">Восстановить пароль</a>
+                            </div>
+
+                            <input type="submit" class="hl-button" value="Войти">
+                        </form>
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </header>
+
+            <div id="wrap">
+                <div class="page clearfix">
+                    <div class="mainsearch-menu">
+                        <ul>
+                            <li><a href="" title="">НОВОСТИ</a></li>
+                            <li><a href="" title="">КАТАЛОГ САНАТОРИЕВ</a></li>
+                            <li><a href="" title="">ЭКСКУРСИИ</a></li>
+                            <li><a href="" title="">УСЛУГИ</a></li>
+                            <li class="pay"><span class="icon"></span><a href="" title="">ОПЛАТА ТУРА</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- aside -->
+                    <aside class="leftside">
+
+                        <!-- main filter -->
+                        <div class="mainsearch-form clearfix">
+                            <form action="">
+                                <h3 class="mf-title">Найти</h3>
+
+                                <div class="mf-textbox">
+                                    <span class="label">Название содержит</span>
+                                    <input id="" class="textbox textbox2" >                                    
+                                </div>
+
+                                <div class="mf-superselect">
+                                    <span class="label">Выбирите курорт</span>
+
+                                    <select name="" class="selectbox" tabindex="">
+                                        <option value=""></option>
+                                        <option value="1">1</option>
+                                        <option value="1">2</option>
+                                        <option value="1">3</option>
+                                        <option value="1">4</option>
+                                    </select>
+                                </div>
+
+                                <div class="mf-date clearfix">
+                                    <div class="box clearfix">
+                                    <span class="label">Дата заезда</span>
+                                    <div class="mf-select mf-day">
+                                        <div class="icon"></div>
+
+                                        <select name="" class="selectbox" tabindex="">
+                                            <option value="">День</option>
+                                            <option value="1">1</option>
+                                            <option value="1">2</option>
+                                            <option value="1">3</option>
+                                            <option value="1">4</option>
+                                            <option value="1">5</option>
+                                            <option value="1">6</option>
+                                            <option value="1">7</option>
+                                            <option value="1">8</option>
+                                            <option value="1">9</option>
+                                            <option value="1">10</option>
+                                            <option value="1">11</option>
+                                            <option value="1">12</option>
+                                            <option value="1">13</option>
+                                            <option value="1">14</option>
+                                            <option value="1">15</option>
+                                            <option value="1">16</option>
+                                            <option value="1">17</option>
+                                            <option value="1">18</option>
+                                            <option value="1">19</option>
+                                            <option value="1">20</option>
+                                            <option value="1">21</option>
+                                            <option value="1">22</option>
+                                            <option value="1">23</option>
+                                            <option value="1">24</option>
+                                            <option value="1">25</option>
+                                            <option value="1">26</option>
+                                            <option value="1">27</option>
+                                            <option value="1">28</option>
+                                            <option value="1">29</option>
+                                            <option value="1">30</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mf-select mf-month">
+                                        <select name="" class="selectbox" tabindex="">
+                                            <option value="">Месяц</option>
+                                            <option value="1">Январь</option>
+                                            <option value="1">Февраль</option>
+                                            <option value="1">Март</option>
+                                            <option value="1">Апрель</option>
+                                            <option value="1">Май</option>
+                                            <option value="1">Июнь</option>
+                                            <option value="1">Июль</option>
+                                            <option value="1">Август</option>
+                                            <option value="1">Сентябрь</option>
+                                            <option value="1">Октябрь</option>
+                                            <option value="1">Ноябрь</option>
+                                            <option value="1">Декабрь</option>
+                                        </select>
+                                    </div>
+                                    </div>
+
+                                    <div class="box clearfix">
+                                    <span class="label">Дата отъезда</span>
+                                    <div class="mf-select mf-day">
+                                        <div class="icon"></div>
+
+                                        <select name="" class="selectbox" tabindex="">
+                                            <option value="">День</option>
+                                            <option value="1">1</option>
+                                            <option value="1">2</option>
+                                            <option value="1">3</option>
+                                            <option value="1">4</option>
+                                            <option value="1">5</option>
+                                            <option value="1">6</option>
+                                            <option value="1">7</option>
+                                            <option value="1">8</option>
+                                            <option value="1">9</option>
+                                            <option value="1">10</option>
+                                            <option value="1">11</option>
+                                            <option value="1">12</option>
+                                            <option value="1">13</option>
+                                            <option value="1">14</option>
+                                            <option value="1">15</option>
+                                            <option value="1">16</option>
+                                            <option value="1">17</option>
+                                            <option value="1">18</option>
+                                            <option value="1">19</option>
+                                            <option value="1">20</option>
+                                            <option value="1">21</option>
+                                            <option value="1">22</option>
+                                            <option value="1">23</option>
+                                            <option value="1">24</option>
+                                            <option value="1">25</option>
+                                            <option value="1">26</option>
+                                            <option value="1">27</option>
+                                            <option value="1">28</option>
+                                            <option value="1">29</option>
+                                            <option value="1">30</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mf-select mf-month">
+                                        <select name="" class="selectbox" tabindex="">
+                                            <option value="">Месяц</option>
+                                            <option value="1">Январь</option>
+                                            <option value="1">Февраль</option>
+                                            <option value="1">Март</option>
+                                            <option value="1">Апрель</option>
+                                            <option value="1">Май</option>
+                                            <option value="1">Июнь</option>
+                                            <option value="1">Июль</option>
+                                            <option value="1">Август</option>
+                                            <option value="1">Сентябрь</option>
+                                            <option value="1">Октябрь</option>
+                                            <option value="1">Ноябрь</option>
+                                            <option value="1">Декабрь</option>
+                                        </select>
+                                    </div>
+                                    </div>
+
+
+                                    <div class="box clearfix">
+                                    <span class="mf-checkbox"><input type="checkbox" id="mycheck"><label for="mycheck">Точные даты поездки пока неизвестны </label></span>
+                                    </div>
+
+                                    <div class="box clearfix">
+                                        <table>
+                                            <tr>
+                                                <td class="label">Номера</td>
+                                                <td class="value">
+                                                    <div class="mf-select mf-small">
+                                                        <select name="" class="selectbox" tabindex="">
+                                                            <option value=""></option>
+                                                            <option value="1">1</option>
+                                                            <option value="1">2</option>
+                                                            <option value="1">3</option>
+                                                            <option value="1">4</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">Взрослых</td>
+                                                <td class="value">
+                                                    <div class="mf-select mf-small">
+                                                        <select name="" class="selectbox" tabindex="">
+                                                            <option value=""></option>
+                                                            <option value="1">1</option>
+                                                            <option value="1">2</option>
+                                                            <option value="1">3</option>
+                                                            <option value="1">4</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">Детей</td>
+                                                <td class="value">
+                                                    <div class="mf-select mf-small">
+                                                        <select name="" class="selectbox" tabindex="">
+                                                            <option value=""></option>
+                                                            <option value="1">1</option>
+                                                            <option value="1">2</option>
+                                                            <option value="1">3</option>
+                                                            <option value="1">4</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                    <div class="box clearfix">
+                                        <table>
+                                            <tr>
+                                                <td class="50%"><a href="" class="button-yellow">САНАТОРИИ</a></td>
+                                                <td class="50%"><a href="" class="button-gray">САНАТОРИИ</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <input type="submit" id="" value="Подобрать" class="mf-button">
+                            </form>
+
+                            <div class="mainsearch-form-t"></div><div class="mainsearch-form-corner"></div>
+                        </div>
+
+                        <!-- filter -->
+
+                        <div class="leftside-filter">
+                            <h3>УТОЧНИТЬ РЕЗУЛЬТАТЫ</h3>
+                            <h5>Всего: 2 062</h5>
+
+                            <div class="item">
+                                <div class="title">
+                                    <div class="icon-wrapper"><span class="icon i1"></span></div>
+                                    ЦЕНА
+                                </div>
+
+                                <div class="rangeslider">
+                                    <p><em>за 1 сутки 2 взрослых 2 детей</em></p>
+                                    <p>
+                                      <label for="amount">от </label>
+                                      <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
+                                    </p>
+                                      
+                                    <div id="slider-range"></div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="title">
+                                    <div class="icon-wrapper"><span class="icon i2"></span></div>
+                                    ОТЗЫВЫ ГОСТЕЙ 
+                                </div>
+
+                                <div class="wrapper">
+                                    <div class="oks"></div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="title">
+                                    <div class="icon-wrapper"><span class="icon i3"></span></div>
+                                    КОЛИЧЕСТВО ЗВЕЗД 
+                                </div>
+
+                                <div class="wrapper">
+                                    <div class="stars2"></div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="title">
+                                    <div class="icon-wrapper"><span class="icon i4"></span></div>
+                                    УДОБСТВА
+                                </div>
+
+                                <div class="wrapper">
+                                    <span class="lf-checkbox"><input type="checkbox" id="c11"><label for="c11">Wi-Fi</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c12"><label for="c12">Парковка</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c13"><label for="c13">Трансфер до/из аэропорта</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c14"><label for="c14">Интернет</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c15"><label for="c15">Фитнес-центр</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c16"><label for="c16">Номера для некурящих</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c17"><label for="c17">Крытый плавательный бассейн</label></span>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="title">
+                                    <div class="icon-wrapper"><span class="icon i5"></span></div>
+                                    КЛАССИФИКАЦИЯ
+                                </div>
+
+                                <div class="wrapper">
+                                    <span class="lf-checkbox"><input type="checkbox" id="c21"><label for="c21">Стандарт</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c22"><label for="c22">Улучшенный</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c23"><label for="c23">Превосходный</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c24"><label for="c24">Совмещенные номера</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c25"><label for="c25">Полулюкс</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c26"><label for="c26">Семейный</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c27"><label for="c27">Люкс</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c28"><label for="c28">Президентский Люкс</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c29"><label for="c29">Апартаменты</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c210"><label for="c210">Студио</label></span>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="title">
+                                    <div class="icon-wrapper"><span class="icon i6"></span></div>
+                                    ЛЕЧЕБНЫЙ ПРОФИЛЬ 
+                                </div>
+
+                                <div class="wrapper">
+                                    <span class="lf-checkbox"><input type="checkbox" id="c31"><label for="c31">Заболевания сердечно-сосуд. системы</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c32"><label for="c32">Заболевания нервной системы</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c33"><label for="c33">Заболевания двигательного аппарата</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c34"><label for="c34">Урологические заболевания</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c35"><label for="c35">Заболевания эндокринной системы</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c36"><label for="c36">Заболевания органов дыхания</label></span>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="title">
+                                    <div class="icon-wrapper"><span class="icon i7"></span></div>
+                                    СПА 
+                                </div>
+
+                                <div class="wrapper">
+                                    <span class="lf-checkbox"><input type="checkbox" id="c41"><label for="c41">Массажи</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c42"><label for="c42">Лазерная эпиляция</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c43"><label for="c43">Фотоомоложение</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c44"><label for="c44">Удаление сосудов</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c45"><label for="c45">Осветление пигментных пятен</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c46"><label for="c46">Ендермолифт по лицу</label></span>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="title">
+                                    <div class="icon-wrapper"><span class="icon i7"></span></div>
+                                    ДОСУГ 
+                                </div>
+
+                                <div class="wrapper">
+                                    <span class="lf-checkbox"><input type="checkbox" id="c51"><label for="c51">Ресторан</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c52"><label for="c52">Кафе</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c53"><label for="c53">Ночной Клуб</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c54"><label for="c54">Спортивная площадка</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c55"><label for="c55">Бильярд</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c56"><label for="c56">Боулинг</label></span>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="title">
+                                    <div class="icon-wrapper"><span class="icon i8"></span></div>
+                                    ОТДЫХ С ДЕТЬМИ 
+                                </div>
+
+                                <div class="wrapper">
+                                    <span class="lf-checkbox"><input type="checkbox" id="c61"><label for="c61">Игровая комната</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c62"><label for="c62">Детское питание</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c63"><label for="c63">Обучающие программы</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c64"><label for="c64">Соревнования и турниры</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c65"><label for="c65">Кружки по интересам</label></span>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="title">
+                                    <div class="icon-wrapper"><span class="icon i9"></span></div>
+                                    РАСПОЛОЖЕНИЕ 
+                                </div>
+
+                                <div class="wrapper">
+                                    <h6>Расстояние до парка</h6>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c71"><label for="c71">Меньше 100 метров</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c72"><label for="c72">Больше 100 метров</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c73"><label for="c73">Больше 500 метров</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c74"><label for="c74">В парке</label></span>
+
+                                    <h6>Расстояние до пляжа</h6>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c75"><label for="c75">Меньше 100 метров</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c76"><label for="c76">Больше 100 метров</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c77"><label for="c77">Больше 500 метров</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c78"><label for="c78">На пляже</label></span>
+
+                                    <h6>Питьевой бювет</h6>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c79"><label for="c79">Меньше 100 метров</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c710"><label for="c710">Больше 100 метров</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c711"><label for="c711">Больше 500 метров</label></span><br>
+                                    <span class="lf-checkbox"><input type="checkbox" id="c712"><label for="c712">Свой</label></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </aside>
+
+                    <!-- content -->
+                    <div class="content">
+                        <div class="breadcrumbs">
+                            <a href="">Главная</a> &rarr;  
+                            <a href="">Поиск</a> &rarr;
+                            <span class="current">Кисловодск</span>
+                        </div>
+
+                        <h1 class="page-title">КИСЛОВОДСК / <span>САНАТОРИИ</span></h1>
+
+                        <div class="home-phone clearfix">
+                            <span class="icon"></span>
+                            <div class="number">8 (800) 633 00 00</div>
+                            <div class="tt">
+                                СЛУЖБА БРОНИРОВАНИЯ
+                                <p>бесплатный звонок по всей россии</p>
+                            </div>
+                        </div>
+
+                        <div class="search-result">
+                            <div class="search-sort clearfix">                                
+                                <div class="ss-select">
+                                    <div class="icon"></div>
+
+                                    <select name="" class="selectbox" tabindex="">
+                                        <option value="">Сортировка лидер продаж</option>
+                                        <option value="1">1</option>
+                                        <option value="1">2</option>
+                                        <option value="1">3</option>
+                                        <option value="1">4</option>
+                                        <option value="1">5</option>
+                                        <option value="1">6</option>
+                                        <option value="1">7</option>
+                                        <option value="1">8</option>
+                                        <option value="1">9</option>
+                                        <option value="1">10</option>
+                                        <option value="1">11</option>
+                                        <option value="1">12</option>
+                                        <option value="1">13</option>
+                                        <option value="1">14</option>
+                                        <option value="1">15</option>
+                                        <option value="1">16</option>
+                                        <option value="1">17</option>
+                                        <option value="1">18</option>
+                                        <option value="1">19</option>
+                                        <option value="1">20</option>
+                                        <option value="1">21</option>
+                                        <option value="1">22</option>
+                                        <option value="1">23</option>
+                                        <option value="1">24</option>
+                                        <option value="1">25</option>
+                                        <option value="1">26</option>
+                                        <option value="1">27</option>
+                                        <option value="1">28</option>
+                                        <option value="1">29</option>
+                                        <option value="1">30</option>
+                                    </select>
+                                </div>
+
+                                <div class="ss-results">
+                                    с 10.09.13 по 20.09.13<br>2 взрослых 2 детей
+                                </div>
+
+                                <div class="ss-title">
+                                    Результаты поиску по запросу:
+                                </div>
+                            </div>
+
+                            <!--  -->
+
+                            <div class="search-list">
+                            <table>
+                                <col width="15%">
+                                <col width="65%">
+                                <col width="20%">
+                                <tr>
+                                    <td class="view">
+                                        <a href=""><img src="images/tmp/ss1.jpg" height="120" width="160" alt=""></a>
+                                    </td>
+                                    <td class="description">
+                                        <div class="title">
+                                            <a href="">Отель ПАН интер</a>
+                                            <div class="rating-star">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="onmap"><a href="">Посмотреть карту</a></div>
+                                        <div class="address">Кисловодск, Проспект Ленина 26</div>
+
+                                        <p>Этот отель находится в центре города, в 3 минутах езды от железнодорожного вокзала Кисловодска. Сейчас 4 пользователя просматривают этот отель.</p>
+
+                                        <div class="last">Последнее бронирование: 3 часа назад</div>
+
+                                        <div class="available">
+                                            <a href="javascript:;" class="available-toggle">Доступные номера</a>
+
+                                            <div class="available-wrapper">
+                                                <table>
+                                                    <tr>
+                                                        <td class="label">
+                                                            <a href="" class="title">Полулюкс</a>
+                                                            <div class="other">Завтрак включен. <span>Осталось всего 2</span></div>
+                                                        </td>
+                                                        <td class="value">
+                                                            <div class="person"></div>
+                                                            <div class="person"></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">
+                                                            <a href="" class="title">Апартаменты</a>
+                                                            <div class="other">Завтрак включен. <span>Осталось всего 2</span></div>
+                                                        </td>
+                                                        <td class="value">
+                                                            <div class="person"></div>
+                                                            <div class="person"></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">
+                                                            <a href="" class="title">Люкс</a>
+                                                            <div class="other">Завтрак включен. <span>Осталось всего 2</span></div>
+                                                        </td>
+                                                        <td class="value">
+                                                            <div class="person"></div>
+                                                            <div class="person"></div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="price">
+                                        <div class="count">от <big>18 600</big> <span class="icon"></span></div>
+                                        <div class="search-rating"><big>Хорошо</big>, 7.7 /10</div>
+                                        <div class="total-count">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="search-feeds">11 отзывов</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="spacer" colspan="3"></td>
+                                </tr>
+                                <tr>
+                                    <td class="view">
+                                        <a href=""><img src="images/tmp/ss1.jpg" height="120" width="160" alt=""></a>
+                                    </td>
+                                    <td class="description">
+                                        <div class="title">
+                                            <a href="">Отель ПАН интер</a>
+                                            <div class="rating-star">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="onmap"><a href="">Посмотреть карту</a></div>
+                                        <div class="address">Кисловодск, Проспект Ленина 26</div>
+
+                                        <p>Этот отель находится в центре города, в 3 минутах езды от железнодорожного вокзала Кисловодска. Сейчас 4 пользователя просматривают этот отель.</p>
+
+                                        <div class="last">Последнее бронирование: 3 часа назад</div>
+
+                                        <div class="available">
+                                            <a href="javascript:;" class="available-toggle">Доступные номера</a>
+
+                                            <div class="available-wrapper">
+                                                <table>
+                                                    <tr>
+                                                        <td class="label">
+                                                            <a href="" class="title">Полулюкс</a>
+                                                            <div class="other">Завтрак включен. <span>Осталось всего 2</span></div>
+                                                        </td>
+                                                        <td class="value">
+                                                            <div class="person"></div>
+                                                            <div class="person"></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">
+                                                            <a href="" class="title">Апартаменты</a>
+                                                            <div class="other">Завтрак включен. <span>Осталось всего 2</span></div>
+                                                        </td>
+                                                        <td class="value">
+                                                            <div class="person"></div>
+                                                            <div class="person"></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">
+                                                            <a href="" class="title">Люкс</a>
+                                                            <div class="other">Завтрак включен. <span>Осталось всего 2</span></div>
+                                                        </td>
+                                                        <td class="value">
+                                                            <div class="person"></div>
+                                                            <div class="person"></div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="price">
+                                        <div class="count">от <big>18 600</big> <span class="icon"></span></div>
+                                        <div class="search-rating"><big>Хорошо</big>, 7.7 /10</div>
+                                        <div class="total-count">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="search-feeds">11 отзывов</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="spacer" colspan="3"></td>
+                                </tr>
+                                <tr>
+                                    <td class="view">
+                                        <a href=""><img src="images/tmp/ss1.jpg" height="120" width="160" alt=""></a>
+                                    </td>
+                                    <td class="description">
+                                        <div class="title">
+                                            <a href="">Отель ПАН интер</a>
+                                            <div class="rating-star">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="onmap"><a href="">Посмотреть карту</a></div>
+                                        <div class="address">Кисловодск, Проспект Ленина 26</div>
+
+                                        <p>Этот отель находится в центре города, в 3 минутах езды от железнодорожного вокзала Кисловодска. Сейчас 4 пользователя просматривают этот отель.</p>
+
+                                        <div class="last">Последнее бронирование: 3 часа назад</div>
+
+                                        <div class="available">
+                                            <a href="javascript:;" class="available-toggle">Доступные номера</a>
+
+                                            <div class="available-wrapper">
+                                                <table>
+                                                    <tr>
+                                                        <td class="label">
+                                                            <a href="" class="title">Полулюкс</a>
+                                                            <div class="other">Завтрак включен. <span>Осталось всего 2</span></div>
+                                                        </td>
+                                                        <td class="value">
+                                                            <div class="person"></div>
+                                                            <div class="person"></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">
+                                                            <a href="" class="title">Апартаменты</a>
+                                                            <div class="other">Завтрак включен. <span>Осталось всего 2</span></div>
+                                                        </td>
+                                                        <td class="value">
+                                                            <div class="person"></div>
+                                                            <div class="person"></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">
+                                                            <a href="" class="title">Люкс</a>
+                                                            <div class="other">Завтрак включен. <span>Осталось всего 2</span></div>
+                                                        </td>
+                                                        <td class="value">
+                                                            <div class="person"></div>
+                                                            <div class="person"></div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="price">
+                                        <div class="count">от <big>18 600</big> <span class="icon"></span></div>
+                                        <div class="search-rating"><big>Хорошо</big>, 7.7 /10</div>
+                                        <div class="total-count">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="search-feeds">11 отзывов</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="spacer" colspan="3"></td>
+                                </tr>
+                                <tr>
+                                    <td class="view">
+                                        <a href=""><img src="images/tmp/ss1.jpg" height="120" width="160" alt=""></a>
+                                    </td>
+                                    <td class="description">
+                                        <div class="title">
+                                            <a href="">Отель ПАН интер</a>
+                                            <div class="rating-star">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="onmap"><a href="">Посмотреть карту</a></div>
+                                        <div class="address">Кисловодск, Проспект Ленина 26</div>
+
+                                        <p>Этот отель находится в центре города, в 3 минутах езды от железнодорожного вокзала Кисловодска. Сейчас 4 пользователя просматривают этот отель.</p>
+
+                                        <div class="last">Последнее бронирование: 3 часа назад</div>
+
+                                        <div class="available">
+                                            <a href="javascript:;" class="available-toggle">Доступные номера</a>
+
+                                            <div class="available-wrapper">
+                                                <table>
+                                                    <tr>
+                                                        <td class="label">
+                                                            <a href="" class="title">Полулюкс</a>
+                                                            <div class="other">Завтрак включен. <span>Осталось всего 2</span></div>
+                                                        </td>
+                                                        <td class="value">
+                                                            <div class="person"></div>
+                                                            <div class="person"></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">
+                                                            <a href="" class="title">Апартаменты</a>
+                                                            <div class="other">Завтрак включен. <span>Осталось всего 2</span></div>
+                                                        </td>
+                                                        <td class="value">
+                                                            <div class="person"></div>
+                                                            <div class="person"></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">
+                                                            <a href="" class="title">Люкс</a>
+                                                            <div class="other">Завтрак включен. <span>Осталось всего 2</span></div>
+                                                        </td>
+                                                        <td class="value">
+                                                            <div class="person"></div>
+                                                            <div class="person"></div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="price">
+                                        <div class="count">от <big>18 600</big> <span class="icon"></span></div>
+                                        <div class="search-rating"><big>Хорошо</big>, 7.7 /10</div>
+                                        <div class="total-count">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="search-feeds">11 отзывов</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="spacer" colspan="3"></td>
+                                </tr>
+                                <tr>
+                                    <td class="view">
+                                        <a href=""><img src="images/tmp/ss1.jpg" height="120" width="160" alt=""></a>
+                                    </td>
+                                    <td class="description">
+                                        <div class="title">
+                                            <a href="">Отель ПАН интер</a>
+                                            <div class="rating-star">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="onmap"><a href="">Посмотреть карту</a></div>
+                                        <div class="address">Кисловодск, Проспект Ленина 26</div>
+
+                                        <p>Этот отель находится в центре города, в 3 минутах езды от железнодорожного вокзала Кисловодска. Сейчас 4 пользователя просматривают этот отель.</p>
+
+                                        <div class="last">Последнее бронирование: 3 часа назад</div>
+
+                                        <div class="available">
+                                            <a href="javascript:;" class="available-toggle">Доступные номера</a>
+
+                                            <div class="available-wrapper">
+                                                <table>
+                                                    <tr>
+                                                        <td class="label">
+                                                            <a href="" class="title">Полулюкс</a>
+                                                            <div class="other">Завтрак включен. <span>Осталось всего 2</span></div>
+                                                        </td>
+                                                        <td class="value">
+                                                            <div class="person"></div>
+                                                            <div class="person"></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">
+                                                            <a href="" class="title">Апартаменты</a>
+                                                            <div class="other">Завтрак включен. <span>Осталось всего 2</span></div>
+                                                        </td>
+                                                        <td class="value">
+                                                            <div class="person"></div>
+                                                            <div class="person"></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">
+                                                            <a href="" class="title">Люкс</a>
+                                                            <div class="other">Завтрак включен. <span>Осталось всего 2</span></div>
+                                                        </td>
+                                                        <td class="value">
+                                                            <div class="person"></div>
+                                                            <div class="person"></div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="price">
+                                        <div class="count">от <big>18 600</big> <span class="icon"></span></div>
+                                        <div class="search-rating"><big>Хорошо</big>, 7.7 /10</div>
+                                        <div class="total-count">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="search-feeds">11 отзывов</div>
+                                    </td>
+                                </tr>
+                            </table>
+                            </div>
+                        </div>
+
+                        <div class="paginator">
+                            <ul>
+                                <li class="pages">1-15 из 200</li>
+                                <li><a href="" title=""><strong>&lt;</strong></a></li>
+                                <li class="active"><a href="" title="">1</a></li>
+                                <li><a href="" title="">2</a></li>
+                                <li><a href="" title="">3</a></li>
+                                <li><a href="" title="">4</a></li>
+                                <li><a href="" title="">5</a></li>
+                                <li><a href="" title="">6</a></li>
+                                <li class="spacer">...</li>
+                                <li><a href="" title="">21</a></li>
+                                <li><a href="" title=""><strong>&gt;</strong></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-wrapper">
+                    <div class="footer-copyright">
+                        <p>Copyright © 2013 <a href="">fedkurort.ru</a>. Все права защищены</p>
+
+                        <p>Федеральные курорты России<br>
+                        При поддержке министерства курортов и туризма Ставропольского края</p>
+                    </div>
+
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="" title="">О проекте</a></li>
+                            <li><a href="" title="">Условия и правила</a></li>
+                            <li><a href="" title="">Курорты</a></li>
+                            <li><a href="" title="">Санатории</a></li>
+                            <li><a href="" title="">Реклама</a></li>
+                            <li><a href="" title="">Контакты</a></li>
+                            <li><a href="" title="">Партнерам</a></li>
+                            <li><a href="" title="">Обратная связь</a></li>
+                            <li><a href="" title="">Помощь</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <script src="js/call.js"></script>
+    </body>
+</html>

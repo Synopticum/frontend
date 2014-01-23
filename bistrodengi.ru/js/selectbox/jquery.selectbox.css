@@ -1,0 +1,120 @@
+@CHARSET "UTF-8";
+.sbHolder{
+    font-family: Georgia, sans-serif; 
+    font-size: 17px; 
+    padding: 1px 0; 
+	height: 30px;
+	position: relative;
+	width: 250px;
+    border: 1px solid #d4d4d4; 
+    border-radius: 15px; 
+    background: #fff;
+    outline: none;
+    box-shadow: inset 1px 1px 2px #e6e6e6;
+	color: #999;
+	text-decoration: none;
+	font-style: italic;
+	font-size: 14px;
+}
+.sbHolder:focus .sbSelector{
+	
+}
+.sbSelector{
+	display: block;
+	height: 30px;
+	left: 0;
+	line-height: 32px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 10px;
+	top: 0;
+	width: 170px;
+}
+.sbSelector:link, .sbSelector:visited, .sbSelector:hover{
+	color: #999;
+	outline: none;
+	text-decoration: none;
+}
+.sbSelector:hover{
+	color: #000;
+}
+.sbToggle{
+	display: block;
+	height: 30px;
+	outline: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 30px;
+	background: url(selectbox.png) no-repeat 0 5px;
+}
+.sbToggle:hover{
+	background: url(selectbox.png) no-repeat 0 -372px;
+}
+.sbToggleOpen{
+}
+.sbToggleOpen:hover{
+}
+.sbHolderDisabled{
+	background-color: #3C3C3C;
+	border: solid 1px #515151;
+}
+.sbHolderDisabled .sbHolder{
+	
+}
+.sbHolderDisabled .sbToggle{
+	
+}
+.sbOptions{
+	background-color: #fff;
+	border: solid 1px #d4d4d4;
+	list-style: none;
+	left: -1px;
+	margin: 5px 0 0 0;
+	padding: 0;
+	position: absolute;
+	top: 30px;
+	width: 200px;
+	z-index: 1;
+	overflow-y: auto;
+}
+.sbOptions li{
+	padding: 0 7px;
+}
+.sbOptions a{
+	border-bottom: dotted 1px #d4d4d4;
+	display: block;
+	outline: none;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions a:link, .sbOptions a:visited{
+	color: #999;
+	text-decoration: none;
+	font-style: italic;
+	font-size: 14px;
+}
+.sbOptions a:hover,
+.sbOptions a:focus,
+.sbOptions a.sbFocus{
+	color: #666;
+}
+.sbOptions li.last a{
+	border-bottom: none;
+}
+.sbOptions .sbDisabled{
+	border-bottom: dotted 1px #515151;
+	color: #999;
+	display: block;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbGroup{
+	border-bottom: dotted 1px #515151;
+	color: #EBB52D;
+	display: block;
+	font-weight: bold;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbSub{
+	padding-left: 17px;
+}

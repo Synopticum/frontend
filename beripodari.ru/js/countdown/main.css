@@ -1,0 +1,49 @@
+#countdown_dashboard {
+	margin-left: 40px;
+	height: 50px;
+	background: url(dd.png) no-repeat 71px 21px;
+}
+.dash {
+	margin: 10px 0;
+	width: 70px;
+	height: 44px;
+	background: transparent url('../images/dash.png') 0 0 no-repeat;
+	float: left;
+	margin-left: 5px;
+	position: relative;
+}
+
+.dash .digit {
+	font-size: 28px;
+	font-weight: bold;
+	float: left;
+	width: 30px;
+	text-align: center;
+	font-family: Times;
+	color: #fff;
+	position: relative;
+	background: #000;
+	border-radius: 5px;
+	margin-right: 1px;
+}
+
+.dash_title {
+	position: absolute;
+	display: none;
+	bottom: -4px;
+	right: 6px;
+	font-size: 11px;
+	color: #555;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.dev_comment {
+	font-size: 14pt;
+	color: #777;
+	text-align: center;
+	font-style: italic;
+	margin: 40px 10px;
+}
+
+.weeks_dash, .days_dash, .hours_dash { display: none; }

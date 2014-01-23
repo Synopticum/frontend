@@ -1,0 +1,94 @@
+﻿/* Required. Don't alter | START*/
+.fakeContainer {
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 31px;
+}
+.file {
+    position: absolute;
+    z-index: 3;
+    cursor: default;
+    margin: 0px;
+    padding: 0px;
+}
+.text {
+    position: absolute;
+    top: 0px;
+    cursor: default;
+    z-index: 1;
+    padding: 0 1px;
+    margin: 0px;/*This is must for animator to work correctly*/
+}
+.animator {
+    position: absolute;
+    z-index: 2;
+    cursor: default;
+    margin: 0px;
+    display: none;
+}
+.button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: default;
+    z-index: 1;
+    margin: 0px;
+}
+/* Required. Don't alter | END*/
+
+/* For Demo purpose | START*/
+.demo {
+    margin: 100px;
+}
+.text {
+    margin-right: 50px;
+}
+/* Demo 1 | START */
+.fakeContainer .button
+{
+    cursor: pointer;
+    float: right;
+    cursor: pointer;
+    position: relative;
+    z-index: 500;
+    display: inline-block; 
+    vertical-align: top; 
+    padding: 3px 20px 4px 20px; 
+    font-family: 'Open Sans Semibold'; 
+    text-decoration: none; 
+    font-size: 17px; 
+    color: #fff; 
+    text-transform: uppercase;
+    background: #57ae8a; 
+    border-radius: 2px;
+    border: 0;
+    text-align: center;
+}
+.fakeContainer .button.hover
+{
+}
+.fakeContainer .text
+{
+    left: 0px;
+    border: 0;
+    padding: 8px 1px 8px 134px;
+    width: 200px;
+    background: url(../../images/selectfile.png) no-repeat 0 0;
+}
+.fakeContainer .text.hover
+{
+}
+.fakeContainer .text.watermarkTextbox
+{
+    color: Gray;
+}
+.fakeContainer .animator
+{
+    right: 200px;
+    background-color: #BBDAFD;
+    -moz-border-radius: 4px;
+    padding: 0px 7px;
+    margin: 0px;
+    font-weight: bold;
+}

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+
+        <link href="js/jquery-ui/css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+        <script src="js/jquery-ui/js/jquery-ui-1.10.3.custom.js"></script>
+
+        <link href="js/selectbox/jquery.selectbox.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="js/selectbox/jquery.selectbox-0.2.js"></script>
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body class="inner">
+        <div id="main">
+            <header>
+                <div class="header-wrapper">
+                    <div class="header-top">
+                        <a href="" class="header-select-city"><span>Выбрать город</span></a>
+
+                        <div class="header-phone-number">
+                            <div class="number">8 800 700-43-44</div>
+                        </div>
+
+                        <div class="header-phone-label">
+                            Звонок по России<br />бесплатный
+                        </div>
+
+                        <a href="" class="header-call">заказать звонок</a>
+                    </div>
+
+                    <!--  -->
+
+                    <div class="header-main">
+                        <div class="header-main-wrapper clearfix">
+                            <a href=""><img src="images/header-logo.png" height="37" width="329" alt="" class="header-logo"></a>
+
+                            <ul>
+                                <li><a href="" title="">О компании</a></li>
+                                <li><a href="" title="">Как получить займ?</a></li>
+                                <li><a href="" title="">Как получить займ?</a></li>
+                            </ul>
+
+                            <a href="" class="header-main-icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div id="wrap">
+                <div class="welcome">
+                    <h1>Заполни заявку за 1 минуту<br />и получи займ сегодня</h1>
+
+                    <div class="features">
+                        <div class="item i1">
+                            <h3>Сумма займа до 25 000 рублей</h3>
+                        </div>
+
+                        <div class="item i2">
+                            <h3>Сроки займа до 30 дней<br /><small>с возможностью продления</small></h3>
+                        </div>
+                        
+                        <div class="item i3">
+                            <h3>Без справок и поручителей</h3>
+                        </div>
+                        
+                        <div class="item i4">
+                            <h3>только паспорт</h3>
+                        </div>
+                    </div>
+
+                    <div class="slogan">
+                        <p>День Рождения лучшего друга, поломка автомобиля, лечение разболевшегося зуба или распродажа в любимом магазине – как часто происходят непредвиденные ситуации, когда нам срочно нужны деньги до зарплаты?</p>
+                    </div>
+
+                    <div class="gotoorder">
+                        <span class="button"><input type="button" value="оформить заявку" /></span>
+                    </div>
+                </div>
+
+                <div class="cashout"></div>
+
+                <!-- calculator -->
+                <div class="calculator clearfix">
+                    <div class="wrapper">
+                        <div class="sliders">
+                            <p style="display: none;">
+                              <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
+                            </p>
+                            <h4>На какую сумму вы хотите оформить займ?</h4>
+                            <div id="slider-range-max"></div>
+
+                            <p style="display: none;">
+                              <input type="text" id="amount-2" style="border:0; color:#f6931f; font-weight:bold;">
+                            </p>
+                            <h4>На сколько дней?</h4>
+                            <div id="slider-range-max-2"></div>
+                        </div>
+
+                        <div class="papers">
+                            <table>
+                                <tr>
+                                    <td class="label">Комиссия</td>
+                                    <td class="value">900 руб.</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">К оплате</td>
+                                    <td class="value">12 900 руб.</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Погасить до<br /><small>(включительно)</small></td>
+                                    <td class="value">15 ноября<br /><small>2013 года</small></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>                    
+                </div>
+
+                <form action="">
+                <!-- order -->
+                <div class="order clearfix">
+                    <div class="column column-left">
+                        <h2>Личные данные</h2>
+
+                        <table>
+                            <tr>
+                                <td class="label">Фамилия*</td>
+                                <td class="value"><input type="text" id="" value="Константинопольский" class="textbox ok" /></td>
+                            </tr>
+
+                            <tr>
+                                <td class="label">Имя*</td>
+                                <td class="value"><input type="text" id="" value="" class="textbox" /></td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="label">Отчество*</td>
+                                <td class="value"><input type="text" id="" value="заполните поле" class="textbox error" /></td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="label">Дата рождения*</td>
+                                <td class="value"><input type="text" class="datepicker textbox"></td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="label">Серия и номер<br />паспорта*</td>
+                                <td class="value"><input type="text" id="" value="" class="textbox" /></td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="label">Мобильный  телефон</td>
+                                <td class="value"><input type="text" id="" value="" class="textbox" /></td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="label">Город проживания*<small>(фактический)</small></td>
+                                <td class="value">
+                                    <select name="country_id" id="sb1" class="selectbox" tabindex="1">
+                                        <option value="">выберите</option>
+                                        <option value="4">Brazil</option>
+                                        <option value="10">South Africa</option>
+                                    </select>    
+
+                                    <select name="country_id2" id="sb2" class="selectbox" tabindex="2">
+                                        <option value="">выберите</option>
+                                        <option value="4">Brazil</option>
+                                        <option value="10">South Africa</option>
+                                    </select>                                      
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="column column-right">
+                        <h2>Сведения о работе</h2>
+
+                        <table>
+                            <tr>
+                                <td class="label">Название организации*</td>
+                                <td class="value"><input type="text" id="" value="" class="textbox" /></td>
+                            </tr>
+
+                            <tr>
+                                <td class="label">Должность*</td>
+                                <td class="value"><input type="text" id="" value="" class="textbox" /></td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="label">Отчество*</td>
+                                <td class="value"><input type="text" id="" value="" class="textbox" /></td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="label">Телефон организации или руководителя*</td>
+                                <td class="value"><input type="text" id="" value="" class="textbox" /></td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="label vt">Адрес организации*</td>
+                                <td class="value">
+                                    <input type="text" id="" value="" class="textbox" /><br />
+                                    <input type="text" id="" value="" class="textbox" />
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="label">Общий уровень дохода*</td>
+                                <td class="value">  
+                                    <select name="country_id2" id="sb2" class="selectbox" tabindex="2">
+                                        <option value="">выберите</option>
+                                        <option value="4">Brazil</option>
+                                        <option value="10">South Africa</option>
+                                    </select>     
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="accept">
+                    <input type="checkbox" id="check1" class="checkbox"><label for="check1">Я согласен на обработку моих персональных данных <span class="highlight">(подробная информация)</span></label><br />
+                    <input type="checkbox" id="check2" class="checkbox"><label for="check2">Я являюсь гражданином РФ</label>
+                </div>
+
+                <div class="done">
+                    <span class="button"><input type="button" value="оформить заявку" /></span>
+                </div>
+                </form>
+
+            </div>
+
+            <footer>
+                <div class="footer-wrapper">
+                    <div class="footer-menu">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>О компании</th>
+                                    <th>Займы</th>
+                                    <th>Рекомендации</th>
+                                    <th>Документы</th>
+                                    <th>Партнёрам</th>
+                                    <th>Работа у нас</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <ul>
+                                            <li><a href="" title="">Миссия</a></li>
+                                            <li><a href="" title="">История</a></li>
+                                            <li><a href="" title="">Награды</a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="" title="">Как получить займ?</a></li>
+                                            <li><a href="" title="">Как погасить займ?</a></li>
+                                            <li><a href="" title="">Online заявка</a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="" title="">Заёмщикам</a></li>
+                                            <li><a href="" title="">Как не стать должником</a></li>
+                                            <li><a href="" title="">Вопрос - Ответ</a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="" title="">Правила предоставления микрозаймов</a></li>
+                                            <li><a href="" title="">Политика по персональным данным</a></li>
+                                            <li><a href="" title="">Список аффилированных лиц</a></li>
+                                            <li><a href="" title="">Свидетельство МФО</a></li>
+                                            <li><a href="" title="">Реестр МФО</a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="" title="">Аренда</a></li>
+                                            <li><a href="" title="">Реклама</a></li>
+                                            <li><a href="" title="">Строительство</a></li>
+                                            <li><a href="" title="">Конкурсная документация</a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="" title="">Вакансии</a></li>
+                                            <li><a href="" title="">Оставить резюме</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <a href=""><img src="" alt="" class="footer-logo"><img src="images/footer-logo.png" height="15" width="154" alt=""></a>
+
+                        <ul>
+                            <li>2013 © ООО «Магазин Малого Кредитования»</li>
+                            <li><a href="" title="">Обратная связь</a></li>
+                            <li><a href="" title="">Карта сайта</a></li>
+                            <li><a href="" title="">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <script src="js/call.js"></script>
+    </body>
+</html>

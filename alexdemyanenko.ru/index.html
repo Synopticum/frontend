@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="fonts/dinpro/style.css">
+
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+
+        <script type="text/javascript" src="js/countdown/jquery.countdown.js"></script>
+        <script type="text/javascript">
+          $(function() {
+            var endDate = "January 20, 2014 15:03:25";
+
+            $('.countdown.styled').countdown({
+              date: endDate,
+              render: function(data) {
+                $(this.el).html("<div>" + this.leadingZeros(data.days, 2) + " <span>дней</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>часов</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>минут</span></div><div class='last'>" + this.leadingZeros(data.sec, 2) + " <span>секунд</span></div>");
+              }
+            });
+
+            $('.countdown.callback').countdown({
+              date: +(new Date) + 10000,
+              render: function(data) {
+                $(this.el).text(this.leadingZeros(data.sec, 2) + " sec");
+              },
+              onEnd: function() {
+                $(this.el).addClass('ended');
+              }
+            }).on("click", function() {
+              $(this).removeClass('ended').data('countdown').update(+(new Date) + 10000).start();
+            });
+
+          });
+        </script>
+
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+        <div id="main">
+
+            <div id="wrap">
+                <div class="e1">
+                    <div class="wrapper">
+                        <a href=""><img src="images/header-logo-left.png" height="85" width="285" alt="" class="e1-logo-lt"></a>
+                        <img src="images/header-logo.png" height="356" width="584" alt="" class="e1-logo">
+
+                        <div class="e1-phone">
+                            <strong>8 495 000 00 00</strong><br>
+                            заказать бесплатный звонок
+                        </div>
+
+                        <div class="e1-form">
+                            <form action="">
+                            <div class="title">узнайте,<br>свободен ли ведущий<br>на дату вашего мероприятия</div>
+
+                            <input type="text" id="" class="textbox" placeholder="введите ваше имя"><br>
+                            <input type="text" id="" class="textbox" placeholder="введите ваш телефон"><br>
+                            <input type="submit" class="submit" value="">
+                            </form>
+                        </div>
+
+                        <div class="e1-triggers">
+                            <div class="t1">невесты или 106 туфелек было украдено. Таковы итоги<br>
+                                коллективной свадьбы в «Пиратском стиле» 2011 г. в Сомали.<br>
+                                Выкуп до сих пор не выплачен, невесты остаются на корабле.<br>
+                                Больше ни каких «Пиратских Party».
+                            </div>
+
+                            <div class="t2">За время моего ведения гости выпили именно столько<br>
+                                бутылок шампанского. Как поправляет Г. Онищенко,<br>
+                                1133 из них оказались игристым вином. Да, Геннадию<br>
+                                Григорьевичу лучше знать, ведь это был его юбилей.
+                            </div>
+
+                            <div class="t3">Столько канапе было съедено<br>
+                                гостями мероприятий, а я съел<br>
+                                на ведении мероприятий собаку.<br>
+                                Корейская кухня мне по-душе.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  -->
+
+                <div class="e2"></div>
+
+
+                <!--  -->
+
+                <div class="e3">
+                    <div class="wrapper">
+                        <div class="e3-me">
+                            <div class="col1">
+                                <div class="item">
+                                    <div class="title">Никогда не пью<br>на мероприятиях</div>
+                                    <p>всегда трезвый взгляд на любую<br>непредвиденную ситуацию</p>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title">Стильный<br>в дорогой одежде</div>
+                                    <p>свой среди своих на любом<br>мероприятии бизнес класса</p>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title">Отличная эрудиция<br>во многих областях</div>
+                                    <p>возможность компетентного общения с гостями<br>на совершенно разных мероприятиях</p>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title">Уверенность перед<br>большой аудиторией</div>
+                                    <p>навык проведения крупных мероприятий<br>более 500 человек</p>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title">проведение<br>долгоиграющих проектов</div>
+                                    <p>до 1 месяца каждый день один сценарий,<br>умение эффективно вести даже самые<br>монотонные мероприятия</p>
+                                </div>
+                            </div>
+
+                            <div class="col2">
+                                <div class="item">
+                                    <div class="title">Опыт работы<br>радиоведущим</div>
+                                    <p>поставленный голос, быстрая реакция,<br>навык написания оригинальных подводок<br>под различные элементы программы<br>в том числе под тостующих гостей</p>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title">Оригинальный сценарий<br>для каждого мероприятия</div>
+                                    <p>ваше мероприятие будет вашим!</p>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title">Не пою</div>
+                                    <p>избитый репертуар на три октавы,<br>да не услышат Ваши ушки</p>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title">Не играю на музыкальных<br>инструментах</div>
+                                    <p>точно, приеду без баяна</p>
+                                </div>
+
+                                <div class="item">
+                                    <div class="title">Работаю<br>с профессиональным<br>опытным диджеем</div>
+                                    <p>полная уверенность в высочайшем уровне<br>музыкального сопровождения<br>мероприятия</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item item-last">
+                            <div class="title">Проведение мероприятия<br>для VIP аудитории</div>
+                            <p>мероприятия на бизнес уровне</p>                            
+                        </div>
+                    </div>
+                </div>
+
+                <!--  -->
+
+                <div class="e4">
+                    <div class="e4-countdown">
+                        <div class="title">Оставьте заявку</div>
+                        <div class="subtitle">на ваше мероприятие сейчас и получите</div>
+                        <div class="e4-hour"></div>
+
+                        <div class="wrapper">
+                            <form action="">
+                            <input type="text" class="textbox tt1" placeholder="введите ваше имя">
+                            <input type="text" class="textbox tt2" placeholder="введите ваш телефон">
+                            <input type="submit" class="submit" value="">
+                            </form>
+                        </div>
+
+                        <div class="action">
+                            <div class="title">до конца акции осталось</div>
+
+                            <div class="countdown styled"></div>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="e4-features">
+                            <div class="f1">Русский язык,<br>которому завидуют<br>другие ведущие!</div>
+                            <div class="f2">Презентабельная<br>внешность!<br>Действительно<br>презентабельная!</div>
+                            <div class="f3">Креативность –<br>не слово, а дело.<br>В сценарии. В жизни.<br>На вашем событии!</div>
+                            <div class="f4">Юмор – самая<br>тонкая часть меня,<br>которую я подарю вам<br>и вашим гостям!</div>
+                            <div class="f5">Институт<br>телевидения<br>«Останкино»,<br>специальность<br>«Телерадиоведущий»,<br>а также тренинги<br>и мастер-классы.<br>Постоянный<br>профессиональный рост.<br>Ваше <br>событие<br>будет еще лучше!</div>
+                        </div>
+
+                        <div class="e4-wh">
+                            <div class="title"></div>
+
+                            <div class="items">
+                                <div class="i1">Вы звоните мне<br>или оставляете <br>заявку.</div>
+                                <div class="i2">Мы встречаемся<br>в удобном<br>для вас месте<br>и знакомимся.</div>
+                                <div class="i3">Я выслушиваю<br>ваши пожелания,<br>рассказываю<br>о структуре<br>мероприятия<br>и предлагаю<br>варианты события.</div>
+                                <div class="i4">Как только Вы<br>остановились<br>на моей<br>кандидатуре<br>мы заключаем<br>договор и<br>вы вносите<br>предоплату.</div>
+                                <div class="i5">Выбираем<br>конкурсы и<br>я прописываю<br>содержание,<br>подводки,<br>фишки.</div>
+                                <div class="i6">Утверждаем<br>и Вы получаете<br>сценарий</div>
+                                <div class="i7">Веду ваше<br>событие</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  -->
+                <div class="e5">
+                    <div class="wrapper">
+                        <div class="title"></div>
+
+                        <p>Мы заключим с вами договор<br>на предоставление услуг ведущего мероприятия,<br>по которому, если вам не понравится моя работа,<br>я без лишних вопросов верну сумму гонорара!</p>
+                    </div>
+                </div>
+
+                <!--  -->
+                <div class="e6">
+                    <div class="wrapper">
+
+                        <div class="hm">
+                            <div class="title">Просто оставьте заявку</div>
+                            <p>я перезвоню вам и с радостью отвечу<br>на любые вопросы! Или звоните мне<br>по телефону:</p>
+                            <div class="phone">8 495 000 00 00</div>
+                        </div>
+
+                        <div class="e1-form">
+                            <form action="">
+                            <div class="title">узнайте,<br>свободен ли ведущий<br>на дату вашего мероприятия</div>
+
+                            <input type="text" id="" class="textbox" placeholder="введите ваше имя"><br>
+                            <input type="text" id="" class="textbox" placeholder="введите ваш телефон"><br>
+                            <input type="submit" class="submit" value="">
+                            </form>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="js/call.js"></script>
+    </body>
+</html>

@@ -1,0 +1,226 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+u, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1.2;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+input, textarea, select { margin: 0; outline: none; }
+mark { background: none; }
+
+/* styles */
+html, body { height: 100% }
+
+body { 
+    min-width: 1200px; 
+    background: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #3b3b3b;
+}
+
+#main { 
+    position: relative; 
+    min-height: 100%; 
+}
+
+#wrap { 
+    width: 1160px; 
+    margin: 0 auto; 
+    padding: 0 0 200px 0; 
+}
+
+a { color: #0068de; }
+a:hover { color: #e32132; }
+
+/* header */
+header {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 140px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAdCAIAAADkY5E+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAD1JREFUeNo8w0kKADEIBED//1ijJq65DDRMCoqYmf5rrVdEXlVFM8O9N55z0N0xIjAzsaqou3Fm8N77CTAAlWZSyZutalYAAAAASUVORK5CYII=) repeat-x;
+}
+.header-wrapper { width: 1160px; margin: 0 auto; }
+
+.header-logo { float: left; margin: 50px 0 0 44px; }
+
+.header-phone { float: right; margin: 45px 35px 0 0; }
+    .header-phone .number { margin-bottom: 3px; font-size: 30px; color: #e32132; }
+
+/* middle */
+.middle { position: relative; z-index: 50; margin: -80px auto 0 auto; width: 1160px; height: 455px; background: url(../images/home-bg.jpg) no-repeat 50% 100%; }
+
+    .middle-quote { position: absolute; right: 24px; top: 70px; width: 426px; height: 190px; padding: 64px 0 0 40px; background: url(../images/middle-q.png) no-repeat; }
+        .middle-quote .title { font-size: 30px; color: #0068de; text-decoration: none; border-bottom: 1px solid #0068de; }
+        .middle-quote .title:hover { color: #e32132; border-color: #e32132; }
+        .middle-quote p { margin: 35px 0 0 35px; font-size: 18px; color: #3b3b3b; font-style: italic; }
+
+    .middle-about { position: absolute; left: 0; top: 100px; width: 280px; }
+        .middle-about h6 { font-size: 18px; color: #151515; }
+        .middle-about p { margin: 15px 0 15px 15px; color: #3b3b3b; font-size: 14px; line-height: 150%; }
+        .middle-about .yellow-button { margin-top: 40px; }
+
+    .middle-ask { position: absolute; right: 115px; top: 360px; font-size: 24px; }
+
+/* content */
+.yellow-button { display: inline-block; vertical-align: top; padding: 13px 14px; font-size: 0; background: #fff; box-shadow: 0 0 25px 3px rgba(0,0,0,.2); border-radius: 17px; }
+    .yellow-button a {
+        display: inline-block;
+        vertical-align: top;
+        padding: 10px 25px;
+        background: #fff36c;
+        background: -moz-linear-gradient(top,  #fff36c 0%, #ffee63 18%, #ffe253 40%, #ffde50 45%, #ffd149 48%, #ffcb46 50%, #ffb32d 85%, #ffaf28 95%, #ffaf2d 98%, #ffad26 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff36c), color-stop(18%,#ffee63), color-stop(40%,#ffe253), color-stop(45%,#ffde50), color-stop(48%,#ffd149), color-stop(50%,#ffcb46), color-stop(85%,#ffb32d), color-stop(95%,#ffaf28), color-stop(98%,#ffaf2d), color-stop(100%,#ffad26));
+        background: -webkit-linear-gradient(top,  #fff36c 0%,#ffee63 18%,#ffe253 40%,#ffde50 45%,#ffd149 48%,#ffcb46 50%,#ffb32d 85%,#ffaf28 95%,#ffaf2d 98%,#ffad26 100%);
+        background: -o-linear-gradient(top,  #fff36c 0%,#ffee63 18%,#ffe253 40%,#ffde50 45%,#ffd149 48%,#ffcb46 50%,#ffb32d 85%,#ffaf28 95%,#ffaf2d 98%,#ffad26 100%);
+        background: -ms-linear-gradient(top,  #fff36c 0%,#ffee63 18%,#ffe253 40%,#ffde50 45%,#ffd149 48%,#ffcb46 50%,#ffb32d 85%,#ffaf28 95%,#ffaf2d 98%,#ffad26 100%);
+        background: linear-gradient(to bottom,  #fff36c 0%,#ffee63 18%,#ffe253 40%,#ffde50 45%,#ffd149 48%,#ffcb46 50%,#ffb32d 85%,#ffaf28 95%,#ffaf2d 98%,#ffad26 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff36c', endColorstr='#ffad26',GradientType=0 );
+        font-size: 18px;
+        font-weight: bold;
+        color: #151515;
+        text-shadow: 1px 1px 0 #fff;
+        border-radius: 20px;
+        text-decoration: none;
+        border: 1px solid #ffbe2b;
+        box-shadow: inset 0 1px 0 #fff, 0 0 4px 3px rgba(0,0,0,.25);
+    }
+    .yellow-button a:active {
+        background: #ffad26;
+        background: -moz-linear-gradient(top,  #ffad26 0%, #ffaf2d 3%, #ffaf28 5%, #ffb32d 15%, #ffcb46 50%, #ffd049 53%, #ffde50 55%, #ffe253 60%, #ffee63 83%, #fff36c 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffad26), color-stop(3%,#ffaf2d), color-stop(5%,#ffaf28), color-stop(15%,#ffb32d), color-stop(50%,#ffcb46), color-stop(53%,#ffd049), color-stop(55%,#ffde50), color-stop(60%,#ffe253), color-stop(83%,#ffee63), color-stop(100%,#fff36c));
+        background: -webkit-linear-gradient(top,  #ffad26 0%,#ffaf2d 3%,#ffaf28 5%,#ffb32d 15%,#ffcb46 50%,#ffd049 53%,#ffde50 55%,#ffe253 60%,#ffee63 83%,#fff36c 100%);
+        background: -o-linear-gradient(top,  #ffad26 0%,#ffaf2d 3%,#ffaf28 5%,#ffb32d 15%,#ffcb46 50%,#ffd049 53%,#ffde50 55%,#ffe253 60%,#ffee63 83%,#fff36c 100%);
+        background: -ms-linear-gradient(top,  #ffad26 0%,#ffaf2d 3%,#ffaf28 5%,#ffb32d 15%,#ffcb46 50%,#ffd049 53%,#ffde50 55%,#ffe253 60%,#ffee63 83%,#fff36c 100%);
+        background: linear-gradient(to bottom,  #ffad26 0%,#ffaf2d 3%,#ffaf28 5%,#ffb32d 15%,#ffcb46 50%,#ffd049 53%,#ffde50 55%,#ffe253 60%,#ffee63 83%,#fff36c 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffad26', endColorstr='#fff36c',GradientType=0 );
+    }
+
+.all { padding: 25px 30px; background: #eee; overflow: hidden; }
+    .all .col { float: left; margin: 0 70px 0 0; width: 310px; }
+    .all .col-right { margin-right: 0; }
+        .all .col-title a { color: #151515; text-decoration: none; border-bottom: 1px solid #8f8f8f; font-size: 18px; }
+
+        .all .item { margin: 20px 0 0 0; }
+            .all .item .title { font-size: 14px; }
+            .all .item p { margin: 10px 0 0 0; }
+
+.breadcrumbs { margin: 0 0 45px 0; padding: 15px 45px; background: #eee; color: #777; font-size: 14px; }
+    .breadcrumbs a { color: #151515; text-decoration: none; border-bottom: 1px solid #8f8f8f; }
+    .breadcrumbs a:hover { color: #e32132; border-color: #e32132; }
+    .breadcrumbs .spacer { margin: 0 10px; }
+
+.leftside { float: left; width: 225px; margin: 0 45px 0 0; }
+    .leftside ul { border: 1px solid #c6c6c6; }
+        .leftside li { border-top: 1px solid #c6c6c6; padding: 17px 28px; background: #eee; }
+        .leftside li:first-child { border-top: 0; }
+        .leftside li.active { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAKCAYAAACXDi8zAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAI1JREFUeNpiEBUV5QRipf///zMgYyYGBoZVQHxFTEzMjwEJgCTOADEnEK8BSkbBZUDagEbFA/FvIP4HxMUgMUYQAQJA1bFAah4QMwNxChOSsaJQo/8B8XdGoFYWIGMmECeBBIA47NWrV1tAghOhgt+AOAQouB2kHSQhA8RfgNgbKHgIYTDEg1LoHgQIMADu5j5mte2cfAAAAABJRU5ErkJggg==) no-repeat 95% 24px #fff; }
+            .leftside li a { font-size: 18px; color: #151515; }
+
+        .leftside ul ul { margin-top: 20px; border: 0; }
+            .leftside li li { margin: 15px 0; padding: 0; border: 0; background: none !important; }
+                .leftside li li a { font-size: 14px; color: #0068de; border: 0; }
+                .leftside li li a:hover { color: #e32132; }
+                .leftside li li.active a, .leftside li li.active a { color: #777; text-decoration: none; }
+
+.content { overflow: hidden; font-size: 14px; }
+    .content h1, .content h2 { font-size: 30px; color: #151515; }
+    .content h3 { clear: both; font-size: 18px; color: #151515; }
+    .content p { margin: 25px 0; line-height: 140%; }
+
+    .content blockquote { margin: 25px 0; width: 540px; font-size: 13px; color: #777; line-height: 140%; }
+
+    .content .alignright { float: right; margin: 0 0 10px 10px; }
+
+    .features { margin: 25px 0; padding: 5px 35px 5px 25px; border: 5px solid #eee; border-radius: 20px; overflow: hidden; }
+        .features li { margin: 13px 0; font-style: italic; color: #3b3b3b; font-size: 16px; }
+
+        .features .yellow-button { float: right; margin: 20px 0 0 0; }
+
+/* footer */
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 140px;
+    padding: 35px 0 0 0;
+}
+.footer-wrapper { width: 1160px; margin: 0 auto; }
+
+.footer-contacts { float: left; margin: 0 45px 0 0; }
+    .footer-contacts .number { font-size: 18px; color: #151515; }
+
+    .footer-social { margin: 12px 0; overflow: hidden; }
+        .footer-social a { float: left; margin: 0 5px 0 0; display: block; width: 24px; height: 24px; background: url(../images/social.png) no-repeat; }
+        .footer-social .s2 { background-position: -29px 0; }
+        .footer-social .s3 { background-position: -58px 0; }
+        .footer-social .s4 { background-position: -88px 0; }
+
+.footer-copyright { float: right; color: #777; }
+
+.footer-menu { float: left; margin: 2px 0 0 0; overflow: hidden; }
+    .footer-menu li { display: inline-block; vertical-align: top; padding: 0 70px 0 0; }
+        .footer-menu li a { font-size: 14px; text-decoration: none; border-bottom: 1px solid #999; color: #151515; }
+
+        .footer-menu ul ul { margin-top: 10px; }
+        .footer-menu li li { display: block; margin: 5px 0; padding: 0; }
+            .footer-menu li li a { font-size: 13px; border-color: #cacaca; }
+            .footer-menu li li a:hover { color: #e32132; border-color: #e32132; }

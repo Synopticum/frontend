@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+
+        <link rel="stylesheet" href="js/anythingslider/anythingslider.css">
+        <script src="js/anythingslider/jquery.anythingslider.js"></script>
+
+        <link href="js/selectbox/jquery.selectbox.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="js/selectbox/jquery.selectbox-0.2.js"></script>
+
+        <script src="js/jquery.inputmask.js"></script>
+
+        <link href="js/jquery-ui/css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+        <script src="js/jquery-ui/js/jquery-ui-1.10.3.custom.js"></script>
+        <script>
+        $(function() {
+            $( ".checkbox" ).button();
+            $( ".radiobox" ).buttonset();
+        });
+        </script>
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <header>
+                <div class="header-top">                    
+                    <div class="header-wrapper clearfix">
+                        <div class="header-phone">+7 (499) 653-64-06</div>
+
+                        <div class="header-question"><a href="">Задать вопрос</a></div>
+                        <div class="header-email"><a href="mailto:info@pyxi.ru">info@pyxi.ru</a></div>
+
+                        <div class="header-register"><a href="">Регистрация</a></div>
+                        <div class="header-login header-logged">Администратор</div>
+                    </div>
+                </div>
+
+                <div class="header-menu has-submenu">                    
+                    <div class="header-wrapper clearfix">
+                        <ul>
+                            <li><a href="" title="">Тарифы</a></li>
+                            <li><a href="" title="">Услуги</a></li>
+                            <li><a href="" title="">База</a></li>
+                            <li class="active"><a href="" title="">Личный кабинет</a>
+                                <ul>
+                                    <li class="active"><a href="" title="">Управление доступом</a></li>
+                                    <li><a href="" title="">Реклама</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" title="">Сайт</a></li>
+                        </ul>
+
+                        <a href=""><img src="images/header-logo.png" height="39" width="101" alt="" class="header-logo" /></a>
+                    </div>
+                </div>
+            </header>
+
+            <div id="wrap">
+                <div class="content">
+                    <!-- user nav -->
+                    <div class="usernav clearfix">
+                        <div class="usernav-bonus">
+                            Бонусы: <strong>0</strong>
+                            <a href="javascript:;" class="usernav-q"></a>
+                        </div>
+
+                        <div class="usernav-pay">
+                            Выкупы: <strong>0</strong>
+                            <a href="" class="usernav-button">купить</a>
+                        </div>
+                    </div>
+
+                    <!-- rent -->
+                    <div class="rent rent-private">
+                        <table>
+                            <col width="8%" />
+                            <col width="8%" />
+                            <col width="12%" />
+                            <col width="12%" />
+                            <col width="11%" />
+                            <col width="20%" />
+                            <col width="27%" />
+                            <thead>
+                                <tr>
+                                    <th>Статус</th>
+                                    <th>Пароль</th>
+                                    <th>Комментарий</th>
+                                    <th>Сдам / Сниму / Продам</th>
+                                    <th>Будни / Выходные</th>
+                                    <th>Время работы</th>
+                                    <th>Действие</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="green">Активен</span></td>
+                                    <td>1ss48f3s9</td>
+                                    <td>
+                                        <input type="text" class="default-textbox ok-textbox" />
+                                    </td>
+                                    <td>
+                                        <div class="checkboxset">
+                                            <input type="checkbox" id="check1" class="checkbox"><label for="check1">1</label>
+                                            <input type="checkbox" id="check2" class="checkbox"><label for="check2">2</label>
+                                            <input type="checkbox" id="check3" class="checkbox"><label for="check3">3</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="checkboxset">
+                                            <input type="checkbox" id="check4" class="checkbox"><label for="check4">1</label>
+                                            <input type="checkbox" id="check5" class="checkbox"><label for="check5">2</label>
+                                        </div>
+                                    </td>
+                                    <td>        
+                                        <span class="s1">                                
+                                        <select name="" id="" class="selectbox" tabindex="1">
+                                            <option value="">00:00</option>
+                                            <option value="4">Brazil</option>
+                                            <option value="10">South Africa</option>
+                                        </select>   
+                                        </span>
+
+                                        <span class="s2"> 
+                                        <select name="" id="" class="selectbox" tabindex="1">
+                                            <option value="">24:00</option>
+                                            <option value="4">Brazil</option>
+                                            <option value="10">South Africa</option>
+                                        </select>  
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a href="" class="control">Сбросить</a>
+                                        <a href="" class="control">Выкл</a>
+                                        <a href="" class="control nomargin bold">Сохранить</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><span class="red">Неактивен</span></td>
+                                    <td>1ss48f3s9</td>
+                                    <td>
+                                        <input type="text" class="default-textbox ok-textbox" />
+                                    </td>
+                                    <td>
+                                        <div class="checkboxset">
+                                            <input type="checkbox" id="check21" class="checkbox"><label for="check21">1</label>
+                                            <input type="checkbox" id="check22" class="checkbox"><label for="check22">2</label>
+                                            <input type="checkbox" id="check23" class="checkbox"><label for="check23">3</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="checkboxset">
+                                            <input type="checkbox" id="check24" class="checkbox"><label for="check24">1</label>
+                                            <input type="checkbox" id="check25" class="checkbox"><label for="check25">2</label>
+                                        </div>
+                                    </td>
+                                    <td>      
+                                        <span class="s1">                                
+                                        <select name="" id="" class="selectbox" tabindex="1">
+                                            <option value="">00:00</option>
+                                            <option value="4">Brazil</option>
+                                            <option value="10">South Africa</option>
+                                        </select>   
+                                        </span>
+
+                                        <span class="s2"> 
+                                        <select name="" id="" class="selectbox" tabindex="1">
+                                            <option value="">24:00</option>
+                                            <option value="4">Brazil</option>
+                                            <option value="10">South Africa</option>
+                                        </select>  
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a href="" class="control">Сбросить</a>
+                                        <a href="" class="control">Выкл</a>
+                                        <a href="" class="control nomargin bold">Сохранить</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><span class="green">Активен</span></td>
+                                    <td>1ss48f3s9</td>
+                                    <td>
+                                        <input type="text" class="default-textbox ok-textbox" />
+                                    </td>
+                                    <td>
+                                        <div class="checkboxset">
+                                            <input type="checkbox" id="check31" class="checkbox"><label for="check31">1</label>
+                                            <input type="checkbox" id="check32" class="checkbox"><label for="check32">2</label>
+                                            <input type="checkbox" id="check33" class="checkbox"><label for="check33">3</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="checkboxset">
+                                            <input type="checkbox" id="check34" class="checkbox"><label for="check34">1</label>
+                                            <input type="checkbox" id="check35" class="checkbox"><label for="check35">2</label>
+                                        </div>
+                                    </td>
+                                    <td>      
+                                        <span class="s1">                                
+                                        <select name="" id="" class="selectbox" tabindex="1">
+                                            <option value="">00:00</option>
+                                            <option value="4">Brazil</option>
+                                            <option value="10">South Africa</option>
+                                        </select>   
+                                        </span>
+
+                                        <span class="s2"> 
+                                        <select name="" id="" class="selectbox" tabindex="1">
+                                            <option value="">24:00</option>
+                                            <option value="4">Brazil</option>
+                                            <option value="10">South Africa</option>
+                                        </select>  
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a href="" class="control">Сбросить</a>
+                                        <a href="" class="control">Выкл</a>
+                                        <a href="" class="control nomargin bold">Сохранить</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <a href="" class="green-button">Добавить</a>
+                    </div>
+
+                    <!-- agent phones -->
+                    <div class="phones clearfix">
+                        <h2>Телефоны Ваших агентов, чтобы мы не отправляли им СМС</h2>
+
+                        <div class="rent phones-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Телефон</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>+79055053811</td>
+                                        <td><a href="" class="rent-close2"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>+79055053811</td>
+                                        <td><a href="" class="rent-close2"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>+79055053811</td>
+                                        <td><a href="" class="rent-close2"></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="phones-add">
+                            <input type="text" id="phone4" class="default-textbox" />                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-wrapper clearfix">
+                    <div class="footer-copyright">
+                        © 2012 www.Pyxi.ru - информационный сервис для агентов по недвижимости
+                    </div>
+
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="" title="">info@pyxi.ru</a></li>
+                            <li><a href="" title="">Регистрация</a></li>
+                            <li><a href="" title="">Вход</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-phone">
+                        +7 (499) 653-64-06
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <script>
+        $(document).ready(function() {
+            $("#phone4").inputmask("+7 (999) 999-99-99");//маска
+        });
+        </script>
+
+        <script src="js/call.js"></script>
+    </body>
+</html>
