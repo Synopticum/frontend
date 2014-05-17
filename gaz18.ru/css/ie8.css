@@ -1,0 +1,14 @@
+.slide-wrapper .slogan-1 { left: 110px; }
+
+#parthners.skdslider a.prev, #parthners.skdslider a.next { 
+        top: 30px !important; 
+        right: 20px !important; 
+        left: auto !important; 
+        background: url(../images/slider-arrows-small.png) no-repeat;
+        width: 24px;
+        height: 24px;
+    }
+    #parthners.skdslider a.prev { right: 50px !important; }
+    #parthners.skdslider a.prev:hover { background-position: 0 -24px; }
+    #parthners.skdslider a.next { background-position: -24px 0; }
+    #parthners.skdslider a.next:hover { background-position: -24px -24px; }

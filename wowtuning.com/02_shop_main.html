@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+
+        <!-- skd slider -->
+        <link rel="stylesheet" href="js/skdslider/skdslider.css">
+        <script src="js/skdslider/skdslider.js"></script>
+
+        <!-- custom selectbox -->
+        <link rel="stylesheet" href="js/selectbox/jquery.selectbox.css">
+        <script src="js/selectbox/jquery.selectbox-0.2.min.js"></script>
+
+        <!-- fancybox -->
+        <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
+        <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <header>
+                <div class="header-wrapper">
+                    <a href=""><img src="images/header-logo.png" height="48" width="262" alt="" class="header-logo"></a>
+
+                    <div class="header-cart">
+                        <a href="#popup-cart" class="fancybox"><img src="images/header-cart.png" height="17" width="16" alt=""></a>
+                        <a href="#popup-order" class="header-cart-count fancybox">3</a>
+                    </div>
+
+                    <div class="header-menu">
+                        <ul>
+                            <li><a href="" title="">Главная</a></li>
+                            <li><a href="" title="">Каталог</a></li>
+                            <li><a href="" title="">Доставка / Оплата</a></li>
+                            <li><a href="" title="">О нас</a></li>
+                            <li><a href="" title="">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <div class="mainslider">
+                <div id="mainslider" class="skdslider">
+                    <ul>
+                        <li style="background: url(images/slide1.jpg) no-repeat 50% 0;">
+                            <h2>Современный <span>дизайн</span> и <span>легкое управление</span></h2>
+                            <p>Создание сайта начинается с проектирования и разработки дизайн-концепции проекта. Приятный и современный дизайн сайта - первое, что увидит посетитель!</p>
+                        </li>
+                        <li style="background: url(images/slide2.jpg) no-repeat 50% 0;">
+                            <h2>Современный <span>дизайн</span> и <span>легкое управление</span></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, deleniti, itaque, eligendi illo accusantium quod harum dolorem rerum ratione rem hic laudantium placeat magni explicabo adipisci dolores assumenda suscipit quam.</p>
+                        </li>
+                        <li style="background: url(images/slide3.jpg) no-repeat 50% 0;">
+                            <h2>Современный <span>дизайн</span> и <span>легкое управление</span></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, ullam, saepe cum harum eius laborum non quo fuga. Odio, velit quos voluptate laboriosam praesentium error ipsa corporis ex repellendus eum animi fugiat rem laborum sapiente et soluta veritatis earum illo.</p>
+                        </li>
+                        <li style="background: url(images/slide1.jpg) no-repeat 50% 0;">
+                            <h2>Современный <span>дизайн</span> и <span>легкое управление</span></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, deleniti, itaque, eligendi illo accusantium quod harum dolorem rerum ratione rem hic laudantium placeat magni explicabo adipisci dolores assumenda suscipit quam.</p>
+                        </li>
+                        <li style="background: url(images/slide2.jpg) no-repeat 50% 0;">
+                            <h2>Современный <span>дизайн</span> и <span>легкое управление</span></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, ullam, saepe cum harum eius laborum non quo fuga. Odio, velit quos voluptate laboriosam praesentium error ipsa corporis ex repellendus eum animi fugiat rem laborum sapiente et soluta veritatis earum illo.</p>
+                        </li>                     
+                    </ul>
+                </div>
+            </div>
+
+            <div id="wrap">
+                <div class="catalog-home">
+                    <div class="wrapper">
+                        <div class="catalog-home-filter">
+                            <form action="">
+                                <div class="catalog-search">
+                                    <input type="text" id="" value="" placeholder="Найдите нужный вам товар" />
+                                </div>
+
+                                <div class="clearfix">
+                                    <div class="catalog-select catalog-select-brand">
+                                        <select name="" class="selectbox" tabindex="">
+                                            <option value="">Audi</option>
+                                            <option value="4">Brazil</option>
+                                            <option value="10">South Africa</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="catalog-select catalog-select-brand">
+                                        <select name="" class="selectbox" tabindex="">
+                                            <option value="">Модель авто</option>
+                                            <option value="4">Brazil</option>
+                                            <option value="10">South Africa</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="catalog-select catalog-select-year">
+                                        <select name="" class="selectbox" tabindex="">
+                                            <option value="">Год выпуска</option>
+                                            <option value="4">Brazil</option>
+                                            <option value="10">South Africa</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="catalog-select catalog-select-category">
+                                        <select name="" class="selectbox" tabindex="">
+                                            <option value="">Категория товаров</option>
+                                            <option value="4">Brazil</option>
+                                            <option value="10">South Africa</option>
+                                        </select>
+                                    </div>
+
+                                    <input type="submit" id="" value="Искать" class="default-button catalog-home-submit">
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="catalog-home-wrapper">
+                            <div class="catalog-item discount">
+                                <a href=""><img src="images/tmp/c1.jpg" height="161" width="267" alt=""></a>
+
+                                <div class="catalog-title">
+                                    <a href="">Название <strong>Модель</strong></a>
+                                </div>
+
+                                <div class="catalog-description">
+                                    Работа специалистов студии по созданию сайта вызывает только
+                                </div>
+
+                                <a href="" class="default-button catalog-addtocart"><img src="images/header-cart.png" height="17" width="16" alt=""></a>
+                                <div class="catalog-price">2,590 Р</div>
+
+                                <div class="catalog-label"></div>
+                            </div>
+
+                            <div class="catalog-item discount">
+                                <a href=""><img src="images/tmp/c1.jpg" height="161" width="267" alt=""></a>
+
+                                <div class="catalog-title">
+                                    <a href="">Название <strong>Модель</strong></a>
+                                </div>
+
+                                <div class="catalog-description">
+                                    Работа специалистов студии по созданию сайта вызывает только
+                                </div>
+
+                                <a href="" class="default-button catalog-addtocart"><img src="images/header-cart.png" height="17" width="16" alt=""></a>
+                                <div class="catalog-price">2,590 Р</div>
+
+                                <div class="catalog-label"></div>
+                            </div>
+                            
+                            <div class="catalog-item favorite">
+                                <a href=""><img src="images/tmp/c1.jpg" height="161" width="267" alt=""></a>
+
+                                <div class="catalog-title">
+                                    <a href="">Название <strong>Модель</strong></a>
+                                </div>
+
+                                <div class="catalog-description">
+                                    Работа специалистов студии по созданию сайта вызывает только
+                                </div>
+
+                                <a href="" class="default-button catalog-addtocart"><img src="images/header-cart.png" height="17" width="16" alt=""></a>
+                                <div class="catalog-price">2,590 Р</div>
+
+                                <div class="catalog-label"></div>
+                            </div>
+                            
+                            <div class="catalog-item discount">
+                                <a href=""><img src="images/tmp/c1.jpg" height="161" width="267" alt=""></a>
+
+                                <div class="catalog-title">
+                                    <a href="">Название <strong>Модель</strong></a>
+                                </div>
+
+                                <div class="catalog-description">
+                                    Работа специалистов студии по созданию сайта вызывает только
+                                </div>
+
+                                <a href="" class="default-button catalog-addtocart"><img src="images/header-cart.png" height="17" width="16" alt=""></a>
+                                <div class="catalog-price">2,590 Р</div>
+
+                                <div class="catalog-label"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- feeds -->
+                <div class="feedslider">
+                    <div id="feedslider" class="skdslider">
+                    <ul>
+                        <li>
+                            <div class="feed-item">
+                                <p>“Спасибо за работы по созданию ПО для терминалов и разработке оболочки для муниципальной карты МО Дворцовый!”</p>
+
+                                <div class="feed-name">
+                                    <strong>Сергей Кравчук</strong><br>
+                                    Главный специалист по культуре
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feed-item">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, corrupti, dolores id similique fugit velit omnis sequi laudantium voluptatibus soluta vitae repudiandae explicabo quam dolor enim nemo ab libero. Dolorum.</p>
+                                
+                                <div class="feed-name">
+                                    <strong>Стивен Чоу</strong><br>
+                                    Главный специалист по кулинарии
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feed-item">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum unde perspiciatis aliquid laudantium voluptate molestiae ducimus repellendus accusantium magni corrupti.</p>
+                                
+                                <div class="feed-name">
+                                    <strong>Джон Ву</strong><br>
+                                    Главный специалист по замедлению
+                                </div>
+                            </div>
+                        </li>                     
+                    </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <footer>
+                <div class="footer-content">
+                    <div class="wrapper clearfix">
+                        <div class="footer-info">
+                            <a href=""><img src="images/footer-logo.png" height="48" width="262" alt=""></a>
+
+                            <p>What are you working on? Dribbble is a community of designers sharing screenshots of their work, process, and projects. What are you working on? Dribbble is community designers sharing screenshots of their work, process, and projects.</p>
+
+                            <p>
+                                <span class="footer-phone"><img src="images/footer-phone.png" height="18" width="18" alt="">+7 (812) 123 45 67</span>
+                                <span class="footer-email"><img src="images/footer-email.png" height="13" width="20" alt=""><a href="">info@wowtuning.com</a></span>
+                            </p>
+                        </div>
+
+                        <div class="footer-menu">
+                            <h3>Полезные ссылки</h3>
+
+                            <ul>
+                                <li><a href="" title="">Каталог</a></li>
+                                <li><a href="" title="">Доставка / Оплата</a></li>
+                                <li><a href="" title="">О нас</a></li>
+                                <li><a href="" title="">Контакты</a></li>
+                                <li><a href="" title="">Карта сайта</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-contacts">
+                            <form action="">
+                                <h3>Напишите нам</h3>
+
+                                <input type="text" class="textbox textbox-name" value="" placeholder="Имя">
+                                <input type="text" class="textbox" value="" placeholder="Email">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+
+                                <input type="submit" id="" value="отправить" class="submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-other">
+                    <div class="wrapper">
+                        <div class="footer-copyright">
+                            Copyright © <a href="">Wowtuning.com</a> 2014. Saint-Pitersburg.
+                        </div>
+
+                        <div class="footer-made">
+                            Разработка сайта &nbsp; - <a href=""><img src="images/footer-made.png" height="24" width="120" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <!-- popup's -->
+        <div id="popup-cart" class="popup">
+            <h2>Ваша корзина</h2>
+
+            <p>Создание сайта начинается с проектирования и разработки дизайн-концепции проекта. Приятный и современный дизайн сайта - первое, что увидит Создание сайта начинается с проектирования и разработки дизайн-концепции проекта.</p>
+
+            <div class="popup-cart clearfix">
+            <form action="">
+                <table>
+                    <col width="15%">
+                    <col width="58%">
+                    <col width="22%">
+                    <col width="5%">
+                    <tr>
+                        <td><a href=""><img src="images/tmp/a.png" height="64" width="64" alt=""></a><td>
+                            <h3>Заголовок</h3>
+                            <p>Создание сайта начинается с проектирования разработки дизайн-концепции проекта.</p>
+                        </td>
+                        <td class="vm price">12,590 Р</td>
+                        <td class="vm"><a href=""><img src="images/remove.png" height="12" width="12" alt=""></a></td>
+                    </tr>
+
+                    <tr>
+                        <td><a href=""><img src="images/tmp/a.png" height="64" width="64" alt=""></a><td>
+                            <h3>Заголовок</h3>
+                            <p>Создание сайта начинается с проектирования разработки дизайн-концепции проекта.</p>
+                        </td>
+                        <td class="vm price">12,590 Р</td>
+                        <td class="vm"><a href=""><img src="images/remove.png" height="12" width="12" alt=""></a></td>
+                    </tr>
+                </table>
+
+                <div class="totalprice">
+                    Общая стоимость:<br>
+                    <span>32,590 Р</span>
+                </div>
+
+                <input type="submit" class="default-button totalcheckout" value="Оформить заказ">
+            </form>
+            </div>
+        </div>
+
+        <!--  -->
+
+        <div id="popup-order" class="popup">
+            <h2>Оформление заказа</h2>
+
+            <p>Создание сайта начинается с проектирования и разработки дизайн-концепции проекта. Приятный и современный дизайн сайта - первое, что увидит Создание сайта начинается с проектирования и разработки дизайн-концепции проекта. </p>
+
+            <div class="popup-cart clearfix">
+            <form action="">
+
+                <div class="popup-tb-forms">
+                    <input type="text" class="popup-textbox mr" id="" value="" placeholder="Имя">
+                    <input type="text" class="popup-textbox" id="" value="" placeholder="Фамилия">
+                    <input type="text" class="popup-textbox long" id="" value="" placeholder="Адрес доставки">
+                    <input type="text" class="popup-textbox mr" id="" value="" placeholder="Телефон">
+                    <input type="text" class="popup-textbox" id="" value="" placeholder="Email">
+                </div>
+
+                <div class="totalprice">
+                    Общая стоимость:<br>
+                    <span>32,590 Р</span>
+                </div>
+
+                <input type="submit" class="default-button totalcheckout" value="Подтвердить заказ">
+            </form>
+            </div>
+        </div>
+
+        <script src="js/call.js"></script>
+    </body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+        <link href="js/jquery-ui-1.10.3.custom/css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+        <script src="js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.js"></script>
+
+        <link rel="stylesheet" href="css/ui.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <!-- header -->
+            <header>
+                <div class="header-nav clearfix">
+                    <div class="page-wrapper">
+                        <ul>
+                            <li class="active">главная</li>
+                            <li><a href="" title="">справочники</a></li>
+                            <li><a href="" title="">здания</a></li>
+                            <li><a href="" title="">помещения</a></li>
+                            <li class="dropdown dropdown-top"><a href="javascript:void(0);" title="" class="dropdown-toggle">организации</a>
+                                <ul>
+                                    <li><a href="" title="">Уведомления</a></li>
+                                    <li><a href="" title="">Статистика</a></li>
+                                    <li><a href="" title="">Закрытые сделки</a></li>
+                                    <li><a href="" title="">Стадии сделок</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-top"><a href="javascript:void(0);" title="" class="dropdown-toggle">мои клиенты</a>
+                                <ul>
+                                    <li><a href="" title="">Стадии сделок</a></li>
+                                    <li><a href="" title="">Статистика</a></li>
+                                    <li><a href="" title="">Уведомления</a></li>
+                                    <li><a href="" title="">Закрытые сделки</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="header-language expand">
+                            <i class="rus"></i><a href="javascript:void(0);" class="current"><span>рус.</span></a>
+
+                            <ul>
+                                <li class=""><i class="rus"></i><a href="" title=""><span>рус.</span></a></li>
+                                <li class=""><i class="eng"></i><a href="" title=""><span>eng.</span></a></li>
+                                <li class=""><i class="fra"></i><a href="" title=""><span>fr.</span></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="header-search">
+                            <form action="">
+                                <input type="text" id="" value="" class="header-search-textbox" placeholder="" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-wrapper clearfix">
+                    <a href="" title=""><img src="images/header-logo.png" alt="" class="header-logo" /></a>
+
+                    <div class="header-city">
+                        <a href="javascript:void(0);" class="current">Москва</a>
+
+                        <div class="notice notice-top">
+                            <h5>Искать в Москве?</h5>
+
+                            <div class="clearfix">
+                                <a href="" class="button button-gray button-medium">Да</a>
+                                <a href="" class="button button-transparent button-medium"><span>Изменить</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-call">
+                        <span class="header-call-phone">8 495 545-46-76</span>
+                        <a href="" class="button button-green button-small">Персональный менеджер</a>
+                    </div>
+
+                    <div class="header-logged clearfix">
+                        <div class="header-logged-userpic">
+                            <a href="javascript:void(0);" class="header-logged-notice"><img src="images/a.png" height="31" width="31" alt=""></a>
+
+                            <div class="notice notice-top notice-small">
+                                <strong>21</strong> уведомление
+                            </div>
+                        </div>
+
+                        <div class="dropdown dropdown-top">
+                            <a href="javascript:void(0);" class="current dropdown-toggle">Алексей Петрович</a>
+
+                            <ul>
+                                <li><a href="" title="">ОАО «ИнветБанк»</a></li>
+                                <li><a href="" title="">ЗАО Антитраст</a></li>
+                                <li class="spacer"><span></span></li>
+                                <li><a href="" title="">Мой профиль</a></li>
+                                <li><a href="" title="">Избранное <strong>7</strong></a></li>
+                                <li><a href="" title="">Рекомендованное <strong>13</strong></a></li>
+                                <li><a href="" title="">Подписки <strong class="none">0</strong></a></li>
+                                <li class="spacer"><span></span></li>
+                                <li class="unactive"><a href="" title="">Выйти</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- content -->
+            <div id="wrap" class="row">
+
+                <!-- aside -->
+                <aside class="leftside col col-3">
+                    <div class="aside-menu">
+                        <ul>
+                            <li><a href="" title="">О браузере Yandex</a></li>
+                            <li><a href="" title="">Знакомство с браузером</a>
+                                <ul>
+                                    <li><a href="" title="">Умная строка</a></li>
+                                    <li class="active"><a href="" title="">Вкладки и окна</a></li>
+                                    <li><a href="" title="">Табло</a></li>
+                                    <li><a href="" title="">Закладки</a></li>
+                                    <li><a href="" title="">Горячие клавиши</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" title="">Полезные возможности</a>
+                                <ul>
+                                    <li><a href="" title="">Синхронизация браузера</a></li>
+                                    <li><a href="" title="">Поиск в интернете</a></li>
+                                    <li><a href="" title="">Режим Турбо</a></li>
+                                    <li><a href="" title="">Перевод страниц и слов</a></li>
+                                    <li><a href="" title="">Загрузка файлов из интернета</a></li>
+                                    <li><a href="" title="">Режим инкогнито</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" title="">Настройка браузера</a></li>
+                            <li><a href="" title="">Безопасность и конфиденциальность</a></li>
+                            <li><a href="" title="">Техническая поддержка</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- content -->
+                <div class="content col col-9">
+                    <div class="breadcrumbs">
+                        <a href="">Главная</a> <span>/</span> <a href="">О браузере Яндекса</a> <span>/</span> 
+                    </div>
+
+                    <div class="page-title"><h1>Знакомство с браузером</h1></div>
+
+                    <div class="row">
+                        <div class="col col-7">
+                            <p>В большинстве случаев офисные помещения рекламируются посредниками, что значительно увеличивает конечную стоимость деловой недвижимости. Если вас интересует аренда офиса от собственника, то в этом случае компания «СмартСпейс» готова предложить свои услуги.</p>
+
+                            <p>А с помощью уникальной системы рекомендаций офисных помещений подходящий вариант будет найден быстро и с максимальным комфортом для клиента.</p>
+
+                            <div class="blockquote">
+                                <p>В большинстве случаев офисные помещения рекламируются посредниками, что значительно увеличивает конечную стоимость деловой недвижимости. Если вас интересует аренда офиса от собственника, то в этом случае компания «СмартСпейс» готова предложить свои услуги.</p>
+
+                                <p>А с помощью уникальной системы рекомендаций офисных помещений подходящий вариант будет найден быстро и с максимальным комфортом для клиента.</p>
+
+                                <p>Нужно заметить, что мы намного эффективнее договоримся об аренде офиса с непосредственным владельцем объекта. К вашим услугам персональный брокер на весь срок поиска и переговоров, а так же постобслуживание, </p>
+                            </div>
+
+                            <p>Нужно заметить, что мы намного эффективнее договоримся об аренде офиса с непосредственным владельцем объекта. К вашим услугам персональный брокер на весь срок поиска и переговоров, а так же постобслуживание, необходимое для разрешения возможных споров с собственником.</p>
+
+                            <h2>Аренда офиса от собственника</h2>
+
+                            <p>В большинстве случаев офисные помещения рекламируются посредниками, что значительно увеличивает конечную стоимость деловой недвижимости. Если вас интересует аренда офиса от собственника, то в этом случае компания «СмартСпейс» готова предложить свои услуги.</p>
+
+                            <p>А с помощью уникальной системы рекомендаций офисных помещений подходящий вариант будет найден быстро и с максимальным комфортом для клиента.</p>
+
+                            <form action="">
+                            <table>
+                                <col width="4%" />
+                                <col width="32%" />
+                                <col width="32%" />
+                                <col width="32%" />
+                                <tr>
+                                    <th></th>
+                                    <th><span class="sort active">ФИО</span></th>
+                                    <th><span class="sort">Телефон</span></th>
+                                    <th><span class="sort">Эл. почта</span></th>
+                                </tr>
+                                <tr>
+                                    <td><span class="checkbox"><input type="checkbox" id="c1" class="cb" /><label for="c1"></label></span></td>
+                                    <td><a href="">Иванов Пётр</a></td>
+                                    <td>8 945 987-89-69</td>
+                                    <td>ivanov@petr.com</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="checkbox"><input type="checkbox" id="c2" class="cb" /><label for="c2"></label></span></td>
+                                    <td><a href="">Константинопольский Константин Алексеевич</a></td>
+                                    <td>8 945 987-89-69</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="checkbox"><input type="checkbox" id="c3" class="cb" /><label for="c3"></label></span></td>
+                                    <td><a href="">Иванов Пётр</a></td>
+                                    <td>8 945 987-89-69</td>
+                                    <td>ivanov@petr.com</td>
+                                </tr>
+                            </table>
+                            </form>
+
+                            <h2>Аренда офиса от собственника</h2>
+
+                            <p>А с помощью уникальной системы рекомендаций офисных помещений подходящий вариант будет найден быстро и с максимальным комфортом для клиента.</p>
+
+                            <div class="content-columns clearfix">
+                                <div class="col-left">
+                                    <p><strong>Всякая шняга</strong></p>
+
+                                    <p>В большинстве случаев офисные помещения рекламируются посредниками, что значительно увеличивает конечную стоимость деловой недвижимости.</p>
+
+                                    <p>А с помощью уникальной системы рекомендаций офисных помещений подходящий вариант будет найден быстро и с максимальным комфортом для клиента.</p>
+                                </div>
+
+                                <div class="col-right">
+                                    <p><strong>Иная фигня</strong></p>
+
+                                    <p>Если вас интересует аренда офиса от собственника, то в этом случае компания «СмартСпейс» готова предложить свои услуги.</p>
+
+                                    <p>А с помощью уникальной системы рекомендаций офисных помещений подходящий вариант .</p>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                А с помощью уникальной системы рекомендаций офисных помещений подходящий вариант будет найден быстро и с максимальным комфортом для клиента.
+                            </div>
+
+                            <div class="box box-outline">
+                                А с помощью уникальной системы рекомендаций офисных помещений подходящий вариант будет найден быстро и с максимальным комфортом для клиента.
+                            </div>
+
+                            <div class="box box-rpv">
+                                А с помощью уникальной системы рекомендаций офисных помещений подходящий вариант будет найден быстро и с максимальным комфортом для клиента.
+                            </div>
+                        </div>
+
+                        <!--  -->
+                        <aside class="content-menu col col-2">
+                            <ul>
+                                <li class="active">Полезные ссылки</li>
+                                <li><a href="" title="">Синхронизация браузера</a></li>
+                                <li><a href="" title="">Поиск в интернете</a></li>
+                                <li><a href="" title="">Режим Турбо</a></li>
+                                <li><a href="" title="">Перевод страниц и слов</a></li>
+                                <li><a href="" title="">Загрузка файлов из интернета</a></li>
+                                <li><a href="" title="">Режим инкогнито</a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- footer -->
+            <footer>
+                <div class="footer-wrapper">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="" title="">главная</a></li>
+                            <li><a href="" title="">справочники</a></li>
+                            <li><a href="" title="">здания</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="" title="">помещения</a></li>
+                            <li><a href="" title="">оргиназиции</a></li>
+                            <li><a href="" title="">мои клиенты</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-menu footer-menu-last">
+                        <ul>
+                            <li><a href="" title="">О проекте</a></li>
+                            <li><a href="" title="">Контакты</a></li>
+                            <li><a href="" title="">Индекс недвижимости</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- copyright -->
+                    <div class="footer-copyright">
+                        <div class="footer-language">
+                            <a href="" title="" class="active">Русский</a>
+                            <a href="" title="">English</a>
+                            <a href="" title="">François</a>
+                        </div>
+
+                        <p>&copy; СмартСпейс, 2009-2013</p>
+                    </div>
+
+                    <!-- adv -->
+                    <div class="footer-adv">
+                        <a href="">аренда офиса 55кв</a>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <script src="js/call.js"></script>
+    </body>
+</html>

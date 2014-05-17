@@ -1,0 +1,73 @@
+﻿/* Required. Don't alter | START*/
+.fakeContainer {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 31px;
+    margin-bottom: -12px;
+}
+.fakeContainer .file {
+    position: absolute;
+    z-index: 3;
+    margin: 0px;
+    padding: 0px;
+    left: 0 !important;
+    width: 135px;
+    cursor: pointer;
+}
+.fakeContainer .text {
+    position: absolute;
+    top: 0px;
+    cursor: default;
+    z-index: 1;
+    padding: 0 1px;
+    margin: 0px;
+    width: 170px; 
+    padding: 3px 10px; 
+    font-family: Arial, sans-serif; 
+    font-size: 12px; 
+    border: 0;
+}
+.animator {
+    display: none;
+}
+.fakeContainer .button {
+    position: absolute;
+    left: 5px;
+    top: 0;
+    cursor: default;
+    z-index: 1;
+    margin: 0px;
+    font-family: 'Roboto Light';
+    font-size: 14px;
+    color: #fff;
+    white-space: nowrap;
+}
+/* Required. Don't alter | END*/
+
+.fakeContainer .button
+{
+    cursor: pointer;
+    width: 122px;
+    background: #003876;
+    border: 0;
+    padding: 4px 0;
+    text-align: center;
+    color: #fff;
+}
+.fakeContainer .button.hover
+{
+}
+.fakeContainer .text
+{
+    left: 130px;
+    width: 100px;
+}
+.fakeContainer .text.hover
+{
+}
+.fakeContainer .text.watermarkTextbox
+{
+    color: Gray;
+}x

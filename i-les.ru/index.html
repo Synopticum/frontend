@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- First, add jQuery (and jQuery UI if using custom easing or animation -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+
+        <!-- Second, add the Timer and Easing plugins -->
+        <script type="text/javascript" src="js/gallery/js/jquery.timers-1.2.js"></script>
+        <script type="text/javascript" src="js/gallery/js/jquery.easing.1.3.js"></script>
+
+        <!-- Third, add the GalleryView Javascript and CSS files -->
+        <script type="text/javascript" src="js/gallery/js/jquery.galleryview-3.0-dev.js"></script>
+        <link type="text/css" rel="stylesheet" href="js/gallery/css/jquery.galleryview-3.0-dev.css" />
+
+        <!-- fancybox -->
+        <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
+        <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div id="wrap" class="clearfix">
+                <aside>
+                    <div class="aside-logo">
+                        <a href=""><img src="images/header-logo.png" height="150" width="220" alt=""></a>
+                    </div>
+
+                    <div class="aside-menu">
+                        <ul>
+                            <li><a href="javascript:;" id="link1" title="">Поселок</a></li>
+                            <li><a href="javascript:;" id="link2" title="">Галерея</a></li>
+                            <li><a href="javascript:;" id="link5" title="">Прайс-лист</a></li>
+                            <li><a href="javascript:;" id="link3" title="">Контакты</a></li>
+                            <li><a href="javascript:;" id="link4" title="">Карта проезда</a></li>
+                        </ul>
+                        <div class="arrow"></div>
+                    </div>
+
+                    <div class="aside-phone">
+                        <sup>(495)</sup> 729-60-60
+                    </div>
+                </aside>
+
+                <div class="content">
+
+                    <!-- about -->
+                    <div class="popup" id="popup-about">
+                        <h1>О поселке</h1>
+
+                        <p>Расположен в 25 км от МКАД в Истринском районе Московской области, на границе с деревней Надовражино.</p>
+
+                        <p>На Ваш выбор представлены 49 участков, различных по площади, ландшафту  и стоимости.</p>
+
+                        <p>Площади:  от 10 до 23 соток<br>Ландшафт:  все участки полностью лесные</p>
+
+                        <p>В стоимость включены:  земельный участок, подведение коммуникаций до границы каждого участка (газ, водопровод, канализация, электричество в размере 12 кВт на домовладение (на период строительства дома 3 кВт)).</p>
+
+                        <p>В основу реализации проекта заложены следующие положения:<br>
+                        - Участки выставляются на продажу без подряда;<br>
+                        - Поселок полностью снабжен инженерной инфраструктурой, к каждому участку подведены коммуникации;<br>
+                        - Электричество в поселке проложено подземным способом.<br></p>
+
+                        <p>Обустройство территории коттеджного поселка «Истринский лес» включает в себя ограждение поселка, строительство подъездных путей к каждому участку,  организацию охраны и освещения, очистку и осветление лесного массива.</p>
+
+                        <p>Поселок полностью построен и сдан в эксплуатацию.</p>
+                    </div>
+
+                    <!-- gallery -->
+                    <div class="popup" id="popup-gallery">
+                        <h1>Галерея</h1>
+
+                        <div class="gallery-select">
+                            <a href="javascript:;" class="item active i1">
+                                <img src="images/g1.jpg" height="102" width="102" alt=""><br>
+                                Фотосъемка посёлка от 21.09.12
+                            </a>
+                            <a href="javascript:;" class="item i2">
+                                <img src="images/g2.jpg" height="102" width="102" alt=""><br>
+                                Июль 2012
+                            </a>
+                            <a href="javascript:;" class="item i3">
+                                <img src="images/g3.jpg" height="102" width="102" alt=""><br>
+                                Участки готовы к строительству
+                            </a>
+                            <a href="javascript:;" class="item i4">
+                                <img src="images/g4.jpg" height="102" width="102" alt=""><br>
+                                Территория посёлка
+                            </a>
+                        </div>
+
+                        <div class="mygallery-1">
+                        <ul id="myGallery-1">
+                            <li><img src="images/tmp3.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp3.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp3.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp3.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp3.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp3.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp3.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp3.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp3.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp3.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp3.jpg" height="376" width="373" alt="">
+                        </ul>
+                        </div>
+
+                        <div class="mygallery-2">
+                        <ul id="myGallery-2">
+                            <li><img src="images/tmp4.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp4.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp4.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp4.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp4.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp4.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp4.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp4.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp4.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp4.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp4.jpg" height="376" width="373" alt="">
+                        </ul>
+                        </div>
+
+                        <div class="mygallery-3">
+                        <ul id="myGallery-3">
+                            <li><img src="images/tmp5.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp5.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp5.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp5.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp5.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp5.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp5.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp5.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp5.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp5.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp5.jpg" height="376" width="373" alt="">
+                        </ul>
+                        </div>
+
+                        <div class="mygallery-4">
+                        <ul id="myGallery-4">
+                            <li><img src="images/tmp6.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp6.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp6.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp6.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp6.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp6.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp6.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp6.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp6.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp6.jpg" height="376" width="373" alt="">
+                            <li><img src="images/tmp6.jpg" height="376" width="373" alt="">
+                        </ul>
+                        </div>
+                    </div>
+
+                    <div class="popup" id="popup-price">
+                        <h1>Прайс-лист</h1>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, necessitatibus sed cupiditate ducimus consectetur fugit itaque autem optio nam iste sint sequi facilis culpa quam error laboriosam porro reprehenderit architecto! Porro, quae ea assumenda explicabo alias numquam perferendis. Accusantium soluta obcaecati voluptatibus perspiciatis amet sapiente debitis neque voluptate? Ut, deleniti?</p>
+                    </div>
+
+                    <!-- contacts -->
+                    <div class="popup" id="popup-contacts">
+                        <h1>Контакты</h1>
+
+                        <p>Агентство Загородной Недвижимости:<br>
+                        Телефон: (495) 729-60-60<br>
+                        Наш офис: Москва, ул. Маршала Малиновского д.8, подъезд 3А, офис 7. (м. Октябрьское поле)<br>
+                        Время работы: 10:00-19:00<br>
+                        e-mail: info@a-z-n.ru</p>
+                    </div>
+
+                    <!-- map -->
+                    <div class="popup" id="popup-map">
+                        <div class="map">
+                            <a href="images/tmp1.jpg" class="fancybox"><img src="images/tmp1.jpg" height="568" width="588" alt=""></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-wrapper">
+
+                </div>
+            </footer>
+        </div>
+
+        <script src="js/call.js"></script>
+    </body>
+</html>

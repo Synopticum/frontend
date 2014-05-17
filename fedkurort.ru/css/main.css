@@ -824,6 +824,11 @@ header {
 
 .content { float: left; width: 760px; padding: 0 0px; color: #333; }
 
+.content-print, .content-send { position: absolute; top: 16px; right: 150px; color: #9a9a9a !important; font-size: 10px; font-style: italic; text-decoration: none; }
+    .content-print .icon, .content-send .icon { position: relative; top: -1px; display: inline-block; vertical-align: top; margin-right: 5px; width: 16px; height: 15px; background: url(../images/sprite-32.png) no-repeat 0 -415px; }
+    .content-send { right: 17px; }
+    .content-send .icon { margin-right: 0; background-position: -32px -415px; }
+
 .content .breadcrumbs { margin: 15px 0; color: #8070a1; }
     .content .breadcrumbs a { text-decoration: none; color: #8070a1; }
     .content .breadcrumbs a:hover { color: #b3a9ca; }
@@ -831,6 +836,8 @@ header {
 
 .page-title { margin: 15px 0; font-family: 'Roboto Condensed'; text-transform: uppercase; font-size: 25px; color: #e47227; line-height: 110%; }
     .page-title span { color: #787882; }
+
+    .page-title .rating-star { position: relative; top: 8px; }
 
 .content .home-phone { position: absolute; right: 15px; top: -10px; color: #0294d6; width: 260px; }
         .content .home-phone .icon { margin-left: 0; margin-top: 5px; margin-right: 5px; width: 32px; height: 32px; background: url(../images/sprite-32.png) -32px -96px; }
@@ -1050,11 +1057,18 @@ header {
     .overview .description { float: left; width: 240px; }
         .overview .description .addfeed { margin: -55px 0 15px 0; float: none; display: block; width: 100%; font-size: 20px; }
         .overview .description .total-count { position: relative; top: -3px; display: inline-block; vertical-align: top; margin-left: 5px; }
-        .overview .description .count { margin: 5px 0 10px 0; font-style: italic; color: #959595; }
+        .overview .description .count { margin: 0 0 10px 0; font-style: italic; color: #959595; }
 
         .overview .description .feed-item { margin: 5px 0; color: #787882; }
 
         .overview .description .map { margin-top: 8px; border-radius: 10px; overflow: hidden; border: 1px solid #d7d7d7; font-size: 0; width: 220px; }
+
+        .overview .additional { }
+            .overview .additional a { position: relative; display: block; margin: 7px 0; padding: 9px 0 0 55px; min-height: 26px; font-weight: bold; color: #8170a7; }
+            .overview .additional .v2 { color: #9a9a9a; }
+            .overview .additional .icon { position: absolute; left: 0; top: 0; display: block; width: 48px; height: 35px; background: url(../images/sprite-long.png) no-repeat; }
+                .overview .v1 .icon { background-position: 0 -1350px; }
+                .overview .v2 .icon { background-position: 0 -1400px; }
 
     .overview .text { clear: both; padding: 15px 0; }
         .overview .text p { margin: 0 0 10px 0; }
@@ -1209,8 +1223,8 @@ header {
         .feeds-list .value { width: 77%; }
             .feeds-list .value p { margin: 10px 0 0 0; }
 
-.feed-item { }
-    .feed-item .all { color: #8070a1; font-style: italic; }
+.feed-item { position: relative; }
+    .feed-item .all { position: absolute; right: 0; top: 17px; font-size: 10px; color: #8070a1; font-style: italic; text-decoration: none; }
     .feed-item .wrapper { position: relative; margin: 20px 0 5px 0; padding: 10px; border: 1px solid #cdc6dc; border-radius: 10px; }
         .feed-item .wrapper .arrow { position: absolute; left: 40px; top: -16px; width: 53px; height: 16px; background: url(../images/sprite-long.png) no-repeat 0 -800px; }
 

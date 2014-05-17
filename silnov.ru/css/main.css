@@ -1,0 +1,279 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1.2;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+input, textarea, select { margin: 0; outline: none; }
+mark { background: none; }
+
+/* fonts */
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('../fonts/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Italic';
+    src: url('../fonts/OpenSans-Italic-webfont.eot');
+    src: url('../fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Italic-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Italic-webfont.svg#open_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/OpenSans-Light-webfont.eot');
+    src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* styles */
+html, body { height: 100% }
+
+body { 
+    min-width: 1000px; 
+    font-family: 'Open Sans Regular', Arial, sans-serif;
+    color: #4d4d4d;
+    font-size: 12px;
+    background: #fff;
+}
+
+a { color: #1670b5; }
+a:hover { color: #e1443b; }
+
+b, strong { font-weight: normal; font-family: 'Open Sans Bold', Arial, sans-serif; }
+i, em { font-weight: normal; font-family: 'Open Sans Italic', Arial, sans-serif; }
+
+#main { 
+    position: relative; 
+    min-height: 100%; 
+}
+
+#wrap { 
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 0 0 220px 0;
+    background: #fafafa;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 175px;
+    font-size: 13px;
+}
+.header-wrapper { width: 960px; margin: 0 auto; }
+
+.header-logo { float: left; margin: 35px 0 0 0; }
+
+.header-links { float: left; margin: 2px 0 0 0; }
+
+.header-contacts { float: right; margin: 20px 0 0 0; overflow: hidden; }
+    .header-social { float: right; padding: 0 0 0 10px; margin: 0 0 0 20px; border-left: 1px solid #ccc; font-size: 0; }
+        .header-social a { display: inline-block; vertical-align: top; margin: 0 0 0 8px; width: 20px; height: 20px; background: url(../images/sprite-32.png) no-repeat; }
+        .header-social .fb { background-position: 0 0; }
+        .header-social .od { background-position: 0 -32px; }
+        .header-social .vk { background-position: 0 -64px; }
+
+.header-search { float: right; clear: left; margin: -30px 0 30px 0; }
+    .header-search-input { float: right; }
+
+    .header-search-input input { 
+        width: 195px; 
+        padding: 6px 30px 6px 10px; 
+        background: url(../images/sprite-32.png) no-repeat 100% -89px #fff; 
+        border: 1px solid #e6e6e6; 
+        border-radius: 3px; 
+        font-family: 'Open Sans Regular', Arial, sans-serif; 
+        font-size: 13px; 
+        color: #ccc; 
+    }
+
+.header-feedback { 
+    float: right; 
+    margin: 0 0 0 20px; 
+    padding: 7px 15px 8px 35px; 
+    display: block; 
+    width: 95px; 
+    border: 1px solid #e1473e; 
+    border-radius: 3px; 
+    font-family: 'Open Sans Regular', Arial, sans-serif; 
+    white-space: nowrap;
+    color: #e1473e; 
+    text-decoration: none; 
+    background: url(../images/sprite-32.png) no-repeat 17px -118px;
+}
+
+.header-menu { overflow: hidden; clear: both; border-bottom: 1px solid #e1473e; }
+    .header-menu li { float: left; }
+        .header-menu li a { display: block; padding: 15px 38px; text-decoration: none; }
+        .header-menu li a:hover { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAADCAYAAABfwxXFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADxJREFUeNpi/P//PwMIPHK1cQRS7UDsK7f7yGuQGBOSxBYgNgfivUC+KEic8aGLNUyCiwEBLgOxM0CAAQBptBA7RwwZYgAAAABJRU5ErkJggg==) no-repeat 50% 100%; }
+        .header-menu li:first-child a { padding-left: 0; }
+        .header-menu li:last-child a { padding-right: 0; }
+
+/* slider */
+.slider { padding-top: 15px; border-bottom: 1px solid #eaeaea; box-shadow: 0 1px 0 #f3f3f3; }
+    .slider-content { float: left; width: 490px; }
+
+    .slider .title { font-family: 'Open Sans Light', Arial, sans-serif; font-size: 32px; color: #4d4d4d; }
+        .slider .title span { color: #999; }
+
+    .slider-content p { margin: 25px 0; color: #4d4d4d; line-height: 180%; }
+
+    .slider-image { position: absolute; right: 75px; bottom: -3px; }
+
+/* content */
+.flat-button {
+    padding: 10px 15px;
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Open Sans Light', Arial, sans-serif;
+    font-size: 18px;
+    color: #e1443b;
+    text-decoration: none;
+    border: 1px solid #e1473e;
+    border-radius: 3px;
+}
+.flat-button:hover { background: #e1443b; color: #fff; }
+
+.content { width: 960px; margin: 0 auto; }
+
+img.alignright { float: right; padding: 4px; border: 1px solid #d9d9d9; border-radius: 3px; margin: 10px 0 0 20px; }
+
+.text { overflow: hidden; }
+    .content-item { margin: 40px 0; }
+        .content-title { font-family: 'Open Sans Light', Arial, sans-serif; color: #4d4d4d; font-size: 18px; }
+
+        .content-meta { margin: 10px 0; color: #ccc; }
+            .content-meta .date { display: inline-block; vertical-align: top; }
+            .content-meta .date:before, .content-meta .count:before { content: ""; display: inline-block; vertical-align: top; width: 14px; height: 14px; margin: 0 5px 0 0; background: url(../images/sprite-32.png) no-repeat 0 -160px; }
+                .content-meta .date a { margin-left: 5px; color: #ccc; }
+                .content-meta .date a:hover { color: #e1443b; }
+
+            .content-meta .count { display: inline-block; vertical-align: top; margin: 0 0 0 20px; }
+            .content-meta .count:before { position: relative; top: 2px; background: url(../images/sprite-32.png) no-repeat 0 -192px; }
+
+        .content-wrapper { padding: 5px 20px; background: #fff; border: 1px solid #d9d9d9; border-radius: 3px; line-height: 160%; }
+            .content-wrapper p { margin: 10px 0; }
+
+            .content-wrapper ul { margin: 10px 0; padding: 0 0 0 15px; }
+                .content-wrapper li { margin: 5px 0; }
+                .content-wrapper li:before { content: "–"; margin-right: 5px; }
+}
+
+/* comments */
+.comments { }
+
+/* rightside */
+.rightside { float: right; margin: 40px 0 0 60px; width: 230px; }
+    .rightside h3 { padding: 0 0 10px 0; font-family: 'Open Sans Light', Arial, sans-serif; font-size: 18px; color: #4d4d4d; border-bottom: 1px solid #d9d9d9; }
+
+    .rightside p { margin: 10px 0; font-size: 12px; line-height: 160%; }
+
+/* footer */
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 180px;
+    border-top: 1px solid #eaeaea;
+    box-shadow: inset 0 -1px 0 #f3f3f3;
+    color: #ccc;
+    background: #fff;
+    font-size: 13px;
+}
+.footer-wrapper { width: 960px; margin: 0 auto; }
+
+.footer-menu { padding: 30px 0; margin: 0 0 25px 0; border-bottom: 1px solid #d9d9d9; overflow: hidden; }
+    .footer-menu li { float: left; margin: 0 20px 0 0; }
+        .footer-menu li a { color: #4d4d4d; }
+        .footer-menu li a:hover { color: #e1443b; }
+
+.footer-copyright { float: left; }
+
+.footer-made { float: left; margin: 0 0 0 35px; }
+
+.footer-counter { float: right; }

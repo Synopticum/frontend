@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+        <link href="js/jquery-ui-1.10.3.custom/css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+        <script src="js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.js"></script>
+
+        <link rel="stylesheet" href="css/ui.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <!-- header -->
+            <header>
+                <div class="header-nav clearfix">
+                    <div class="page-wrapper">
+                        <ul>
+                            <li class="active">главная</li>
+                            <li><a href="" title="">справочники</a></li>
+                            <li><a href="" title="">здания</a></li>
+                            <li><a href="" title="">помещения</a></li>
+                            <li class="dropdown dropdown-top"><a href="javascript:void(0);" title="" class="dropdown-toggle">организации</a>
+                                <ul>
+                                    <li><a href="" title="">Уведомления</a></li>
+                                    <li><a href="" title="">Статистика</a></li>
+                                    <li><a href="" title="">Закрытые сделки</a></li>
+                                    <li><a href="" title="">Стадии сделок</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-top"><a href="javascript:void(0);" title="" class="dropdown-toggle">мои клиенты</a>
+                                <ul>
+                                    <li><a href="" title="">Стадии сделок</a></li>
+                                    <li><a href="" title="">Статистика</a></li>
+                                    <li><a href="" title="">Уведомления</a></li>
+                                    <li><a href="" title="">Закрытые сделки</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="header-language expand">
+                            <i class="rus"></i><a href="javascript:void(0);" class="current"><span>рус.</span></a>
+
+                            <ul>
+                                <li class=""><i class="rus"></i><a href="" title=""><span>рус.</span></a></li>
+                                <li class=""><i class="eng"></i><a href="" title=""><span>eng.</span></a></li>
+                                <li class=""><i class="fra"></i><a href="" title=""><span>fr.</span></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="header-search">
+                            <form action="">
+                                <input type="text" id="" value="" class="header-search-textbox" placeholder="" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-wrapper clearfix">
+                    <a href="" title=""><img src="images/header-logo.png" alt="" class="header-logo" /></a>
+
+                    <div class="header-city">
+                        <a href="javascript:void(0);" class="current">Москва</a>
+
+                        <div class="notice notice-top">
+                            <h5>Искать в Москве?</h5>
+
+                            <div class="clearfix">
+                                <a href="" class="button button-gray button-medium">Да</a>
+                                <a href="" class="button button-transparent button-medium"><span>Изменить</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-call">
+                        <span class="header-call-phone">8 495 545-46-76</span>
+                        <a href="" class="button button-green button-small">Персональный менеджер</a>
+                    </div>
+
+                    <div class="header-logged clearfix">
+                        <div class="header-logged-userpic">
+                            <a href="javascript:void(0);" class="header-logged-notice"><img src="images/a.png" height="31" width="31" alt=""></a>
+
+                            <div class="notice notice-top notice-small">
+                                <strong>21</strong> уведомление
+                            </div>
+                        </div>
+
+                        <div class="dropdown dropdown-top">
+                            <a href="javascript:void(0);" class="current dropdown-toggle">Алексей Петрович</a>
+
+                            <ul>
+                                <li><a href="" title="">ОАО «ИнветБанк»</a></li>
+                                <li><a href="" title="">ЗАО Антитраст</a></li>
+                                <li class="spacer"><span></span></li>
+                                <li><a href="" title="">Мой профиль</a></li>
+                                <li><a href="" title="">Избранное <strong>7</strong></a></li>
+                                <li><a href="" title="">Рекомендованное <strong>13</strong></a></li>
+                                <li><a href="" title="">Подписки <strong class="none">0</strong></a></li>
+                                <li class="spacer"><span></span></li>
+                                <li class="unactive"><a href="" title="">Выйти</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- content -->
+            <div id="wrap" class="row">
+
+                <!-- main filters -->
+                <div class="filters">
+                    <div class="clearfix">
+                            <div class="tabs default-tabs big-tabs">
+                                <div class="row">
+                                    <div class="col col-12">
+                                        <ul>
+                                            <li><a href="#tabs-1">Аренда</a></li>
+                                            <li><a href="#tabs-2">Покупка</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div id="tabs-1">
+                                    <form action="">
+                                        <div class="row">
+                                            <div class="col col-12">
+                                                <div class="radioset radioset-big">
+                                                    <input type="radio" id="radio1" name="radio" checked="checked"><label for="radio1">офиса</label>
+                                                    <input type="radio" id="radio2" name="radio"><label for="radio2">склада</label>
+                                                    <input type="radio" id="radio3" name="radio"><label for="radio3">земли</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- main params -->
+                                        <div class="row">
+                                            <div class="col col-4">
+                                                <div class="filters-label">Площадь офиса, <span class="light">м<sup>2</sup></span></div>
+
+                                                <div class="slider-range">
+                                                    <input type="text" id="amount-1" class=" textbox textbox-gray textbox-big" />
+                                                     
+                                                    <div id="slider-range-1"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col col-4">
+                                                <div class="filters-label">Выберите класс здания <sup>&nbsp;</sup></div>
+
+                                                <div class="radioset radioset-big checkboxset">
+                                                    <input type="checkbox" id="check1" /><label for="check1">C</label>
+                                                    <input type="checkbox" id="check2" /><label for="check2">B</label>
+                                                    <input type="checkbox" id="check3" /><label for="check3">B+</label>
+                                                    <input type="checkbox" id="check4" checked="checked" /><label for="check4">A</label>
+                                                    <input type="checkbox" id="check5" checked="checked" /><label for="check5">A+</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col col-4">
+                                                <div class="filters-label">Арендная ставка, <span class="light">руб. м<sup>2</sup> в год</span></div>
+
+                                                <div class="slider-range">
+                                                    <input type="text" id="amount-2" class=" textbox textbox-gray textbox-big" />
+                                                     
+                                                    <div id="slider-range-2"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- more params -->
+                                        <div class="filters-more">
+                                            <div class="row">
+                                                <div class="col col-12">
+                                                    <div class="filters-more-toggle"><a href="javascript:void(0);" title=""><span>Дополнительные параметры</span></a></div>
+                                                </div>
+
+                                                <div class="filters-more-content">
+                                                    <div class="col col-3">
+                                                        <h3 class="filters-more-title">
+                                                            Коммуникации
+                                                        </h3>
+
+                                                        <div class="filters-more-checkboxes">
+                                                            <span class="checkbox"><input type="checkbox" id="c1" class="cb" /><label for="c1">Интернет</label></span>
+                                                            <span class="checkbox"><input type="checkbox" id="c2" class="cb" /><label for="c2">Телефония</label></span>
+                                                            <span class="checkbox"><input type="checkbox" id="c3" class="cb" /><label for="c3">Выход в открытый космос</label></span>
+                                                            <span class="checkbox"><input type="checkbox" id="c4" class="cb" /><label for="c4">Выход к министрам и думе</label></span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col col-3">
+                                                        <h3 class="filters-more-title">
+                                                            Тип здания
+
+                                                            <div class="i">
+                                                                <div class="notice notice-left">
+                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, modi, possimus, ipsum minus autem inventore ea ex commodi veritatis quia id dicta praesentium consectetur minima architecto tenetur consequuntur illum unde.
+                                                                </div>
+                                                            </div>
+                                                        </h3>
+
+                                                        <div class="filters-more-checkboxes">
+                                                            <span class="checkbox"><input type="checkbox" id="c5" class="cb" /><label for="c5">Особняки</label></span>
+                                                            <span class="checkbox"><input type="checkbox" id="c6" class="cb" /><label for="c6">Квартиры</label></span>
+                                                            <span class="checkbox"><input type="checkbox" id="c7" class="cb" /><label for="c7">Небоскрёбы</label></span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col col-3">
+                                                        <h3 class="filters-more-title">
+                                                            Пол сотрудников
+
+                                                            <div class="i">
+                                                                <div class="notice notice-right">
+                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, dignissimos fugiat quis enim impedit perferendis sequi tenetur commodi aliquam consequuntur.
+                                                                </div>
+                                                            </div>
+                                                        </h3>
+
+                                                        <div class="radioset">
+                                                            <input type="radio" id="radio4" name="radio2" checked="checked"><label for="radio4">Мужской</label>
+                                                            <input type="radio" id="radio5" name="radio2"><label for="radio5">Женский</label>
+                                                        </div>
+
+                                                        <div class="filters-more-checkboxes">
+                                                            <span class="checkbox"><input type="checkbox" id="c8" class="cb" /><label for="c8">Искать только роботов</label></span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col col-3">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- place -->
+                                        <div class="filters-place">
+                                            <div class="row">
+                                                <div class="col col-12">
+                                                    <div class="filters-label">Уточните положение</div>
+
+                                                    <div class="filter-place-group">
+                                                        <a href="" class="button button-gray button-middle" title=""><span class="highlight">+</span> район</a>
+                                                        <a href="" class="button button-gray button-middle" title=""><span class="highlight">+</span> метро</a>
+                                                        <a href="" class="button button-gray button-middle" title=""><span class="highlight">+</span> регион на карте</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- control -->
+                                        <div class="filters-control">
+                                            <div class="row">
+                                                <div class="col col-4">
+                                                    <a href="" class="button button-gray button-big filters-show">Показать</a>
+                                                </div>
+
+                                                <div class="col col-5">
+                                                    <div class="filters-found">254 найденных здания</div>
+                                                </div>
+
+                                                <div class="col col-3">
+                                                    <a href="" class="button button-blue button-middle filters-order">Заявка на подбор помещения</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div id="tabs-2">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            xczczxc
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                <!-- list -->
+                <div class="list">
+                    <div class="row">
+                        <div class="col col-2">
+                            <div class="box-title"><h2>Аренда</h2></div>
+
+                            <ul>
+                                <li><a href="" title="">Арбат</a></li>
+                                <li><a href="" title="">Кутузовский</a></li>
+                                <li><a href="" title="">Хамовники</a></li>
+                                <li><a href="" title="">Юго-запад</a></li>
+                                <li><a href="" title="">Павелецкий</a></li>
+                                <li><a href="" title="">Беговой</a></li>
+                                <li><a href="" title="">Тверской</a></li>
+                                <li><a href="" title="">Ленинградка</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col col-2">
+                            <div class="box-title"><h2>&nbsp;</h2></div>
+
+                            <ul>
+                                <li><a href="" title="">Китай-город</a></li>
+                                <li><a href="" title="">Ленинградский проспект</a></li>
+                                <li><a href="" title="">Таганский</a></li>
+                                <li><a href="" title="">Пресненский</a></li>
+                                <li><a href="" title="">Дмитровский</a></li>
+                                <li><a href="" title="">Ленинский</a></li>
+                                <li><a href="" title="">Варшавка</a></li>
+                                <li><a href="" title="">Проспект Мира</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col col-2">
+                            <div class="box-title"><h2>&nbsp;</h2></div>
+
+                            <ul>
+                                <li><a href="" title="">Чистые пруды</a></li>
+                                <li><a href="" title="">Лефортово</a></li>
+                                <li><a href="" title="">Северо-запад</a></li>
+                                <li><a href="" title="">Север</a></li>
+                                <li><a href="" title="">Северо-восток</a></li>
+                                <li><a href="" title="">Восток</a></li>
+                                <li><a href="" title="">Юг</a></li>
+                                <li><a href="" title="">Юго-восток</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col col-4">
+                            <div class="box-title"><h2>По назначению</h2></div>
+
+                            <ul>
+                                <li><a href="" title="">Крупный бизнес от 600 м2</a></li>
+                                <li><a href="" title="">Средний бизнес 200-600 м2 B-класс</a></li>
+                                <li><a href="" title="">Аренда небольшого офиса до 100 м2</a></li>
+                                <li><a href="" title="">ИФНС</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col col-2">
+                            <div class="box-title"><h2>Хиты</h2></div>
+
+                            <ul>
+                                <li><a href="" title="">Москва Сити</a></li>
+                                <li><a href="" title="">Все особняки Москвы</a></li>
+                                <li><a href="" title="">Лофт офисы</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- sale -->
+                <div class="sale">
+                    <div class="row">
+                        <div class="col col-6">
+                            <div class="sale-title"><h2>Продажа <a href="javascript:void(0);">Развернуть</a></h2></div>
+                        </div>
+                    </div>
+
+                    <div class="sale-content">
+                        <div class="row">
+                            <div class="col col-6">
+                                <div class="page-subtitle"><h3>Индекс аренды А-класса в Москве</h3></div>
+
+                                <div class="box">
+                                    <img src="images/tmp/g2.png" height="237" width="471" alt="">
+                                </div>
+
+                                <div class="page-subtitle"><h3>Аренда офиса в Москве</h3></div>
+
+                                <p>Аренда офисов в Москве стала доступнее во многом благодаря усилиям компании «СмартСпейс». Мы тщательно прорабатываем каждое предложение на рынке коммерческой недвижимости, и в итоге смогли создать лучшую базу столичных деловых объектов. С её помощью вы без труда найдёте устраивающий вас вариант, за счёт чего вопрос аренды офиса в Москве решается проще и оперативнее.</p>
+
+                                <p>Компаниям, рассматривающим варианты аренды офиса, мы рекомендуем не ограничивать себя бизнес-центрами одного класса. Стоит обратить внимание и на смежные категории. Часто бывает так, что стоимость аренды офиса в них одинакова, а условия совершенно разные. В случае, если вы не можете определиться с выбором самостоятельно, достаточно просто позвонить нам. Сотрудники СмартСпейс имеют большой опыт работы, а потому быстро решают вопросы, связанные с арендой офиса. Всего через 15 минут вам предложат первую подборку помещений!</p>
+
+                                <p>Снять офис в компании “СмартСпейс” -это легко, быстро, удобно, экономно и </p>
+                            </div>
+
+                            <div class="col col-6">
+                                <div class="page-subtitle"><h3>Аренда офиса от собственника</h3></div>
+
+                                <p>На рынке коммерческой недвижимости аренда офисов от собственников является очень редким, а потому востребованным предложением. В большинстве случаев офисные помещения рекламируются посредниками, что значительно увеличивает конечную стоимость деловой недвижимости. Если вас интересует аренда офиса от собственника, то в этом случае компания «СмартСпейс» готова предложить свои услуги.</p>
+
+                                <p>Почему стоит обращаться именно к нам? Ответ прост — мы действительно помогаем уменьшать издержки компании, оптимизируя конечную стоимость аренды офиса. На нашем сайте размещена самая большая и актуальная база бизнес-центров Москвы. Вы сможете увидеть реальные офисы с метражами, планами, фотографиями и другой полезной информацией. А с помощью уникальной системы рекомендаций офисных помещений подходящий вариант будет найден быстро и с максимальным комфортом для клиента.</p>
+
+                                <p>Нужно заметить, что мы намного эффективнее договоримся об аренде офиса с непосредственным владельцем объекта. К вашим услугам персональный брокер на весь срок поиска и переговоров, а так же постобслуживание, необходимое для разрешения возможных споров с собственником.</p>
+
+                                <div class="page-subtitle"><h3>Аренда офиса без посредников</h3></div>
+
+                                <p>Чтобы развеять возможные сомнения, попробуем рассказать, чем хороша аренда офисов без посредников:</p>
+
+                                <p><big>1. Значительная экономия финансов!</big><br />Аренда офиса без посредников позволяет отказаться от дорогих промежуточных звеньев в цепочке контакта между арендатором и владельцем недвижимости. Кроме того, большая часть офисных помещений предлагается без комиссии агентства. Эти деньги платит собственник, а не вы!</p>
+
+                                <p><big>2. Дополнительные бонусы!</big><br />Ещё одним преимуществом такого варианта аренды офиса является возможность получения скидки на покупку или аренду мебели, бесплатные парковочные места, арендные каникулы — вариантов много. При аренде офиса любого метража и класса такие бонусы будут как нельзя кстати. Подобные вопросы обязательно проговариваются до заключения договора аренды офиса.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- footer -->
+            <footer>
+                <div class="footer-wrapper">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="" title="">главная</a></li>
+                            <li><a href="" title="">справочники</a></li>
+                            <li><a href="" title="">здания</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="" title="">помещения</a></li>
+                            <li><a href="" title="">оргиназиции</a></li>
+                            <li><a href="" title="">мои клиенты</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-menu footer-menu-last">
+                        <ul>
+                            <li><a href="" title="">О проекте</a></li>
+                            <li><a href="" title="">Контакты</a></li>
+                            <li><a href="" title="">Индекс недвижимости</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- copyright -->
+                    <div class="footer-copyright">
+                        <div class="footer-language">
+                            <a href="" title="" class="active">Русский</a>
+                            <a href="" title="">English</a>
+                            <a href="" title="">François</a>
+                        </div>
+
+                        <p>&copy; СмартСпейс, 2009-2013</p>
+                    </div>
+
+                    <!-- adv -->
+                    <div class="footer-adv">
+                        <a href="">аренда офиса 55кв</a>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <script src="js/call.js"></script>
+    </body>
+</html>
